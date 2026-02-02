@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-02-02T16:43:50.188466",
+  "results": [
+    {
+      "model": "medgemma-27b-text-it-mlx",
+      "total": 75,
+      "correct": 55,
+      "accuracy": 0.7333333333333333,
+      "avg_time": 2.9965049775441486,
+      "errors": 0
+    },
+    {
+      "model": "medgemma-1.5-4b-it",
+      "total": 75,
+      "correct": 14,
+      "accuracy": 0.18666666666666668,
+      "avg_time": 0.6600217151641846,
+      "errors": 0
+    },
+    {
+      "model": "medgemma-1.5-4b-it@bf16",
+      "total": 75,
+      "correct": 19,
+      "accuracy": 0.25333333333333335,
+      "avg_time": 1.1956825764973957,
+      "errors": 0
+    }
+  ]
+}

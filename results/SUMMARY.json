@@ -1,0 +1,77 @@
+{
+  "evaluation_date": "2026-02-02",
+  "dataset": "IgakuQA 2022 Section A (75 questions)",
+  "passing_threshold": 0.60,
+  "results": [
+    {
+      "rank": 1,
+      "model": "medgemma-27b-text-it-mlx",
+      "size": "27B",
+      "correct": 55,
+      "total": 75,
+      "accuracy": 0.733,
+      "avg_time_sec": 3.0,
+      "status": "PASS"
+    },
+    {
+      "rank": 2,
+      "model": "qwen/qwen3-4b-2507",
+      "size": "4B",
+      "correct": 43,
+      "total": 75,
+      "accuracy": 0.573,
+      "avg_time_sec": 0.8,
+      "status": "FAIL"
+    },
+    {
+      "rank": 3,
+      "model": "gemma-3-12b-it",
+      "size": "12B",
+      "correct": 41,
+      "total": 75,
+      "accuracy": 0.547,
+      "avg_time_sec": 1.6,
+      "status": "FAIL"
+    },
+    {
+      "rank": 4,
+      "model": "openai/gpt-oss-20b",
+      "size": "20B",
+      "correct": 21,
+      "total": 75,
+      "accuracy": 0.280,
+      "avg_time_sec": 1.8,
+      "status": "FAIL",
+      "notes": "Many empty responses, poor Japanese instruction following"
+    },
+    {
+      "rank": 5,
+      "model": "medgemma-1.5-4b-it@bf16",
+      "size": "4B",
+      "correct": 19,
+      "total": 75,
+      "accuracy": 0.253,
+      "avg_time_sec": 1.2,
+      "status": "FAIL"
+    },
+    {
+      "rank": 6,
+      "model": "medgemma-1.5-4b-it",
+      "size": "4B",
+      "correct": 14,
+      "total": 75,
+      "accuracy": 0.187,
+      "avg_time_sec": 0.7,
+      "status": "FAIL"
+    }
+  ],
+  "baselines": {
+    "GPT-4": 0.80,
+    "ChatGPT": 0.58,
+    "GPT-3": 0.42
+  },
+  "failed_models": [
+    {"model": "llama-3-elyza-jp-8b-mlx", "reason": "API error - model not loaded"},
+    {"model": "microsoft/phi-4-reasoning-plus", "reason": "API error - model not loaded"}
+  ]
+}

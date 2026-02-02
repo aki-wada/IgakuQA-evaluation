@@ -1,0 +1,19 @@
+# IgakuQA LLM Evaluation Dependencies
+
+# LLM Providers
+openai>=1.0.0
+anthropic>=0.18.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Japanese text processing (optional)
+# mojimoji  # 全角半角変換 (元スクリプトで使用)
+
+# Progress bar
+tqdm>=4.65.0
