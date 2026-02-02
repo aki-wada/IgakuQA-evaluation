@@ -4,6 +4,8 @@
 **実行環境**: macOS (初回評価)
 **継続環境**: Mac Studio M3 Ultra (予定)
 
+**GitHubリポジトリ**: https://github.com/aki-wada/IgakuQA-evaluation
+
 ---
 
 ## 評価完了モデル（第116回 2022年 A問題 75問）
@@ -64,15 +66,17 @@ mistralai/magistral-small-2509
 
 ## Mac Studio M3 Ultraでの継続手順
 
+### 0. リポジトリをクローン
+
+```bash
+git clone https://github.com/aki-wada/IgakuQA-evaluation.git
+cd IgakuQA-evaluation
+```
+
 ### 1. 環境セットアップ
 
 ```bash
-cd /Users/wadaakihiko/Desktop/wada_work/IgakuQA
-
-# 仮想環境アクティベート
-source venv/bin/activate
-
-# または新規作成
+# 仮想環境作成
 python3 -m venv venv
 source venv/bin/activate
 pip install requests
