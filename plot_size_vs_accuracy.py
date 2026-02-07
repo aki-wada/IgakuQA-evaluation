@@ -380,4 +380,218 @@ plt.savefig('plots/pareto_and_budget.png', dpi=150, bbox_inches='tight')
 print("Saved: plots/pareto_and_budget.png")
 plt.close()
 
-print("\nDone! 3 plots saved to plots/ directory.")
+# ========== Figure 4: Quantization Comparison (8bit vs 4bit) ==========
+fig4, axes4 = plt.subplots(1, 3, figsize=(18, 7))
+
+quant_models = [
+    {
+        "name": "qwen3-32b",
+        "params": "32B",
+        "mem_8bit": 34.8, "mem_4bit": 18.5,
+        "sections": ["A", "B", "C", "D", "E", "F"],
+        "acc_8bit": [80.0, 86.0, 68.0, 86.7, 84.0, 74.7],
+        "acc_4bit": [78.7, 84.0, 68.0, 85.3, 84.0, 76.0],
+        "total_8bit": 79.3, "total_4bit": 78.8,
+    },
+    {
+        "name": "qwen3-vl-8b",
+        "params": "8B VL",
+        "mem_8bit": 9.9, "mem_4bit": 5.8,
+        "sections": ["A", "B", "C", "D", "E", "F"],
+        "acc_8bit": [62.7, 76.0, 60.0, 73.3, 76.0, 74.7],
+        "acc_4bit": [56.0, 68.0, 56.0, 70.7, 72.0, 72.0],
+        "total_8bit": 69.8, "total_4bit": 65.3,
+    },
+    {
+        "name": "qwen3-vl-4b",
+        "params": "4B VL",
+        "mem_8bit": 5.1, "mem_4bit": 3.0,
+        "sections": ["A", "B", "C", "D", "E", "F"],
+        "acc_8bit": [58.7, 68.0, 50.7, 69.3, 70.0, 52.0],
+        "acc_4bit": [49.3, 72.0, 54.7, 69.3, 62.0, 48.0],
+        "total_8bit": 60.5, "total_4bit": 58.3,
+    },
+]
+
+for i, qm in enumerate(quant_models):
+    ax = axes4[i]
+    x = np.arange(len(qm["sections"]))
+    width = 0.35
+
+    bars_8 = ax.bar(x - width/2, qm["acc_8bit"], width, label=f'8bit ({qm["mem_8bit"]}GB)',
+                    color='#1976D2', edgecolor='black', linewidth=0.5, alpha=0.85)
+    bars_4 = ax.bar(x + width/2, qm["acc_4bit"], width, label=f'4bit ({qm["mem_4bit"]}GB)',
+                    color='#FF7043', edgecolor='black', linewidth=0.5, alpha=0.85)
+
+    ax.axhline(y=75, color='red', linestyle='--', linewidth=1, alpha=0.5, label='Pass Line (75%)')
+    ax.set_xticks(x)
+    ax.set_xticklabels(qm["sections"], fontsize=11)
+    ax.set_xlabel('Section', fontsize=11)
+    ax.set_ylabel('Accuracy (%)', fontsize=11)
+
+    diff = qm["total_4bit"] - qm["total_8bit"]
+    sign = "+" if diff >= 0 else ""
+    ax.set_title(f'{qm["name"]} ({qm["params"]})\n'
+                 f'Total: {qm["total_8bit"]}% → {qm["total_4bit"]}% ({sign}{diff:.1f}%)',
+                 fontsize=11, fontweight='bold')
+    ax.set_ylim(35, 95)
+    ax.legend(fontsize=8, loc='lower left')
+    ax.grid(True, alpha=0.3, axis='y')
+    ax.set_axisbelow(True)
+
+    # Annotate differences on each bar pair
+    for j, (v8, v4) in enumerate(zip(qm["acc_8bit"], qm["acc_4bit"])):
+        d = v4 - v8
+        color = '#2E7D32' if d >= 0 else '#C62828'
+        sign_s = "+" if d >= 0 else ""
+        ax.text(j, max(v8, v4) + 1.5, f'{sign_s}{d:.1f}%', ha='center', fontsize=7,
+                color=color, fontweight='bold')
+
+plt.suptitle('MLX Quantization Impact: 8bit vs 4bit (IgakuQA 2022, All Sections)',
+             fontsize=14, fontweight='bold')
+plt.tight_layout()
+plt.savefig('plots/quantization_comparison.png', dpi=150, bbox_inches='tight')
+print("Saved: plots/quantization_comparison.png")
+plt.close()
+
+# ========== Figure 5: Full Section Heatmap ==========
+fig5, ax7 = plt.subplots(figsize=(10, 8))
+
+section_data = {
+    "qwen3-32b 8bit":    [80.0, 86.0, 68.0, 86.7, 84.0, 74.7],
+    "qwen3-32b 4bit":    [78.7, 84.0, 68.0, 85.3, 84.0, 76.0],
+    "medgemma-27b":      [76.0, 82.0, 61.3, 76.0, 76.0, 64.0],
+    "qwen3-vl-8b 8bit":  [62.7, 76.0, 60.0, 73.3, 76.0, 74.7],
+    "qwen3-vl-8b 4bit":  [56.0, 68.0, 56.0, 70.7, 72.0, 72.0],
+    "qwen3-vl-4b 8bit":  [58.7, 68.0, 50.7, 69.3, 70.0, 52.0],
+    "qwen3-vl-4b 4bit":  [49.3, 72.0, 54.7, 69.3, 62.0, 48.0],
+}
+section_totals = {
+    "qwen3-32b 8bit": 79.3, "qwen3-32b 4bit": 78.8,
+    "medgemma-27b": 71.8,
+    "qwen3-vl-8b 8bit": 69.8, "qwen3-vl-8b 4bit": 65.3,
+    "qwen3-vl-4b 8bit": 60.5, "qwen3-vl-4b 4bit": 58.3,
+}
+
+model_names = list(section_data.keys())
+sections = ["A\n(75)", "B\n(50)", "C\n(75)", "D\n(75)", "E\n(50)", "F\n(75)", "Total\n(400)"]
+data_matrix = np.array([section_data[m] + [section_totals[m]] for m in model_names])
+
+from matplotlib.colors import LinearSegmentedColormap
+cmap = LinearSegmentedColormap.from_list('custom',
+    [(0.0, '#FFCDD2'), (0.5, '#FFF9C4'), (0.75, '#C8E6C9'), (1.0, '#1B5E20')])
+
+im = ax7.imshow(data_matrix, cmap=cmap, aspect='auto', vmin=40, vmax=90)
+
+ax7.set_xticks(np.arange(len(sections)))
+ax7.set_xticklabels(sections, fontsize=11)
+ax7.set_yticks(np.arange(len(model_names)))
+ax7.set_yticklabels([f'{n} ({section_totals[n]:.1f}%)' for n in model_names], fontsize=10)
+
+for i in range(len(model_names)):
+    for j in range(len(sections)):
+        val = data_matrix[i, j]
+        color = 'white' if val >= 78 or val < 52 else 'black'
+        fontw = 'bold' if j == len(sections) - 1 else 'normal'
+        ax7.text(j, i, f'{val:.1f}%', ha='center', va='center',
+                 fontsize=9, color=color, fontweight=fontw)
+
+# Pass line annotation on Total column
+for i, m in enumerate(model_names):
+    total = section_totals[m]
+    status = "PASS" if total >= 75 else "FAIL"
+    color = '#1B5E20' if total >= 75 else '#B71C1C'
+    ax7.text(len(sections) - 0.35, i, status, ha='left', va='center',
+             fontsize=8, color=color, fontweight='bold')
+
+ax7.set_title('IgakuQA 2022: Section-Level Accuracy Heatmap\n(Pass Line: 75% = 300/400)',
+              fontsize=13, fontweight='bold', pad=15)
+
+cbar = plt.colorbar(im, ax=ax7, fraction=0.03, pad=0.04)
+cbar.set_label('Accuracy (%)', fontsize=10)
+
+# Horizontal divider lines between model groups
+ax7.axhline(y=1.5, color='white', linewidth=2)
+ax7.axhline(y=2.5, color='white', linewidth=2)
+ax7.axhline(y=4.5, color='white', linewidth=2)
+
+plt.tight_layout()
+plt.savefig('plots/section_heatmap.png', dpi=150, bbox_inches='tight')
+print("Saved: plots/section_heatmap.png")
+plt.close()
+
+# ========== Figure 6: Quantization Summary (Memory vs Accuracy Trade-off) ==========
+fig6, (ax8, ax9) = plt.subplots(1, 2, figsize=(14, 6))
+
+# --- Left: Memory vs Accuracy scatter with arrows ---
+for qm in quant_models:
+    # 8bit point
+    ax8.scatter(qm["mem_8bit"], qm["total_8bit"], c='#1976D2', marker='o',
+                s=200, edgecolors='black', linewidths=1, zorder=5)
+    # 4bit point
+    ax8.scatter(qm["mem_4bit"], qm["total_4bit"], c='#FF7043', marker='s',
+                s=200, edgecolors='black', linewidths=1, zorder=5)
+    # Arrow from 8bit to 4bit
+    ax8.annotate('', xy=(qm["mem_4bit"], qm["total_4bit"]),
+                 xytext=(qm["mem_8bit"], qm["total_8bit"]),
+                 arrowprops=dict(arrowstyle='->', color='#455A64', lw=2, connectionstyle='arc3,rad=0.1'))
+    # Labels
+    ax8.text(qm["mem_8bit"] + 0.5, qm["total_8bit"] + 1.2,
+             f'{qm["name"]}\n8bit ({qm["mem_8bit"]}GB)',
+             fontsize=8, color='#1565C0', fontweight='bold')
+    ax8.text(qm["mem_4bit"] - 0.5, qm["total_4bit"] - 3,
+             f'4bit ({qm["mem_4bit"]}GB)',
+             fontsize=8, color='#D84315', fontweight='bold', ha='right' if qm["mem_4bit"] < 10 else 'left')
+
+ax8.axhline(y=75, color='red', linestyle='--', linewidth=1.5, alpha=0.6, label='Pass Line (75%)')
+ax8.scatter([], [], c='#1976D2', marker='o', s=100, label='8bit')
+ax8.scatter([], [], c='#FF7043', marker='s', s=100, label='4bit')
+
+ax8.set_xlabel('Memory (GB)', fontsize=12)
+ax8.set_ylabel('Total Accuracy (%)', fontsize=12)
+ax8.set_title('Quantization: Memory vs Accuracy Trade-off', fontsize=12, fontweight='bold')
+ax8.set_xlim(0, 40)
+ax8.set_ylim(50, 85)
+ax8.legend(fontsize=9, loc='upper left')
+ax8.grid(True, alpha=0.3)
+ax8.set_axisbelow(True)
+
+# --- Right: Impact summary bar chart ---
+model_labels = [qm["name"] + f'\n({qm["params"]})' for qm in quant_models]
+acc_drops = [qm["total_4bit"] - qm["total_8bit"] for qm in quant_models]
+mem_savings = [(1 - qm["mem_4bit"] / qm["mem_8bit"]) * 100 for qm in quant_models]
+
+x_pos = np.arange(len(quant_models))
+width = 0.35
+
+bars_acc = ax9.bar(x_pos - width/2, acc_drops, width, label='Accuracy Change (%)',
+                   color=['#C62828' if d < -2 else '#FF8F00' if d < 0 else '#2E7D32' for d in acc_drops],
+                   edgecolor='black', linewidth=0.5)
+bars_mem = ax9.bar(x_pos + width/2, [-s for s in mem_savings], width, label='Memory Saved (%)',
+                   color='#1976D2', alpha=0.7, edgecolor='black', linewidth=0.5)
+
+ax9.axhline(y=0, color='black', linewidth=0.8)
+
+for j, (ad, ms) in enumerate(zip(acc_drops, mem_savings)):
+    ax9.text(j - width/2, ad - 1.5 if ad < 0 else ad + 0.5, f'{ad:+.1f}%',
+             ha='center', fontsize=9, fontweight='bold',
+             color='#C62828' if ad < -2 else '#FF8F00')
+    ax9.text(j + width/2, -ms - 1.5, f'-{ms:.0f}%',
+             ha='center', fontsize=9, fontweight='bold', color='#1565C0')
+
+ax9.set_xticks(x_pos)
+ax9.set_xticklabels(model_labels, fontsize=9)
+ax9.set_ylabel('Change (%)', fontsize=12)
+ax9.set_title('8bit → 4bit: Accuracy vs Memory Trade-off', fontsize=12, fontweight='bold')
+ax9.legend(fontsize=9, loc='lower left')
+ax9.grid(True, alpha=0.3, axis='y')
+ax9.set_axisbelow(True)
+ax9.set_ylim(-55, 10)
+
+plt.suptitle('MLX Quantization Analysis: Is 4-bit Worth It?', fontsize=14, fontweight='bold')
+plt.tight_layout()
+plt.savefig('plots/quantization_tradeoff.png', dpi=150, bbox_inches='tight')
+print("Saved: plots/quantization_tradeoff.png")
+plt.close()
+
+print("\nDone! 6 plots saved to plots/ directory.")

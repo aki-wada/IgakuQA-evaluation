@@ -365,6 +365,8 @@ def main():
                         default=list(PROMPTS.keys()),
                         choices=list(PROMPTS.keys()),
                         help="Prompts to test")
+    parser.add_argument("--max-tokens", type=int, default=None,
+                        help="Override max_tokens (e.g. 1024 for reasoning models)")
 
     args = parser.parse_args()
 
@@ -402,7 +404,9 @@ def main():
     all_details = {}
 
     for prompt_key in args.prompts:
-        prompt_config = PROMPTS[prompt_key]
+        prompt_config = PROMPTS[prompt_key].copy()
+        if args.max_tokens is not None:
+            prompt_config["max_tokens"] = args.max_tokens
 
         print(f"\n{'='*60}")
         print(f"Testing: {prompt_config['name']}")

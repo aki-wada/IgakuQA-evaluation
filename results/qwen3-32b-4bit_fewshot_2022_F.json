@@ -1,0 +1,626 @@
+{
+  "timestamp": "2026-02-07T13:38:38.062006",
+  "model": "qwen/qwen3-32b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 57,
+      "accuracy": 0.76,
+      "avg_time": 1.7145782883961995,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116F1",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.7469387054443359
+      },
+      {
+        "problem_id": "116F2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.7203140258789062
+      },
+      {
+        "problem_id": "116F3",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.569896936416626
+      },
+      {
+        "problem_id": "116F4",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.7158520221710205
+      },
+      {
+        "problem_id": "116F5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.6635210514068604
+      },
+      {
+        "problem_id": "116F6",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.7140600681304932
+      },
+      {
+        "problem_id": "116F7",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8401947021484375
+      },
+      {
+        "problem_id": "116F8",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.654742956161499
+      },
+      {
+        "problem_id": "116F9",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.6563997268676758
+      },
+      {
+        "problem_id": "116F10",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.7404711246490479
+      },
+      {
+        "problem_id": "116F11",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.7091028690338135
+      },
+      {
+        "problem_id": "116F12",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.6583678722381592
+      },
+      {
+        "problem_id": "116F13",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.7495858669281006
+      },
+      {
+        "problem_id": "116F14",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.6507101058959961
+      },
+      {
+        "problem_id": "116F15",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.6241700649261475
+      },
+      {
+        "problem_id": "116F16",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.7298669815063477
+      },
+      {
+        "problem_id": "116F17",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.7463481426239014
+      },
+      {
+        "problem_id": "116F18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.7097420692443848
+      },
+      {
+        "problem_id": "116F19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.7195520401000977
+      },
+      {
+        "problem_id": "116F20",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.8425788879394531
+      },
+      {
+        "problem_id": "116F21",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8064579963684082
+      },
+      {
+        "problem_id": "116F22",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8966929912567139
+      },
+      {
+        "problem_id": "116F23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.7473611831665039
+      },
+      {
+        "problem_id": "116F24",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.6500828266143799
+      },
+      {
+        "problem_id": "116F25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.6485240459442139
+      },
+      {
+        "problem_id": "116F26",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8050150871276855
+      },
+      {
+        "problem_id": "116F27",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na,b",
+        "time": 0.7818939685821533
+      },
+      {
+        "problem_id": "116F28",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc, e",
+        "time": 0.7167141437530518
+      },
+      {
+        "problem_id": "116F29",
+        "prediction": "b,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb, e",
+        "time": 0.7141692638397217
+      },
+      {
+        "problem_id": "116F30",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd,e",
+        "time": 0.692636251449585
+      },
+      {
+        "problem_id": "116F31",
+        "prediction": "a,c",
+        "gold": "a,c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na, c",
+        "time": 0.8645620346069336
+      },
+      {
+        "problem_id": "116F32",
+        "prediction": "b,c",
+        "gold": "b,c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb,c",
+        "time": 0.6823821067810059
+      },
+      {
+        "problem_id": "116F33",
+        "prediction": "a,b,e",
+        "gold": "a,b,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na,b,e",
+        "time": 0.7184948921203613
+      },
+      {
+        "problem_id": "116F34",
+        "prediction": "a,c,e",
+        "gold": "a,b,c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na, c, e",
+        "time": 0.7671990394592285
+      },
+      {
+        "problem_id": "116F35",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.0109848976135254
+      },
+      {
+        "problem_id": "116F36",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8089771270751953
+      },
+      {
+        "problem_id": "116F37",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8968222141265869
+      },
+      {
+        "problem_id": "116F38",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.8410730361938477
+      },
+      {
+        "problem_id": "116F39",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8015291690826416
+      },
+      {
+        "problem_id": "116F40",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 1.454603910446167
+      },
+      {
+        "problem_id": "116F41",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 2.1502509117126465
+      },
+      {
+        "problem_id": "116F42",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.3614909648895264
+      },
+      {
+        "problem_id": "116F43",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.2673590183258057
+      },
+      {
+        "problem_id": "116F44",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9845819473266602
+      },
+      {
+        "problem_id": "116F45",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb: 閉塞性黄疸",
+        "time": 2.0001258850097656
+      },
+      {
+        "problem_id": "116F46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb: 経過観察",
+        "time": 1.8156020641326904
+      },
+      {
+        "problem_id": "116F47",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.9213252067565918
+      },
+      {
+        "problem_id": "116F48",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.3457982540130615
+      },
+      {
+        "problem_id": "116F49",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.1720798015594482
+      },
+      {
+        "problem_id": "116F50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.9790890216827393
+      },
+      {
+        "problem_id": "116F51",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.3490970134735107
+      },
+      {
+        "problem_id": "116F52",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8926539421081543
+      },
+      {
+        "problem_id": "116F53",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.950977087020874
+      },
+      {
+        "problem_id": "116F54",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.9056839942932129
+      },
+      {
+        "problem_id": "116F55",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na, d\n\n**解説：**\n\nこの症例は、高齢者におけるSARS-CoV-2感染による**重症肺炎（特に急性呼吸器症候群：ARDS）の可能性が高い**です。以下の点が根拠となります：\n\n- **呼吸困難、意識低下**\n- **胸部CTで間質性変化や浸潤影**（画像所見は記載されていませんが、SARS-CoV-2感染症では典型的です）\n- **SpO₂ 93％（",
+        "time": 18.333609104156494
+      },
+      {
+        "problem_id": "116F56",
+        "prediction": "a,c",
+        "gold": "a,c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na, c  \n\n**解説:**  \nこの患者は、夜中の電話や話のまとまらなさ、笑いが止まらないなどの**観念奔逸（a）**、睡眠不足にもかかわらず疲れを感じないことや、購入計画を話し始めたり、反対されると激しく怒るなどの**誇大妄想（c）**が見られます。これらは双極性障害（躁状態）の典型的な症状です。\n\n- **反響言語（b）**は、精神遅滞や器質性脳症など",
+        "time": 7.615938186645508
+      },
+      {
+        "problem_id": "116F57",
+        "prediction": "a,d",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na, d  \n（上直筋と眼窩上壁）",
+        "time": 1.34222412109375
+      },
+      {
+        "problem_id": "116F58",
+        "prediction": "b,d,e",
+        "gold": "b,d,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb, e, d\n\n**解説：**\n\nこの症例は典型的な**多発性骨髄腫（Multiple Myeloma）**の臨床像です。以下の所見がその根拠となります：\n\n- **高蛋白血症（総蛋白10.0g/dL）**\n- **低アルブミン血症（3.3g/dL）**\n- **IgGの著明な増加（3,800mg/dL）**\n- **貧血（Hb 8.2g/dL、Ht 23%",
+        "time": 16.738451957702637
+      },
+      {
+        "problem_id": "116F59",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 2.6148428916931152
+      },
+      {
+        "problem_id": "116F60",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.7134950160980225
+      },
+      {
+        "problem_id": "116F61",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.9878268241882324
+      },
+      {
+        "problem_id": "116F62",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc: 腹部造影CT",
+        "time": 2.829096794128418
+      },
+      {
+        "problem_id": "116F63",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.653087854385376
+      },
+      {
+        "problem_id": "116F64",
+        "prediction": "a,c",
+        "gold": "a,c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na,c",
+        "time": 0.8291089534759521
+      },
+      {
+        "problem_id": "116F65",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 2.336793899536133
+      },
+      {
+        "problem_id": "116F66",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.6509439945220947
+      },
+      {
+        "problem_id": "116F67",
+        "prediction": "d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne, d",
+        "time": 0.7815423011779785
+      },
+      {
+        "problem_id": "116F68",
+        "prediction": "a,c,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd: Staphylococcus aureus",
+        "time": 2.9377880096435547
+      },
+      {
+        "problem_id": "116F69",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb, e",
+        "time": 0.8089838027954102
+      },
+      {
+        "problem_id": "116F70",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.7497909069061279
+      },
+      {
+        "problem_id": "116F71",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc, d",
+        "time": 3.0467162132263184
+      },
+      {
+        "problem_id": "116F72",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.6606829166412354
+      },
+      {
+        "problem_id": "116F73",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.7177879810333252
+      },
+      {
+        "problem_id": "116F74",
+        "prediction": "a,d",
+        "gold": "04",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nオッズ比（Odds Ratio）は、症例対照研究において、曝露と疾患の関連を評価するための指標です。  \n「高曝露あり」が疾患Aに対して「曝露なし」と比較してどの程度リスクが高い（または低い）かを示します。\n\n---\n\n### 表の整理：\n\n| 曝露レベル       | 症例（疾患Aあり） | 対照（疾患Aなし） |\n|------------------|",
+        "time": 12.315315246582031
+      },
+      {
+        "problem_id": "116F75",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd: 後期流産 --------- 死産届必要",
+        "time": 1.3646371364593506
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

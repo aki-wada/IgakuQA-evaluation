@@ -1,6 +1,6 @@
 # IgakuQA 評価プロジェクト 申し送り
 
-**最終更新**: 2026-02-07（セッション4終了時）
+**最終更新**: 2026-02-08（セッション6終了時）
 **実行環境**: Mac Studio M3 Ultra (192GB RAM)
 **GitHub**: https://github.com/aki-wada/IgakuQA-evaluation
 
@@ -236,7 +236,7 @@ medgemma-27b評価のために変更済み。通常モデルの評価前にデ�
 
 ## 6. 現在のLM Studio状態
 
-- **ロード中のモデル**: medgemma-27b-text-it-mlx（16.03 GB, MLX 4-bit）
+- **ロード中のモデル**: openai/gpt-oss-20b @mxfp4 GGUF（12.11 GB）
 - **API**: http://localhost:1234/v1
 
 ### モデル管理コマンド
@@ -292,6 +292,15 @@ curl -s http://localhost:1234/v1/models | python3 -c \
 ### qwen3-32b関連（完了）
 - [x] Baseline+few-shot+mt=512で全セクション(A-F)評価 → **合格（79.3%）**
 
+### 量子化比較（完了）
+- [x] qwen3-32b 8bit vs 4bit → -0.5%（両方合格）
+- [x] qwen3-vl-8b 8bit vs 4bit → -4.5%（両方不合格）
+- [x] qwen3-vl-4b 8bit vs 4bit → -2.3%（両方不合格）
+
+### gpt-oss-20b フォーマット比較（完了）
+- [x] 6バリアント比較 → 動作する3モデルは全て~71%、全不合格
+- [x] 詳細: results/gpt-oss-20b_model_comparison.md
+
 ### その他
 - [ ] 年度別比較（2018-2022）
 - [ ] カテゴリ別分析（神経科、放射線科など）
@@ -328,11 +337,15 @@ python plot_size_vs_accuracy.py
 
 ### Git状態
 
-セッション4でコミット・プッシュ予定。主な変更:
-- `EVALUATION_PROGRESS.md` — qwen3-32b全セクション結果追記
-- `HANDOVER.md` — セッション4の結果追記
-- `evaluate_prompt_comparison.py` — few-shotデフォルト有効化
-- `results/qwen3-32b_fewshot_2022_{A..F}.json` — qwen3-32b全セクション結果
+セッション6でコミット・プッシュ済み。主な変更:
+- `EVALUATION_PROGRESS.md` — 量子化比較・gpt-oss-20bモデル比較結果追記
+- `HANDOVER.md` — セッション6更新
+- `results/gpt-oss-20b_model_comparison.md` — gpt-oss-20b 6バリアント比較詳細
+- `results/gpt-oss-20b-*_2022_{A..F}.json` — gpt-oss-20b各バリアント結果
+- `results/qwen3-32b-4bit_fewshot_2022_{A..F}.json` — qwen3-32b 4bit結果
+- `results/qwen3-vl-8b-{8bit,4bit}_fewshot_2022_{A..F}.json` — qwen3-vl-8b結果
+- `results/qwen3-vl-4b-{8bit,4bit}_fewshot_2022_{A..F}.json` — qwen3-vl-4b結果
+- `plots/` — 量子化比較プロット3枚追加
 
 ---
 
@@ -388,3 +401,30 @@ python plot_size_vs_accuracy.py
 - **max_tokens**: 512
 - **/no_think**: 必須（自動付加済み）
 - **最終スコア**: 79.3%（合格）
+
+## 13. MLX量子化比較実験（8bit vs 4bit）
+
+**評価日**: 2026-02-07（セッション5）
+**条件**: Baseline + 2-shot few-shot + max_tokens=512 + /no_think
+**目的**: MLX 8bit と 4bit の量子化による性能差とメモリ効率を比較
+
+### 総合結果
+
+| Model | Size(8bit) | Size(4bit) | 8bit | 4bit | 差分 | メモリ削減 |
+|-------|-----------|-----------|------|------|------|-----------|
+| qwen3-32b | 34.8GB | 18.5GB | 79.3% | 78.8% | **-0.5%** | 47% |
+| qwen3-vl-8b | 9.9GB | 5.8GB | 69.8% | 65.3% | **-4.5%** | 41% |
+| qwen3-vl-4b | 5.1GB | 3.0GB | 60.5% | 58.3% | **-2.3%** | 41% |
+
+### セクション別詳細
+
+**qwen3-32b**: A(80.0%→78.7%), B(86.0%→84.0%), C(68.0%→68.0%), D(86.7%→85.3%), E(84.0%→84.0%), F(74.7%→76.0%)
+**qwen3-vl-8b**: A(62.7%→56.0%), B(76.0%→68.0%), C(60.0%→56.0%), D(73.3%→70.7%), E(76.0%→72.0%), F(74.7%→72.0%)
+**qwen3-vl-4b**: A(58.7%→49.3%), B(68.0%→72.0%), C(50.7%→54.7%), D(69.3%→69.3%), E(70.0%→62.0%), F(52.0%→48.0%)
+
+### 結論
+- **大規模モデル（32B）**: 量子化の影響はほぼ無い（-0.5%）→ 4bitで十分実用的
+- **中規模モデル（8B）**: -4.5%の低下 → メモリ制約がある場合のみ4bit推奨
+- **小規模モデル（4B）**: -2.3%だがセクション間のばらつきが大きい
+- メモリ削減は40-47%で一貫
+- **合否判定は量子化で変わらない**（全モデルで8bit/4bit同一判定）
