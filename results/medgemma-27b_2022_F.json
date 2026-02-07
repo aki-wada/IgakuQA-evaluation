@@ -1,0 +1,626 @@
+{
+  "timestamp": "2026-02-07T10:31:02.997796",
+  "model": "medgemma-27b-text-it-mlx",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 21,
+      "accuracy": 0.28,
+      "avg_time": 2.099904397328695,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116F1",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "**a: ケアマネジャー**\n\n**解説:**\n\n介護保険制度における通所リハビリテーションは、ケアプラン（介護サービス計画）に基づいて提供されるサービスです。ケアマネジャーは、利用者の心身の状態や",
+        "time": 1.8606760501861572
+      },
+      {
+        "problem_id": "116F2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "**答え:** c\n\n**解説:**\n\n主治医として患者の復職支援を行う上で最も適切な対応は、就労上の留意点を指導することです。以下に各選択肢がなぜ適切でないか、またcがなぜ",
+        "time": 1.9193358421325684
+      },
+      {
+        "problem_id": "116F3",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c: 神経** です。\n\n解説：\n放射線感受性とは、放射線の影響を受けやすい度合いのことです。一般的に、細胞分裂が活発な組織ほど放射線感受性が高いとされています",
+        "time": 1.7780311107635498
+      },
+      {
+        "problem_id": "116F4",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "**正解:** e\n\n**解説:**\n\n慢性閉塞性肺疾患（COPD）は、気道の閉塞を特徴とする呼吸器疾患です。この病態により、以下の呼吸機能異常がみられます。\n\n*",
+        "time": 1.8437988758087158
+      },
+      {
+        "problem_id": "116F5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "正解は **d: 甲状腺機能亢進症** です。\n\n**解説:**\n\n*   **トリグリセリド高値の原因:** トリグリセリドは肝臓で合成され、脂肪組織に蓄",
+        "time": 1.8470561504364014
+      },
+      {
+        "problem_id": "116F6",
+        "prediction": "**考えられる疾患:",
+        "gold": "b",
+        "correct": false,
+        "response": "**考えられる疾患:**\n\n母子健康手帳の便色カードは、通常、正常な便の色（黄色～黄緑色）から、異常な便の色（白色、赤色、黒色など）までを示しています",
+        "time": 1.8600189685821533
+      },
+      {
+        "problem_id": "116F7",
+        "prediction": "はい、承知いたしまし",
+        "gold": "e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、心雑音・心音と疾患に関する問題について回答します。\n\n選択肢を一つずつ検討し、正しい組合せを選びます。\n\n*   **a: ",
+        "time": 1.999060869216919
+      },
+      {
+        "problem_id": "116F8",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "正解は **a: 子宮腺筋症** です。\n\n**解説:**\n\n*   **子宮腺筋症 (Adenomyosis):** 子宮内膜組織が子宮筋層内に存在し、増殖",
+        "time": 1.8440501689910889
+      },
+      {
+        "problem_id": "116F9",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "正解は **b: 尋常性乾癬** です。\n\n理由：\n*   **扁平苔癬 (a)**: 口腔粘膜に特徴的な白色網目状の疹（ウィックハム紋）",
+        "time": 1.8590929508209229
+      },
+      {
+        "problem_id": "116F10",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "**答え:** a\n\n**解説:**\n\n離島の唯一の診療所という状況を考慮すると、以下の理由から高度医療の提供は優先度が低くなります。\n\n*   **資源の制約:** 離島の診療所は",
+        "time": 1.8536968231201172
+      },
+      {
+        "problem_id": "116F11",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "正解は **a: Universal Health Coverage〈UHC〉** です。\n\n**解説:**\n\n*   **Universal Health Coverage (UHC)** は、日本語で「ユニバーサル・ヘルス・カバレッジ」または「",
+        "time": 1.9166178703308105
+      },
+      {
+        "problem_id": "116F12",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c: 使い方が限定的である** です。\n\nユニバーサルデザインは、年齢、能力、状況に関わらず、誰もが利用しやすいように設計する考え方です。そのため、「使い方が限定的である」",
+        "time": 1.8559741973876953
+      },
+      {
+        "problem_id": "116F13",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "**正解は c: 入院当日に発症した肺炎も含まれる。**\n\n以下に各選択肢の解説を記載します。\n\n*   **a: 主要な検出菌は肺炎球菌である。**\n",
+        "time": 1.8475441932678223
+      },
+      {
+        "problem_id": "116F14",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "**答え:** c\n\n**解説:**\n\n精神運動発達の各項目が達成される時期は以下の通りです。\n\n*   **a: 円をえがく:** 3歳頃\n*   **b: はさみ",
+        "time": 1.8599739074707031
+      },
+      {
+        "problem_id": "116F15",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "正解は **e: 顕微鏡的多発血管炎** です。\n\n**解説:**\n\n*   **顕微鏡的多発血管炎 (Microscopic Polyangiitis, MPA)** は、小血管を主対象とする",
+        "time": 1.843482255935669
+      },
+      {
+        "problem_id": "116F16",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "正解は **d. 水平半盲 --------- 加齢黄斑変性** です。\n\n以下に各選択肢の解説を記載します。\n\n*   **a: Bjerrum暗点 --------- 緑内障:**\n",
+        "time": 1.9206819534301758
+      },
+      {
+        "problem_id": "116F17",
+        "prediction": "医学の専門家として、",
+        "gold": "c",
+        "correct": false,
+        "response": "医学の専門家として、生活保護に関するご質問にお答えします。選択肢を一つずつ検討し、最も正しいものを選びます。\n\na: 生活保護基準は都道府県が定める。\n→ これは誤りです。生活",
+        "time": 1.8564059734344482
+      },
+      {
+        "problem_id": "116F18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "正解は **a: 凝集性（食塊のまとまり）が高い** です。\n\n**解説:**\n\n嚥下機能が低下している高齢者の誤嚥予防には、食べ物が口の中でバラバラになりにくく、",
+        "time": 1.8538360595703125
+      },
+      {
+        "problem_id": "116F19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "正解は **d: 薬剤相互作用は考慮せずに処方する。** です。\n\n**解説:**\n\n高齢者の多剤処方は、薬剤相互作用のリスクを高め、副作用や予期せぬ健康被害を引き",
+        "time": 1.9171099662780762
+      },
+      {
+        "problem_id": "116F20",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "**正解:** e\n\n**解説:**\n\n次世代育成支援対策推進法（子育て支援新制度）は、子どもが健やかに生まれ、育成される社会を構築することを目的としています。\n\n*   **a:** ",
+        "time": 1.928487777709961
+      },
+      {
+        "problem_id": "116F21",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "正解は **b** です。\n\n**解説:**\n\n1歳6か月（18か月）頃の言語発達は、以下の点が目安となります。\n\n*   **単語:** 10語以上の単語を理解",
+        "time": 1.9923021793365479
+      },
+      {
+        "problem_id": "116F22",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "正解は **b** です。\n\n**解説:**\n\n*   **交互作用 (Interaction)** とは、ある要因（この場合は遺伝要因）の存在が、別の要因（この場合は喫煙習慣）と結果（この",
+        "time": 1.995370864868164
+      },
+      {
+        "problem_id": "116F23",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "正解は **b: Babinski徴候陽性** です。\n\n以下に解説します。\n\n*   **問題の状況:** 乳頭（乳頭レベル）の脊髄の右半分に離断（損傷）が生",
+        "time": 1.8612759113311768
+      },
+      {
+        "problem_id": "116F24",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "正解は **e: 精神保健福祉センター** です。\n\n理由：\n*   **産業医、衛生管理者、産業保健師** は、労働安全衛生法に基づき、事業場における労働者の健康管理や安全",
+        "time": 1.843437910079956
+      },
+      {
+        "problem_id": "116F25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "正解は **a: IgG** です。\n\n解説：\n糸球体濾過（Glomerular Filtration）は、血液中の成分が糸球体の毛細血管壁とボウマン膜を通過してボーマンカ",
+        "time": 1.767711877822876
+      },
+      {
+        "problem_id": "116F26",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "正解は **e: 口腔内出血 --------- 再生不良性貧血** です。\n\n理由：\n再生不良性貧血は、骨髄の造血機能が低下し、赤血球、白血球、",
+        "time": 1.9272098541259766
+      },
+      {
+        "problem_id": "116F27",
+        "prediction": "医学の専門家として回",
+        "gold": "a,b",
+        "correct": false,
+        "response": "医学の専門家として回答します。\n\n出生前遺伝学的検査のうち、**確定的検査（診断的検査）**は以下の2つです。\n\n*   **a: 絨毛検査 (Chorionic Villus Sampling",
+        "time": 1.8453569412231445
+      },
+      {
+        "problem_id": "116F28",
+        "prediction": "医学の専門家として、",
+        "gold": "c,e",
+        "correct": false,
+        "response": "医学の専門家として、この質問にお答えします。\n\n新生児期の基準値が成人期より高いのは以下の2つです。\n\n**c: 総ビリルビン**\n**e: アルカリフォスファターゼ",
+        "time": 1.8474159240722656
+      },
+      {
+        "problem_id": "116F29",
+        "prediction": "はい、承知いたしまし",
+        "gold": "d,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\n国民生活基礎調査から求められる指標として適切なものは、以下の2つです。\n\n**b: 受療率**\n**e: 通院者率**",
+        "time": 1.8451838493347168
+      },
+      {
+        "problem_id": "116F30",
+        "prediction": "医学の専門家として、",
+        "gold": "d,e",
+        "correct": false,
+        "response": "医学の専門家として、この問題にお答えします。\n\n正常な妊娠経過において、妊娠前と比較して妊娠末期に増加する項目は以下の2つです。\n\n**d: フィブリノゲン**\n**e:",
+        "time": 1.8521850109100342
+      },
+      {
+        "problem_id": "116F31",
+        "prediction": "医学の専門家として、",
+        "gold": "a,c",
+        "correct": false,
+        "response": "医学の専門家として、ご質問にお答えします。\n\n先天異常と遺伝形式の組み合わせで正しいものを2つ選ぶ問題ですね。選択肢を一つずつ検討していきましょう。\n\n*   **a: 血友病 ---------",
+        "time": 1.9198870658874512
+      },
+      {
+        "problem_id": "116F32",
+        "prediction": "医学の専門家として、",
+        "gold": "b,c",
+        "correct": false,
+        "response": "医学の専門家として、転移性卵巣腫瘍の原発巣で頻度が高いものを2つ選択します。\n\n転移性卵巣腫瘍は、他の臓器から卵巣に転移した腫瘍",
+        "time": 1.84812593460083
+      },
+      {
+        "problem_id": "116F33",
+        "prediction": "a,b,e",
+        "gold": "a,b,e",
+        "correct": true,
+        "response": "医学の専門家として、高齢者の介護予防に重要な概念を3つ選択します。\n\n正解は **a, b, e** です。\n\n*   **a: フレイル (Frailty)** - 加齢に伴う",
+        "time": 1.846601963043213
+      },
+      {
+        "problem_id": "116F34",
+        "prediction": "医学の専門家として、",
+        "gold": "a,b,c",
+        "correct": false,
+        "response": "医学の専門家として、やせをきたす可能性のある疾患を3つ選択します。\n\n**答え:** a, c, e\n\n**解説:**\n\n*   **a: Addison病 (副腎皮質機能低下症",
+        "time": 1.8452019691467285
+      },
+      {
+        "problem_id": "116F35",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 73-year-old male with bilateral lower leg pain *specifically* during walking (5 minutes), located on the posterolateral aspect. Pain resol",
+        "time": 2.071976900100708
+      },
+      {
+        "problem_id": "116F36",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Request:** The user wants me to act as a medical expert and choose the correct answer from multiple-choice options regarding a 7-year-old boy with a rash. The key i",
+        "time": 1.9681942462921143
+      },
+      {
+        "problem_id": "116F37",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's profile:** 45-year-old female.\n2.  **Identify the main symptoms:** Bilateral hearing loss and tinnitus.\n3.  **Note the onset and",
+        "time": 1.9945030212402344
+      },
+      {
+        "problem_id": "116F38",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、耳介からの出血が止まらない25歳の男性の創傷消毒薬について質問しています。選択肢はa: 過酢酸, b: エタノール, c:",
+        "time": 1.923255205154419
+      },
+      {
+        "problem_id": "116F39",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "**正解:** c\n\n**解説:**\n\n*   **a: 頭蓋内の燃焼血腫:** これは火災後の変化であり、生存中に発生したとは限らない。死後に熱によって脳組織が損傷し、出血",
+        "time": 1.9236650466918945
+      },
+      {
+        "problem_id": "116F40",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、7歳の女児の右脛骨・腓骨骨折後の帰宅時生活指導に関する質問に答えることを求めている。選択肢の中から誤った指導を1つ選",
+        "time": 2.418065071105957
+      },
+      {
+        "problem_id": "116F41",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\nHere's a thinking process to arrive at the correct answer:\n\n1.  **Analyze the Patient Presentation:**\n    *   40-year-old male.\n    *   Chief complaints: Numbness and",
+        "time": 2.912315845489502
+      },
+      {
+        "problem_id": "116F42",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例から最も可能性の高い疾患を選択肢の中から選ぶことを求めている。\n\n**症例の分析:**\n* **患者:** 38歳男性\n*",
+        "time": 2.375875949859619
+      },
+      {
+        "problem_id": "116F43",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the question:** The question describes a 34-year-old woman (G2P1) at 39 weeks 5 days gestation admitted for labor. She has a history of normal vaginal",
+        "time": 2.281903028488159
+      },
+      {
+        "problem_id": "116F44",
+        "prediction": "**思考プロセス:*",
+        "gold": "c",
+        "correct": false,
+        "response": "**思考プロセス:**\n\n1.  **患者の状況を整理する:** 85歳男性、進行肺癌（治療歴なし）、3週間前肺炎入院中。抗菌薬と輸液のみで経過観察。意識レベル",
+        "time": 2.0768871307373047
+      },
+      {
+        "problem_id": "116F45",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 71-year-old male with jaundice (skin yellowing) for 3 days, preceded by fatigue for 1 month. History of type 2 diabetes (",
+        "time": 2.659359931945801
+      },
+      {
+        "problem_id": "116F46",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's condition:** 32-year-old primigravida (first pregnancy) at 41 weeks 0 days gestation. Presents with regular contractions starting from 1 AM,",
+        "time": 2.4228689670562744
+      },
+      {
+        "problem_id": "116F47",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、肺がんに対する放射線治療に伴う合併症について質問しています。選択肢の中から最も可能性の高い合併症を選ぶ必要があります。\n\n1.  **問題の分析:**\n    *   ",
+        "time": 1.9972569942474365
+      },
+      {
+        "problem_id": "116F48",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 69-year-old male with chronic kidney failure (CKF) due to diabetic nephropathy, on hemodialysis (HD) 3 times/week for",
+        "time": 2.3438720703125
+      },
+      {
+        "problem_id": "116F49",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、心筋虚血の有無を評価するための適切な検査を選択する問題に答えることを求めている。\n\n**患者情報:**\n* 66歳女性\n* 主訴:",
+        "time": 2.207735776901245
+      },
+      {
+        "problem_id": "116F50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "**a: 身体依存が認められる。**\n\n**解説:**\n\n*   **手指の震えと発汗:** これらはアルコール離脱症状（身体依存の徴候）として典型的です。3日前から断",
+        "time": 2.0701828002929688
+      },
+      {
+        "problem_id": "116F51",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、放射性物質汚染患者への対応に関する問題に答えることを求めている。\n問題文の状況：32歳男性、悪心を主訴に搬入。事故で",
+        "time": 2.340022087097168
+      },
+      {
+        "problem_id": "116F52",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づいて右足関節の状態を判断する問題に答えることを求めている。\n\n**症例の分析:**\n* **患者:** 20歳の男性\n",
+        "time": 1.9932739734649658
+      },
+      {
+        "problem_id": "116F53",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 46-year-old female presents with severe left flank pain radiating to the back, nausea, and pallor. History of similar episode 3 years ago ",
+        "time": 2.7555429935455322
+      },
+      {
+        "problem_id": "116F54",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\nHere's a thinking process to arrive at the correct answer:\n\n1.  **Analyze the Patient Profile:**\n    *   Age: 6 years old, male.\n    *   Presenting Complaint: Unilateral",
+        "time": 1.9968430995941162
+      },
+      {
+        "problem_id": "116F55",
+        "prediction": "はい、承知いたしまし",
+        "gold": "a,d",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、提示された症例に基づき、適切な選択肢を2つ選んで回答します。\n\n**症例の分析:**\n\n*   **患者情報:** 76歳男性",
+        "time": 2.829843044281006
+      },
+      {
+        "problem_id": "116F56",
+        "prediction": "はい、承知いたしまし",
+        "gold": "a,c",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\nこの患者さんの症状から考えられるのは、**躁状態（マニックエピソード）**です。双極性障害の初期症状である可能性も考えられます。",
+        "time": 2.116318941116333
+      },
+      {
+        "problem_id": "116F57",
+        "prediction": "はい、承知いたしまし",
+        "gold": "b,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\nこの症例は、外傷による眼球運動障害を示唆しています。複視が上方視時にのみ出現し、それ以外の方向（左方視、",
+        "time": 1.9760308265686035
+      },
+      {
+        "problem_id": "116F58",
+        "prediction": "はい、承知いたしまし",
+        "gold": "b,d,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、提示された情報に基づいて最適な治療法を3つ選択します。\n\n**分析:**\n\n*   **患者:** 73歳女性\n*   **主訴:** 2",
+        "time": 2.7307229042053223
+      },
+      {
+        "problem_id": "116F59",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づいて気道確保に使用する器具を写真（①～⑤）から選択することを求めている。\n\n**症例の分析:**\n\n*   **患者:** ",
+        "time": 3.067746162414551
+      },
+      {
+        "problem_id": "116F60",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "**正解:** c: 膀胱直腸窩\n\n**解説:**\n\n迅速簡易超音波検査（FAST: Focused Assessment with Sonography for Trauma）は、外傷患者における腹腔内出血の迅速なスクリー",
+        "time": 1.815938949584961
+      },
+      {
+        "problem_id": "116F61",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the clinical scenario:** The patient has suffered a significant right femur fracture and arterial injury (femoral artery laceration requiring repair). Initial resuscita",
+        "time": 2.048931837081909
+      },
+      {
+        "problem_id": "116F62",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Case:** A 48-year-old woman presents with left flank pain and malaise after a fall 3 days ago, resulting in a diagnosed left lower rib fracture. She has tenderness ",
+        "time": 3.2969279289245605
+      },
+      {
+        "problem_id": "116F63",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "正解は **a: 血液型** です。\n\n理由：\nこの問題文だけでは、患者さんの具体的な状況（症状、既往歴、緊急度など）が不明です。しかし、一般的に救急や集中",
+        "time": 1.7804489135742188
+      },
+      {
+        "problem_id": "116F64",
+        "prediction": "はい、承知いたしまし",
+        "gold": "a,c",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\n問題：入院し、経過をみた。翌日のバイタルサイン：体温37.2℃。脈拍128/分、整。血",
+        "time": 1.9868438243865967
+      },
+      {
+        "problem_id": "116F65",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Request:** The user wants me to act as a medical expert and choose the correct diagnosis from five options (a-e) based on a clinical case description. The answer sh",
+        "time": 3.0631370544433594
+      },
+      {
+        "problem_id": "116F66",
+        "prediction": "医学の専門家として、",
+        "gold": "a",
+        "correct": false,
+        "response": "医学の専門家として、この質問に答えるためには、患者に関する追加情報が必要です。弁膜症の種類（僧帽弁、大動脈弁など）、患者の年齢、性別、既往歴、症状、心エ",
+        "time": 1.8437669277191162
+      },
+      {
+        "problem_id": "116F67",
+        "prediction": "医学の専門家として、",
+        "gold": "b,e",
+        "correct": false,
+        "response": "医学の専門家として、弁膜症に対する緊急手術前の血行動態改善策について解説します。\n\n**問題:** 弁膜症に対する緊急手術を行うこととなった。手術までの治療として血行動態の改善が期待できる",
+        "time": 1.9107980728149414
+      },
+      {
+        "problem_id": "116F68",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the clinical scenario:** A 50-year-old female cancer patient with a central venous port develops fever and chills. She has signs of inflammation at the port site (redne",
+        "time": 3.3690052032470703
+      },
+      {
+        "problem_id": "116F69",
+        "prediction": "はい、承知いたしまし",
+        "gold": "b,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\nこの症例は、発熱が持続し、呼吸困難、そして足趾の発疹という特徴的な症状を示しています。これらの情報から、感染症、",
+        "time": 1.9126651287078857
+      },
+      {
+        "problem_id": "116F70",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "正解は **d** です。\n\n**解説:**\n\n*   **a: 血液培養の陰性化を確認後に行う。**\n    中心静脈ポートに関連する感染症（菌血症など）が疑",
+        "time": 1.9085078239440918
+      },
+      {
+        "problem_id": "116F71",
+        "prediction": "はい、承知いたしまし",
+        "gold": "c,d",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、この問題に回答します。\n\n**思考プロセス:**\n\n1.  **患者の状況を把握する:** 65歳の女性。便潜血陽性で来院",
+        "time": 3.6011669635772705
+      },
+      {
+        "problem_id": "116F72",
+        "prediction": "画像がないため、正確",
+        "gold": "a",
+        "correct": false,
+        "response": "画像がないため、正確な診断はできません。しかし、一般的な下部消化管内視鏡像で病変が見られる部位として、それぞれの選択肢の特徴を説明します。\n\n*   **a: 直腸:** 肛門",
+        "time": 1.8484711647033691
+      },
+      {
+        "problem_id": "116F73",
+        "prediction": "はい、承知いたしまし",
+        "gold": "e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\n問題文と提示された選択肢、そして（仮に）示されている下部消化管内視鏡像を考慮すると、最も可能性の高い治療法は **",
+        "time": 1.889697790145874
+      },
+      {
+        "problem_id": "116F74",
+        "prediction": "はい、承知いたしまし",
+        "gold": "04",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、オッズ比を計算します。\n\n**考え方:**\n\nオッズ比（Odds Ratio, OR）は、ある曝露が疾患のリスクをどれだけ高めるか",
+        "time": 1.9926960468292236
+      },
+      {
+        "problem_id": "116F75",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the clinical scenario:**\n    *   Patient: 40-year-old multiparous woman (G4P3).\n    *   Gestational age: 14 weeks.\n",
+        "time": 2.0673649311065674
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

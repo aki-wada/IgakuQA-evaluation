@@ -21,7 +21,7 @@ PROMPTS = {
     "baseline": {
         "name": "Baseline (現行)",
         "system": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
-        "max_tokens": 50
+        "max_tokens": 512
     },
     "format_strict": {
         "name": "案A: 回答形式強化",
@@ -29,7 +29,7 @@ PROMPTS = {
 問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。
 複数選択の場合はカンマ区切りで回答してください。例: a,c
 余計な説明は不要です。""",
-        "max_tokens": 50
+        "max_tokens": 512
     },
     "chain_of_thought": {
         "name": "案B: 段階的思考",
@@ -41,7 +41,7 @@ PROMPTS = {
 3. 正解を選択
 
 最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。""",
-        "max_tokens": 200
+        "max_tokens": 512
     },
     "japanese_medical": {
         "name": "案C: 日本医療文脈",
@@ -54,7 +54,7 @@ PROMPTS = {
 - 指定された個数を必ず選択
 
 回答形式: a または a,b,c（複数の場合）""",
-        "max_tokens": 50
+        "max_tokens": 512
     }
 }
 
@@ -126,6 +126,9 @@ def extract_answer(response: str, prompt_key: str = "baseline") -> str:
     # qwen3 の <think>...</think> タグを除去
     response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
 
+    # medgemma の <unused94>thought 思考タグを除去
+    response = re.sub(r'<unused\d+>thought.*', '', response, flags=re.DOTALL).strip()
+
     if not response:
         return ""
 
@@ -135,20 +138,38 @@ def extract_answer(response: str, prompt_key: str = "baseline") -> str:
     response_lower = response_lower.replace('ａ', 'a').replace('ｂ', 'b').replace('ｃ', 'c')
     response_lower = response_lower.replace('ｄ', 'd').replace('ｅ', 'e')
 
-    # Chain-of-thought の場合、最終行の「答え:」以降を優先
-    if prompt_key == "chain_of_thought":
-        # 「答え:」「答え：」などを探す
-        answer_patterns = [r'答え[:：]\s*([a-e,\s]+)', r'回答[:：]\s*([a-e,\s]+)']
-        for pattern in answer_patterns:
-            match = re.search(pattern, response_lower)
-            if match:
-                found = match.group(1)
-                matches = re.findall(r'[a-e]', found)
-                if matches:
-                    return ','.join(sorted(set(matches)))
+    # 1. 冒頭が単独の選択肢文字（a-e）のみの場合（最も確実）
+    head_match = re.match(r'^([a-e](?:\s*[,、]\s*[a-e])*)\s*$', response_lower.split('\n')[0].strip())
+    if head_match:
+        matches = re.findall(r'[a-e]', head_match.group(1))
+        if matches:
+            return ','.join(sorted(set(matches)))
 
-    # 通常の抽出（最初の50文字から）
-    matches = re.findall(r'[a-e]', response_lower[:100])
+    # 2. 「正解は X」「正解: X」「選択肢は X」パターン
+    seikai_patterns = [
+        r'正解[はは]\s*\*{0,2}\s*([a-e](?:\s*[,、]\s*[a-e])*)',
+        r'正解[:：]\s*\*{0,2}\s*([a-e](?:\s*[,、]\s*[a-e])*)',
+        r'選択肢は\s*\*{0,2}\s*([a-e](?:\s*[,、]\s*[a-e])*)',
+    ]
+    for pattern in seikai_patterns:
+        match = re.search(pattern, response_lower)
+        if match:
+            matches = re.findall(r'[a-e]', match.group(1))
+            if matches:
+                return ','.join(sorted(set(matches)))
+
+    # 3. 「答え:」「回答:」パターン（CoT含む全プロンプト共通）
+    answer_patterns = [r'答え[:：]\s*([a-e,\s]+)', r'回答[:：]\s*([a-e,\s]+)']
+    for pattern in answer_patterns:
+        match = re.search(pattern, response_lower)
+        if match:
+            found = match.group(1)
+            matches = re.findall(r'[a-e]', found)
+            if matches:
+                return ','.join(sorted(set(matches)))
+
+    # 4. フォールバック: 最初の20文字から抽出（短い範囲で誤検出を防止）
+    matches = re.findall(r'[a-e]', response_lower[:20])
 
     if matches:
         unique = sorted(set(matches))

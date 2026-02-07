@@ -1,6 +1,6 @@
 # IgakuQA 評価プロジェクト 申し送り
 
-**最終更新**: 2026-02-07
+**最終更新**: 2026-02-07（セッション3終了時）
 **実行環境**: Mac Studio M3 Ultra (192GB RAM)
 **GitHub**: https://github.com/aki-wada/IgakuQA-evaluation
 
@@ -10,9 +10,9 @@
 
 ローカルLLM（LM Studio経由）で日本の医師国家試験（IgakuQA）を解かせ、モデル性能を比較するベンチマーク評価プロジェクト。
 
-- **評価対象**: 第116回医師国家試験（2022年）A問題 75問
-- **合格ライン**: 75%（56/75問）
-- **評価済みモデル数**: 33モデル（うち合格12モデル、評価失敗8モデル）
+- **評価対象**: 第116回医師国家試験（2022年）A問題 75問（メイン）、全セクション400問（medgemma評価）
+- **合格ライン**: セクションA単独 75%（56/75問）、全セクション総合 75%（300/400問）
+- **評価済みモデル数**: 33モデル（うち合格12モデル、評価失敗8モデル）+ medgemma-27b全セクション評価完了
 - **最高スコア**: gpt-oss-120b MLX 8bit = **92.0%**（案A, mt=1024）
 
 ---
@@ -27,18 +27,21 @@ IgakuQA/
 ├── plot_size_vs_accuracy.py       # 可視化スクリプト（3種のプロット生成）
 ├── test_glm_settings.py           # glm-4.7-flash診断スクリプト
 ├── EVALUATION_PROGRESS.md         # 全評価結果・考察・手順の主要ドキュメント
+├── HANDOVER.md                    # 本ファイル（申し送り）
 ├── data/
 │   ├── 2018/ ～ 2022/             # 各年度の試験データ（JSONL）
 │   └── 2022/116-{A..F}.jsonl      # 2022年 セクションA～F
-├── results/                        # 評価結果JSON（33ファイル）
-│   ├── prompt_comparison_*.json   # v2プロンプト比較結果
+├── results/                        # 評価結果JSON
+│   ├── prompt_comparison_*.json   # v2プロンプト比較結果（33ファイル）
+│   ├── medgemma-27b_*.json        # medgemma全セクション結果（12ファイル）
 │   └── *_evaluation.json          # v1評価結果
 ├── plots/                          # 生成プロット
-│   ├── size_vs_accuracy_scatter.png  # モデルサイズ vs 精度
-│   ├── scaling_analysis.png          # スケーリング分析（4パネル）
-│   ├── pareto_and_budget.png         # パレートフロンティア＋メモリバジェット
-│   └── memory_efficiency.png         # メモリ効率
-├── venv/                           # Python仮想環境
+│   ├── size_vs_accuracy_scatter.png
+│   ├── scaling_analysis.png
+│   ├── pareto_and_budget.png
+│   └── memory_efficiency.png
+├── scripts/prompts/prompt.jsonl   # Few-shot用例題（第100回問題）
+├── venv/                           # Python仮想環境（Python 3.9）
 └── requirements.txt
 ```
 
@@ -67,18 +70,32 @@ python evaluate_prompt_comparison.py \
 | `--prompts` | 全4種 | テストするプロンプト（baseline format_strict chain_of_thought japanese_medical） |
 | `--limit` | None | 問題数制限（デバッグ用） |
 | `--use-few-shot` | OFF | 2-shot例の追加 |
+| `--output` | 自動生成 | 出力ファイルパス |
 
 ### max_tokens設定（evaluate_prompt_comparison.py内のPROMPTS辞書）
 
 ```
-現在のデフォルト:
+デフォルト値（通常モデル用）:
   baseline:          50
   format_strict:     50
   chain_of_thought: 200
   japanese_medical:  50
 ```
 
-**重要**: reasoningモデル（gpt-oss系）やqwen3-next-80bなど一部モデルでは、max_tokensが精度に極めて大きな影響を与える。これらのモデルではmax_tokens=1024に変更して実行する必要がある（実行後デフォルトに戻すこと）。
+**重要**: reasoningモデル（gpt-oss系）やqwen3-next-80b、medgemma-27b（thinking mode対策）では、max_tokensの変更が必要。詳細は後述。
+
+### スクリプトの現在の状態
+
+**注意: evaluate_prompt_comparison.py の max_tokens は現在すべて 512 に設定されている。**
+medgemma-27b評価のために変更済み。通常モデルの評価前にデフォルト値に戻す必要がある。
+
+```python
+# 現在の値（要復元）
+"baseline":          {"max_tokens": 512},  # デフォルト: 50
+"format_strict":     {"max_tokens": 512},  # デフォルト: 50
+"chain_of_thought":  {"max_tokens": 512},  # デフォルト: 200
+"japanese_medical":  {"max_tokens": 512},  # デフォルト: 50
+```
 
 ### qwen3モデルの自動対応
 
@@ -93,6 +110,7 @@ python evaluate_prompt_comparison.py \
 
 - **gpt-ossシリーズ**: reasoningモデルのため内部推論がトークンを消費。mt=50では空回答が多発（0-33%）、mt=1024で解消（77-92%）
 - **qwen3-next-80b**: mt=50でBaseline 66.7%と低く、案B(mt=200)は0%。mt=1024で案C 85.3%達成
+- **medgemma-27b**: `<unused94>thought`タグで思考モード発動。mt=50ではセクションB-Fで大量の空回答。mt=512で解消
 - **通常モデル**（qwen3, llama, gemma等）: mt=50で十分な性能を発揮
 
 ### プロンプト依存性の傾向
@@ -120,9 +138,104 @@ python evaluate_prompt_comparison.py \
 
 ---
 
-## 5. 現在のLM Studio状態
+## 5. medgemma-27b 全セクション評価（進行中）
 
-- **ロード中のモデル**: qwen3-next-80b（84.67 GB）
+### 評価済み結果
+
+#### 1回目: mt=50, Baseline（セクションA既存 + B-F新規）
+
+| セクション | 問題数 | 正答数 | 正答率 | 空回答数 | 備考 |
+|-----------|--------|--------|--------|---------|------|
+| A | 75 | 57 | 76.0% | 0 | 既存結果（prompt_comparison で評価済み） |
+| B | 50 | 10 | 20.0% | 20 | thinking mode多発 |
+| C | 75 | 24 | 32.0% | 36 | thinking mode多発 |
+| D | 75 | 15 | 20.0% | 48 | thinking mode多発 |
+| E | 50 | 26 | 52.0% | 0 | 比較的安定 |
+| F | 75 | 21 | 28.0% | 33 | thinking mode多発 |
+| **合計** | **400** | **170** | **42.5%** | **137** | **不合格** |
+
+**根本原因**: medgemmaが `<unused94>thought` タグで英語の思考モードに入り、mt=50ではトークンが足りず回答を出力できない。
+
+#### 2回目: mt=512, Baseline改変（「思考過程の出力は不要です。回答のみを出力してください。」追加）
+
+| セクション | 問題数 | 正答数 | 正答率 | 空回答数 | 前回比 |
+|-----------|--------|--------|--------|---------|--------|
+| A | 75 | 48 | 64.0% | 0 | -12.0% |
+| B | 50 | 37 | 74.0% | 0 | +54.0% |
+| C | 75 | 51 | 68.0% | 0 | +36.0% |
+| D | 75 | 52 | 69.3% | 0 | +49.3% |
+| E | 50 | 36 | 72.0% | 0 | +20.0% |
+| F | 75 | 47 | 62.7% | 0 | +34.7% |
+| **合計** | **400** | **271** | **67.8%** | **0** | **+25.2%** |
+
+**結果**: 不合格だが大幅改善（+25.2%）。セクションAはプロンプト改変により逆に精度低下（-12%）。
+
+**注意**: 2回目はBaselineのプロンプト文とmax_tokensの両方を同時に変更したため、どちらが効いたか切り分けできていない。
+
+#### 3回目: mt=512, オリジナル4プロンプト（few-shotなし）— セクションA
+
+**評価日**: 2026-02-07（セッション3）
+**目的**: プロンプト文をオリジナルのまま、max_tokensのみ512に変更。
+
+| Prompt | 正答率 | 空回答 | 平均応答時間 | 状態 |
+|--------|--------|--------|------------|------|
+| Baseline | 17.3% (13/75) | 多数 | ~15s | 完了 |
+| 案A | 57.3% (43/75) | 0 | ~0.9s | 完了 |
+| 案B | — | 多数 | ~15s | 4問で中断 |
+| 案C | — | — | — | 未実行 |
+
+**発見**: 案Aのプロンプト（「アルファベットのみで回答」「余計な説明は不要」）が思考モードを完全に抑制。Baselineと案Bは思考モードが多発。
+
+#### 4回目: mt=512, 全4プロンプト + Few-shot — セクションA
+
+**評価日**: 2026-02-07（セッション3）
+**条件**: オリジナル4プロンプト + 2-shot few-shot + max_tokens=512
+
+| Rank | Prompt | 正答率 | 空回答 | 平均応答時間 |
+|------|--------|--------|--------|------------|
+| 1 | **Baseline + few-shot** | **76.0%** (57/75) | 0 | 1.0s |
+| 2 | 案C + few-shot | 74.7% (56/75) | 0 | 1.0s |
+| 3 | 案A + few-shot | 70.7% (53/75) | 0 | 0.9s |
+| 4 | 案B + few-shot | 56.0% (42/75) | 0 | 5.3s |
+
+**最重要発見**: **Few-shotがmedgemmaの思考モード抑制に決定的に有効**
+- Baseline: few-shotなし17.3% → few-shotあり**76.0%**（+58.7%）
+- 全プロンプトで空回答が0に
+
+#### 5回目: mt=512, Baseline + Few-shot — 全セクション（最終評価）
+
+**評価日**: 2026-02-07（セッション3）
+**条件**: Baseline + 2-shot few-shot + max_tokens=512
+
+| セクション | 問題数 | 正答数 | 正答率 | 空回答数 | 2回目比 |
+|-----------|--------|--------|--------|---------|--------|
+| A | 75 | 57 | **76.0%** | 0 | +12.0% |
+| B | 50 | 41 | **82.0%** | 0 | +8.0% |
+| C | 75 | 46 | 61.3% | 0 | -6.7% |
+| D | 75 | 57 | **76.0%** | 0 | +6.7% |
+| E | 50 | 38 | **76.0%** | 0 | +4.0% |
+| F | 75 | 48 | 64.0% | 0 | +1.3% |
+| **合計** | **400** | **287** | **71.8%** | **0** | **+4.0%** |
+
+**総合判定: 不合格（287/400 = 71.8%, 合格ライン75% = 300/400, あと13問）**
+
+**medgemma-27b全評価の推移**:
+- 1回目（mt=50, no few-shot）: 42.5%
+- 2回目（mt=512, 改変プロンプト）: 67.8%（+25.2%）
+- **5回目（mt=512, Baseline+few-shot）: 71.8%（+4.0%）**
+
+### 回答抽出の改善（このセッションで実施済み）
+
+`extract_answer()` 関数に以下の改善を実施済み:
+- `<unused\d+>thought` タグ（medgemma思考モード）の除去
+- 抽出の優先順位: head match → 「正解は X」→「答え:」→ fallback（20文字以内）
+- フォールバック範囲を100文字→20文字に縮小（誤検出防止）
+
+---
+
+## 6. 現在のLM Studio状態
+
+- **ロード中のモデル**: medgemma-27b-text-it-mlx（16.03 GB, MLX 4-bit）
 - **API**: http://localhost:1234/v1
 
 ### モデル管理コマンド
@@ -144,7 +257,7 @@ curl -s http://localhost:1234/v1/models | python3 -c \
 
 ---
 
-## 6. 未評価モデル一覧
+## 7. 未評価モデル一覧
 
 ### 大規模（70B+）
 - llama-3.1-swallow-70b-instruct-v0.3
@@ -168,21 +281,27 @@ curl -s http://localhost:1234/v1/models | python3 -c \
 
 ---
 
-## 7. 未実施タスク
+## 8. 未実施タスク
 
-- [ ] medgemma-27bで全セクション(A-F)評価 → 総合合否判定
+### medgemma-27b関連（完了）
+- [x] mt=512で全4プロンプト比較（セクションA）→ 最適プロンプト特定
+- [x] 全4プロンプトにFew-shot追加して再評価 → **Baseline+few-shot = 76.0%が最良**
+- [x] 最適設定で全セクション（B-F）評価 → **総合71.8%で不合格（あと13問）**
+
+### その他
 - [ ] 年度別比較（2018-2022）
 - [ ] カテゴリ別分析（神経科、放射線科など）
 - [ ] 上記未評価モデルの評価
-- [ ] Gitへのコミット・プッシュ（多数の新規ファイルが未コミット）
+- [ ] Gitへのコミット・プッシュ（medgemma結果ファイル + few-shot結果ファイルが未コミット）
+- [ ] evaluate_prompt_comparison.py の max_tokens をデフォルトに復元
 
 ---
 
-## 8. 注意事項
+## 9. 注意事項
 
 ### evaluate_prompt_comparison.py の変更時
 
-max_tokensを変更して特定モデルを評価した場合、**評価後に必ずデフォルト値に戻すこと**:
+**現在のmax_tokensは全て512に変更済み。** 通常モデル評価前に必ずデフォルト値に戻すこと:
 ```python
 PROMPTS = {
     "baseline":          {"max_tokens": 50},
@@ -209,22 +328,48 @@ python plot_size_vs_accuracy.py
 2. ラベル位置調整: `offset_x`, `offset_y` のカスタマイズ（重なり防止）
 3. バジェットティア: 必要に応じて `budgets` リストにティアを追加
 
-### Git状態
+### Git状態（2026-02-07時点）
 
-- `EVALUATION_PROGRESS.md` は変更済み（未コミット）
-- `evaluate_prompt_comparison.py`, `plot_size_vs_accuracy.py`, `results/`, `plots/` は未追跡
-- `test_glm_settings.py` も未追跡
+**最新コミット**: `e65c64f` - Add v2 prompt comparison: 33 models evaluated, 12 pass (best 92.0%)
+
+未コミットの変更:
+- `EVALUATION_PROGRESS.md` — 変更済み（medgemma全評価結果追記）
+- `HANDOVER.md` — 変更済み（セッション3の結果追記）
+- `evaluate_prompt_comparison.py` — 変更済み（max_tokens=512, 抽出ロジック改善）
+
+未追跡の新規ファイル:
+- `results/medgemma-27b_2022_{B,C,D,E,F}.json` — mt=50での評価結果
+- `results/medgemma-27b_mt512_2022_{A,B,C,D,E,F}.json` — mt=512改変プロンプトでの評価結果
+- `results/medgemma-27b_mt512_fewshot_allprompts_2022_A.json` — 全4プロンプト+few-shot比較結果
+- `results/medgemma-27b_mt512_fewshot_2022_{B,C,D,E,F}.json` — Baseline+few-shotでの全セクション結果
 
 ---
 
-## 9. 評価実行の典型的な流れ
+## 10. 評価実行の典型的な流れ
 
 1. LM Studioでモデルをロード（`lms load "モデルID"`）
 2. APIの疎通確認（`lms status`）
-3. reasoningモデル/MoEモデルの場合、`evaluate_prompt_comparison.py` の max_tokens を 1024 に変更
+3. reasoningモデル/MoEモデル/medgemmaの場合、`evaluate_prompt_comparison.py` の max_tokens を変更（512 or 1024）
 4. 評価実行: `python evaluate_prompt_comparison.py --model "モデルID" --year 2022 --section A`
 5. 結果確認: `results/prompt_comparison_モデルID_2022_A.json`
 6. max_tokensを変更した場合はデフォルトに戻す
 7. `EVALUATION_PROGRESS.md` に結果を追記（サマリーテーブル＋詳細セクション）
 8. `plot_size_vs_accuracy.py` にデータ追加＆プロット再生成
 9. 変更履歴を更新
+
+---
+
+## 11. medgemma-27b評価（完了）
+
+全Phase完了済み（2026-02-07, セッション3）:
+
+- **Phase 1**: 全4プロンプト比較（mt=512, few-shotなし）→ 案A(57.3%)が最良、Baselineは思考モードで17.3%
+- **Phase 2**: 全4プロンプト + Few-shot → **Baseline+few-shot(76.0%)**が最良
+- **Phase 3**: 全セクション(A-F)評価 → **287/400 = 71.8% → 不合格（あと13問）**
+- **Phase 4**: EVALUATION_PROGRESS.md更新済み
+
+### 結論: medgemma-27bのmedgemmaの最適設定
+- **プロンプト**: Baseline（シンプルが最善）
+- **Few-shot**: 必須（思考モード抑制に決定的）
+- **max_tokens**: 512（思考モード対策）
+- **最終スコア**: 71.8%（合格ライン75%に届かず）

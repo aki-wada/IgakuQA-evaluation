@@ -1,0 +1,626 @@
+{
+  "timestamp": "2026-02-07T11:59:57.217869",
+  "model": "medgemma-27b-text-it-mlx",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 46,
+      "accuracy": 0.6133333333333333,
+      "avg_time": 1.7669531122843425,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116C1",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c",
+        "time": 0.5877969264984131
+      },
+      {
+        "problem_id": "116C2",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 0.5788991451263428
+      },
+      {
+        "problem_id": "116C3",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.5215039253234863
+      },
+      {
+        "problem_id": "116C4",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "この問題に答えるためには、乳児頭蓋のCT画像と縫合線の位置を示す図が必要です。画像がないため、一般的な知識に基づいて回答します。\n\n乳児の頭蓋骨は、成人になるにつれて骨が成長し、縫合線（骨と骨の間をつなぐ繊維性の組織）が閉鎖していきます。成人までに消失する縫合線として、特に重要なのは以下のものです。\n\n*   **前頭骨縫合線 (Metopic suture):** 前頭骨を左右に分割する縫合線。",
+        "time": 11.159253120422363
+      },
+      {
+        "problem_id": "116C5",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 0.5843288898468018
+      },
+      {
+        "problem_id": "116C6",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.5846033096313477
+      },
+      {
+        "problem_id": "116C7",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.565871000289917
+      },
+      {
+        "problem_id": "116C8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 0.4931941032409668
+      },
+      {
+        "problem_id": "116C9",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.5148463249206543
+      },
+      {
+        "problem_id": "116C10",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.5815730094909668
+      },
+      {
+        "problem_id": "116C11",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 0.6352567672729492
+      },
+      {
+        "problem_id": "116C12",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 0.5053520202636719
+      },
+      {
+        "problem_id": "116C13",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.5028748512268066
+      },
+      {
+        "problem_id": "116C14",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 0.5145792961120605
+      },
+      {
+        "problem_id": "116C15",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.4240849018096924
+      },
+      {
+        "problem_id": "116C16",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 0.5058948993682861
+      },
+      {
+        "problem_id": "116C17",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.7261960506439209
+      },
+      {
+        "problem_id": "116C18",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "d",
+        "time": 0.5123820304870605
+      },
+      {
+        "problem_id": "116C19",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "この問題は、図がないため正確な回答が難しいです。しかし、一般的に1日摂取許容量（ADI: Acceptable Daily Intake）の計算においては、安全域（Margin of Safety, MOS）を考慮します。\n\n*   **①:** 毒性が発現する確率が低い領域（安全域）\n*   **②:** 毒性が発現する確率が高まる領域\n*   **③:** 毒性が発現する確率が非常に高い領域（",
+        "time": 12.056324005126953
+      },
+      {
+        "problem_id": "116C20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 0.530775785446167
+      },
+      {
+        "problem_id": "116C21",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "b",
+        "time": 0.6495010852813721
+      },
+      {
+        "problem_id": "116C22",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 0.4901270866394043
+      },
+      {
+        "problem_id": "116C23",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.45707178115844727
+      },
+      {
+        "problem_id": "116C24",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.5014200210571289
+      },
+      {
+        "problem_id": "116C25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.5118269920349121
+      },
+      {
+        "problem_id": "116C26",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 0.5082359313964844
+      },
+      {
+        "problem_id": "116C27",
+        "prediction": "b,c",
+        "gold": "b,c",
+        "correct": true,
+        "response": "b,c",
+        "time": 0.5633258819580078
+      },
+      {
+        "problem_id": "116C28",
+        "prediction": "c,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "c,e",
+        "time": 0.5649228096008301
+      },
+      {
+        "problem_id": "116C29",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 0.639056921005249
+      },
+      {
+        "problem_id": "116C30",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e",
+        "time": 0.6360287666320801
+      },
+      {
+        "problem_id": "116C31",
+        "prediction": "b,d",
+        "gold": "b,d",
+        "correct": true,
+        "response": "b,d",
+        "time": 0.5628397464752197
+      },
+      {
+        "problem_id": "116C32",
+        "prediction": "c,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "c,e",
+        "time": 0.6397581100463867
+      },
+      {
+        "problem_id": "116C33",
+        "prediction": "a,e",
+        "gold": "b,c",
+        "correct": false,
+        "response": "この問題は、心臓の解剖学的な位置関係と心エコー像の理解を問うています。画像がないため、一般的な知識に基づいて回答します。\n\n*   **A (収縮期):** 収縮期には心室が収縮し、心房は拡張します。右心房（a）は心臓の右上に位置し、収縮期には拡張しているため、Aが右心房である可能性はあります。\n*   **B (拡張期):** 拡張期には心室が拡張し、心房は収縮します。僧帽弁（b）は左心房と左心",
+        "time": 9.241129875183105
+      },
+      {
+        "problem_id": "116C34",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "a,e",
+        "time": 0.6412999629974365
+      },
+      {
+        "problem_id": "116C35",
+        "prediction": "b,d,e",
+        "gold": "b,c,e",
+        "correct": false,
+        "response": "b,d,e",
+        "time": 0.6769709587097168
+      },
+      {
+        "problem_id": "116C36",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "d",
+        "time": 0.88690185546875
+      },
+      {
+        "problem_id": "116C37",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 1.4922420978546143
+      },
+      {
+        "problem_id": "116C38",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 0.7831358909606934
+      },
+      {
+        "problem_id": "116C39",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 0.5748660564422607
+      },
+      {
+        "problem_id": "116C40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 1.3372769355773926
+      },
+      {
+        "problem_id": "116C41",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 1.2200660705566406
+      },
+      {
+        "problem_id": "116C42",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.650261640548706
+      },
+      {
+        "problem_id": "116C43",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 1.2457761764526367
+      },
+      {
+        "problem_id": "116C44",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "d",
+        "time": 0.7323970794677734
+      },
+      {
+        "problem_id": "116C45",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 0.8622581958770752
+      },
+      {
+        "problem_id": "116C46",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.6386830806732178
+      },
+      {
+        "problem_id": "116C47",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 0.8087239265441895
+      },
+      {
+        "problem_id": "116C48",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 0.8634529113769531
+      },
+      {
+        "problem_id": "116C49",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "b",
+        "time": 0.7087597846984863
+      },
+      {
+        "problem_id": "116C50",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "e",
+        "time": 1.0792241096496582
+      },
+      {
+        "problem_id": "116C51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.9456098079681396
+      },
+      {
+        "problem_id": "116C52",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a",
+        "time": 0.7051651477813721
+      },
+      {
+        "problem_id": "116C53",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 1.0809028148651123
+      },
+      {
+        "problem_id": "116C54",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.652965784072876
+      },
+      {
+        "problem_id": "116C55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 1.3830761909484863
+      },
+      {
+        "problem_id": "116C56",
+        "prediction": "a,b",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,b",
+        "time": 0.8487846851348877
+      },
+      {
+        "problem_id": "116C57",
+        "prediction": "b,c",
+        "gold": "b,c",
+        "correct": true,
+        "response": "b,c",
+        "time": 1.1448040008544922
+      },
+      {
+        "problem_id": "116C58",
+        "prediction": "b,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "b,e",
+        "time": 1.211031198501587
+      },
+      {
+        "problem_id": "116C59",
+        "prediction": "c,d",
+        "gold": "c,e",
+        "correct": false,
+        "response": "c,d",
+        "time": 0.8386960029602051
+      },
+      {
+        "problem_id": "116C60",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.269244909286499
+      },
+      {
+        "problem_id": "116C61",
+        "prediction": "この問題だけでは、患",
+        "gold": "d",
+        "correct": false,
+        "response": "この問題だけでは、患者さんの病態に関する情報が全くありません。内服薬と病態を結びつけるためには、患者さんの症状や検査結果などの情報が必要です。\n\n例えば、以下のような情報があれば推測できます。\n\n*   **症状:** 肝機能障害、筋肉痛、出血傾向、発疹、心不全など\n*   **検査結果:** AST/ALT上昇、CK上昇、PT-INR延長、血小板減少など\n\nこれらの情報がないため、現時点ではどの",
+        "time": 11.033154726028442
+      },
+      {
+        "problem_id": "116C62",
+        "prediction": "この質問だけでは、患",
+        "gold": "b",
+        "correct": false,
+        "response": "この質問だけでは、患者さんの状態が不明なため、適切な治療法を判断できません。\nどのような状況の患者さんでしょうか？（例：脱水、低血糖、電解質異常など）\n状況が分かれば、より適切な選択肢を提示できます。\n\nもし、一般的な状況として「意識障害があり、輸液が必要な場合」を想定するならば、以下のようになります。\n\n*   **a: 維持輸液（組成：Na+ 35mEq/L、K+ 20mEq/L、Cl- 35",
+        "time": 15.111369132995605
+      },
+      {
+        "problem_id": "116C63",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.1760568618774414
+      },
+      {
+        "problem_id": "116C64",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 1.0914928913116455
+      },
+      {
+        "problem_id": "116C65",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.7815282344818115
+      },
+      {
+        "problem_id": "116C66",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 1.720470905303955
+      },
+      {
+        "problem_id": "116C67",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b",
+        "time": 0.44298696517944336
+      },
+      {
+        "problem_id": "116C68",
+        "prediction": "b,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "この質問だけでは、どのような病態に関連する薬剤を問われているのか不明です。病態の情報がないため、一般的な可能性として回答します。\n\n**考えられる病態と関連する薬剤の組み合わせ:**\n\n*   **糖尿病:** c (スルホニル尿素薬)\n*   **高血圧:** e (ACE阻害薬)\n*   **脂質異常症:** b (スタチン)\n*   **痛み・炎症:** a (NSAID)\n*   **不安",
+        "time": 5.0147788524627686
+      },
+      {
+        "problem_id": "116C69",
+        "prediction": "a,b",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,b",
+        "time": 2.299481153488159
+      },
+      {
+        "problem_id": "116C70",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 1.0073189735412598
+      },
+      {
+        "problem_id": "116C71",
+        "prediction": "a,b,d",
+        "gold": "a,b,e",
+        "correct": false,
+        "response": "a,b,d",
+        "time": 0.6194732189178467
+      },
+      {
+        "problem_id": "116C72",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 2.2207870483398438
+      },
+      {
+        "problem_id": "116C73",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 1.1450018882751465
+      },
+      {
+        "problem_id": "116C74",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.5639989376068115
+      },
+      {
+        "problem_id": "116C75",
+        "prediction": "**思考プロセス:*",
+        "gold": "325",
+        "correct": false,
+        "response": "**思考プロセス:**\n\n1.  **患児の体重を確認する:** 3,200g = 3.2kg\n2.  **患児の必要エネルギー量を計算する:** 100kcal/kg/日 * 3.2kg = 320kcal/日\n3.  **人工乳からのエネルギー摂取量を計算する:**\n    *   1回量: 20mL\n    *   1日の投与量: 20mL/回 * 8回 = 160mL\n    *   1日",
+        "time": 11.960170984268188
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

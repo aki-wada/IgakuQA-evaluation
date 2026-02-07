@@ -1,0 +1,426 @@
+{
+  "timestamp": "2026-02-07T10:27:59.067640",
+  "model": "medgemma-27b-text-it-mlx",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 50,
+      "correct": 26,
+      "accuracy": 0.52,
+      "avg_time": 2.1029875802993776,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116E1",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "**答え:** a\n\n**解説:**\n\n血痰の原因を検索する上で、各検査の優先度と目的は以下の通りです。\n\n*   **a: 喀痰細胞診:** 血痰の原因が気道や肺",
+        "time": 1.8637261390686035
+      },
+      {
+        "problem_id": "116E2",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "正解は **e** です。\n\n**解説:**\n\n*   **a, b, c, d** は、いずれも患者のプライバシーや個人情報保護の観点から不適切な行為です。医師は、診断",
+        "time": 1.9252121448516846
+      },
+      {
+        "problem_id": "116E3",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "**正解:** b\n\n**解説:**\n\nリンパ節の腫大には、癌の転移（悪性）と炎症（良性）の両方が考えられます。それぞれの特徴を比較し、炎症性の腫大を示唆",
+        "time": 1.8571059703826904
+      },
+      {
+        "problem_id": "116E4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "正解は **d: 蜂巣炎（蜂窩織炎）** です。\n\n**解説:**\n\n*   **a: 肝硬変:** 肝硬変による浮腫は、低アルブミン血症",
+        "time": 1.8436989784240723
+      },
+      {
+        "problem_id": "116E5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "**正解:** d\n\n**解説:**\n\nこの問題は、全身性エリテマトーデス（SLE）患者を対象としたアンケート調査の倫理的配慮について問うています。各選択肢を検討し、",
+        "time": 2.0472331047058105
+      },
+      {
+        "problem_id": "116E6",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "正解は **b: Murphy徴候 --------- 急性胆嚢炎** です。\n\n*   **Murphy徴候:** 腹部を診察する際に、右季肋骨部に圧迫すると患者が痛みで息を",
+        "time": 1.8943421840667725
+      },
+      {
+        "problem_id": "116E7",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "正解は **b: 肺静脈** です。\n\n解説：\n正常な胎児循環において、最も酸素分圧が高い血液は、胎盤から戻ってきた動脈血を介して臍静脈を通って胎",
+        "time": 1.8422489166259766
+      },
+      {
+        "problem_id": "116E8",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "正解は **a: 敗血症 --------- ノルアドレナリン** です。\n\n理由：\n*   **敗血症性ショック**は、感染症によって引き起こされる全身性の炎症反応により、血管",
+        "time": 1.9158682823181152
+      },
+      {
+        "problem_id": "116E9",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c: 亜急性期** です。\n\n地域医療構想における病床機能区分は、以下の5つです。\n*   **高度急性期:** 救命・集中治療を必要とする患者さん",
+        "time": 1.8414840698242188
+      },
+      {
+        "problem_id": "116E10",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "正解は **c: 高血圧合併妊娠** です。\n\n**解説:**\n\n妊娠高血圧症候群は、妊娠中に発症する高血圧とそれに伴う臓器障害（特に腎障害）を",
+        "time": 1.8468830585479736
+      },
+      {
+        "problem_id": "116E11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "正解は **e: 弾性ストッキング着用** です。\n\n周術期の肺塞栓症（VTE: 静脈血栓塞栓症）の予防法として、以下の対策が有効とされています。\n\n*",
+        "time": 1.848797082901001
+      },
+      {
+        "problem_id": "116E12",
+        "prediction": "医学の専門家として、",
+        "gold": "d",
+        "correct": false,
+        "response": "医学の専門家として、この問題に答えます。\n\n緊急気道確保時に穿刺あるいは切開するのに最も適した部位は、**cricothyroid membrane（甲状軟骨膜）**です。これは、",
+        "time": 1.8528623580932617
+      },
+      {
+        "problem_id": "116E13",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "正解は **e: 肋骨脊柱角の叩打痛** です。\n\n**解説:**\n\n*   **腎盂腎炎 (Pyelonephritis)** は、腎臓のうつ病（腎盂）",
+        "time": 1.8492231369018555
+      },
+      {
+        "problem_id": "116E14",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c: 21** です。\n\n**解説:**\n\n陽性尤度比（LR+）は、検査結果が陽性である場合に疾患を持っている確率が、検査結果が陰性である場合に疾患を持っている",
+        "time": 1.844012975692749
+      },
+      {
+        "problem_id": "116E15",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c: 石綿肺 --------- fine crackles** です。\n\n*   **石綿肺 (Asbestosis):** 石綿の吸入により肺線維化が進行する疾患です。聴診では、",
+        "time": 1.8459668159484863
+      },
+      {
+        "problem_id": "116E16",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "正解は **a: 患者調査** です。\n\n患者満足度を直接的に調査・評価する項目は「患者調査」です。他の選択肢は、それぞれ異なる目的の調査や制度です。\n\n*   **b",
+        "time": 1.854374885559082
+      },
+      {
+        "problem_id": "116E17",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "正解は **a: 脳性麻痺** です。\n\n**解説:**\n\n*   **脳性麻痺 (Cerebral Palsy, CP):** 胎児期、周産期、または乳幼児期の",
+        "time": 1.8543529510498047
+      },
+      {
+        "problem_id": "116E18",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "正解は **c: 血液逆流を確認後に薬液を注入する。** です。\n\n**解説:**\n\n*   **a: 注射針は18Gを使用する。**\n    *   ワクチン接種には",
+        "time": 1.920929193496704
+      },
+      {
+        "problem_id": "116E19",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "**答え:** c\n\n**解説:**\n\n静脈採血は一般的な医療行為ですが、いくつかの合併症を引き起こす可能性があります。それぞれの選択肢について検討します。\n\n*   **a: 消毒薬に対するアレルギー反応:** ",
+        "time": 1.8519339561462402
+      },
+      {
+        "problem_id": "116E20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "正解は **b** です。\n\n労働安全衛生法における健康の保持増進のための措置（健診特保）は、常時50人以上の事業場に適用されるのではなく、**常時100人",
+        "time": 1.999140977859497
+      },
+      {
+        "problem_id": "116E21",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "**正解:** b\n\n**解説:**\n\nAdams-Stokes症候群は、心臓の突然の不整脈（徐脈や頻脈）により脳への血流が一時的に途絶し、一過性の意識",
+        "time": 1.9295198917388916
+      },
+      {
+        "problem_id": "116E22",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "正解は **d: 末梢神経伝導検査** です。\n\n**解説:**\n\n*   **手根管症候群**は、正中神経が手首（手根管）で圧迫されることで起こ",
+        "time": 1.8451120853424072
+      },
+      {
+        "problem_id": "116E23",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c** です。\n\n**解説:**\n\n*   **a: 非言語的コミュニケーションは医療情報の収集に必要である。**\n    *   患者の表情、姿勢、声のトーンなどは、言葉だけ",
+        "time": 1.922027826309204
+      },
+      {
+        "problem_id": "116E24",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "正解は **b: 前立腺肥大** です。\n\n**解説:**\n\n*   **尿閉**とは、排尿が困難または不可能になる状態を指します。\n*   **前立腺肥大 (",
+        "time": 1.845262050628662
+      },
+      {
+        "problem_id": "116E25",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "**正解:** d\n\n**解説:**\n\nアナフィラキシーは、特定の抗原（アレルゲン）に対する過敏反応であり、その原因を特定することが治療と再発予防のために非常に重要です。病歴聴",
+        "time": 1.8493690490722656
+      },
+      {
+        "problem_id": "116E26",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 76-year-old male with syncope (fainting) twice in the past month, associated with facial trauma. History of persistent atrial fibrillation",
+        "time": 2.0783278942108154
+      },
+      {
+        "problem_id": "116E27",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例（60歳男性、動悸・眼前暗黒感、徐脈、低血圧）に関連する可能性が最も高い検査所見を選択肢から",
+        "time": 1.9943690299987793
+      },
+      {
+        "problem_id": "116E28",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 70-year-old male with cough and vomiting. History of stroke (left hemiplegia). Symptoms started 5 days ago with fever and cough, worsening",
+        "time": 2.2024741172790527
+      },
+      {
+        "problem_id": "116E29",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づいて診断を1つ選択することを求めている。\n\n**症例の分析:**\n\n*   **患者情報:** 50歳女性\n*   **主",
+        "time": 2.7325048446655273
+      },
+      {
+        "problem_id": "116E30",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the clinical scenario:** A 3-year-old girl presents with prolonged generalized seizure (lasting ~15 minutes) and fever. She is cyanotic upon arrival, indicating respira",
+        "time": 2.0454158782958984
+      },
+      {
+        "problem_id": "116E31",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "**正解:** e\n\n**解説:**\n\nこの問題は、末期がん患者が「死にたい」と訴えた際の医師の適切な対応を問うものです。\n\n*   **a: 「そんなことを言わずに",
+        "time": 2.2074458599090576
+      },
+      {
+        "problem_id": "116E32",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 72-year-old female with acute right eye pain, headache, nausea. Symptoms started last night and are worsening. Examination reveals severe ",
+        "time": 1.9940638542175293
+      },
+      {
+        "problem_id": "116E33",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例から腰椎穿刺（LP）を回避すべき所見を特定する問題に答えることを求めている。\n\n**症例の概要:**\n* ",
+        "time": 2.274811029434204
+      },
+      {
+        "problem_id": "116E34",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "**正解:** c\n\n**解説:**\n\nこの患者は、82歳という高齢に加え、心不全の急性増悪からの回復期であり、高血圧症、陳旧性心筋梗塞、多発ラク",
+        "time": 2.141249895095825
+      },
+      {
+        "problem_id": "116E35",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c: 収入が無くなる事への不安** です。\n\n**解説:**\n\n*   **社会的苦痛**とは、病気や治療によって生じる社会的な問題（経済的困窮、仕事への影響",
+        "time": 2.1223361492156982
+      },
+      {
+        "problem_id": "116E36",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "**正解:** c\n\n**解説:**\n\n80歳の高齢者における睡眠障害は、加齢に伴う生理的な変化や生活習慣が関与していることが多いです。提示された選択肢の中で、睡眠の質を改善し",
+        "time": 1.9900829792022705
+      },
+      {
+        "problem_id": "116E37",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the clinical scenario:** A 7-year-old girl presents with sudden onset vomiting and altered mental status (GCS E3V3M4) after eating shrimp. She has a history of urt",
+        "time": 2.14522123336792
+      },
+      {
+        "problem_id": "116E38",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\nThe user wants me to identify the most likely diagnosis based on the provided clinical information and images (Chest X-ray and ECG).\n\n1.  **Analyze the Clinical Presentation:**\n    *",
+        "time": 1.9258499145507812
+      },
+      {
+        "problem_id": "116E39",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:**\n    *   21-year-old male.\n    *   Chief complaint: Left cheek pain.\n    *   History: 1 week of sore throat",
+        "time": 2.047200918197632
+      },
+      {
+        "problem_id": "116E40",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Request:** The user wants me to act as a medical expert and answer a multiple-choice question about diagnosing ascites (implied by \"shifting dullness\"). The patient",
+        "time": 1.997687816619873
+      },
+      {
+        "problem_id": "116E41",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づき適切な酸素投与量を判断することを求めている。\n\n**症例の分析:**\n* **患者:** 83歳男性\n* **主訴:**",
+        "time": 3.0787148475646973
+      },
+      {
+        "problem_id": "116E42",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c: 臨床検査技師** です。\n\n**解説:**\n\n退院時療養支援は、患者さんが安全に自宅で療養を続けられるように、多職種が連携してサポートを行うことです",
+        "time": 1.8506622314453125
+      },
+      {
+        "problem_id": "116E43",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づいて最も適切な所見を選択することを求めている。\n\n**症例の分析:**\n\n*   **患者:** 23歳男性\n*   **主訴",
+        "time": 2.6541621685028076
+      },
+      {
+        "problem_id": "116E44",
+        "prediction": "この質問だけでは、患",
+        "gold": "c",
+        "correct": false,
+        "response": "この質問だけでは、患者さんの状態に関する情報が全く不足しているため、適切な処置を判断することはできません。\n\n医学的な判断を行うためには、以下の情報が必要です。\n\n*   **患者さんの年齢、性別、既往歴",
+        "time": 1.8431220054626465
+      },
+      {
+        "problem_id": "116E45",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "正解は **d: 4点** です。\n\n**解説:**\n\nCHADS2スコアは、非弁膜症性心房細動（AF）における脳卒中や全身塞栓症のリスクを評価",
+        "time": 3.9174880981445312
+      },
+      {
+        "problem_id": "116E46",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "正解は **d** です。\n\n**解説:**\n\n*   **服薬アドヒアランス低下の要因分析:**\n    *   a: 食事との関連はありますが、一包化で直接解決できる問題ではありません",
+        "time": 2.1987662315368652
+      },
+      {
+        "problem_id": "116E47",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "正解は **b: 25％** です。\n\n以下に思考プロセスを説明します。\n\n1.  **事前確率の決定:**\n    *   患者は「発熱」「前頸部リンパ節腫",
+        "time": 3.6783218383789062
+      },
+      {
+        "problem_id": "116E48",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c: 唾液** です。\n\n**解説:**\n\n*   EBV（エプスタイン・バールウイルス）は、伝染性単核球症を引き起こすヘルペスウイルスの一種",
+        "time": 1.8480708599090576
+      },
+      {
+        "problem_id": "116E49",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づき、今後の治療方針を判断するために最も適切な情報源を選択するよう求めている。\n\n症例のポイント：\n* 60歳女性、背",
+        "time": 3.1465351581573486
+      },
+      {
+        "problem_id": "116E50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "**正解:** a\n\n**解説:**\n\n悪い知らせ（この場合は腹部造影CTの結果）を患者さんに伝える際のコミュニケーションの原則として、以下の点が重要です。\n\n*   **プライバシーの尊重:** 患者さんの病",
+        "time": 2.0438060760498047
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

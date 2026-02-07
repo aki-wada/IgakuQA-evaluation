@@ -1,0 +1,626 @@
+{
+  "timestamp": "2026-02-07T10:25:37.681198",
+  "model": "medgemma-27b-text-it-mlx",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 15,
+      "accuracy": 0.2,
+      "avg_time": 2.265019467671712,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116D1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c** です。\n\n**解説:**\n\nRhD（－）の妊婦で、分娩後に抗Dヒト免疫グロブリン投与が必要となるのは、以下の条件を満たす場合です。\n\n1.",
+        "time": 2.4035258293151855
+      },
+      {
+        "problem_id": "116D2",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "正解は **a** です。\n\n**解説:**\n\n*   **a: 「自分は電波で操られている」**: これは「妄想」（特に被害妄想や支配妄想）の典型的な表現です。統合",
+        "time": 1.9229888916015625
+      },
+      {
+        "problem_id": "116D3",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c: Forrester分類** です。\n\nForrester分類は、心不全の病態生理を理解し、治療戦略を決定するために用いられる分類です。肺動脈楔入圧（PAWP）と",
+        "time": 1.8556842803955078
+      },
+      {
+        "problem_id": "116D4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "**正解:** d\n\n**解説:**\n\n先天性副腎皮質過形成症（CAH）の患者さんは、通常、糖質コルチコイド（例：ヒドロコルチソン）と場合によっては鉱",
+        "time": 1.8487038612365723
+      },
+      {
+        "problem_id": "116D5",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "**正解:** b\n\n**解説:**\n\n*   **a: 食道憩室:** 消化管の壁の一部が袋状に突出した状態です。内視鏡検査で診断できますが、治療は通常、食事",
+        "time": 1.8487629890441895
+      },
+      {
+        "problem_id": "116D6",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "正解は **c: Buerger病** です。\n\n解説：\n*   **梅毒 (a):** 三期梅毒では、大動脈の弾性組織が破壊され、大動脈瘤の原因となる",
+        "time": 1.773914098739624
+      },
+      {
+        "problem_id": "116D7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "**正解:** d\n\n**解説:**\n\n腎後性急性腎障害（AKI）は、腎臓自体に問題があるわけではなく、尿路の閉塞によって引き起こされるAKIです。腎前性AKIは腎臓",
+        "time": 1.8512938022613525
+      },
+      {
+        "problem_id": "116D8",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "正解は **e: 伝染性膿痂疹** です。\n\n*   **伝染性膿痂疹 (Impetigo)** は、主に黄色ブドウ球菌やA群溶連菌によって引き起こされる",
+        "time": 1.8452990055084229
+      },
+      {
+        "problem_id": "116D9",
+        "prediction": "医学の専門家として、",
+        "gold": "c",
+        "correct": false,
+        "response": "医学の専門家として、成人大腿ヘルニアに関する選択肢を評価します。\n\n*   **a: 中年男性に多い。**\n    大腿ヘルニアは、特に高齢の女性に多く見られます。これは",
+        "time": 1.8436038494110107
+      },
+      {
+        "problem_id": "116D10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "正解は **d: 胚染色体異常** です。\n\n早期流産（妊娠12週未満の流産）の最も一般的な原因は、胚の染色体異常です。これは、受精卵が正常に",
+        "time": 1.8437681198120117
+      },
+      {
+        "problem_id": "116D11",
+        "prediction": "c",
+        "gold": "c,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\n咽頭痛を認める小児で咽後膿瘍を疑う症状として、最も関連性が高いのは以下の2つです。\n\n**答え: c",
+        "time": 1.8478388786315918
+      },
+      {
+        "problem_id": "116D12",
+        "prediction": "b,c,d",
+        "gold": "b,c,d",
+        "correct": true,
+        "response": "医学の専門家として、男性不妊症の原因となりうる選択肢を3つ選ぶとすれば、以下のようになります。\n\n**答え: b, c, d**\n\nそれぞれの選択肢について解説します。\n\n*   **",
+        "time": 1.8432118892669678
+      },
+      {
+        "problem_id": "116D13",
+        "prediction": "b,c,d",
+        "gold": "a,b,c",
+        "correct": false,
+        "response": "医学の専門家として、前立腺癌の治療方針決定に用いられる指標について回答します。\n\n正解は **b, c, d** です。\n\n*   **b: TNM分類**: 腫瘍の",
+        "time": 1.8242628574371338
+      },
+      {
+        "problem_id": "116D14",
+        "prediction": "医学の専門家として、",
+        "gold": "b,c,d",
+        "correct": false,
+        "response": "医学の専門家として、肺高血圧患者にみられる症状・徴候について解説します。\n\n肺高血圧は、肺動脈内の圧力が異常に上昇する病気です。この圧力の上昇により、",
+        "time": 1.844886064529419
+      },
+      {
+        "problem_id": "116D15",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\n排尿障害の診断で有用な検査として、以下の3つが適切と考えられます。\n\n**答え: a, b, d**\n\n*   **a",
+        "time": 1.8430960178375244
+      },
+      {
+        "problem_id": "116D16",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例（72歳男性、肺がん検診での異常陰影）から最も可能性の高い症状を問うています。選択肢はa: 嗄声,",
+        "time": 1.9204721450805664
+      },
+      {
+        "problem_id": "116D17",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "**正解:** b\n\n**解説:**\n\nこの患者の症状は、**健忘症（失行性健忘）**を示唆しています。健忘症は、過去の記憶（特にエピソード記憶）を失う",
+        "time": 2.125270128250122
+      },
+      {
+        "problem_id": "116D18",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Case:** A 77-year-old male presents with chest pain and dizziness. ECG shows ventricular tachycardia (VT). He is hemodynamically unstable (SBP 70s mmHg), requiring",
+        "time": 2.2079010009765625
+      },
+      {
+        "problem_id": "116D19",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:**\n    *   75-year-old male.\n    *   Chief complaint: Dyspnea (呼吸困難).\n    *   History: Chronic cough and",
+        "time": 2.261218786239624
+      },
+      {
+        "problem_id": "116D20",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例と腹部CT画像（ただし画像自体は示されていない）から最も考えられる疾患をa～eの選択肢の中から選ぶことを求めている。\n\n**",
+        "time": 2.344369888305664
+      },
+      {
+        "problem_id": "116D21",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づき、緊急大動脈弁置換術（SAVR）の適応とならない選択肢を特定することを求めている。\n\n**症例概要:**",
+        "time": 2.7520058155059814
+      },
+      {
+        "problem_id": "116D22",
+        "prediction": "a,e",
+        "gold": "a",
+        "correct": false,
+        "response": "**a: レム〈REM〉睡眠行動障害**\n\n**解説:**\n\n*   **患者の症状:** 68歳の男性、夜間に大声で叫んだり、足を振り上げて妻を蹴とばしたりする",
+        "time": 2.0381197929382324
+      },
+      {
+        "problem_id": "116D23",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Case:** A 46-year-old asymptomatic woman with an incidentally found lung nodule on a chest X-ray during a health checkup. No smoking history, occasional alcohol use",
+        "time": 2.4165430068969727
+      },
+      {
+        "problem_id": "116D24",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\nHere's a thinking process to arrive at the correct answer:\n\n1.  **Analyze the Patient Profile:**\n    *   68-year-old male.\n    *   History: Pancreatic tail cancer with",
+        "time": 2.7490460872650146
+      },
+      {
+        "problem_id": "116D25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "正解は **a: 後天性血友病** です。\n\n以下に理由を説明します。\n\n*   **症状:** 84歳の男性で、胃癌の精査中に入院。入院時に左前",
+        "time": 2.5745432376861572
+      },
+      {
+        "problem_id": "116D26",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、複視を主訴とする39歳の男性の症例について質問しています。\n提供された情報から病態を推測し、選択肢の中から最も適切なものを1つ選",
+        "time": 2.043642044067383
+      },
+      {
+        "problem_id": "116D27",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\nThe user wants me to act as a medical expert and choose the most appropriate initial diagnostic test for a 64-year-old male patient presenting with scrotal swelling, redness, and pai",
+        "time": 2.5016589164733887
+      },
+      {
+        "problem_id": "116D28",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "**正解:** e\n\n**解説:**\n\n誤飲に対する処置を判断する上で、以下の情報は重要です。\n\n*   **a: 「吐かせましたか」**: 誤飲した物質によっては、吐かせることが危険",
+        "time": 2.0668110847473145
+      },
+      {
+        "problem_id": "116D29",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 64-year-old male with a tongue mass, pain in the left side of the tongue and pharynx for 1 week. No significant past medical history,",
+        "time": 2.073963165283203
+      },
+      {
+        "problem_id": "116D30",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 62-year-old female with fever and cough. History of worsening symptoms (low-grade fever, increased cough) over 2 months, significant weigh",
+        "time": 2.2682816982269287
+      },
+      {
+        "problem_id": "116D31",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づき、確定診断に有用な検査を選択肢から選ぶことを求めている。\n\n**症例の分析:**\n* **患者:** 52",
+        "time": 2.13779878616333
+      },
+      {
+        "problem_id": "116D32",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づいて適切な治療法を選択することを求めている。\n\n**症例の分析:**\n\n*   **患者:** 30歳男性\n*   **主訴:**",
+        "time": 2.4250540733337402
+      },
+      {
+        "problem_id": "116D33",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** A 2-month-old female infant presents with sudden loss of consciousness, preceded by poor feeding and lethargy. She has a history of good f",
+        "time": 2.7288808822631836
+      },
+      {
+        "problem_id": "116D34",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\nThe user wants me to identify the most likely diagnosis for a 59-year-old woman presenting with progressive gait disturbance, orthostatic hypotension, constipation, urinary incontine",
+        "time": 2.340834140777588
+      },
+      {
+        "problem_id": "116D35",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づき、診断に有用な検査として誤っているものを選択肢から選ぶことを求めている。\n\n**症例の分析:**\n* 38歳",
+        "time": 2.3441081047058105
+      },
+      {
+        "problem_id": "116D36",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例から最も考えられる病名を選択肢の中から選ぶことを求めている。\n\n**症例の分析:**\n*   **患者:** 62歳の女性\n",
+        "time": 1.9960618019104004
+      },
+      {
+        "problem_id": "116D37",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、選択肢から正解をa,b,c,d,eで答えることを求めている。\n問題は、67歳の男性が上部食道扁平上",
+        "time": 2.0646779537200928
+      },
+      {
+        "problem_id": "116D38",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 6-month-old female infant presenting with inability to move her left lower limb. History includes fever (38°C) 2 days ago, diagnosed as ph",
+        "time": 2.485726833343506
+      },
+      {
+        "problem_id": "116D39",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the clinical presentation:** A 28-year-old woman presents with macroscopic hematuria. She had microscopic hematuria detected at age 19. Her urine is now dark red. Famil",
+        "time": 2.508514881134033
+      },
+      {
+        "problem_id": "116D40",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 53-year-old male with a long history of poorly controlled asthma (since age 2) and recurrent pneumonia. Recent pneumonia unresponsive to a",
+        "time": 2.7372751235961914
+      },
+      {
+        "problem_id": "116D41",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Request:** The user wants me to act as a medical expert and choose the most appropriate treatment from five options (a-e) for a 52-year-old male patient with a left",
+        "time": 2.563828945159912
+      },
+      {
+        "problem_id": "116D42",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づいて診断に有用な検査を選択するよう求めている。\n\n**症例の分析:**\n\n*   **患者:** 48歳の女性\n*   **",
+        "time": 2.5690131187438965
+      },
+      {
+        "problem_id": "116D43",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例から最も考えられる疾患を選択肢の中から選ぶことを求めている。\n\n**症例の分析:**\n\n*   **患者:** 55歳男性\n",
+        "time": 2.2225611209869385
+      },
+      {
+        "problem_id": "116D44",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Patient's Presentation:**\n    *   53-year-old female.\n    *   Chief complaints: Rash and fever (1 month rash, 2 weeks fever).\n    *",
+        "time": 2.9203670024871826
+      },
+      {
+        "problem_id": "116D45",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Patient's Condition:**\n    *   69-year-old female with IgA nephropathy diagnosed at age 42.\n    *   History of hypertension since age 50",
+        "time": 2.647930860519409
+      },
+      {
+        "problem_id": "116D46",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づき適切な治療法を選択することを求めている。\n\n**症例の分析:**\n* **患者:** 72歳男性\n* **主訴:** ",
+        "time": 2.0706820487976074
+      },
+      {
+        "problem_id": "116D47",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:**\n    *   Age: 5 months old male infant.\n    *   Symptoms: Constipation (few days), decreased feeding (since this morning).\n    *",
+        "time": 2.0473878383636475
+      },
+      {
+        "problem_id": "116D48",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づき、最も適切な処置を選択することを求めている。\n\n**症例の分析:**\n* 85歳男性、肺炎球菌性髄膜炎",
+        "time": 2.2637648582458496
+      },
+      {
+        "problem_id": "116D49",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\nThe user wants me to identify the most likely diagnosis for a 77-year-old female patient presenting with altered mental status, based on her clinical presentation and laboratory find",
+        "time": 3.0719659328460693
+      },
+      {
+        "problem_id": "116D50",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\n患者は77歳の女性で、関節リウマチ（RA）の治療中。食欲不振、嘔吐、下痢、倦怠感、口腔粘膜びらんを主訴として来院",
+        "time": 2.9977359771728516
+      },
+      {
+        "problem_id": "116D51",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 32-year-old female with chronic diarrhea (6 months) and abdominal pain (3 months). Diarrhea is episodic, occurring ~2 days/week,",
+        "time": 2.340165138244629
+      },
+      {
+        "problem_id": "116D52",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 48-year-old female, G1P1 (history of C-section at age 29), presents with abdominal distension for 3 months,",
+        "time": 2.300171136856079
+      },
+      {
+        "problem_id": "116D53",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 51-year-old male, post-ACL reconstruction (right knee). No immediate postoperative bleeding or wound issues. Started eating day 1 post-op.",
+        "time": 2.339371919631958
+      },
+      {
+        "problem_id": "116D54",
+        "prediction": "**思考プロセス:*",
+        "gold": "a",
+        "correct": false,
+        "response": "**思考プロセス:**\n\n1.  **患者の症状を分析する:**\n    *   顔面浮腫、頸部および上肢の浮腫: これらは、頭部、頸部、上肢への静脈還",
+        "time": 1.9898090362548828
+      },
+      {
+        "problem_id": "116D55",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づき、最も可能性の高い検査所見を選択することを求めている。\n\n**症例の分析:**\n* **患者:** 54歳女性\n* **",
+        "time": 2.5628130435943604
+      },
+      {
+        "problem_id": "116D56",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Patient's Presentation:**\n    *   69-year-old male.\n    *   Symptoms: Skin rash (1 month), fatigue, anorexia (1 week).\n    *   ",
+        "time": 2.3446500301361084
+      },
+      {
+        "problem_id": "116D57",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\nユーザーは医学の専門家として、提示された症例に基づいて最も考えられる診断を選択肢から選ぶことを求めている。\n\n**症例のポイント:**\n* 82歳女性\n* 右母趾",
+        "time": 2.0671329498291016
+      },
+      {
+        "problem_id": "116D58",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's presentation:** 22-year-old female with fever and sore throat for 1 week, worsening despite analgesics, difficulty swallowing. Physical exam shows bilater",
+        "time": 2.198056936264038
+      },
+      {
+        "problem_id": "116D59",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "**d: 種別ごとの復帰プログラムに基づいて段階的に復帰させる。**\n\n**解説:**\n\nこの症例は、スポーツによる頭部外傷（コンカッション）が疑われます。受傷直後に意識障害",
+        "time": 2.3436877727508545
+      },
+      {
+        "problem_id": "116D60",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient presentation:** 11-year-old boy with right shoulder pain, a growing mass in the proximal upper arm for 2 months, and pain on movement. No significant past m",
+        "time": 2.6421220302581787
+      },
+      {
+        "problem_id": "116D61",
+        "prediction": "",
+        "gold": "e",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Request:** The user wants me to act as a medical expert and choose the correct answer (a, b, c, d, or e) for a multiple-choice question about diagnosing an abnormal",
+        "time": 2.13608980178833
+      },
+      {
+        "problem_id": "116D62",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the patient's profile:** 54-year-old male with a history of diabetes (diagnosed 10 years ago) and hypertension. Poor glycemic control (HbA1c consistently in",
+        "time": 2.337575912475586
+      },
+      {
+        "problem_id": "116D63",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the Request:** The user wants me to act as a medical expert and choose the *incorrect* treatment option from a list (a-e) for a specific patient case. The answer should",
+        "time": 1.9912028312683105
+      },
+      {
+        "problem_id": "116D64",
+        "prediction": "",
+        "gold": "b",
+        "correct": false,
+        "response": "<unused94>thought\n1.  **Analyze the clinical presentation:** A 24-year-old female presents with persistent low-grade fever (37.8°C) for 2 months. She has no other significant symptoms initially report",
+        "time": 2.3414700031280518
+      },
+      {
+        "problem_id": "116D65",
+        "prediction": "",
+        "gold": "c",
+        "correct": false,
+        "response": "<unused94>thought\nこの症例は、21歳の男性が発熱、全身倦怠感、咽頭痛を主訴に来院した。1週間前に発熱と咽頭痛があり、解熱鎮痛薬で軽",
+        "time": 2.9942948818206787
+      },
+      {
+        "problem_id": "116D66",
+        "prediction": "はい、承知いたしまし",
+        "gold": "b,d",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\n双胎間輸血症候群（Twin-to-twin transfusion syndrome, TTTS）の診断に必要な情報を選択肢から2つ選ぶ問題ですね。",
+        "time": 2.195603132247925
+      },
+      {
+        "problem_id": "116D67",
+        "prediction": "はい、承知いたしまし",
+        "gold": "c,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\nこの症例は、3歳の男児に半年前からの多毛と体重増加があり、身長92.5cm、体重18.5kg（",
+        "time": 2.1068060398101807
+      },
+      {
+        "problem_id": "116D68",
+        "prediction": "はい、承知いたしまし",
+        "gold": "c,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として回答します。\n\nHIV感染症の確定診断に必要な検査は以下の2つです。\n\n**c: 血中HIV RNA定量検査**\n**e: Western blot法による抗",
+        "time": 2.0516061782836914
+      },
+      {
+        "problem_id": "116D69",
+        "prediction": "はい、承知いたしまし",
+        "gold": "c,d",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、提示された情報に基づいて最適な抗菌薬を選択します。\n\n**患者さんの状態:**\n*   71歳男性\n*   発熱（39.1℃）、食欲",
+        "time": 2.731797933578491
+      },
+      {
+        "problem_id": "116D70",
+        "prediction": "はい、承知いたしまし",
+        "gold": "b,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、ベンゾジアゼピン系睡眠薬に関する適切な説明を2つ選択します。\n\n**答え:** b, e\n\n**解説:**\n\n*   **b: 「足も",
+        "time": 2.0702431201934814
+      },
+      {
+        "problem_id": "116D71",
+        "prediction": "はい、承知いたしまし",
+        "gold": "a,b",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、提示された情報と画像（CTスキャン）に基づいて診断を推測します。\n\n**思考プロセス:**\n\n1.  **患者情報:** 47歳男性、飲",
+        "time": 2.1142959594726562
+      },
+      {
+        "problem_id": "116D72",
+        "prediction": "はい、承知いたしまし",
+        "gold": "a,b,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、ご提示の問題について回答します。\n\n**問題の分析:**\n\n*   66歳の男性、2ヶ月間の肉眼的血尿。\n*   バイタルサインは比較的",
+        "time": 2.196815013885498
+      },
+      {
+        "problem_id": "116D73",
+        "prediction": "はい、承知いたしまし",
+        "gold": "a,b,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、提示された情報に基づいて最適な検査を選択します。\n\n**思考プロセス:**\n\n1.  **患者の症状と所見の整理:**\n    *   76歳男性、",
+        "time": 2.4912219047546387
+      },
+      {
+        "problem_id": "116D74",
+        "prediction": "はい、承知いたしまし",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、ご提示の問題に対する適切な治療法を3つ選択します。\n\n**問題の分析:**\n\n*   **患者:** 75歳の女性\n*   **主訴:**",
+        "time": 2.33705997467041
+      },
+      {
+        "problem_id": "116D75",
+        "prediction": "はい、承知いたしまし",
+        "gold": "a,b,e",
+        "correct": false,
+        "response": "はい、承知いたしました。医学の専門家として、この患者さんの手術適応を判断するために腹部造影CTで確認すべき所見について、最も重要なものを3つ選択します。\n\n**回答:** b, e,",
+        "time": 2.923539876937866
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}
