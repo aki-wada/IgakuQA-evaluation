@@ -1,0 +1,2461 @@
+{
+  "timestamp": "2026-02-04T22:51:43.391722",
+  "model": "zai-org/glm-4.7-flash:2",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 1.4234440455565582,
+      "errors": 1,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 1.1644509474436442,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 3.9188140201568604,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 1.1728278700510661,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about Sleep Apnea Syndrome (SAS) and hypertension.\n    *   **Question",
+        "time": 2.036776065826416
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** At what time should penic",
+        "time": 1.1220531463623047
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:** The user is asking a medical multiple-choice question about Central Serous Chorioretinopathy (CSCR). I need to select the incorrect statement from the options provi",
+        "time": 1.1519269943237305
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question about the causes of hypoglycemia from single oral medications. I need to select t",
+        "time": 1.0562708377838135
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question about heart transplantation in Japan. I need to select the correct option (a, b, ",
+        "time": 1.1084120273590088
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about the cause of hyperkalemia (high potassium levels).\n    *   **",
+        "time": 1.0718958377838135
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about the causes (triggers) of GERD (Gastroesophageal Ref",
+        "time": 1.0677270889282227
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question about Cardiac Sarcoidosis (心サルコイドーシス) in a patient with heart",
+        "time": 1.1048219203948975
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about systemic sclerosis (scleroderma) and secondary Raynaud's phenomenon",
+        "time": 1.24015212059021
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about Autism Spectrum Disorder (ASD).\n    *   **Question:** Which of the",
+        "time": 1.0850517749786377
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n   ",
+        "time": 1.0986640453338623
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about vascular dementia (脳血管性認知症).\n    *   **Format",
+        "time": 1.1070787906646729
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,c,d,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question. The question asks for the correct pairings of pathogens and malignant tumors fro",
+        "time": 1.0729200839996338
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,c,d,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer multiple-choice questions from a medical exam.\n    *   **Format:** Select the correct options (a,",
+        "time": 1.1830389499664307
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.4480860233306885
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 1.2780039310455322
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n   ",
+        "time": 1.1342792510986328
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.2388348579406738
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.2160167694091797
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 73-year-old male",
+        "time": 1.2153799533843994
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n   ",
+        "time": 1.178218126296997
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely Japanese Board Exam style).\n    *   **Question:**",
+        "time": 1.2673289775848389
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n   ",
+        "time": 1.1211519241333008
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 1.218353033065796
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.207876205444336
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** An 81-year-old male",
+        "time": 1.224031925201416
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 23-year-old male",
+        "time": 1.257662057876587
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n   ",
+        "time": 1.1535730361938477
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 42-year-old male",
+        "time": 1.181764841079712
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 48-year-old woman",
+        "time": 1.1959519386291504
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.162916898727417
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Question:** Identify the incorrect sta",
+        "time": 1.2533371448516846
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A newborn (40 weeks,",
+        "time": 1.0846152305603027
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 52-year-old male",
+        "time": 1.2016687393188477
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 1.2867069244384766
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 1.2461020946502686
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 62-year-old male",
+        "time": 1.2530288696289062
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 20-year-old female",
+        "time": 1.1331257820129395
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.3365368843078613
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.0928728580474854
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 36-year-old woman",
+        "time": 1.1213488578796387
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** Identify the hormone that is likely",
+        "time": 1.2367730140686035
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.1644890308380127
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about knee MRI findings (specifically meniscus tears) based on a description (",
+        "time": 1.0970699787139893
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 53-year-old male",
+        "time": 1.1703250408172607
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n   ",
+        "time": 1.1337430477142334
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 10-month-old boy",
+        "time": 1.2218637466430664
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.2693309783935547
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 35-year-old male",
+        "time": 1.225492000579834
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 14-day-old male",
+        "time": 1.1911029815673828
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 19-year-old male",
+        "time": 1.0765321254730225
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 1.2140331268310547
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 2-year-old boy",
+        "time": 1.098311185836792
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 24-year-old healthcare",
+        "time": 16.43375825881958
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 3.302565097808838
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.1811347007751465
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 69-year-old male",
+        "time": 1.091459035873413
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n   ",
+        "time": 1.1129636764526367
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** An 80-year-old male",
+        "time": 1.113861083984375
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Question:** A 64-year",
+        "time": 1.0959203243255615
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 1.3483898639678955
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 78-year-old woman",
+        "time": 1.149061918258667
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 1.1627697944641113
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer multiple-choice questions (2 options for the last one).\n    *   **Question:** A 35-year",
+        "time": 1.1775643825531006
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c,d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question (2 options) based on provided clinical vignette and images (described in text",
+        "time": 1.10335111618042
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,c,d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question (2 options) based on a clinical vignette.\n    *   **Question:**",
+        "time": 1.1808712482452393
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,c,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question (2 options) from a medical exam context.\n    *   **Question:** A",
+        "time": 1.2116999626159668
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 1.1220178604125977
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer multiple-choice questions from a medical exam (likely the Japanese National Medical Licensing Exam or sim",
+        "time": 1.255976915359497
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 5-year-old girl",
+        "time": 1.1516320705413818
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer multiple-choice questions from a medical exam (likely the Japanese National Medical Licensing Exam or sim",
+        "time": 1.2086400985717773
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer multiple-choice questions (MCQs) from a medical exam context.\n    *   **Input:** A",
+        "time": 1.2008898258209229
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 1.2088029384613037
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or a ",
+        "time": 1.2069001197814941
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about sleep apnea syndrome (SAS) and hypertension.\n ",
+        "time": 1.1881489753723145
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on the provided text.\n    *   **Format:** Only",
+        "time": 1.0820298194885254
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the question, select the correct answer(s), and output only the letter(s) (e",
+        "time": 1.0572962760925293
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on medical knowledge.\n    *   **Format:** Only ",
+        "time": 1.0541119575500488
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about heart transplantation in Japan.\n    *   **Cons",
+        "time": 1.0655207633972168
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the question, select the correct answer(s), and output the letter(s) only (e",
+        "time": 1.0455329418182373
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the question, select the correct answer(s), and output the letter(s) only (e",
+        "time": 1.0490050315856934
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Physician specializing in clinical medicine.\n    *   **Task:** Read the question and select the correct answer(s) from the options (a, b, c",
+        "time": 1.076251745223999
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the question and select the correct answer(s) from the options (a, b, c",
+        "time": 1.0501618385314941
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the question, select the correct answer(s), and output the letter(s) only (e",
+        "time": 1.0626118183135986
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the question, select the correct answer(s), and output the letter(s) only (e",
+        "time": 1.0561537742614746
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Format:** Only",
+        "time": 1.0764260292053223
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on medical knowledge.\n    *   **Format:** Only ",
+        "time": 1.0715210437774658
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,c,d,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on medical knowledge.\n    *   **Format:** Only ",
+        "time": 1.0652518272399902
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,c,d,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about clinical medicine.\n    *   **Format:** Only th",
+        "time": 1.0563130378723145
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) from multiple-choice options",
+        "time": 1.3324079513549805
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) from multiple-choice options",
+        "time": 1.243725061416626
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the question and select the correct answer(s) from the options.\n    *   **Output",
+        "time": 1.1344242095947266
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical case and select the correct answer(s) from the options.\n    *   **",
+        "time": 1.1968092918395996
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Pr",
+        "time": 1.179823875427246
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) from multiple-choice options",
+        "time": 1.2090058326721191
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the problem, select the correct answer(s), and output the letter(s) only (e",
+        "time": 1.1112918853759766
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a medical case study and select the correct answer(s) from the given options.\n   ",
+        "time": 1.2554328441619873
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the problem, select the correct answer(s), and output the letter(s) only (e",
+        "time": 1.086979866027832
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) from the given options.\n    *",
+        "time": 1.2252931594848633
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Read a medical case scenario and select the correct answer(s) from the options.\n    *  ",
+        "time": 1.2117869853973389
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) from multiple choices.\n    *",
+        "time": 1.2102880477905273
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on clinical scenarios.\n    *   **Output Format:",
+        "time": 1.2545239925384521
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the problem, select the correct answer(s), and output the letter(s) only (e",
+        "time": 1.1567890644073486
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Clinical Medicine Expert Physician.\n    *   **Task:** Read a clinical case, select the correct answer(s), and output the letter(s) only (e",
+        "time": 1.179090976715088
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Prov",
+        "time": 1.1941959857940674
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical case, select the correct answer(s) from the options, and output the an",
+        "time": 1.1886630058288574
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) based on the question.\n    *",
+        "time": 1.2377827167510986
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a medical case scenario and select the correct answer(s) from the options.\n    * ",
+        "time": 1.1310501098632812
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) from multiple-choice options",
+        "time": 1.2107739448547363
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) from multiple choices.\n    *  ",
+        "time": 1.2954261302947998
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "a,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the Patient's Presentation:**\n    *   **Patient:** 72-year-old female.\n    *   **History:** Visited a local clinic for a \"cold-like\" symptom. Found to have thromboc",
+        "time": 1.245513916015625
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 1.2489068508148193
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the problem, select the correct answer(s), and output the letter(s) only (e",
+        "time": 1.1593549251556396
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** On",
+        "time": 1.338921070098877
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a medical case, select the correct answer(s) from the options, and output the ans",
+        "time": 1.0995731353759766
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the problem and select the correct answer(s) from the options.\n    *   **Format",
+        "time": 1.1559369564056396
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the Patient's Case:**\n    *   **Patient:** 28-year-old male.\n    *   **Chief Complaint:** Epigastric pain.\n    *   **History:**\n        *   Recurrent",
+        "time": 1.242018699645996
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical case, select the correct answer(s) from the options, and output the an",
+        "time": 1.170663833618164
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical scenario.\n    *   **Format:** Pr",
+        "time": 1.0776941776275635
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) from multiple-choice options",
+        "time": 1.172131061553955
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the problem and select the correct answer(s) from the options (a, b, c",
+        "time": 1.1067326068878174
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical case, select the correct answer(s), and output the letter(s) only (",
+        "time": 1.1932787895202637
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a medical case, select the correct answer(s), and output the letter(s) only (",
+        "time": 1.2414500713348389
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a medical case study and select the correct answer(s) from the options.\n    *  ",
+        "time": 1.2251558303833008
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical case, select the correct answer(s) from the options, and output the an",
+        "time": 1.1691851615905762
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical scenario.\n    *   **Format:** Pr",
+        "time": 1.085310935974121
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Pr",
+        "time": 1.2150163650512695
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the problem, select the correct answer(s), and output the letter(s) only (e",
+        "time": 1.1200780868530273
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical scenario.\n    *   **Format:** On",
+        "time": 1.1196773052215576
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical case and select the correct answer(s) from the options.\n    *   **",
+        "time": 1.245917797088623
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical case, select the correct answer(s) from the options, and output *only",
+        "time": 1.1857962608337402
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a medical case and select the correct answer(s) from the options.\n    *   **",
+        "time": 1.088808298110962
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a medical case, select the correct answer(s), and output the answer(s) in alphabe",
+        "time": 1.1137950420379639
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read the medical case description and select the correct answer(s) from the given opti",
+        "time": 1.1381311416625977
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Clinical Medicine Expert Physician.\n    *   **Task:** Read a clinical case description and select the correct answer(s) from multiple-choice optio",
+        "time": 1.088838815689087
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical case, select the correct answer(s), and output the letter(s) only (",
+        "time": 1.349668025970459
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) from the options.\n    *  ",
+        "time": 1.1731231212615967
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a medical case scenario and select the correct answer(s) from multiple-choice opt",
+        "time": 1.182546854019165
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical scenario.\n    *   **Format:** Pr",
+        "time": 1.175704002380371
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c,d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on clinical vignettes and images (described in",
+        "time": 1.0880217552185059
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,c,d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on clinical scenarios.\n    *   **Format:** Only",
+        "time": 1.1790001392364502
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,c,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical case and select the correct answer(s) from the options.\n    *   **",
+        "time": 1.1922171115875244
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Clinical Medicine Expert Physician.\n    *   **Task:** Answer multiple-choice questions based on clinical scenarios.\n    *   **Format:** Only the c",
+        "time": 1.1502001285552979
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on clinical scenarios.\n    *   **Output Format:",
+        "time": 1.2597191333770752
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a clinical vignette and select the correct answer(s) from the given options.\n    ",
+        "time": 1.178772211074829
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Read a clinical case and select the correct answer(s) from the options.\n    *   **",
+        "time": 1.2224981784820557
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Clinical medicine expert doctor.\n    *   **Task:** Answer multiple-choice questions based on clinical scenarios.\n    *   **Output Format:** Only t",
+        "time": 1.208667278289795
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Read a medical case study and select the correct answer(s) from the given options.\n   ",
+        "time": 1.212555170059204
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on clinical scenarios.\n    *   **Format:** Prov",
+        "time": 1.211338996887207
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about Sleep Apnea Syndrome (SAS) and hypertension.\n ",
+        "time": 3.833920955657959
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about medical ethics/genetics, then a question about",
+        "time": 3.792107105255127
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about Central Serous Chorioretinopathy (CSCR).\n    *",
+        "time": 3.7219061851501465
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question about clinical medicine.\n    *   **Process:** Check ke",
+        "time": 3.7166929244995117
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question about heart transplantation in Japan.\n    *   **Constr",
+        "time": 3.747605800628662
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about hyperkalemia.\n    *   **Question:** \"What is a",
+        "time": 3.7229108810424805
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question about the causes (triggers) of gastroesophageal reflux",
+        "time": 3.690606117248535
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about cardiology (specifically cardiac sarcoidosis).",
+        "time": 3.78059720993042
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about medical risk factors.\n    *   **Input:** A que",
+        "time": 3.797779083251953
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Physician familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question about systemic sclerosis (scleroderma) and secondar",
+        "time": 3.80165696144104
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question about Autism Spectrum Disorder (ASD).\n    *   **Questi",
+        "time": 3.8080501556396484
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about clinical medicine.\n    *   **Process:** Check ",
+        "time": 3.8611018657684326
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about vascular dementia (脳血管性認知症).\n    *   **Constra",
+        "time": 3.842432975769043
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,c,d,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question about the association between pathogens and malignant ",
+        "time": 3.823091983795166
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,c,d,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question about acute kidney injury (AKI) diagnostic indicators.",
+        "time": 3.754021167755127
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 4.086043119430542
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 4.038367986679077
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Process:** Che",
+        "time": 3.9422719478607178
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Se",
+        "time": 3.934758186340332
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Se",
+        "time": 3.9378061294555664
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A cli",
+        "time": 3.9837958812713623
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Process:** Che",
+        "time": 3.8876211643218994
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 4.00485897064209
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A cli",
+        "time": 3.8333942890167236
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A cli",
+        "time": 3.9726977348327637
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A clini",
+        "time": 3.9870471954345703
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Constraint:** ",
+        "time": 3.990384101867676
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 4.037840127944946
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A cli",
+        "time": 3.9470479488372803
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Constraint:** ",
+        "time": 3.9546220302581787
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Format:",
+        "time": 3.9464640617370605
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A cli",
+        "time": 3.9430580139160156
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Sele",
+        "time": 4.02992582321167
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question about a newborn infant with ambiguous genitalia.\n    *",
+        "time": 3.90185809135437
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A cli",
+        "time": 3.986670970916748
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Format:",
+        "time": 4.075594902038574
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 4.0550079345703125
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Process:** C",
+        "time": 4.020025253295898
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A cli",
+        "time": 3.9344282150268555
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Se",
+        "time": 4.097565174102783
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A clini",
+        "time": 3.8494951725006104
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Process:** Che",
+        "time": 3.9100098609924316
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 3.999074935913086
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 3.9365711212158203
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about knee MRI findings corresponding to a meniscus ",
+        "time": 3.830379009246826
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A cli",
+        "time": 3.9374032020568848
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical ethics and clinical practice.\n    *",
+        "time": 3.877368211746216
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A cli",
+        "time": 3.950510025024414
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a medical multiple-choice question.\n    *   **Input:** A clinical vignette abou",
+        "time": 4.005933046340942
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a medical multiple-choice question.\n    *   **Input:** A clinical vignette (35-",
+        "time": 3.994601249694824
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a medical question based on a provided case study.\n    *   **Input:** A case st",
+        "time": 3.9497010707855225
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Process:** Check",
+        "time": 3.8291170597076416
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 3.9757080078125
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Process:** Che",
+        "time": 3.8915789127349854
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A cli",
+        "time": 3.873699188232422
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Steps:** 1. ",
+        "time": 4.020258188247681
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 3.9429609775543213
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical case.\n    *   **Input:** A case ",
+        "time": 3.8376591205596924
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A clini",
+        "time": 3.898409843444824
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Sele",
+        "time": 3.901337146759033
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Input:** A c",
+        "time": 3.871906042098999
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Input:** A c",
+        "time": 4.122072219848633
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Output Forma",
+        "time": 3.9257490634918213
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on medical knowledge.\n    *   **Input:** A clini",
+        "time": 3.9414899349212646
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical scenario.\n    *   **Input:** A c",
+        "time": 3.9454779624938965
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c,d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on clinical vignettes and images (implied, as ",
+        "time": 3.8750689029693604
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,c,d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Se",
+        "time": 3.946826934814453
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,c,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical case.\n    *   **Input:** A clini",
+        "time": 3.9606359004974365
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question about a 22-year-old male with cervical spinal cord i",
+        "time": 3.923475980758667
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Se",
+        "time": 4.034317255020142
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor familiar with clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Constraint:** ",
+        "time": 3.9358949661254883
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Se",
+        "time": 3.9480140209198
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Constraint:*",
+        "time": 3.9488561153411865
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Format:** Se",
+        "time": 3.9584381580352783
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Doctor specializing in clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on a clinical case.\n    *   **Constraint:** Se",
+        "time": 3.9374160766601562
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.2031018733978271
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese medic",
+        "time": 1.093329906463623
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question (MCQ) based on Japanese",
+        "time": 1.0509800910949707
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese medic",
+        "time": 1.0620720386505127
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.0670201778411865
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.0541551113128662
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.0539913177490234
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.0824120044708252
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.0472681522369385
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.0683307647705078
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.095660924911499
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.0963242053985596
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.0812609195709229
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,c,d,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.0793719291687012
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,c,d,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.0542969703674316
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question (MCQ) based on Japanese",
+        "time": 1.3423831462860107
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.2489233016967773
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.1596107482910156
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.217503309249878
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.1893601417541504
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.2287580966949463
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.134106159210205
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.253709077835083
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.0781428813934326
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.2093560695648193
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.173811912536621
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question (MCQ) based on Japanese",
+        "time": 1.2181429862976074
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.2720608711242676
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.172656774520874
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.1977100372314453
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.1937980651855469
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.173666000366211
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.241919994354248
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.1610071659088135
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question.\n    *   **Constraint:*",
+        "time": 1.2161450386047363
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the Case:**\n    *   **Patient:** 63-year-old male.\n    *   **Chief Complaint:** Abdominal pain, abdominal distension.\n    *   **History:**\n        *   Umb",
+        "time": 1.3075368404388428
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "a,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the Patient's Presentation:**\n    *   **Patient:** 72-year-old female.\n    *   **History:** Recent visit to a local clinic for \"cold-like symptoms\" (感冒様症状). Platelet",
+        "time": 1.2618076801300049
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.2510640621185303
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.1762230396270752
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question (MCQ) based on Japanese",
+        "time": 1.3466651439666748
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.1046531200408936
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.162341833114624
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.2489452362060547
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Japanese medical specialist (familiar with medical systems and clinical medicine).\n    *   **Task:** Answer multiple-choice questions based on Jap",
+        "time": 1.16709303855896
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question (MCQ) based on Japanese",
+        "time": 1.0815811157226562
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.1872107982635498
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese medic",
+        "time": 1.1241018772125244
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.1997590065002441
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Japanese medical specialist (familiar with medical systems and clinical medicine).\n    *   **Task:** Answer a multiple-choice question based on Ja",
+        "time": 1.2379980087280273
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question (MCQ) based on Japanese",
+        "time": 1.2282912731170654
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.1743810176849365
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.0853278636932373
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.2236409187316895
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.1362450122833252
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.1394329071044922
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clinical ",
+        "time": 1.2498078346252441
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.1830239295959473
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question (MCQ) based on Japanese",
+        "time": 1.0977771282196045
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese medica",
+        "time": 1.1418862342834473
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.1535818576812744
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Japanese medical specialist (expert in medical systems and clinical medicine).\n    *   **Task:** Answer a multiple-choice question based on Japane",
+        "time": 1.1239261627197266
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese clini",
+        "time": 1.3645293712615967
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Japanese medical specialist (expert in medical systems and clinical medicine).\n    *   **Task:** Answer multiple-choice questions based on Japanes",
+        "time": 1.1742007732391357
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer a multiple-choice question based on Japanese medic",
+        "time": 1.1664628982543945
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.1876170635223389
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c,d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.124356985092163
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,c,d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Japanese medical specialist (expert in medical systems and clinical medicine).\n    *   **Task:** Answer multiple-choice questions based on Japanes",
+        "time": 1.1847107410430908
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,c,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.1968438625335693
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.157954216003418
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.2724170684814453
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.170867919921875
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.213141918182373
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.227247714996338
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.2417666912078857
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Expert physician in the Japanese medical system and clinical medicine.\n    *   **Task:** Answer multiple-choice questions based on Japanese clinic",
+        "time": 1.2133219242095947
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

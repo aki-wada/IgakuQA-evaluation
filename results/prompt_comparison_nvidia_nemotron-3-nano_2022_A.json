@@ -1,0 +1,2460 @@
+{
+  "timestamp": "2026-02-06T11:49:16.769679",
+  "model": "nvidia/nemotron-3-nano",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 0.9024936389923096,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 0.9201236565907797,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 1,
+      "accuracy": 0.013333333333333334,
+      "avg_time": 2.8046719048121203,
+      "errors": 2,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 0.9297047742207845,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"睡眠時無呼吸症候群による高血圧について、正しくないのはどれか。\" Options a-e. Choose one that is NOT correct.\n\n",
+        "time": 1.2327322959899902
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"妊娠末期の腟分泌物細菌培養検査でB群連鎖球菌〈GBS",
+        "time": 0.7905499935150146
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"中心性漿液性脈絡網膜症について誤っているのはどれか。\" Options a-e. Choose one that is false (incorrect",
+        "time": 0.7759711742401123
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"単剤の内服で低血糖の原因になる可能性が高いのはどれか。\" Options: a: DPP-4阻害薬, b",
+        "time": 0.7724609375
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"我が国での成人心臓移植について正しいのはどれか。\" (Which of the following statements about adult heart transplantation in our country is correct",
+        "time": 0.7854688167572021
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"高カリウム血症の原因となるのはどれか。\" Options: a: β刺激薬, b: インスリン, c: ループ",
+        "time": 0.7538599967956543
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,b,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"逆流性食道炎の誘因とならないのはどれか。\" Options: a: 肥満 (obesity), b: 高齢 (elder",
+        "time": 0.7624139785766602
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"心不全で来院した患者において心サルコイドーシスの所見に合致しないのはどれか。\" Options: a: 房室",
+        "time": 0.7708380222320557
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a,b,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"骨壊死のリスクファクターでないのはどれか。\" Options: a: 酒 (alcohol), b: 減圧症 (de",
+        "time": 0.7662270069122314
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"全身性強皮症による続発性Raynaud現象の特徴はどれか。\" Options: a: 片側性である。",
+        "time": 0.7845778465270996
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"自閉スペクトラム症の特徴でないのはどれか。\" Options a-e. Choose one. The correct answer is the one that is NOT a characteristic of",
+        "time": 0.7646200656890869
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"急激な血圧上昇を認める患者で、高血圧緊急症の病態として考えにくいのはどれか",
+        "time": 0.7822439670562744
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,b,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to answer with two letters (a,b,c,d,e) that are correct statements about vascular dementia (脳血管性認知症). Let's analyze each statement.\n\na: \"50歳台では発症",
+        "time": 0.7802860736846924
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,b,c,d,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "We need to answer with two letters (a,b,c,d,e) that are correct combinations of pathogen and malignant tumor. The question: \"病原体と悪性腫瘍の組合せで正しいのはどれ",
+        "time": 0.7826168537139893
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,b,c,d,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "We need to answer with two choices (a,b,c,d,e) that are indicators used for diagnosing acute kidney injury. The question: \"急性腎障害の診断に用いられる指標はどれか",
+        "time": 0.7722973823547363
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"本患者の蛋白尿の原因が糖尿病性腎症であることを最も示唆する所見はどれか。\"",
+        "time": 1.0213172435760498
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate initial management for a 6-month-old boy with hemophilia A (factor VIII deficiency) presenting with vomiting after fall, appears pale, activ",
+        "time": 0.9991159439086914
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 23-year-old male, excessive daytime sleepiness, cataplexy (loss of muscle tone triggered by emotions like laughter or surprise), no abnorm",
+        "time": 0.8715910911560059
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n62-year-old female, dyspnea and fatigue. 7 days ago had catheter ablation for paroxysmal atrial fibrillation, discharged 3 days a",
+        "time": 0.9516401290893555
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n64-year-old male, dyspnea. 4 days prior left chest pain and dyspnea gradually worsened. Now at presentation: temperature 36.2°C,",
+        "time": 0.9422721862792969
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n73-year-old male underwent endoscopic stone removal (choledocholithotomy? Actually \"内視鏡的結石除去術\" likely endoscopic papillary",
+        "time": 0.973862886428833
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"22歳の男性。健診で腎機能低下を指摘され心配になり来院した。母親と叔父が透析",
+        "time": 0.8556950092315674
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 38-year-old male with pancytopenia (leukopenia, anemia, thrombocytopenia), bone marrow likely shows something (photo not shown). Likely diagnosis is apl",
+        "time": 1.0086908340454102
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 45-year-old male, chief complaint of hoarseness (嗄声). It started 2 years ago without trigger, with sensation of foreign body in throat and",
+        "time": 0.7925026416778564
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate next step for a 13-year-old girl who experienced symptoms during basketball after eating a lunch with squid (ika) about 1 hour earlier, then",
+        "time": 0.9458150863647461
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer which is NOT appropriate response by industrial physician. Options: a: refer to psychiatry. b: advise to stop drinking before bed. c: get consent and meet with supervisor. d: listen ",
+        "time": 0.9070961475372314
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n81-year-old male with COPD, on bronchodilator, now acute dyspnea, O2 via nasal cannula 0.5 L/min, now at",
+        "time": 0.9691371917724609
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 23-year-old male with fatigue, anorexia, nausea, jaundice, dark urine, mild hepatomegaly, labs show elevated transaminases (AST 984, ALT ",
+        "time": 1.0166819095611572
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 40-year-old man, difficulty writing, progressive over 3 years, tremor? Actually he can't write well, but exam: normal tone, no involuntary",
+        "time": 0.8951029777526855
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"予想される所見はどれか。\" (Which finding is expected?) Options a-e. Need to select one.\n\nWe have a 42-year-old male with acute abdominal pain",
+        "time": 0.9290511608123779
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 48-year-old female, main complaints: polydipsia and fatigue. 5 days ago had fever and abdominal pain. She is eating normally. Conscious, t",
+        "time": 0.9080510139465332
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\nA newborn male, 10 hours old. Born at 39 weeks, weight 2,960g, Apgar 7 at 1 min",
+        "time": 0.9129359722137451
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to identify which statement among ① to ⑤ is incorrect. The context: 73-year-old male with intermittent claudication left calf pain walking, rest relieves. History: diabetes, coronary stent 7 y",
+        "time": 1.0037376880645752
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: newborn female? Actually ambiguous external genitalia. The question: \"外性器の外観写真を別に示す。鼠径部に腫瘤を",
+        "time": 0.8600149154663086
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n52-year-old male, fatigue. 6 weeks ago diagnosed with advanced lung adenocarcinoma, started immune checkpoint inhibitor therapy 3",
+        "time": 0.9664430618286133
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n63-year-old male, abdominal pain, abdominal distension. Has had umbilical swelling for 2 years, spontaneously reduced when supine",
+        "time": 1.0333151817321777
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate treatment for this case. Let's parse the clinical scenario.\n\n72-year-old female, presented with mental status change, fatigue, jaundice, mil",
+        "time": 0.9925260543823242
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者の周術期管理で適切なのはどれか。\" Options a-e. Choose one.\n\nWe need to evaluate which is appropriate for this patient.\n\nGiven context",
+        "time": 1.0066289901733398
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question describes a 20-year-old female with chronic, non-itchy, multiple dark brown papules in various areas, mother also has similar lesions, both",
+        "time": 0.8969781398773193
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"最初に行う輸液の組成として適切なのはどれか。\" (Which composition of infusion is appropriate to administer first?) Options a-e.\n\nWe have a",
+        "time": 1.0455431938171387
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 45-year-old male with sudden onset of right ear hearing loss and tinnitus, no vertigo, normal tympanic membrane, audiogram presumably show",
+        "time": 0.7991349697113037
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 36-year-old G2P0 at 36 weeks 4 days, presenting with abdominal pain. Vitals: T 36.8, HR 11",
+        "time": 0.8989050388336182
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者で上昇していると考えられるホルモンはどれか。\" Options: a TSH, b ACTH, c ガストリン, d カ",
+        "time": 0.9865601062774658
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 22-year-old female with primary amenorrhea, menarche at 12, irregular then amenorrhea by 14. No complaints. Physical exam: height",
+        "time": 0.9098718166351318
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "a,b,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer which image shows meniscus tear. We don't have images, but typical MRI: meniscus tear appears as a flap or irregularity. Usually the options correspond to certain views. Without imag",
+        "time": 0.7979540824890137
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者の確定診断に必要な内分泌検査はどれか。\" Options: a: GHRH負荷試験",
+        "time": 0.916471004486084
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"32歳の女性。昨晩同意のない性行為を強要され、本日警察官に付き添われて受診した。警察官から被",
+        "time": 0.842993974685669
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 10-month-old boy with vomiting, bloody stools, severe crying, vital signs: tachycardia, low blood pressure, capillary refill 1 sec, likely",
+        "time": 0.9469709396362305
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate management for a 45-year-old man with symptoms of dyspnea on exertion, fatigue, known heart murmur, echo shows left ventricular dilation (en",
+        "time": 0.9943201541900635
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The case: 35-year-old male, cough, fever, dyspnea. Dry cough 3 weeks, fever and dyspnea 5 days. One month ago cleaned a 30-year",
+        "time": 0.983238935470581
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 14-year-old boy, but actually age? It says \"日齢14の男児\" which likely means \"14-year-old male\". But also mentions",
+        "time": 0.9138867855072021
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 19-year-old male, got sodium hydroxide (NaOH) liquid in right eye, emergency visit, conscious, marked conjunctival edema, cornea clouded. ",
+        "time": 0.7933931350708008
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: Which antimicrobial should be started while waiting for identification and susceptibility of the microbe, given the clinical scenario.\n\nWe have a 76-yea",
+        "time": 0.9727559089660645
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 2-year-old boy, mother concerned about increased TV volume, had ear pain and nasal discharge 1 week ago, resolved after 2 days. Since then",
+        "time": 0.8381519317626953
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: healthcare worker needlestick with patient blood. Patient serology: HBsAg positive, anti-HBs negative, anti-HCV negative. So patient is HB",
+        "time": 0.8524990081787109
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者で低下するのはどれか。\" Options: a: ferritin, b: reticulocyte count, c: vitamin B12, d: erythropo",
+        "time": 0.9935576915740967
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 2-month-old female infant, seizure-like episodes, cardiac arrest, no heartbeat on arrival, no pupillary reflex, died. CT shows subdural he",
+        "time": 0.918907880783081
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 69-year-old male with left nasal bleeding, diplopia, recurrent left nasal bleeding, progressive left nasal obstruction, double vision 2 da",
+        "time": 0.8243310451507568
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 8-year-old girl with severe itching, skin lesions, widespread eczema-like rash involving face, trunk, flexural areas. Lab: WBC 8600 with",
+        "time": 0.8489463329315186
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 80-year-old man, left temporal region to left cheek rash, 3 months after a purple patch appeared, gradually expanded, elevated, bled. No t",
+        "time": 0.8822429180145264
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 64-year-old man with left hemiplegia and impaired consciousness, GCS 4-4-6? Actually E4 V4 M6 = total 14",
+        "time": 0.7912929058074951
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The case: 58-year-old woman with proteinuria (3+), hypoalbuminemia (albumin 2.6), edema, creatinine 1.3, eGFR ",
+        "time": 1.0464081764221191
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n78-year-old female, 1 week of fever 38°C, fatigue. Height 151 cm, weight 42 kg (low BMI).",
+        "time": 0.9229159355163574
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 61-year-old male with right knee pain, has colon cancer surgery 2 months ago, currently on systemic anticancer therapy, expected survival ",
+        "time": 0.9131851196289062
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 35-year-old gravida 3 para 2, at 34 weeks 2 days, with prior two elective C-sections at 30 and 32 weeks? Actually",
+        "time": 0.9307639598846436
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "We need to answer with two choices (a,b,c,d,e). The question: 34-year-old female with anterior chest wall pain, gradually worsening over 3 months. Temp normal. No abnormal heart or lung sounds. Chest ",
+        "time": 0.8364658355712891
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,c,d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 44-year-old female with liver dysfunction, no specific history, no jaundice, labs: RBC 4.96, Hb 14.8, Hct 44%",
+        "time": 0.929091215133667
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,b,c,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "We need to answer with two letters (a,b,c,d,e) appropriate response for management of a patient with advanced gastric cancer causing obstruction, vomiting, dehydration, need nutrition. The scenario: 3",
+        "time": 0.9543290138244629
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "We need to answer with two options that are likely achievable given the described condition. The patient is 22, cervical spinal cord injury, 8 weeks post-fall. Motor scores: both sides: biceps 5 (full",
+        "time": 0.8718438148498535
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "a,b,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to parse the case: 68-year-old male with nasal obstruction, epistaxis, hearing loss, progressive over months. Now has hemoptysis? Actually cough. Labs: anemia, low albumin, high IgG, high B",
+        "time": 1.0154247283935547
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"5歳の女児。3日前からの高熱を主訴に母親とともに来院した。咽頭痛と食欲低下を認",
+        "time": 0.9085381031036377
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 40-year-old male with epigastric pain, sudden severe pain, cannot move, now in ER. Physical exam: abdominal tenderness, rebound, absent bowel sounds. La",
+        "time": 0.972628116607666
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "We need to answer multiple-choice question: 3 correct statements among a-e. The scenario: 18-year-old male, dormitory, fever, headache, altered mental status, petechial rash, CSF: turbid, opening",
+        "time": 0.9773252010345459
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "We need to answer with three options (a,b,c,d,e) that are appropriate treatment considerations for this case. Let's parse the case.\n\n42-year-old male, abdominal pain main complaint. Had epigastric pai",
+        "time": 0.9756333827972412
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "We need to answer with three options (a,b,c,d,e) that are appropriate rehabilitation for this patient. Let's analyze case.\n\n70-year-old female, after cerebral infarction with right hemiparesis, now in",
+        "time": 0.9431726932525635
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"睡眠時無呼吸症候群による高血圧について、正しくないのはどれか。\" Options a-e. Choose one that is NOT correct.\n\n",
+        "time": 0.8186430931091309
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"妊娠末期の腟分泌物細菌培養検査でB群連鎖球菌〈GBS",
+        "time": 0.834791898727417
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"中心性漿液性脈絡網膜症について誤っているのはどれか。\" Options a-e. Choose one that is false (incorrect",
+        "time": 0.7909488677978516
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"単剤の内服で低血糖の原因になる可能性が高いのはどれか。\" Options: a: DPP-4阻害薬, b",
+        "time": 0.7773990631103516
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"我が国での成人心臓移植について正しいのはどれか。\" Options a-e. Choose one correct answer.\n\nWe need to know facts about adult heart transplantation",
+        "time": 0.7905991077423096
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"高カリウム血症の原因となるのはどれか。\" Options: a: β刺激薬, b: インスリン, c: ループ",
+        "time": 0.776080846786499
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"逆流性食道炎の誘因とならないのはどれか。\" Means \"Which of the following is NOT a risk factor for gastroesophageal reflux disease (GERD",
+        "time": 0.7755188941955566
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"心不全で来院した患者において心サルコイドーシスの所見に合致しないのはどれか。\" Options: a: 房室",
+        "time": 0.7919340133666992
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a,b,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"骨壊死のリスクファクターでないのはどれか。\" Options: a: 酒 (alcohol), b: 減圧症 (de",
+        "time": 0.7739758491516113
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"全身性強皮症による続発性Raynaud現象の特徴はどれか。\" Options: a: 片側性である。",
+        "time": 0.7846517562866211
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"自閉スペクトラム症の特徴でないのはどれか。\" Options a-e. Choose one. The correct answer is the one that is NOT a characteristic of",
+        "time": 0.7881097793579102
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"急激な血圧上昇を認める患者で、高血圧緊急症の病態として考えにくいのはどれか",
+        "time": 0.8244462013244629
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,b,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to answer with two letters separated by comma? The instruction: \"2個選んで答えてください。\" So we need to select two correct statements about vascular dementia. Let's analyze each option.\n\na: \"50歳台",
+        "time": 0.7885582447052002
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,b,c,d,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "We need to answer with two letters separated by comma? The instruction: \"2個選んで答えてください。\" So we need to select two correct combos. Let's identify correct pathogen-tumor associations.\n\na: HPV (human papi",
+        "time": 0.7958159446716309
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,b,c,d,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "We need to answer with two options (a,b,c,d,e) that are indicators used for diagnosing acute kidney injury. The question: \"急性腎障害の診断に用いられる指標はどれか",
+        "time": 0.7871592044830322
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"本患者の蛋白尿の原因が糖尿病性腎症であることを最も示唆する所見はどれか。\"",
+        "time": 1.0814168453216553
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate initial management for a 6-month-old boy with hemophilia A (factor VIII deficiency) presenting with vomiting after fall, appears pale, activ",
+        "time": 1.0023088455200195
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 23-year-old male, excessive daytime sleepiness, cataplexy (loss of muscle tone triggered by emotions like laughter or surprise), no abnorm",
+        "time": 0.9019699096679688
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n62-year-old female, dyspnea and fatigue. 7 days ago had catheter ablation for paroxysmal atrial fibrillation, discharged 3 days a",
+        "time": 0.9697291851043701
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n64-year-old male, dyspnea. 4 days prior left chest pain and dyspnea gradually worsened. Now at presentation: temperature 36.2",
+        "time": 0.9631919860839844
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 73-year-old man with choledocholithiasis undergoing ERCP (endoscopic stone removal). 3 hours later persistent epigastric and back pain, low grade fever ",
+        "time": 0.9896969795227051
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"22歳の男性。健診で腎機能低下を指摘され心配になり来院した。母親と叔父が透析",
+        "time": 0.8945338726043701
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: which drug should be administered to this patient? Options: a: Imatinib, b: Gefitinib, c: Cyclosporine, d: Bleomycin, e: All-trans retinoic",
+        "time": 1.0192959308624268
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 45-year-old male, chief complaint of hoarseness. Has had hoarseness for 2 years without trigger, also throat foreign body sensation and ch",
+        "time": 0.8430140018463135
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate next step for a 13-year-old girl who experienced symptoms during basketball after eating a lunch that included squid (ika) about 1 hour earl",
+        "time": 0.9686689376831055
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer which is NOT appropriate response by industrial physician. Options:\n\na: Recommend psychiatric consultation. That seems appropriate.\n\nb: Advise to stop drinking before bed. Alcohol ca",
+        "time": 0.9424738883972168
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"まず行うべきなのはどれか。\" (What should be done first?) Options a-e. We need to select one answer letter.\n\nWe have a clinical scenario: 8",
+        "time": 0.9567580223083496
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: which disease is possible for this patient. Options: A, B, C, D, E hepatitis. Data: 23-year-old male, symptoms of jaundice, fatigue, nausea, dark",
+        "time": 1.0420258045196533
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 40-year-old man, difficulty writing, progressive over 3 years, tremor? Actually he can't write well, but no tremor? The description: when ",
+        "time": 0.8872911930084229
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"予想される所見はどれか。\" (Which finding is expected?) Options a-e. Need to select one answer.\n\nWe have a 42-year-old male with acute abdominal",
+        "time": 0.9369709491729736
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 48-year-old female, main complaints: polydipsia and fatigue. 5 days ago had fever and abdominal pain. She is eating normally. Conscious, t",
+        "time": 0.9720919132232666
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\nA newborn male, 10 hours old. Born at 39 weeks, weight 2,960g, Apgar 7 at 1 min",
+        "time": 0.921130895614624
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to parse the question. It's a clinical scenario. There's a dialogue between trainee and supervisor. They list items ① through ⑤. The question: \"下線部のうち誤っているのはどれか。\"",
+        "time": 1.0093638896942139
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: newborn female? Actually ambiguous external genitalia. The question: \"外性器の外観写真を別に示す。鼠径部に腫瘤を",
+        "time": 0.8887662887573242
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n52-year-old male, fatigue. 6 weeks ago diagnosed with advanced lung adenocarcinoma, started immune checkpoint inhibitor therapy 3",
+        "time": 0.9883010387420654
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 63-year-old man with abdominal pain, abdominal distension, known umbilical hernia that was reducible but now incarcerated? He has a swelling at umbilicu",
+        "time": 1.0506539344787598
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate treatment for this case. Let's parse the clinical scenario.\n\n72-year-old female, progressive thrombocytopenia (platelets 4.7 x10^4? Actually",
+        "time": 1.0239088535308838
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者の周術期管理で適切なのはどれか。\" Options a-e. Choose one.\n\nWe need to consider the patient: 62-year-old male",
+        "time": 1.0190069675445557
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 20-year-old female with abdominal rash, persistent, no itch, mother also has similar rash starting at age 15, sometimes Kaposi varicellifo",
+        "time": 0.9100301265716553
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"最初に行う輸液の組成として適切なのはどれか。\" (Which composition of infusion is appropriate to administer first?) Options a-e. The case:",
+        "time": 1.0845139026641846
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 45-year-old male with sudden onset of right ear hearing loss and tinnitus, no vertigo, normal tympanic membrane, audiogram presumably show",
+        "time": 0.8487560749053955
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 36-year-old G2P0 at 36 weeks 4 days, presenting with abdominal pain. Vitals: T 36.8, HR 11",
+        "time": 0.9124186038970947
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者で上昇していると考えられるホルモンはどれか。\" Options: a TSH, b ACTH, c ガストリン, d カ",
+        "time": 1.002593994140625
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 22-year-old female with primary amenorrhea, menarche at 12, irregular then amenorrhea by 14. No complaints. Physical: height 164",
+        "time": 0.9237809181213379
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer with a single letter a-e corresponding to the image that shows meniscus tear. However we don't have the images. The question: \"MRI検査で右膝内側半月板断",
+        "time": 0.8457889556884766
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者の確定診断に必要な内分泌検査はどれか。\" Options: a: GHRH負荷試験",
+        "time": 0.9290659427642822
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"32歳の女性。昨晩同意のない性行為を強要され、本日警察官に付き添われて受診した。警察官から被",
+        "time": 0.880903959274292
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 10-month-old boy with vomiting, bloody stool, severe crying, signs of peritonitis? No fever, vitals: pulse 160, BP 84",
+        "time": 0.9671690464019775
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate next step for a 45-year-old man with symptomatic dyspnea, fatigue, exercise intolerance, progressive dyspnea, now at rest? He has a murmur, ",
+        "time": 0.9888811111450195
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 35-year-old man, cough, fever, dyspnea. Dry cough 3 weeks, fever and dyspnea 5 days. One month ago cleaned a 30-year",
+        "time": 1.0045697689056396
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 14-year-old male, with chromosomal abnormality? They mention \"染色体検査を別に示す\" meaning separate chromosomal test is shown. The physical feature",
+        "time": 0.9307539463043213
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 19-year-old male, chemical (NaOH) splash to right eye, conjunctival edema, corneal opacity. What is first step? In ocular chemical burns, ",
+        "time": 0.8491339683532715
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to parse the question. It's a clinical scenario: 76-year-old male, with increased sputum, history of total gastrectomy 8 years ago, weight loss, sputum for 5 years, now increased and difficult",
+        "time": 0.9803409576416016
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 2-year-old boy, mother concerned about increased TV volume, had ear pain and nasal discharge 1 week ago, resolved after 2 days. Since then",
+        "time": 0.884904146194458
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: healthcare worker needlestick with patient blood. Patient serology: HBsAg positive, anti-HBs negative, anti-HCV negative. So patient is HB",
+        "time": 0.8901388645172119
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者で低下するのはどれか。\" (Which of the following is decreased in this patient?) Options: a: ferritin, b: reticulocyte count,",
+        "time": 1.0206100940704346
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: cause of death in a 2-month-old female with subdural hematoma, diffuse brain edema, fractures, no trauma history, seizures, etc. Likely child abuse (e.g",
+        "time": 0.9319369792938232
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 69-year-old male with left nasal bleeding, diplopia, recurrent left nasal bleeding, progressive left nasal obstruction, double vision. Ima",
+        "time": 0.8743739128112793
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 8-year-old girl with severe itching, skin lesions, widespread eczema-like rash on face, trunk, elbows, knees. Lab: WBC 8600,",
+        "time": 0.8722009658813477
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 80-year-old man with left temporal region rash, started 3 months ago as purplish patch, gradually enlarged, elevated, bled. On anticoagula",
+        "time": 0.9213218688964844
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 64-year-old man with left hemiplegia and impaired consciousness, GCS 4-4-6? Actually E4 V4 M6 = total 14",
+        "time": 0.8637809753417969
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The case: 58-year-old woman with proteinuria (3+), hypoalbuminemia (albumin 2.6), edema, creatinine 1.3, eGFR ",
+        "time": 1.1113009452819824
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n78-year-old female, 1 week of fever 38°C, fatigue. Height 151 cm, weight 42 kg (low BMI).",
+        "time": 0.9432299137115479
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 61-year-old male with right knee pain, after colon cancer surgery, currently on systemic anticancer therapy, expected survival >2 years, c",
+        "time": 0.9372889995574951
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"35歳の経産婦（3妊2産）。妊娠34週2日、妊婦健康診査のため受診",
+        "time": 0.9471752643585205
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "We need to answer with two letters separated by comma? The instruction: \"2個選んで答えてください。\" So we need to select two options. The question: 34-year-old female with anterior chest wall pain, gradually wors",
+        "time": 0.8816750049591064
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,c,d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "We need to parse the question. It's a clinical scenario: 44-year-old female, health checkup shows liver dysfunction. No notable history. No jaundice. Lab: RBC 4.96 million, Hb 14",
+        "time": 0.9492359161376953
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,b,c,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "We need to answer with two letters separated by comma? The instruction: \"2個選んで答えてください。\" So choose two appropriate responses. The question: 38-year-old female with advanced gastric cancer causing obstr",
+        "time": 0.9632031917572021
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "We need to answer with two letters (a,b,c,d,e) corresponding to activities that are expected to be recovered (i.e., likely to be regained) given the neurological level and function.\n\nWe have a 22-year",
+        "time": 0.9129080772399902
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "a,b,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to parse the case: 68-year-old male with nosebleed, cough, nasal obstruction, hearing loss, intermittent nosebleed for 3 weeks, cough. Physical exam: both tympanic membranes red and swollen. N",
+        "time": 1.038132905960083
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"5歳の女児。3日前からの高熱を主訴に母親とともに来院した。咽頭痛と食欲低下を認",
+        "time": 0.9368381500244141
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "We need to answer with three letters separated by commas? The instruction: \"3個選んで答えてください。\" So answer should be three letters, likely separated by commas or spaces? In previous examples they used comma",
+        "time": 0.9871840476989746
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "We need to answer multiple-choice question: 3 correct statements among a-e. The scenario: 18-year-old male, dormitory, fever, headache, altered mental status, petechial rash, CSF: turbid, opening",
+        "time": 0.9838700294494629
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "We need to answer with three letters separated by commas? The instruction: \"3個選んで答えてください。\" So we need to select three options that are appropriate treatment considerations. Let's analyze case.\n\n42yo m",
+        "time": 0.983942985534668
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "We need to answer with three letters separated by commas? The instruction: \"3個選んで答えてください。\" So we need to select three appropriate rehabilitation interventions. Let's analyze case.\n\n70-year-old female,",
+        "time": 0.9441168308258057
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"睡眠時無呼吸症候群による高血圧について、正しくないのはどれか。\" Which statement is incorrect regarding hypertension due to obstructive sleep apnea (OSA). Options:\n\na: 夜間高血圧となることが多い。 ",
+        "time": 2.210223913192749
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"妊娠末期の腟分泌物細菌培養検査でB群連鎖球菌〈GBS〉が陽性となった妊婦に対する母子感染予防対策として、ペニシリン系抗菌薬の投与を開始する適切な時期はどれか。\" Options: a: 陽性判明の時点, b: 妊娠37週時, c: 陣痛開始時, d: 子宮口全開大時, e:",
+        "time": 2.238999843597412
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"単剤の内服で低血糖の原因になる可能性が高いのはどれか。\" Options: a: DPP-4阻害薬, b: SGLT2阻害薬, c: ビグアナイド薬, d: スルホニル尿素薬, e: αグルコシダーゼ阻害薬. Choose one.\n\nWe need to consider which drug cl",
+        "time": 21.583056211471558
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer a multiple-choice question: \"我が国での成人心臓移植について正しいのはどれか。\" Options a-e. Choose one correct statement.\n\nWe need to know facts about adult heart transplantation in Japan.\n\nLet's recall: In",
+        "time": 2.2006328105926514
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"高カリウム血症の原因となるのはどれか。\" Options: a: β刺激薬, b: インスリン, c: ループ利尿薬, d: グリチルリチン, e: レニン・アンジオテンシン系抑制薬. Choose one.\n\nWe need to think about hyperkalemia causes. H",
+        "time": 2.1144800186157227
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,b,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"逆流性食道炎の誘因とならないのはどれか。\" Options: a: 肥満 (obesity), b: 高齢 (elderly), c: 亀背 (kyphosis?), d: 萎縮性胃炎 (atrophic gastritis), e: カルシウム拮抗薬 (calcium channel blocker",
+        "time": 2.146289825439453
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"心不全で来院した患者において心サルコイドーシスの所見に合致しないのはどれか。\" Options: a: 房室ブロック, b: 持続性心室頻拍, c: 左室駆出率の低下, d: 心室中隔の非対称性肥大, e: FDG-PETでの心筋への異常集積. Need to select the one that ",
+        "time": 2.1673359870910645
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a,b,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"骨壊死のリスクファクターでないのはどれか。\" Options: a: 酒 (alcohol), b: 減圧症 (decompression sickness), c: 放射線照射 (radiation exposure), d: 有機リン剤 (organophosphate), e: 副腎皮質ステロイ",
+        "time": 2.1470768451690674
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"全身性強皮症による続発性Raynaud現象の特徴はどれか。\" Options: a: 片側性である。 b: 家族歴がある。 c: 若年発症が多い。 d: 手指腫脹を伴う。 e: 血圧の左右差を伴う。\n\nWe need to select one answer.\n\nWe need to think ab",
+        "time": 2.128727912902832
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"自閉スペクトラム症の特徴でないのはどれか。\" Options a-e. Choose one. The correct answer is the one that is NOT a characteristic of autism spectrum disorder. Let's examine e",
+        "time": 2.157320261001587
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"急激な血圧上昇を認める患者で、高血圧緊急症の病態として考えにくいのはどれか。\" Options a-e. Choose one.\n\nWe need to identify which condition is unlikely as a presentation of hypertensive eme",
+        "time": 2.247922897338867
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"脳血管性認知症について正しいのはどれか。2つ選べ。\" Options a-e. Need to select two correct statements.\n\nWe need to know about vascular dementia (vascular cognitive impairment)",
+        "time": 2.236898183822632
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,c,d,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"病原体と悪性腫瘍の組合せで正しいのはどれか。2つ選べ。\" Options a-e. Need to select two correct combos.\n\nWe need to know associations:\n\na: Human papillomavirus (HPV) - uterine (c",
+        "time": 2.1981849670410156
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,b,c,d,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "We need to answer with two choices (a,b,c,d,e) that are indicators used for diagnosing acute kidney injury. The question: \"急性腎障害の診断に用いられる指標はどれか。2つ選べ。\" Options: a: 尿蛋白量 (urine protein amount), b: 腎の長径 ",
+        "time": 2.176631212234497
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"本患者の蛋白尿の原因が糖尿病性腎症であることを最も示唆する所見はどれか。\" Options: a: 姉の糖尿病歴, b: 抗GAD抗体陰性, c: 糖尿病網膜症の存在, d: 随時血糖値＞200mg/dL, e: 尿蛋白/Cr比＞1.0g/gCr. Choose one.\n\nWe need to pi",
+        "time": 2.533306121826172
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate initial management for a 6-month-old boy with hemophilia A (factor VIII deficiency), presenting with vomiting after fall, appears active but",
+        "time": 2.4188551902770996
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 23-year-old male, excessive daytime sleepiness, cataplexy (loss of muscle tone triggered by emotions like laughter or surprise), no abnorm",
+        "time": 2.2752020359039307
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n62-year-old female, dyspnea and fatigue. 7 days ago had catheter ablation for paroxysmal atrial fibrillation, discharged 3 days a",
+        "time": 2.3812708854675293
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n64-year-old male, chief complaint dyspnea. 4 days prior left chest pain and dyspnea gradually worsened. On arrival: temperature 3",
+        "time": 2.3704259395599365
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 73-year-old man with choledocholithiasis undergoing ERCP (endoscopic stone removal). 3 hours later persistent epigastric and back pain, low grade fever ",
+        "time": 2.350874185562134
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"22歳の男性。健診で腎機能低下を指摘され心配になり来院した。母親と叔父が透析治療を受けている。血液生化学所見：尿素窒素28mg/dL、クレアチニン1.5mg/dL。腹部MRI（脂肪抑制T2強調冠状断像）を別に示す。この疾患で誤っているのはどれか。\"\n\nOptions:\na: 肝嚢胞の合併が多い。\nb:",
+        "time": 2.24499773979187
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 38-year-old male with pancytopenia (leukopenia, anemia, thrombocytopenia), bone marrow likely shows something (photo not shown). Likely diagnosis is apl",
+        "time": 2.355058193206787
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 45-year-old male, chief complaint is hoarseness (嗄声). It started 2 years ago without trigger, with sensation of foreign body in throat and",
+        "time": 2.1924102306365967
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n13-year-old girl, during basketball game, had malaise and abdominal pain, went to teacher, had eaten a school lunch about 1 h",
+        "time": 2.4178950786590576
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to select the inappropriate response (i.e., which is NOT appropriate) for the industrial physician's approach. The scenario: 30-year-old male, decreased work efficiency, working from home due ",
+        "time": 2.303323984146118
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n81-year-old male with COPD, on bronchodilator, now acute dyspnea, O2 via nasal cannula 0.5 L/min, now at 8am transferred. Con",
+        "time": 2.414243698120117
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: 23-year-old male with fatigue, anorexia, nausea, jaundice, dark urine, mild hepatomegaly, labs show elevated transaminases (AST 984, ALT 822), LDH high,",
+        "time": 1.6206488609313965
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 40-year-old man with difficulty writing, progressive over 3 years, tremor? Actually he can't write well, but no tremor? He has dystonia? The description",
+        "time": 1.7869880199432373
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"予想される所見はどれか。\" (Which finding is expected?) Options a-e. Need to select one.\n\nWe have a 42-year-old male with acute abdominal pain in right lower quadra",
+        "time": 2.3291358947753906
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 48-year-old female with polydipsia, fatigue, recent fever and abdominal pain 5 days ago, normal temperature now, labs: HbA1c 5.8% (normal range 4.6-6.2)",
+        "time": 2.3349528312683105
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n- 10-hour-old male infant, term (39 weeks), weight 2,960g, Apgar 7 at 1 min, 8 at 5 min. Noticed cyanosis by midwife, not at ",
+        "time": 2.34466290473938
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to identify which statement among a-e is incorrect (misstatement). Let's parse the scenario.\n\n73-year-old male with claudication in left calf when walking, intermittent, rest relieves. Has dia",
+        "time": 2.4215550422668457
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: newborn female? Actually external genitalia ambiguous? They mention \"外性器の外観写真を別に示す\" but not provided. No tumor in groin. Likely ambiguous ",
+        "time": 2.268134832382202
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n52-year-old male, fatigue. 6 weeks ago diagnosed with advanced lung adenocarcinoma, started immune checkpoint inhibitor therapy 3",
+        "time": 2.3315327167510986
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 72-year-old female with thrombocytopenia (platelets 4.7 x10^4? Actually 4.7万 = 47,000), mild anemia (Hb 6.1), mild jaundice, mild proteinuria, elevated ",
+        "time": 21.650849103927612
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者の周術期管理で適切なのはどれか。\" Options a-e. Choose one.\n\nWe need to evaluate which is appropriate for this patient's perioperative management.\n\nGiven the scenar",
+        "time": 2.380315065383911
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 20-year-old female with abdominal rash, persistent, no itch, mother also has similar rash starting at age 15, sometimes Kaposi varicellifo",
+        "time": 2.283057928085327
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"最初に行う輸液の組成として適切なのはどれか。\" (Which composition of infusion is appropriate to administer first?) Options a-e. We need to select one.\n\nWe have a clinical cas",
+        "time": 2.4471349716186523
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 45-year-old man with sudden onset of right ear hearing loss and tinnitus, no vertigo, normal tympanic membrane, audiogram presumably shows",
+        "time": 1.6056342124938965
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n36-year-old G2P0 (2 pregnancies, 0 births? Actually 2妊0産 means 2 pregnancies, 0 births? Might be 2nd pregnancy, 0 births? Act",
+        "time": 2.3093581199645996
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者で上昇していると考えられるホルモンはどれか。\" Options: a TSH, b ACTH, c ガストリン, d カテコラミン, e テストステロン. Need to select one.\n\nWe have a 28-year-old male with epigastric pain,",
+        "time": 2.4472320079803467
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 22-year-old female with primary amenorrhea, menarche at 12, irregular then amenorrhea by 14. No complaints. Physical exam: height 164 cm, weight 56 kg, ",
+        "time": 2.301447868347168
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"38歳の女性。右膝痛を主訴に来院した。3週間前にバレーボールの練習中に右膝を捻って受傷し、疼痛が軽減しないため受診した。MRI検査で右膝内側半月板断裂が認められた。右膝関節の関節鏡所見（①～⑤）を別に示す。半月板断裂を示している画像はどれか。 a: ① b: ② c: ③ d: ④ e: ⑤ 1個選ん",
+        "time": 2.234545946121216
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"53歳の男性。家族からいびきを指摘されたことを主訴に来院した。10年ぶりに会った友人に鼻が大きくなって顔つきが変わったと言われた。最近靴が窮屈になってきている。2年前に手根管症候群で手術。身長173cm、体重72kg。体温36.4℃。脈拍56/分、整。血圧156/90mmHg。血液生化学検査：AST ",
+        "time": 2.3743700981140137
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"32歳の女性。昨晩同意のない性行為を強要され、本日警察官に付き添われて受診した。警察官から被害状況の説明を受け、診察をすることになった。月経周期は28日型、整、順。最終月経は12日前から5日間。対応として適切でないのはどれか。\"\n\nOptions:\na: 性感染症の検査を行う。\nb: 緊急避妊薬を提案",
+        "time": 2.2707881927490234
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n10-month-old boy, vomiting and bloody stools. Sudden vomiting, occasional intense crying, blood stool multiple times. Conscio",
+        "time": 2.3573310375213623
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate management for a 45-year-old man with symptoms of dyspnea on exertion, fatigue, known heart murmur, echo shows left ventricular dilation (en",
+        "time": 2.4466681480407715
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n35-year-old male, cough, fever, dyspnea. Dry cough for 3 weeks, fever and dyspnea 5 days. One month ago cleaned a 30-year-old hou",
+        "time": 2.3802690505981445
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"日齢14の男児。染色体検査の結果説明のため両親とともに来院した。在胎39週、出生体重2,800g、Apgarスコア8点（1分）、9点（5分）で出生した。体重3,300g。体温36.5℃。心拍数120/分。呼吸数40/分。SpO2 98％（room air）。切れ上がった目、",
+        "time": 2.3180179595947266
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 19-year-old male, got sodium hydroxide (NaOH) liquid in right eye during experiment, came to emergency, conscious, conjunctival edema, cor",
+        "time": 1.6270709037780762
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to parse the question: 76-year-old male, with increased sputum, history of total gastrectomy 8 years ago, weight loss, sputum for 5 years, now increased and difficult to expectorate. Physical ",
+        "time": 2.336682081222534
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 2-year-old boy, mother concerned about increased TV volume, had ear pain and nasal discharge 1 week ago, resolved after 2 days. Since then",
+        "time": 2.2569990158081055
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: healthcare worker got needlestick with patient blood. Patient labs: HBsAg positive, anti-HBs negative, anti-HCV negative. So patient is HB",
+        "time": 2.270763874053955
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者で低下するのはどれか。\" (Which of the following is decreased in this patient?) Options: a: ferritin, b: reticulocyte count, c: vitamin B12, d: erythropoietin,",
+        "time": 2.395592212677002
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 2-month-old female infant, seizure-like episodes, found unconscious, cardiac arrest, no return of circulation, no pupillary reflex. Postmo",
+        "time": 2.35267972946167
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 69-year-old male with left nasal bleeding, diplopia, recurrent left nasal bleeding, progressive left nasal obstruction, double vision 2 da",
+        "time": 2.300717830657959
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"8歳の女児。著しい掻痒を伴う皮疹を主訴に来院した。背部の所見を別に示す。同様の皮疹が背部以外にも顔面、腹部、肘窩、膝窩など全身に認められる。白血球8,600（好酸球12％）。IgE 2,800IU/mL（基準250以下）。抗原特異的IgEはハウスダスト、スギ花粉等吸入性抗原",
+        "time": 2.2868270874023438
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 80-year-old male, left temporal region to left cheek rash, 3 months after a purple macule appeared, gradually expanded, elevated, bled. No",
+        "time": 2.2990002632141113
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 64-year-old man with left hemiplegia and impaired consciousness, GCS 4-4-6? Actually E4 V4 M6 = total 14? Wait GCS: E4 V4 M6 = 14, but the",
+        "time": 2.286072015762329
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: cause of proteinuria in a 58-year-old woman with nephrotic-range proteinuria (280 mg/dL), low albumin 2.6, edema, creatinine 1.3, eGFR 33.5, hematuria m",
+        "time": 2.497853994369507
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n78-year-old female, 1-week history of fever 38°C, fatigue. Height 151 cm, weight 42 kg (low BMI). Temp 38.2°C. Pulse 92, BP 84/50",
+        "time": 2.3257761001586914
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 61-year-old man with right knee pain, has osteoarthritis, considered for total knee arthroplasty. He had colon cancer surgery 2 months ago",
+        "time": 2.3026649951934814
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"35歳の経産婦（3妊2産）。妊娠34週2日、妊婦健康診査のため受診した。妊娠初期から妊婦健康診査を受けていた。30歳時および32歳時に、それぞれ骨盤位および既往帝王切開の適応で選択的帝王切開の既往がある。身長157cm、体重55kg（非妊時46kg）。体温36.8℃。脈拍80/分、整。血圧110/74",
+        "time": 2.291057825088501
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "We need to answer with two choices (a,b,c,d,e) that are possible diseases given presentation: 34-year-old female, anterior chest wall pain, gradually worsening over 3 months, vitals normal, no abnorma",
+        "time": 2.225961923599243
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "We need to parse the question: 44-year-old female, health check shows liver dysfunction. No notable history. No jaundice. Labs: RBC 4.96 million, Hb 14.8, Hct 44% (normal). WBC 5,200, platelets 250k (",
+        "time": 2.2900826930999756
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,b,c,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 38-year-old female with abdominal pain, 1 week of no bowel movements, vomiting, abdominal pain, distension, increased. Rectal exam reveals hard mass in ",
+        "time": 2.364439010620117
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 22-year-old male with cervical spinal cord injury, 8 weeks post-fall. Motor scores: bilateral biceps 5 (C5), brachioradialis (extensor carpi radialis) 5",
+        "time": 2.2920539379119873
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "a,b,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to parse the case: 68-year-old male with nosebleed, cough, nasal obstruction, hearing loss, intermittent nosebleed for 3 weeks, cough. Physical exam: both tympanic membranes red and swollen. N",
+        "time": 2.423421859741211
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"5歳の女児。3日前からの高熱を主訴に母親とともに来院した。咽頭痛と食欲低下を認めるが、咳嗽や鼻汁は認めない。体温39.6℃。脈拍120/分、整。呼吸数28/分。SpO2 100％（room air）。活気良好。顔色良好。眼球結膜に軽度の発赤を認める。咽頭の発赤を認め、口蓋扁桃に白苔の付着を認める。両側",
+        "time": 2.3816280364990234
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 40-year-old male with epigastric pain, sudden severe pain, cannot move, now in ER. Physical exam: abdominal tenderness, rebound, absent bowel sounds. La",
+        "time": 2.3776748180389404
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "We need to answer multiple-choice question: 3 correct statements among a-e. The scenario: 18-year-old male, meningitis signs, CSF shows turbid, high opening pressure, neutrophils, low glucose, high pr",
+        "time": 2.3668699264526367
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 42-year-old male with abdominal pain, RLQ pain, vomiting, labs show WBC 16.2k, mild anemia, normal LFTs, LDH slightly elevated? Actually LD 147 (upper n",
+        "time": 2.373347043991089
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "We need to answer with three options (a,b,c,d,e) that are appropriate rehabilitation for this patient. Let's parse the case.\n\n70-year-old female, after cerebral infarction with residual right hemipare",
+        "time": 2.35953688621521
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer a multiple-choice question: \"睡眠時無呼吸症候群による高血圧について、正しくないのはどれか。\" Which statement is incorrect regarding hypertension due to obstructive sleep ap",
+        "time": 0.8432538509368896
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"妊娠末期の腟分泌物細菌培養検査でB群連鎖球菌〈GBS",
+        "time": 0.8534581661224365
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer a multiple-choice question: \"中心性漿液性脈絡網膜症について誤っているのはどれか。\" Options a-e. Choose one that is false (incorrect",
+        "time": 0.8013210296630859
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"単剤の内服で低血糖の原因になる可能性が高いのはどれか。\" Options: a: DPP-4阻害薬, b",
+        "time": 0.7712631225585938
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer a multiple-choice question: \"我が国での成人心臓移植について正しいのはどれか。\" Options a-e. Choose one. Need to select correct statement based on Japanese medical guidelines.\n\n",
+        "time": 0.819756031036377
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"高カリウム血症の原因となるのはどれか。\" Options: a: β刺激薬, b: インスリン, c: ループ",
+        "time": 0.7909018993377686
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer a multiple-choice question: \"逆流性食道炎の誘因とならないのはどれか。\" (Which is NOT a risk factor for gastroesophageal reflux disease (GERD) / reflux es",
+        "time": 0.7620189189910889
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"心不全で来院した患者において心サルコイドーシスの所見に合致しないのはどれか。\" Options a-e. Need to select",
+        "time": 0.809006929397583
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"骨壊死のリスクファクターでないのはどれか。\" (Which is NOT a risk factor for bone necrosis). Options: a: Alcohol consumption, b: De",
+        "time": 0.7814960479736328
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"全身性強皮症による続発性Raynaud現象の特徴はどれか。\" (Which of the following is a characteristic of secondary Ray",
+        "time": 0.7838377952575684
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"自閉スペクトラム症の特徴でないのはどれか。\" Options a-e. Must select one answer. The question: \"Which is NOT a characteristic of",
+        "time": 0.7948992252349854
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"急激な血圧上昇を認める患者で、高血圧緊急症の病態として考えにくいのはどれか",
+        "time": 0.8254621028900146
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,b,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to answer with two letters (a,b,c,d,e) that are correct statements about vascular dementia (脳血管性認知症). Let's analyze each option.\n\na: \"50歳台では発症",
+        "time": 0.8160789012908936
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,b,c,d,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "We need to answer with two letters (multiple choice) that are correct combinations of pathogen and malignant tumor. The question: \"病原体と悪性腫瘍の組合せで正しいのはどれか。2",
+        "time": 0.8369450569152832
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,b,c,d,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "We need to answer with two options a,b,c,d,e that are correct for \"指標はどれか。2つ選べ。\" The question: \"急性腎障害の診断に用いられる",
+        "time": 0.7980420589447021
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"本患者の蛋白尿の原因が糖尿病性腎症であることを最も示唆する所見はどれか。\"",
+        "time": 1.095459222793579
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate initial management for a 6-month-old boy with hemophilia A (factor VIII deficiency) presenting with vomiting after fall, appears pale, activ",
+        "time": 1.00099778175354
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 23-year-old male, excessive daytime sleepiness, cataplexy (loss of muscle tone triggered by emotions like laughter or surprise), no abnorm",
+        "time": 0.9293239116668701
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n62-year-old woman, dyspnea and fatigue. 7 days ago underwent catheter ablation for paroxysmal atrial fibrillation, discharged 3 d",
+        "time": 0.9753921031951904
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n64-year-old male, chief complaint dyspnea. 4 days ago left chest pain and dyspnea started and gradually worsened. Now at presenta",
+        "time": 0.9657008647918701
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n73-year-old male underwent endoscopic stone removal (choledocholithotomy? Actually \"内視鏡的結石除去術\" likely endoscopic papillary",
+        "time": 1.0053753852844238
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"22歳の男性。健診で腎機能低下を指摘され心配になり来院した。母親と叔父が透析",
+        "time": 0.9107561111450195
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者に投与すべき薬剤はどれか。\" Options: a: イマチニブ (imatinib), b: ゲフィチニ",
+        "time": 0.9868762493133545
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 45-year-old male, chief complaint is hoarseness (嗄声). It started 2 years ago without trigger, with sensation of foreign body in throat and",
+        "time": 0.8460590839385986
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 13-year-old girl, during basketball game, after eating bento with squid (main side dish) about 1 hour earlier, she experienced malaise and",
+        "time": 0.9856669902801514
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer which is NOT appropriate for the industrial physician's response. The scenario: 30-year-old male, decreased work efficiency, working from home due to COVID, stress from home noise an",
+        "time": 0.9479169845581055
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n81-year-old male with COPD, on bronchodilator, now acute dyspnea, O2 via nasal cannula 0.5 L/min, now at",
+        "time": 0.9702739715576172
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 23-year-old male with fatigue, anorexia, nausea, 1-week symptoms, brown urine, no diarrhea, alcohol occasional, 1 month ago same-sex sexual contact. Phy",
+        "time": 1.058657169342041
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 40-year-old man with difficulty writing, progressive over 3 years, tremor? Actually he can't write well, but no tremor? The description: W",
+        "time": 0.9164338111877441
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer a multiple-choice question: \"予想される所見はどれか。\" (Which finding is expected?) Options a-e. Must select one. The scenario: 42-year-old male with acute abdominal pain,",
+        "time": 0.9310770034790039
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 48-year-old female, main complaints of polydipsia and fatigue. 5 days ago had fever and abdominal pain. She is eating normally. Conscious,",
+        "time": 0.9391098022460938
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n- 10-hour-old male infant, term (39 weeks), weight 2,960g, Apgar 7 at 1 min, ",
+        "time": 0.9274067878723145
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer which of the underlined parts is incorrect. The conversation: The underlined parts are likely the items ① through ⑤. The question: \"下線部のうち誤っているのはどれか。\" Means \"",
+        "time": 0.9916830062866211
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: newborn female? Actually ambiguous external genitalia. The question: \"外性器の外観写真を別に示す。鼠径部に腫瘤を",
+        "time": 0.8966090679168701
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n52-year-old male, fatigue. 6 weeks ago diagnosed with advanced lung adenocarcinoma, started immune checkpoint inhibitor therapy 3",
+        "time": 0.9852578639984131
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n63-year-old male with abdominal pain, abdominal distension. Has a 2-year history of umbilical swelling that spontaneously reduced",
+        "time": 1.064835786819458
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate treatment for this 72-year-old female with thrombocytopenia, hemolysis signs, hepatic injury, renal dysfunction, fever, possible TTP? Let's ",
+        "time": 1.0381298065185547
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer a multiple-choice question: \"この患者の周術期管理で適切なのはどれか。\" Options a-e. Choose one.\n\nWe must consider Japanese clinical guidelines for perioperative management of colorectal surgery",
+        "time": 1.009951114654541
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 20-year-old female with abdominal rash, persistent, no itch, mother also has similar rash starting at age 15, sometimes Kaposi varicellifo",
+        "time": 0.9181268215179443
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"最初に行う輸液の組成として適切なのはどれか。\" (Which composition of infusion is appropriate to administer first?) Options a-e. Need to select",
+        "time": 1.1131339073181152
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 45-year-old male with sudden onset of right ear hearing loss and tinnitus, no vertigo, normal tympanic membrane, audiogram presumably show",
+        "time": 0.8799290657043457
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 36-year-old G2P0 at 36 weeks 4 days, presenting with abdominal pain. Vitals: T 36.8, HR 11",
+        "time": 0.9201693534851074
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者で上昇していると考えられるホルモンはどれか。\" Options: a TSH, b ACTH, c ガストリン, d カ",
+        "time": 1.0255780220031738
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 22-year-old female with primary amenorrhea, menarche at 12, irregular then amenorrhea by 14. No particular complaints. Height 164 cm",
+        "time": 0.931934118270874
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "a,b,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer based on MRI images (not provided). The question: \"右膝関節の関節鏡所見（①～⑤）を別に示す。半月板断裂を示している",
+        "time": 0.8596270084381104
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者の確定診断に必要な内分泌検査はどれか。\" Options: a: GHRH負荷試験",
+        "time": 0.9641528129577637
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"32歳の女性。昨晩同意のない性行為を強要され、本日警察官に付き添われて受診した。警察官から被",
+        "time": 0.9031162261962891
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the scenario.\n\n10-month-old boy, vomiting and bloody stools, acute onset, crying, no fever, vital signs: pulse 160, BP 84/",
+        "time": 0.9757099151611328
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer a multiple-choice question: \"適切な対応はどれか。\" Options a-e. Must select one. The scenario: 45-year-old male with exertional dyspnea, fatigue, progressive. Past",
+        "time": 1.0098118782043457
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 35-year-old man with cough, fever, dyspnea. 3 weeks dry cough, 5 days fever/dyspnea. One month ago cleaned a 30",
+        "time": 1.0053119659423828
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 14-year-old boy? Wait \"日齢14の男児\" likely means \"age 14\"? Actually \"日齢\" maybe \"age\"?",
+        "time": 0.9431321620941162
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 19-year-old male, sodium hydroxide (NaOH) liquid splashed into right eye, presenting with marked conjunctival edema, corneal opacity, cons",
+        "time": 0.8964247703552246
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: Which antimicrobial should be started while waiting for identification and susceptibility of the microbe? The scenario: 76-year-old male, weight loss, c",
+        "time": 0.9907500743865967
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 2-year-old boy, mother concerned about increased TV volume, had ear pain and nasal discharge 1 week ago, resolved after 2 days. Since then",
+        "time": 0.8888916969299316
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: healthcare worker needlestick with patient blood. Patient serology: HBsAg positive, anti-HBs negative, anti-HCV negative. So patient is HB",
+        "time": 0.917999267578125
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer a multiple-choice single answer question: \"この患者で低下するのはどれか。\" Options: a: ferritin, b: reticulocyte count, c: vitamin B12, d:",
+        "time": 1.0280308723449707
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The scenario: 2-month-old female infant, seizure-like episodes, cardiac arrest, no return of circulation, no pupillary reflex, CT shows bilateral subdur",
+        "time": 0.9516737461090088
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 69-year-old male with left nasal bleeding, diplopia, recurrent left nasal bleeding, progressive left nasal obstruction, double vision 2 da",
+        "time": 0.8895978927612305
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 8-year-old girl with severe itching, rash, elevated IgE, specific IgE positive for inhalant allergens (house dust, cedar pollen), negative for food. Whi",
+        "time": 0.8784060478210449
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 80-year-old male, left temporal region to left cheek rash, 3 months after a purple macule appeared, gradually expanded, elevated, bled. No",
+        "time": 0.9150259494781494
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer based on Japanese clinical guidelines? The question: 64-year-old man with left hemiplegia, impaired consciousness, GCS 4-4-6? Actually E4 V4 M6 = total 1",
+        "time": 0.866675853729248
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 58-year-old woman with proteinuria, hematuria, low complement? Actually complement not given. She has proteinuria 280 mg/dL (nephrotic",
+        "time": 1.0920429229736328
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse the case.\n\n78-year-old female, 1 week of fever 38°C, fatigue. Height 151 cm, weight 42 kg (low BMI).",
+        "time": 0.9343922138214111
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 61-year-old male with right knee pain, has colon cancer surgery 2 months ago, currently on systemic anticancer therapy, expected survival ",
+        "time": 0.9430630207061768
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,b,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. It's about a pregnant woman at 34 weeks 2 days, multiparous (3 pregnancies, 2 births). She has prior elective cesarean sections at 30 and 3",
+        "time": 0.9263870716094971
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "We need to answer with two choices (alphabet letters) that are possible diseases given presentation: 34-year-old female, anterior chest wall pain, gradually worsening over 3 months, mild fever 36.8°C ",
+        "time": 0.8899679183959961
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,c,d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. Let's parse.\n\nQuestion: 44-year-old female, health check shows liver dysfunction. No notable transfusion, alcohol, family history. No scleral icterus. L",
+        "time": 0.9647800922393799
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,b,c,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "We need to answer with two letters (a,b,c,d,e) appropriate response for management of a patient with advanced gastric cancer causing obstruction, vomiting, dehydration, need for nutrition. The questio",
+        "time": 0.9404840469360352
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "We need to answer with two options (a,b,c,d,e) that are likely achievable given the described condition. The patient is 22-year-old male, cervical spinal cord injury, 8 weeks post-fall. Motor scores: ",
+        "time": 0.9469189643859863
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "a,b,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: 68-year-old man with nosebleed, cough, nasal obstruction, hearing loss, intermittent nosebleed, cough, now with signs: both tympanic membranes red and s",
+        "time": 1.0476722717285156
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"5歳の女児。3日前からの高熱を主訴に母親とともに来院した。咽頭痛と食欲低下を認",
+        "time": 0.9278907775878906
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "We need to answer with three options (a,b,c,d,e) that are first steps. The scenario: 40-year-old male with epigastric pain, sudden severe pain, cannot move, now with peritonitis signs:",
+        "time": 1.0001769065856934
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "We need to answer multiple-choice question: 3 correct statements among a-e. Based on Japanese medical guidelines. The scenario: 18-year-old male, meningitis signs, CSF shows turbid, high opening press",
+        "time": 0.9939441680908203
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "We need to answer with three options a,b,c,d,e that are appropriate treatment considerations for this case. Let's parse the case.\n\n42-year-old male, abdominal pain main complaint. Had epigastric pain ",
+        "time": 0.985814094543457
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "We need to answer with three letters a,b,c,d,e that are appropriate rehabilitation interventions for this patient.\n\nLet's parse the case: 70-year-old female, after cerebral infarction with residual ri",
+        "time": 0.9944231510162354
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

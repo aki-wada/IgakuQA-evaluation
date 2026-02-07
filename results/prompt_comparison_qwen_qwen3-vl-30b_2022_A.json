@@ -1,0 +1,2462 @@
+{
+  "timestamp": "2026-02-02T18:43:50.367317",
+  "model": "qwen/qwen3-vl-30b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 54,
+      "accuracy": 0.72,
+      "avg_time": 2.3203077189127606,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 56,
+      "accuracy": 0.7466666666666667,
+      "avg_time": 2.260894015630086,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 56,
+      "accuracy": 0.7466666666666667,
+      "avg_time": 2.2743234634399414,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 56,
+      "accuracy": 0.7466666666666667,
+      "avg_time": 2.2856752014160158,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 9.893212080001831
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 1.9663171768188477
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.034993886947632
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.009329080581665
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.0065600872039795
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1030220985412598
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.0512290000915527
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.0711817741394043
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.059109926223755
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.058624029159546
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1269419193267822
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.0955779552459717
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 2.1088879108428955
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 2.1322531700134277
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e",
+        "time": 2.031721830368042
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.3946850299835205
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3048529624938965
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 2.0633978843688965
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d: 心タンポナーデ",
+        "time": 2.4254150390625
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.237211227416992
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 2.2411067485809326
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.180772304534912
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.2909469604492188
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 2.086268901824951
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 2.300989866256714
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.2206709384918213
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 2.3251049518585205
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.259922981262207
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.163105010986328
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.3759679794311523
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.3058879375457764
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.2260849475860596
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3058600425720215
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 2.146498680114746
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.301008701324463
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.3563501834869385
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.324216842651367
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3176090717315674
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.1844308376312256
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 2.3436288833618164
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1301229000091553
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.181703805923462
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.384742259979248
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.2050952911376953
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "e",
+        "time": 2.1470961570739746
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "a",
+        "time": 2.2368319034576416
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 2.1351230144500732
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.292794942855835
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.3079819679260254
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.323843002319336
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 2.2525548934936523
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.16343092918396
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 2.3014280796051025
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.154526948928833
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1558659076690674
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "d",
+        "time": 2.3283917903900146
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2688651084899902
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.1542322635650635
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 2.1653120517730713
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.185181140899658
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.150667190551758
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.374863862991333
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b",
+        "time": 2.251750946044922
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.2368760108947754
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 2.325284004211426
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,b",
+        "time": 2.179847002029419
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "d,e",
+        "time": 2.2565929889678955
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "d,e",
+        "time": 2.2811670303344727
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "a,b",
+        "time": 2.2073330879211426
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "c,e",
+        "time": 2.346411943435669
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.203817129135132
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,b,c",
+        "time": 2.310788154602051
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,b,d",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "a,b,d",
+        "time": 2.365633726119995
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "a,b,d",
+        "time": 2.331333875656128
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "a,c,e",
+        "time": 2.294630765914917
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.116722822189331
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.1770498752593994
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.1400671005249023
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.1215991973876953
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.1125102043151855
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1650288105010986
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.1454169750213623
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.138849973678589
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.1322569847106934
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.1544981002807617
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1179580688476562
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1492919921875
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 2.1301980018615723
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 2.1762590408325195
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e",
+        "time": 2.137923240661621
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.3560709953308105
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.327504873275757
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.242974042892456
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.2993087768554688
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.2859158515930176
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 2.3228399753570557
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.203540086746216
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.347290277481079
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 2.1601850986480713
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 2.3004648685455322
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.30344295501709
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 2.3244149684906006
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.350754976272583
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2248260974884033
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2933061122894287
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.3013839721679688
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.2873148918151855
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3261590003967285
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 2.251763343811035
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.320106029510498
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.358179807662964
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.3610610961914062
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.368370771408081
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.2585198879241943
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 2.375096082687378
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1514668464660645
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2852671146392822
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.3514628410339355
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.269556999206543
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c",
+        "time": 2.1699798107147217
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "a",
+        "time": 2.325228214263916
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 2.1831908226013184
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.2867519855499268
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.334210157394409
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.3787291049957275
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 2.3014302253723145
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.157534122467041
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.315032958984375
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.248080015182495
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.2176129817962646
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "d",
+        "time": 2.33176589012146
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2806971073150635
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.2078769207000732
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 2.221531867980957
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.195725917816162
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.146512031555176
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.4079811573028564
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b",
+        "time": 2.284395217895508
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.274451971054077
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 2.300168991088867
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,b",
+        "time": 2.2360141277313232
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "d,e",
+        "time": 2.316662073135376
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "d,e",
+        "time": 2.323413848876953
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "a,b",
+        "time": 2.2392377853393555
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "c,e",
+        "time": 2.424686908721924
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.2916758060455322
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,b,c",
+        "time": 2.338620901107788
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "a,c,d",
+        "time": 2.3398897647857666
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "a,b,d",
+        "time": 2.40354323387146
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "a,c,e",
+        "time": 2.3602402210235596
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.1456940174102783
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.1464121341705322
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.1758999824523926
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.1481640338897705
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.150557041168213
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.138737916946411
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.166663885116577
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.178647041320801
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.1347830295562744
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.1332600116729736
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.17500901222229
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1491780281066895
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 2.15434193611145
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 2.148898124694824
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e",
+        "time": 2.1965701580047607
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.3672749996185303
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3590610027313232
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.235758066177368
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.3329970836639404
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.310296058654785
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 2.3244781494140625
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.1887879371643066
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3857920169830322
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 2.1801319122314453
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 2.3322031497955322
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.2852559089660645
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 2.375627040863037
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.384688138961792
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.246250867843628
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2762486934661865
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.3198859691619873
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3000450134277344
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3685927391052246
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 2.2476999759674072
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.367811918258667
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.3732190132141113
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.3745310306549072
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3532660007476807
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.309490203857422
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 2.4045052528381348
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1635940074920654
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2610490322113037
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.3721067905426025
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.295740842819214
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "e",
+        "time": 2.166083812713623
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "a",
+        "time": 2.290609836578369
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 2.257352113723755
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3091719150543213
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.327528953552246
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.3357350826263428
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 2.3193609714508057
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.172999143600464
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.3325979709625244
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.232726812362671
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.266739845275879
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "d",
+        "time": 2.3756937980651855
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.287447929382324
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.17333984375
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 2.271099805831909
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.25415301322937
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.1790831089019775
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.375767946243286
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b",
+        "time": 2.3173398971557617
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.268803119659424
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 2.30308198928833
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,b",
+        "time": 2.211059808731079
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "d,e",
+        "time": 2.3633320331573486
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "d,e",
+        "time": 2.3476169109344482
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "a,b",
+        "time": 2.2654902935028076
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "e,c",
+        "time": 2.3640329837799072
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3102662563323975
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,b,c",
+        "time": 2.3787660598754883
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "a,c,d",
+        "time": 2.3659980297088623
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "a,b,d",
+        "time": 2.352440118789673
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "a,c,e",
+        "time": 2.35933518409729
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.184727907180786
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.1631360054016113
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.159942150115967
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.2032268047332764
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.178067922592163
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1517722606658936
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.139484167098999
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.199113130569458
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.1645379066467285
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.149862766265869
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.138835906982422
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.18743896484375
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 2.1922731399536133
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 2.2044200897216797
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e",
+        "time": 2.155480146408081
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.3998770713806152
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.391968011856079
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.258650779724121
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.3202922344207764
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.347384214401245
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 2.3676910400390625
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.2232933044433594
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3449041843414307
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 2.191141128540039
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 2.3286337852478027
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.313070058822632
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 2.334874153137207
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.419463872909546
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2843949794769287
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.342212200164795
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.300557851791382
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.316910743713379
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.372375011444092
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 2.25095796585083
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.306252956390381
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.393399953842163
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.3662030696868896
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.366609811782837
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.269994020462036
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 2.4283647537231445
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.1754889488220215
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2802319526672363
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.3520896434783936
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.320131778717041
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c",
+        "time": 2.1732640266418457
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "a",
+        "time": 2.331439733505249
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 2.2390599250793457
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3675410747528076
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.3633899688720703
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.357858657836914
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 2.292738676071167
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.213129997253418
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.345860242843628
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.242149829864502
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.234320878982544
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "d",
+        "time": 2.39772891998291
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2930710315704346
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.1986730098724365
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 2.2459640502929688
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.302518129348755
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.2407188415527344
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.376584768295288
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b",
+        "time": 2.284264087677002
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.297667980194092
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 2.312922716140747
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,b",
+        "time": 2.233780860900879
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "d,e",
+        "time": 2.3163890838623047
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "d,e",
+        "time": 2.371263027191162
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "a,b",
+        "time": 2.2862532138824463
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "c,e",
+        "time": 2.396658182144165
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.3034722805023193
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,b,c",
+        "time": 2.3861639499664307
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "a,c,d",
+        "time": 2.3677260875701904
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "a,b,d",
+        "time": 2.3699631690979004
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "a,c,e",
+        "time": 2.343364953994751
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

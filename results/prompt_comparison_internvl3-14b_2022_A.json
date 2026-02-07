@@ -1,0 +1,2162 @@
+{
+  "timestamp": "2026-02-02T18:48:20.849308",
+  "model": "internvl3-14b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 0,
+      "errors": 75,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 0,
+      "errors": 75,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 0,
+      "errors": 75,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 0,
+      "errors": 75,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "ERROR",
+        "gold": "c,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "ERROR",
+        "gold": "c,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "ERROR",
+        "gold": "a,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "ERROR",
+        "gold": "a,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "ERROR",
+        "gold": "d,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "ERROR",
+        "gold": "a,b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "ERROR",
+        "gold": "a,b,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "ERROR",
+        "gold": "a,c,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "ERROR",
+        "gold": "a,b,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "ERROR",
+        "gold": "a,c,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "ERROR",
+        "gold": "c,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "ERROR",
+        "gold": "c,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "ERROR",
+        "gold": "a,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "ERROR",
+        "gold": "a,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "ERROR",
+        "gold": "d,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "ERROR",
+        "gold": "a,b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "ERROR",
+        "gold": "a,b,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "ERROR",
+        "gold": "a,c,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "ERROR",
+        "gold": "a,b,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "ERROR",
+        "gold": "a,c,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "ERROR",
+        "gold": "c,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "ERROR",
+        "gold": "c,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "ERROR",
+        "gold": "a,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "ERROR",
+        "gold": "a,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "ERROR",
+        "gold": "d,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "ERROR",
+        "gold": "a,b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "ERROR",
+        "gold": "a,b,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "ERROR",
+        "gold": "a,c,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "ERROR",
+        "gold": "a,b,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "ERROR",
+        "gold": "a,c,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "ERROR",
+        "gold": "c,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "ERROR",
+        "gold": "c,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "ERROR",
+        "gold": "a,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "ERROR",
+        "gold": "a,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "ERROR",
+        "gold": "d,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "ERROR",
+        "gold": "a,b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "ERROR",
+        "gold": "a,b,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "ERROR",
+        "gold": "a,c,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "ERROR",
+        "gold": "a,b,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "ERROR",
+        "gold": "a,c,d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

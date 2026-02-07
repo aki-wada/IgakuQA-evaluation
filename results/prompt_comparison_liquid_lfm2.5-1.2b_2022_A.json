@@ -1,0 +1,2461 @@
+{
+  "timestamp": "2026-02-06T15:21:25.647830",
+  "model": "liquid/lfm2.5-1.2b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 12,
+      "accuracy": 0.16,
+      "avg_time": 0.19753005053545977,
+      "errors": 1,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 21,
+      "accuracy": 0.28,
+      "avg_time": 0.09256384531656901,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 10,
+      "accuracy": 0.13333333333333333,
+      "avg_time": 0.19595666885375976,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 10,
+      "accuracy": 0.13333333333333333,
+      "avg_time": 0.1396013863881429,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.23557519912719727
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b: 妊娠37週時\n\n妊娠末期の母体におけるB群連鎖球菌GBS陽性の場合、子宮感染予防のためにペニシリン系抗菌薬",
+        "time": 0.21288013458251953
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.06937909126281738
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c: ビグアナイド薬\n\nビグアナイド薬は低血糖を引き起こす可能性があります。",
+        "time": 0.13939785957336426
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d: 二酸化炭素中毒\n\n成人心臓移植に関する正しい情報は、選択肢dが誤りで、術後に免疫抑制薬が必須であるためです。",
+        "time": 0.19971179962158203
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a: β刺激薬\n\n高カリウム血症は、β刺激薬の使用によって引き起こされることがあります。これらの薬は副腎からコルチゾールやアンドロゲンの分泌を増加",
+        "time": 0.20864415168762207
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "a",
+        "time": 0.06856870651245117
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d: 二酸化窒素中毒\n\n心サルコイドーシスは、心筋の異常な脂質沈着を特徴とし、二酸化窒素中毒はそのような",
+        "time": 0.20520925521850586
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "e",
+        "time": 2.2577946186065674
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.07001900672912598
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c: 乳頭浮腫を伴う脳浮腫\n\n説明：急性大動脈解離は、血圧上昇を伴わないため、血圧上昇を認める患者には考えにく",
+        "time": 0.211439847946167
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,b",
+        "gold": "b,e",
+        "correct": false,
+        "response": "a, b\n\n答え: a, b",
+        "time": 0.10186910629272461
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,c,d,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "a, c, d, e\n\n正解は以下の通りです：\n\n- a: ヒトパピローマウイルスは子宮頸がんのリスクを高めることが知られています。\n- c",
+        "time": 0.21101880073547363
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "a, e",
+        "time": 0.07263517379760742
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c  \n答え: c",
+        "time": 0.20911407470703125
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a,d",
+        "gold": "e",
+        "correct": false,
+        "response": "d: 凝固第IX因子製剤投与\n\nこの症例では、血友病Aと診断され、凝固因子VIIIの欠乏が原因です。適切な初期治療は凝固",
+        "time": 0.2453310489654541
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.08239603042602539
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "e: 完全房室ブロック\n\nこの症状は、心臓の電気伝導系の障害を示唆しており、特に心室中隔穿孔や完全房室ブロックが考えられます。他の選択�",
+        "time": 0.23363924026489258
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b,d",
+        "gold": "b",
+        "correct": false,
+        "response": "d: 肺胞出血\n\nこの症状と検査結果から、肺胞出血が最も可能性が高いと考えられます。呼吸困難、胸部X線上の異常、血液検査の異常（Hb",
+        "time": 0.23325109481811523
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "c: 一酸化炭素中毒\n\n1. 患者の症状（持続性の心窩部痛、背部痛）と血液検査結果（高ビリルビン、AST、ALTの増加",
+        "time": 0.24148821830749512
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.0816199779510498
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,c",
+        "gold": "e",
+        "correct": false,
+        "response": "c: 一酸化炭素中毒\n\nこの患者の症状（急性出血、全身性の貧血、黄色変色の眼球結膜）と検査結果（高ビリルビン、AST",
+        "time": 0.24924969673156738
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b: 声帯結節\n\n説明：この患者の症状（嗄声、咳）と喉頭内視鏡所見から最も考えられるのは声帯結節です。喫煙",
+        "time": 0.21158504486083984
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c: プリックテストを行う。",
+        "time": 0.12223696708679199
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.09053611755371094
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "d: 呼吸リハビリテーションを開始する。\n\nこの状況では、患者の呼吸困難が急性増強型COPD（慢性閉塞性肺疾患）によるものと考えられ",
+        "time": 0.23978233337402344
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b: B型肝炎\n\nこの症状や検査結果から、B型肝炎が最も可能性が高いと考えられます。特に、黄染の眼球、腹部検査で肝臓の腫れ、血液検査",
+        "time": 0.2557699680328369
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c: 本態性振戦",
+        "time": 0.11358189582824707
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c: 尿沈渣で赤血球円柱＋\n\nこの症状は急性腸炎や消化器系の急性炎症を示唆しており、尿沈渣に赤血",
+        "time": 0.22819304466247559
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,b,c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "e: 経過観察のため半年後に受診してください\n\nこの状況では、患者の血糖値が正常範囲内であり、HbA1cも正常であるため、糖尿病の診断は疑",
+        "time": 0.23638510704040527
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e: プロスタグランディンE1の投与\n\nこの状況では、出生時からチアノーゼが認められず、酸素療法で改善しなかったため、心筋の虚血",
+        "time": 0.22842025756835938
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 0.10748910903930664
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.07512688636779785
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c: 殺細胞性抗癌薬投与\n\nこの患者は免疫チェックポイント阻害薬による治療を受けており、全身倦怠感が主訴です。副作用として副腎皮質",
+        "time": 0.23668313026428223
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "b,c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "b, c, e\n\n1. 血液検査やCTで異常が確認されたため、b（下剤投与）は適切ではない。\n2. 腹部CTで異常が認められ、緊",
+        "time": 0.250640869140625
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c: 血漿交換療法\n\n血小板数が著しく低下し、出血傾向が見られるため、血漿交換療法が適切な対応となります。",
+        "time": 0.23030304908752441
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c: 流動食は術後1週間から開始とする。\n\nこの患者は手術に伴う合併症を考慮し、特に腸管の機能回復が必要となるため、術後1週間",
+        "time": 0.2493298053741455
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,c",
+        "gold": "b",
+        "correct": false,
+        "response": "c: Kaposi水痘症",
+        "time": 0.10719108581542969
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "b, c, d, e\n\nただし、問題の指示に従い、正解を一つ選ぶとすると：\n\ne: 二酸化窒素中毒（選択肢e）が最も",
+        "time": 0.2573072910308838
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c: 抗ウイルス薬\n\nこの症状は、耳鳴りや難聴に伴い、副腎皮質ステロイドが適切な治療法として考えられることが多いです。",
+        "time": 0.19592690467834473
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b: 止血薬点滴静注\n\n説明：妊娠36週4日で子宮収縮による出血が起こり、子宮内出血のリスクがあるため、止血薬を",
+        "time": 0.22559380531311035
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "d: カテコラミン\n\nこの患者の症状や検査結果から、甲状腺機能亢進症（Graves病）が考えられます。甲状腺の腫瘍と上部消",
+        "time": 0.24408698081970215
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,c,d",
+        "gold": "e",
+        "correct": false,
+        "response": "d: ACTH\n\n答え: ACTHは高値を示す可能性が高いです。なぜなら、甲状腺機能異常や不適切なホルモン分泌が原因で高値になることがある",
+        "time": 0.22602200508117676
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d: 二酸化炭素中毒\n\n右膝関節の関節鏡所見（①～⑤）は、半月板断裂を示しているため、二酸化炭素",
+        "time": 0.21445584297180176
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c: インスリン負荷試験\n\nこの患者の症状（いびき、顔つきの変化、足の窮屈）と血液検査の結果から、インスリン過剰による高血",
+        "time": 0.22707676887512207
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.07578110694885254
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.09410381317138672
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "d",
+        "time": 0.10040807723999023
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c: 非結核性抗酸菌症",
+        "time": 0.12909913063049316
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 0.09199786186218262
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "b",
+        "time": 0.07021403312683105
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c: 一酸化炭素中毒\n\n1歳以上で呼吸困難、胸部症状、血液検査結果から一酸化炭素中毒が最も可能性が高いと考えられます。",
+        "time": 0.22826910018920898
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.07388091087341309
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.0729827880859375
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "d: エリスロポエチン\n\nこの患者の症状や検査結果から、骨髄の低形成が示されており、これはエリスロポエチン産生細胞の減少を意味します。",
+        "time": 0.24575376510620117
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "d",
+        "time": 0.0900888442993164
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "e: 嚥下障害\n\nこの患者の症状と診断結果から、嚥下障害が最も適切な答えです。左鼻出血と複視、副鼻腔の造影CT",
+        "time": 0.21080803871154785
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 0.08016467094421387
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c: 老人性紫斑\n\n老人性紫斑は、加齢に伴う血管の脆弱性や、抗凝固薬の使用による血栓形成のリスク増加が原因で",
+        "time": 0.21636199951171875
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.07385993003845215
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c: 糖尿病性腎症\n\n糖尿病性腎症は、糖尿病患者において最も一般的な腎疾患であり、蛋白尿と腎機能低下を伴うことが多いです",
+        "time": 0.2538328170776367
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b: 硫化水素中毒\n\n硫化水素中毒は、呼吸器症状や神経症状を伴うことがあり、発熱と全身倦怠感もその特徴の一つ",
+        "time": 0.22980403900146484
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.09061503410339355
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "a, c  \n答え: aとc",
+        "time": 0.11736702919006348
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "c,d",
+        "gold": "a,e",
+        "correct": false,
+        "response": "c, d\n\n答え: c: 心膜嚢胞、d: 胸膜中皮腫",
+        "time": 0.14609217643737793
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "b,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "b, e\n\n答え: bとe",
+        "time": 0.11779212951660156
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "b,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "b, e\n\n答え: b, e",
+        "time": 0.12062215805053711
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "b,c",
+        "gold": "a,b",
+        "correct": false,
+        "response": "b, c  \n答え: bとc",
+        "time": 0.10387277603149414
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "c, e",
+        "time": 0.11864995956420898
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "b,e",
+        "gold": "e",
+        "correct": false,
+        "response": "e: パルボウイルスB19感染症",
+        "time": 0.11762809753417969
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "c, d, e\n\n1. 腹部CTで軟部腫瘍（A）と肺野病変（B）が見つかったため、c, d, eが適切です。",
+        "time": 0.22881293296813965
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "e  \n正解の選択肢はeです。脳脊髄液検査の結果から、患者に接触した医療従事者には抗菌薬の予防投与が必要となります。",
+        "time": 0.2268660068511963
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,c,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "e: 二酸化窒素中毒\n\n2つの選択肢が最も可能性が高いと考えられます。  \nc: 一酸化炭素中毒（血液生化学でALTが上昇していることから）",
+        "time": 0.23834705352783203
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,b,c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "a,b,c,d,e\n\nただし、正解の選択肢として最も関連性が高いのはe（リクライニング車椅子使用での座位訓練）です。なぜなら、患者の状態とリ",
+        "time": 0.23919105529785156
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 0.07523012161254883
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 0.07609009742736816
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.07477498054504395
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c",
+        "time": 0.0689847469329834
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 0.06993603706359863
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 0.06830215454101562
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "a",
+        "time": 0.0691981315612793
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "e",
+        "time": 0.07154726982116699
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 0.07376408576965332
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "e",
+        "time": 0.07199716567993164
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 0.07056379318237305
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a",
+        "time": 0.0737311840057373
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "b, c",
+        "time": 0.07842898368835449
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "c, e",
+        "time": 0.07704305648803711
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "a, e",
+        "time": 0.0766599178314209
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 0.11495399475097656
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.10715508460998535
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.08291506767272949
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "e",
+        "time": 0.0984351634979248
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 0.0950467586517334
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 0.10092782974243164
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.07969307899475098
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.10709118843078613
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.07281303405761719
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 0.0983879566192627
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a",
+        "time": 0.09143805503845215
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 0.10490798950195312
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.11963510513305664
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.08918190002441406
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.09673070907592773
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 0.09629201889038086
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.09467101097106934
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a",
+        "time": 0.12590789794921875
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.08086609840393066
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.09738922119140625
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.11392712593078613
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 0.1105809211730957
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.10874795913696289
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 0.08883285522460938
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,b,d",
+        "gold": "b",
+        "correct": false,
+        "response": "a, b, d",
+        "time": 0.12917184829711914
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.0764930248260498
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.08649086952209473
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 0.10537528991699219
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.09095406532287598
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c",
+        "time": 0.07529807090759277
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 0.09369087219238281
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.07799386978149414
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.10021090507507324
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "e",
+        "time": 0.10268592834472656
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "e",
+        "time": 0.10619020462036133
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 0.09391522407531738
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "b",
+        "time": 0.07371115684509277
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 0.10511517524719238
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.08683609962463379
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.07662510871887207
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 0.1085519790649414
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.09488105773925781
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 0.07905268669128418
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 0.08330011367797852
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.08957481384277344
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "d",
+        "time": 0.07743692398071289
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "e",
+        "time": 0.1199800968170166
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.09295797348022461
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.0878598690032959
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "a, c",
+        "time": 0.10188603401184082
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "c,d",
+        "gold": "a,e",
+        "correct": false,
+        "response": "c, d",
+        "time": 0.08507180213928223
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "a, e",
+        "time": 0.09866499900817871
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "e, d",
+        "time": 0.10266494750976562
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "b,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "b, e",
+        "time": 0.09364509582519531
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "e c",
+        "time": 0.11838102340698242
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.09287714958190918
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "e  \na  \nb  \nc",
+        "time": 0.12370705604553223
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "e a c d",
+        "time": 0.11035609245300293
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a, b, e",
+        "time": 0.11582207679748535
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "a, c, e",
+        "time": 0.11207914352416992
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "a  \n答え: c",
+        "time": 0.08820199966430664
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b  \n答え: 妊娠37週時",
+        "time": 0.10965418815612793
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c  \n答え: 中心性漿液性脈絡網膜症は自然治癒することが多いという誤りです。通常、治療が必要であり、進行すると視力低下や失明を引き起こします。\n\n答え: c",
+        "time": 0.23266887664794922
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "a: DPP-4阻害薬  \n答え: DPP-4阻害薬は低血糖を引き起こす可能性が低く、むしろ血糖値を上昇させます。他の選択肢は低血糖と関連しています。",
+        "time": 0.23673391342163086
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "a  \n答え: 正解はcです。成人心臓移植の生存率は一般的に低く、10年生存率は約10％です。",
+        "time": 0.1870439052581787
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d: 二酸化炭素中毒\n\n高カリウム血症は、二酸化炭素中毒によって引き起こされることがあります。二酸化炭素中毒は、呼吸機能の障害により血液中の二酸化炭素が蓄積し、細胞内からカリウムが移動して血液中のカリウム濃度が上昇する原因となります。\n\n答え: d",
+        "time": 0.3249778747558594
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "a: 肥満  \n答え: 肥満は逆流性食道炎の誘因とは関係ありません。",
+        "time": 0.14622783660888672
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,c",
+        "gold": "d",
+        "correct": false,
+        "response": "a: 房室ブロック  \nc: 左室駆出率の低下  \n\n心サルコイドーシスは心筋の異常な沈着を伴い、左室駆出率の低下や非対称性肥大が特徴的です。房室ブロックは心臓の電気伝導系の障害であり、サルコイドーシスとは直接関連していません。\n\n答え: a,c",
+        "time": 0.3518400192260742
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "a: 飲酒  \n答え: b",
+        "time": 0.09735274314880371
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "e  \n答え: 血圧の左右差を伴う。",
+        "time": 0.1104440689086914
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "b,c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "a: 男児に多い。  \nc: 対人関係の苦手さがある。  \ne: 物事に対するこだわりが弱い。\n\n答え: b, c, e",
+        "time": 0.19380497932434082
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c  \n答え: 乳頭浮腫を伴う脳浮腫は、急性大動脈解離や肺水腫を伴う状態とは関連がなく、通常は高血圧緊急症の病態ではない。",
+        "time": 0.2342090606689453
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "a, c  \ndとeは正解ではありません。\n\n答え: a, c",
+        "time": 0.13140201568603516
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,c,d",
+        "gold": "c,d",
+        "correct": false,
+        "response": "a, c, d\n\n答え: a, c, d",
+        "time": 0.11899375915527344
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "a, e  \n答え: a, e",
+        "time": 0.09980487823486328
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c: 糖尿病網膜症の存在  \n答え: c",
+        "time": 0.16681432723999023
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "c: 一酸化炭素中毒  \n答え: b",
+        "time": 0.14602279663085938
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c  \n答え: 睡眠発作後にも眠気が残る。",
+        "time": 0.13927602767944336
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "c: 肺血栓塞栓症\n\n答え: e",
+        "time": 0.14580106735229492
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c: 無気肺  \n答え: 無気肺は、胸部エックス線で肺の空洞が消失している状態を指し、上記の症状（呼吸困難、胸部ドレーン挿入時の泡沫状の喀痰）と一致しています。",
+        "time": 0.2934229373931885
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "c: 一酸化炭素中毒  \n答え: b",
+        "time": 0.14251017570495605
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.08247208595275879
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "c: 一酸化炭素中毒  \n答え: b",
+        "time": 0.1486499309539795
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,b",
+        "gold": "c",
+        "correct": false,
+        "response": "b: 声帯結節  \n答え: 声帯結節は、慢性的な咳と嗄声を伴う症状で、喫煙歴がないという点から最も考えられます。\n\n他の選択肢は以下の通り医学的に不適切です：\na: 喉頭癌は進行が早く、咳と嗄声を伴うことが多いですが、通常は他の症状（例：口臭、嚥下困難）が伴います。\nc: 喉頭乳頭腫は、嗄声と咳を伴いますが、白斑様病はより特徴的です。\nd: 声帯ポリープは嗄声を引き起こしますが、白斑様病ほど一般的",
+        "time": 0.6510210037231445
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c: プリックテストを行う。\n\n理由は、患者の症状（腹痛、皮膚の異常、血液検査結果）がイカ摂取による食物中毒の可能性を示唆しているため、プリックテストが適切な初期検査となるからです。他の選択肢は関連性が低いか、対応が不適切です。\n\n答え: c",
+        "time": 0.35675787925720215
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a  \n答え: a",
+        "time": 0.1130669116973877
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c  \n答え: c",
+        "time": 0.11643791198730469
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b: 硫化水素中毒  \n答え: b",
+        "time": 0.15851902961730957
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.08931994438171387
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c: 尿沈渣で赤血球円柱＋  \n答え: 尿沈渣で赤血球円柱は急性腸炎や出血性腫瘍などの急性疾患を示唆し、発熱や腹痛と一致しています。",
+        "time": 0.28627824783325195
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "a, b  \n答え: a,b",
+        "time": 0.12720704078674316
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c  \n答え: c",
+        "time": 0.112548828125
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "aとbが医学的に不適切で、cが正解です。\n\n答え: c",
+        "time": 0.17091894149780273
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a,b",
+        "gold": "a",
+        "correct": false,
+        "response": "a, b  \n答え: a,b",
+        "time": 0.10859227180480957
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c  \n答え: c",
+        "time": 0.11659693717956543
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c  \n答え: c",
+        "time": 0.13227319717407227
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c: 血漿交換療法  \n答え: c",
+        "time": 0.150925874710083
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c  \n答え: c",
+        "time": 0.1282789707183838
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,c",
+        "gold": "b",
+        "correct": false,
+        "response": "c: Kaposi肉腫  \n答え: Kaposi水痘様発疹症は、特定の遺伝子変異（例えばATP2A2）と関連しており、皮膚や粘膜に多発性の丘疹を呈します。",
+        "time": 0.2611701488494873
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "この問いは、臨床症状と検査所見から、急性筋肉痛と血液生化学異常を伴う状態を示唆しています。特に、筋肉痛、脱力、赤褐色尿、血液生化学異常（高アルブミン、AST、ALT、クレアチニン上昇）が挙げられます。\n\n- **a, b, c, e** は、急性筋肉損傷や脱水症状を示唆していますが、血液生化学では異常は見られません。\n- **d** は、筋肉痛と脱力に一致しつつも、血液生化学では異常値が認められま",
+        "time": 0.7184498310089111
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c: 抗ウイルス薬\n\n頭部MRIが正常で、鼓膜に異常がないため、副腎皮質ステロイドが適切な治療薬ではありません。耳鳴や難聴は、しばしば中耳炎や内耳の異常によるものですが、ここではその可能性は低いと考えられます。抗ウイルス薬はこの症状とは直接関連しないため、適切な選択肢ではありません。\n\n答え: c",
+        "time": 0.3702521324157715
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b: 止血薬点滴静注\n\n説明：妊娠36週4日で子宮収縮による出血が起こり、子宮内出血のリスクがあるため、止血薬を投与する必要があります。他の選択肢は妊娠初期の状態や症状とは関連が低いです。\n答え: b",
+        "time": 0.31973910331726074
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c: ガストリン  \n答え: ガストリンは胃酸分泌を調節するホルモンで、十二指腸潰瘍や胃潰瘍の診断に重要な役割を果たします。",
+        "time": 0.27071499824523926
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b: FSH  \n答え: FSHの値が上昇すると、卵胞刺激ホルモン（FSH）が過剰に分泌されることが多く、無月経や不規則月経の原因となることがあります。他の選択肢は関連性が低いです。",
+        "time": 0.27809715270996094
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "b: ②  \n（半月板断裂は通常、MRI画像で最もよく示される所見です。）\n\n答え: b",
+        "time": 0.16978788375854492
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b: ブドウ糖負荷試験\n\n体温36.4℃、血糖126mg/dL、AST 38U/L、ALT 42U/L、ALP 256U/Lという検査結果から、肝機能障害や糖尿病の可能性が示唆されます。インスリン負荷試験はそのような状況で適切な診断ツールとなります。\n答え: b",
+        "time": 0.33329081535339355
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c  \n答え: 婦人科診察について本人の同意を得る。",
+        "time": 0.13260293006896973
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c  \n答え: c",
+        "time": 0.11600995063781738
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c  \n答え: c",
+        "time": 0.12047314643859863
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c: 非結核性抗酸菌症  \n答え: 非結核性抗酸菌症",
+        "time": 0.17171597480773926
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b: Wilms腫瘍  \n答え: b",
+        "time": 0.15030288696289062
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "b: 希塩酸液の点眼  \n答え: 希塩酸液の点眼が適切な初期対応です。水酸化ナトリウムは強力な塩基であり、眼に直接接触すると急激な角膜損傷や視神経損傷を引き起こすため、直ちに希塩酸液で洗浄する必要があります。\n\n他の選択肢は適切ではありません：\n- a: 鎮痛薬は痛みを和らげるが、緊急の眼の損傷には対応しない。\n- c: 抗菌薬は感染予防に役立つが、即時的な処置ではない。\n- d, e: これらは",
+        "time": 0.5698399543762207
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "c: 一酸化炭素中毒  \n答え: b",
+        "time": 0.14326906204223633
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c: 聴性脳幹反応  \n答え: 聴性脳幹反応は、耳の異常を評価する上で重要な検査であり、この症例では左鼓膜所見を確認するために不可欠です。他の選択肢は直接的な診断にはつながりません。",
+        "time": 0.2758619785308838
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "b,c",
+        "gold": "e",
+        "correct": false,
+        "response": "c  \n答え: HBワクチン及び抗HBsヒト免疫グロブリンの投与",
+        "time": 0.1432051658630371
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c: ビタミンB12  \n答え: c",
+        "time": 0.14370298385620117
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c: 不慮の事故  \n答え: 母子手帳に記載されている妊娠分娩歴や健診の不在、けいれんの突然性、重度のけいれんによる意識消失が不慮の事故を示唆しているため。",
+        "time": 0.2848942279815674
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b,c",
+        "gold": "b",
+        "correct": false,
+        "response": "c: 開口障害  \n答え: 左鼻腔生検で扁平上皮癌を認めたため、開口障害が診断基準となります。\n\n他の選択肢は関連性が低いです。\n答え: b",
+        "time": 0.2349710464477539
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "b,e",
+        "gold": "c",
+        "correct": false,
+        "response": "b: 貧血  \n答え: 貧血は、IgE値が著しく上昇し、吸入性アレルゲンに対する反応が強いことから、食物アレルギーではなくアレルゲン誘発性貧血の可能性が考えられます。他の選択肢は関連性が低いです。",
+        "time": 0.3089449405670166
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c: 老人性紫斑  \n答え: 老人性紫斑は、加齢に伴う血管の脆弱性や皮膚の変化により、紫色の斑点として現れることが多い。左頸部に特徴的で、鱗屑やリンパ節の腫れも見られることがある。抗凝固薬の使用は関連しないが、他の選択肢も一部の症状と関連する可能性がある。",
+        "time": 0.3813199996948242
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.08193397521972656
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c: 糖尿病性腎症\n\n答え: c",
+        "time": 0.16279006004333496
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b: 硫化水素中毒  \n答え: 硫化水素中毒は、発熱と全身倦怠感を伴い、呼吸器症状や皮膚の乾燥、浮腫がないという特徴から、硫化水素中毒が最も可能性が高いと考えられます。",
+        "time": 0.3004763126373291
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c  \n答え: がん治療を継続しながら膝の保存治療",
+        "time": 0.13945436477661133
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a",
+        "gold": "b,e",
+        "correct": false,
+        "response": "a, c  \n答え: aとc",
+        "time": 0.12130117416381836
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "c",
+        "gold": "a,e",
+        "correct": false,
+        "response": "c, e  \n答え: cとe",
+        "time": 0.10556697845458984
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,b",
+        "gold": "a,d",
+        "correct": false,
+        "response": "a, e  \n答え: a,b",
+        "time": 0.11608004570007324
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "c",
+        "gold": "d,e",
+        "correct": false,
+        "response": "c, e  \n答え: cとe",
+        "time": 0.12570500373840332
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "b",
+        "gold": "a,b",
+        "correct": false,
+        "response": "b, c  \n答え: bとc",
+        "time": 0.11819982528686523
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "c, e  \n答え: c,d,e",
+        "time": 0.14173579216003418
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a",
+        "time": 0.09302186965942383
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "c, d, e  \n答え: c,d,e",
+        "time": 0.13608980178833008
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,b,c",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "a, b, c  \n答え: a,b,c",
+        "time": 0.13555002212524414
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "c, e, d  \n答え: c, e, d",
+        "time": 0.14135503768920898
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,b,c",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "a, b, c  \n答え: a,b,c",
+        "time": 0.13180112838745117
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 0.07395601272583008
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 0.07837915420532227
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.07365822792053223
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "a",
+        "time": 0.07038688659667969
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 0.07440495491027832
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a",
+        "time": 0.07088303565979004
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "a",
+        "time": 0.07220196723937988
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "a",
+        "time": 0.07118988037109375
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "a",
+        "time": 0.07078886032104492
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "e",
+        "time": 0.07103991508483887
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.07244491577148438
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a",
+        "time": 0.07375001907348633
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "b, c  \n（b: 運動障害を伴うことが多い；c: 脳梗塞の初回発作では生じない）",
+        "time": 0.16840100288391113
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "c, e",
+        "time": 0.0792691707611084
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "a, e",
+        "time": 0.07695698738098145
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,b,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "a, c, e  \n答え: a,b,c  \n（説明：姉の糖尿病歴は重要な背景情報、抗GAD抗体陰性は原因を否定するが、糖尿病�",
+        "time": 0.26058197021484375
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.11297988891601562
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.08458590507507324
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d: 心タンポナーデ\n\n説明：この患者の症状（息切れ、全身倦怠感）と血圧の急激な低下、SpO2の低下、血液検査",
+        "time": 0.2406909465789795
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b: 肺水腫\n\n説明：患者の症状と検査結果から、肺水腫が最も可能性が高いと考えられます。呼吸困難、胸部エックス線の異常（肺の拡大や空",
+        "time": 0.2367992401123047
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "b,c",
+        "gold": "c",
+        "correct": false,
+        "response": "b: 緊急開腹手術\n\n説明：73歳の男性が持続性の心窩部痛と背部痛を訴え、腹部CTで胆管結石が確認されたため、緊",
+        "time": 0.24658608436584473
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.08425617218017578
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.11086893081665039
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b: 声帯結節",
+        "time": 0.09253120422363281
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c  \n理由：患者の症状（腹痛、皮膚の掻痒、腹部検査で紅斑や膨疹）と最近の食事内容（イカ摂取）が重なっている",
+        "time": 0.2397301197052002
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "a  \ne  \n（産業医の対応として適切でないのは、感染症の流行が終息するまで辛抱するよう励ますことです。）",
+        "time": 0.18985605239868164
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "d  \n（呼吸リハビリテーションは、COPD患者の日常生活機能改善と呼吸管理に不可欠です。）",
+        "time": 0.19086408615112305
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a,b,c",
+        "gold": "a",
+        "correct": false,
+        "response": "b: B型肝炎\n\n理由：患者の症状（急性肝炎、黄疸、AST/ALT上昇）と血液検査結果（HBs抗原陰性、IgM型HBc抗",
+        "time": 0.25551700592041016
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b",
+        "time": 0.09090304374694824
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.09608888626098633
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,b,c",
+        "gold": "b",
+        "correct": false,
+        "response": "a  \nこの患者は糖尿病性ケトアシドーシスを呈しており、血液生化学検査でHbA1cが5.8%と正常範囲外であるため、糖尿病の治療",
+        "time": 0.23612499237060547
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.09380888938903809
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 0.10828208923339844
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 0.08653378486633301
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c  \n答え: c（殺細胞性抗癌薬投与）",
+        "time": 0.14881205558776855
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c  \n答え: c",
+        "time": 0.13132405281066895
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "a,b,c",
+        "gold": "c",
+        "correct": false,
+        "response": "a, b, c  \n1個選んで答えると：a, b, c",
+        "time": 0.16683602333068848
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "a, b, c, e  \nただし、臨床的にはdが適切な選択肢として挙げられることが多いですが、正解は複数に該当します。問題の指示に従い",
+        "time": 0.25292205810546875
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 0.09610891342163086
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,b,c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "a, b, c, d  \n1つの選択肢を選ぶと最も適切な答えは：a, b, c, dです。  \nただし、臨床的には血液生化学所見からC",
+        "time": 0.2635362148284912
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c: 抗ウイルス薬\n\n説明：右耳の難聴と耳鳴は、特に耳鳴が特徴的で、ウイルス性感染症（例えば、急性中耳炎やメニエール病",
+        "time": 0.21971607208251953
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b: 止血薬点滴静注\n\n説明：妊娠36週4日で子宮収縮による出血が起こり、子宮内出血のリスクがあるため、止血薬を",
+        "time": 0.2308502197265625
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,b,c",
+        "gold": "c",
+        "correct": false,
+        "response": "b: ACTH（副腎皮質刺激ホルモン）",
+        "time": 0.15179085731506348
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b: FSH（卵胞刺激ホルモン）",
+        "time": 0.12428808212280273
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "b: ②\n\n右膝関節の関節鏡所見（①～⑤）では、半月板断裂が明確に示されています。具体的には、画像の③",
+        "time": 0.21491312980651855
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 0.09735608100891113
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 0.08951687812805176
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,d",
+        "gold": "e",
+        "correct": false,
+        "response": "a, d  \n答え: aとd",
+        "time": 0.1297452449798584
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "d",
+        "time": 0.108551025390625
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.11139392852783203
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 0.09714293479919434
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "b",
+        "time": 0.07945799827575684
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b: ピペラシリン",
+        "time": 0.12324213981628418
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b",
+        "time": 0.08640885353088379
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.09747195243835449
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "e  \n（CRPは炎症性疾患や感染の指標であり、低下する傾向があります。）",
+        "time": 0.18603897094726562
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.09825301170349121
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 0.07711124420166016
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "b,e",
+        "gold": "c",
+        "correct": false,
+        "response": "b: 貧血\n\n注意：この症状はアレルギー反応やIgE媒介性過敏症を示唆しており、貧血とは直接関連しないため、bが最も適切です。",
+        "time": 0.22578811645507812
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 0.09166312217712402
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "d:  ventricular fibrillation\n\n説明：この症例では、意識障害と左半身麻痺が特徴的で、特にGCS評価が低く、心拍数が不規則であることから、心�",
+        "time": 0.2240889072418213
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c  \n答え: c（糖尿病性腎症）",
+        "time": 0.16414690017700195
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b: 硫化水素中毒\n\n説明：38℃台の発熱と全身倦怠感は、硫化水素中毒の典型的な症状です。硫化水素は",
+        "time": 0.23646807670593262
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 0.09318399429321289
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "b, c  \n答え: bとc",
+        "time": 0.12227106094360352
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "b,c,d",
+        "gold": "a,e",
+        "correct": false,
+        "response": "b,c  \nd: 胸膜中皮腫は、胸膜に発生する良性腫瘍で、胸部エックス線やCTでしばしば見つかる。",
+        "time": 0.21114706993103027
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,b,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "b, e  \nb: 胆汁酸低値（肝機能障害の特徴的所見）  \ne: α-フェトプロテイン〈AFP〉高値（肝細胞損傷を",
+        "time": 0.23935699462890625
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "b,c,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "b,c,e",
+        "time": 0.10695290565490723
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "b,c,d",
+        "gold": "a,b",
+        "correct": false,
+        "response": "b, c  \nd: 両杖を使用しての平地歩行\n\n説明：この患者は頸髄損傷により上肢の筋力が著しく低下しており、特に上腕二頭筋",
+        "time": 0.2308499813079834
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "a,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "a, c  \n答え: aとc",
+        "time": 0.1421809196472168
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a",
+        "time": 0.09522461891174316
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "c, e, d  \n（c: 腹腔穿刺は診断的検査として適切、e: 上部消化管内視鏡検査は治療的介入が必要、d: 経鼻",
+        "time": 0.2465531826019287
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,b,c",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "a,b,c  \n答え: a,b,c",
+        "time": 0.1294248104095459
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,b,c  \n答え: a, b, c",
+        "time": 0.13739800453186035
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,b,c",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "a, b, c  \n答え: a,b,c",
+        "time": 0.13531708717346191
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

@@ -1,0 +1,2456 @@
+{
+  "timestamp": "2026-02-06T19:02:43.420322",
+  "model": "qwen/qwen3-235b-a22b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 27,
+      "accuracy": 0.36,
+      "avg_time": 26.64879560139444,
+      "errors": 3,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 61,
+      "accuracy": 0.8133333333333334,
+      "avg_time": 12.936285923605096,
+      "errors": 2,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 64,
+      "accuracy": 0.8533333333333334,
+      "avg_time": 18.170052576065064,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 60,
+      "accuracy": 0.8,
+      "avg_time": 21.00590859232722,
+      "errors": 1,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question about hypertension caused by sleep apnea syndrome. The question asks which statement is incorrect. Let's go through each option one by one.\n\nFirst, option a sa",
+        "time": 21.246938705444336
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. So the problem is about a pregnant woman in her late term whose vaginal swab culture tested positive for Group B Streptococcus (GBS). The question is asking w",
+        "time": 26.43854284286499
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a,b,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question about central serous chorioretinopathy (CSC). The question is asking which statement is incorrect. Let's go through each option one by one.\n\nFirst, option a",
+        "time": 16.415075063705444
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. The question is asking which single oral medication is most likely to cause hypoglycemia. The options are DPP-4 inhibitors, SGLT2 inhibitors, biguanides, sulf",
+        "time": 11.199233055114746
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,b,c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question about hyperkalemia. The question is asking which of the options can cause high potassium levels in the blood. Let me go through each choice one by one.\n\nFir",
+        "time": 30.43181824684143
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,b,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question about the causes of gastroesophageal reflux disease (GERD). The question asks which option is NOT a contributing factor. Let me go through each choice one b",
+        "time": 19.857428789138794
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,b,c,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. The patient has heart failure and we need to determine which finding is not consistent with cardiac sarcoidosis. The options are a through e.\n\nFirst, I rem",
+        "time": 19.854038953781128
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question about bone necrosis risk factors. The options are a: alcohol consumption, b: decompression sickness, c: radiation therapy, d: organophosphates, e: corticost",
+        "time": 9.149662971496582
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question about systemic sclerosis and secondary Raynaud's phenomenon. The question is asking which of the options a to e is a characteristic feature of secondary Ray",
+        "time": 30.035022020339966
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question about autism spectrum disorder (ASD). The question is asking which of the listed options is NOT a characteristic of ASD. The options are:\n\na: More common in bo",
+        "time": 10.34227991104126
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So the problem is about a patient with sudden hypertension and determining which of the listed conditions isn't considered a hypertensive emergency. The op",
+        "time": 24.333961963653564
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question about vascular dementia. The user is asking which two statements are correct. Let me go through each option one by one.\n\nFirst, option a says it doesn't occ",
+        "time": 31.682260274887085
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the problem is asking which combinations of pathogens and malignant tumors are correct. We need to choose two correct answers from the options a to e.\n",
+        "time": 17.283724069595337
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question about acute kidney injury (AKI) diagnostic criteria. The options are a, b, c, d, e.\n\nFirst, I need to recall the standard criteria for diagnosing AKI. From ",
+        "time": 11.552666187286377
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 76-year-old woman with high blood sugar and protein in her urine. She was diagnosed with proliferative diabetic retinopathy, which is a compl",
+        "time": 30.698297262191772
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. So, we have a 6-month-old boy who came in with vomiting after falling from a bed. He has a history of hemophilia A diagnosed as a newborn, and there's a famil",
+        "time": 26.16920804977417
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. The patient is a 23-year-old male who has excessive daytime sleepiness, even after sleeping well at night. He also experiences sudden loss of muscle tone (cat",
+        "time": 22.268723964691162
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nOkay, let's try to figure out this medical case. So the patient is a 62-year-old woman who came in with shortness of breath and general fatigue. She had a catheter ablation for paroxysmal atri",
+        "time": 25.173542022705078
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a,b,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 64-year-old man with dyspnea who came to the hospital. He had left chest pain and shortness of breath that's been getting worse over four day",
+        "time": 31.097633123397827
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. So we have a 73-year-old man who had endoscopic stone removal for common bile duct stones. Three hours later, he's got persistent epigastric and back pain. His",
+        "time": 32.352635860443115
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c,d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 22-year-old male who came in because of kidney issues detected during a health check-up. His mother and uncle are on dialysis, which s",
+        "time": 17.198073148727417
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nOkay, let's try to figure out this case. The patient is a 38-year-old man with pancytopenia—low white blood cells, low platelets, and he has subcutaneous bleeding. The bone marrow findings sho",
+        "time": 20.770286083221436
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 45-year-old male with hoarseness as his main complaint. The symptoms started two years ago without any obvious cause, and he's had a f",
+        "time": 37.15700697898865
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 13-year-old girl who came to the hospital after feeling unwell and having abdominal pain during a basketball game. She ate a bento box with s",
+        "time": 38.20116305351257
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 30-year-old male who's been struggling with work efficiency since transitioning to remote work due to the pandemic. He's dealing with home no",
+        "time": 12.541342973709106
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,b,c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So we have an 81-year-old man with COPD who was brought in by ambulance due to breathing difficulties. He's on a nasal cannula with 0.5 L/min oxygen. His b",
+        "time": 34.107420921325684
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a,b,c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 23-year-old male with symptoms of fatigue, loss of appetite, nausea, and dark urine. He had a homosexual encounter a month ago. On examination",
+        "time": 13.436826229095459
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a,c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. The patient is a 40-year-old man who has trouble writing, which started three years ago and has been getting worse. He can't write well anymore, but his daily",
+        "time": 20.430145025253296
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,b,c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. A 48-year-old woman comes in with complaints of dry mouth and general fatigue. Five days ago, she had a fever and abdominal pain, but her appetite has been nor",
+        "time": 40.597301959991455
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a male infant who's 10 hours old. He was born at 39 weeks, weight 2960g, Apgar scores were 7 at 1 minute and 8 at 5 minutes. The midwife notice",
+        "time": 27.349218130111694
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 73-year-old man with left leg pain while walking. The key points from his history are that he's had diabetes for a long time, had a stent for",
+        "time": 38.85290884971619
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a newborn on the day of birth, full-term at 40 weeks, weight is 3020g. Apgar scores are 8 at 1 minute and 9 at 5 minutes, which seems pretty go",
+        "time": 27.970453023910522
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nOkay, let's try to figure out this medical question. So the patient is a 52-year-old man who came in with general fatigue. He was diagnosed with advanced lung adenocarcinoma six weeks ago and ",
+        "time": 24.537001132965088
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a,c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nOkay, let's try to figure out this medical case. So the patient is a 63-year-old man with abdominal pain and distension. He has a history of alcohol-induced liver cirrhosis, which he's been ho",
+        "time": 24.657531023025513
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 72-year-old woman with thrombocytopenia and neurological symptoms. She had a cold-like illness, then developed confusion. On examination, she ",
+        "time": 20.334754943847656
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,b,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. So, we have a 62-year-old male with descending colon cancer scheduled for open left hemicolectomy. The question is about the appropriate perioperative managem",
+        "time": 28.324129104614258
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,b,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 20-year-old woman with persistent abdominal rashes for a month. No itching, and her mother has similar rashes since age 15, along with Kaposi",
+        "time": 25.764634132385254
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,b,c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. So, we have a 15-year-old boy who came in with leg pain and dark brown urine. The history is important here. Three days ago, he had intense training under the ",
+        "time": 35.22754502296448
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 45-year-old man with sudden right ear hearing loss and tinnitus, no vertigo. The audiogram shows something (probably high-frequency sensor",
+        "time": 8.17826795578003
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 36-year-old woman at 36 weeks and 4 days pregnant. She's presenting with abdominal pain. Her vital signs show a high blood pressure of 162/10",
+        "time": 37.67629408836365
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 28-year-old male with epigastric pain, a history of duodenal ulcers since age 20, and a pituitary tumor resection at 25. He's presenting with ",
+        "time": 24.790646076202393
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. A 22-year-old woman with primary amenorrhea. She had menarche at 12, but periods became irregular and then stopped at 14. Now she's seeking help because a coll",
+        "time": 19.666510105133057
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 38-year-old woman who came in with right knee pain after twisting her knee during volleyball practice three weeks ago. MRI shows a med",
+        "time": 30.805604934692383
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 53-year-old man with complaints of snoring, facial changes (notably an enlarged nose), and shoes feeling tight. He had carpal tunnel surgery t",
+        "time": 21.001389026641846
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the scenario is a 32-year-old woman who came in after an alleged sexual assault. She's with a police officer, and the doctor needs to decide which of t",
+        "time": 16.711026906967163
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 10-month-old boy presenting with vomiting, blood in stool, and he's crying a lot. The physical exam shows a palpable mass in the right upper ",
+        "time": 28.467397928237915
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a,c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 45-year-old man with progressive dyspnea on exertion and fatigue. He's had symptoms during cycling for 5 years, which have worsened over the p",
+        "time": 30.797863960266113
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. So we have a 35-year-old man with cough, fever, and shortness of breath. Symptoms started three weeks ago with a dry cough, then five days ago fever and dyspne",
+        "time": 38.91235613822937
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 14-day-old male infant who came in with his parents for chromosomal analysis results. The baby was born at 39 weeks, weighing 2800g, with Apg",
+        "time": 37.71755123138428
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, a 19-year-old male got sodium hydroxide solution in his right eye and came to the ER. He's conscious, but there's significant conjunctival edema and co",
+        "time": 18.75567889213562
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,b,c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question step by step. The patient is a 76-year-old man with a history of total gastrectomy for gastric cancer 8 years ago. He's now presenting with increased sputum",
+        "time": 28.295428037643433
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 2-year-old boy who came in because his mom is worried the TV volume is too loud. He had ear pain and a runny nose a week ago, which went away",
+        "time": 14.347119092941284
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. So, a 24-year-old healthcare worker got accidentally pricked by a needle used on a patient. We need to figure out the appropriate response based on the lab re",
+        "time": 23.56440496444702
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is an 18-year-old male presenting with fatigue, fever, and exertional dyspnea. The lab results show pancytopenia: low RBC, Hb, Hct, WBC (with neutr",
+        "time": 14.594252109527588
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 2-month-old girl who came in with status epilepticus and later died despite resuscitation. The key findings here are the subdural hematomas, ",
+        "time": 22.970839023590088
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,b,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 69-year-old male with left nasal bleeding and diplopia (double vision). He's had recurring nosebleeds for a month, which have been getting wo",
+        "time": 37.887819051742554
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have an 80-year-old man with a purplish-red plaque on his left temple that's been growing and bleeding over three months. He's on anticoagulants for",
+        "time": 46.98487877845764
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 64-year-old man who came to the ER with left hemiplegia and impaired consciousness. The GCS is E4V4M6, which means he's opening his ey",
+        "time": 26.32175922393799
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a,d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. A 58-year-old woman with leg edema and proteinuria. Let's go through the details step by step.\n\nFirst, her history: she had a workplace check-up where proteinu",
+        "time": 37.149818897247314
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. So we have a 78-year-old woman with a week-long fever, fatigue, and some lab results. Let's break it down step by step.\n\nFirst, her symptoms: 38°C fever for a ",
+        "time": 38.22942090034485
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 61-year-old male with right knee pain, using a cane. He had colorectal cancer surgery two months ago and is currently on chemotherapy. His li",
+        "time": 28.45810294151306
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 35-year-old woman who's pregnant with her third child. She's at 34 weeks and 2 days. Her history includes two previous cesarean sections due ",
+        "time": 38.280596017837524
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 34-year-old woman with gradually worsening anterior chest pain over three months. No fever, normal blood pressure, SpO2 98% on room air. Hear",
+        "time": 24.260113954544067
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,b,c,d",
+        "gold": "a,d",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 44-year-old woman with liver dysfunction found during a health check-up. She has no history of blood transfusions, alcohol consumption, or",
+        "time": 19.729786157608032
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,b,c,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 38-year-old woman who came in with abdominal pain. She hasn't had a bowel movement for a week and has been experiencing vomiting, abdominal p",
+        "time": 38.5421359539032
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 22-year-old male with a cervical spinal cord injury from falling from a height eight weeks ago. The key points here are the muscle strengths ",
+        "time": 38.00807189941406
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\nOkay, let's try to work through this case step by step. The patient is a 68-year-old man presenting with nasal bleeding, cough, nasal congestion, and hearing loss. He's also got some lab resul",
+        "time": 40.397109031677246
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 5-year-old girl with high fever for three days, sore throat, loss of appetite, but no cough or runny nose. Her vital signs show a high fever ",
+        "time": 38.05189824104309
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 40-year-old male presenting with sudden severe epigastric pain. He was brought in by ambulance after collapsing due to the pain. His vital si",
+        "time": 34.379414796829224
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have an 18-year-old male who lives in a dormitory presenting with fever and altered mental status. He had a fever of 38.5°C the day before, then tod",
+        "time": 38.8173348903656
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 42-year-old man with abdominal pain that started in the epigastric region and then shifted to the right lower quadrant, accompanied by vom",
+        "time": 13.967350959777832
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 70-year-old woman who had a cerebral infarction resulting in right-sided hemiplegia. She's currently in a rehabilitation hospital. The questi",
+        "time": 26.95460605621338
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.765899896621704
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9396271705627441
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.8409748077392578
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.83054518699646
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8999741077423096
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8336801528930664
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8091061115264893
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.8816859722137451
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.7905638217926025
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.8394322395324707
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8330099582672119
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.9036431312561035
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb,e",
+        "time": 0.9505569934844971
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc,d",
+        "time": 0.9462170600891113
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc,e",
+        "time": 0.861098051071167
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 2.785604953765869
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. A 6-month-old boy with hemophilia A comes in after falling from a bed, presenting with vomiting and lethargy. The key here is his hemophilia A diagnosis, which",
+        "time": 13.652919054031372
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 1.0844440460205078
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. A 62-year-old woman comes in with dyspnea and generalized fatigue. She had a catheter ablation for paroxysmal atrial fibrillation 7 days ago and was discharged",
+        "time": 19.364965200424194
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 64-year-old man with dyspnea who came to the hospital. He had left chest pain and shortness of breath that's been getting worse over four day",
+        "time": 22.70161199569702
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 10.118802070617676
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 38-year-old man with thrombocytopenia, leukopenia, and subcutaneous bleeding. The blood test shows a high percentage of myeloblasts (9%) and p",
+        "time": 11.535958051681519
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. The patient is a 45-year-old male with hoarseness, throat discomfort, and chronic cough for two years. No smoking or alcohol history. The key here is the abse",
+        "time": 37.65217733383179
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.5367839336395264
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.240614891052246
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.6528618335723877
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 23-year-old male with symptoms of fatigue, loss of appetite, nausea, and dark urine. He had a homosexual encounter a month ago. On examination",
+        "time": 12.301101922988892
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 1.1225879192352295
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. A 42-year-old man comes in with lower abdominal pain and nausea. He was healthy until now. The pain started after breakfast, began as a bloating feeling on the",
+        "time": 27.840219020843506
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.3402128219604492
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a newborn male infant, 10 hours old. Born at 39 weeks, weight 2960g, Apgar scores were 7 at 1 minute and 8 at 5 minutes. The midwife noticed cy",
+        "time": 18.12477397918701
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 73-year-old man with diabetes, a history of angina and stent placement, on dialysis. He's been experiencing left calf pain when walkin",
+        "time": 18.18960690498352
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.102384090423584
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 52-year-old man with advanced lung adenocarcinoma who started immunotherapy three weeks ago. He's presenting with generalized fatigue, and his",
+        "time": 14.506486177444458
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 2.53302001953125
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 72-year-old woman with thrombocytopenia and neurological symptoms. She had a cold-like illness, then developed confusion. On examination, she ",
+        "time": 12.055617809295654
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 2.1128089427948
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 20-year-old woman with persistent abdominal rashes for a month. No itching. Her mother has similar rashes since age 15 and often gets Kaposi'",
+        "time": 14.777004957199097
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 15-year-old boy who presented with leg pain and dark brown urine after intense baseball training in the heat. He had symptoms of headache and ",
+        "time": 17.906677961349487
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 45-year-old man with sudden right hearing loss and tinnitus, no vertigo. The audiogram shows something, but the MRI is normal. They mentio",
+        "time": 9.986012935638428
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 28-year-old man with epigastric pain and a history of duodenal ulcers. He's had multiple ulcers in the stomach and duodenum on endoscopy, plus",
+        "time": 22.452091217041016
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. A 22-year-old woman with primary amenorrhea. She had menarche at 12, but periods became irregular and then stopped at 14. Now she's seeking help because a coll",
+        "time": 12.412341833114624
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 38-year-old woman who came in with right knee pain after twisting her knee during volleyball practice three weeks ago. MRI shows a med",
+        "time": 35.14169716835022
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 53-year-old man with complaints of snoring, facial changes (nose enlargement and altered appearance), and shoe tightness. He had carpal tunnel",
+        "time": 12.085812091827393
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.0564191341400146
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.3781211376190186
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. So, we have a 45-year-old male with progressive dyspnea on exertion and fatigue. He's had heart murmurs noted during company check-ups but hasn't followed up. ",
+        "time": 22.186456203460693
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 2.006213903427124
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 14-day-old male infant who came in for chromosomal analysis results. The parents are there, and the baby has some facial abnormalities like u",
+        "time": 37.978989124298096
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, a 19-year-old male got sodium hydroxide solution in his right eye and came to the ER. He's conscious, but there's significant conjunctival edema and co",
+        "time": 11.360968351364136
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,c,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 76-year-old man with a history of total gastrectomy for gastric cancer 8 years ago. He's now presenting with increased sputum production and d",
+        "time": 38.5012469291687
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,b,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 2-year-old boy who came in because his mother is worried about the TV volume being too loud. A week ago, he had ear pain and a runny nose on ",
+        "time": 37.59469199180603
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.0595791339874268
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is an 18-year-old male with fatigue, fever, and exertional dyspnea. He's got petechiae on his lower limbs, pallor of the conjunctiva, and a heart m",
+        "time": 15.095674991607666
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. So, we have a 2-month-old girl who came in with status epilepticus and later died despite resuscitation. The key findings here are the presence of multiple br",
+        "time": 11.291110754013062
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.0254700183868408
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have an 8-year-old girl with severe itching and a rash all over her body. The lab results show high IgE levels, around 2800 IU/mL, which is way abov",
+        "time": 37.49833536148071
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have an 80-year-old man with a purpuric lesion on his left temple that's been growing and bleeding. He's on anticoagulants for atrial fibrillation. ",
+        "time": 14.799898862838745
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 64-year-old man who came to the ER with left hemiplegia and impaired consciousness. The GCS is E4V4M6, which means he's opening his ey",
+        "time": 17.841737985610962
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. A 58-year-old woman with lower leg edema and proteinuria. Let's go through the details step by step.\n\nFirst, her history: she had a workplace check-up where pr",
+        "time": 28.08789300918579
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. A 78-year-old woman has had a fever around 38°C for a week, along with fatigue. She's underweight (42kg at 151cm), hypotensive, and has some electrolyte issues",
+        "time": 37.67562007904053
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 61-year-old male with right knee pain. He's using a cane because of the pain. Two months ago, he had surgery for colon cancer and is currentl",
+        "time": 20.754443883895874
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. So, we have a 35-year-old woman who's pregnant with her third child. She's at 34 weeks and 2 days. Her history includes two previous cesarean sections due to ",
+        "time": 27.740365028381348
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 34-year-old woman with gradually worsening anterior chest pain over three months. No fever, normal vital signs, and no abnormal heart or b",
+        "time": 23.740526914596558
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 44-year-old woman with liver dysfunction found during a health check-up. She has no history of blood transfusions, alcohol consumption, or",
+        "time": 12.131164789199829
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 38-year-old woman with abdominal pain, no bowel movements for a week, vomiting, and abdominal distension. The imaging shows intestinal dil",
+        "time": 22.034677982330322
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. The patient is a 22-year-old male with a cervical spinal cord injury from a fall eight weeks ago. The key points here are the muscle strengths and sensory los",
+        "time": 37.67655396461487
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 68-year-old man with nasal bleeding, cough, nasal congestion, hearing loss, and now presenting with proteinuria, hematuria, elevated BUN and c",
+        "time": 22.021453142166138
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.1960718631744385
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 40-year-old male presenting with sudden severe upper abdominal pain. The key points from the case are:\n\n- He had epigastric pain since yester",
+        "time": 18.48231291770935
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "c,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have an 18-year-old male who lives in a dormitory presenting with fever and altered mental status. The symptoms started the day before with a high f",
+        "time": 36.50858020782471
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 42-year-old man with abdominal pain that started in the epigastric region and then shifted to the right lower quadrant, accompanied by vom",
+        "time": 11.969398021697998
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. So, we have a 70-year-old woman who had a cerebral infarction and now has right hemiplegia. She's in a rehabilitation hospital. The question is asking which t",
+        "time": 20.411680936813354
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードは「睡眠時無呼吸症候群による高血圧」「正しくない」です。\n\n各選択肢を医学的に検討してみましょう：\n\na: 夜間高血圧となることが多い。\n- 睡眠時無呼吸症候群（SAS）では、いびきや無呼吸により夜間でも交感神経が亢進し、血圧が下がらない（夜間高血圧）となることが知られています。これは正しい記述です。\n\nb: 肥満患者では減量を推奨する。\n- SASの主要なリスク",
+        "time": 18.57756519317627
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. So the problem is about a pregnant woman in her late term whose vaginal culture tested positive for Group B Streptococcus (GBS). The question is asking when t",
+        "time": 14.416975021362305
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n好，我现在要解决这个关于中心性浆液性脉络网膜症（CSC）的问题。题目是问哪一个选项是错误的，选项包括a到e。\n\n首先，我需要回忆一下CSC的主要临床表现和诊断方法。中心性浆液性脉络网膜症是一种以视网膜下液体积聚为特征的疾病，通常影响中年男性，常见症状包括视力下降、变形视（变视症）、中央暗点等。通常属于自限性疾病，多数情况下会自然恢复。\n\n现在逐个分析选项：\n\na: 夜盲を自覚する。",
+        "time": 13.782264232635498
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードは「単剤の内服で低血糖の原因になる可能性が高い」です。\n\n各選択肢を医学的に検討してみましょう:\n\na: DPP-4阻害薬 - これはGLP-1受容体作動薬の分解を阻害してインスリン分泌を促進しますが、血糖依存的に作用するため、単独では低血糖のリスクは低いです。\n\nb: SGLT2阻害薬 - これは腎臓でのグルコースの再吸収を阻害して血糖を下げる薬ですが、単独では",
+        "time": 12.487356901168823
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n好\n\n</think>\n\nc",
+        "time": 0.9824821949005127
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードは「高カリウム血症の原因」となります。\n\n各選択肢を医学的に検討してみましょう：\n\na: β刺激薬 - ベータ刺激薬（βアゴニスト）は、細胞内のカリウム取り込みを促進し、血中カリウムを低下させる効果があります。したがって、高カリウム血症の原因とは逆です。\n\nb: インスリン - インスリンは細胞膜にNa+/K+-ATPaseの移動を促し、カリウムの細胞内取り込みを",
+        "time": 16.073100090026855
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question about the causes of gastroesophageal reflux disease (GERD). The question is asking which option does NOT contribute to GERD. Let's go through each one step ",
+        "time": 15.222304105758667
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードは「心サルコイドーシスの所見に合致しない」です。心サルコイドーシスは肉芽腫性炎症による疾患で、心臓に病変が生じると不整脈や心機能低下をきたします。\n\n選択肢ごとに検討してみましょう。\na: 房室ブロック - 心サルコイドーシスでは伝導障害が起こり得るため、房室ブロックは合致します。\nb: 持続性心室頻拍 - 心筋の炎症や線維化により不整脈が生じるため、持続性心室頻",
+        "time": 12.747461080551147
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question about risk factors for bone necrosis. The options are a: alcohol consumption, b: decompression sickness, c: radiation therapy, d: organophosphates, e: corti",
+        "time": 10.364199876785278
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードは「全身性強皮症による続発性Raynaud現象の特徴」です。\n\nRaynaud現象は、手指や足趾の虚血による発作性の知覚異常（冷感・疼痛）や皮膚症状（蒼白→紫紺→紅色の3相変化）が特徴です。\n\nRaynaud現象には、原発性（本態性）と続発性があります。\n\n全身性強皮症は、Raynaud現象のよくある続発性原因です。\n\n全身性強皮症による続発性Raynaud現象の",
+        "time": 18.724398851394653
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードは「自閉スペクトラム症の特徴でない」です。\n\n各選択肢を医学的に検討してみましょう：\n\na: 男児に多い - 自閉スペクトラム障害は男女比で4:1の割合で男児に多く見られるため、これは正しい特徴です。\n\nb: 感覚過敏がある - 自閉スペクトラム障害では、聴覚・触覚・視覚などの感覚過敏がよく見られる特徴です。そのため、これは正しい特徴です。\n\nc: 対人関係の苦手",
+        "time": 13.271573066711426
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題のキーワードは「急激な血圧上昇」「高血圧緊急症」「考えにくい」です。\n\n高血圧緊急症とは、血圧が急激に上昇し、臓器障害を伴う生命に関わる緊急の状態です。以下に各選択肢を検討します。\n\na: 急性大動脈解離 - 高血圧が主要な原因の一つであり、緊急手術を要する重篤な状態です。高血圧緊急症に含まれます。\n\nb: 褐色細胞腫クリーゼ - 嗜鉻細胞腫からのカテコラミン放出による急激な血",
+        "time": 16.708298921585083
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードは「脳血管性認知症」です。正しい選択肢を2つ選ぶ必要があります。\n\n各選択肢を医学的に検討してみましょう:\n\na: 50歳台では発症しない。\n- 誤りです。脳血管性認知症は50歳台でも発症します。むしろ、若年性血管性認知症は比較的若い世代にも見られます。\n\nb: 運動障害を伴うことが多い。\n- 正しい可能性があります。脳血管性認知症は、特に皮質下型の場合には運動障",
+        "time": 14.240475177764893
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the problem is asking which combinations of pathogens and malignant tumors are correct. We need to choose two correct pairs from the options a to e.\n\nF",
+        "time": 18.13260316848755
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>\n好\n\n</think>\n\ne, c",
+        "time": 0.9705240726470947
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。76歳女性、高血糖と尿蛋白あり、糖尿病性腎症の可能性を評価する問題です。\n\n各選択肢を医学的に検討します：\n\na: 姉の糖尿病歴 - 家族歴は糖尿病リスク因子ですが、尿蛋白が糖尿病性腎症由来かを示唆する所見ではありません。\n\nb: 抗GAD抗体陰性 - 1型糖尿病のマーカーが陰性なのは、2型糖尿病を支持する所見ですが、尿蛋白の原因を示唆する直接的な根",
+        "time": 28.607645988464355
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認:\n- 6か月男児、血友病Aと診断されている\n- 転落歴（50cmの高さからフローリングに）\n- 嘔吐と活気不良\n- 血液検査：Hb 10.2g/dL（軽度貧血）、APTT 98.3秒（著明に延長）\n- 血友病Aの家族歴あり\n\n各選択肢を医学的に検討:\na: 赤血球輸血 - 軽度貧血（Hb 10.2g/dL）では輸血は不要。急性出血が確認されていない。\n\nb",
+        "time": 17.00516128540039
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。「23歳男性」「仕事中に居眠り」「発作的眠気」「大笑い・驚いた後に全身の力が抜ける」です。\n\n各選択肢を医学的に検討します。\na: 入眠時に金縛りにあう。- これはナルコレプシーの典型的な症状です。\nb: 夜間せん妄を合併する。- これは睡眠障害の症状ではありません。\nc: 睡眠発作後にも眠気が残る。- これはナルコレプシーの特徴ではありません。\nd",
+        "time": 10.850018739700317
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。62歳女性、カテーテルアブレーション施行後3日前に退院、息切れと全身倦怠感が出現し増悪。生命徴候は体温36.2℃、脈拍112/分（整）、血圧88/72mmHg、呼吸数18/分、SpO2 95%（room air）。特徴的な所見は吸気時の収縮期血圧低下（18mmHg）、頸静脈怒張、心音微弱。血液検査は特に大きな異常なし。\n\n各選択肢を医学的に検討します",
+        "time": 21.42832112312317
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n問題文のキーワードを確認します。「64歳男性」「呼吸困難」「左胸痛・息切れ」「SpO2 92％」「左胸部に呼吸音を聴取しない」「胸腔ドレーン挿入後に咳嗽と泡沫状喀痰」が特徴です。\n\n胸部X線写真（A）は左側の肺野が白く見えることが予想され、胸腔ドレーン挿入後に（B）は泡沫状喀痰が出現したとあります。胸腔ドレーン挿入後に咳嗽と泡沫状喀痰が出現した点から、肺の一部が圧迫されたり萎縮した",
+        "time": 38.13141894340515
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n問題文のキーワードを確認:\n73歳男性、総胆管結石に対して内視鏡的結石除去術施行後3時間に心窩部痛と背部痛、低血圧（84/56mmHg）、頻脈（104/分）、アミラーゼ上昇（1,495U/L）が特徴的です。\n\n各選択肢を医学的に検討:\na: 血漿交換 - 通常は重症溶血や特定の自己免疫疾患に用いられ、急性膵炎治療には不適\nb: 緊急開腹手術 - 腹部症状と低血圧があるが、内視鏡治療",
+        "time": 15.373224973678589
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。「腎機能低下」「家族歴（母親と叔父が透析治療）」「腹部MRI」。この情報から、考えられる疾患は「多発性腎嚢胞症」です。\n\n多発性腎嚢胞症は、常染色体優性型（b）で、成人に発現し、腎臓に嚢胞が多数形成される遺伝性疾患です。肝臓にも嚢胞ができることがあり（a）、脳動脈瘤のリスクも高くなります（d）。治療にはバソプレシンV2受容体拮抗薬が使われます（e）。",
+        "time": 9.554044008255005
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。38歳男性、皮下出血、白血球減少、血小板減少、貧血、黄疸なし。血液所見：白血球2,400（芽球9％、前骨髄球60％）、血小板1.6万。LD 365U/L、尿酸9.3mg/dL。\n\n骨髄血塗抹May-Giemsa染色標本写真が別にあると記載されています。前骨髄球が60％含まれており、急性前骨髄球性白血病（APL）が疑われます。APLは急性骨髄性白血病の",
+        "time": 18.798490047454834
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. So, the patient is a 45-year-old male with hoarseness (gravelly voice) as the main complaint. He came to the clinic because he's had this hoarseness without a",
+        "time": 37.45693302154541
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n問題文のキーワードを確認します。13歳女子が食後約1時間後に試合中に症状発現、皮膚症状と腹痛。血液検査では好中球がやや低下、リンパ球上昇傾向。他の選択肢は対応策。\n\n各選択肢を医学的に検討します。\na: 部活動を止めさせる - 症状が一時的で既に改善しているため、部活動を完全に止める必要はない。\nb: イカの摂取を禁ずる - 症状がイカによるIgE型アレルギーの可能性が高い。再発防",
+        "time": 11.815663814544678
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。「30歳男性」「在宅勤務」「集中できない」「寝酒」「起床時の気分の沈み」「疲れが残る」「取り留めなく考え事」。産業医面談の場面で、対応として適切でないものを選ぶ必要があります。\n\n各選択肢を医学的に検討します。\na: 精神科受診を勧める。→うつ病の可能性があるため適切。\nb: 寝酒はやめるように指導する。→アルコール依存の可能性があるため適切。\nc:",
+        "time": 9.467582941055298
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認:\n81歳男性、呼吸困難で救急搬入\nCOPDの既往（気管支拡張薬治療中）\n現在：体温38.3℃、白血球9,800（好中球91%）、CRP 4.0mg/dL\n動脈血ガス分析：pH 7.33（軽度アシドーシス）、PaCO2 58 Torr（高炭酸ガス血症）、PaO2 62 Torr（低酸素血症）\nHCO3- 30mEq/L（代償性アルカローシスの可能性）\n\n各選",
+        "time": 24.193166971206665
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 23-year-old male with symptoms of fatigue, loss of appetite, nausea, and dark urine. He had a homosexual encounter a month ago. On examination",
+        "time": 9.390468120574951
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。40歳男性が字がうまく書けないことを主訴に来院しています。3年前からサイン時に困難があり、徐々に仕事にも支障が出ています。神経診察では筋トーヌス正常、不随意運動なし、四肢筋力低下なし、腱反射正常、協調運動障害と感覚障害もありません。鉛筆で字を書く指示すると、示指と中指の近位および遠位指節間関節が強く屈曲し、歪んだ字になるとのことです。\n\n各選択肢を医",
+        "time": 18.423978805541992
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。42歳男性が下腹部痛と悪心を主訴に来院したという情報があります。症状の経過としては、朝食後に右側腹部に張りを感じ、次第に激痛へと変わり、数分で改善した後また悪化しました。このような周期的な痛みと悪心・嘔吐があり、右下腹部痛が現在も続いています。また、痛みは下方へ移動し、右側腹部から背部にかけての違和感があるとされています。\n\nこの症状は腎結石や尿管結",
+        "time": 21.1357319355011
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。48歳女性、口渇と全身倦怠感、5日前に発熱と腹痛。尿所見で糖3+、ケトン体3+、蛋白(-)。血糖440mg/dL、HbA1c 5.8%（基準内）、Cペプチド0.2ng/mL（正常下限以下）。\n\n各選択肢を医学的に検討します。\na: 「食事と運動で良くなります」→ 酮体陽性・Cペプチド低下よりインスリン依存状態と考えられ、単なる生活指導では不十分\nb:",
+        "time": 11.98206090927124
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。\n\n生後10時間の男児\n在胎39週、体重2,960g、Apgarスコア7点（1分）、8点（5分）\n出生時はチアノーゼに気づかなかったが、助産師が発見\n体温36.9℃（正常）\n心拍数128/分（正常）\n呼吸数38/分（やや速いが重大ではない）\nSpO2（room air）76％（上肢）、75％（下肢）\n高濃度酸素を投与してもチアノーゼは持続\n心エコー検",
+        "time": 24.0012149810791
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 73-year-old male with left calf pain when walking. He has diabetes, a history of angina and stent placement, is on dialysis, smokes 20/day. A",
+        "time": 17.422510147094727
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n問題文のキーワードを確認します。出生当日の新生児で、外性器の特徴に気づき医師に報告したとあります。また、鼠径部に腫瘤は触知せず、外性器の写真があるとされています。\n\n各選択肢を医学的に検討します：\n\na: 「外性器が未成熟ですぐには性別を確認できない状態です」\n- 一般的に、出生時の外性器の検査で性別は判明します。ただし、一部の状態（例えば尿道下裂や陰核肥大など）では性別の判定が難",
+        "time": 18.17063617706299
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. So, we have a 52-year-old male with advanced lung adenocarcinoma who started immunotherapy three weeks ago. Now he's presenting with generalized fatigue, and s",
+        "time": 21.62302803993225
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 63-year-old man with alcohol-induced cirrhosis, presenting with abdominal pain and distension. He has a history of umbilical swelling that use",
+        "time": 25.47695279121399
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認\n\n72歳女性、血小板減少（5.6万→4.7万）、精神症状（つじつまの合わない言動）、意識レベルJCS I-2、黄疸（眼球結膜に軽度黄染）、胸骨右縁第2肋間の収縮期雑音、尿蛋白・潜血陽性、貧血（Hb 6.1g/dL）、間接ビリルビン上昇（総ビリルビン2.4mg/dL、直接0.5mg/dL）、LDH著明上昇（1,150U/L）、尿素窒素・クレアチニン上昇（70",
+        "time": 25.725210905075073
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 62-year-old male with descending colon cancer scheduled for open left hemicolectomy. The question is about the appropriate perioperative mana",
+        "time": 23.520097732543945
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。20歳女性、腹部の皮疹、掻痒なし、家族歴（母親がKaposi水痘様発疹症）、ATP2A2遺伝子変異が同定されています。\n\n各選択肢を医学的に検討すると、Darier病（b）は常染色体優性遺伝でATP2A2遺伝子の変異と関連しています。Kaposi水痘様癥はDarier病の特徴的な皮膚症状です。他の選択肢（Sweet病、Kaposi肉腫、尋常性天疱瘡、",
+        "time": 7.921074867248535
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認:\n15歳男子、下肢痛・赤褐色尿、激しい運動歴（野球部練習）、CK値著明上昇（155,150 U/L）、尿は暗褐色・蛋白+・潜血3+\n筋肉痛と赤褐色尿、CK値の著明な上昇から横紋筋融解症（rhabdomyolysis）が疑われる\n尿中潜血陽性はミオグロビンによる偽陽性の可能性\n横紋筋融解症における輸液療法は、腎障害を予防するために十分な水分補給が重要\n通常は",
+        "time": 20.331187963485718
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。「45歳男性」「右耳の難聴と耳鳴」「突然発症」「めまいなし」「鼓膜正常」「オージオグラム異常」「頭部MRI正常」が特徴です。\n\nこの臨床像は突然の感音難聴（突発性感音難聴）に一致します。めまいがないことからメニエール病は否定的です。\n\n各選択肢を検討すると：\na: 抗菌薬 - 中耳炎や外耳道炎などの感染症に対して使用されますが、鼓膜に異常がないことか",
+        "time": 14.25957989692688
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。妊娠36週4日、腹痛、血圧162/108mmHg（高血圧）、脈拍110/分、腹部硬い、子宮口6cm開大、腟内凝血塊、胎盤の厚さ7cm。これらは常位胎盤早期剥離（placental abruption）の症状に一致します。\n\n各選択肢を医学的に検討します。\na: 緊急帝王切開 - 常位胎盤早期剥離の重症例では、子宮内での赤ちゃんの状態が急変する可能性が",
+        "time": 14.60551118850708
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。28歳男性が心窩部痛で来院し、十二指腸潰瘍の既往があります。下垂体腺腫摘出歴もあります。\n\n血液生化学所見では、Caが11.6mg/dLと高カルシウム血症を示しています。Pは2.2mg/dLで低リン酸です。\n\n内視鏡検査では多発胃潰瘍と十二指腸潰瘍が見られ、CTでは膵体部に造影される腫瘤があります。\n\nこれらの所見から、Zollinger-Ellis",
+        "time": 34.39278531074524
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。22歳女性が無月経で来院しています。初経は12歳ですが、13歳から不規則月経となり14歳から無月経となっています。乳房発育は不良で、乳頭の圧迫で乳汁分泌を両側に認めています。基礎体温は1相性です。\n\nこの患者の症状と所見から、考えられる疾患や異常を特定する必要があります。無月経の原因にはいくつかありますが、乳房発育不良と乳汁分泌があることから、高プロ",
+        "time": 12.94881796836853
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 38-year-old woman who came in with right knee pain after twisting her knee during volleyball practice three weeks ago. MRI shows a medial ",
+        "time": 13.113861083984375
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。53歳男性、いびき、顔つき変化、靴が窮屈、手根管症候群の既往。血液生化学検査ではALP上昇、血糖値や脂質も高めです。\n\nこれらの症状はアクリシン症の典型的な症状に合致します。舌や手足の肥大、顔貌変化、いびき（睡眠時無呼吸）、手根管症候群などです。\n\nアクリシン症は成長ホルモン分泌異常による疾患で、確定診断にはGHの過剰分泌を確認する必要があります。通",
+        "time": 14.954909801483154
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。「32歳 女性」「同意のない性行為」「警察官に付き添われて受診」「月経周期28日型 最終月経12日前から5日間」です。\n\n各選択肢を医学的に検討します。\na: 性感染症の検査を行う。→ 適切です。同意のない性行為後には、STD（性感染症）の検査は重要です。\nb: 緊急避妊薬を提案する。→ 適切です。月経周期28日型で最終月経が12日前から5日間だった",
+        "time": 14.770774126052856
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。10か月の男児が嘔吐と血便を訴え来院し、右上腹部に腫瘤が触知され、超音波でtarget sign（目標徴候）が確認されています。この所見は腸重積を強く示唆しています。\n\n選択肢を医学的に検討します:\n- a: 「高圧浣腸で整復できれば帰宅できます」  \n  → 腸重積の治療には空気またはバリウムによる浣腸整復が第一選択であり、成功すれば帰宅も可能です",
+        "time": 16.432793855667114
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. So, we have a 45-year-old male with progressive dyspnea on exertion and fatigue. He's had symptoms during cycling for 5 years, but now even light activities li",
+        "time": 29.975188970565796
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 35-year-old man with cough, fever, and dyspnea. Symptoms started 3 weeks ago with dry cough, then fever and breathing difficulty 5 days prior.",
+        "time": 32.67936682701111
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。日齢14の男児で、染色体検査のために来院しました。顔貌異常として「切れ上がった目、平坦で低い鼻、口外に突き出た舌」が記載されています。また、「手掌単一屈曲線」と「筋緊張低下」も特徴です。\n\nこれらの症状は、ダウン症候群（21トリソミー）の典型的な特徴と一致します。ダウン症候群は、21番染色体が3本存在する（トリソミー）ことによって引き起こされる遺伝子",
+        "time": 20.02056622505188
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n好、我现在要解决这个问题。题目是关于一个19岁男性在实验中被氢氧化钠溶液溅到右眼，需要选择首先应该进行的处理措施。选项有五个：a是口服止痛药，b是稀盐酸点眼，c是抗生素静脉注射，d是生理盐水洗眼，e是高渗利尿剂静脉注射。\n\n首先，我需要回忆一下化学物质溅入眼睛的急救处理原则。氢氧化钠（NaOH）是一种强碱，具有强烈的腐蚀性。当眼睛接触到强碱时，正确的急救措施非常关键，因为延误处理可",
+        "time": 12.96069884300232
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n問題文のキーワードを確認:\n- 76歳男性、胃全摘術後、喀痰増悪、体重減少、喀出困難\n- 身長157cm、体重41kg（著明な低体重）\n- 体温37.5℃、SpO2 96%（軽度の炎症症状）\n- 血液所見：好中球増加、CRP上昇（13mg/dL）\n- 喀痰Gram染色標本あり（詳細は記載なし）\n\n各選択肢を医学的に検討:\na: セファゾリン - 第1世代セフェム。主にグラム陽性菌に",
+        "time": 17.639864206314087
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。「2歳男児」「耳痛と鼻汁の既往」「呼びかけに応答しない」がポイントです。耳痛と鼻汁の既往から急性中耳炎を疑い、伝音性難聴が考えられます。診断確定のために有用な検査を選びます。\n\n各選択肢を医学的に検討します。\na: 語音聴力検査 - 3歳以上が対象で、2歳児には不向きです。\nb: 純音聴力検査 - 3歳以上が対象で、2歳児には不向きです。\nc: 聴性",
+        "time": 11.679523706436157
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。24歳の医療職が採血中に患者に使用した注射針を誤って指に刺したという事故がありました。患者の検査結果はHBs抗原（＋）、HBs抗体（−）、HCV抗体（−）です。医療職の検査結果はHBs抗原（−）、HBs抗体（−）、HCV抗体（−）です。\n\nこの情報から、患者はB型肝炎ウイルス（HBV）のキャリアであり、医療職はこれまでにB型肝炎ウイルスへの免疫がない",
+        "time": 15.891974687576294
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。18歳男性が全身倦怠感と発熱、労作時の息切れを訴えています。身体所見では点状出血や貧血、心雑音が認められています。血液検査では全血球減少（赤血球、Hb, Ht, 白血球, 血小板）が見られ、骨髄生検では低形成所見を認めるという情報があります。\n\n各選択肢を医学的に検討します。\na: フェリチン - 鉄貯蔵量を反映するマーカーですが、この症例では貧血が",
+        "time": 17.77262806892395
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認:\n* 2か月の女児、けいれん重積で搬入\n* 救急車内で心肺停止、対光反射消失\n* 妊娠分娩歴に異常なし、1か月健診未受診\n* 顔面や体幹に新旧混在した皮下出血\n* 頭部CTで硬膜下血腫とびまん性脳浮腫\n* 全身X線で左大腿骨骨折、右上腕骨骨折\n* 母親は外傷に心当たりなし\n\n各選択肢を医学的に検討:\na: 虐待 - 皮下出血(新旧混在)、骨骨折(大腿骨と上",
+        "time": 16.402238130569458
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。69歳男性、左鼻出血と複視、左鼻閉の悪化、物が二重に見える。副鼻腔CTとMRIで扁平上皮癌が確認されています。\n\n各選択肢を医学的に検討します。\na: 難聴 - 耳に関する症状で、鼻腔や副鼻腔の癌が直接関与する可能性は低いです。\nb: 眼球突出 - 鼻腔や副鼻腔の腫瘍が眼窩に侵襲すると眼球突出を引き起こす可能性があります。\nc: 開口障害 - 口の開",
+        "time": 11.595598936080933
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。8歳女児が著しい掻痒と全身性の皮疹を呈し、IgE値が非常に高い（2,800IU/mL）ことが特徴です。また、抗原特異的IgEがハウスダストやスギ花粉などの吸入性抗原に強陽性で、食物抗原は陰性です。白血球分画では好酸球が12%と高値です。\n\nこれらの所見はアトピー性皮膚炎を強く示唆します。IgEが非常に高く、吸入性抗原に対する感作があることから、アトピ",
+        "time": 16.451990127563477
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n好\n\n</think>\n\na",
+        "time": 1.174912929534912
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 64-year-old man who came to the ER with left hemiplegia and impaired consciousness. The GCS is E4V4M6, which means he's opening his ey",
+        "time": 17.355813026428223
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。58歳女性が下腿浮腫で来院しました。半年前に蛋白尿が指摘され、1か月前から浮腫が出現しています。検査データを確認すると、尿蛋白3＋でアルブミン2.6g/dLと低アルブミン血症があります。また、尿所見や血液生化学のデータからネフローゼ症候群が疑われます。\n\n各選択肢を医学的に検討します。\na: 膜性腎症 - 中高年に好発し、ネフローゼ症候群の原因となる",
+        "time": 18.60155701637268
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。78歳女性、1週間前から38℃台の発熱が持続し、全身倦怠感。身長151cm、体重42kg（やせ型）。体温38.2℃。脈拍92/分、整。血圧84/50mmHg（低血圧）。胸腹部に異常所見を認めない。皮膚の乾燥や四肢に浮腫を認めない。\n\n血液生化学所見：\n尿素窒素24mg/dL（やや高め）\nクレアチニン0.7mg/dL（正常）\n空腹時血糖65mg/dL（",
+        "time": 21.71233892440796
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。61歳男性、右膝痛で来院。一本杖歩行。2か月前に大腸癌手術、現在抗癌治療中。余命は2年以上。意識清明。右膝の内反変形と可動域制限、X線で変形性膝関節症。人工膝関節置換術の適応。\n\n各選択肢を医学的に検討します。\na: がん治療、膝治療ともに放棄 - 患者は抗癌治療中で余命は2年以上と予測されています。膝の症状も手術適応があるほどなので、治療を放棄する",
+        "time": 14.232347965240479
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。\n\n35歳 経産婦（3妊2産）\n妊娠34週2日\n妊娠初期から健診受診\n30歳時および32歳時に、それぞれ骨盤位および既往帝王切開の適応で選択的帝王切開の既往\n身長157cm、体重55kg（非妊時46kg）\n体温36.8℃\n脈拍80/分、整\n血圧110/74mmHg\n1日に数回の子宮収縮を自覚\n胎児心拍数陣痛図で異常なし\n1週間前に施行した骨盤MRIの",
+        "time": 22.97679591178894
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>\n問題文のキーワードを確認します。34歳女性、前胸部痛が3か月前から出現し増強してきている。体温は正常、血圧も正常範囲、SpO2も98%で呼吸不全の所見はなさそうです。心音と呼吸音にも異常なし、胸部X線写真（A）と造影CT（B）の所見が記載されています。\n\n胸部X線写真と造影CTで、前胸部に腫瘍性病変が示されている可能性があります。ただし具体的な画像所見は記載されていませんので、一般",
+        "time": 21.544347286224365
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。44歳女性、肝機能障害（ALPとγ-GTの上昇）、ウイルスマーカー陰性、肝生検組織所見あり。\n\n各選択肢を医学的に検討します：\na: IgM高値 - 原発性胆汁性胆管炎（PBC）ではIgMが高値になることがあります。ALPとγ-GTの上昇と一致します。\n\nb: 胆汁酸低値 - 胆汁酸は肝機能障害や胆汁うっ滞があると上昇します。低値は考えにくいです。\n",
+        "time": 17.508400201797485
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 38-year-old woman who came in with abdominal pain. She hasn't had a bowel movement for a week and has been getting worse with symptoms like v",
+        "time": 27.06981897354126
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 22-year-old male who was hospitalized due to cervical spinal cord injury. He fell from a height 8 weeks ago. The manual muscle test results a",
+        "time": 37.79019331932068
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\n問題文のキーワードを確認します。68歳男性が鼻出血、咳嗽、難聴などの症状を呈し、尿所見や血液検査で腎機能障害や炎症反応が認められています。胸部X線では両肺野に多発結節影を認めるなど、全身性の疾患が疑われます。\n\nこの患者の寛解導入療法で副腎皮質ステロイドと併用する薬剤として適切なものを選ぶ必要があります。\n\n各選択肢を医学的に検討すると：\n\na: コルヒチン - 主に痛風の治療に使",
+        "time": 28.773319959640503
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n問題文のキーワードを確認します。5歳女児、3日前からの高熱、咽頭痛、食欲低下、咳嗽や鼻汁なし。所見は高体温、脈速、呼吸数増加、SpO2正常、活気良好。結膜発赤、咽頭発赤、口蓋扁桃白苔、頸部リンパ節腫脹。心音・呼吸音正常、腹部所見も問題なし。\n\n各選択肢を医学的に検討します。\na: 川崎病 - 高熱（5日以上）、結膜炎、頸部リンパ節腫脹は該当しますが、通常他の症状（皮膚疹、手足の腫れ",
+        "time": 17.522738218307495
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. A 40-year-old man comes in with sudden severe upper abdominal pain. He's got guarding, rebound tenderness, and absent bowel sounds. That sounds like peritoniti",
+        "time": 13.240029096603394
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "<think>\n好中",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>\n好中球性髄膜炎の症例です。18歳男性が発熱、頭痛、意識障害を呈し、髄膜炎の所見（項部硬直）が認められています。脳脊髄液検査では、好中球性髄膜炎の特徴である細胞数増加（861/mm3、多核球790）、蛋白上昇（100mg/dL）、糖低下（16mg/dL）が見られます。グラム染色ではグラム陰性双球菌が認められており、髄液中に貪食像も見られることから、淋菌性髄膜炎の可能性が考えられます。",
+        "time": 38.42955207824707
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 42-year-old man with abdominal pain that started in the epigastric region yesterday, then shifted to right lower quadrant (RLQ) with rebou",
+        "time": 17.43109107017517
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 70-year-old woman who had a cerebral infarction resulting in right-sided hemiplegia. She's currently in a rehabilitation hospital. The questi",
+        "time": 24.33460807800293
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question about hypertension caused by sleep apnea syndrome. The question asks which statement is incorrect.\n\nFirst, I need to recall what I know about sleep apnea and i",
+        "time": 13.134202003479004
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. So the problem is about a pregnant woman in her late term who tested positive for Group B Streptococcus (GBS) in a vaginal culture. The question is asking whe",
+        "time": 17.183234930038452
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question about central serous chorioretinopathy (CSC). The question is asking which statement is incorrect. Let's go through each option one by one.\n\nFirst, option a",
+        "time": 11.475224018096924
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. The problem is asking which single oral medication is most likely to cause hypoglycemia. The options are DPP-4 inhibitors, SGLT2 inhibitors, biguanides (like ",
+        "time": 12.498596906661987
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question about adult heart transplants in Japan. The options are a to e, and I need to pick the correct one.\n\nFirst, let's go through each option. \n\nOption a says the 1",
+        "time": 15.17310905456543
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question about hyperkalemia. The options are a to e: β-stimulants, insulin, loop diuretics, glycyrrhizin, and RAS inhibitors. I need to pick which one causes high potas",
+        "time": 21.40051817893982
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question about the causes of gastroesophageal reflux disease (GERD). The question is asking which of the listed factors does NOT contribute to GERD. Let's go through",
+        "time": 20.03339910507202
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient has heart failure and we need to find which finding is NOT consistent with cardiac sarcoidosis. Let's go through each option.\n\na: Atrioventricu",
+        "time": 8.416111707687378
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question about risk factors for bone necrosis. The options are a: alcohol consumption, b: decompression sickness, c: radiation therapy, d: organophosphates, e: corti",
+        "time": 9.941020965576172
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question about systemic sclerosis and secondary Raynaud's phenomenon. The question is asking which of the options a to e is a characteristic feature.\n\nFirst, I need to ",
+        "time": 31.590837955474854
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question about autism spectrum disorder (ASD). The question is asking which of the listed features is NOT characteristic of ASD. The options are a to e.\n\nFirst, I need ",
+        "time": 12.92146897315979
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the problem is asking which of the listed conditions is least likely to be associated with hypertensive emergency. The options are a through e.\n\nFirst,",
+        "time": 14.95998501777649
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,b,c,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question about vascular dementia. The user is asking which two statements are correct. Let me go through each option one by one.\n\nFirst, option a says it doesn't occ",
+        "time": 37.33524513244629
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the problem is asking which combinations of pathogens and malignant tumors are correct. We need to choose two correct answers from the options a to e.\n",
+        "time": 13.905864953994751
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question about acute kidney injury (AKI) diagnostic criteria. The options are a to e, and I need to pick two.\n\nFirst, I remember that AKI is diagnosed based on changes ",
+        "time": 9.692347049713135
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 76-year-old woman with high blood sugar and protein in her urine. She has a sister with diabetes, gained weight after retirement, and now ",
+        "time": 17.317800045013428
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. So we have a 6-month-old boy with hemophilia A who fell from a bed and now has vomiting and decreased activity. The lab results show prolonged aPTT (98.3 secon",
+        "time": 13.487346172332764
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. The patient is a 23-year-old man who has excessive daytime sleepiness, even after sleeping well at night. He also experiences sudden loss of muscle tone (cata",
+        "time": 17.123978853225708
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this case. A 62-year-old woman comes in with dyspnea and general fatigue seven days after catheter ablation for paroxysmal atrial fibrillation. She was discharged three days",
+        "time": 14.066398859024048
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. So, the patient is a 64-year-old man with dyspnea. He had left chest pain and shortness of breath four days ago, which has been getting worse. His vital signs",
+        "time": 22.92948079109192
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n好中球の増加（白血球11,000）とCRP上昇（1.0mg/dL）から炎症反応が認められる。また、アミラーゼ上昇（1,495U/L）とLDH軽度上昇、低血圧（84/56mmHg）、頻脈（104/min）から、術後合併症としての急性膵炎または胆道感染（膿栓など）が疑われる。\n\n選択肢を検討すると：\n\na: 血漿交換 - 重症急性膵炎やTTP/HUSなどの特定の状態で用いられるが、第一",
+        "time": 16.46705913543701
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 22-year-old male who came in because of kidney dysfunction detected during a health check-up. His mother and uncle are on dialysis, wh",
+        "time": 19.812742948532104
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 38-year-old man with petechiae, leukopenia (2400), thrombocytopenia (16k), and a bone marrow smear showing 9% blasts, 60% promyelocytes. The k",
+        "time": 9.99792218208313
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. So, the patient is a 45-year-old male with hoarseness, throat discomfort, and chronic cough for two years. No smoking or drinking history. The laryngoscopy im",
+        "time": 37.47450923919678
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 13-year-old girl who came to the hospital after feeling unwell and having abdominal pain during a basketball game. She ate a bento box with s",
+        "time": 31.114699125289917
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 30-year-old male who's been struggling with work efficiency for about three months. He started working from home around six months ago due to",
+        "time": 14.472604036331177
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So we have an 81-year-old man with COPD who was brought in by ambulance due to breathing difficulties. He's on a nasal cannula with 0.5 L/min oxygen. His b",
+        "time": 19.595881938934326
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 23-year-old male with symptoms of fatigue, loss of appetite, nausea, and dark urine. He had a homosexual encounter a month ago. On examination",
+        "time": 11.481812953948975
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n好いえ、問題を分析しましょう。\n\n患者は40歳の男性で、「字がうまく書けない」ことを主訴に来院しています。症状は3年前から徐々に進行しており、仕事にも支障が出ています。\n\n神経学的所見：\n- 筋トーヌス正常\n- 不随意運動なし\n- 四肢筋力低下なし\n- 腱反射正常\n- 協調運動障害と感覚障害なし\n\n特徴的な所見：\n- 示指と中指の近位・遠位指節間関節が強く屈曲\n- 書字時に歪んだ形",
+        "time": 18.016151666641235
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 42-year-old man with sudden lower abdominal pain and nausea. He was healthy until now. The pain started after breakfast, began as a bloati",
+        "time": 23.115580081939697
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,b,c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this case. A 48-year-old woman comes in with complaints of thirst and general fatigue. Five days ago, she had a fever and abdominal pain, but her appetite has been normal",
+        "time": 36.920450925827026
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a male infant who's 10 hours old. He was born at 39 weeks, weight 2960g, Apgar scores were 7 at 1 minute and 8 at 5 minutes. The midwife notice",
+        "time": 22.02912402153015
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 73-year-old male with left calf pain when walking, which improves with rest. He has a history of diabetes, angina treated with stents 7 years",
+        "time": 17.31235694885254
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a newborn on the day of birth, full-term at 40 weeks, weight is 3020g, which seems normal. Apgar scores are 8 at 1 minute and 9 at 5 minutes, s",
+        "time": 37.28045678138733
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n好中球減少症の患者に退院許可を出す場合、最も適切な基準はどれか。1つ選べ。\n\na: 体温が38℃未満になってから24時間以上経過したとき\nb: 体温が38℃未満になってから48時間以上経過したとき\nc: 好中球数が100/μLに達したとき\nd: 好中球数が500/μLに達したとき\ne: 好中球数が1,000/μLに達したとき\n\n答え:\n</think>\n\ne",
+        "time": 6.597527027130127
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. So we have a 63-year-old male with a history of alcohol-induced liver cirrhosis, presenting with abdominal pain and distension. He had an umbilical swelling th",
+        "time": 21.2416570186615
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 72-year-old woman with thrombocytopenia and neurological symptoms. She has a history of cold-like symptoms, then developed confusion. On exami",
+        "time": 17.500001907348633
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 62-year-old male with descending colon cancer scheduled for open left hemicolectomy. His past medical history includes appendicitis with peri",
+        "time": 23.225761651992798
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 20-year-old woman with persistent abdominal rashes for a month. No itching. Her mother has similar rashes since age 15 and often gets Kaposi'",
+        "time": 22.093448877334595
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 15-year-old boy who came in with leg pain and reddish-brown urine. He had been playing baseball under the hot sun, experienced headach",
+        "time": 20.832308053970337
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. The patient is a 45-year-old male with sudden right hearing loss and tinnitus, no vertigo. The audiogram shows a specific pattern, and the MRI is normal. S",
+        "time": 10.824795961380005
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 36-year-old woman at 36 weeks and 4 days pregnant. She comes in with abdominal pain. Her vital signs show a high blood pressure of 162/108 mm",
+        "time": 38.34692311286926
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 28-year-old man with recurrent peptic ulcers, hypercalcemia (Ca 11.6 mg/dL), and a pancreatic tumor seen on CT. He also had a pituitary adenom",
+        "time": 12.95937466621399
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 22-year-old woman with primary amenorrhea. She had menarche at 12, but her periods became irregular and then she stopped having them altogeth",
+        "time": 20.386828184127808
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. The patient is a 38-year-old woman who came in with right knee pain after twisting her knee during volleyball practice three weeks ago. MRI shows a medial men",
+        "time": 21.263190031051636
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 53-year-old man with complaints of snoring, noticed by family, and changes in facial appearance (nose enlargement) and shoe size. He had carpa",
+        "time": 10.927666902542114
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this question. So, the scenario is a 32-year-old woman who came in after an alleged sexual assault. She's with a police officer, and they need to handle her medical examinat",
+        "time": 38.13431191444397
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 10-month-old boy presenting with vomiting, blood in stool, and he's crying a lot. The physical exam shows a tender mass in the right upper ab",
+        "time": 25.914216995239258
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is a 45-year-old man with progressive dyspnea on exertion and fatigue. He's had symptoms during cycling for 5 years, which have worsened over the p",
+        "time": 23.629772186279297
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. So we have a 35-year-old male with cough, fever, and shortness of breath. Symptoms started three weeks ago with a dry cough, then five days ago fever and dyspn",
+        "time": 17.84761905670166
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 14-day-old male infant who came in with his parents for chromosomal analysis results. The baby was born at 39 weeks, weighing 2800g, with Apg",
+        "time": 23.765586853027344
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\nOkay, let's tackle this question. So, a 19-year-old male got sodium hydroxide solution in his right eye and came to the ER. He's conscious, but there's severe conjunctival edema and corneal op",
+        "time": 13.027381181716919
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n好気性菌の検出を待つ間、経験的抗菌薬として何を選ぶかという問題。\n\n患者の背景：\n- 76歳男性\n- 胃全摘術歴あり（8年前）\n- 体重減少、喀痰増悪の経過\n- 現在：発熱（37.5℃）、CRP上昇（13mg/dL）\n- 咳痰増加、喀出困難\n- 貧血所見（Hb 13.6g/dL, Ht 28%）\n- 喀痰Gram染色標本所見あり（詳細は記載なし）\n\n患者の特徴：\n- 高齢\n- 基礎",
+        "time": 30.764354944229126
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 2-year-old boy who came in because his mother is worried about the TV volume being too loud. A week ago, he had ear pain and a runny nose on ",
+        "time": 19.364679098129272
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 24-year-old healthcare worker who accidentally pricked their finger with a needle used on a patient. The patient's test results show HBs anti",
+        "time": 15.281286001205444
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. The patient is an 18-year-old male presenting with fatigue, fever, and exertional dyspnea. The lab results show pancytopenia: low RBC, Hb, Hct, WBC (with neutr",
+        "time": 16.52004098892212
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 2-month-old girl who came in with status epilepticus and later died despite resuscitation. The key findings here are the subdural hematomas, ",
+        "time": 18.43665838241577
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 69-year-old male with left nasal bleeding and diplopia. He's had recurring nosebleeds for a month, which have been getting worse, and ",
+        "time": 20.93751883506775
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "a,c,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have an 8-year-old girl with severe itching and a rash all over her body. The lab results show high IgE levels, around 2800 IU/mL, which is way abov",
+        "time": 33.62278485298157
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have an 80-year-old male with a purpuric lesion on his left temple that's been growing and bleeding. He has a history of atrial fibrillation and is ",
+        "time": 18.664992094039917
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, the patient is a 64-year-old man who came to the ER with left hemiplegia and impaired consciousness. The GCS is E4V4M6, which means he's opening his ey",
+        "time": 20.280457973480225
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this case. A 58-year-old woman with leg edema and proteinuria. Let's go through the details step by step.\n\nFirst, her history: she had a workplace check-up where proteinu",
+        "time": 27.35167407989502
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,c,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\nOkay, let's tackle this case. A 78-year-old woman has had a fever around 38°C for a week, with general fatigue. She's underweight (42kg at 151cm), BP is low (84/50). Labs show Na 129, K high a",
+        "time": 38.20512294769287
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 61-year-old male with right knee pain, using a cane. He had colorectal cancer surgery two months ago and is currently on chemotherapy. His li",
+        "time": 16.678936004638672
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 35-year-old woman who's pregnant with her third child. She's at 34 weeks and 2 days. Her history includes two cesarean sections: one due to b",
+        "time": 25.417098999023438
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 34-year-old woman with gradually worsening retrosternal chest pain over three months. No fever, normal vital signs including SpO2 on room air",
+        "time": 28.80633783340454
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 44-year-old woman who was referred to the hospital after an abnormal liver function test during a health check-up. She has no history of bloo",
+        "time": 20.0634548664093
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 38-year-old woman who came in with abdominal pain. She hasn't had a bowel movement for a week and has been experiencing worsening symptoms li",
+        "time": 20.54162096977234
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "ERROR",
+        "gold": "a,b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "a,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\n好酸球性多発血管炎性肉芽腫症（EGPA）の寛解導入療法について。\n\nこの患者は以下の特徴があります：\n- 鼻出血、鼻閉、難聴などの上気道症状\n- 咳嗽などの下気道症状\n- 肺に多発結節影\n- 蛋白尿、潜血尿（腎臓の関与）\n- 好中球増加、貧血、CRP上昇などの炎症所見\n- 补体価の上昇（CH50）\n\nこれらの症状は、血管炎である好酸球性多発血管炎性肉芽腫症（EGPA）の特徴と一致し",
+        "time": 48.63844609260559
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 5-year-old girl with high fever for three days, sore throat, loss of appetite, but no cough or runny nose. Her vital signs show a high temper",
+        "time": 27.764761686325073
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,c,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 40-year-old male presenting with sudden severe epigastric pain. He's got peritoneal signs—generalized guarding, rebound tenderness, absent bo",
+        "time": 38.73921084403992
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>\n好中球性髄膜炎の症例です。原因菌は淋菌か髄膜炎菌ですが、項部硬直と紫斑から髄膜炎菌性髄膜炎が疑われます。グラム陰性双球菌という所も一致します。\n\na: ペニシリンは現在耐性が多いため、第一選択はセファゾリンやメロペネムです。誤り。\n\nb: 脳脊髄液検体は培養開始まで冷蔵保存する。→ いいえ、常温で速やかに検査室へ運ばれるべきです。冷蔵保存は細菌の成長を妨げたり、淋菌や髄膜炎菌などの",
+        "time": 16.011842012405396
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "b,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>\n好中球増加とCRPの上昇は認められていないことから、感染性ではなく、虚血性腸炎が疑われる。CT画像では腸管の狭窄や腫瘍は描出されていないため、虚血性腸炎が最も可能性が高い。\n\n虚血性腸炎の治療は、基本的には保存的療法で行われる。まず輸液（b）により循環血液量を補充し、腸管への血流改善を行う。また、抗菌薬投与（d）は感染の予防や治療のために必要である。イレウス管挿入（e）は、腸管の減",
+        "time": 9.351130247116089
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>\nAlright, let's tackle this question. So, we have a 70-year-old woman who had a cerebral infarction resulting in right-sided hemiplegia. She's currently in a rehabilitation hospital. The questi",
+        "time": 24.79893183708191
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

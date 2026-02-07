@@ -1,0 +1,2458 @@
+{
+  "timestamp": "2026-02-02T18:29:50.064606",
+  "model": "glm-4.6v-flash-mlx",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 3.5060570175583297,
+      "errors": 1,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 2,
+      "accuracy": 0.02666666666666667,
+      "avg_time": 3.573794720924064,
+      "errors": 2,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_time": 6.494332729975382,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 2,
+      "accuracy": 0.02666666666666667,
+      "avg_time": 3.5372857080923543,
+      "errors": 1,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于睡眠时无呼吸症候群（OSAHS）导致的高血压的问题。首先，回忆每个选项的内容。\n\n首先看各个选项：\n\na: 夜間高血圧となることが多い。OSA",
+        "time": 7.725193977355957
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，回忆关于GBS（B群链球菌）感染预防的知识。\n\n首先，背景是妊娠末期（通常指37周以后？或者更准确的是，对于GBS筛查阳性者",
+        "time": 3.181317090988159
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决关于中心性漿液性脈絡網膜症（CSR）的题目，找出错误的选项。首先回忆CSR的相关知识：\n\n1. 中心性漿液性脈絡網膜症",
+        "time": 3.1702158451080322
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学选择题。题目是问哪种单药口服会导致低血糖风险高。\n\n首先回忆各个选项的药物类别和作用机制：\n\na. DPP-4阻遏药（如西他列汀等",
+        "time": 3.164853811264038
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，题目是问高钾血症的原因选项。首先回忆各个药物或物质对血钾的影响。\n\n首先看选项：\n\na: β刺激薬（β激动剂）。比如沙丁胺醇等",
+        "time": 5.318115949630737
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题：“逆流性食道炎の誘因とならないのはどれか。” 选项是a到e。\n\n首先，回忆逆流性食道炎（GERD）的常见诱",
+        "time": 3.135068893432617
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "<think>用户现",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，题目是关于心不全患者中，不符合心サルコイドーシス（心脏结节病）所见的是哪个选项。\n\n首先，回忆心サルコイドーシス的心脏",
+        "time": 3.1854450702667236
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "c,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，题目是问骨壊死（osteonecrosis）的风险因素中哪个不是。首先回忆各个选项和骨壊死的关系。\n\n首先，骨壊死的风险因素通常包括",
+        "time": 3.1774961948394775
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，关于全身性強皮症（systemic sclerosis, SSc）导致的继发性雷诺现象（Raynaud phenomenon）的特征。\n\n首先，回忆SSc相关的Raynaud现象的特点。",
+        "time": 3.2051639556884766
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于自闭症谱系障碍（ASD）特征的问题。首先，回忆ASD的常见特征。\n\n首先看选项：\n\na: 男児に多い。这是已知的，ASD在男性中发病率",
+        "time": 3.2075581550598145
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学选择题。首先，问题是关于急激血圧上昇（急性高血压）时，高血圧緊急症（高血压紧急状态）中哪个病态考虑得少。\n\n首先，回忆",
+        "time": 3.243530035018921
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于脑血管性认知症的问题，首先得回忆每个选项的内容是否正确。\n\n首先看各个选项：\n\na: 50歳台では発症しない。  \n脑血管性認知症（VCI",
+        "time": 3.229720115661621
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a",
+        "gold": "c,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学相关的选择题，题目是关于病原体和恶性肿瘤的正确组合。首先得回忆每个选项对应的正确关联。\n\n首先看各个选项：\n\na: 人乳头瘤病毒（HPV）和子宫体癌",
+        "time": 3.2519853115081787
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，关于急性肾损伤（AKI）的诊断指标。首先回忆AKI的诊断标准，比如RIFLE、AKIN等。\n\n首先看选项：\na: 尿蛋白量 - AKI",
+        "time": 3.187908172607422
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，题目是问哪个所见最提示蛋白尿原因是糖尿病性肾病。首先得回忆糖尿病性肾病的诊断要点。\n\n首先看各个选项：\n\na: 姐的糖尿病史，这是家族",
+        "time": 3.6808948516845703
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n首先看患者情况：6个月男婴，主诉呕吐。病史是新生儿期诊断血友病A（因子VIII缺乏）。家族史有同",
+        "time": 3.533592700958252
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先理解患者的症状：23岁男性，工作居眠多，重要场合也发作性睡眠。然后有夜间充分睡眠但日中多次突然强睡（嗜睡？），",
+        "time": 3.3172590732574463
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "<think>用户现",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先整理患者的信息：\n\n62岁女性，主诉息切れ（呼吸困难）和全身倦怠感。背景是7天前做了心房細動的カテーテル",
+        "time": 3.4457149505615234
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先理解病例信息。\n\n患者是64岁男性，主诉呼吸困難（呼吸困难）。4天前出现左胸痛和息切れ（气短），逐渐加重来院",
+        "time": 3.440088987350464
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例情况。\n\n患者是73岁男性，做了内视镜的胆石除去术（ERCP相关？或者EST之类的）。术后3小时出现持续性心窝部痛",
+        "time": 3.454315185546875
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个22岁男性，被诊断为肾功能障碍，有家族史（母亲和叔父透析）。血液检查尿素氮28mg/dL，肌酐1.5mg",
+        "time": 3.2933051586151123
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的症状和检查结果。\n\n首先看患者的情况：38岁男性，1周前出现皮下出血（紫斑），然后受诊发现白细胞减少和血小板减少。现在",
+        "time": 3.620850086212158
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析题目信息：\n\n患者是45岁男性，主诉嗄声（声音嘶哑）。症状是从2年前开始，无诱因出现声音嘶哑，伴随咽喉异物感",
+        "time": 3.2208292484283447
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先理解病例内容。\n\n患者是13岁女子，篮球比赛中出现不适（气分不快、腹痛），然后全身皮肤瘙痒、腹痛。背景是吃了含有鱿鱼的便当",
+        "time": 3.537450075149536
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "c,d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学相关的选择题。首先，问题是关于30岁男性在COVID-19流行期间出现工作能率下降、睡眠习惯改变（寝酒）、情绪低落、疲劳感等表现，问产业医的",
+        "time": 3.444039821624756
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n患者是81岁男性，COPD诊断，有呼吸困難。现在症状加重，出现发热（38.3℃）、白细胞轻度升高（9",
+        "time": 3.523186206817627
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析患者的症状和检查结果。\n\n首先看主诉：全身倦怠感、食欲不振、恶心，一周前出现症状，昨天开始褐色尿（胆红素尿？）。",
+        "time": 3.5536367893218994
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个40岁男性，主诉字写不好，尤其是签名时。3年前开始出现，逐渐影响工作。\n\n然后看神经检查：肌肉张力正常，无不随意",
+        "time": 3.391618251800537
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息：\n\n患者是42岁男性，主诉下腹部痛和恶心。生来健康，半年前定期健诊无异常。症状是朝食后右下",
+        "time": 3.4135797023773193
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的症状和检查结果。\n\n患者是48岁女性，主诉口渇、全身倦怠感。5日前有发热和腹痛。尿检显示糖3+",
+        "time": 3.4717507362365723
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n首先看患儿的情况：生后10小时男婴，出生时Apgar 7（1分）、8（5分），体重2960g",
+        "time": 3.4515559673309326
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,b",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，首先得仔细分析每个选项对应的描述是否正确。\n\n首先看题目中的患者情况：73岁男性，主诉步行时左下肢痛（间歇性跛行），结合ABI值左右",
+        "time": 3.527724027633667
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于出生当日的新生儿，外性器特征让助产师报告医生。首先得回忆相关的医学知识，比如性别决定、外生殖器发育等。\n\n首先",
+        "time": 3.385653018951416
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的病情。\n\n患者是52岁男性，主诉全身倦怠感。背景信息：6周前诊断进行性肺腺癌，3周前接受免疫检查点",
+        "time": 3.568848133087158
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的情况。\n\n首先看患者的症状：腹痛、腹部膨隆，脐部有膨隆（之前卧位时自然消失，但现在持续且腹痛加剧）。既往史：",
+        "time": 3.5992488861083984
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n患者是72岁女性，有血小板减少（从5.6万降到4.7万？不对，初始是5.6万，然后入院时",
+        "time": 3.615589141845703
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，关于62岁男性下行结直肠癌手术的周术期管理。首先得回忆每个选项的正确性。\n\n首先看各个选项：\n\na: 手術の2時間前まで固形物�",
+        "time": 3.606593132019043
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个20岁女性和其母亲都有腹部皮疹，且ATP2A2基因变异。需要回忆各选项疾病的特征。\n\n首先看各个选项：\n\na: Sweet",
+        "time": 3.3939766883850098
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n患者是15岁男性，下肢痛、赤褐色尿（酱油色尿）。结合病史：野球部训练中头痛、下肢无力，休息后改善",
+        "time": 3.6311028003692627
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "a,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析病例：45岁男性，右耳突然难听和耳鸣，鼓膜正常，MRI正常。首先考虑突发性耳聋（Sudden Sensorineural Hearing Loss, SS",
+        "time": 3.3338077068328857
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息：\n\n患者是36岁女性，2妊0产（所以是初产妇？不过这里可能需要注意）。妊娠36周4天，腹痛为主诉来院。\n\n",
+        "time": 3.389187812805176
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的病史和检查结果。\n\n首先看患者的情况：28岁男性，有十二指肠溃疡反复用药史（20岁开始），25岁时做了垂体腺瘤摘",
+        "time": 3.541001081466675
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n患者是22岁女性，主诉无月经（amenorrhea）。初经12岁，13岁后不规律月经过14岁后无月经。",
+        "time": 3.376016139984131
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "<think>用户现",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学影像题，关于半月板断裂的判断。首先回忆半月板镜下表现：半月板有裂隙、不连续等改变。\n\n然后看选项对应的图像（虽然实际没图，但根据",
+        "time": 3.383021116256714
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学诊断问题。首先，分析患者的症状和检查结果。\n\n患者是53岁男性，主诉是10年没见的朋友说鼻变大、脸形变。最近鞋变紧，2年前手",
+        "time": 3.4187450408935547
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学相关的选择题。首先，问题是关于性暴力受害者的医疗应对中，哪个是不恰当的。\n\n首先分析各个选项：\n\na: 性感染症の検査を行う。对于性暴力受害者，检查",
+        "time": 3.3433079719543457
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "<think>1. ",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1.  **分析患者数据：**\n    *   **年龄：**10个月（乳児期）。\n    *   **主诉：**呕吐和血便（嘔吐と血便）。\n    *  ",
+        "time": 3.475947856903076
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n患者是45岁男性，主诉劳作时息切れ、全身倦怠感。5年前开始骑车远出有气短，逐渐加重，",
+        "time": 3.6001107692718506
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析患者的症状和背景信息。\n\n患者35岁男性，主诉咳嗽、发热、呼吸困难。时间线：3周前开始干咳，5天前出现发热和呼吸困",
+        "time": 3.526315689086914
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患儿的特征。\n\n题目描述的是日齢14的男児（男孩），染色体检查结果说明，所以先看染色体异常的情况。然后观察临床表现：面部特征（切",
+        "time": 3.472618818283081
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "<think>用户现",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于19岁男性右眼被水酸化ナトリウム（氢氧化钠）液溅入后的处理。\n\n首先回忆化学烧伤的处理原则。碱烧伤（比如",
+        "time": 3.2833781242370605
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n患者是76岁男性，有胃全摘史（8年前），之后体重减少，5年前出现喀痰。1周前喀痰量增加、",
+        "time": 3.617258071899414
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，问题是关于2岁男童的听力相关问题。\n\n首先分析病情：母亲担心电视音量变大，孩子之前有耳痛和鼻涕（可能中耳炎？），之后反应",
+        "time": 3.341216802597046
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于医疗职业暴露后处理的问题。首先回忆HBV（乙肝病毒）的暴露后预防措施。\n\n首先看患者的情况：HBs抗原（+），说明是乙肝表面抗原阳性，即患者是",
+        "time": 3.3021950721740723
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的症状和检查结果。\n\n患者是18岁男性，主诉全身倦怠、发热。之前有劳作时息切れ（呼吸困难），然后出现发热和全身",
+        "time": 3.591536045074463
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个2个月的女婴，因抽搐加重被急救车送来，车内心肺停止，来院时心搏未恢复，对光反射消失。死后检查",
+        "time": 3.501426935195923
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于69岁男性，主诉左鼻出血、复视，检查发现左鼻腔扁平上皮癌。然后问“この患者で認められるのはどれか。”",
+        "time": 3.2819299697875977
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个8岁女童，有著しい掻痒（剧烈瘙痒）伴皮疹，全身分布。实验室检查显示嗜酸粒细胞比例高（12%），Ig",
+        "time": 3.3833701610565186
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息：\n\n患者是80岁男性，主诉左颞部到左颊的皮疹。3个月前出现紫红色斑，逐渐扩大、隆起、",
+        "time": 3.346886157989502
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个心电图诊断的问题。首先，先分析题目中的信息。\n\n首先看患者情况：64岁男性，左偏瘫伴意识障碍（GCS E4V4M6）。血压164/82，脉",
+        "time": 3.3367841243743896
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "<think>1. ",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1.  **分析患者情報：**\n\n    *   **主訴：** 下腿浮腫（両下腿の圧痕性浮腫）。\n    *   **既往歴：** 58歳",
+        "time": 3.707629919052124
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的症状和检查结果。\n\n患者是78岁女性，持续发热1周，38℃左右。查体：体温38.2℃，脉搏92次/分（正常",
+        "time": 3.462831974029541
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析题目中的患者情况：61岁男性，有大肠癌术后且正在抗癌治疗中（余命2年以上），主诉右膝痛，一本杖步行。检查显示高度",
+        "time": 3.4115638732910156
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "<think>用户现",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，首先得回忆相关的产科知识，特别是关于胎盘位置、前置胎盘之类的。\n\n首先看题目中的信息：35岁经产妇（3-2），妊娠34+2周，骨盆MRI",
+        "time": 3.5023109912872314
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "<think>用户现",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于34岁女性，主诉前胸部痛3个月逐渐加重。然后检查结果：体温正常，血压、SpO2都正常，心肺听诊无异常。",
+        "time": 3.326119899749756
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "<think>用户现",
+        "gold": "a,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于44岁女性，人間ドックで肝機能障害指摘。首先分析病史：輸血歴、飲酒、家族歴特記なし",
+        "time": 3.4990029335021973
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "c",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先理解病例情况：38岁女性，腹痛、便秘（1周无排便）、呕吐、腹胀，腹部检查有肠管扩张、液面形成（立位像），CT",
+        "time": 3.4848830699920654
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学相关的选择题。首先，题目是关于颈髓损伤（Cervical Spinal Cord Injury, CSCI）的22岁男性患者，需要判断哪些活动是“獲得が見込ま",
+        "time": 3.3623580932617188
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "<think>用户现",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的病情。\n\n患者68岁男性，主诉鼻出血、咳嗽。2个月前有鼻闭和难听（可能提示鼻腔或耳部问题，但结合其他",
+        "time": 3.6268699169158936
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于5岁女童的高热、咽痛、扁桃体白苔、颈部淋巴结肿大等表现，问可能性最低的疾病。\n\n首先分析各个选项：\n\na",
+        "time": 3.4679811000823975
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "<think>用户现",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n患者是40岁男性，主诉心窝部痛（上腹部疼痛），昨天开始自觉，今天突然剧痛、动不了被救急搬送",
+        "time": 3.5185439586639404
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "c",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，首先得分析病例信息。首先看患者症状：发热、意识障碍（JCS II-20，项部硬直、紫斑），脑脊液检查：混浊，初压",
+        "time": 3.6498749256134033
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "<think>用户现",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n患者是42岁男性，主诉腹痛。症状发展：昨天中午开始心窝部痛，今早起床时呕吐，之后右下腹痛且逐渐",
+        "time": 3.541102886199951
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "<think>用户现",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学相关的选择题。首先，先理解患者的状况。\n\n患者是70岁女性，脑梗塞后右片麻痺（偏瘫），现在在回復期リハビリ病院。她的",
+        "time": 3.5351080894470215
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于睡眠时无呼吸症候群（OSAHS）导致的高血压的问题。首先，回忆每个选项的内容：\n\na: 夜間高血圧となることが多い。OSAHS患者では睡眠中",
+        "time": 3.3721139430999756
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于GBS感染预防的问题。首先回忆临床指南，比如日本或国际的GBS预防方案。\n\n首先，问题是在妊娠末期（通常指37周左右）进行腟分泌物培养GBS阳性",
+        "time": 3.3422107696533203
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决关于中心性漿液性脈絡網膜症（CSR）的题目，找出错误的选项。首先回忆CSR的特点：\n\n1. 中心性漿液性脈絡網膜症（",
+        "time": 3.3235602378845215
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。题目问的是哪种单药内服会导致低血糖，可能性高。\n\n首先回忆各个选项的药物类别和作用机制：\n\na. DPP-4阻害薬（如西他列",
+        "time": 3.3347511291503906
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决关于日本成人心脏移植的问题。首先回忆各选项的正确性：\n\na: 10年生存率约10%？不对，实际心脏移植的长期生存率，比如5年生存率较高，10",
+        "time": 3.332549810409546
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决关于高钾血症原因的问题。首先回忆各选项的作用：\n\na: β刺激薬（比如β2激动剂，用于哮喘等），通常β刺激药会促进钾离子移入细胞内（比如通过",
+        "time": 3.335649013519287
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于逆流性食道炎（GERD）诱因的问题。首先，回忆每个选项与GERD的关系。\n\n首先看各个选项：\n\na: 肥満 - 肥胖会导致腹",
+        "time": 3.297865152359009
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "<think>用户现",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，问题是关于心不全患者中，不符合心サルコイドーシス（心脏结节病）所见的是哪个选项。\n\n首先回忆心脏结节病的典型表现。心脏结节病的心",
+        "time": 3.3217248916625977
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a,c,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于骨壊死（osteonecrosis，也叫无菌性坏死）的风险因素的问题。首先回忆骨壊死的主要风险因素。\n\n首先，选项分析：\n\na: 飲酒（酒精",
+        "time": 3.3397960662841797
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于全身性強皮症（systemic sclerosis, SSc）继发性雷诺现象（Raynaud phenomenon）的问题。首先，回忆SSc相关的Raynaud现象的特点。\n\n首先看各个选项",
+        "time": 3.345329999923706
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于自闭症谱系障碍（ASD）特征的问题。首先，回忆ASD的典型特征。\n\n首先看选项：\n\na: 男児に多い。这是已知的，ASD在男性中发病率",
+        "time": 3.2789299488067627
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，问题是关于高血圧緊急症（高血压紧急状态）的病态中，哪个“考えにくい”（不太可能考虑到的）。\n\n首先回忆高血压紧急状态（",
+        "time": 3.426811695098877
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决关于脑血管性认知症（VCI）的问题，首先得回忆每个选项的正确与否。\n\n首先分析各个选项：\n\na: 50歳台では発症しない。  \n脑血管性认知症可以发生在",
+        "time": 3.3077099323272705
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a",
+        "gold": "c,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于病原体和恶性肿瘤组合的问题。首先，回忆每个选项对应的正确关联。\n\n首先看各个选项：\n\na: 人乳头瘤病毒（HPV）和子宫体癌？不对，HPV主要与",
+        "time": 3.35268497467041
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于急性肾损伤（AKI）诊断指标的问题。首先回忆AKI的诊断标准，比如RIFLE、AKIN等。\n\n首先看选项：\na: 尿蛋白量 - AKI的诊断主要",
+        "time": 3.3510358333587646
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，问题是问哪个所见最提示蛋白尿原因是糖尿病性肾病（DN）。\n\n首先回忆糖尿病性肾病的诊断要点。糖尿病性肾病通常与糖尿病的长期控制不良有关，表现为",
+        "time": 3.700585126876831
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息。\n\n患者是6个月男婴，主诉呕吐，有外伤史（从50cm高处坠落），然后出现呕吐和活気不良。既往诊断是血",
+        "time": 3.6384048461914062
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，先理解患者的症状：23岁男性，工作时常犯困，重要场合也突然睡着。然后有夜间充分睡眠但日中多次突发强睡，最近大笑或惊",
+        "time": 3.460088014602661
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "<think>用户现",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先整理患者的信息：\n\n62岁女性，主诉息切れ（呼吸困难）和全身倦怠感。背景是7天前做了心房細動的カテーテル",
+        "time": 3.5366058349609375
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先理解病例信息。\n\n患者是64岁男性，主诉呼吸困難（呼吸困难）。4天前出现左胸痛和息切れ（气短），逐渐加重来院",
+        "time": 3.578693151473999
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息。\n\n患者是73岁男性，做了内视镜下胆管结石取出术（ERCP）。术后3小时出现持续性心窝部痛和背部痛，",
+        "time": 3.568524122238159
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个22岁男性，被诊断为肾功能障碍，有家族史（母、叔父透析）。血液检查尿素氮28mg/dL，肌酐1.5mg",
+        "time": 3.367448091506958
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析患者的症状和检查结果。\n\n患者是38岁男性，1周前出现皮下出血（紫斑），然后受诊发现白细胞减少和血小板减少。现在看血液检查",
+        "time": 3.658076286315918
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，分析病例信息：\n\n患者45岁男性，主诉嗄声（声音嘶哑），从2年前开始，无诱因出现。伴随症状有咽喉异物感、慢性",
+        "time": 3.412045955657959
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个13岁女孩在吃含有鱿鱼的便当后，运动时出现腹痛、皮肤瘙痒（荨麻疹样？）的症状。首先分析可能的过敏反应，因为",
+        "time": 3.5392959117889404
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "c,d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，问题是关于30岁男性在COVID-19流行期间出现工作能率下降、睡眠问题（寝酒）、情绪低落、疲劳等症状。需要找出产业医应对中“不",
+        "time": 3.598172903060913
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，分析患者的病情：\n\n患者是81岁男性，COPD诊断，现在出现呼吸困難（呼吸困难），动脉血气分析显示pH 7.33（酸中毒），Pa",
+        "time": 3.564105987548828
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，分析患者的症状和检查结果。\n\n患者23岁男性，主诉全身倦怠、食欲不振、恶心。一周前出现症状，昨天开始褐色尿（黄疸相关？）。查",
+        "time": 3.697873115539551
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，题目描述的是一个40岁男性，主诉字写不好，特别是签名时字歪。检查发现用铅笔写字时，示指和中指的近位和远位指间",
+        "time": 3.5068306922912598
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例：42岁男性，下腹部痛、恶心，疼痛从右侧腹部开始，逐渐移向右下腹，同时有背部不适感。首先考虑急腹",
+        "time": 3.4898838996887207
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "ERROR",
+        "gold": "b",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息。\n\n患者是生后10小时的新生儿男婴。出生时Apgar评分1分7，5分8，说明有窒息史？不过现在",
+        "time": 5.726424932479858
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，找出下划线部分中错误的一项。首先得分析每个选项对应的描述是否正确。\n\n首先看患者的情况：73岁男性，糖尿病史（43岁开始）、冠脉支架术后、",
+        "time": 3.579238176345825
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，问题是关于出生的新生儿外性器特征，然后问对父母说明哪个是合适的。\n\n首先回忆相关的医学知识。这种情况通常涉及性分化异常（比如雄激素不敏感",
+        "time": 3.3842649459838867
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析患者的情况：\n\n患者52岁男性，主诉全身倦怠感。病史：6周前诊断进行性肺腺癌，3周前接受免疫检查点阻害药",
+        "time": 3.58371901512146
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，分析患者的症状和检查结果。\n\n患者是72岁女性，有血小板减少（从5.6万降到4.7万？不对，初始是5.6万，然后",
+        "time": 5.868847131729126
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于周術期管理的医学问题。首先，得回忆每个选项的正确性。\n\n首先看各个选项：\n\na: 手術の2時間前まで固形物摂取を許可する。",
+        "time": 3.6493139266967773
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个20岁女性和其母亲都有腹部皮疹，且ATP2A2基因变异。首先回忆各选项的疾病特点。\n\nSweet病（a）是急性",
+        "time": 3.4420249462127686
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例。\n\n患者是15岁男性，下肢痛、赤褐色尿（酱油色尿），结合运动史（野球部训练，炎天下激烈运动）。这些症状提示",
+        "time": 3.6659109592437744
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，分析病例：45岁男性，右耳突发性听力下降（SNHL）伴耳鸣，鼓膜正常，MRI正常。这种情况最常见的是突发性耳聋（S",
+        "time": 3.3377881050109863
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息：\n\n患者是36岁女性，2妊0产（所以之前没有生产过）。现在妊娠36周4天，腹痛来院。检查时：身长",
+        "time": 3.466463088989258
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析患者的病史和检查结果。\n\n患者有十二指肠溃疡史，现在出现胃溃疡和多发性溃疡。另外，腹部CT发现胰体部有1cm的强造影肿瘤",
+        "time": 3.6160190105438232
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于高値が予想されるホルモン（プロラクチン以外？不，看问题）的问题。\n\n首先分析病例：22岁女性，无月经（原发闭经？因为",
+        "time": 3.45880126953125
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "<think>用户现",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于半月板断裂的医学问题。首先，回忆半月板镜检的特征。半月板断裂在关节镜下通常表现为不规则的裂隙、碎片等。\n\n然后看选项，题目中是右膝",
+        "time": 3.526923894882202
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，分析患者的症状和检查结果。\n\n患者是53岁男性，主诉是10年没见的朋友说鼻变大、脸形变。最近鞋变紧，2年前手",
+        "time": 3.534497022628784
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学伦理和临床问题。首先，问题是关于性暴力受害者的医疗应对中，哪个是不恰当的。\n\n首先分析各个选项：\n\na: 性感染症の検査を行う。这是必要的，因为",
+        "time": 3.493070125579834
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例：10个月男童，呕吐、血便，右上腹有肿瘤触感（target sign），腹部超声显示target sign。这些表现符合肠套叠的特征。\n\n",
+        "time": 3.6068971157073975
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析患者的症状和检查结果。\n\n患者是45岁男性，主诉劳作时息切れ、全身倦怠感。5年前开始骑车远出有气短，",
+        "time": 3.6780312061309814
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，分析患者的症状和背景。\n\n患者35岁男性，咳嗽（干性）、发热、呼吸困难。时间线：3周前开始干咳，5天前出现发热和呼吸困",
+        "time": 3.6178009510040283
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析患儿的特征。\n\n题目描述的是日齢14的男児（14天大的男孩），有染色体检查结果，但这里主要从临床表现和常见综合征来分析。\n\n首先",
+        "time": 3.518846273422241
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，题目描述是19岁男性，实验中NaOH溶液溅入右眼，救急就诊。症状：结膜浮肿明显，角膜白浊。\n\n首先回忆化学性眼",
+        "time": 3.369284152984619
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，分析病例信息：\n\n患者是76岁男性，有胃全摘史（8年前），之后体重减少，5年前出现喀痰。1周前喀痰量增加、喀",
+        "time": 3.643251895904541
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，问题是关于2岁男童，因为母亲担心电视音量变大（可能听力问题），还有之前耳痛鼻涕后出现反应迟钝的情况。\n\n首先分析症状：电视音",
+        "time": 3.532069206237793
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于医疗职业暴露后HBV预防的问题。首先回忆HBV暴露后的处理指南。\n\n首先，患者是HBs抗原（+），说明患者是HBV携带者或急性感染者。医疗职业者在",
+        "time": 3.468971014022827
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析患者的症状和检查结果。\n\n患者是18岁男性，主诉全身倦怠、发热。有劳作时息切れ（呼吸困难），然后出现发热和倦",
+        "time": 3.736698865890503
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，题目描述的是一个2个月的女婴，因癫痫持续状态被救急车送来，车内心肺停止，来院时心搏未恢复，对光反射消失。死亡后",
+        "time": 3.6136419773101807
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个69岁男性，主诉左鼻出血、复视。检查发现左鼻腔扁平上皮癌。\n\n首先分析各个选项：\na: 难听 - �",
+        "time": 3.4534690380096436
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，题目描述的是一个8岁女童，有著しい掻痒（剧烈瘙痒）伴皮疹，全身分布。实验室检查显示嗜酸粒细胞增多（12%），IgE",
+        "time": 3.3585948944091797
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，分析病例信息：\n\n患者是80岁男性，主诉左颞部到左颊的皮疹。3个月前出现紫红色斑，逐渐扩大、隆起、出血",
+        "time": 3.505786180496216
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>用户现在需要解决这个心电图诊断的问题。首先，题目描述中提到患者有意识障碍、左侧偏瘫，血压164/82，脉率96/min且不规则。然后看选项，a是心房颤动（atri",
+        "time": 3.4198951721191406
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析病例信息：\n\n患者是58岁女性，主诉下腿浮肿（压痕性），半年前首次发现蛋白尿（3+？不过随時尿蛋白280mg",
+        "time": 3.8760621547698975
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，分析患者的症状和检查结果。\n\n患者是78岁女性，持续发热1周，全身倦怠。体格检查：体温38.2℃，脉搏92次/分（正常",
+        "time": 3.6226089000701904
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，题目是关于61岁男性，有大肠癌术后抗癌治疗中（余命2年以上），右膝高度内反变形、屈曲80度伸展-20度，诊断为",
+        "time": 3.4858999252319336
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "<think>用户现",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，首先得回忆相关的产科知识，特别是关于胎盘位置、前置胎盘之类的。\n\n首先看题目中的信息：35岁经产妇（3-2），妊娠34+2周，骨盆MRI",
+        "time": 3.6121511459350586
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b,c",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析病例：34岁女性，前胸部痛3个月逐渐加重。查体正常，影像学有A（胸片）和B（胸部CT）。需要考虑的疾病选项是",
+        "time": 3.5168888568878174
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a",
+        "gold": "a,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于44岁女性，人間ドックで肝機能障害指摘。然后看血液生化学所見：ALP 238U/L（基準38",
+        "time": 3.4704477787017822
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息：\n\n患者是38岁女性，腹痛、便秘（1周无排便）、呕吐、腹胀、腹部膨隆，肠鸣亢进。直肠指诊在Dou",
+        "time": 3.562797784805298
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "<think>用户现",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于颈髓损伤患者康复活动的问题。首先，得回忆颈髓损伤的神经平面和功能预后。\n\n首先看患者的信息：22岁男性，颈髄損傷（颈椎脊髓损伤",
+        "time": 3.6127820014953613
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "<think>1. ",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>1.  **分析患者データ：**\n    *   **年齢：**68歳（高齢）\n    *   **主訴：**\n        *   鼻出血\n        *   咳嗽\n",
+        "time": 3.8256237506866455
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，题目是关于5岁女童的高热、咽痛、扁桃体白苔、颈部淋巴结肿大等表现，问可能性最低的疾病。\n\n首先分析各个选项：\n\na",
+        "time": 3.5341272354125977
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "<think>用户现",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析患者的症状和检查结果。\n\n患者是40岁男性，主诉心窝部痛（上腹部疼痛），突然加剧后救急。查体：上腹压痛",
+        "time": 3.6911160945892334
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "<think>用户现",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，首先得分析每个选项的正确性。\n\n首先看题目描述：患者是18岁男性，有发热、意识障碍，脑脊液检查显示混浊，初压高（220），细胞",
+        "time": 3.606861114501953
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "<think>用户现",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息。\n\n患者是42岁男性，主诉腹痛。症状发展：昨天中午开始心窝部痛，今朝起床时呕吐，之后右下腹痛且加重",
+        "time": 3.6281590461730957
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "<think>用户现",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于康复训练的问题。首先，先分析患者的状况：\n\n患者是70岁女性，脑梗塞后右片麻痺（偏瘫），现在在回復期リハビリ病院。",
+        "time": 3.6055870056152344
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は、睡眠時無呼吸症候群（OSAHS）に起因する高血圧について、誤った主張を特定することです。\n\n2.  **分解各選択肢：**\n\n    *   **a: 夜間高血圧となることが多い。**\n        *   OSAHSの特徴は、睡眠中に繰り返す呼吸停止（無呼吸）です。\n        *   この無呼吸は、血中の酸素濃度を下げ、二酸化炭素（CO",
+        "time": 6.300867795944214
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は、GBS陽性の妊娠末期の妊婦に対する適切なペニシリン投与時期を問いています。これは、母子感染予防対策（PPS）の一部です。\n\n2.  **確認重要な背景知識：** GBSEPS（GBSの母子感染予防）は、日本の厚生労働省が定める基準に従います。GBS陽性の妊婦に対するPPSは、以下のいずれかに該当する場合に行います。\n\n    *   妊娠37週以",
+        "time": 6.31379508972168
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "<think>1. ",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は「中心性漿液性脈絡網膜症について誤っているのはどれか。」（中心性漿液性脈絡網膜症について誤っているのはどれか。）です。これは、視神経乳頭の中心部から始まる、網膜下腔に液体が貯留する病態です。\n\n2.  **確認回答手順：**\n    *   手順1：問題文のキーワードを確認。\n    *   手順2：各選択肢を医学的に検討。\n    *   手順3",
+        "time": 6.3295018672943115
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "<think>1. ",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は、単剤内服で低血糖を引き起こす可能性が最も高い薬剤を特定することです。\n\n2.  **分解キーワード：**\n    *   単剤の内服\n    *   低血糖の原因になる可能性が高い\n\n3.  **各選択肢を医学的に検討：**\n\n    *   **a: DPP-4阻害薬 (DPP-4 inhibitors)**\n        *   **作用機",
+        "time": 6.233640193939209
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "<think>1. ",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は、「我が国での成人心臓移植について正しいのはどれか。」（日本における成人心臓移植の正しい点は、どれか。）です。これは、日本における心臓移植の一般的な知識を問うものです。\n\n2.  **分解と各選択肢の評価：**\n\n    *   **a: 10年生存率は約10％である。**\n        *   心臓移植の一般的なデータを思い出します。\n    ",
+        "time": 6.345980167388916
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認  \n   - キーワード: 高カリウム血症、原因  \n\n2. 各選択肢を医学的に検討  \n   - a: β刺激薬（例：アルブテカール）は、β2受容体を刺激し、細胞外へのカリウムの輸送を促進する。その結果、血清カリウム濃度が低下するため、高カリウム血症の原因にはなり得ない。  \n   - b: インスリンは、細胞内へのカリウムの取り込みを促進する。その",
+        "time": 6.213064908981323
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認  \n   - 逆流性食道炎（GERD）  \n   - 誘因とならないもの  \n\n2. 各選択肢を医学的に検討  \n   - **a: 肥満**  \n     肥満は腹圧を高めるため、食道下端括約筋（LES）の閉鎖不全を誘発し、逆流性食道炎の誘因となる。  \n     → 誘因となる可能性あり  \n\n   - **b: 高齢**  \n     高齢者では",
+        "time": 6.347224712371826
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "<think>1. ",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は、心不全患者で心サルコイドーシスの所見に合致しないものを特定することです。\n\n2.  **分解キーワード：**\n    *   心不全\n    *   心サルコイドーシス\n\n3.  **各選択肢の医学的検討：**\n\n    *   **a: 房室ブロック**\n        *   サルコイドーシスは、心筋や神経組織に影響を与えることがあります。\n",
+        "time": 6.285462856292725
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認  \n   - キーワード: 骨壊死, リスクファクター  \n\n2. 各選択肢を医学的に検討  \n   - a: 飲酒  \n     酒精は骨粗鬆症や骨折のリスクを高めることが知られている。また、アルコール依存症では骨粗鬆症や骨折のリスクが増加する。さらに、アルコールは骨形成を抑制し、破骨細胞の活性化を促進する。したがって、飲酒は骨壊死のリスクファクター",
+        "time": 6.235933065414429
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は「全身性強皮症による続発性Raynaud現象の特徴」を問いています。これは、全身性強皮症（SSc）という特定の疾患に起因するRaynaud現象（続発性）についてです。\n\n2.  **分解キーワード：**\n    *   全身性強皮症 (SSc): 系統的な膠原線維症。主な特徴は、皮膚の硬さと収縮性です。\n    *   続発性Raynaud現象: ",
+        "time": 6.186151027679443
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認:\n   - 主題: 自閉スペクトラム症 (ASD)\n   - 問い: 特徴でないもの\n\n2. 各選択肢を医学的に検討:\n\n   a: 男児に多い。\n      - 自閉症は、男性の発症率が女性より高く、約4〜5倍の割合で報告されている。これは一般的な知見であるため、特徴の一つと考えられる。\n\n   b: 感覚過敏がある。\n      - 自閉スペクトラ",
+        "time": 6.300159931182861
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "<think>1. ",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は、急激な血圧上昇を認める患者に対して、高血圧緊急症の病態として考えにくいものを問いています。\n\n2.  **分解各選択肢：**\n\n    *   **a: 急性大動脈解離:** これは高血圧緊急症の最も重要な原因の一つです。高血圧は解離を誘発し、またそれを悪化させる可能性があります。これは高血圧緊急症の病態として考えられます。\n\n    *   *",
+        "time": 6.364804029464722
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は「脳血管性認知症について正しいのはどれか。」（以下、BVCと略す）と「2つ選べ。」というものである。\n\n2.  **分解各選択肢：**\n\n    *   **a: 50歳台では発症しない。**\n        *   BVCは高齢者に多いが、50歳台で発症する可能性は低い。しかし、「しない」という断言は、50歳台で発症する可能性が完全にないことを意",
+        "time": 6.325750112533569
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "<think>1. ",
+        "gold": "c,d",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は、特定の病原体と悪性腫瘍（癌）との間の正しい組合せを特定することです。2つの選択肢を選ぶ必要があります。\n\n2.  **分解各選択肢（医学的知識を用いて）：**\n\n    *   **a: ヒトパピローマウイルス (HPV) --------- 子宮体癌**\n        *   **HPVの知識：** HPVは主に子宮頸癌（子宮頸部がん）と関連",
+        "time": 6.291555166244507
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a",
+        "gold": "c,e",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認:\n   - 急性腎障害\n   - 診断に用いられる指標\n\n2. 各選択肢を医学的に検討:\n   a: 尿蛋白量\n      - 急性腎障害では、急性腎小球腎炎などで尿蛋白が増加する可能性はある。しかし、急性腎障害の診断指標として一般的に用いられるものではない。\n\n   b: 腎の長径\n      - 腎の長径は、腎臓の大きさを測定するためのものであり、",
+        "time": 6.229867935180664
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "<think>1. ",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認\n\n- 76歳の女性\n- 高血糖と尿蛋白を指摘されて来院した。\n- 増殖性糖尿病網膜症と診断され、高血糖と尿蛋白も指摘されて紹介された。\n- 尿所見：蛋白2＋、糖3＋\n- 随時尿の尿蛋白/Cr比は1.2g/gCr（基準0.15未満）\n- 血液生化学所見：HbA1c 10.2％（基準4.6～6.2）\n- 腎生検は患者が希望しなかった。\n- 本患者の蛋白尿の",
+        "time": 6.785699129104614
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "<think>1. ",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者情報：**\n        *   6か月の男児。\n        *   主訴：嘔吐。\n        *   既往歴：新生児期に血友病Aと診断されている。\n        *   家族歴：同疾患の家族歴がある。\n\n    *   **現症所見：**\n        *   身長70cm、体重9kg。\n        *   ",
+        "time": 6.677393913269043
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，先理解患者的情况：23岁男性，工作时常犯困，重要场合也突然睡着。然后有夜间充分睡眠但日中多次突发强睡的情况，最近大笑或惊吓后全身力道突然消失（这描述的是猝倒症的特征）。\n\n现在看选项，需要找符合这种症状的选项。首先回忆睡眠障碍的分类：\n\n- 入眠时金縛り（睡惊？不，睡惊是睡眠中突然坐起、哭喊等，属于夜间发作）。\n- 夜间せん妄（谵妄是意识模糊、",
+        "time": 6.4426610469818115
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "<think>用户现",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床病例的问题。首先，先梳理病例信息：\n\n患者是62岁女性，主诉息切れ（呼吸困难）和全身倦怠感。背景信息：7天前做了心房細動的カテーテルアブレーション（导管消融术），3天前出院。退院后第2天出现症状，逐渐加重。\n\n现在看体格检查：意识清明。体温36.2℃，脉率112/分（整），血压88/72mmHg，吸气时收缩压下降18mmHg（这提示可能是心包填塞的Beck三联",
+        "time": 6.556225061416626
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先梳理病例信息：\n\n患者是64岁男性，主诉呼吸困難（呼吸困难）。4天前出现左胸痛和息切れ（气短），逐渐加重来院。\n\n体格检查：体温36.2℃，脉率100次/分（整），血压120/80，呼吸数20次/分，SpO2 92%（室内空气）。眼睑、结膜无异常。颈部淋巴结未触及。左胸部听诊呼吸音消失。\n\n血液检查：红细胞420万，Hb 13.0g/dL，Ht ",
+        "time": 6.5585737228393555
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息。\n\n患者是73岁男性，做了内视镜的胆石除去术（ERCP之类的）。术后3小时出现持续性心窝部痛和背部痛，伴随低血压（84/56）、心动过速（104 bpm），还有腹痛、压痛等。血液检查中，淀粉酶显著升高（1495 U/L，正常37-160），所以考虑急性胰腺炎的可能性。\n\n现在问题是术后初期治疗中，应该选择哪个？选项是a到e。\n\n首先",
+        "time": 6.629389047622681
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "<think>1. ",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者情報：** 22歳の男性。腎機能低下が指摘された。\n    *   **家族歴：** 母親と叔父が透析治療を受けている。これは、遺伝性疾患の可能性を高める重要な情報です。\n    *   **血液検査結果：**\n        *   尿素窒素 28 mg/dL (正常範囲: ~8-20)\n        *   クレアチニン ",
+        "time": 6.341814041137695
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "<think>1. ",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者情報：**\n        *   年齢：38歳\n        *   主訴：1週間前に始まった皮下出血。\n    *   **初診所での発見：**\n        *   白血球減少\n        *   血小板減少\n    *   **紹介受診所での詳細な検査：**\n        *   体温: 36.6°C (正常)",
+        "time": 6.705887079238892
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "<think>1. ",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者情報：**\n        *   年齢：45歳（中年男性）\n        *   主訴：嗄声\n    *   **症状の経過：**\n        *   2年前から、誘因なく（原因不明）嗄声が出現した。\n        *   それに伴い、咽喉異物感（喉頭の違和感）と慢性的な咳が続いている。\n    *   **既往歴：*",
+        "time": 6.232893943786621
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息。\n\n患者是13岁女子，篮球比赛时出现不适（气分不快、腹痛），然后全身皮肤瘙痒、强腹痛。背景是吃了会場的弁当（主要副食材イカ），1小时后比赛，10分钟后症状出现。\n\n首先考虑食物过敏或过敏性反应。因为吃了含有イカ（乌贼）的弁当，然后出现皮肤瘙痒、腹痛等过敏症状。所以需要考虑食物过敏的诊断方法。\n\n选项分析：\na: 部活動を止めさせる。",
+        "time": 6.523016929626465
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学相关的问题。首先，问题是关于30岁男性出现工作能率下降、睡眠习惯改变（寝酒）、情绪低落、疲劳感等表现，需要判断产业医的对应中哪个是不合适的。\n\n首先分析各选项：\n\na: 精神科受診を勧める。对于出现情绪低落、疲劳、注意力不集中等症状，精神科受诊是合理的建议，所以a是合适的。\n\nb: 寝酒はやめるように指導する。寝酒（睡前饮酒）会影响睡眠质量，导致疲劳、情绪",
+        "time": 6.556508779525757
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析患者的情况。\n\n患者是81岁男性，有COPD病史，现在出现呼吸困難（呼吸困难），动脉血气分析显示pH 7.33（酸中毒），PaCO2 58 Torr（高碳酸血症，因为COPD患者常伴有慢性高碳酸血症，但这里突然恶化），PaO2 62 Torr（低氧血症）。另外，体温38.3℃，CRP 4.0 mg/dL（炎症指标升高），所以考虑有感染的可能，",
+        "time": 6.616269111633301
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "<think>1. ",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認\n\n- 主訴：全身倦怠感、食欲不振、悪心\n- 症状時期：1週間前から出現し、昨日から褐色調の尿が出るようになった\n- 既往歴：機会飲酒、1か月前に同性間の性交渉歴がある\n- 検査所見：\n  - 眼球結膜の黄染（黄疸）\n  - 肝触知（肝腫大）\n  - 軽度の圧痛\n  - 血液生化学所見：総ビリルビン8.1mg/dL（高値）、直接ビリルビン5.7mg/dL",
+        "time": 6.6923840045928955
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先理解病例信息：\n\n患者是40岁男性，主诉字写不好（书写障碍）。3年前开始，签文件时字不好，后来影响工作。其他生活正常。\n\n神经检查：肌张力正常，无不自主运动；四肢肌力正常，腱反射正常；协调、感觉正常。\n\n关键表现：用铅笔写字时，示指和中指的近位和远位指间关节强屈曲，导致字歪。\n\n现在分析选项：\n\na: 書痙（书写痉挛）：特发性手部肌肉张力障碍，导",
+        "time": 6.551356077194214
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "<think>1. ",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認\n\n- 42歳の男性\n- 下腹部痛と悪心を主訴\n- 生来健康、半年前の定期健診でも異常なし\n- 右側腹部から背部のこわばるような違和感も持続している\n\n2. 各選択肢を医学的に検討\n\n- a: 尿潜血3＋\n  - 下腹部痛を伴う尿路疾患（腎盂結石、腎炎など）の可能性を示唆する。尿潜血が陽性になるのは、出血性疾患や炎症性疾患などで考えられる。\n\n- b: ",
+        "time": 6.49887490272522
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析患者的症状和检查结果。\n\n患者是48岁女性，主诉口渇、全身倦怠感。5日前有发热和腹痛。尿检显示糖3+，酮体3+，潜血阴性。血糖440mg/dL（明显高），HbA1c 5.8%？不对，等一下，正常HbA1c是4.6-6.2，这里5.8%在正常范围内？但血糖很高（440mg/dL），所以可能存在糖尿病酮症酸中毒的情况？\n\n首先，尿检有糖3+",
+        "time": 6.572333812713623
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息。\n\n患者是生后10小时的新生儿男婴。出生时Apgar 1分7，5分8，体重2960g（正常），胎龄39周。出生后出现发绀（チアノーゼ），SpO2在空气下是76%（上肢）、75%（下肢）。高浓度氧处理后发绀持续，所以考虑是中枢性还是周围性的？不过心超显示四个心腔（正常心脏结构），但右室到肺动脉的驱动血流没有，而动脉导管有少量血流流入肺",
+        "time": 6.534618139266968
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,c,d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者情報：**\n        *   73歳の男性。\n        *   主訴：歩行時の左下肢痛（claudication）。\n        *   症状：400m歩行で左ふくらはぎ痛みが現れ、休憩で消失。\n        *   最近：200m歩行で症状を認める。\n        *   糖尿病（43歳から、定期的な投薬治",
+        "time": 6.554925918579102
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "<think>1. ",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1.  **分析问题：** 问题描述了一个出生当日的新生儿。关键信息如下：\n    *   **年龄/阶段：** 出生当日（新生児）。\n    *   **出生特征：**\n        *   胎龄40周（完全成熟）。\n        *   体重3,020g（正常范围）。\n        *   Apgar评分8/1分，9/5分（正常范围）。\n    *   **关键事件：** ",
+        "time": 6.4577741622924805
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，先分析患者的情况。\n\n患者是52岁男性，主诉全身倦怠感。病史方面，6周前诊断进行性肺腺癌，3周前接受免疫检查点阻害药（PD-1/PD-L1阻害薬）初治。现在出现全身倦怠感，检查发现甲状腺轻度肿大（触知），血液检查中TSH 0.1μU/mL（低于正常下限，提示甲状腺功能亢进？不对，TSH低的话，FT4正常或偏高？这里FT4是1.8ng/dL（基準",
+        "time": 6.634106874465942
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "<think>1. ",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認\n\n- 63歳の男性\n- 腹痛、腹部膨隆を主訴\n- 2年前から臍部の膨隆がみられていた（臥位で自然消失していた）\n- 3時間前から臍部は膨隆したままであり、腹痛が増悪する\n- 4年前からアルコール性肝硬変で入退院を繰り返している\n- 腹部手術の既往はない\n- 徒手整復を試みたが成功しなかった\n\n2. 各選択肢を医学的に検討\n\n- **a: 緊急手術を行う",
+        "time": 6.721179008483887
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "<think>1. ",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者情報：**\n        *   年齢：72歳（高齢）\n        *   最初の主訴：血小板減少の精査。\n    *   **経過：**\n        1.  在自宅附近的一家医院接受血小板减少的检查。\n        2.  出现精神症状（“つじつまの合わない言動” - 不合逻辑的言行）。\n        3.  入",
+        "time": 6.6770339012146
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "<think>1. ",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 問題は、62歳の男性患者が下行結腸癌に対して左半結腸切除術を受けることについて、周術期管理の適切な選択肢を問いています。\n\n2.  **分解患者情報：**\n    *   **年齢:** 62歳。高齢者です。\n    *   **既往歴:**\n        *   28歳時：虫垂炎による腹膜炎。1か月の入院歴。\n        *   この既往歴は、結",
+        "time": 6.658598899841309
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "<think>1. ",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>1.  **分析問題文のキーワード：**\n    *   **患者:** 20歳の女性。\n    *   **主訴:** 腹部の皮疹。\n    *   **皮疹の特徴:**\n        *   1か月前から出現。\n        *   持続し、消退しない。\n        *   掻痒はない。\n    *   **家族歴:** 母親も15歳から同様の皮疹を認め、Kaposi水痘",
+        "time": 6.4337992668151855
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "<think>1. ",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認\n\n- 15歳の男子\n- 下肢の痛みと赤褐色尿\n- 野球部練習中に頭痛・下肢脱力\n- 練習を続け、筋肉痛\n- 赤褐色尿出現\n\n2. 各選択肢を医学的に検討\n\n- **症候群の診断**: 症状（筋肉痛、赤褐色尿）と背景（激しい運動後の筋肉痛）から、**マッハ症候群（Rhabdomyolysis）**の可能性が高いと考えられる。\n\n- **マッハ症候群の治療",
+        "time": 6.825459003448486
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，分析患者的情况：45岁男性，主诉右耳难听和耳鸣，今朝突然出现症状。鼓膜正常，MRI正常。\n\n首先考虑耳部疾病，特别是突发性耳聋（Sudden Sensorineural Hearing Loss, SSNHL）。SSNHL的常见病因包括病毒感染、血管病变等。治疗上，通常使用糖皮质激素（副肾皮質ステロイド）来减轻炎症和水肿，改善听力。另外，可能需",
+        "time": 6.374427795410156
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "<think>1. ",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1.  **分析问题：** 我需要找出针对这位36岁女性（2次怀孕，0次分娩）的适当处理方法。关键信息如下：\n    *   **患者：** 36岁女性，2次怀孕（未分娩）。\n    *   **症状/主訴：** 妊娠36週4日（近く）の腹痛。\n    *   **体格検査：**\n        *   身長152cm、体重68kg（BMIは約29，肥満）。\n        *   ",
+        "time": 6.327088117599487
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "<think>1. ",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認\n\n- 28歳男性\n- 主訴：心窩部痛（空腹時増悪）\n- 過去歴：\n  - 十二指腸潰瘍（20歳から繰り返し薬物治療）\n  - 下垂体腺腫摘出術（25歳時）\n- 検査所見：\n  - 直腸指診：黒色便の付着（下血）\n  - 内視鏡検査：多発胃潰瘍および十二指腸潰瘍\n  - 頸部超音波検査：甲状腺背側に径0.5cmの腫瘤\n  - 腹部造影CT：膵体部に径1c",
+        "time": 6.727468967437744
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，问题是关于22岁女性无月经的情况，要选高值可能的是哪个激素。\n\n首先分析病史：初经12岁，13岁后不规律月经过14岁无月经。现在22岁，无月经。检查方面：乳房发育不良（可能性腺功能低下？），乳头压乳有乳汁分泌（溢乳现象）。外阴女性型，子宫和卵巢大小正常。基础体温单相性（无排卵）。\n\n首先考虑可能的内分泌疾病，比如下丘脑-垂体-卵巢轴的问题。溢",
+        "time": 6.560529947280884
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "<think>用户现",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于半月板断裂的医学问题。首先，回忆膝关节镜下半月板断裂的表现。\n\n首先，题目中是右膝内側半月板断裂。需要看选项中的图像（①到⑤）哪个显示的是内侧半月板断裂。\n\n通常，膝关节镜下观察时，内侧半月板的检查需要通过内侧入路等。但根据常见的考题模式，比如半月板断裂的镜下所见，比如“桶柄状”断裂（比如内侧半月板的纵行撕裂导致部分移位）。\n\n现在看选项，假设图像中④是显示半",
+        "time": 6.560796022415161
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析患者的症状和检查结果。\n\n患者是53岁男性，主诉是家族指出的いびき（打鼾），然后10年前朋友说鼻子变大、脸型改变，最近鞋变紧。2年前手根管症候群手术（可能和腕部神经压迫有关，但这里重点是面部变化、鼻变大、鞋变紧这些症状）。\n\n首先考虑面部骨骼的变化，比如肢端肥大症（acromegaly）。肢端肥大症的典型症状包括：面部改变（鼻子变大、下",
+        "time": 6.522085905075073
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学伦理和临床问题。首先，问题是关于性暴力受害者的医疗应对中，哪个选项是不恰当的。\n\n首先分析各个选项：\n\na: 性感染症の検査を行う。这是必要的，因为性暴力后容易发生性传播感染（STI），所以检查是合适的。\n\nb: 緊急避妊薬を提案する。性暴力后紧急避孕药（EC）是推荐的，以预防非意愿妊娠，所以这是合适的。\n\nc: 婦人科診察について本人の同意を得る。医疗操作必",
+        "time": 6.431362152099609
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "<think>1. ",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認\n\n- 10か月の男児\n- 嘔吐と血便（主訴）\n- 急に嘔吐が続き、時折激しく泣くこともあり\n- 昼間から血便が複数回みられた\n- 意識は清明だが不機嫌で激しく泣いている\n- 体温37.2℃\n- 脈拍160/分、整。\n- 血圧84/52mmHg\n- 呼吸数30/分\n- 毛細血管再充満時間1秒。\n- SpO2 99％（room air）。\n- 心音と呼吸音",
+        "time": 6.673752069473267
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析患者的症状和检查结果。\n\n患者是45岁男性，主诉劳作时息切れ、全身倦怠感。5年前开始骑车远出有呼吸困难，逐渐加重，现在轻度劳作（如15分钟通勤）就出现症状，甚至上楼梯困难。体检有Levine 4/6的收缩期杂音（心尖部？不过这里描述是“大動脈弁は二尖弁と判断された”？不对，心エコーの部分：左室拡張末期径60mm（左室肥大か？），駆出率40%（",
+        "time": 6.691510200500488
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，分析患者的症状和背景信息。\n\n患者是35岁男性，主诉咳嗽、发热、呼吸困难。时间线：3周前开始干咳，5天前出现发热和呼吸困難。背景是1个月前在30年建成的家（可能有霉菌、尘螨等环境因素）打扫。\n\n现在看体征：意识清明，体温38.4（发热），脉率104（心动过速），呼吸数18（正常？但呼吸困难主诉，SpO2 90%在room air下，所以存在低氧血症",
+        "time": 6.604254961013794
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析患儿的特征。\n\n首先看患儿的情况：日齢14（约2周大），染色体检查结果说明，所以先考虑染色体异常的可能。然后描述中提到“切れ上がった目、平坦で低い鼻、口外に突き出た舌”这些面容异常，还有手掌单一屈曲线（即通贯手），筋緊張低下。这些特征提示可能是21-三体综合征（唐氏综合征）？不过等一下，染色体检查结果说明，所以需要结合这些临床特征来推断可能的",
+        "time": 6.474100112915039
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "<think>1. ",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n    *   **患者情報：** 19歳の男性。\n    *   **事件：** 水酸化ナトリウム（苛性ソーダ）という強力なアルカリ溶液を右眼に浴びた。\n    *   **症状：**\n        *   意識は清明（軽度の刺激により意識が失われる可能性があるが、ここでは問題文に従う）。\n        *   右眼の結膜浮腫が著明（非常に顕著な結",
+        "time": 6.351625919342041
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析患者的背景和症状。\n\n患者是76岁男性，有胃全摘史（8年前），之后体重减少，5年前出现喀痰。1周前喀痰量增加、喀出困难。现在来院，查体有粗湿啰音（crackles），体重低（41kg，身長157cm→BMIは(41/1.57)^2≈(26.09)^2≈680？不对，计算错误。身長157cm=1.57m，体重41kg，BMI=41/(1.57)",
+        "time": 6.63971209526062
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，问题是关于2岁男童，因为母亲担心电视音量变大，还有之前的耳痛鼻汁史，现在有反应迟钝的情况。首先分析可能的诊断方向。\n\n首先，2岁儿童，之前有耳痛鼻汁（可能是中耳炎？因为耳痛和鼻汁后出现反应迟钝，可能影响听力）。现在需要诊断确定的方法。\n\n首先看选项：\n\na: 語音聴力検査（语音听力检查）——用于评估语言理解能力，常用于儿童。\n\nb: 純音聴力検",
+        "time": 6.391597747802734
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "b,c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者：** HBs抗原（+）、HBs抗体（-）、HCV抗体（-）\n    *   **医療職：** HBs抗原（-）、HBs抗体（-）、HCV抗体（-）\n    *   **事象：** 医療職が患者の注射針を誤って刺した。\n    *   **問題：** 医療職への適切な対応はどれか。\n\n2.  **分解と重要なキーワードの識別：*",
+        "time": 6.402762174606323
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "<think>1. ",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 我們有一個18歲的男性患者。他主訴全身倦怠感和發熱。我們有詳細的臨床和實驗室數據。\n\n2.  **從問題中提取關鍵信息：**\n    *   年齡：18歲（年輕人）。\n    *   主訴：全身倦怠感、發熱（38.3°C）。\n    *   病史：2週前開始感覺勞作時呼吸困難（息切れ）。\n    *   生命徵象：脈搏100次/分（正常範圍，但由於發熱而",
+        "time": 6.699659109115601
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "<think>1. ",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認\n\n- 2か月の女児\n- けいれん重積のため救急車で搬入された\n- 夜間寝ていてけいれんが始まった\n- 救急車内で心肺停止となり、心拍の再開がなく死亡\n- 顔面や体幹に新旧混在した皮下出血の散在を認めた\n- 頭部CTで両側に硬膜下血腫とびまん性脳浮腫を認めた\n- 全身エックス線写真で左大腿骨骨折、右上腕骨骨折を認めた\n- 母親は外傷に心当たりはない\n\n2",
+        "time": 6.663614988327026
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于69岁男性，主诉左鼻出血、复视，检查发现左鼻腔扁平上皮癌。然后问“この患者で認められるのはどれか。”选项是a到e。\n\n首先，分析每个选项和鼻腔癌的相关表现。鼻腔的肿瘤（比如鼻咽癌？不过这里是左鼻腔扁平上皮癌）可能压迫或侵犯周围结构。\n\n首先看选项：\n\na: 難聴（听力下降）——鼻腔肿瘤可能侵犯耳咽管等，导致分泌性中耳炎等，出现听力下降？不",
+        "time": 6.383167028427124
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，先分析题目信息。\n\n患者是8岁女童，主诉是著しい掻痒を伴う皮疹（明显瘙痒的皮疹），全身多部位出现，比如背部、面部、腹部、肘窝、膝窩等。实验室检查：白细胞8,600，好酸球12%（嗜酸性粒细胞增多），IgE 2,800 IU/mL（高于正常基準250以下）。抗原特異的IgE对吸入性抗原如ハウスダスト（屋尘）、スギ花粉等强阳性，食物抗原阴性。问题是",
+        "time": 6.416740655899048
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先整理病例信息：\n\n患者是80岁男性，主诉左側頭部から左頬部の皮疹。3个月前出现左侧颞部的紫红色斑，逐渐扩大、隆起、出血。\n\n既往史：10年前开始心房細動，服用抗凝固薬（华法林等？）。\n\n现在皮疹表现：左侧颞部有皮疹，鳞屑无。左颈部淋巴结可触及。\n\n首先分析各选项：\n\na: 血管肉腫（Angiosarcoma）- 多见于老年男性，常与接触某些化学物",
+        "time": 6.401388883590698
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个心电图诊断的问题。首先，先分析题目中的信息。\n\n首先看患者情况：64岁男性，左偏瘫伴意识障碍（GCS E4V4M6），血压164/82，脉率96/min且不规则。神经检查除了左偏瘫外无其他异常，颈动脉听诊无杂音。\n\n然后看脑MRI的弥散加权像（DWI），不过这里可能需要结合ECG的特征。题目问最可能的ECG诊断。\n\n首先分析脉率96/min且不规则，这提示心律不齐",
+        "time": 6.395887851715088
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "<think>1. ",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1. 問題文のキーワードを確認\n\n- 主訴：下腿浮腫\n- 健診歴：毎年受診、異常なし（半年前まで）\n- 半年前の健診：初めて蛋白尿を指摘\n- 1か月前から症状出現：両下腿浮腫増悪\n- 身長160cm、体重60kg（BMI 23.4）\n- 血圧132/90mmHg\n- 胸腹部異常なし\n- 両下腿：圧痕性浮腫（重要な所見）\n- 皮膚異常なし\n- 尿所見：蛋白3＋（強い蛋白尿）、糖（−）、",
+        "time": 6.837505578994751
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 我們有一個78歲的女性患者。她有持續的發燒（38°C台）和全身倦怠感。\n\n2.  **提取臨床數據：**\n    *   **一般狀況：** 78歲女性。身長151cm，體重42kg（BMI = (42/1.51)^2 ≈ 19）。這是一個正常範圍內的BMI。\n    *   **體溫：** 38.2°C（發燒）。\n    *   **脈搏：** 92/",
+        "time": 6.542260408401489
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析题目中的患者情况：61岁男性，有大肠癌术后且正在抗癌治疗中（余命2年以上），主诉右膝痛，内反变形严重，人工膝关节置换的适应证。现在要选合适的治疗组合。\n\n首先看选项：\n\na: 两个都放弃，不对，因为癌症需要治疗，膝也需要处理。\n\nb: 停止癌症治疗做保存治療。不对，因为患者有大肠癌术后且抗癌治疗中（余命2年以上），癌症治疗不能停止。\n\nc: 停",
+        "time": 6.485672235488892
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "<think>用户现",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，首先得分析每个选项的医学知识。\n\n首先看题目背景：35岁经产妇（3-2），妊娠34+2周，检查时提到胎心、阵痛等。然后看MRI的T2矢状断像，需要判断选项中哪些是正确的描述（因为问题问的是“説明として適切なのはどれか”，即哪个是合适的说明，可能需要结合前置胎盘等知识）。\n\n首先回忆前置胎盘（placenta previa）：正常胎盘附着于子宫体部前壁、后",
+        "time": 6.573568105697632
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "<think>1. ",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者情報：** 34歳の女性。主訴は前胸部痛。\n    *   **疼痛歴：** 3か月前に始まり、徐々に増強してきた。\n    *   **臨床所見：**\n        *   体温: 36.8°C (正常)\n        *   血圧: 118/64 mmHg (正常)\n        *   SpO2: 98% (room",
+        "time": 6.2743821144104
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "<think>1. ",
+        "gold": "a,d",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者情報：** 44歳の女性。人間ドックで肝機能障害を指摘された。\n    *   **既往歴：** 輸血歴、飲酒歴、家族歴に特記すべきことはない。\n    *   **体格所見：** 眼球結膜に黄染を認めない。これは、急性肝不全や胆道閉塞による黄疸がまだ進行していないことを示唆する。\n    *   **血液所見：**\n     ",
+        "time": 6.433328151702881
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，先分析病例信息。\n\n患者是38岁女性，腹痛来院。症状包括1周前开始便秘、呕吐、腹痛、腹胀感，逐渐加重。查体：腹部膨隆，肠鸣音亢进；直肠指诊在Douglas窝发现硬结（考虑卵巢肿瘤？不过这里结合胃癌的情况，可能先处理胃癌和肠梗阻的问题）。\n\n腹部X线：仰卧位有Haustra（结肠袋？不过这里肠管扩张，可能小肠梗阻？但X线显示有液面形成（nivea",
+        "time": 6.603933095932007
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于颈髓损伤患者康复活动的问题。首先，得回忆颈髓损伤（Cervical Spinal Cord Injury, CSCI）的神经平面和功能预后。\n\n首先看患者的症状：颈髓损伤，入院中。受伤8周前，高所転落。徒手筋力テスト（MMT）結果：上腕二頭筋5、橈側手根伸筋5（これらはC5-C6支配？）、上腕三頭筋4、深指屈筋0（C8-T1支配？）、小指外転筋0（同上）。体幹",
+        "time": 6.467878818511963
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "<think>1. ",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者情報：**\n        *   年齢：68歳（高齢）\n        *   主訴：鼻出血、咳嗽\n        *   過去の症状（2か月前）：鼻閉、難聴\n        *   近期の症状（3週間前）：持続的な鼻出血、咳嗽\n        *   現在の状態：意識清明。体温37.8°C（軽度の発熱）。脈拍84/分、整。血",
+        "time": 6.696783065795898
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：** 我們有一個5歲的女童。她的症狀包括：\n    *   3天前開始的高熱（39.6°C）。\n    *   咽喉痛和食慾不振。\n    *   沒有咳嗽或鼻涕（這是一個關鍵細節）。\n    *   活力良好，皮膚顏色正常。\n    *   眼球結膜輕度發紅（結膜炎）。\n    *   咽喉發紅，扁桃體覆蓋著白苔（這是典型的化膿性扁桃體炎徵象）。\n    *",
+        "time": 6.659559011459351
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "<think>1. ",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>1.  **分析問題文：**\n\n    *   **患者情報：**\n        *   年齢：40歳\n        *   性別：男性\n        *   主訴：心窩部痛（上腹部痛）\n        *   症状時序：\n            *   昨日から：慢性/持続性の痛み\n            *   本日夕方：突然、激痛に変化。動けなくなる。\n        *",
+        "time": 6.4812469482421875
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "c",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析病例信息。\n\n患者是18岁男性，寮生活（可能和集体生活相关）。症状：发热、意识障碍。JCS II-20，体温38.4℃，项部硬直（脑膜刺激征），四肢紫斑（出血点），脑脊液检查：混浊，初压高（220mmH2O），细胞数高（861/mm3，多核球为主？不，这里描述是“白血球による貪食像を認めた”以及“グラム陰性双球菌”。所以脑脊液检查显示是脑膜炎",
+        "time": 6.547452926635742
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "<think>用户现",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先分析病例信息。\n\n患者是42岁男性，主诉腹痛。症状发展：昨天中午开始心窝部痛（可能为上腹部），今朝起床时呕吐，之后右下腹痛，逐渐加重来诊。\n\n体格检查：腹部平坦，右下腹有压痛和反跳痛。这是急性阑尾炎的典型体征（McBurney点压痛、反跳痛）。\n\n实验室检查：白细胞16.2k，明显升高（感染性炎症反应）；CRP 0.9 mg/dL，轻度升高；其他",
+        "time": 6.547915935516357
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "<think>用户现",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于脑梗塞后康复训练的问题。首先，得仔细分析患者的状况。\n\n首先看患者的情况：70岁女性，脑梗塞后右片麻痺残存。现在症状是8周前出现右上肢脱力，诊断为左内包梗塞（因为左侧内囊受累会导致对侧肢体运动障碍）。现在患者的情况：右上肢有痙縮（肘屈曲90度，手指屈曲），他动可动域訓練可能（因为虽然痙縮但有抵抗，所以可以训练可动域）。手指随意運動認めない（无手指运动），徒手筋",
+        "time": 6.487401008605957
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于睡眠时无呼吸症候群（OSAHS）导致的高血压的问题。首先，回忆相关的诊疗指南内容。\n\n首先看各个选项：\n\na: 夜間高血圧となることが多い。OS",
+        "time": 3.394883632659912
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于GBS感染预防的问题。首先回忆日本母子感染予防対策のガイドライン。\n\n首先，GBS（B群連鎖球菌）の予防投与は、陽性",
+        "time": 3.4071459770202637
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "ERROR",
+        "gold": "a",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学多选题。首先问题是问哪种单药口服会导致低血糖风险高。\n\n首先回忆各个选项的药物类别和作用机制：\n\na. DPP-4阻害薬（如西他列汀",
+        "time": 6.122913122177124
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决关于日本成人心脏移植的问题。首先回忆各选项的正确性。\n\n首先看各个选项：\n\na: 10年生存率约10%？不对，日本的心脏移植10年生存率其实较高，",
+        "time": 3.3283932209014893
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决关于高钾血症原因的选择题。首先回忆各选项的作用和影响。\n\n首先看各个药物或情况对钾的影响：\n\na: β刺激薬（β-agonist）比如肾上腺素、异丙肾上腺",
+        "time": 3.340501070022583
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "a,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于逆流性食道炎（GERD）诱因的问题。首先，回忆各选项与GERD的关系。\n\n首先看各个选项：\n\na: 肥満 - 肥胖是GER",
+        "time": 3.3091299533843994
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,c,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于心不全患者中，不符合心サルコイドーシス（心脏结节病）所见的问题。首先得回忆心脏结节病的典型表现。\n\n首先，心脏结节病（cardiac sarcoidosis",
+        "time": 3.32391095161438
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a,c,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于骨壊死（osteonecrosis，ON）风险因子的多选题。首先回忆骨壊死的风险因素。\n\n首先看选项：\n\na: 飲酒（饮酒）——已知",
+        "time": 3.3651812076568604
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,c,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于全身性強皮症（systemic sclerosis, SSc）继发性雷诺现象（Raynaud phenomenon）的问题。首先，得回忆SSc相关的Raynaud现象的特点。\n\n首先看各个",
+        "time": 3.322211980819702
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于自闭症谱系障碍（ASD）特征的问题。首先，回忆ASD的典型特征。\n\n首先看选项：\n\na: 男児に多い。这是已知的，ASD在男性中发病率",
+        "time": 3.3287692070007324
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>用户现在需要解决这个关于高血圧緊急症（高血压紧急状态）的问题。首先，得回忆各选项对应的疾病是否属于高血圧緊急症。\n\n首先明确：高血压紧急状态（hypertensive",
+        "time": 3.355034112930298
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,c",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于脑血管性认知症（VCI）的问题，首先得回忆相关的医学知识。\n\n首先看各个选项：\n\na: 50歳台では発症しない。  \n脑血管性認知症は",
+        "time": 3.296750068664551
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a",
+        "gold": "c,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于病原体和恶性肿瘤组合的问题。首先，回忆各选项的正确对应关系。\n\n首先看各个选项：\n\na: HPV（ヒトパピローマウイルス）和子宮体癌。不对",
+        "time": 3.3592660427093506
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,c",
+        "gold": "c,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于急性肾障碍诊断指标的问题。首先回忆急性肾损伤（AKI）的诊断标准，通常基于血清肌酐（SCr）的升高速度和尿量变化。\n\n首先看选项：\na",
+        "time": 3.333925247192383
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，题目是问哪个所见最提示蛋白尿原因是糖尿病性肾病。首先得回忆糖尿病性肾病的诊断要点。\n\n首先看各个选项：\n\na: 姐的糖尿病歴 - 这",
+        "time": 3.7209458351135254
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先理解病例信息。\n\n患者是6个月男婴，主诉呕吐，背景是新发血友病A（因为PT-INR正常但APTT延长，纤维蛋白原",
+        "time": 3.609631061553955
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学多选题。首先，先理解患者的症状：23岁男性，工作居眠多，重要场合也发作性睡眠。然后有日中急性的强眠気（嗜睡），最近大笑或",
+        "time": 3.451810598373413
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "<think>用户现",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床问题。首先，先整理患者的信息：\n\n62岁女性，主诉息切れ（呼吸困难）和全身倦怠感。背景是7天前做了心房細動的カテーテル",
+        "time": 3.5095739364624023
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先理解病例情况。\n\n患者是64岁男性，主诉呼吸困難（呼吸困难）。4天前出现左胸痛和息切れ（气短），逐渐加重来",
+        "time": 3.5433359146118164
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先理解病例情况：73岁男性，做了内视镜的胆石除去术（ERCP之类的），术后3小时出现持续性心窝部痛和背部痛，伴随",
+        "time": 3.6471359729766846
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学多选题。首先，题目描述的是一个22岁男性，被诊断为肾功能障碍，有家族史（母、叔父透析）。血液检查尿素氮28mg/dL，肌酐1.5",
+        "time": 3.368156909942627
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，先分析患者的症状和检查结果。\n\n患者是38岁男性，1周前出现皮下出血（紫斑），然后受诊发现白细胞减少、血小板减少。血液检查显示",
+        "time": 3.7127301692962646
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于45岁男性，主诉嗄声（声音嘶哑），2年前开始无诱因出现，伴随咽喉异物感、慢性咳嗽。吸烟和饮酒史没有",
+        "time": 3.3821732997894287
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个13岁女孩在吃含有鱿鱼的便当后，运动时出现腹痛、皮肤瘙痒（荨麻疹样？）等症状。需要分析可能的诊断和对应的治疗",
+        "time": 3.581949234008789
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "c,d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学多选题。首先，问题是关于30岁男性在COVID-19流行期间出现工作能率下降、睡眠习惯改变（寝酒）、早晨情绪低落、疲劳感持续，以及思考混乱等症状",
+        "time": 3.4823951721191406
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析患者的病情。\n\n患者是81岁男性，COPD诊断，有呼吸困難。现在症状加重，出现发热（38.3℃）、CRP升高（",
+        "time": 3.6113598346710205
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，分析患者的症状和检查结果。\n\n患者是23岁男性，主诉全身倦怠感、食欲不振、恶心。一周前出现症状，昨天开始褐色尿（黄疸相关",
+        "time": 3.6132559776306152
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，题目描述的是一个40岁男性，主诉字写不好，特别是签名时字歪。检查中，用铅笔写字时，示指和中指的近位和远位",
+        "time": 3.481874942779541
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个42岁男性，主诉下腹部痛、恶心，疼痛有转移（从右腹到右下腹），还有背部不适感。需要判断哪个选项最",
+        "time": 3.5380709171295166
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的症状和检查结果。\n\n患者是48岁女性，主诉口渇、全身倦怠感。5日前有发热和腹痛。尿检：糖3+",
+        "time": 3.4989211559295654
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析病例信息。\n\n患者是生后10小时的新生儿男婴。出生时Apgar 1分7，5分8，体重2960g（",
+        "time": 3.5870580673217773
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，首先得理解每个选项的内容，然后结合临床知识判断哪个是错误的。\n\n首先看患者的情况：73岁男性，糖尿病史（43岁开始）、冠脉支架术后、透析治疗（",
+        "time": 3.6502788066864014
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>用户现在需要解决这个关于新生儿外性器特征的问题。首先，题目描述是出生当日的新生儿，体重3,020g（正常新生儿范围），Apgar评分8和9点，这些指标都显示",
+        "time": 3.4029219150543213
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析患者的症状和检查结果。\n\n患者是52岁男性，主诉全身倦怠感。病史：6周前诊断肺腺癌，3周前开始免疫检查点阻",
+        "time": 3.6046080589294434
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析患者的症状和检查结果。\n\n患者是63岁男性，主诉腹痛、腹部膨隆。2年前臍部膨隆（臍膨隆？或者腹",
+        "time": 3.69808292388916
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，先分析患者的症状和检查结果。\n\n患者是72岁女性，有血小板减少（从5.6万降到4.7万），还有贫血（Hb 6.",
+        "time": 3.7150661945343018
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于周術期管理的医学问题。首先，得回忆日本医疗制度下的周術期管理要点。\n\n首先看各个选项：\n\na: 手術の2時間前まで固形物摂取を",
+        "time": 3.6237213611602783
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个20岁女性和其母亲都有腹部皮疹，且ATP2A2基因变异。首先回忆各选项的疾病特点。\n\nSweet病（スウィート病",
+        "time": 3.4853429794311523
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析病例。\n\n患者是15岁男性，下肢痛、赤褐色尿（酱油色尿）。结合病史：野球部训练中头痛、下肢脱力，休息后",
+        "time": 3.747770071029663
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，问题是关于45岁男性右耳突然难听和耳鸣的情况。\n\n首先分析症状：急性起病的单侧听力下降（感音性？因为鼓膜正常，MRI正常",
+        "time": 3.3492047786712646
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析病例信息。\n\n患者是36岁女性，2妊0产（所以是初产妇？不过这里可能需要注意）。妊娠36周4天，腹痛来院。查",
+        "time": 3.4057228565216064
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析患者的病史和检查结果。\n\n首先看患者的情况：28岁男性，有十二指肠溃疡反复发作史（20岁开始），25岁时做了垂体腺瘤摘出",
+        "time": 3.7011568546295166
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于高値が予想されるホルモン（プロラクチン以外？不，题目问的是高値が予想されるのはどれか。首先分析病例：22歳女性，",
+        "time": 3.4639549255371094
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "a,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于半月板断裂的医学问题。首先，回忆膝关节镜检查中半月板断裂的表现。\n\n首先，题目描述是右膝内側半月板断裂。然后看选项a到e对应的①-⑤",
+        "time": 3.4101431369781494
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析患者的症状和检查结果。\n\n患者是53岁男性，主诉是10年没见的朋友说鼻变大、脸形变。最近鞋变紧，2年前手根",
+        "time": 3.454237222671509
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学多选题。首先，问题是关于性暴力受害者的医疗应对中，哪个是不恰当的。\n\n首先分析各个选项：\n\na: 性感染症の検査を行う。这是合适的，因为性暴力",
+        "time": 3.4739859104156494
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析病例信息。\n\n患者是10个月男童，主诉呕吐和血便。症状：今朝起突然呕吐频繁，有时大哭，白天出现血便数次。",
+        "time": 3.5609848499298096
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析患者的症状和检查结果。\n\n患者是45岁男性，主诉劳作时息切れ、全身倦怠感。5年前开始骑车远出有呼吸困难，",
+        "time": 3.631124973297119
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，分析患者的症状和背景信息。\n\n患者是35岁男性，主诉咳嗽、发热、呼吸困难。时间线：3周前开始干咳，5天前出现发热和",
+        "time": 3.5857369899749756
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "<think>用户现",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学问题。首先，先分析患儿的特征。\n\n题目描述的是日齢14的男児（14天大的男孩），有染色体检查结果，还有面部特征：切れ上がった目、平坦",
+        "time": 3.5048041343688965
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于水酸化ナトリウム（氢氧化钠）进入眼睛后的处理。\n\n首先回忆化学性眼灼伤的处理原则。对于强碱（如NaOH）",
+        "time": 3.3199970722198486
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析患者的背景和症状。\n\n患者是76岁男性，有胃全摘史（8年前），之后体重减少，5年前开始出现喀痰。1周前喀",
+        "time": 3.552079200744629
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，问题是关于2岁男童的听力问题诊断。\n\n首先分析病情：母亲担心电视音量变大，孩子之前有耳痛鼻涕（可能中耳炎？），之后",
+        "time": 3.4339892864227295
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于医疗职业暴露后HBV预防的问题。首先回忆日本医疗安全相关的指南，比如厚生労働省のガイドライン。\n\n首先看患者的情况：HBs抗原（+），所以是HB",
+        "time": 3.443110227584839
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "<think>用户现",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的症状和检查结果。\n\n患者是18岁男性，主诉全身倦怠、发热。之前有劳作时息切れ（呼吸困难），现在出现低热、",
+        "time": 3.627910852432251
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个2个月的女婴，因抽搐加重被救急车送来，车内心肺停止，来院时心搏未恢复，对光反射消失。死后",
+        "time": 3.5517539978027344
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个69岁男性，主诉左鼻出血、复视。检查发现左鼻腔扁平上皮癌。\n\n首先分析各个选项：\n\na: 難聴（听力障碍",
+        "time": 3.3346762657165527
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述的是一个8岁女童，有著しい掻痒（剧烈瘙痒）伴皮疹，全身分布。实验室检查显示嗜酸粒细胞增多（12%），IgE",
+        "time": 3.4589619636535645
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析病例信息：\n\n患者是80岁男性，主诉左側頭部から左頬部の皮疹。3个月前出现左侧颞部的紫红色斑",
+        "time": 3.478835105895996
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个心电图诊断的问题。首先，先分析病例信息。\n\n患者是64岁男性，左偏瘫伴意识障碍（GCS E4V4M6）。血压164/82，脉率96/min且",
+        "time": 3.412853956222534
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "<think>用户现",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于58岁女性，主诉下腿浮肿，有蛋白尿史半年，最近出现双下肢压痕性浮肿。检查发现蛋白尿（3+），",
+        "time": 3.7252039909362793
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，分析患者的症状和检查结果。\n\n患者是78岁女性，持续发热1周，全身倦怠。查体：体温38.2℃，血圧84/50mmHg",
+        "time": 3.514186143875122
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于61岁男性治疗选择的问题。首先，分析患者情况：大腸癌术后2个月，抗癌治療中（余命2年以上），所以癌症治疗不能放弃。然后膝的问题：高度",
+        "time": 3.4789512157440186
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题，首先得回忆相关的诊断知识。题目是关于35岁经产妇的MRI所见，需要判断哪个描述是正确的。\n\n首先看各个选项：\n\na: 胎盤の後面",
+        "time": 3.5842511653900146
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "<think>用户现",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目描述是34岁女性，前胸部痛3个月逐渐加重。检查体温、血压正常，SpO2 98%，心肺听诊无异常。\n\n然后看影像学：",
+        "time": 3.3896729946136475
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a",
+        "gold": "a,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，题目是关于44岁女性，人間ドックで肝機能障害指摘。然后看血液生化学所見：ALP 238U/L（基準38",
+        "time": 3.476194143295288
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "c",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先理解病例情况：38岁女性，腹痛、便秘（1周无排便）、呕吐、腹胀，腹部检查有肠管扩张、液面形成（立位像），CT",
+        "time": 3.5682380199432373
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于颈髓损伤患者康复活动的问题。首先，得回忆颈髓损伤（Cervical Spinal Cord Injury, CSCI）的神经平面和功能预后。\n\n首先看患者的症状：颈髓损伤",
+        "time": 3.4793848991394043
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "<think>用户现",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学问题。首先，先分析患者的情况。\n\n首先看患者的症状：鼻出血、咳嗽，还有2个月前开始的鼻閉、難聴（可能是鼻咽部的问题？不过结合其他检查，",
+        "time": 3.648179054260254
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "<think>用户现",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的多选题，首先得分析每个选项在5岁女童的症状下的可能性。\n\n首先看患者信息：5岁，3日前高热（39.6℃），咽痛、食欲低下，",
+        "time": 3.559623956680298
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "<think>用户现",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析患者的症状和检查结果。\n\n患者是40岁男性，主诉心窝部痛（上腹部疼痛），突然加剧导致不能动，救急搬送。查",
+        "time": 3.561084032058716
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "<think>用户现",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个医学多选题。首先，先分析病例信息。\n\n患者是18岁男性，寮生活（可能和集体生活相关），症状：发热、意识障碍。检查结果：脑脊液混浊，",
+        "time": 3.603192090988159
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "<think>用户现",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个临床医学的问题。首先，先分析病例信息。\n\n患者是42岁男性，主诉腹痛。症状发展：昨天中午开始心窝部痛，今朝起床时呕吐，之后右下腹痛且",
+        "time": 3.6233372688293457
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "<think>用户现",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "<think>用户现在需要解决这个关于脑梗塞后康复训练的问题。首先，得回忆一下脑卒中（脳梗塞）后的康复原则，比如功能恢复、代偿策略等。\n\n首先看患者的情况：70岁女性",
+        "time": 3.536231756210327
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

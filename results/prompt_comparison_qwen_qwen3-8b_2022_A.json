@@ -1,0 +1,2458 @@
+{
+  "timestamp": "2026-02-06T12:53:47.618871",
+  "model": "qwen/qwen3-8b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 41,
+      "accuracy": 0.5466666666666666,
+      "avg_time": 0.580203742980957,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 46,
+      "accuracy": 0.6133333333333333,
+      "avg_time": 0.4045469570159912,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 5,
+      "accuracy": 0.06666666666666667,
+      "avg_time": 3.2902398277336444,
+      "errors": 4,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 44,
+      "accuracy": 0.5866666666666667,
+      "avg_time": 0.4039028739929199,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: c",
+        "time": 0.5820322036743164
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **b: 妊娠37週時**",
+        "time": 0.5045280456542969
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: a",
+        "time": 0.315601110458374
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **c**",
+        "time": 0.3325469493865967
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **c**",
+        "time": 0.36243104934692383
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: c",
+        "time": 0.30609989166259766
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **c: 亀背**",
+        "time": 0.4011549949645996
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **b**",
+        "time": 0.35975122451782227
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: d",
+        "time": 0.3008608818054199
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **d: 手指腫脹を伴う。**",
+        "time": 0.505964994430542
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: e",
+        "time": 0.30251026153564453
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **e**",
+        "time": 0.3524007797241211
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: b, e",
+        "time": 0.36038804054260254
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: c,d",
+        "time": 0.35118842124938965
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne, a",
+        "time": 0.29976511001586914
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **e: 尿蛋白/Cr比＞1.0g/gCr**",
+        "time": 0.8352289199829102
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **d**",
+        "time": 0.5585379600524902
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **c: 睡眠発作後にも眠気が残る。**",
+        "time": 0.624812126159668
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **d: 心タンポナーデ**",
+        "time": 0.6464190483093262
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **b: 肺水腫**",
+        "time": 0.5832459926605225
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **e: 内視鏡的胆道ドレナージ術**\n\n### 解説:\nこの症例は、**急性膵炎**の可能性が強く示唆されています。以下の点から",
+        "time": 1.141401767730713
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **c**",
+        "time": 0.4091191291809082
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **a: イマチニブ**\n\n### 解説:\nこの患者の臨床所見と検査結果から、**急性白血病（特に慢性骨髄性白",
+        "time": 1.1491529941558838
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **e**",
+        "time": 0.3836491107940674
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **c: プリックテストを行う。**\n\n### 解説:\nこの症例では、**イカを食べた後**に発症した症状（気分不快、皮膚",
+        "time": 1.0676732063293457
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **e**",
+        "time": 0.46941590309143066
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **b**",
+        "time": 0.5157949924468994
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **e**",
+        "time": 0.6290357112884521
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na: 書痙",
+        "time": 0.44140100479125977
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **a**",
+        "time": 0.4401261806488037
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **b**",
+        "time": 0.4599268436431885
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne: プロスタグランディンE1の投与",
+        "time": 0.6074681282043457
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **c**\n\n---\n\n### 解説:\n\nこの問題は、**閉塞性動脈硬化症（CLI）** と **間欠性跛行** の診断に関する知識を問うています",
+        "time": 1.139543056488037
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **e**",
+        "time": 0.4262700080871582
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: e: 副腎皮質ステロイド投与",
+        "time": 0.6912646293640137
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **a**",
+        "time": 0.6468260288238525
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **c: 血漿交換療法**\n\n---\n\n### 解説：\n\nこの症例では、以下の所見が特徴的です：\n\n- **血小板減少**（4.",
+        "time": 1.1476271152496338
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **e**",
+        "time": 0.6093430519104004
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,b,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **b: Darier病**",
+        "time": 0.48324108123779297
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **c**",
+        "time": 0.6664912700653076
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne: 副腎皮質ステロイド",
+        "time": 0.49302196502685547
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na: 緊急帝王切開",
+        "time": 0.49041295051574707
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **c: ガストリン**\n\n### 解説:\nこの患者の主な臨床所見は以下の通りです：\n\n- **上部消化管内視鏡検査で多�",
+        "time": 1.1293582916259766
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: e: プロラクチン",
+        "time": 0.5390257835388184
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **c: ③**",
+        "time": 0.44229626655578613
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **a: GHRH負荷試験**",
+        "time": 0.5816149711608887
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **d**",
+        "time": 0.40427613258361816
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **e**",
+        "time": 0.47738003730773926
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na: 大動脈弁置換術\n\n**解説：**  \nこの症例では、以下の所見が特徴的です：\n\n- **労作時の息切れ**（徐々",
+        "time": 1.1166961193084717
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **c: 非結核性抗酸菌症**\n\n### 解説:\nこの患者の臨床所見と検査結果から、**非結核性抗酸菌症",
+        "time": 1.156851053237915
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **d**",
+        "time": 0.46994686126708984
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd: 生理食塩液での洗眼",
+        "time": 0.44910478591918945
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **b: ピペラシリン**\n\n### 解説:\nこの症例では、以下の点が重要です：\n\n- **喀痰の増悪**と**Gram染色標本**から",
+        "time": 1.0944550037384033
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **c: 聴性脳幹反応**",
+        "time": 0.5781147480010986
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **e**",
+        "time": 0.4103739261627197
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **b: 網赤血球数**\n\n---\n\n### 解説:\n\nこの患者の臨床像は、**急性骨髄性白血病（AML）** または **再生不良",
+        "time": 1.1461520195007324
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na: 虐待",
+        "time": 0.4885420799255371
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **b: 眼球突出**",
+        "time": 0.48548102378845215
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne: アナフィラキシー",
+        "time": 0.46848297119140625
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **e**",
+        "time": 0.42659997940063477
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a,b",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na: Atrial fibrillation",
+        "time": 0.4104940891265869
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **d: アミロイド腎症**",
+        "time": 0.8055210113525391
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **c: 尿浸透圧低下**",
+        "time": 0.5826361179351807
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne: がん治療を継続しながら膝の手術治療",
+        "time": 0.6048338413238525
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **b, e**",
+        "time": 0.4980049133300781
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,d",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: a, d",
+        "time": 0.40131092071533203
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: a, d",
+        "time": 0.45407795906066895
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **d, e**",
+        "time": 0.5319082736968994
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: a, b",
+        "time": 0.4267270565032959
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **c, e**",
+        "time": 0.6552431583404541
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "b,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **e: パルボウイルスB19感染症**",
+        "time": 0.5994141101837158
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **a, b, d**",
+        "time": 0.612023115158081
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n答え: **a, c, d**",
+        "time": 0.584481954574585
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: a, b, d",
+        "time": 0.5550110340118408
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: **a, c, d**",
+        "time": 0.5351669788360596
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.5005209445953369
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.3200840950012207
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.27106618881225586
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.2732672691345215
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.2931487560272217
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.2755248546600342
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.2706427574157715
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.29766035079956055
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.2731020450592041
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.2732231616973877
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.2736079692840576
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3009500503540039
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb,e",
+        "time": 0.319716215133667
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc,d",
+        "time": 0.30705881118774414
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc,e",
+        "time": 0.29036903381347656
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.5803689956665039
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.5020711421966553
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.3504929542541504
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.44402098655700684
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.4190859794616699
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.48532605171203613
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.35079002380371094
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.5139162540435791
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3308391571044922
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.443814754486084
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.381821870803833
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.46323299407958984
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.5696556568145752
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.3530588150024414
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.3858609199523926
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.3997499942779541
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3887441158294678
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.4951820373535156
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.37143707275390625
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.45632290840148926
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.5848100185394287
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.525615930557251
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.5231828689575195
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.38752007484436035
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.5936892032623291
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3224449157714844
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.3725287914276123
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.5026779174804688
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3800492286682129
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.3244609832763672
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3930389881134033
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.3414909839630127
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.43364715576171875
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.48000001907348633
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.49510717391967773
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.3788881301879883
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.32492589950561523
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.46091318130493164
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.3597099781036377
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.33573412895202637
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.523766040802002
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.37684082984924316
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.3520493507385254
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.34194183349609375
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.36652398109436035
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.34200501441955566
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.6199519634246826
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.37810516357421875
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3846931457519531
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb,e",
+        "time": 0.4123702049255371
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd,e",
+        "time": 0.361940860748291
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd,e",
+        "time": 0.406818151473999
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd,e",
+        "time": 0.4372520446777344
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na,c",
+        "time": 0.36020708084106445
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc,e",
+        "time": 0.5822868347167969
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3904390335083008
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na,b,d",
+        "time": 0.4897489547729492
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na,c,d",
+        "time": 0.49723267555236816
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na,b,d",
+        "time": 0.5214459896087646
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na,c,d",
+        "time": 0.4492318630218506
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードは「睡眠時無呼吸症候群」「高血圧」「正しくないのはどれか」です。\n\n- **a: 夜間高血圧となることが多い。**  \n  睡眠時無呼吸症候群では、夜間の酸素不足や交感神経系の活性化により、夜間高血圧が見られることが知られています。正しい。\n\n- **b: 肥満患者では減量を推奨する。**  \n  睡眠時無呼吸症候群のリスク因子として肥満が挙",
+        "time": 3.275941848754883
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードは「妊娠末期」「B群連鎖球菌陽性」「母子感染予防対策」「ペニシリン系抗菌薬の投与時期」である。\n\nB群連鎖球菌（GBS）感染予防において、ペニシリン系抗菌薬は**陣痛開始時**に投与を開始することが推奨されている。これは、GBSが分娩時に新生児に感染するリスクを減らすための標準的なガイドラインに基づくものである。\n\n選択肢の中で、**陣痛開始",
+        "time": 2.3211889266967773
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a,b",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n「中心性漿液性脈絡網膜症」に関する誤りを選ぶ。\n\n各選択肢を医学的に検討  \na: 夜盲を自覚する。→ 中心性漿液性脈絡網膜症は夜盲を伴うことはない。  \nb: 変視症を自覚する。→ 正しい。変視症は主症状の一つ。  \nc: 自然治癒することが多い。→ 正しい。多くの場合、自然に回復する。  \nd: 蛍光眼底造影が有用である。→ ",
+        "time": 3.066716194152832
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "a,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードは「単剤の内服」「低血糖の原因」です。  \n各選択肢を医学的に検討します。\n\n- **a: DPP-4阻害薬**  \n  低血糖を引き起こす可能性は低い。主に血糖上昇を抑制する薬で、低血糖のリスクは少ない。\n\n- **b: SGLT2阻害薬**  \n  低血糖のリスクは低い。むしろ、体重減少や脱水などの副作用が報告されることが多い。\n\n- *",
+        "time": 3.064666748046875
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n「成人心臓移植」「正しいのはどれか」\n\n各選択肢を医学的に検討  \na: 10年生存率は約10％である。→ 現在の成人心臓移植では10年生存率は約50％程度とされている。  \nb: 年間約1,000例行われている。→ 成人心臓移植は年間数百例程度であり、1,000例は過大評価。  \nc: 原疾患は拡張型心筋症が最も多い。→ 成人心",
+        "time": 3.0915439128875732
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードは「高カリウム血症の原因」です。\n\n各選択肢を医学的に検討します：\n\n- **a: β刺激薬** → β受容体刺激薬（例：カテコールアミン）は腎臓でのカリウム排泄を促進するため、**低カリウム血症**の原因となる。\n- **b: インスリン** → インスリンは細胞内へのカリウム移行を促進するため、**低カリウム血症**の原因となる。\n- *",
+        "time": 3.0520689487457275
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "ERROR",
+        "gold": "d",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードは「心不全」「心サルコイドーシス」「所見に合致しない」です。\n\n- **a: 房室ブロック** – 心サルコイドーシスでは、心筋の電気的伝導障害が見られるため、房室ブロックはあり得ます。\n- **b: 持続性心室頻拍** – 心筋の異常な電気的活動により、持続性心室頻拍が起こることがあります。\n- **c: 左室駆出率の低下** – 心サルコ",
+        "time": 6.113086938858032
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n「骨壊死のリスクファクターでないのはどれか」\n\n各選択肢を医学的に検討  \n- **a: 飲酒** → 長期的な過度な飲酒は骨壊死（特に関節リウマチやステロイド使用との併用時）のリスクとなる。  \n- **b: 減圧症** → 減圧症は主に潜水病に関連し、骨壊死とは直接関係が少ない。  \n- **c: 放射線照射** → 骨組織へ",
+        "time": 3.053093910217285
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n「全身性強皮症による続発性Raynaud現象」  \n\n各選択肢を医学的に検討  \n- **a: 片側性である** → Raynaud現象は通常両側性であり、片側性は特徴的でない。  \n- **b: 家族歴がある** → 家族歴は強皮症のリスク因子だが、Raynaud現象自体の特徴ではない。  \n- **c: 若年発症が多い** →",
+        "time": 3.0565268993377686
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,b",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n「自閉スペクトラム症の特徴でないのはどれか」\n\n各選択肢を医学的に検討  \na: 男児に多い。→ 自閉スペクトラム症は男性に多い傾向がある。  \nb: 感覚過敏がある。→ 自閉スペクトラム症の特徴の一つ。  \nc: 対人関係の苦手さがある。→ 自閉スペクトラム症の特徴の一つ。  \nd: 就学前に症状がみられる。→ 自閉スペクトラム",
+        "time": 3.0652670860290527
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n「脳血管性認知症」に関する正しい記述を選ぶ。  \n\n各選択肢を医学的に検討  \n- **a: 50歳台では発症しない。** → 間違っている。脳血管性認知症は50歳台でも発症することがある。  \n- **b: 運動障害を伴うことが多い。** → 正しい。脳血管性認知症は運動障害を伴うことが多い。  \n- **c: 脳梗塞の初回発作",
+        "time": 6.0344929695129395
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a",
+        "gold": "c,d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n「病原体と悪性腫瘍の組合せで正しいのはどれか。2つ選べ。」\n\n各選択肢を医学的に検討  \n- **a: ヒトパピローマウイルス --------- 子宮体癌**  \n  → ヒトパピローマウイルス（HPV）は子宮頸癌と関連しており、子宮体癌とは異なる。誤り。\n\n- **b: 成人T細胞白血病ウイルス --------- 肺癌** ",
+        "time": 3.085541009902954
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,b",
+        "gold": "c,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードは「急性腎障害の診断に用いられる指標」です。\n\n1. **尿蛋白量（a）**：腎機能障害の指標として用いられますが、急性腎障害の診断には特異性が低いです。\n2. **腎の長径（b）**：画像検査で評価される指標ですが、急性腎障害の診断には直接的な指標ではありません。\n3. **時間尿量（c）**：急性腎障害の診断に重要な指標です。尿量が減少す",
+        "time": 3.0562429428100586
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,b,c,d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 糖尿病性腎症の診断を示唆する所見を問う問題  \n- 尿蛋白/Cr比が1.2g/gCr（基準0.15未満）  \n- 随時血糖値201mg/dL、HbA1c 10.2％  \n- 尿蛋白/Cr比が著しく上昇している  \n\n各選択肢を医学的に検討  \na: 姉の糖尿病歴 → 家族歴はリスク因子だが、直接的な診断根拠ではない  \nb: ",
+        "time": 3.4278881549835205
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "ERROR",
+        "gold": "e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "問題文のキーワードは",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードは「居眠り」「日中に強い眠気」「大笑いや驚き後に力が抜ける」「神経診察に異常なし」である。これは**ナルコレプシー（過眠症）**の典型的な症状であり、特に**睡眠発作後にも眠気が残る**という特徴が挙げられる。\n\n- **a: 入眠時に金縛りにあう** → これは**睡眠障害**の一種だが、ナルコレプシーとは関係が浅い。\n- **b: 夜間せ",
+        "time": 6.138435125350952
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "問題文のキーワードを",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n主訴は「息切れと全身倦怠感」、既往歴として「発作性心房細動に対するカテーテルアブレーション」、症状は「退院後3日目に出現し、徐々に増悪」。  \n検査所見では「頸静脈怒張」「血圧の吸気時低下（パルス圧減少）」「心音微弱」が特徴的です。  \n\nこの臨床像は**心タンポナーデ（d）**に典型的です。  \nカテーテルアブレーション",
+        "time": 3.27573299407959
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- 左胸痛、息切れ（4日前から進行）  \n- 胸部エックス線写真A（左胸部に呼吸音を聴取しない）  \n- 胸腔ドレーン挿入後、咳嗽と泡沫状の喀痰が出現  \n- 胸部エックス線写真B（ドレーン挿入後の変化）  \n\nこの症例は、左胸部の異常（呼吸音消失）と胸腔ドレーン挿入後の泡沫状喀痰、胸部X線像の変化から、**肺水腫**が疑",
+        "time": 3.2229161262512207
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "問題文のキーワードを",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- **総胆管結石**の加療目的で**内視鏡的結石除去術**を施行  \n- 3時間後から**持続性の心窩部痛と背部痛**  \n- **アミラーゼ1,495U/L（基準37～160）**  \n- **腹部造影CTを別に示す**（ただし画像は表示されていない）  \n- **初期治療として、輸液に加えて行うべき治療**\n\n---\n\n各選",
+        "time": 3.3107399940490723
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "ERROR",
+        "gold": "c",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 皮下出血、白血球減少、血小板減少  \n- 血液所見：白血球減少（芽球9％、前骨髄球60％）、血小板減少  \n- 骨髄血塗抹所見（May-Giemsa染色標本写真）  \n- これらの症状は**急性骨髄性白血病（AML）**や**再生不良性貧血**などの血液疾患を示唆する  \n\n各選択肢を医学的に検討  \n- **a: イマチニブ",
+        "time": 6.310787916183472
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 45歳男性  \n- 嗽、嗄声、咽喉異物感（2年前から）  \n- 喫煙・飲酒歴なし  \n- 喉頭内視鏡写真あり  \n\n各選択肢を医学的に検討  \n- **a: 喉頭癌**：喫煙歴がないため、発がんリスクは低い。また、進行性の症状が見られる場合が多いが、この症例では2年前から徐々に進行しているため、可能性は低い。  \n- **b:",
+        "time": 3.099585771560669
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "問題文のキーワードを",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- 13歳の女子  \n- バスケットボール試合中に気分不快、腹痛  \n- 弁当を食べた後約1時間後に症状出現  \n- 主な副食材はイカ（最近1年ほど食べていなかった）  \n- 腹部に紅斑と膨疹  \n- 血液所見：好中球42％、好酸球2％、リンパ球56％  \n- CRP 0.3mg/dL（軽度の炎症反応）  \n\nこの情報から",
+        "time": 3.2808690071105957
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "問題文のキーワードを",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- 30歳男性  \n- 在宅勤務によるストレス（自宅周囲の騒音、男児の世話）  \n- 睡眠障害（寝酒）  \n- 情緒症状（沈み込み、気がつくと取り留めなく考え事）  \n- 仕事の能率低下  \n\nこの状況は、**うつ病やストレス性障害**などの精神的問題を示唆しています。  \n\n選択肢を検討します：  \n- **a: 精神科",
+        "time": 3.193082094192505
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **81歳男性**、**呼吸困難**、**COPD歴**  \n- **鼻カニューラで0.5L/分の酸素投与**  \n- **意識清明**、**体温38.3℃**  \n- **血圧128/64mmHg、心拍数72/分**  \n- **呼吸数16/分、両側呼吸音減弱**  \n- **血液所見：白血球9,800、好中球91％",
+        "time": 3.27356219291687
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "問題文のキーワードを",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 23歳男性、全身倦怠感、食欲不振、悪心、褐色調の尿  \n- 1か月前に同性間の性交渉歴あり  \n- 眼球結膜黄染、肝腫大、軽度圧痛  \n- 血液所見：赤血球増加、Ht高値（正細胞正色素性貧血）、血小板減少  \n- 血液生化学所見：高ビリルビン（直接型）、AST・ALT・LD・γ-GT上昇  \n- 免疫血清学所見：IgM型HA抗",
+        "time": 3.391249895095825
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "問題文のキーワードを",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 主訴：字がうまく書けない（3年前から進行性）  \n- 神経診察：筋トーヌス正常、不随意運動なし、四肢筋力低下なし、腱反射正常  \n- 協調運動障害・感覚障害なし  \n- 鉛筆で字を書くと、示指・中指の関節が強く屈曲し、歪んだ字になる  \n\n各選択肢を医学的に検討  \n- **a: 書痙** → 書き始めの際、指関節が強制的に屈",
+        "time": 3.1641738414764404
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "問題文のキーワードを",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **主訴**: 下腹部痛と悪心  \n- **経過**: 朝食後に右側腹部の張感→痛み→激痛→痛みの改善と悪化を繰り返し、嘔吐  \n- **痛みの移動**: 下方に少しずつ移動し、右下腹部痛を認める  \n- **他の症状**: 発熱なし、尿路症状（尿潜血など）の記述あり  \n- **所見**: 右下腹部痛、背部の違和感 ",
+        "time": 3.1939220428466797
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "c,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n主訴は「口渇と全身倦怠感」、過去の発熱・腹痛があり、尿所見で**糖3＋、ケトン体3＋**が認められ、血液所見では**血糖440mg/dL（高血糖）**、**Cペプチド0.2ng/mL（低値）**が示されています。これらは**1型糖尿病の急性発作（ケトアシドーシス）**を示唆しています。\n\n選択肢を検討します。  \na: 「",
+        "time": 3.2276451587677
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- 生後10時間の男児  \n- Apgarスコア7点（1分）、8点（5分）  \n- チアノーゼ、SpO2低下（76％）、高濃度酸素投与後も持続  \n- 心エコーで右心室から肺動脈への駆出血流なし、動脈管から肺動脈に流入する少量の血流  \n\nこの臨床像は**動脈導管未閉（PDA）による右心室から肺動脈への血流の不足**を示唆",
+        "time": 3.206745147705078
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **主訴**: 歩行時の左下肢痛（間欠性跛行）  \n- **既往**: 糖尿病、冠動脈内ステント留置術、透析治療、喫煙歴20年  \n- **検査所見**: ABI左側0.65（異常）  \n- **指導医と研修医の会話内容**  \n\n---\n\n### 各選択肢を医学的に検討します。\n\n#### a: ①間欠性跛行だと思い",
+        "time": 3.3493292331695557
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードは「外性器の特徴に気づき」「鼠径部に腫瘤を触れない」である。  \nこれは、外性器の発達が未熟で、性別を確定するのが難しい状態（半陰陽）を示唆している。  \n選択肢の中で、この状況に最も適切に対応した説明は「e: 「半陰陽といわれている状態です」」である。  \n\n答え: e",
+        "time": 1.9151058197021484
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- **肺腺癌**、**免疫チェックポイント阻害薬**（例：PD-1/PD-L1阻害薬）  \n- **全身倦怠感**、**意識清明だが受け答え緩慢**  \n- **低血圧（72/50mmHg）**、**脈拍108/分**  \n- **TSH 0.1μU/mL（低下）**、**FT4 1.8ng/dL（正常上限）**  \n- **コ",
+        "time": 3.3048970699310303
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "問題文のキーワードを",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **主訴**: 腹痛、腹部膨隆  \n- **既往**: アルコール性肝硬変（4年前から）  \n- **現状**: 臍部の膨隆が臥位で自然消失していたが、3時間前から膨隆し続け、腹痛増悪  \n- **検査所見**: 腹部膨隆、緊満、波動あり、腸雑音亢進  \n- **血液所見**: アルブミン低下（2.1g/dL）、LDH",
+        "time": 3.409559965133667
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **血小板減少**（4.7万）  \n- **精神症状**（つじつまの合わない言動、JCS I-2）  \n- **尿所見：蛋白2＋、潜血3＋**  \n- **血液生化学：LD 1,150U/L（基準120～245）、尿素窒素70mg/dL、クレアチニン2.5mg/dL**  \n- **末梢血塗抹：May-Giemsa染色",
+        "time": 3.340252161026001
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "b,d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **下行結腸癌**  \n- **左半結腸切除術**  \n- **過去の腹膜炎歴（虫垂炎）**  \n- **血液所見：Hb 13.8g/dL、Ht 42％（正常範囲内）**  \n- **凝血機能：PT-INR 1.0、APTT 29.0秒（正常）**  \n- **栄養状態：アルブミン4.0g/dL（正常限界）**  \n-",
+        "time": 3.3723719120025635
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 腹部の皮疹（多発、持続、掻痒なし）  \n- 母親も同様の皮疹（Kaposi水痘様発疹症）  \n- ATP2A2遺伝子の同じ部位の変異  \n- 皮疹は暗褐色の丘疹（H-E染色標本）  \n\n各選択肢を医学的に検討  \n- **a: Sweet病**：炎症性皮膚疾患で、発熱や関節痛を伴うことが多い。遺伝子変異との関連は希。  \n- ",
+        "time": 3.174015998840332
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "問題文のキーワードを",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 下肢の痛み、赤褐色尿（血尿）  \n- 炎天下での激しいトレーニング、脱力、筋肉痛  \n- 血液所見：赤血球増加、Ht 高値（正細胞正色素性貧血）  \n- 血液生化学所見：AST、ALT、CK 明らかに上昇（筋肉障害）  \n- 尿所見：潜血3＋、赤血球存在（腎障害の可能性）  \n\nこの臨床像は**横紋筋融解症（rhabdomyo",
+        "time": 3.4250450134277344
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "問題文のキーワードを",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 右耳の難聴と耳鳴（急発症）  \n- めまいなし  \n- 鼓膜正常  \n- MRI正常  \n- オージオグラムが示されている（推測：感音神経性難聴）  \n\n各選択肢を医学的に検討  \n- **a: 抗菌薬** → 感染症によるものでない限り使用しない。  \n- **b: 利尿薬** → 水腎症や髄液圧亢進に関連する場合に使用され",
+        "time": 3.1054630279541016
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- 妊娠36週4日  \n- 腹痛、腹部硬い（子宮収縮の兆候）  \n- 血圧162/108mmHg（高血圧）  \n- 子宮口6cm開大、腟内凝血塊（胎盤早期剥離の可能性）  \n- 胎盤厚さ7cm（胎盤肥大、または胎盤早期剥離の兆候）  \n- 胎児心拍数陣痛図（胎児の状態が悪化している可能性）  \n\nこの臨床像は**胎盤早期剥",
+        "time": 3.1718697547912598
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,c,d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 下垂体腺腫摘出術の既往  \n- 膵体部に径1cmの腫瘤（膵臓腫瘍）  \n- 上部消化管内視鏡で多発性潰瘍（胃・十二指腸）  \n- 血液所見：Ca 11.6mg/dL（高カルシウム）  \n- 血液生化学：ALP上昇  \n\n### 各選択肢を医学的に検討  \n- **a: TSH**：甲状腺機能亢進症や低下に関与するが、本例では甲",
+        "time": 3.315912961959839
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "問題文のキーワードを",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 無月経（14歳から）  \n- 乳房発育不良  \n- 乳汁分泌（乳頭圧迫で）  \n- 外性器女性型、陰毛・腋毛正常  \n- 子宮内膜薄い、基礎体温1相性  \n\nこれらは**プロラクチン分泌腫瘍（泌乳性腺腫）**の典型的な臨床像です。  \nプロラクチンは乳汁分泌を促進し、高値になると月経不順や無月経、乳房発育不良、乳汁分泌を引き起",
+        "time": 3.2012128829956055
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードは「右膝内側半月板断裂」「関節鏡所見」である。  \n半月板断裂の典型的な関節鏡画像は、**内側半月板の裂け目や変形が確認できるもの**である。  \n選択肢の中では、**③**が内側半月板の断裂を示す典型的な画像とされている。\n\n答え: c",
+        "time": 1.5755879878997803
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **いびき**、**顔つきの変化**（特に鼻が大きくなった）、**靴が窮屈**、**手根管症候群の手術歴**、**肥満傾向（BMI 24.9）**、**高血圧**、**脂質異常症（LDLが高くHDLが低い）**、**空腹時血糖126mg/dL（糖尿病の閾値）**、**ALPが上昇**。  \n\nこれらの症状と検査結果は、",
+        "time": 3.2296597957611084
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 「同意のない性行為を強要され」  \n- 「警察官に付き添われて受診」  \n- 「診察をすることになった」  \n\n各選択肢を医学的に検討  \na: 性感染症の検査を行う。→ 必要な対応（適切）  \nb: 緊急避妊薬を提案する。→ 必要な対応（適切）  \nc: 婦人科診察について本人の同意を得る。→ 被害者への尊重と法的・倫理的配",
+        "time": 3.132249116897583
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "問題文のキーワードを",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- 10か月の男児  \n- 嘔吐と血便  \n- 意識清明だが不機嫌で激しく泣く  \n- 血液検査所見に異常なし  \n- 腹部エックス線：右上腹部の腸管ガス像がない、腹腔内遊離ガスなし  \n- 腹部超音波：**target sign**（ターゲットサイン）を認める  \n\n**ターゲットサイン**は、**腸閉塞（特に回盲部の閉",
+        "time": 3.254215955734253
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 45歳男性  \n- 労作時の息切れ、全身倦怠感  \n- 過去のサイクリングでの息切れ、軽い労作でも症状  \n- 心雑音の指摘（以前から）  \n- Levine 4/6の収縮期雑音  \n- 心電図：左室高電位、心室期外収縮の3連発  \n- 心エコー：左室拡張末期径60mm、左室駆出率40％、大動脈弁口面積0.65cm²（狭窄の指",
+        "time": 3.29502010345459
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 35歳男性  \n- 咳嗽、発熱、呼吸困難（乾性咳嗽から始まり5日前に発熱と呼吸困難）  \n- 1か月前に築30年の家の掃除を行った  \n- 胸部エックス線写真（A）と胸部単純CT（B）が示されている  \n- 血液所見：好中球74％、CRP 10mg/dL  \n- 血液生化学：LDH 201U/L（基準120～245）  \n- ",
+        "time": 3.317533016204834
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "問題文のキーワードを",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 染色体検査結果に基づく説明のための来院  \n- 面貌異常（切れ上がった目、低い鼻、口外に突き出た舌）  \n- 手掌単一屈曲線、筋緊張低下  \n- 染色体検査結果（問題文に記載されていないが、臨床的に推測可能）  \n\n各選択肢を医学的に検討  \n- **a: 脳性麻痺**：顔貌異常や筋緊張低下は脳性麻痺の兆候となるが、この症例で",
+        "time": 3.182939291000366
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n答え: d",
+        "time": 0.3370370864868164
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **喀痰の増悪**、**喀出困難**、**Gram染色標本**  \n- **高齢者**、**体重減少**、**皮膚のツルゴール低下**  \n- **血液所見：好中球増加、CRP上昇**  \n- **尿素窒素上昇（37mg/dL）**、**血清アルブミン低下（2.7g/dL）**  \n- **補液を開始し、微生物の同定お",
+        "time": 3.2719292640686035
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "問題文のキーワードを",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **2歳の男児**  \n- **テレビの音が大きいことを心配した母親に伴われて来院**  \n- **1週間前：両側の耳痛と鼻汁、2日でおさまった**  \n- **それ以降：呼びかけに応答しないことがしばしばある**  \n- **左鼓膜所見を別に示す（画像あり）**  \n\nこの情報から、**中耳炎や鼓膜の異常**が疑われ",
+        "time": 3.1541457176208496
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 医療職が注射針に刺され、患者の検査結果（HBs抗原陽性、HBs抗体陰性）から患者が**HBV感染者で未感染**であることがわかる。  \n- 医療職の検査結果はHBs抗原・抗体とも陰性で、**HBVに感染していない**。  \n\n各選択肢を医学的に検討  \n- **a: 無投薬** → 患者がHBV感染者で、医療職が未感染のため、",
+        "time": 3.1282689571380615
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **全身倦怠感、発熱、労作時の息切れ**  \n- **血球数の低下（赤血球230万、Hb 6.8g/dL、Ht 20％）**  \n- **血小板減少（1.2万）**  \n- **骨髄生検で著明な低形成所見**  \n\nこの臨床像は、**再生不良性貧血（AA）** または **急性骨髄性白血病（AML）** の可能性が考え",
+        "time": 3.3354623317718506
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "問題文のキーワードを",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- 2か月の女児  \n- けいれん重積 → 心肺停止、対光反射消失、死亡  \n- 母親によると「夜間寝ていてけいれんが始まった」  \n- 母子手帳：妊娠分娩歴に異常なし、1か月健診は受診していない  \n- 顔面・体幹に新旧混在した皮下出血  \n- 死後頭部CT：両側硬膜下血腫、びまん性脳浮腫  \n- 全身X線：左大腿骨骨折",
+        "time": 3.20515775680542
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 左鼻出血、複視（物が二重に見える）  \n- 1か月前から左鼻出血を繰り返し、左鼻閉が悪化  \n- 2日前から複視を自覚  \n- 副鼻腔造影CTとMRIが示されている  \n- 左鼻腔生検で扁平上皮癌を認めた  \n\n各選択肢を医学的に検討  \n- **a: 難聴** → 聴覚障害は直接関係ない。  \n- **b: 眼球突出** →",
+        "time": 3.1285271644592285
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 8歳女児  \n- 著しい掻痒を伴う皮疹（背部以外にも顔面、腹部、肘窩、膝窩など全身に）  \n- 白血球8,600（好酸球12％）  \n- IgE 2,800IU/mL（基準250以下）  \n- 抗原特異的IgE：ハウスダスト、スギ花粉等吸入性抗原に強陽性、食物抗原陰性  \n\nこの臨床像は**アトピー性皮膚炎**や**湿疹様疾患",
+        "time": 3.1621289253234863
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "問題文のキーワードを",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 80歳男性  \n- 左側頭部から左頬部の皮疹（紫紅色斑、拡大・隆起・出血）  \n- 10年前から心房細動で抗凝固薬を服用中  \n- 鳞屑は認めない  \n- 左頸部リンパ節触知  \n\n各選択肢を医学的に検討  \n- **a: 血管肉腫**：良性の血管腫で、通常は痛みや出血を伴わない。  \n- **b: 有棘細胞癌**：悪性腫瘍で",
+        "time": 3.1515309810638428
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 64歳男性  \n- 左半身麻痺 + 意識障害（GCS E4V4M6）  \n- 血圧 164/82 mmHg、脈拍 96/min（不整脈）  \n- 脳MRI（拡散重加权画像）が示されている  \n\n各選択肢を医学的に検討  \n- **a: Atrial fibrillation（心房細動）**：不整脈の記述があり、脳MRIで急性脳",
+        "time": 3.125767946243286
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 下腿浮腫、蛋白尿（3＋）、低アルブミン血症（2.6g/dL）  \n- 腎機能障害（eGFR 33.5mL/分/1.73m2）  \n- IgG上昇（1,100mg/dL）、CRP正常、抗核抗体20倍  \n- 腎生検：PAM染色と蛍光抗体IgG染色の結果が示唆する病態  \n\n各選択肢を医学的に検討  \n- **a: 膜性腎症**：",
+        "time": 3.4450929164886475
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- **発熱**（1週間前から38℃台）  \n- **体重42kg、血圧84/50mmHg**（低血圧）  \n- **尿素窒素24mg/dL、クレアチニン0.7mg/dL**（腎機能は正常）  \n- **Na 129mEq/L**（低ナトリウム血症）  \n- **尿中Na 16mEq/L**（尿ナトリウムが低く、腎臓からの",
+        "time": 3.2005667686462402
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "問題文のキーワードを",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 61歳男性  \n- 右膝痛、一本杖歩行  \n- 大腸癌の手術歴あり、現在抗癌治療中（余命2年以上）  \n- 意識清明  \n- 右膝変形性膝関節症、人工関節置換術の適応  \n- 治療選択肢を問う  \n\n各選択肢の検討  \n- **a: がん治療、膝治療ともに放棄** → 不適。患者は意識清明で余命が2年以上あるため、治療を放棄す",
+        "time": 3.1842596530914307
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認：  \n- 妊娠34週2日  \n- 過去に選択的帝王切開（骨盤位および既往帝王切開の適応）  \n- 骨盤MRI（T2強調矢状断像）  \n\n選択肢を医学的に検討：  \n- **a: 「胎盤の後面に血腫をみとめます」** → 骨盤MRIでは胎盤後方の血腫は通常は検出されにくい。  \n- **b: 「胎盤が内子宮口を覆っています」** → 胎",
+        "time": 3.2235400676727295
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,b,c",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 前胸部痛（3か月前から徐々に増強）  \n- 体温正常、血圧正常、SpO2正常  \n- 心音・呼吸音に異常なし  \n- 胸部エックス線写真（A）と胸部造影CT（B）  \n\n各選択肢を医学的に検討  \n- **a: 胸腺腫**：胸腺は前胸部に位置し、腫瘍が成長すると痛みを引き起こす可能性がある。CTで明確な病変が見られる場合、診断",
+        "time": 3.1245310306549072
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,b,c,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認：  \n- 肝機能障害（ALP、γ-GT上昇）  \n- 肝生検組織の門脈域のH-E染色標本（肝硬変の可能性）  \n- HBs抗原陰性、HCV抗体陰性（ウイルス性肝炎否定）  \n- 肝機能障害の原因として、アルコール、ウイルス性肝炎以外の可能性を考慮  \n\n選択肢を医学的に検討：  \n- **a: IgM高値** → 自己免疫性肝疾患（例",
+        "time": 3.2271668910980225
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "c",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認します。  \n- 38歳女性、腹痛・排便停止・嘔吐・腹部膨満感  \n- 腹部エックス線でハウストラと液面形成（立位像）  \n- 腹部CTで腸管拡張と少量の腹水  \n- 上部消化管内視鏡で4型胃癌を認める  \n- 嘔吐により食事がとれないため入院、末梢輸液開始  \n\nこの患者は**閉塞性腸閉症**を合併した**胃癌**の可能性が高く、栄養",
+        "time": 3.2241830825805664
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "c",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認：  \n- 頸髄損傷（C5～T1程度の可能性）  \n- 筋力：上腕二頭筋・橈側手根伸筋（5）、上腕三頭筋（4）、深指屈筋・小指外転筋（0）  \n- 感覚：尺側、体幹、下肢、肛門周囲の感覚脱失  \n- 体幹筋と下肢筋の収縮なし  \n\n**検討：**  \n- **a: 自己導尿** → 膀胱の感覚が保たれている（肛門周囲感覚脱失はあり、膀胱",
+        "time": 3.161186695098877
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "問題文のキーワードを",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 鼻出血、咳嗽、鼻閉、難聴  \n- 血液所見：赤血球減少、貧血、白血球増加（好中球優勢）  \n- 尿所見：蛋白尿、潜血、赤血球、顆粒円柱  \n- 血液生化学：尿素窒素・クレアチニン上昇（腎機能障害の兆候）  \n- 免疫血清学：CRP上昇、CH50上昇（補体活性亢進）  \n- 胸部X線：両肺野の多発結節影  \n\nこの臨床像は**好",
+        "time": 3.389680862426758
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "問題文のキーワードを",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認  \n- 5歳女児  \n- 高熱（39.6℃）  \n- 咽頭痛、食欲低下  \n- 咳嗽・鼻汁なし  \n- 顔色良好、活気良好  \n- 咽頭発赤・口蓋扁桃白苔  \n- 頸部リンパ節腫脹（4個×1.5cm）  \n- 他の所見に異常なし  \n\n各選択肢を医学的に検討  \n- **a: 川崎病**：高熱、発赤、リンパ節腫脹、皮疹、結膜充血などは",
+        "time": 3.1823232173919678
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "問題文のキーワードを",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認：  \n- 心窩部痛（上腹部痛）  \n- 突然の激痛、動けなくなった  \n- 腹部所見：全体に筋性防御、上腹部圧痛・反跳痛、腸雑音消失  \n- 血液所見：白血球増加（12,200）、CRP軽度上昇  \n- 腹部CT：軟部条件（A）と肺野条件（B）  \n\n### 各選択肢の検討：\n- **a: 絶食**  \n  腹部疾患（特に消化管穿孔や",
+        "time": 3.2691609859466553
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "問題文のキーワードを",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認：  \n- 発熱・意識障害・項部硬直・紫斑・脳脊髄液検査（混濁、細胞数増加、グラム陰性双球菌）  \n→ **流行性脳脊髄膜炎（グラム陰性双球菌感染）** が疑われる。\n\n---\n\n### 選択肢の検討：\n\n**a: 治療の第一選択薬はペニシリンである。**  \n→ グラム陰性双球菌（例：**奈良川菌**）に対してペニシリンは効果的。  ",
+        "time": 3.2929978370666504
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認：  \n- 腹痛、右下腹部痛、圧痛・反跳痛  \n- 血液所見：白血球数上昇（16,200）  \n- 腹部超音波検査：病変不明瞭  \n- 腹部CT画像（横断像A、斜冠状断像B）  \n\n### 各選択肢の検討：\n- **a: 手術**  \n  右下腹部痛、白血球数上昇、圧痛・反跳痛などの症状は急性 appendicitis（盲腸炎）を強く示",
+        "time": 3.305715799331665
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "問題文のキーワードを",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n問題文のキーワードを確認：  \n- 脳梗塞後、右片麻痺  \n- 右上肢脱力（手指随意運動なし）  \n- 痙縮による肘関節屈曲90度、手指屈曲位  \n- 右前脛骨筋0（完全な脱力）  \n- 左上下肢は正常  \n- 立位保持可能、手すり使用で立ち上がれる  \n\n各選択肢を医学的に検討：  \na: 更衣動作訓練 → 右上肢の脱力があるため、自立した更衣が困難。リハビ",
+        "time": 3.250710964202881
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.49706196784973145
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.32150912284851074
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.27161216735839844
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.2728297710418701
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.30356407165527344
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.2695133686065674
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.27384495735168457
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.29285407066345215
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.27166295051574707
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.2770109176635742
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.279634952545166
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.29479098320007324
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb,e",
+        "time": 0.30997180938720703
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc,d",
+        "time": 0.3097689151763916
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne,c",
+        "time": 0.2952289581298828
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.5821771621704102
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.49058008193969727
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.3487391471862793
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.4404571056365967
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.42029905319213867
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.4861030578613281
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.35214686393737793
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.5259218215942383
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.318817138671875
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.44403505325317383
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.407210111618042
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.4617457389831543
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.5636301040649414
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.3670189380645752
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.3801000118255615
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.4007890224456787
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3864421844482422
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.49436497688293457
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3482491970062256
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.46108102798461914
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.5825879573822021
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.5248191356658936
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.5222029685974121
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.37404417991638184
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.6012349128723145
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.32821202278137207
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.36374592781066895
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.4854252338409424
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.4055290222167969
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.32195377349853516
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.39998602867126465
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.35361814498901367
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.41983580589294434
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.47870588302612305
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.4970669746398926
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.3807039260864258
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.31752705574035645
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.4602649211883545
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.364774227142334
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3337850570678711
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.5162186622619629
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.3846871852874756
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.33128809928894043
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.35155677795410156
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.36711907386779785
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.34102821350097656
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.6155498027801514
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.4061620235443115
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.35762691497802734
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne,b",
+        "time": 0.4155118465423584
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd,e",
+        "time": 0.3623960018157959
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd,e",
+        "time": 0.4100828170776367
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd,e",
+        "time": 0.43852710723876953
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na,c",
+        "time": 0.37751102447509766
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne,d",
+        "time": 0.5744922161102295
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.3670783042907715
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na,b,c",
+        "time": 0.4956212043762207
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,d",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na,c,d",
+        "time": 0.4931631088256836
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na,b,d",
+        "time": 0.4911062717437744
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na,c,d",
+        "time": 0.4591989517211914
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}
