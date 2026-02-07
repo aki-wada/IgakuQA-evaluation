@@ -1,0 +1,426 @@
+{
+  "timestamp": "2026-02-07T13:08:53.468418",
+  "model": "qwen/qwen3-32b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 50,
+      "correct": 43,
+      "accuracy": 0.86,
+      "avg_time": 1.6808381795883178,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116B1",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.9225809574127197
+      },
+      {
+        "problem_id": "116B2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.888740062713623
+      },
+      {
+        "problem_id": "116B3",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.0803301334381104
+      },
+      {
+        "problem_id": "116B4",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9805381298065186
+      },
+      {
+        "problem_id": "116B5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.8233389854431152
+      },
+      {
+        "problem_id": "116B6",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.8303639888763428
+      },
+      {
+        "problem_id": "116B7",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.9132559299468994
+      },
+      {
+        "problem_id": "116B8",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8273777961730957
+      },
+      {
+        "problem_id": "116B9",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.924717903137207
+      },
+      {
+        "problem_id": "116B10",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9849231243133545
+      },
+      {
+        "problem_id": "116B11",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8295469284057617
+      },
+      {
+        "problem_id": "116B12",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9206068515777588
+      },
+      {
+        "problem_id": "116B13",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.1095941066741943
+      },
+      {
+        "problem_id": "116B14",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.9287359714508057
+      },
+      {
+        "problem_id": "116B15",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.9133298397064209
+      },
+      {
+        "problem_id": "116B16",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.9832139015197754
+      },
+      {
+        "problem_id": "116B17",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.8414120674133301
+      },
+      {
+        "problem_id": "116B18",
+        "prediction": "喫煙指数は「1日あた",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n喫煙指数は「1日あたりの本数 × 喫煙年数」で計算されます。\n\nこの患者の場合：\n\n- 21歳から45歳まで：24年間、1日20本 → 20 × 24 = 480\n- 45歳から49歳まで：禁煙 → 0 × 4 = 0\n- 49歳から57歳まで：8年間、1日20本 → 20 × 8 = 160\n\n合計喫煙指数：480 + 0 + 160 = **640**\n\n",
+        "time": 8.936099767684937
+      },
+      {
+        "problem_id": "116B19",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8313839435577393
+      },
+      {
+        "problem_id": "116B20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8290419578552246
+      },
+      {
+        "problem_id": "116B21",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.9140381813049316
+      },
+      {
+        "problem_id": "116B22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9792819023132324
+      },
+      {
+        "problem_id": "116B23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.980320930480957
+      },
+      {
+        "problem_id": "116B24",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 1.0212903022766113
+      },
+      {
+        "problem_id": "116B25",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.286808967590332
+      },
+      {
+        "problem_id": "116B26",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.1756751537322998
+      },
+      {
+        "problem_id": "116B27",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.4725971221923828
+      },
+      {
+        "problem_id": "116B28",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.2733290195465088
+      },
+      {
+        "problem_id": "116B29",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.3811891078948975
+      },
+      {
+        "problem_id": "116B30",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.1715319156646729
+      },
+      {
+        "problem_id": "116B31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.266235113143921
+      },
+      {
+        "problem_id": "116B32",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.5796570777893066
+      },
+      {
+        "problem_id": "116B33",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.2702548503875732
+      },
+      {
+        "problem_id": "116B34",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.8239202499389648
+      },
+      {
+        "problem_id": "116B35",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.1919171810150146
+      },
+      {
+        "problem_id": "116B36",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.1696951389312744
+      },
+      {
+        "problem_id": "116B37",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.3681578636169434
+      },
+      {
+        "problem_id": "116B38",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.3705642223358154
+      },
+      {
+        "problem_id": "116B39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.5937328338623047
+      },
+      {
+        "problem_id": "116B40",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 2.746264696121216
+      },
+      {
+        "problem_id": "116B41",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.8290839195251465
+      },
+      {
+        "problem_id": "116B42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 1.7621190547943115
+      },
+      {
+        "problem_id": "116B43",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.9100379943847656
+      },
+      {
+        "problem_id": "116B44",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 2.009183883666992
+      },
+      {
+        "problem_id": "116B45",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.9175910949707031
+      },
+      {
+        "problem_id": "116B46",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 2.236001968383789
+      },
+      {
+        "problem_id": "116B47",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na: α遮断薬",
+        "time": 1.883802890777588
+      },
+      {
+        "problem_id": "116B48",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 2.00258207321167
+      },
+      {
+        "problem_id": "116B49",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.3528919219970703
+      },
+      {
+        "problem_id": "116B50",
+        "prediction": "尿蛋白量（g/日）を",
+        "gold": "21",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\n尿蛋白量（g/日）を求めるには、以下の計算式を使用します：\n\n**1日尿蛋白量（g/日） = 尿蛋白濃度（mg/dL） × 尿クレアチニン濃度（mg/dL） × 尿量（L/日） / 100**\n\nただし、この問題では尿クレアチニンではなく **尿蛋白濃度 × 尿量** で計算するシンプルな方法が使われています。\n\n---\n\n### 計算式：\n**1日尿蛋白量（",
+        "time": 16.803020000457764
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

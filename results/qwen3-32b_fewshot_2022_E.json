@@ -1,0 +1,426 @@
+{
+  "timestamp": "2026-02-07T13:14:19.003866",
+  "model": "qwen/qwen3-32b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 50,
+      "correct": 42,
+      "accuracy": 0.84,
+      "avg_time": 1.351638855934143,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116E1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8269698619842529
+      },
+      {
+        "problem_id": "116E2",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.9865670204162598
+      },
+      {
+        "problem_id": "116E3",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8316211700439453
+      },
+      {
+        "problem_id": "116E4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.8304767608642578
+      },
+      {
+        "problem_id": "116E5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.1712260246276855
+      },
+      {
+        "problem_id": "116E6",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.9142043590545654
+      },
+      {
+        "problem_id": "116E7",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.8179540634155273
+      },
+      {
+        "problem_id": "116E8",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.9190399646759033
+      },
+      {
+        "problem_id": "116E9",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8272268772125244
+      },
+      {
+        "problem_id": "116E10",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8272430896759033
+      },
+      {
+        "problem_id": "116E11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8263232707977295
+      },
+      {
+        "problem_id": "116E12",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8294069766998291
+      },
+      {
+        "problem_id": "116E13",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.8320598602294922
+      },
+      {
+        "problem_id": "116E14",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\n陽性尤度比（LR+）は、感度 ÷ （1 - 特異度）で計算されます。\n\n- 感度 = 84% = 0.84  \n- 特異度 = 96% = 0.96 → （1 - 特異度）= 0.04\n\nLR+ = 0.84 ÷ 0.04 = **21**\n\n**答え: c**",
+        "time": 6.267480850219727
+      },
+      {
+        "problem_id": "116E15",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8292059898376465
+      },
+      {
+        "problem_id": "116E16",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.8216278553009033
+      },
+      {
+        "problem_id": "116E17",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.8270711898803711
+      },
+      {
+        "problem_id": "116E18",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.9291419982910156
+      },
+      {
+        "problem_id": "116E19",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8289539813995361
+      },
+      {
+        "problem_id": "116E20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.0007400512695312
+      },
+      {
+        "problem_id": "116E21",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.0037429332733154
+      },
+      {
+        "problem_id": "116E22",
+        "prediction": "b,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb,d",
+        "time": 0.97536301612854
+      },
+      {
+        "problem_id": "116E23",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9939498901367188
+      },
+      {
+        "problem_id": "116E24",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.824775218963623
+      },
+      {
+        "problem_id": "116E25",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.7943298816680908
+      },
+      {
+        "problem_id": "116E26",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.1996769905090332
+      },
+      {
+        "problem_id": "116E27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.9891479015350342
+      },
+      {
+        "problem_id": "116E28",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.3850960731506348
+      },
+      {
+        "problem_id": "116E29",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb: 急性胆嚢炎",
+        "time": 2.5745790004730225
+      },
+      {
+        "problem_id": "116E30",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.2049736976623535
+      },
+      {
+        "problem_id": "116E31",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.407121181488037
+      },
+      {
+        "problem_id": "116E32",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.08272385597229
+      },
+      {
+        "problem_id": "116E33",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 1.521423101425171
+      },
+      {
+        "problem_id": "116E34",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.199965000152588
+      },
+      {
+        "problem_id": "116E35",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.3038477897644043
+      },
+      {
+        "problem_id": "116E36",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.1263818740844727
+      },
+      {
+        "problem_id": "116E37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.298356056213379
+      },
+      {
+        "problem_id": "116E38",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8977200984954834
+      },
+      {
+        "problem_id": "116E39",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.2181448936462402
+      },
+      {
+        "problem_id": "116E40",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 1.109773874282837
+      },
+      {
+        "problem_id": "116E41",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 2.731764078140259
+      },
+      {
+        "problem_id": "116E42",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8255138397216797
+      },
+      {
+        "problem_id": "116E43",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 2.066237211227417
+      },
+      {
+        "problem_id": "116E44",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.826164960861206
+      },
+      {
+        "problem_id": "116E45",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb: 2点",
+        "time": 4.188636064529419
+      },
+      {
+        "problem_id": "116E46",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.1794822216033936
+      },
+      {
+        "problem_id": "116E47",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb: 25％",
+        "time": 3.957331895828247
+      },
+      {
+        "problem_id": "116E48",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8317418098449707
+      },
+      {
+        "problem_id": "116E49",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 2.734447956085205
+      },
+      {
+        "problem_id": "116E50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 1.1849892139434814
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

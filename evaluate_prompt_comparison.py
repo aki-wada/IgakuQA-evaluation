@@ -357,8 +357,10 @@ def main():
                         help="LM Studio API URL")
     parser.add_argument("--output", type=str, default=None,
                         help="Output JSON file")
-    parser.add_argument("--use-few-shot", action="store_true",
-                        help="Use few-shot examples")
+    parser.add_argument("--use-few-shot", action="store_true", default=True,
+                        help="Use few-shot examples (default: True)")
+    parser.add_argument("--no-few-shot", action="store_true",
+                        help="Disable few-shot examples")
     parser.add_argument("--prompts", type=str, nargs="+",
                         default=list(PROMPTS.keys()),
                         choices=list(PROMPTS.keys()),
@@ -385,8 +387,10 @@ def main():
 
     print(f"Loaded {len(questions)} questions from {data_file}")
 
-    # Load few-shot examples
+    # Load few-shot examples (default: enabled, use --no-few-shot to disable)
     few_shot = None
+    if args.no_few_shot:
+        args.use_few_shot = False
     if args.use_few_shot:
         prompt_file = Path("scripts/prompts/prompt.jsonl")
         if prompt_file.exists():

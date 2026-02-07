@@ -1,0 +1,626 @@
+{
+  "timestamp": "2026-02-07T13:11:02.863655",
+  "model": "qwen/qwen3-32b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 51,
+      "accuracy": 0.68,
+      "avg_time": 1.6194442558288573,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116C1",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9859800338745117
+      },
+      {
+        "problem_id": "116C2",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.9838228225708008
+      },
+      {
+        "problem_id": "116C3",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.824836015701294
+      },
+      {
+        "problem_id": "116C4",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8305819034576416
+      },
+      {
+        "problem_id": "116C5",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.983292818069458
+      },
+      {
+        "problem_id": "116C6",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9924321174621582
+      },
+      {
+        "problem_id": "116C7",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.9809780120849609
+      },
+      {
+        "problem_id": "116C8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.8291888236999512
+      },
+      {
+        "problem_id": "116C9",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.9227080345153809
+      },
+      {
+        "problem_id": "116C10",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.9860789775848389
+      },
+      {
+        "problem_id": "116C11",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.077728033065796
+      },
+      {
+        "problem_id": "116C12",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8311347961425781
+      },
+      {
+        "problem_id": "116C13",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.9153289794921875
+      },
+      {
+        "problem_id": "116C14",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8333930969238281
+      },
+      {
+        "problem_id": "116C15",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8233520984649658
+      },
+      {
+        "problem_id": "116C16",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.8267483711242676
+      },
+      {
+        "problem_id": "116C17",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.1152760982513428
+      },
+      {
+        "problem_id": "116C18",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.7967751026153564
+      },
+      {
+        "problem_id": "116C19",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8334393501281738
+      },
+      {
+        "problem_id": "116C20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8013348579406738
+      },
+      {
+        "problem_id": "116C21",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.0765819549560547
+      },
+      {
+        "problem_id": "116C22",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8304429054260254
+      },
+      {
+        "problem_id": "116C23",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.7443521022796631
+      },
+      {
+        "problem_id": "116C24",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.8298768997192383
+      },
+      {
+        "problem_id": "116C25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.8853728771209717
+      },
+      {
+        "problem_id": "116C26",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8248882293701172
+      },
+      {
+        "problem_id": "116C27",
+        "prediction": "b,c",
+        "gold": "b,c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb,c",
+        "time": 0.8819141387939453
+      },
+      {
+        "problem_id": "116C28",
+        "prediction": "d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nd,e",
+        "time": 0.9697737693786621
+      },
+      {
+        "problem_id": "116C29",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc,d",
+        "time": 0.9767241477966309
+      },
+      {
+        "problem_id": "116C30",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc,e",
+        "time": 0.970026969909668
+      },
+      {
+        "problem_id": "116C31",
+        "prediction": "b,d",
+        "gold": "b,d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb,d",
+        "time": 0.9353652000427246
+      },
+      {
+        "problem_id": "116C32",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd,e",
+        "time": 1.0613188743591309
+      },
+      {
+        "problem_id": "116C33",
+        "prediction": "c,e",
+        "gold": "b,c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc,e",
+        "time": 0.9752099514007568
+      },
+      {
+        "problem_id": "116C34",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na,e",
+        "time": 0.9756276607513428
+      },
+      {
+        "problem_id": "116C35",
+        "prediction": "b,c,e",
+        "gold": "b,c,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb,c,e",
+        "time": 1.1059470176696777
+      },
+      {
+        "problem_id": "116C36",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 1.4437048435211182
+      },
+      {
+        "problem_id": "116C37",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 2.3338098526000977
+      },
+      {
+        "problem_id": "116C38",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.2713677883148193
+      },
+      {
+        "problem_id": "116C39",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.9905211925506592
+      },
+      {
+        "problem_id": "116C40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 2.0274107456207275
+      },
+      {
+        "problem_id": "116C41",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.9089100360870361
+      },
+      {
+        "problem_id": "116C42",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.077976942062378
+      },
+      {
+        "problem_id": "116C43",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.932176113128662
+      },
+      {
+        "problem_id": "116C44",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.197188138961792
+      },
+      {
+        "problem_id": "116C45",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 1.3602287769317627
+      },
+      {
+        "problem_id": "116C46",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.9880838394165039
+      },
+      {
+        "problem_id": "116C47",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na: 亜鉛",
+        "time": 1.592745065689087
+      },
+      {
+        "problem_id": "116C48",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.3634960651397705
+      },
+      {
+        "problem_id": "116C49",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 1.174105167388916
+      },
+      {
+        "problem_id": "116C50",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb: 微弱陣痛",
+        "time": 2.1551578044891357
+      },
+      {
+        "problem_id": "116C51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.4574086666107178
+      },
+      {
+        "problem_id": "116C52",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 1.161275863647461
+      },
+      {
+        "problem_id": "116C53",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.69411039352417
+      },
+      {
+        "problem_id": "116C54",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 1.074185848236084
+      },
+      {
+        "problem_id": "116C55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 2.266036033630371
+      },
+      {
+        "problem_id": "116C56",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na, e",
+        "time": 1.4107561111450195
+      },
+      {
+        "problem_id": "116C57",
+        "prediction": "b,e",
+        "gold": "b,c",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb, e",
+        "time": 1.8302948474884033
+      },
+      {
+        "problem_id": "116C58",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na, b",
+        "time": 1.920006275177002
+      },
+      {
+        "problem_id": "116C59",
+        "prediction": "a,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na, e",
+        "time": 1.3727340698242188
+      },
+      {
+        "problem_id": "116C60",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 3.364985227584839
+      },
+      {
+        "problem_id": "116C61",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.8297128677368164
+      },
+      {
+        "problem_id": "116C62",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9230489730834961
+      },
+      {
+        "problem_id": "116C63",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 3.0998520851135254
+      },
+      {
+        "problem_id": "116C64",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 0.9179360866546631
+      },
+      {
+        "problem_id": "116C65",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 1.2896490097045898
+      },
+      {
+        "problem_id": "116C66",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nc",
+        "time": 2.6161701679229736
+      },
+      {
+        "problem_id": "116C67",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nb",
+        "time": 0.8267359733581543
+      },
+      {
+        "problem_id": "116C68",
+        "prediction": "a,c",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na, c",
+        "time": 0.9400780200958252
+      },
+      {
+        "problem_id": "116C69",
+        "prediction": "a,b",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na, b",
+        "time": 3.585088014602661
+      },
+      {
+        "problem_id": "116C70",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nd",
+        "time": 0.8260998725891113
+      },
+      {
+        "problem_id": "116C71",
+        "prediction": "a,b,c",
+        "gold": "a,b,e",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\na, b, c",
+        "time": 1.0382452011108398
+      },
+      {
+        "problem_id": "116C72",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\nb, e",
+        "time": 3.3210270404815674
+      },
+      {
+        "problem_id": "116C73",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\ne",
+        "time": 0.9876139163970947
+      },
+      {
+        "problem_id": "116C74",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>\n\n</think>\n\na",
+        "time": 0.9898672103881836
+      },
+      {
+        "problem_id": "116C75",
+        "prediction": "この問題では、患児の",
+        "gold": "325",
+        "correct": false,
+        "response": "<think>\n\n</think>\n\nこの問題では、患児の**必要エネルギー量を満たすための静脈栄養投与量（mL）**を求めます。\n\n---\n\n### 【前提条件の整理】\n\n- 患児体重：3,200g = **3.2kg**\n- 必要エネルギー量：**100 kcal/kg/日**\n  - → **3.2 × 100 = 320 kcal/日**\n- 現在の人工乳投与量：\n  - **1回20mL",
+        "time": 26.680685997009277
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+  }
+}

@@ -1,6 +1,6 @@
 # IgakuQA 評価プロジェクト 申し送り
 
-**最終更新**: 2026-02-07（セッション3終了時）
+**最終更新**: 2026-02-07（セッション4終了時）
 **実行環境**: Mac Studio M3 Ultra (192GB RAM)
 **GitHub**: https://github.com/aki-wada/IgakuQA-evaluation
 
@@ -12,7 +12,7 @@
 
 - **評価対象**: 第116回医師国家試験（2022年）A問題 75問（メイン）、全セクション400問（medgemma評価）
 - **合格ライン**: セクションA単独 75%（56/75問）、全セクション総合 75%（300/400問）
-- **評価済みモデル数**: 33モデル（うち合格12モデル、評価失敗8モデル）+ medgemma-27b全セクション評価完了
+- **評価済みモデル数**: 33モデル（うち合格12モデル、評価失敗8モデル）+ medgemma-27b/qwen3-32b全セクション評価完了
 - **最高スコア**: gpt-oss-120b MLX 8bit = **92.0%**（案A, mt=1024）
 
 ---
@@ -34,6 +34,7 @@ IgakuQA/
 ├── results/                        # 評価結果JSON
 │   ├── prompt_comparison_*.json   # v2プロンプト比較結果（33ファイル）
 │   ├── medgemma-27b_*.json        # medgemma全セクション結果（12ファイル）
+│   ├── qwen3-32b_fewshot_2022_{A..F}.json  # qwen3-32b全セクション結果
 │   └── *_evaluation.json          # v1評価結果
 ├── plots/                          # 生成プロット
 │   ├── size_vs_accuracy_scatter.png
@@ -288,12 +289,14 @@ curl -s http://localhost:1234/v1/models | python3 -c \
 - [x] 全4プロンプトにFew-shot追加して再評価 → **Baseline+few-shot = 76.0%が最良**
 - [x] 最適設定で全セクション（B-F）評価 → **総合71.8%で不合格（あと13問）**
 
+### qwen3-32b関連（完了）
+- [x] Baseline+few-shot+mt=512で全セクション(A-F)評価 → **合格（79.3%）**
+
 ### その他
 - [ ] 年度別比較（2018-2022）
 - [ ] カテゴリ別分析（神経科、放射線科など）
 - [ ] 上記未評価モデルの評価
-- [ ] Gitへのコミット・プッシュ（medgemma結果ファイル + few-shot結果ファイルが未コミット）
-- [ ] evaluate_prompt_comparison.py の max_tokens をデフォルトに復元
+- [ ] 他の合格モデル（qwen3-235b, gpt-oss-120b等）の全セクション評価
 
 ---
 
@@ -301,15 +304,10 @@ curl -s http://localhost:1234/v1/models | python3 -c \
 
 ### evaluate_prompt_comparison.py の変更時
 
-**現在のmax_tokensは全て512に変更済み。** 通常モデル評価前に必ずデフォルト値に戻すこと:
-```python
-PROMPTS = {
-    "baseline":          {"max_tokens": 50},
-    "format_strict":     {"max_tokens": 50},
-    "chain_of_thought":  {"max_tokens": 200},
-    "japanese_medical":  {"max_tokens": 50},
-}
-```
+**現在の設定**:
+- max_tokensは全て512に固定済み
+- few-shotはデフォルトで有効（`--no-few-shot`で無効化可能）
+- qwen3モデルは自動的に`/no_think`が追加される
 
 ### 外付けドライブのモデル
 
@@ -328,20 +326,13 @@ python plot_size_vs_accuracy.py
 2. ラベル位置調整: `offset_x`, `offset_y` のカスタマイズ（重なり防止）
 3. バジェットティア: 必要に応じて `budgets` リストにティアを追加
 
-### Git状態（2026-02-07時点）
+### Git状態
 
-**最新コミット**: `e65c64f` - Add v2 prompt comparison: 33 models evaluated, 12 pass (best 92.0%)
-
-未コミットの変更:
-- `EVALUATION_PROGRESS.md` — 変更済み（medgemma全評価結果追記）
-- `HANDOVER.md` — 変更済み（セッション3の結果追記）
-- `evaluate_prompt_comparison.py` — 変更済み（max_tokens=512, 抽出ロジック改善）
-
-未追跡の新規ファイル:
-- `results/medgemma-27b_2022_{B,C,D,E,F}.json` — mt=50での評価結果
-- `results/medgemma-27b_mt512_2022_{A,B,C,D,E,F}.json` — mt=512改変プロンプトでの評価結果
-- `results/medgemma-27b_mt512_fewshot_allprompts_2022_A.json` — 全4プロンプト+few-shot比較結果
-- `results/medgemma-27b_mt512_fewshot_2022_{B,C,D,E,F}.json` — Baseline+few-shotでの全セクション結果
+セッション4でコミット・プッシュ予定。主な変更:
+- `EVALUATION_PROGRESS.md` — qwen3-32b全セクション結果追記
+- `HANDOVER.md` — セッション4の結果追記
+- `evaluate_prompt_comparison.py` — few-shotデフォルト有効化
+- `results/qwen3-32b_fewshot_2022_{A..F}.json` — qwen3-32b全セクション結果
 
 ---
 
@@ -349,13 +340,13 @@ python plot_size_vs_accuracy.py
 
 1. LM Studioでモデルをロード（`lms load "モデルID"`）
 2. APIの疎通確認（`lms status`）
-3. reasoningモデル/MoEモデル/medgemmaの場合、`evaluate_prompt_comparison.py` の max_tokens を変更（512 or 1024）
-4. 評価実行: `python evaluate_prompt_comparison.py --model "モデルID" --year 2022 --section A`
-5. 結果確認: `results/prompt_comparison_モデルID_2022_A.json`
-6. max_tokensを変更した場合はデフォルトに戻す
-7. `EVALUATION_PROGRESS.md` に結果を追記（サマリーテーブル＋詳細セクション）
-8. `plot_size_vs_accuracy.py` にデータ追加＆プロット再生成
-9. 変更履歴を更新
+3. 評価実行: `python evaluate_prompt_comparison.py --model "モデルID" --year 2022 --section A`
+   - few-shotはデフォルト有効、max_tokensは512固定
+   - few-shotなしで評価したい場合: `--no-few-shot` を追加
+4. 結果確認: `results/prompt_comparison_モデルID_2022_A.json`
+5. `EVALUATION_PROGRESS.md` に結果を追記（サマリーテーブル＋詳細セクション）
+6. `plot_size_vs_accuracy.py` にデータ追加＆プロット再生成
+7. 変更履歴を更新
 
 ---
 
@@ -368,8 +359,32 @@ python plot_size_vs_accuracy.py
 - **Phase 3**: 全セクション(A-F)評価 → **287/400 = 71.8% → 不合格（あと13問）**
 - **Phase 4**: EVALUATION_PROGRESS.md更新済み
 
-### 結論: medgemma-27bのmedgemmaの最適設定
+### 結論: medgemma-27bの最適設定
 - **プロンプト**: Baseline（シンプルが最善）
 - **Few-shot**: 必須（思考モード抑制に決定的）
 - **max_tokens**: 512（思考モード対策）
 - **最終スコア**: 71.8%（合格ライン75%に届かず）
+
+## 12. qwen3-32b 全セクション評価（完了）
+
+**評価日**: 2026-02-07（セッション4）
+**条件**: Baseline + 2-shot few-shot + max_tokens=512 + /no_think
+
+| Section | Score | % |
+|---------|-------|------|
+| A | 60/75 | 80.0% |
+| B | 43/50 | 86.0% |
+| C | 51/75 | 68.0% |
+| D | 65/75 | 86.7% |
+| E | 42/50 | 84.0% |
+| F | 56/75 | 74.7% |
+| **Total** | **317/400** | **79.3%** |
+
+**結果: 合格（317/400 = 79.3%）**
+
+### 結論: qwen3-32bの最適設定
+- **プロンプト**: Baseline（シンプルが最善）
+- **Few-shot**: 必須（+10.7%改善）
+- **max_tokens**: 512
+- **/no_think**: 必須（自動付加済み）
+- **最終スコア**: 79.3%（合格）
