@@ -301,11 +301,55 @@ curl -s http://localhost:1234/v1/models | python3 -c \
 - [x] 6バリアント比較 → 動作する3モデルは全て~71%、全不合格
 - [x] 詳細: results/gpt-oss-20b_model_comparison.md
 
+### 全セクション評価（次の優先タスク）
+
+**方針**: Section Aで高得点だったプロンプト（Best Prompt）+ few-shot で、セクションA-Eの全問題を評価する。
+高得点モデルから順に実施。
+
+**実行コマンド例**:
+```bash
+source venv/bin/activate
+
+# 各モデルについて、最適プロンプトのみでA-E評価
+for section in A B C D E; do
+  python evaluate_prompt_comparison.py \
+    --model "モデルID" \
+    --year 2022 \
+    --section $section \
+    --prompts BEST_PROMPT_KEY
+done
+```
+
+**注意**: few-shotはデフォルト有効。gpt-ossモデルは `--max-tokens 1024` が必要。
+
+**優先順位と各モデルの最適プロンプト**:
+
+| 優先度 | モデル | Section A Best | Best Prompt | サイズ | 備考 |
+|--------|--------|---------------|-------------|--------|------|
+| 1 | qwen3-vl-32b | 82.7% | baseline | 19.6GB | |
+| 2 | qwen3-32b | 80.0% | baseline | 18.5GB | B-E baseline済み、他プロンプト追加 |
+| 3 | gpt-oss-20b | 77.3% | format_strict | 12.1GB | mt=1024必須、B-E baseline済み |
+| 4 | mistral-small | 76.0% | baseline | 25.9GB | |
+| 5 | medgemma-27b | 76.0% | baseline | 16.0GB | B-E baseline済み、few-shot必須 |
+| 6 | gemma-3-27b | 74.7% | chain_of_thought | 16.9GB | 合格ライン近い |
+| 7 | qwen3-14b | 73.3% | format_strict | 15.7GB | |
+| 8 | qwen3-vl-30b | 74.7% | baseline | 33.5GB | MoE |
+| 9 | llama-3.3-70b | 68.0% | baseline | 39.7GB | |
+| 10 | Swallow-70b | 81.3% | baseline | 40.4GB | 大規模、要余裕 |
+
+**大規模モデル（外付けドライブ必要）**:
+| モデル | Section A Best | Best Prompt | サイズ |
+|--------|---------------|-------------|--------|
+| gpt-oss-120b MLX | 92.0% | format_strict | 124.2GB |
+| gpt-oss-120b GGUF | 90.7% | japanese_medical | 63.4GB |
+| qwen3-235b-2507 | 88.0% | chain_of_thought | 249.8GB |
+| qwen3-next-80b | 85.3% | japanese_medical | 84.7GB |
+| mistral-large | 77.3% | baseline | 130.3GB |
+
 ### その他
 - [ ] 年度別比較（2018-2022）
 - [ ] カテゴリ別分析（神経科、放射線科など）
-- [ ] 上記未評価モデルの評価
-- [ ] 他の合格モデル（qwen3-235b, gpt-oss-120b等）の全セクション評価
+- [ ] 上記未評価モデルの評価（gemma-3-1b完了: ~20-29%）
 
 ---
 
@@ -337,15 +381,21 @@ python plot_size_vs_accuracy.py
 
 ### Git状態
 
-セッション6でコミット・プッシュ済み。主な変更:
-- `EVALUATION_PROGRESS.md` — 量子化比較・gpt-oss-20bモデル比較結果追記
-- `HANDOVER.md` — セッション6更新
-- `results/gpt-oss-20b_model_comparison.md` — gpt-oss-20b 6バリアント比較詳細
-- `results/gpt-oss-20b-*_2022_{A..F}.json` — gpt-oss-20b各バリアント結果
-- `results/qwen3-32b-4bit_fewshot_2022_{A..F}.json` — qwen3-32b 4bit結果
-- `results/qwen3-vl-8b-{8bit,4bit}_fewshot_2022_{A..F}.json` — qwen3-vl-8b結果
-- `results/qwen3-vl-4b-{8bit,4bit}_fewshot_2022_{A..F}.json` — qwen3-vl-4b結果
-- `plots/` — 量子化比較プロット3枚追加
+セッション6（前半）でコミット・プッシュ済み。後半で追加変更あり（要コミット）:
+
+**コミット済み**:
+- gpt-oss-20bモデル比較結果、量子化比較プロット
+
+**未コミット（セッション6後半）**:
+- `plot_additional.py` — 追加可視化スクリプト（5プロット生成）
+- `plots/model_ranking.png` — 全30モデルランキング棒グラフ
+- `plots/prompt_effectiveness.png` — プロンプト効果ヒートマップ
+- `plots/max_tokens_impact.png` — max_tokens/Few-shot影響グラフ
+- `plots/gpt_oss_20b_variants.png` — gpt-oss-20b 6バリアント比較
+- `plots/section_heatmap_full.png` — 拡張セクションヒートマップ（10モデル）
+- `plots/section_difficulty.png` — セクション難易度分析
+- `results/prompt_comparison_google_gemma-3-1b_2022_{A..E}.json` — gemma-3-1b評価結果
+- `HANDOVER.md` — 次期評価方針（Best Prompt + few-shot、A-E評価）追記
 
 ---
 
