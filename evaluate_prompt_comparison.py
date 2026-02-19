@@ -21,7 +21,7 @@ PROMPTS = {
     "baseline": {
         "name": "Baseline (現行)",
         "system": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
-        "max_tokens": 512
+        "max_tokens": 1024
     },
     "format_strict": {
         "name": "案A: 回答形式強化",
@@ -29,7 +29,7 @@ PROMPTS = {
 問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。
 複数選択の場合はカンマ区切りで回答してください。例: a,c
 余計な説明は不要です。""",
-        "max_tokens": 512
+        "max_tokens": 1024
     },
     "chain_of_thought": {
         "name": "案B: 段階的思考",
@@ -41,7 +41,7 @@ PROMPTS = {
 3. 正解を選択
 
 最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。""",
-        "max_tokens": 512
+        "max_tokens": 1024
     },
     "japanese_medical": {
         "name": "案C: 日本医療文脈",
@@ -54,7 +54,15 @@ PROMPTS = {
 - 指定された個数を必ず選択
 
 回答形式: a または a,b,c（複数の場合）""",
-        "max_tokens": 512
+        "max_tokens": 1024
+    },
+    "answer_first": {
+        "name": "案D: 回答先出し",
+        "system": """あなたは医学の専門家です。
+最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。
+複数選択の場合はカンマ区切りで出力してください。例: a,c
+2行目以降に解説を書いてもかまいません。""",
+        "max_tokens": 1024
     }
 }
 
@@ -123,9 +131,10 @@ def extract_answer(response: str, prompt_key: str = "baseline") -> str:
     if not response or not response.strip():
         return ""
 
-    # qwen3 の <think>...</think> タグを除去
+    # thinking タグを除去（qwen3, nemotron, deepseek 等）
     response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
-
+    # <think> なしで </think> のみのパターン（一部モデル）
+    response = re.sub(r'^.*?</think>', '', response, flags=re.DOTALL).strip()
     # medgemma の <unused94>thought 思考タグを除去
     response = re.sub(r'<unused\d+>thought.*', '', response, flags=re.DOTALL).strip()
 
@@ -183,23 +192,31 @@ def call_lmstudio(
     model: str,
     max_tokens: int = 50,
     base_url: str = "http://localhost:1234/v1",
-    timeout: int = 120
-) -> str:
-    """LM Studio APIを呼び出し"""
+    timeout: int = 120,
+    reasoning_effort: str = ""
+) -> dict:
+    """LM Studio APIを呼び出し。content と reasoning を分離して返す。"""
     try:
+        payload = {
+            "model": model,
+            "messages": messages,
+            "temperature": 0,
+            "max_tokens": max_tokens,
+            "stream": False
+        }
+        if reasoning_effort:
+            payload["reasoning"] = {"effort": reasoning_effort}
         response = requests.post(
             f"{base_url}/chat/completions",
-            json={
-                "model": model,
-                "messages": messages,
-                "temperature": 0,
-                "max_tokens": max_tokens,
-                "stream": False
-            },
+            json=payload,
             timeout=timeout
         )
         data = response.json()
-        return data["choices"][0]["message"]["content"]
+        msg = data["choices"][0]["message"]
+        return {
+            "content": msg.get("content", ""),
+            "reasoning": msg.get("reasoning", "")
+        }
     except requests.exceptions.Timeout:
         raise TimeoutError("API timeout")
     except Exception as e:
@@ -236,9 +253,12 @@ def evaluate_with_prompt(
 
         try:
             start = time.time()
-            response = call_lmstudio(messages, model, max_tokens, base_url)
+            result_data = call_lmstudio(messages, model, max_tokens, base_url)
             elapsed = time.time() - start
             times.append(elapsed)
+
+            response = result_data["content"] or ""
+            reasoning = result_data.get("reasoning", "")
 
             if not response or not response.strip():
                 result.empty_responses += 1
@@ -251,14 +271,17 @@ def evaluate_with_prompt(
             if is_correct:
                 result.correct += 1
 
-            details.append({
+            detail = {
                 "problem_id": q["problem_id"],
                 "prediction": prediction,
                 "gold": ",".join(gold),
                 "correct": is_correct,
                 "response": response[:200] if response else "",
                 "time": elapsed
-            })
+            }
+            if reasoning:
+                detail["reasoning"] = reasoning[:500]
+            details.append(detail)
 
             if verbose:
                 status = "✓" if is_correct else "✗"

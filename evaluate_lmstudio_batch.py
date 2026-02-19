@@ -79,8 +79,22 @@ def create_question_text(question: dict) -> str:
     return text
 
 
+def strip_thinking(response: str) -> str:
+    """thinking タグを除去して回答部分のみ返す"""
+    # <think>...</think> ペアタグ（qwen3, deepseek 等）
+    response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
+    # <think> なしで </think> のみのパターン（nemotron 等）
+    response = re.sub(r'^.*?</think>', '', response, flags=re.DOTALL).strip()
+    # medgemma の <unused94>thought 思考タグ
+    response = re.sub(r'<unused\d+>thought.*', '', response, flags=re.DOTALL).strip()
+    return response
+
+
 def extract_answer(response: str) -> str:
     """回答から選択肢を抽出"""
+    response = strip_thinking(response)
+    if not response:
+        return ""
     response = response.lower()
     # 全角→半角
     response = response.replace('ａ', 'a').replace('ｂ', 'b').replace('ｃ', 'c')
@@ -96,8 +110,8 @@ def extract_answer(response: str) -> str:
     return response.strip()[:10]
 
 
-def call_lmstudio(messages: list, model: str, base_url: str = "http://localhost:1234/v1", timeout: int = 60) -> str:
-    """LM Studio APIを呼び出し"""
+def call_lmstudio(messages: list, model: str, base_url: str = "http://localhost:1234/v1", timeout: int = 60) -> dict:
+    """LM Studio APIを呼び出し。content と reasoning を分離して返す。"""
     try:
         response = requests.post(
             f"{base_url}/chat/completions",
@@ -111,7 +125,11 @@ def call_lmstudio(messages: list, model: str, base_url: str = "http://localhost:
             timeout=timeout
         )
         data = response.json()
-        return data["choices"][0]["message"]["content"]
+        msg = data["choices"][0]["message"]
+        return {
+            "content": msg.get("content", ""),
+            "reasoning": msg.get("reasoning", "")
+        }
     except requests.exceptions.Timeout:
         raise TimeoutError("API timeout")
     except Exception as e:
@@ -142,10 +160,11 @@ def evaluate_model(
 
         try:
             start = time.time()
-            response = call_lmstudio(messages, model, base_url)
+            result_data = call_lmstudio(messages, model, base_url)
             elapsed = time.time() - start
             times.append(elapsed)
 
+            response = result_data["content"] or ""
             prediction = extract_answer(response)
             gold = sorted(q['answer'])
             pred = sorted(prediction.split(','))

@@ -84,8 +84,22 @@ def format_single_question(question: dict) -> str:
     return text
 
 
+def strip_thinking(response: str) -> str:
+    """thinking タグを除去して回答部分のみ返す"""
+    # <think>...</think> ペアタグ（qwen3, deepseek 等）
+    response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
+    # <think> なしで </think> のみのパターン（nemotron 等）
+    response = re.sub(r'^.*?</think>', '', response, flags=re.DOTALL).strip()
+    # medgemma の <unused94>thought 思考タグ
+    response = re.sub(r'<unused\d+>thought.*', '', response, flags=re.DOTALL).strip()
+    return response
+
+
 def extract_answer(response: str) -> str:
     """LLMの回答から選択肢を抽出"""
+    response = strip_thinking(response)
+    if not response:
+        return ""
     # 全角を半角に変換
     response = response.lower()
     response = response.replace('ａ', 'a').replace('ｂ', 'b').replace('ｃ', 'c')
@@ -203,7 +217,8 @@ class LMStudioProvider(LLMProvider):
             temperature=0,
             max_tokens=100
         )
-        return response.choices[0].message.content
+        # reasoning フィールドがある場合は content のみ返す（thinking は分離済み）
+        return response.choices[0].message.content or ""
 
 
 def get_provider(provider_name: str, model: str, **kwargs) -> LLMProvider:
