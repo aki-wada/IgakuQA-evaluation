@@ -131,12 +131,16 @@ def extract_answer(response: str, prompt_key: str = "baseline") -> str:
     if not response or not response.strip():
         return ""
 
-    # thinking タグを除去（qwen3, nemotron, deepseek 等）
-    response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
-    # <think> なしで </think> のみのパターン（一部モデル）
-    response = re.sub(r'^.*?</think>', '', response, flags=re.DOTALL).strip()
+    # thinking タグを除去（qwen3, nemotron, deepseek, seed:think 等）
+    response = re.sub(r'<(?:\w+:)?think>.*?</(?:\w+:)?think>', '', response, flags=re.DOTALL).strip()
+    # </think> or </seed:think> のみのパターン（一部モデル）
+    response = re.sub(r'^.*?</(?:\w+:)?think>', '', response, flags=re.DOTALL).strip()
+    # 未閉じ <think> or <seed:think>（max_tokensで切断されたケース）
+    response = re.sub(r'<(?:\w+:)?think>.*', '', response, flags=re.DOTALL).strip()
     # medgemma の <unused94>thought 思考タグを除去
     response = re.sub(r'<unused\d+>thought.*', '', response, flags=re.DOTALL).strip()
+    # LLM special tokens 以降を除去（phi-4等が回答後に架空会話を生成するケース）
+    response = re.sub(r'<\|(?:end|im_end|im_sep|endoftext|eot_id)[^>]*\|>.*', '', response, flags=re.DOTALL).strip()
 
     if not response:
         return ""

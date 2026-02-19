@@ -86,12 +86,16 @@ def format_single_question(question: dict) -> str:
 
 def strip_thinking(response: str) -> str:
     """thinking タグを除去して回答部分のみ返す"""
-    # <think>...</think> ペアタグ（qwen3, deepseek 等）
-    response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
-    # <think> なしで </think> のみのパターン（nemotron 等）
-    response = re.sub(r'^.*?</think>', '', response, flags=re.DOTALL).strip()
+    # <think>...</think> or <seed:think>...</seed:think> ペアタグ（qwen3, deepseek 等）
+    response = re.sub(r'<(?:\w+:)?think>.*?</(?:\w+:)?think>', '', response, flags=re.DOTALL).strip()
+    # </think> or </seed:think> のみのパターン（nemotron 等）
+    response = re.sub(r'^.*?</(?:\w+:)?think>', '', response, flags=re.DOTALL).strip()
+    # 未閉じ <think> or <seed:think>（max_tokensで切断されたケース）
+    response = re.sub(r'<(?:\w+:)?think>.*', '', response, flags=re.DOTALL).strip()
     # medgemma の <unused94>thought 思考タグ
     response = re.sub(r'<unused\d+>thought.*', '', response, flags=re.DOTALL).strip()
+    # LLM special tokens 以降を除去（phi-4等が回答後に架空会話を生成するケース）
+    response = re.sub(r'<\|(?:end|im_end|im_sep|endoftext|eot_id)[^>]*\|>.*', '', response, flags=re.DOTALL).strip()
     return response
 
 
