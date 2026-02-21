@@ -284,13 +284,14 @@ plt.savefig('plots/max_tokens_impact.png', dpi=150, bbox_inches='tight')
 plt.close()
 print("  Saved: plots/max_tokens_impact.png")
 
-# ========== Figure 4: gpt-oss-20b Variant Comparison ==========
+# ========== Figure 4: gpt-oss-20b Variant Comparison (incl. Swallow FT) ==========
 print("Generating: gpt_oss_20b_variants.png ...")
 
-fig4, (ax4a, ax4b) = plt.subplots(1, 2, figsize=(16, 7))
+fig4, (ax4a, ax4b) = plt.subplots(1, 2, figsize=(16, 8))
 
-# --- Left: Section-level comparison of 3 working variants ---
+# --- Left: Section-level comparison of working variants (incl. Swallow FT) ---
 variants = [
+    ("Swallow-20B\nvLLM-MLX (~45GB)", [80.0, 84.0, 61.3, 88.0, 80.0, 76.0], 77.8, "#F44336"),
     ("openai @8bit\nMLX (22.26GB)", [76.0, 78.0, 65.3, 76.0, 74.0, 58.7], 71.5, "#1976D2"),
     ("openai @mxfp4\nGGUF (12.11GB)", [76.0, 74.0, 65.3, 77.3, 74.0, 61.3], 71.0, "#FF9800"),
     ("mlx-community\nQ8 (12.10GB)", [74.7, 80.0, 62.7, 74.7, 72.0, 64.0], 71.0, "#4CAF50"),
@@ -298,10 +299,10 @@ variants = [
 
 sections = ["A", "B", "C", "D", "E", "F"]
 x = np.arange(len(sections))
-width = 0.25
+width = 0.2
 
 for i, (name, scores, total, color) in enumerate(variants):
-    offset = (i - 1) * width
+    offset = (i - 1.5) * width
     bars = ax4a.bar(x + offset, scores, width, label=f'{name} ({total}%)',
                     color=color, edgecolor='black', linewidth=0.3, alpha=0.85)
 
@@ -311,13 +312,14 @@ ax4a.set_xticklabels(sections, fontsize=12)
 ax4a.set_xlabel('Section', fontsize=11)
 ax4a.set_ylabel('Accuracy (%)', fontsize=11)
 ax4a.set_title('Working Variants: Section-Level Comparison', fontsize=12, fontweight='bold')
-ax4a.set_ylim(50, 90)
-ax4a.legend(fontsize=8, loc='lower left')
+ax4a.set_ylim(50, 95)
+ax4a.legend(fontsize=7, loc='lower left')
 ax4a.grid(True, alpha=0.3, axis='y')
 ax4a.set_axisbelow(True)
 
-# --- Right: All 6 variants overview ---
+# --- Right: All 7 variants overview (incl. Swallow FT) ---
 all_variants = [
+    ("Swallow-20B\nvLLM-MLX", 45.0, 77.8, "#F44336", "PASS"),
     ("openai @8bit\nMLX", 22.26, 71.5, "#1976D2", "OK"),
     ("openai @mxfp4\nGGUF", 12.11, 71.0, "#FF9800", "OK"),
     ("mlx-community\nMXFP4-Q8", 12.10, 71.0, "#4CAF50", "OK"),
@@ -338,7 +340,10 @@ bars_r = ax4b.barh(y_pos, var_accs, color=var_colors, edgecolor='black',
 ax4b.axvline(x=75, color='red', linestyle='--', linewidth=1.5, alpha=0.6, label='Pass Line')
 
 for i, (acc, size, status) in enumerate(zip(var_accs, var_sizes, [v[4] for v in all_variants])):
-    if status == "OK":
+    if status == "PASS":
+        ax4b.text(acc + 1, i, f'{acc}%  (~{size:.0f}GB)  PASS', va='center',
+                  fontsize=9, fontweight='bold', color='#1B5E20')
+    elif status == "OK":
         ax4b.text(acc + 1, i, f'{acc}%  ({size:.1f}GB)', va='center',
                   fontsize=9, fontweight='bold', color='#1B5E20')
     else:
@@ -348,19 +353,24 @@ for i, (acc, size, status) in enumerate(zip(var_accs, var_sizes, [v[4] for v in 
 ax4b.set_yticks(y_pos)
 ax4b.set_yticklabels(var_names, fontsize=9)
 ax4b.set_xlabel('Accuracy (%)', fontsize=11)
-ax4b.set_title('All 6 Variants: Format/Quantization Impact', fontsize=12, fontweight='bold')
-ax4b.set_xlim(0, 95)
+ax4b.set_title('All Variants: Format/Quantization/FT Impact', fontsize=12, fontweight='bold')
+ax4b.set_xlim(0, 100)
 ax4b.invert_yaxis()
 ax4b.legend(fontsize=9)
 ax4b.grid(True, alpha=0.3, axis='x')
 ax4b.set_axisbelow(True)
 
-# Divider between working and broken
-ax4b.axhline(y=2.5, color='red', linewidth=1.5, linestyle='-', alpha=0.5)
-ax4b.text(45, 2.7, 'MLX Q4 breaks reasoning', fontsize=8, color='#B71C1C',
+# Divider between Swallow FT and base variants
+ax4b.axhline(y=0.5, color='#F44336', linewidth=1.5, linestyle='-', alpha=0.5)
+ax4b.text(50, 0.7, 'Swallow JP Fine-Tune (+6.8%)', fontsize=8, color='#B71C1C',
           style='italic', ha='center')
 
-plt.suptitle('gpt-oss-20b: Format & Quantization Variant Comparison (400 Questions)',
+# Divider between working and broken
+ax4b.axhline(y=3.5, color='red', linewidth=1.5, linestyle='-', alpha=0.5)
+ax4b.text(50, 3.7, 'MLX Q4 breaks reasoning', fontsize=8, color='#B71C1C',
+          style='italic', ha='center')
+
+plt.suptitle('gpt-oss-20b Family: Variant Comparison (400 Questions)',
              fontsize=14, fontweight='bold')
 plt.tight_layout()
 plt.savefig('plots/gpt_oss_20b_variants.png', dpi=150, bbox_inches='tight')

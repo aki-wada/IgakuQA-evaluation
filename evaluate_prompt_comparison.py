@@ -131,6 +131,15 @@ def extract_answer(response: str, prompt_key: str = "baseline") -> str:
     if not response or not response.strip():
         return ""
 
+    # Harmony 形式: <|channel|>final<|message|> 以降を最終回答として抽出
+    # （vllm-mlx の GPT-OSS 系モデルが返す形式。analysis 部分を除去し final のみ使用）
+    harmony_final = re.search(
+        r'<\|channel\|>\s*final\s*<\|message\|>(.*)',
+        response, flags=re.DOTALL
+    )
+    if harmony_final:
+        response = harmony_final.group(1).strip()
+
     # thinking タグを除去（qwen3, nemotron, deepseek, seed:think 等）
     response = re.sub(r'<(?:\w+:)?think>.*?</(?:\w+:)?think>', '', response, flags=re.DOTALL).strip()
     # </think> or </seed:think> のみのパターン（一部モデル）

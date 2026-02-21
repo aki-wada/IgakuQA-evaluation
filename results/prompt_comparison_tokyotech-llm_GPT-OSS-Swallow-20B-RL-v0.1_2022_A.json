@@ -1,0 +1,3075 @@
+{
+  "timestamp": "2026-02-21T15:47:33.203379",
+  "model": "tokyotech-llm/GPT-OSS-Swallow-20B-RL-v0.1",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 47,
+      "accuracy": 0.6266666666666667,
+      "avg_time": 13.655341421763103,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 60,
+      "accuracy": 0.8,
+      "avg_time": 11.16972299893697,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 35,
+      "accuracy": 0.4666666666666667,
+      "avg_time": 13.939507004419962,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 41,
+      "accuracy": 0.5466666666666666,
+      "avg_time": 12.322669820785523,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "answer_first",
+      "prompt_name": "案D: 回答先出し",
+      "total": 75,
+      "correct": 52,
+      "accuracy": 0.6933333333333334,
+      "avg_time": 21.75030939102173,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about hypertension due to sleep apnea syndrome (sleep apnea). The question: \"睡眠時無呼吸症候群による高血圧について、正しくないのはどれか。\" Whi",
+        "time": 6.720585107803345
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: In late pregnancy, vaginal discharge bacterial culture positive for Group B Streptococcus (GBS). When to start intrapartum antibioti",
+        "time": 5.932269096374512
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "中心性漿液性脈絡網膜",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about central serous chorioretinopathy (CSC). The question: \"中心性漿液性脈絡網膜症について誤っているのはどれか。\" Which statement is false.\n\nOptions:\n",
+        "time": 7.117050886154175
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which oral medication is most likely to cause hypoglycemia as a single agent? Options: DPP-4 inhibitor, SGLT2 inhibitor, biguanide (metformin), sulfony",
+        "time": 2.3774430751800537
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question about adult heart transplantation in Japan. Options a-e. Need to know correct statement.\n\nLet's recall data: In Japan, heart transpla",
+        "time": 22.34624719619751
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"高カリウム血症の原因となるのはどれか。\" Options: a: β刺激薬, b: インスリン, c: ループ利尿薬, d: グリチルリチン, e: レニン・アンジオテンシン系抑制薬. Which causes hyperkalemia? Let's recall: Hyperkalemia cau",
+        "time": 7.370926856994629
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"逆流性食道炎の誘因とならないのはどれか。\" Which is not a risk factor for reflux esophagitis (gastroesophageal reflux disease). Options: a: 肥満 (obesity)",
+        "time": 8.465907096862793
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "心サルコイドーシスで",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: In a patient with heart failure, which finding does NOT correspond to cardiac sarcoidosis? Options:\n\na: AV block\nb: Persistent ventr",
+        "time": 5.023852825164795
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which is NOT a risk factor for osteonecrosis (avascular necrosis). Options: a: alcohol consumption, b: decompression sickness (減圧症), c: radiation thera",
+        "time": 28.12973690032959
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"全身性強皮症による続発性Raynaud現象の特徴はどれか。\" Which is a characteristic of secondary Raynaud phenomenon due to systemic sclerosis (scleroderma). O",
+        "time": 9.550425052642822
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese: \"自閉スペクトラム症の特徴でないのはどれか。\" Which is NOT a characteristic of autism spectrum disorder.\n\nOptions:\na: 男児に多い。 (more com",
+        "time": 4.1724700927734375
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"急激な血圧上昇を認める患者で、高血圧緊急症の病態として考えにくいのはどれか。\" Which condition is unlikely to be a hypertensive emergency (i.e., severe hypertension with ",
+        "time": 6.971973180770874
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,b,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: about vascular dementia (cerebrovascular dementia). Choose two correct statements among options a-e.\n\nWe need to know facts:\n\nVascul",
+        "time": 27.721853733062744
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c",
+        "gold": "c,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple-choice question: \"病原体と悪性腫瘍の組合せで正しいのはどれか。2つ選べ。\" Choose two correct pairings of pathogen and malignant tumor.\n\nOptions:\n\na: ヒトパピローマウイルス (HPV) -",
+        "time": 6.585543155670166
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"急性腎障害の診断に用いられる指標はどれか。2つ選べ。\" Options: a: 尿蛋白量 (urine protein amount), b: 腎の長径 (renal length), c: 時間尿量 (urine volume over time), d: 尿",
+        "time": 28.164583206176758
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: 76-year-old woman with newly diagnosed diabetes (high blood glucose, HbA1c 10.2), proteinuria, diabetic retinopathy, etc. They ask: \"本",
+        "time": 7.370063781738281
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 6-month-old boy with hemophilia A (deficiency of factor VIII). He fell from a bed, now vomiting, lethargic, poor perfusion, hypotension 86/56, tachycardic, tach",
+        "time": 6.206776857376099
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 23-year-old man with excessive daytime sleepiness, sudden sleep attacks, cataplexy (sudden loss of muscle tone after strong emotions like laughter or surprise).",
+        "time": 8.100848197937012
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 62-year-old woman, post catheter ablation for paroxysmal atrial fibrillation 7 days ago, discharged 3 days ago. Now 3 days after discharge (so 7 days after abla",
+        "time": 8.73186206817627
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 64-year-old man with dyspnea, left chest pain, dyspnea worsening over 4 days. Physical exam: vitals normal, SpO2 92% RA, no breath sounds on ",
+        "time": 7.768463134765625
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 73-year-old man, underwent endoscopic stone removal of common bile duct stones (endoscopic sphincterotomy? Probably ERCP with stone extraction). 3 hours later, ",
+        "time": 24.341130018234253
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old male with renal dysfunction, family history of mother and uncle on dialysis. Labs: BUN 28, creatinine 1.5 (elevated). MRI abdomen with fat-suppresse",
+        "time": 7.732212066650391
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 38-year-old man with subcutaneous bleeding, leukopenia, thrombocytopenia, blasts in blood: 9% blasts, 60% promyelocytes? Actually \"前骨髄球\" = promyelocytes? In Jap",
+        "time": 6.622300148010254
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case: 45-year-old man, hoarseness (嗄声) for 2 years, no trigger, chronic cough, sensation of foreign body in throat. No smoking/alcohol. Laryngosc",
+        "time": 19.524063110351562
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 13-year-old girl, basketball game, ate a bento with squid (イカ) about 1 hour before game, hasn't eaten squid for a year. After 10 minutes of game, she had malais",
+        "time": 12.665250778198242
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question. 30-year-old male, work performance decline, remote work due to COVID, stress from noise, childcare, irritability, started drinking alco",
+        "time": 3.659147024154663
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 81yo male with COPD exacerbation, now acute respiratory distress? He has fever 38.3, WBC 9800 normal, CRP 4.0 moderate. ABG: pH 7.33 (acidic), ",
+        "time": 6.549232006072998
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 23-year-old man with acute hepatitis signs: jaundice, elevated AST/ALT >1000, bilirubin 8.1, LD 423 (slightly high), ALP modestly high, gamma GT high. He has da",
+        "time": 3.849468946456909
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 40-year-old man with difficulty writing (agraphia? dysgraphia). He has writing difficulty, specifically when asked to write with a pencil, the proximal interpha",
+        "time": 5.836405992507935
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 42-year-old man with acute onset of right lower quadrant pain, migratory from right upper quadrant? Actually description: after breakfast, felt tension in right",
+        "time": 19.96343994140625
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 48-year-old woman with polyuria, polydipsia, fatigue, recent fever and abdominal pain 5 days ago. Urine: glucose 3+, ketones 3+, no protein, no blood. Labs: blo",
+        "time": 28.270050048828125
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "この児は心エコーで右",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a newborn boy, 10 hours old, born at 39 weeks, weight 2960g, Apgar 7 at 1 min, 8 at 5 min. Initially no cyanosis, but at 10 hours, nurse notices cyanosis, reports",
+        "time": 8.943557977676392
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 73yo male with left calf pain on walking, intermittent claudication, now shorter distance. ABI left 0.65 (low), right 0.91 (borderline). He h",
+        "time": 15.19327998161316
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question. It's about a newborn at birth, 40 weeks, weight 3020g, Apgar 8/9, normal. Midwife noticed external genitalia characteristics and report",
+        "time": 15.121471166610718
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "免疫チェックポイント",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 52-year-old man with fatigue, after immunotherapy (immune checkpoint inhibitor) for lung adenocarcinoma. He now has signs of adrenal insufficiency? Let's examin",
+        "time": 9.014375925064087
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 63-year-old man with abdominal pain, abdominal distension, umbilical hernia (umbilical bulge) that was present for 2 years, previously disappeared when lying do",
+        "time": 13.952787160873413
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 72-year-old woman with thrombocytopenia (platelets 5.6k then 4.7k), hemolysis? Labs: anemia Hb 6.1, Ht 26% (but Ht low? Actually Ht 26% seems high for Hb 6.1? m",
+        "time": 9.037623882293701
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: 62-year-old male undergoing left hemicolectomy for descending colon cancer. Past history: at age 28, peritonitis due to appendicitis, h",
+        "time": 9.195838928222656
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 20-year-old woman with multiple dark brown papules on abdomen, neck, axilla, rib cage, inframammary, inguinal areas. No itching. Mother also had similar rash fr",
+        "time": 5.743633985519409
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 15-year-old boy with rhabdomyolysis (muscle pain, dark urine, high CK, myoglobinuria). Also AST/ALT high due to muscle breakdown. He had exertional heat illness",
+        "time": 12.356844186782837
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "この症例は、鼓膜に異",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 45-year-old man with sudden onset of unilateral hearing loss and tinnitus, no vertigo, normal tympanic membrane, normal MRI. This sounds like sudden sensorineur",
+        "time": 4.337945938110352
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case. 36-year-old woman, 36 weeks 4 days gestation, presenting with abdominal pain. Findings: height 152 cm, weight 68 kg (BMI ~29). Temp 36.8, p",
+        "time": 28.18057608604431
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 28-year-old male with multiple gastric and duodenal ulcers, history of duodenal ulcer, prior pituitary adenoma resection at 25, now presenting with melena, anem",
+        "time": 19.78298783302307
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old woman with amenorrhea since age 14 (since 14 years old). She had irregular menses from 13, then amenorrhea from 14 onward. She has primary amenorrhe",
+        "time": 13.017051219940186
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: 38yo woman with right knee pain, MRI shows medial meniscus tear. Arthroscopy images (①～⑤) are shown (not provided). The question: which",
+        "time": 14.490186214447021
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 53-year-old man with snoring, facial changes (enlarged nose, changed facial appearance), recent shoe tightness (maybe foot enlargement?), history of carpal tunn",
+        "time": 9.542949676513672
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 32-year-old woman, forced non-consensual sexual intercourse (rape) last night, now presenting with police accompaniment. Police gave explanation of the incident",
+        "time": 26.678972244262695
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 10-month-old boy, vomiting, bloody stool, right upper quadrant mass, target sign on ultrasound, no free air, no peritonitis signs. This suggest",
+        "time": 21.834124088287354
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 45-year-old man with progressive exertional dyspnea, fatigue, history of murmur, now severe aortic stenosis? Findings: aortic valve is bicuspid",
+        "time": 4.254281044006348
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 35yo male, cough, fever, dyspnea. 3 weeks dry cough, 5 days fever and dyspnea. 1 month ago cleaned a 30-year-old house. So possible hypersensit",
+        "time": 15.62996506690979
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 14-day-old boy, with facial anomalies: \"切れ上がった目、平坦で低い鼻、口外に突き出た舌などの顔貌異常\" (cleft palate? Actually \"切れ上がった目\" maybe upslanting eyes? \"平坦で低い鼻\" flat low nose, \"口外に突き出",
+        "time": 18.786845207214355
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 19-year-old male exposed to NaOH (sodium hydroxide) solution to right eye. This is a chemical burn, alkaline. Immediate management: irrigation with copious wate",
+        "time": 2.635870933532715
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 76-year-old male, post-gastric cancer surgery (total gastrectomy) 8 years ago, now weight loss, sputum production for 5 years, now increased sputum and difficul",
+        "time": 28.31558322906494
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 2-year-old boy, mother concerned about louder TV volume. He had bilateral ear pain and nasal discharge a week ago, resolved in 2 days. Since then, often does no",
+        "time": 7.991878271102905
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a medical scenario: 24-year-old healthcare worker accidentally sticks with needle from a patient who is HBsAg positive (HBsAg +), anti-HBs negative, anti-HCV nega",
+        "time": 4.785126209259033
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 18-year-old male with pancytopenia: severe anemia (Hb 6.8), leukopenia (WBC 1400, lymphocytes high proportion), thrombocytopenia (12,000). Bone marrow biopsy sh",
+        "time": 11.06310772895813
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 2-month-old girl, seizure status epilepticus, cardiac arrest, no pulse, no pupillary reflex, resuscitation unsuccessful, death. Physical exam: mixed old and new",
+        "time": 5.719177007675171
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 69-year-old man with left nasal bleeding, diplopia, worsening nasal obstruction. Imaging shows presumably a tumor in the left maxillary sinus? They mention left",
+        "time": 23.61876606941223
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a pediatric patient 8-year-old girl with severe pruritic rash, widespread, with eosinophilia 12% (normal up to ~6-7%), high IgE 2800 IU/mL, positive specific IgE ",
+        "time": 7.655604124069214
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 80-year-old man, left temporal region to left cheek rash. 3 months ago, a purple-red macule appeared on left temporal region, gradually enlar",
+        "time": 12.975293397903442
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 64-year-old man, left hemiplegia with impaired consciousness, GCS 4+4+6=14? Actually GCS E4 V4 M6 = 14, mild decreased consciousness. BP 164/",
+        "time": 5.3962390422821045
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 58yo woman, new proteinuria, edema, nephrotic range proteinuria (3+). Labs: low albumin 2.6, high cholesterol 213, eGFR 33.5 (CKD stage 3). Uri",
+        "time": 10.48731803894043
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "この患者は低ナトリウ",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 78-year-old woman with fever 38°C for a week, fatigue, hypotension (84/50), tachycardic? pulse 92, mild. Labs: BUN 24, Cr 0.7 (normal), Na 129 (hyponatremia), K",
+        "time": 22.897386074066162
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 61-year-old man with right knee pain, severe varus deformity, limited ROM, radiographic OA, indicated for total knee arthroplasty (TKA). He had colon cancer sur",
+        "time": 8.88123106956482
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case. 35yo multiparous, prior cesarean sections (selective C-section for breech and previous C-section). At 34w2d, regular uterine contractions, ",
+        "time": 25.87082576751709
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case: 34-year-old woman, anterior chest pain gradually worsening over 3 months. Physical exam normal. Chest X-ray and contrast CT images (not pro",
+        "time": 24.241461992263794
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 44-year-old woman, liver function abnormal: ALP 238 (elevated), γ-GT 266 (elevated). AST/ALT mild elevation (26,32). No jaundice. No risk factors. Histology: \"門",
+        "time": 12.662682294845581
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 38-year-old woman with abdominal pain, constipation, vomiting, abdominal distension, increased bowel sounds, hard mass in Douglas pouch, abdo",
+        "time": 18.464208126068115
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old male with cervical spinal cord injury, 8 weeks post-injury (subacute). He fell from height, now at 8 weeks. Manual muscle testing (MMT) results: bot",
+        "time": 28.230557918548584
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 68yo male with nasal bleeding, cough, nasal obstruction, hearing loss, bilateral tympanic membrane redness/swelling, proteinuria, hematuria, re",
+        "time": 10.072292804718018
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 5-year-old girl with 3 days high fever, sore throat, decreased appetite, no cough or nasal discharge. Temp 39.6°C, tachycardia, RR 28, SpO2 normal. Good activit",
+        "time": 28.24881410598755
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "急性腹膜刺激症状（筋",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 40-year-old man with acute epigastric pain, sudden severe pain, peritoneal signs (muscle guarding, rebound), absent bowel sounds, CT shows something? Need to in",
+        "time": 10.032084941864014
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 18yo male, fever, headache, altered mental status, neck stiffness, petechiae, CSF: turbid, high opening pressure, high WBC (861, mostly neutr",
+        "time": 28.333240032196045
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "急性虫垂炎（穿孔を伴",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 42-year-old man with acute abdomen: RLQ pain, peritoneal signs, leukocytosis, mild fever. Likely acute appendicitis? But also could be Crohn's? CT shows somethi",
+        "time": 28.318246126174927
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the clinical scenario: 70yo woman, post-stroke right hemiparesis (right side weakness) due to left internal capsule infarct. She has right upper lim",
+        "time": 28.316731929779053
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about hypertension due to sleep apnea syndrome (SAS). The question: \"睡眠時無呼吸症候群による高血圧について、正しくないのはどれか。\" Which state",
+        "time": 7.015868902206421
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In pregnant women with GBS colonization positive, when to give intrapartum antibiotic prophylaxis (penicillin) to prevent neonatal infection? Standard ",
+        "time": 4.910295009613037
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about central serous chorioretinopathy (CSC). The question: \"中心性漿液性脈絡網膜症について誤っているのはどれか。\" Which statement is false",
+        "time": 5.922542095184326
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which oral monotherapy is most likely to cause hypoglycemia? Options: DPP-4 inhibitor, SGLT2 inhibitor, biguanide (metformin), sulfonylurea, alpha-gluc",
+        "time": 1.6280851364135742
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about adult heart transplantation in Japan. Options a-e. Need correct statement(s). The question: \"我が国での成人心臓移植について正しいのはどれか。\" ",
+        "time": 20.926735877990723
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"高カリウム血症の原因となるのはどれか。\" Which of the options cause hyperkalemia? Options:\n\na: β刺激薬 (beta-agonists) - these cause potassium shift into cells, causing hypo",
+        "time": 3.7987539768218994
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"逆流性食道炎の誘因とならないのはどれか。\" Which is not a risk factor for reflux esophagitis. Options: a: 肥満 (obesity), b: 高齢 (elderly), c: 亜背? Actually \"亀背\" maybe kyphosi",
+        "time": 9.301668167114258
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about sarcoidosis of the heart (cardiac sarcoidosis) in a patient with heart failure. Which finding does NOT matc",
+        "time": 5.724279880523682
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which is NOT a risk factor for osteonecrosis (avascular necrosis). Options: a: alcohol consumption, b: decompression sickness (減圧症), c: radiation thera",
+        "time": 4.614965915679932
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about systemic sclerosis (全身性強皮症) secondary Raynaud phenomenon characteristics. Options a-e. Need to pick correct",
+        "time": 6.764467000961304
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: which is NOT a characteristic of autism spectrum disorder (ASD). Options:\n\na: male children more common – true (ASD more common in boys). So it's a cha",
+        "time": 2.525595188140869
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"急激な血圧上昇を認める患者で、高血圧緊急症の病態として考えにくいのはどれか。\" Which condition is unlikely to be a hypertensive emergency (i.e., severe hypertension with ",
+        "time": 5.383570909500122
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple-choice question in Japanese about vascular dementia (脳血管性認知症). Choose two correct statements.\n\nWe need to know facts:\n\nVascular dementia (vas",
+        "time": 24.950900077819824
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer which pairings of pathogen and malignant tumor are correct. Choose two.\n\nWe need to know known associations:\n\n- Human papillomavirus (HPV) is associated",
+        "time": 3.497249126434326
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Acute kidney injury (AKI) diagnostic criteria: KDIGO uses rise in serum creatinine and urine output. So indicators: serum creatinine rise speed (increa",
+        "time": 1.8139801025390625
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 76-year-old woman with diabetes, proteinuria, diabetic retinopathy, etc. The question: \"本患者の蛋白尿の原因が糖尿病性腎症であることを最も示唆する所見はどれか。\" Which finding most strongly sugges",
+        "time": 4.4815380573272705
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 6-month-old boy with history of hemophilia A (deficiency of factor VIII). He fell from bed, now vomiting, lethargic, poor perfusion, hypotension 86/56, tachycar",
+        "time": 4.670874834060669
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 23-year-old man with excessive daytime sleepiness, sudden sleep attacks, cataplexy (sudden loss of muscle tone after strong emotions like laughter or surprise).",
+        "time": 4.645614147186279
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 62-year-old woman, recent catheter ablation for paroxysmal atrial fibrillation 7 days ago, discharged 3 days ago. On day after discharge, she developed dyspnea ",
+        "time": 4.842742919921875
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 64-year-old man with dyspnea, left chest pain, dyspnea worsening over 4 days. Vitals: temp 36.2, HR 100, BP 120/80, RR 20, SpO2 92% RA. No co",
+        "time": 6.144350051879883
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 73-year-old man after endoscopic stone removal (ERCP) for common bile duct stones. 3 hours later persistent epigastric pain and back pain, hypotension, tachycar",
+        "time": 28.343467712402344
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old male with renal dysfunction, family history of dialysis (mother and uncle). Labs: BUN 28, creatinine 1.5 (elevated). MRI abdomen with fat-suppressed",
+        "time": 5.5400230884552
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 38-year-old male with subcutaneous bleeding, leukopenia, thrombocytopenia, blasts in blood: 9% blasts, 60% promyelocytes? Actually \"前骨髄球\" = promyelocytes? The b",
+        "time": 4.906336069107056
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case: 45-year-old man, hoarseness (嗄声) as chief complaint. For 2 years, hoarseness spontaneously appeared without trigger, with sensation of thro",
+        "time": 26.39774799346924
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 13-year-old girl, basketball game, ate a bento with squid (イカ) as main side dish, hadn't eaten squid for a year. About 1 hour after eating, she played, 10 minut",
+        "time": 27.562458753585815
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to identify which is NOT appropriate for occupational physician's response to a 30yo male with work performance decline, stress, insomnia, alcohol use, depressive",
+        "time": 3.3715310096740723
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 81yo male with COPD exacerbation, now acute respiratory distress? He has fever 38.3, WBC 9800 normal, CRP 4.0 moderate. ABG on 0.5 L/min O2: pH",
+        "time": 6.182236909866333
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 23-year-old male with acute hepatitis signs: jaundice, elevated AST/ALT >1000, bilirubin 8.1, LD 423 (slightly high), ALP modestly high, gamma GT high. History:",
+        "time": 2.783005952835083
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 40-year-old man with difficulty writing (agraphia? dysgraphia). He has writer's cramp (task-specific dystonia) causing flexion of interphalangeal joints of inde",
+        "time": 3.7444710731506348
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 42-year-old man, acute onset of right lower quadrant pain, migratory from right upper quadrant? Actually described: after breakfast, felt a \"",
+        "time": 15.803144931793213
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 48-year-old woman with polyuria? Actually symptoms: polydipsia (口渇) and general fatigue. 5 days ago had fever and abdominal pain. She has high blood glucose 440",
+        "time": 2.9141838550567627
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case. Newborn boy 10 hours old, term 39 weeks, birth weight 2960g, Apgar 7 at 1 min, 8 at 5 min. At birth, no cyanosis, but at 10 hours, nurse no",
+        "time": 5.977827787399292
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 73yo male with left calf pain on walking, intermittent claudication, now shorter distance. ABI left 0.65 (low), right 0.91 (borderline). He h",
+        "time": 11.606460094451904
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the case: newborn at birth, 40 weeks, weight 3020g, Apgar 8/9. Midwife noticed external genitalia features, reported. Photo shows external genitalia",
+        "time": 27.212994813919067
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 52-year-old man with progressive lung adenocarcinoma, received immune checkpoint inhibitor (ICI) therapy (first line). Now 6 weeks after diagnosis, 3 weeks afte",
+        "time": 6.580142974853516
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 63-year-old man with abdominal pain, abdominal distension, umbilical hernia (umbilical bulge) that was present for 2 years, previously spontaneously reduced whe",
+        "time": 10.200743913650513
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 72-year-old woman with thrombocytopenia (platelets 5.6k then 4.7k), hemolysis? Labs: anemia Hb 6.1, Ht 26% (but Ht low? Actually Ht 26% seems not low for Hb 6.1",
+        "time": 5.593345880508423
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: 62-year-old male undergoing left hemicolectomy for descending colon cancer. Past history: at age 28, peritonitis from appendicitis, hos",
+        "time": 6.499054193496704
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 20-year-old woman with multiple dark brown papules on abdomen, neck, axilla, rib cage, inframammary, inguinal areas. No itching. Mother also had similar rash fr",
+        "time": 4.982150077819824
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 15-year-old boy with rhabdomyolysis after intense exercise, heat exposure, muscle pain, dark urine, high CK, AST, ALT, myoglobinuria. He has hyperkalemia? Let's",
+        "time": 9.10659408569336
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 45-year-old man with sudden onset of hearing loss in right ear, tinnitus, no vertigo, normal tympanic membrane, audiogram shown (not provided). MRI normal. Like",
+        "time": 1.8184897899627686
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 36-year-old woman, 36 weeks 4 days gestation, presenting with abdominal pain. Vitals: temp 36.8, HR 110, BP 162/108 (hypertensive). Abdomen h",
+        "time": 19.810933113098145
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 28-year-old male with multiple gastric and duodenal ulcers, history of pituitary adenoma resection at 25, now presents with hypercalcemia (Ca 11.6 mg/dL), low p",
+        "time": 8.443103075027466
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old woman with primary amenorrhea? Actually she had menarche at 12, irregular from 13, amenorrhea from 14 onward. So secondary amenorrhea? She had norma",
+        "time": 6.197597980499268
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: 38yo woman with right knee pain, MRI shows medial meniscus tear. Arthroscopy images (①～⑤) shown. Which image shows meniscus tear? Optio",
+        "time": 10.236027956008911
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 53-year-old man with snoring, facial changes (enlarged nose, changed facial appearance), recent shoe tightness (maybe foot enlargement?), history of carpal tunn",
+        "time": 4.9412150382995605
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 32-year-old woman, forced non-consensual sexual intercourse last night, now presents with police accompaniment. Police gave explanation of in",
+        "time": 28.20165205001831
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 10-month-old boy, vomiting, hematochezia (blood in stool), sudden vomiting, crying, blood stool multiple times, irritability, tachycardia 160",
+        "time": 28.319463968276978
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 45-year-old man with progressive dyspnea on exertion, fatigue, history of murmur, now severe aortic stenosis likely. Echo: LVEDD 60 mm (enlarged), EF 40% (reduc",
+        "time": 3.2359209060668945
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 35-year-old man, cough, fever, dyspnea. 3 weeks ago dry cough started, 5 days ago fever and dyspnea. 1 month ago cleaned a 30-year-old house. Physical: fever 38",
+        "time": 5.5063652992248535
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 14-day-old male infant with facial anomalies: \"切れ上がった目、平坦で低い鼻、口外に突き出た舌などの顔貌異常\" (cleft palate? Actually \"切れ上がった目\" maybe upslanting palpebral fissures? \"平坦で低い鼻\" f",
+        "time": 11.754578828811646
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical question: 19-year-old male, exposed to NaOH solution (sodium hydroxide) in right eye. He has conjunctival edema, corneal clouding. First step? For chem",
+        "time": 1.5462141036987305
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 76-year-old male, post gastrectomy 8 years ago, now with increased sputum, difficulty expectorating, coarse crackles, low albumin, high CRP, Gram stain of sputu",
+        "time": 21.000680208206177
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 2-year-old boy, mother concerned about louder TV volume. He had bilateral ear pain and nasal discharge a week ago, resolved in 2 days. Since then, often does no",
+        "time": 4.540199041366577
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 24-year-old healthcare worker who accidentally stuck with a needle from a patient who is HBsAg positive (HBsAg +), anti-HBs negative, anti-HCV negative. The hea",
+        "time": 2.190196990966797
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 18-year-old male, pancytopenia? Let's see labs: RBC 230k (low), Hb 6.8 (low), Ht 20% (low). WBC 1,400 (low), neutrophils 24% of WBC? Actually",
+        "time": 16.158956050872803
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 2-month-old girl, seizure status epilepticus, cardiac arrest, no pulse, no pupillary reflex, resuscitation unsuccessful, death. Physical exam: mixed old and new",
+        "time": 3.309417247772217
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "a,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 69-year-old man with left nasal bleeding, worsening nasal obstruction, diplopia. Imaging shows presumably a tumor in left nasal cavity, likely maxillary sinus o",
+        "time": 28.215383052825928
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have an 8-year-old girl with severe pruritic rash, likely atopic dermatitis (eczema). Findings: eosinophilia 12%, IgE high, specific IgE positive to inhalant allergens",
+        "time": 6.856529235839844
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 80-year-old man, left temporal region to left cheek rash. 3 months ago, a purplish-red macule appeared on left temporal region, gradually enl",
+        "time": 11.052907943725586
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 64-year-old man, left hemiplegia with impaired consciousness, GCS 4+4+6=14? Actually E4 V4 M6 = 14, mild decreased consciousness. BP 164/82, ",
+        "time": 2.715459108352661
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 58-year-old woman with nephrotic-range proteinuria (3+), edema, low albumin 2.6, hyperlipidemia (LDL 213), eGFR 33.5 (CKD stage 3). Urine sediment: few RBC, few",
+        "time": 5.2641987800598145
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 78-year-old woman with fever 38°C for a week, fatigue, hypotension (84/50), tachycardic? pulse 92, mild. Labs: BUN 24, Cr 0.7 (so BUN/Cr ratio high? 24/0.7=34, ",
+        "time": 25.35062026977539
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the clinical scenario. 61-year-old man with right knee pain, severe varus deformity, limited ROM, radiographic OA, indicated for total knee arthropla",
+        "time": 13.17989993095398
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case. 35yo multiparous, prior cesarean sections (selective cesarean at 30 and 32 years). At 34w2d, presents for prenatal visit. She has uterine c",
+        "time": 21.668498992919922
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case: 34-year-old woman, anterior chest pain for 3 months, gradually worsening. Physical exam normal. Chest X-ray and contrast CT images (not pro",
+        "time": 28.23484706878662
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 44-year-old woman, incidental liver function abnormality: ALP 238 (elevated), γ-GT 266 (elevated). AST/ALT mild elevation (26,32). No jaundice. No risk factors.",
+        "time": 9.456857204437256
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,c,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 38-year-old woman with abdominal pain, constipation, vomiting, abdominal distension, increased bowel sounds, hard mass in Douglas pouch, abdo",
+        "time": 28.299643754959106
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the clinical scenario: 22yo male, cervical spinal cord injury, 8 weeks post injury (subacute). He fell from height 8 weeks ago. Manual muscle testing",
+        "time": 28.256452798843384
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 68yo male with nasal obstruction, hearing loss, intermittent epistaxis, cough, bilateral tympanic membrane redness/swelling, proteinuria, hemat",
+        "time": 7.498367071151733
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 5-year-old girl with 3 days high fever, sore throat, poor appetite, no cough or nasal discharge. Temp 39.6°C, tachycardia, RR 28, SpO2 normal. Good activity, go",
+        "time": 28.256221294403076
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 40yo male with sudden severe epigastric pain, peritoneal signs (muscle guarding, rebound), CT shows? Not provided images but likely shows perfo",
+        "time": 4.687513113021851
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,e",
+        "gold": "a,c,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 18yo male, fever, headache, altered mental status, neck stiffness, petechiae, CSF: turbid, high opening pressure, high WBC (861, mostly neutr",
+        "time": 28.325711727142334
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 42yo male with acute appendicitis? Right lower quadrant pain, rebound tenderness, leukocytosis 16,200, mild fever. CT shows? Not described but ",
+        "time": 5.969670295715332
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the clinical scenario: 70yo woman, post-stroke right hemiparesis (right side weakness) due to left internal capsule infarct. She has right upper lim",
+        "time": 28.357433080673218
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: Sleep apnea syndrome (OSA) associated hypertension. Which statement is NOT correct.\n\nOptions:\n\na: Nighttime hypertension is common. ",
+        "time": 5.660563230514526
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In pregnant woman with GBS colonization positive, when to give intrapartum antibiotic prophylaxis (penicillin) to prevent mother-to-child transmission?",
+        "time": 7.687358856201172
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "中心性漿液性脈絡網膜",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a Japanese ophthalmology question: \"中心性漿液性脈絡網膜症について誤っているのはどれか。\" Which statement is false about central serous chorioretinopathy (CSC). Options:\n\na: 夜盲を自",
+        "time": 6.302760362625122
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which oral monotherapy is most likely to cause hypoglycemia? Options: DPP-4 inhibitor, SGLT2 inhibitor, biguanide (metformin), sulfonylurea, alpha-gluc",
+        "time": 3.431140184402466
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question about adult heart transplantation in Japan. Options a-e. Need to know correct statement.\n\nLet's recall data: In Japan, heart transpla",
+        "time": 15.768372297286987
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"高カリウム血症の原因となるのはどれか。\" Which of the options cause hyperkalemia? Options:\n\na: β刺激薬 (beta-agonists) – these cause potassium shift into cells, causing hypo",
+        "time": 5.60598611831665
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"逆流性食道炎の誘因とならないのはどれか。\" Which is not a risk factor for reflux esophagitis. Options: a: obesity, b: advanced age, c: kyphosis (亀背), d: atrophic gastritis",
+        "time": 5.7052648067474365
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: In a patient with heart failure, which finding does NOT correspond to cardiac sarcoidosis? Options:\n\na: AV block\nb: Persistent ventr",
+        "time": 6.18963098526001
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "骨壊死（無菌性壊死）",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which is NOT a risk factor for osteonecrosis (avascular necrosis). Options: a: alcohol, b: decompression sickness (減圧症), c: radiation therapy, d: organ",
+        "time": 6.816570043563843
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "a,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"全身性強皮症による続発性Raynaud現象の特徴はどれか。\" Which is about secondary Raynaud phenomenon due to systemic sclerosis (scleroderma). Options:\n\na: 片側",
+        "time": 6.755582094192505
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which is NOT a characteristic of autism spectrum disorder (ASD). Options:\n\na: More common in boys. True (male:female ratio ~4:1). So it's a characteris",
+        "time": 4.119337320327759
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"急激な血圧上昇を認める患者で、高血圧緊急症の病態として考えにくいのはどれか。\" Which condition is unlikely to be a hypertensive emergency (i.e., severe hypertension with ",
+        "time": 8.393832921981812
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: about vascular dementia (cerebrovascular dementia). Choose two correct statements among options a-e.\n\nWe need to know facts:\n\nVascul",
+        "time": 14.535490036010742
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which pairings of pathogen and malignant tumor are correct? Choose two.\n\nWe need to know known associations:\n\n- Human papillomavirus (HPV) is associate",
+        "time": 5.1584789752960205
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a",
+        "gold": "c,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer: Acute kidney injury (AKI) diagnostic criteria: KDIGO uses rise in serum creatinine and urine output. So indicators: serum creatinine rise speed (increa",
+        "time": 3.955825090408325
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 76-year-old woman with diabetes (newly diagnosed, HbA1c 10.2%, random glucose 201 mg/dL). She has proteinuria (2+), urine protein/Cr ratio 1.2 g/gCr, mild edema",
+        "time": 7.089410066604614
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 6-month-old boy with hemophilia A (deficiency of factor VIII). He fell from a bed about 50 cm, now vomiting and lethargic. Labs: APTT prolonged 98.3 sec (very h",
+        "time": 6.699205160140991
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 23-year-old male with excessive daytime sleepiness, sudden sleep attacks, cataplexy (sudden loss of muscle tone after strong emotions like laughter, surprise). ",
+        "time": 8.551437139511108
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "a,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 62-year-old woman, recent catheter ablation for paroxysmal atrial fibrillation (7 days ago). She was discharged 3 days ago, now on day after discharge (so day 4",
+        "time": 14.247994899749756
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 64-year-old man with dyspnea, left chest pain, dyspnea worsening over 4 days. Vitals: temp 36.2, HR 100, BP 120/80, RR 20, SpO2 92% RA. No co",
+        "time": 15.3688383102417
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 73-year-old man after ERCP for common bile duct stone removal. 3 hours later persistent epigastric pain and back pain, hypotensive (84/56), tachycardic, low tem",
+        "time": 28.343759059906006
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old male with renal dysfunction, family history of mother and uncle on dialysis. Labs: BUN 28, creatinine 1.5 (elevated). MRI abdomen with fat-suppresse",
+        "time": 10.650402069091797
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 38-year-old male with subcutaneous bleeding, leukopenia, thrombocytopenia, anemia mild. Peripheral smear? Not given but bone marrow aspirate shows? Probably acu",
+        "time": 7.528440952301025
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case: 45-year-old man, hoarseness (嗄声) for 2 years, no trigger, chronic cough, sensation of foreign body in throat. No smoking/alcohol. Laryngosc",
+        "time": 28.1856849193573
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,b",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 13-year-old girl, basketball game, ate a bento with squid (イカ) about 1 hour before game, hasn't eaten squid for a year. After 10 minutes of game, she had malais",
+        "time": 14.851302146911621
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the clinical scenario: 30-year-old male, work performance decline, remote work due to COVID, stress from noise, childcare, irritability, drinking alc",
+        "time": 5.597460031509399
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 81yo male with COPD exacerbation, now acute respiratory distress? He has fever 38.3, WBC 9800 normal, CRP 4.0 moderate. ABG on low flow O2 0.5 ",
+        "time": 12.046526908874512
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 23-year-old male with acute hepatitis signs: fatigue, anorexia, nausea, dark urine, jaundice, right upper quadrant tenderness, high transaminases (AST 984, ALT ",
+        "time": 9.392107963562012
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 40-year-old man with difficulty writing (agraphia? writing difficulty) called \"writing dystonia\"? The description: when asked to write with pencil, the proximal",
+        "time": 7.538002967834473
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 42-year-old man with acute onset of right lower quadrant pain, peritoneal signs? The description: sudden onset of right upper quadrant? Actually: \"朝食後に右側腹部に張る感じ",
+        "time": 28.289958000183105
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 48-year-old woman with polyuria? Actually symptoms: polydipsia (口渇) and general fatigue. 5 days ago had fever and abdominal pain. She has high blood glucose 440",
+        "time": 5.08938193321228
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a newborn boy 10 hours old, term 39 weeks, birth weight 2960g, Apgar 7 at 1 min, 8 at 5 min. Initially no cyanosis, but at 10 hours, nurse notices cyanosis, SpO2 ",
+        "time": 15.497008800506592
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 73yo male with left leg pain on walking, intermittent claudication, now shorter distance. ABI left 0.65 (low), right 0.91 (borderline). He ha",
+        "time": 15.317698955535889
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question. It's about a newborn at birth, 40 weeks, weight 3020g, Apgar 8/9. Midwife noticed external genitalia features, reported to doctor. Phot",
+        "time": 25.393198251724243
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 52-year-old man with advanced lung adenocarcinoma, started on immune checkpoint inhibitor (ICI) therapy (likely anti-PD-1/PD-L1 or CTLA-4). After 3 weeks, he pr",
+        "time": 28.385074138641357
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 63-year-old man with abdominal pain, abdominal distension, umbilical hernia (umbilical protrusion) that was previously reducible when supine but now remains pro",
+        "time": 28.431373834609985
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 72-year-old woman with thrombocytopenia (platelets 5.6k then 4.7k), hemolysis? Labs: anemia Hb 6.1, Ht 26% (but Ht low? Actually Ht 26% seems not low for Hb 6.1",
+        "time": 9.1479332447052
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 62-year-old male undergoing left hemicolectomy (left hemicolectomy) for descending colon cancer. History: at age 28, peritonitis from appendicitis, 1 month hosp",
+        "time": 7.791844129562378
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 20-year-old woman with multiple dark brown papules on abdomen, neck, axilla, rib cage, inframammary, inguinal areas. No itching. Mother also has similar rash fr",
+        "time": 6.971484899520874
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 15-year-old boy with rhabdomyolysis after intense exercise, heat exposure, muscle pain, dark urine (myoglobinuria). Labs: CK 155,150 U/L, AST 1927, ALT 366, mil",
+        "time": 11.161246061325073
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 45-year-old man with sudden onset of unilateral hearing loss and tinnitus, no vertigo, normal tympanic membrane, normal MRI. This suggests sudden sensorineural ",
+        "time": 4.125688076019287
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 36-year-old woman, 36 weeks 4 days gestation, presenting with abdominal pain. Vitals: temp 36.8, HR 110, BP 162/108 (hypertensive). Abdomen h",
+        "time": 28.226382732391357
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 28-year-old male with recurrent duodenal ulcer, now multiple gastric and duodenal ulcers, black stool (melena), hypercalcemia (Ca 11.6 mg/dL), low phosphorus (2",
+        "time": 11.79644227027893
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old woman with primary amenorrhea? Actually she had menarche at 12, irregular from 13, amenorrhea from 14 onward. So secondary amenorrhea? She had norma",
+        "time": 28.283082962036133
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: 38yo woman with right knee pain, MRI shows medial meniscus tear. Arthroscopy images (①～⑤) are shown (not provided). The question: which",
+        "time": 17.086480140686035
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 53-year-old male with snoring, facial changes (enlarged nose, changed facial appearance), recent shoe tightness (maybe foot enlargement?), history of carpal tun",
+        "time": 9.36942195892334
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 32-year-old woman, forced non-consensual sexual intercourse (rape) last night, now presenting with police accompaniment. Police gave explanat",
+        "time": 22.273927927017212
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 10-month-old boy with vomiting, bloody stool, abdominal mass in right upper quadrant, target sign on ultrasound. This suggests intussusception. Classic presenta",
+        "time": 26.5794620513916
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 45-year-old man with progressive exertional dyspnea, fatigue, history of murmur, now severe aortic stenosis likely. Echo: LVEDD 60 mm (enlarged), EF 40% (reduce",
+        "time": 28.36132788658142
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 35-year-old man, cough, fever, dyspnea. 3 weeks ago dry cough started, 5 days ago fever and dyspnea. 1 month ago cleaned a 30-year-old house. Physical: fever 38",
+        "time": 11.230947971343994
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 14-day-old male infant, with facial anomalies: \"切れ上がった目、平坦で低い鼻、口外に突き出た舌などの顔貌異常\" (cleft palate? Actually \"切れ上がった目\" maybe upslanting palpebral fissures? \"平坦で低い鼻\" ",
+        "time": 15.325792074203491
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 19-year-old male, chemical injury to right eye with sodium hydroxide (NaOH) solution (strong alkali). He has conjunctival edema, corneal clou",
+        "time": 3.6707019805908203
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 76-year-old male, post-gastric cancer surgery (total gastrectomy) 8 years ago, now weight loss, sputum production for 5 years, now increased sputum and difficul",
+        "time": 28.3435218334198
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "この児は急性中耳炎後",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 2-year-old boy, mother concerned about louder TV volume. He had bilateral ear pain and nasal discharge a week ago, resolved in 2 days. Since then, often does no",
+        "time": 6.774444103240967
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a medical scenario: 24-year-old healthcare worker accidentally sticks with needle from a patient who is HBsAg positive (HBsAg +), anti-HBs negative, anti-HCV nega",
+        "time": 6.77212381362915
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 18-year-old male, pancytopenia? Let's see labs: RBC 230k (low), Hb 6.8 (low), Ht 20% (low). WBC 1,400 (low), neutrophils 24% of WBC? Actually",
+        "time": 14.373013019561768
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 2-month-old girl, seizure status epilepticus, cardiac arrest, no pulse, no pupillary reflex, resuscitation fails, death. Physical exam: mixed old and new subcut",
+        "time": 3.8730061054229736
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 69-year-old male with left nasal bleeding, worsening nasal obstruction, diplopia. Imaging shows presumably a tumor in left nasal cavity, likely maxillary sinus ",
+        "time": 19.42029595375061
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 8-year-old girl with pruritic rash, widespread eczematous lesions (likely atopic dermatitis). Labs: eosinophils 12% (elevated), IgE high, spe",
+        "time": 10.894712209701538
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 80-year-old man, left temporal region to left cheek rash. 3 months ago, a purple-red macule appeared on left temporal region, gradually enlar",
+        "time": 13.370345830917358
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 64-year-old man, left hemiplegia with impaired consciousness, GCS 4+4+6=14? Actually GCS E4 V4 M6 = 14, mild decreased consciousness. BP 164/",
+        "time": 4.4245922565460205
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a,b",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 58-year-old woman with nephrotic-range proteinuria (3+ protein, 280 mg/dL? Actually 280 mg/dL? maybe 280 mg/dL? but 280 mg/dL is low; but they said 280 mg/dL? m",
+        "time": 11.312132120132446
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 78-year-old woman with fever 38°C for a week, fatigue, hypotension (84/50), tachycardic? pulse 92, mild. Labs: BUN 24, Cr 0.7 (normal), Na 129 (hyponatremia), K",
+        "time": 21.96774697303772
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 61-year-old man with right knee pain, severe varus deformity, limited ROM, radiographic OA, indicated for total knee arthroplasty (TKA). He had colon cancer sur",
+        "time": 12.670913934707642
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case. 35yo multiparous, prior cesarean sections (selective cesarean at 30 and 32). At 34w2d, presents for prenatal visit. She has uterine contrac",
+        "time": 17.5419499874115
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 34-year-old woman, anterior chest pain for 3 months, gradually worsening. Vitals normal. Chest X-ray and contrast CT images (not provided in ",
+        "time": 28.22529101371765
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 44-year-old woman, incidental liver function abnormality: ALP 238 (elevated), γ-GT 266 (elevated). AST/ALT mild elevation (26,32). No jaundice. No risk factors.",
+        "time": 10.661498069763184
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 38-year-old woman with abdominal pain, constipation, vomiting, abdominal distension, increased bowel sounds, hard mass in Douglas pouch, abdominal X-ray shows d",
+        "time": 21.352588176727295
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the clinical scenario: 22yo male, cervical spinal cord injury, 8 weeks post injury (subacute). He fell from height, now with certain motor and sensor",
+        "time": 28.254688024520874
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 68-year-old male with nasal obstruction, hearing loss, intermittent epistaxis, cough, bilateral tympanic membrane redness/swelling, proteinuria, hematuria, red ",
+        "time": 15.711582899093628
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to determine which disease is least likely given presentation: 5-year-old girl, 3 days high fever, sore throat, poor appetite, no cough or nasal discharge. Temp 3",
+        "time": 28.277679920196533
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "急性腹膜炎（穿孔性潰",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 40-year-old man with acute epigastric pain, sudden severe pain, peritoneal signs (muscle guarding, rebound), absent bowel sounds, CT shows something. Likely per",
+        "time": 7.813844919204712
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,c,e",
+        "gold": "a,c,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 18yo male, dormitory, fever, headache, altered mental status, JCS II-20, meningeal signs (neck stiffness), petechiae on limbs, CSF: turbid, h",
+        "time": 28.351892948150635
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 42-year-old man with acute abdomen: initial epigastric pain, then vomiting, then RLQ pain, peritoneal signs. Labs: WBC 16,200, CRP low 0.9, mild leukocytosis. C",
+        "time": 6.746869087219238
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the case: 70yo female, post-stroke right hemiparesis (right side weakness). She had a left internal capsule infarct (so left internal capsule = righ",
+        "time": 28.34566593170166
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about hypertension due to sleep apnea (obstructive sleep apnea syndrome, OSAS). The question: \"睡眠時無呼吸症候群による高血圧について、正しくないのはどれか",
+        "time": 5.616786003112793
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In pregnant women with GBS colonization positive, when to give intrapartum penicillin prophylaxis to prevent neonatal infection. According to Japanese ",
+        "time": 4.560925245285034
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about central serous chorioretinopathy (CSC, also called central serous chorioretinopathy, CSCR). The question: \"中心性漿液性脈絡網膜症に",
+        "time": 6.333207130432129
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which oral medication is most likely to cause hypoglycemia as a single agent? Options: DPP-4 inhibitor, SGLT2 inhibitor, biguanide (metformin), sulfony",
+        "time": 1.5592529773712158
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about adult heart transplantation in Japan. Need to know correct statement.\n\nOptions:\n\na: 10-year survival rate is about 10% ",
+        "time": 13.625252962112427
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"高カリウム血症の原因となるのはどれか。\" Which of the options cause hyperkalemia? Options:\n\na: β刺激薬 (beta-agonists) – these cause potassium shift into cells, causing hypo",
+        "time": 3.8652400970458984
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"逆流性食道炎の誘因とならないのはどれか。\" Which is not a risk factor for reflux esophagitis. Options: a肥満 (obesity), b高齢 (elderly), c亀背 (kyphosis? maybe \"kyphosis\" or \"ky",
+        "time": 11.087247848510742
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question: In a patient with heart failure, which finding does NOT match sarcoidosis of the heart? Options a-e. Need to pick one.\n\nWe n",
+        "time": 8.092920064926147
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which is NOT a risk factor for osteonecrosis (骨壊死). Options: a: alcohol consumption, b: decompression sickness (減圧症), c: radiation therapy, d: organoph",
+        "time": 4.768489122390747
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about systemic sclerosis (全身性強皮症) secondary Raynaud phenomenon characteristics. Options a-e. Need to pick one correct answer.",
+        "time": 5.407104969024658
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which is NOT a characteristic of autism spectrum disorder (ASD). Options:\n\na: More common in boys. True (male:female ratio ~4:1). So it's a characteris",
+        "time": 2.8850719928741455
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a Japanese medical question: \"急激な血圧上昇を認める患者で、高血圧緊急症の病態として考えにくいのはどれか。\" Which condition is unlikely to be considered a hypertensive emergency (高血圧緊急症) in ",
+        "time": 10.180159091949463
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple-choice question about vascular dementia (脳血管性認知症). Choose two correct statements. Options a-e.\n\nWe need to know Japanese clinical guidelines.",
+        "time": 27.092026948928833
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "a,c,d",
+        "gold": "c,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple-choice question: \"病原体と悪性腫瘍の組合せで正しいのはどれか。2つ選べ。\" Options a-e. Need to select two correct pairings of pathogen and malignant tumor based on Japa",
+        "time": 5.59656286239624
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "a,c,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer: Acute kidney injury (AKI) diagnostic criteria. According to KDIGO guidelines used in Japan: AKI defined by increase in serum creatinine by ≥0.3 mg/dL w",
+        "time": 3.1887869834899902
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: 76-year-old woman with diabetes, proteinuria, diabetic retinopathy, etc. They ask: \"本患者の蛋白尿の原因が糖尿病性腎症であることを最も示唆する所見はどれか。\" Which finding",
+        "time": 5.723586082458496
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 6-month-old boy with hemophilia A (deficiency of factor VIII). He fell from bed, now vomiting, lethargic, poor perfusion, hypotension 86/56, tachycardic, tachyp",
+        "time": 7.1231300830841064
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 23-year-old male with excessive daytime sleepiness, sudden sleep attacks, cataplexy (sudden loss of muscle tone after strong emotions like laughter, surprise). ",
+        "time": 7.643739938735962
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 62-year-old woman, post catheter ablation for paroxysmal atrial fibrillation 7 days ago, discharged 3 days ago. On day after discharge, she developed dyspnea an",
+        "time": 9.52114725112915
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 64-year-old man with dyspnea, left chest pain, dyspnea worsening. Physical exam: SpO2 92% RA, left chest breath sounds absent. Chest X-ray A shows presumably a ",
+        "time": 6.353147983551025
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 73-year-old man after ERCP for common bile duct stone removal. 3 hours later persistent epigastric pain and back pain, hypotensive (84/56), tachycardic, low-gra",
+        "time": 28.336035013198853
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old male with renal dysfunction, family history of dialysis (mother and uncle). Labs: BUN 28, creatinine 1.5 (elevated). MRI abdomen shows something (li",
+        "time": 7.217360973358154
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 38-year-old male with subcutaneous bleeding, leukopenia, thrombocytopenia, anemia mild, blasts 9% in peripheral blood, many promyelocytes? The differential: WBC",
+        "time": 8.287214040756226
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case: 45-year-old man, hoarseness (嗄声) for 2 years, no trigger, chronic cough, sensation of foreign body in throat. No smoking/alcohol. Laryngosc",
+        "time": 12.626774072647095
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "この症例は、イカとい",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 13-year-old girl, during basketball game, after eating a bento containing squid (イカ) which she hadn't eaten for a year, about 1 hour later she ",
+        "time": 18.738739252090454
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to determine which is NOT appropriate for occupational physician (産業医) response to a 30-year-old male with work performance decline, stress, insomnia, alcohol use",
+        "time": 3.269834041595459
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 81yo male COPD, acute dyspnea, fever 38.3, WBC 9800, CRP 4.0, ABG shows pH 7.33 (acidic), PaCO2 58 (hypercapnia), PaO2 62 on 0.5 L/min O2 via n",
+        "time": 4.685076951980591
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 23-year-old male with acute hepatitis signs: jaundice, elevated AST/ALT >1000, bilirubin 8.1, LD 423 (slightly high), ALP modestly high, gamma GT high. History:",
+        "time": 3.0083789825439453
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 40-year-old man with difficulty writing (agraphia? dysgraphia). He has writing difficulty, specifically when asked to write with a pencil, the proximal interpha",
+        "time": 5.8896708488464355
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 42-year-old man with acute onset of right lower quadrant pain, migratory from right upper quadrant? Actually description: \"朝食後に右側腹部に張る感じがあり、次第に痛みへと変わり、急速に激痛となった",
+        "time": 24.6809561252594
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 48-year-old woman with polyuria? Actually symptoms: polydipsia (口渇) and general fatigue. 5 days ago had fever and abdominal pain. She has urine: protein (-), gl",
+        "time": 6.102097034454346
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case. Newborn boy, 10 hours old, term 39 weeks, birth weight 2960g, Apgar 7 at 1 min, 8 at 5 min. No cyanosis at birth, but now cyanosis noted by",
+        "time": 10.913779973983765
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 73-year-old male with claudication symptoms: left calf pain on walking, improves with rest, now earlier onset. ABI left 0.65 (low), right 0.91 (borderline). Thi",
+        "time": 20.173617124557495
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "a,d",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the case: newborn at birth day, 40 weeks, weight 3020g, Apgar 8/9. Midwife noticed external genitalia features, reported. Photo shows external genit",
+        "time": 25.107980728149414
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 52-year-old man with advanced lung adenocarcinoma, started immune checkpoint inhibitor (ICI) therapy 3 weeks ago. Now presents with fatigue, lethargic, hypotens",
+        "time": 7.503813028335571
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 63-year-old man with abdominal pain, abdominal distension, umbilical hernia? He has a history of alcoholic cirrhosis, ascites likely. The case: 2 years ago umbi",
+        "time": 8.947032690048218
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 72yo woman, thrombocytopenia (platelets 4.7-5.6k), hemolysis? Labs: anemia Hb 6.1, Ht 26% (but Ht low? Actually Ht 26% seems high for Hb 6.1? m",
+        "time": 7.528207063674927
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to determine appropriate perioperative management for a 62-year-old male undergoing left hemicolectomy (left-sided colon resection) for descending colon cancer. H",
+        "time": 7.479015111923218
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 20-year-old woman with multiple dark brown papules on abdomen, neck, axilla, rib cage, inframammary, inguinal. No itching. Mother also had similar rash from age",
+        "time": 6.193408966064453
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 15-year-old boy with rhabdomyolysis (muscle pain, dark urine, high CK, myoglobinuria). Also AST high, ALT high, CK extremely high. He had exertional heat illnes",
+        "time": 11.314764022827148
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 45-year-old man with sudden onset of hearing loss in right ear, tinnitus, no vertigo, normal tympanic membrane, audiogram presumably shows sudden sensorineural ",
+        "time": 28.217160940170288
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 36-year-old woman, 36 weeks 4 days gestation, presenting with abdominal pain. Vitals: temp 36.8, HR 110, BP 162/108 (hypertensive). Abdomen h",
+        "time": 15.646253108978271
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 28-year-old male with history: duodenal ulcer, repeated drug therapy, pituitary adenoma resection at 25 (so maybe a nonfunctioning pituitary adenoma? Could be a",
+        "time": 11.54339599609375
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old woman with primary amenorrhea? Actually she had menarche at 12, irregular from 13, amenorrhea from 14 onward. So secondary amenorrhea? She started a",
+        "time": 8.655057907104492
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer which arthroscopic image shows meniscus tear. The question: 38yo woman, right knee pain, MRI shows medial meniscus tear. Arthroscopy images ①～⑤ shown se",
+        "time": 22.25438690185547
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 53-year-old male with snoring, facial changes (enlarged nose, changed facial appearance), recent shoe tightness (maybe acromegaly causing enlarged hands/feet). ",
+        "time": 6.7092437744140625
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the scenario: 32-year-old woman, forced non-consensual sexual intercourse (rape) last night, now presenting with police accompaniment. Police gave de",
+        "time": 24.412912845611572
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 10-month-old boy with vomiting, bloody stool, abdominal mass in right upper quadrant, target sign on ultrasound. Likely intussusception. Classi",
+        "time": 28.346253871917725
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 45-year-old man with progressive dyspnea on exertion, fatigue, history of murmur, now severe aortic stenosis? Echo: LVEDD 60 mm (enlarged), EF ",
+        "time": 3.686129093170166
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 35yo male, cough, fever, dyspnea. 3 weeks dry cough, 5 days fever and dyspnea. 1 month ago cleaned a 30-year-old house. So possible hypersensit",
+        "time": 6.931588172912598
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 14-day-old male infant with facial anomalies: \"切れ上がった目、平坦で低い鼻、口外に突き出た舌などの顔貌異常\" (cleft palate? Actually \"切れ上がった目\" maybe upslanting palpebral fissures? \"平坦で低い鼻\" f",
+        "time": 13.792966842651367
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "化学性眼損傷では、ま",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 19-year-old male with chemical injury to right eye: sodium hydroxide (NaOH) solution, a strong alkali, causing chemical burn. Immediate management: irrigation w",
+        "time": 3.107151985168457
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,d",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 76-year-old male, post-gastric cancer surgery (total gastrectomy) 8 years ago, now weight loss, sputum production for 5 years, now increased sputum and difficul",
+        "time": 23.21235203742981
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 2-year-old boy, mother concerned about louder TV volume. He had bilateral ear pain and nasal discharge a week ago, resolved in 2 days. Since then, often does no",
+        "time": 7.5130791664123535
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a medical scenario: 24-year-old healthcare worker accidentally sticks with needle from a patient who is HBsAg positive (HBsAg +), anti-HBs negative, anti-HCV nega",
+        "time": 5.613054990768433
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 18-year-old male with pancytopenia: severe anemia (Hb 6.8), leukopenia (WBC 1400, lymphocytes high proportion), thrombocytopenia (12,000). Bone marrow biopsy sh",
+        "time": 10.450309753417969
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 2-month-old girl, seizures, status epilepticus, cardiac arrest, no pulse, no pupillary reflex, resuscitation fails, death. Autopsy: subdural hematomas bilateral",
+        "time": 3.4357752799987793
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 69-year-old male with left nasal bleeding, diplopia, worsening nasal obstruction. Imaging shows presumably a tumor in the nasal cavity, likely maxillary sinus o",
+        "time": 22.92118000984192
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have an 8-year-old girl with severe pruritic rash, widespread eczematous lesions, high eosinophils (12% of 8600 = about 1032 eosinophils), high IgE 2800 IU/mL, positiv",
+        "time": 13.563714265823364
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 80-year-old man, left temporal region to left cheek rash. 3 months ago, purple-red macule appeared on left temporal region, gradually enlarge",
+        "time": 16.29285979270935
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 64-year-old man with left hemiplegia, impaired consciousness, irregular pulse 96/min irregular, GCS 4+4+6=14? Actually E4 V4 M6 = 14, mild decreased consciousne",
+        "time": 2.138545036315918
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 58yo woman, new-onset proteinuria 3+ (280 mg/dL? Actually 280 mg/dL? maybe 280 mg/dL? but 280 mg/dL is low; but 3+ proteinuria). She has edema,",
+        "time": 11.615798711776733
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 78-year-old woman with fever 38°C for a week, fatigue, hypotension (84/50), tachycardia 92, hyponatremia Na 129, hyperkalemia K 5.1, BUN 24, Cr 0.7 (so BUN/Cr r",
+        "time": 28.308387994766235
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 61-year-old man with right knee pain, severe OA, candidate for total knee arthroplasty (TKA). He had colon cancer surgery 2 months ago, currently on chemotherap",
+        "time": 9.695007801055908
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case. 35yo multiparous, prior cesarean sections (selective C-section for breech and previous C-section). At 34w2d, presenting with uterine contra",
+        "time": 13.926533222198486
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 34-year-old woman, anterior chest pain gradually worsening over 3 months. Physical exam normal. Chest X-ray and contrast CT images (not provide",
+        "time": 18.616342067718506
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 44-year-old woman, incidental liver function abnormality: ALP 238 (elevated), γ-GT 266 (elevated). AST/ALT mild elevation (26,32). No jaundice. No risk factors.",
+        "time": 15.0068359375
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand case: 38yo woman with abdominal pain, constipation, vomiting, abdominal distension, increased bowel sounds, hard mass in Douglas pouch, X-ray shows ",
+        "time": 18.224915027618408
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,d,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the clinical scenario: 22-year-old male, cervical spinal cord injury, 8 weeks post-injury (subacute). He fell from height, now with certain motor and",
+        "time": 28.28362202644348
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 68yo male with nasal obstruction, hearing loss, epistaxis, cough, bilateral tympanic membrane redness/swelling, proteinuria, hematuria, red blo",
+        "time": 28.43306803703308
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 5-year-old girl with 3 days high fever, sore throat, poor appetite, no cough or nasal discharge. Temp 39.6°C, tachycardia, RR 28, SpO2 normal, good activity, go",
+        "time": 28.313427925109863
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 40yo male with acute epigastric pain, sudden severe pain, peritonitis signs (muscle guarding, rebound), CT shows something? Not described but l",
+        "time": 6.497193098068237
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 18yo male, fever, stiff neck, meningeal signs, purpura (purple spots) on limbs, CSF: turbid, high opening pressure, pleocytosis with neutrophil",
+        "time": 28.3544020652771
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 42yo male with acute abdomen: RLQ pain, peritoneal signs, leukocytosis 16,200, mild fever, CRP low 0.9. CT shows something (not described). Lik",
+        "time": 3.875854015350342
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 70yo female, post-stroke right hemiparesis (right side weakness). She had left internal capsule infarct (so left internal capsule infarct leads",
+        "time": 28.37793517112732
+      }
+    ],
+    "answer_first": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: Sleep apnea syndrome (OSA) associated hypertension. Which statement is NOT correct.\n\nOptions:\n\na: Nighttime hypertension is common. ",
+        "time": 6.0077269077301025
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: In late pregnancy, vaginal culture positive for Group B Streptococcus (GBS). When to start intrapartum antibiotic prophylaxis (penic",
+        "time": 8.305593013763428
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: Central serous chorioretinopathy (CSC) (中心性漿液性脈絡網膜症). Which statement is incorrect? Options:\n\na: 夜盲を自覚する。 (Patient experiences night",
+        "time": 9.81687879562378
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which oral medication is most likely to cause hypoglycemia? Options: DPP-4 inhibitor, SGLT2 inhibitor, biguanide (metformin), sulfonylurea, alpha-gluco",
+        "time": 28.17341423034668
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question about adult heart transplantation in Japan. Options a-e. Need to pick correct statement.\n\nWe need knowledge: In Japan, adult heart tr",
+        "time": 19.12803292274475
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"高カリウム血症の原因となるのはどれか。\" Options: a: β刺激薬, b: インスリン, c: ループ利尿薬, d: グリチルリチン, e: レニン・アンジオテンシン系抑制薬. Choose one that causes hyperkalemia.\n\nLet's recall: Hyper",
+        "time": 28.165019750595093
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a medical question in Japanese: \"逆流性食道炎の誘因とならないのはどれか。\" Which is not a risk factor for reflux esophagitis (gastroesophageal reflux disease). Options:\n\na: 肥満 (obesi",
+        "time": 28.162328958511353
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "a,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: In a patient with heart failure, which finding does NOT match sarcoidosis of the heart? Options:\n\na: AV block\nb: Persistent ventricu",
+        "time": 28.183802127838135
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a medical question in Japanese: \"骨壊死のリスクファクターでないのはどれか。\" Means: Which is NOT a risk factor for osteonecrosis (avascular necrosis of bone). Options: a: 飲酒 (alcohol ",
+        "time": 28.159600019454956
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"全身性強皮症による続発性Raynaud現象の特徴はどれか。\" Which is about secondary Raynaud phenomenon due to systemic sclerosis (scleroderma). Options:\n\na: 片側",
+        "time": 28.157404899597168
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which is NOT a characteristic of autism spectrum disorder (ASD). Options:\n\na: More common in boys. True (male:female ratio ~4:1). So it's a characteris",
+        "time": 28.12902808189392
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"急激な血圧上昇を認める患者で、高血圧緊急症の病態として考えにくいのはどれか。\" Which condition is unlikely to be a hypertensive emergency (i.e., severe hypertension with ",
+        "time": 28.141547918319702
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: about vascular dementia (cerebrovascular dementia). Choose two correct statements among options a-e.\n\nWe need to output the correct ",
+        "time": 28.16236186027527
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer which pathogen-cancer pairs are correct. Two correct answers.\n\nWe need to output the letters (a,b,c,d,e) of correct pairs, comma separated if multiple. ",
+        "time": 28.158313035964966
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Acute kidney injury (AKI) diagnostic criteria. According to KDIGO criteria: increase in serum creatinine by ≥0.3 mg/dL within 48 hours, or increase to ",
+        "time": 8.418927192687988
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 76-year-old woman with newly diagnosed diabetes (high glucose, HbA1c 10.2), diabetic retinopathy (proliferative), proteinuria (2+), urine pro",
+        "time": 28.428035259246826
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "**解説**\n\n- ",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 6-month-old boy with history of hemophilia A (factor VIII deficiency). He fell from a bed about 50 cm, now vomiting, lethargic, poor perfusion, hypotension 86/5",
+        "time": 28.35695719718933
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 23-year-old man with excessive daytime sleepiness, sudden sleep attacks, cataplexy (sudden loss of muscle tone after strong emotions like laughter or surprise).",
+        "time": 7.306903123855591
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 62-year-old woman, recent catheter ablation for paroxysmal atrial fibrillation 7 days ago, discharged 3 days ago. Now 3 days after discharge (so 7 days after ab",
+        "time": 28.29227113723755
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 64-year-old man, dyspnea, 4 days ago left chest pain and dyspnea, worsening. Vitals: temp 36.2, HR 100, BP 120/80, RR 20, SpO2 92% RA. No con",
+        "time": 28.293869972229004
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 73-year-old man after endoscopic stone removal (ERCP) for common bile duct stones. 3 hours later, persistent epigastric pain and back pain, low-grade fever 35.8",
+        "time": 28.31313419342041
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old male, family history: mother and uncle on dialysis (presumably renal failure). Labs: BUN 28, creatinine 1.5 (elevated). Abdominal MRI with fat-suppr",
+        "time": 28.20163106918335
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 38-year-old man with subcutaneous bleeding, leukopenia, thrombocytopenia, blasts in blood: 9% blasts, 60% promyelocytes? Actually \"前骨髄球\" = promyelocytes? The di",
+        "time": 28.385330200195312
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case: 45-year-old man, hoarseness (嗄声) for 2 years, no trigger, chronic cough, sensation of foreign body in throat. No smoking/alcohol. Laryngosc",
+        "time": 27.978972911834717
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,b",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 13-year-old girl, basketball game, ate a bento with squid as main side dish, hadn't eaten squid for a year. About 1 hour after eating, she played, 10 minutes in",
+        "time": 10.987100839614868
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question. It's a Japanese medical exam question. 30-year-old male, work performance decline, remote work due to COVID, stress from noise, childca",
+        "time": 28.25415301322937
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 81-year-old man with COPD, acute dyspnea, started at 2am, now at 8am in ED. He has fever 38.3°C, mild tachycardia? HR 72, BP okay, RR 16, dec",
+        "time": 28.31747579574585
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 23-year-old male with acute hepatitis symptoms: fatigue, anorexia, nausea, dark urine, jaundice, right upper quadrant tenderness. Labs: high bilirubin (total 8.",
+        "time": 10.259266138076782
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 40-year-old man with difficulty writing (agraphia? dysgraphia). He has writing difficulty, specifically when asked to write with a pencil, the proximal interpha",
+        "time": 28.22303318977356
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 42-year-old man with acute onset of right lower quadrant pain, migratory from right upper quadrant? Actually description: \"朝食後に右側腹部に張る感じがあり、次第に痛みへと変わり、急速に激痛となった",
+        "time": 21.09032702445984
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 48-year-old woman with polyuria? Actually symptoms: polydipsia (口渇) and general fatigue. 5 days ago had fever and abdominal pain. She has diabetes ketoacidosis?",
+        "time": 28.26953887939453
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a newborn boy, 10 hours old, born at 39 weeks, weight 2960g, Apgar 7 at 1 min, 8 at 5 min. Initially no cyanosis, but at 10 hours, cyanosis noted, SpO2 low 76% up",
+        "time": 13.709171056747437
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 73yo male with left calf pain on walking, intermittent claudication, now shorter distance. ABI left 0.65 (low), right 0.91 (borderline). He h",
+        "time": 28.37299394607544
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a medical question in Japanese. Let's translate: Newborn at birth day, gestational age 40 weeks, weight 3020g, Apgar 8 at 1 min, 9 at 5 min. Midwife noticed exter",
+        "time": 22.574418783187866
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 52-year-old man with advanced lung adenocarcinoma, started on immune checkpoint inhibitor (ICI) therapy (likely anti-PD-1/PD-L1). After 3 weeks, he presents wit",
+        "time": 28.319217920303345
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 63-year-old man with abdominal pain, abdominal distension, umbilical hernia? The case: 63yo male, abdominal pain, abdominal distension, had umbilical bulge for ",
+        "time": 8.805019855499268
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 72-year-old woman with thrombocytopenia (platelets 5.6k then 4.7k), hemolysis? Labs: anemia Hb 6.1, Ht 26% (but Ht low? Actually Ht 26% seems not low for Hb 6.1",
+        "time": 11.423671245574951
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 62-year-old male undergoing left hemicolectomy (left hemicolectomy) for descending colon cancer. He had prior surgery: at age 28, appendicitis with peritonitis,",
+        "time": 12.640161037445068
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "a,b",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 20-year-old woman with multiple dark brown papules on abdomen, neck, axilla, rib cage, inframammary, inguinal. No itching. Mother also had similar rash from age",
+        "time": 28.22699809074402
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 15-year-old boy with exertional rhabdomyolysis? He had intense training, muscle pain, dark urine (myoglobinuria). Labs: CK 155,150 U/L extremely high, AST 1927,",
+        "time": 11.906180143356323
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 45-year-old man with sudden onset of hearing loss in right ear, tinnitus, no vertigo, normal tympanic membrane, audiogram shown (not provided). MRI normal. Like",
+        "time": 28.19518208503723
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 36-year-old woman, 36 weeks 4 days gestation, 2 pregnancies, 0 births (so nulliparous? Actually 2妊0産 means two pregnancies, zero deliveries, ",
+        "time": 23.28196406364441
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "a,c",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 28-year-old male with multiple gastric and duodenal ulcers, history of pituitary adenoma resection at age 25, now presenting with upper abdominal pain, melena, ",
+        "time": 10.421547174453735
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old woman with amenorrhea since age 14 (since 14 years old). She had irregular menses from 13, then amenorrhea from 14 onward. No other issues. Physical",
+        "time": 9.606579780578613
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "a,c",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a medical question: 38yo woman with right knee pain, MRI shows medial meniscus tear. Arthroscopy images (①～⑤) shown separately (not provided). The question: which",
+        "time": 22.43968105316162
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 53-year-old man with snoring, facial changes (enlarged nose, changed facial appearance), recent shoe tightness (maybe foot swelling?), history of carpal tunnel ",
+        "time": 12.028849840164185
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 32-year-old woman, forced non-consensual sexual intercourse (rape) last night, now presenting with police accompaniment. Police gave explanation of incident, an",
+        "time": 28.2247531414032
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 10-month-old boy with vomiting, bloody stool, abdominal mass in right upper quadrant, target sign on ultrasound. This suggests intussusception. Classic triad: i",
+        "time": 28.295114040374756
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 45-year-old man with progressive dyspnea on exertion, fatigue, history of murmur, now severe aortic stenosis likely. Echo: LVEDD 60 mm (enlarged), EF 40% (reduc",
+        "time": 28.367838859558105
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 35-year-old man, cough, fever, dyspnea. 3 weeks ago dry cough started, 5 days ago fever and dyspnea. 1 month ago cleaned a 30-year-old house. Physical: fever 38",
+        "time": 12.0916428565979
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 14-day-old male infant with facial anomalies: \"切れ上がった目、平坦で低い鼻、口外に突き出た舌などの顔貌異常\" (cleft palate? Actually \"切れ上がった目\" maybe upslanting palpebral fissures? \"平坦で低い鼻\" f",
+        "time": 15.782174825668335
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "a,d",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 19-year-old male exposed to NaOH (sodium hydroxide) solution to right eye. This is a chemical burn, alkaline. Immediate management: irrigation with copious wate",
+        "time": 28.214268922805786
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "a,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 76-year-old male, post-gastric cancer surgery (total gastrectomy) 8 years ago, now weight loss, sputum production for 5 years, now increased sputum and difficul",
+        "time": 28.320366144180298
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 2-year-old boy, mother concerned about louder TV volume. He had bilateral ear pain and nasal discharge a week ago, resolved in 2 days. Since then, often does no",
+        "time": 28.219473838806152
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a medical scenario: 24-year-old healthcare worker accidentally sticks with needle from a patient who is HBsAg positive (HBsAg +), anti-HBs negative, anti-HCV nega",
+        "time": 28.19657802581787
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 18-year-old male with pancytopenia? Let's see labs: RBC 230k (low), Hb 6.8 (low), Ht 20% (low), WBC 1400 (low), neutrophils 24% of WBC = about 336 cells? Actual",
+        "time": 28.37689781188965
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 2-month-old girl, seizures, status epilepticus, cardiac arrest, no pulse, no pupillary reflex, resuscitation fails, death. Physical exam: mixed old and new subc",
+        "time": 28.2759530544281
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 69-year-old male with left nasal bleeding, diplopia, worsening nasal obstruction. Imaging shows presumably a tumor in the nasal cavity, likely a squamous cell c",
+        "time": 17.17383313179016
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 8-year-old girl with pruritic rash, widespread eczematous lesions, high eosinophils (12% of 8600 = about 1032 eosinophils), high IgE 2800 IU/",
+        "time": 10.562493085861206
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 80-year-old man, left temporal region to left cheek rash. 3 months ago, a purplish-red macule appeared on left temporal region, gradually enl",
+        "time": 28.225154161453247
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 64-year-old man, left hemiplegia with impaired consciousness, GCS 4+4+6=14? Actually GCS E4 V4 M6 = 14, mild decreased consciousness. BP 164/",
+        "time": 28.210509061813354
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 58-year-old woman with nephrotic-range proteinuria (3+ protein, 280 mg/dL? Actually 280 mg/dL? maybe 280 mg/dL? but 280 mg/dL is low; but they said 280 mg/dL? m",
+        "time": 9.696662902832031
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 78-year-old woman with fever 38°C for a week, fatigue, hypotension (84/50), tachycardia 92, hyponatremia Na 129, hyperkalemia K 5.1, BUN 24, Cr 0.7 (so BUN/Cr r",
+        "time": 28.26537275314331
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 61-year-old man with right knee pain, severe varus deformity, limited ROM, radiographic OA, indicated for total knee arthroplasty (TKA). He had colon cancer sur",
+        "time": 28.268036127090454
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case. 35yo multiparous, prior cesarean sections (selective C-section for breech and previous C-section). At 34w2d, presents for prenatal visit. S",
+        "time": 28.278918743133545
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case: 34-year-old woman, anterior chest pain gradually worsening over 3 months. Physical exam normal, chest X-ray and contrast CT images (not pro",
+        "time": 19.320133209228516
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 44-year-old woman, liver function abnormal: ALP 238 (elevated), γ-GT 266 (elevated). AST/ALT mild elevation (26,32). No jaundice. No risk factors. Histology: po",
+        "time": 10.430586814880371
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 38-year-old woman with abdominal pain, constipation, vomiting, abdominal distension, increased bowel sounds, hard mass in Douglas pouch, abdo",
+        "time": 15.918407201766968
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 22-year-old male with cervical spinal cord injury, 8 weeks post-injury (subacute). He fell from height, now with certain motor and sensory deficits.\n\nWe need to",
+        "time": 28.25980520248413
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 68-year-old male with nasal bleeding, cough, nasal obstruction, hearing loss, bilateral tympanic membrane redness and swelling, proteinuria, hematuria, red bloo",
+        "time": 10.988890171051025
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 5-year-old girl with 3 days high fever, sore throat, decreased appetite, no cough or nasal discharge. Temp 39.6°C, tachycardia, RR 28, SpO2 normal. Good activit",
+        "time": 28.249993801116943
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 40yo male with sudden severe epigastric pain, peritoneal signs (muscle guarding, rebound), absent bowel sounds, CT shows something? Not provide",
+        "time": 11.052321910858154
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "b,c,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 18yo male, fever, headache, altered mental status, neck stiffness, petechiae, CSF: turbid, high opening pressure, pleocytosis with neutrophil",
+        "time": 19.0913348197937
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 42-year-old man with acute abdomen: RLQ pain, peritoneal signs, leukocytosis, mild fever. Likely acute appendicitis? But CT shows something else maybe perforate",
+        "time": 4.389086961746216
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the case: 70yo woman, post-stroke right hemiparesis (right side weakness). She had left internal capsule infarct (so left internal capsule infarct l",
+        "time": 28.346987009048462
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}

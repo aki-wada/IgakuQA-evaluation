@@ -1,0 +1,627 @@
+{
+  "timestamp": "2026-02-21T16:47:28.866946",
+  "model": "tokyotech-llm/GPT-OSS-Swallow-20B-RL-v0.1",
+  "summary": [
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 57,
+      "accuracy": 0.76,
+      "avg_time": 11.748999636967977,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "format_strict": [
+      {
+        "problem_id": "116F1",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In Japan, long-term care insurance (介護保険) for day rehabilitation (通所リハビリテーション). Who should the patient ask for support? The appropriate professional to",
+        "time": 1.4629950523376465
+      },
+      {
+        "problem_id": "116F2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: A patient who was hospitalized now wants to return to work after discharge. As the attending physician, what appropriate action regard",
+        "time": 4.194638967514038
+      },
+      {
+        "problem_id": "116F3",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"最も放射線感受性が低いのはどれか。\" Which tissue is least radiosensitive. Options: thyroid, bone marrow, nerve, skin, ovary. In radiobiology, radiosensitivity ranking:",
+        "time": 2.6460249423980713
+      },
+      {
+        "problem_id": "116F4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about COPD respiratory function. Options:\n\na: 残気量減少 (decreased residual volume) – In COPD, RV is increased (air trapping), so",
+        "time": 6.2707130908966064
+      },
+      {
+        "problem_id": "116F5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"トリグリセリド高値の原因とならないのはどれか。\" Which is not a cause of hypertriglyceridemia. Options:\n\na: 先端巨大症 (acromegaly) – causes increased growth hormone, which can ca",
+        "time": 3.7858057022094727
+      },
+      {
+        "problem_id": "116F6",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: \"母子健康手帳の便色カードを別に示す。生後1か月時に便色が1番を呈した場合考えられる疾患はどれか。\" This is a Japanese question about newborn stool color card (便色カード) used in Japan for",
+        "time": 11.040459156036377
+      },
+      {
+        "problem_id": "116F7",
+        "prediction": "a,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to determine which statement is correct about heart sounds/murmurs and diseases.\n\nWe have options a-e, need to pick the correct combination (maybe only one correc",
+        "time": 28.016309022903442
+      },
+      {
+        "problem_id": "116F8",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"過多月経の原因となるのはどれか。\" Which condition causes menorrhagia (excessive menstrual bleeding). Options:\n\na: 子宮腺筋症 (adenomyosis) – yes, adenomyosis can cause hea",
+        "time": 3.0046088695526123
+      },
+      {
+        "problem_id": "116F9",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: \"粘膜疹が見られる頻度が最も低いのはどれか。\" Which condition has the lowest frequency of mucosal lesions? Options: a: 扁平苔癬 (lichen planus), b: 尋常性乾癬 (psori",
+        "time": 17.463534832000732
+      },
+      {
+        "problem_id": "116F10",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: In a remote island's only clinic, which priority is low? Options: a: provision of advanced medical care, b: collaboration with local g",
+        "time": 2.309401035308838
+      },
+      {
+        "problem_id": "116F11",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"すべての人が、適切な保健医療サービスを必要時に支払い可能な費用で受けることができる状態を目指す、国際保健分野の取り組みの英語名称はどれか。\" This describes Universal Health Coverage (UHC). So answer a. Provide just \"a\".<",
+        "time": 1.5696220397949219
+      },
+      {
+        "problem_id": "116F12",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which is NOT included in universal design principles. Universal design principles (7 principles): Equitable use, Flexibility in use, Simple and intuiti",
+        "time": 2.6141109466552734
+      },
+      {
+        "problem_id": "116F13",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about hospital-acquired pneumonia (院内肺炎). The question: \"院内肺炎について正しいのはどれか。\" Options a-e. Need to select the correct one (sing",
+        "time": 19.991386890411377
+      },
+      {
+        "problem_id": "116F14",
+        "prediction": "a,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a developmental psychology question: \"精神運動発達において、可能になる時期が最も遅いのはどれか。\" Which skill emerges latest in psychomotor development? Options: a: draw a circle. b",
+        "time": 28.010495901107788
+      },
+      {
+        "problem_id": "116F15",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: \"好中球の構成成分に対する自己抗体が診断に有用な疾患はどれか。\" Which disease has autoantibodies against neutrophil components that are useful for diagnosis? Likely ",
+        "time": 5.090497970581055
+      },
+      {
+        "problem_id": "116F16",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to identify which pairing of visual field defect and disease is incorrect. Options a-e.\n\nWe need to know typical visual field defects:\n\n- Bjerrum scotoma: a defec",
+        "time": 18.4579861164093
+      },
+      {
+        "problem_id": "116F17",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about public assistance (生活保護) in Japan. The question: \"生活保護について正しいのはどれか。\" Which statement is correct? Options a-e. Need to p",
+        "time": 6.449734210968018
+      },
+      {
+        "problem_id": "116F18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about dysphagia prevention in elderly with reduced swallowing function. Which food texture is useful to prevent a",
+        "time": 4.132521867752075
+      },
+      {
+        "problem_id": "116F19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: which is NOT appropriate for managing polypharmacy in elderly. Options:\n\na: have a primary pharmacy (かかりつけ薬局) - appropriate.\nb: check for duplicate the",
+        "time": 1.9869801998138428
+      },
+      {
+        "problem_id": "116F20",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to identify which statement about \"次世代育成支援対策推進法\" (Act on Promotion of Measures for Supporting the Next Generation) is incorrect. Need knowledge of Japanese law.\n\n",
+        "time": 13.905286073684692
+      },
+      {
+        "problem_id": "116F21",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a question: \"1歳6か月の健康診査における言語発達の問診として適切なのはどれか。\" Options a-e. Choose appropriate question for language development at 1 year 6 months (18 months). At tha",
+        "time": 16.320194959640503
+      },
+      {
+        "problem_id": "116F22",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: \"ある疾患のリスクについて遺伝要因と喫煙習慣の交互作用が認められるとき、観察される現象として正しいのはどれか。\" So there is an interaction between genetic factor and smoking habit on diseas",
+        "time": 4.624119758605957
+      },
+      {
+        "problem_id": "116F23",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical neurology question in Japanese. Let's translate: \"問題: 乳頭の支配領域レベルで、脊髄の右半分に離断が生じている患者の左半身にみられる神経所見はどれか。\" Means: At the level of the spinal cord correspon",
+        "time": 25.48479700088501
+      },
+      {
+        "problem_id": "116F24",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"職場の自殺予防対策に関係しない職種・組織はどれか。\" Which of the listed is not related to workplace suicide prevention measures.\n\nOptions:\na: 産業医 (occupational physician)\nb: 衛",
+        "time": 2.803469181060791
+      },
+      {
+        "problem_id": "116F25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In normal glomerulus, which is least filtered? Options: IgG, inulin, glucose, sodium, creatinine. In normal glomerulus, filtration barrier: size and ch",
+        "time": 1.7318520545959473
+      },
+      {
+        "problem_id": "116F26",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to find which combination of bleeding symptom and disease is incorrect. Options a-e. Need to know typical bleeding manifestations for each disease.\n\nLet's recall:",
+        "time": 7.3432910442352295
+      },
+      {
+        "problem_id": "116F27",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"出生前遺伝学的検査のうち確定的検査はどれか。2つ選べ。\" Options: a: 絨毛検査 (chorionic villus sampling), b: 羊水検査 (amniocentesis), c: 超音波検査 (ultrasound), d: 母体血清マーカー検査 (maternal ser",
+        "time": 2.7832980155944824
+      },
+      {
+        "problem_id": "116F28",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In neonates, which values are higher than adult values? Choose two. Options: IgM, total protein, total bilirubin, creatinine, alkaline phosphatase.\n\nWe",
+        "time": 6.994513750076294
+      },
+      {
+        "problem_id": "116F29",
+        "prediction": "b,d",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to know what indicators are derived from the National Health and Nutrition Survey? Actually \"国民生活基礎調査\" (National Survey of Family Income and Expenditure? Wait tha",
+        "time": 21.4921772480011
+      },
+      {
+        "problem_id": "116F30",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: In normal pregnancy, compared to pre-pregnancy, which increase in late pregnancy? Choose two.\n\nOptions: a: platelets, b: creatinine,",
+        "time": 3.028182029724121
+      },
+      {
+        "problem_id": "116F31",
+        "prediction": "a,c",
+        "gold": "a,c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to select correct pairings of congenital anomaly and inheritance pattern. Options a-e, choose two correct.\n\nLet's evaluate each:\n\na: Hemophilia (血友病) is X-linked ",
+        "time": 3.1927149295806885
+      },
+      {
+        "problem_id": "116F32",
+        "prediction": "b,c",
+        "gold": "b,c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: metastatic ovarian tumor primary site frequency high. In medicine, secondary ovarian tumors (metastatic ovarian cancer) most common primaries: gastroin",
+        "time": 5.766297817230225
+      },
+      {
+        "problem_id": "116F33",
+        "prediction": "a,b,e",
+        "gold": "a,b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer in Japanese? The instruction: answer only alphabet letters, no explanation. The question: \"高齢者の介護予防に重要なのはどれか。3つ選べ。\" Options: a: フレイル (frailty), b: サルコペニ",
+        "time": 2.7509279251098633
+      },
+      {
+        "problem_id": "116F34",
+        "prediction": "a,b,c",
+        "gold": "a,b,c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer which conditions cause weight loss (やせ). Options: Addison disease (adrenal insufficiency), pheochromocytoma, hyperthyroidism, primary aldosteronism, pri",
+        "time": 9.452229976654053
+      },
+      {
+        "problem_id": "116F35",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 73-year-old man with bilateral calf pain on walking (claudication) that occurs after about 5 minutes of walking, relieved by rest. No rest pain, no sensory loss",
+        "time": 4.215363025665283
+      },
+      {
+        "problem_id": "116F36",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical question: 7-year-old boy with rash for one day, mother brings him. Healthy, normal vitals, rash all over body including scalp. Likely measles? Let's th",
+        "time": 5.273807764053345
+      },
+      {
+        "problem_id": "116F37",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case: 45-year-old woman, bilateral hearing loss and tinnitus, onset around age 25, progressive, tinnitus from age 35. Tympanic membranes normal. ",
+        "time": 18.283890962600708
+      },
+      {
+        "problem_id": "116F38",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the clinical scenario: 25yo male, ear laceration from knife, bleeding not controlled by pressure. Photo shows wound likely a laceration of ear canal?",
+        "time": 11.019605875015259
+      },
+      {
+        "problem_id": "116F39",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a forensic pathology question. 66-year-old male found dead in fire. Which finding indicates he was alive at time of fire? Options:\n\na: intracranial burn hematoma?",
+        "time": 6.701944828033447
+      },
+      {
+        "problem_id": "116F40",
+        "prediction": "a,c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 7-year-old girl with tibia and fibula shaft fractures, closed, after fall. Closed reduction and cast immobilization. Need to give post-discha",
+        "time": 28.194961071014404
+      },
+      {
+        "problem_id": "116F41",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 40-year-old man with hand numbness and coldness in morning, Raynaud phenomenon? He works on construction, using tools for digging. No chemicals. Symptoms starte",
+        "time": 4.581143140792847
+      },
+      {
+        "problem_id": "116F42",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 38yo man, facial and foot edema, periorbital edema, weight gain 8kg in 1 month, no pain, no other signs. Physical: no JVD, no heart/lung sounds",
+        "time": 6.013399124145508
+      },
+      {
+        "problem_id": "116F43",
+        "prediction": "a,c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical obstetrics question about fetal head rotation and presentation. 34yo woman, 39w5d, labor. At admission, fetal heart heard at left lower abdomen. Intern",
+        "time": 28.13812494277954
+      },
+      {
+        "problem_id": "116F44",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 85-year-old man, hospitalized for pneumonia 3 weeks ago, advanced lung cancer not treated. After admission, they gave antibiotics and 500 mL ",
+        "time": 23.813401222229004
+      },
+      {
+        "problem_id": "116F45",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 71-year-old man with jaundice, fatigue, dark urine? Urine: protein -, sugar -, occult blood +, bilirubin 2+. Labs: total bilirubin 9.8 mg/dL, direct bilirubin 6",
+        "time": 6.901297092437744
+      },
+      {
+        "problem_id": "116F46",
+        "prediction": "a,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret obstetrics scenario. 32yo primigravida, 41 weeks, regular contractions started at 1am, now at 9am (8 hours later) cervical dilation 5cm, 60% effaceme",
+        "time": 28.176447868347168
+      },
+      {
+        "problem_id": "116F47",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 79-year-old male with stage IA left lower lobe lung adenocarcinoma, tumor 2.0 cm. He opts for radiation therapy (presumably stereotactic body radiotherapy SBRT)",
+        "time": 7.807293176651001
+      },
+      {
+        "problem_id": "116F48",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 69-year-old male on hemodialysis, presenting with acute chest pain, cold sweat, ST elevation in II, III, aVF (inferior leads). This suggests inferior STEMI. He ",
+        "time": 2.6164491176605225
+      },
+      {
+        "problem_id": "116F49",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 66-year-old woman with exertional chest discomfort, risk factors, coronary angiography shows 50-75% stenosis in LAD. They consider revascular",
+        "time": 4.836426019668579
+      },
+      {
+        "problem_id": "116F50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 33-year-old male, increased absenteeism, alcohol smell, diagnosed with alcohol use disorder. He says work stress, increased drinking, stopped",
+        "time": 5.656949043273926
+      },
+      {
+        "problem_id": "116F51",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 32yo male, accident with sealed radioactive source broken, source attached to clothing and skin. Prehospital decontamination done, 40 min ela",
+        "time": 21.739071130752563
+      },
+      {
+        "problem_id": "116F52",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical question: 20-year-old male, right ankle lateral pain after sprain, swelling, subcutaneous ecchymosis. X-ray A and stress X-ray B shown. Need to choose ",
+        "time": 3.859241008758545
+      },
+      {
+        "problem_id": "116F53",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 46-year-old woman with acute left flank to back pain, history of similar episodes 3 years ago that resolved spontaneously. Physical: left costovertebral angle t",
+        "time": 7.8076019287109375
+      },
+      {
+        "problem_id": "116F54",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 6-year-old boy, unilateral severe sensorineural hearing loss (高度感音難聴) identified in school health exam. No neonatal asphyxia, no developmental abnormalities. Ne",
+        "time": 5.844208717346191
+      },
+      {
+        "problem_id": "116F55",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 76-year-old male with acute respiratory distress, fever, dry cough for 8 days, now dyspnea at rest, confusion, SpO2 93% on 10L O2 mask, crackles, labs: LDH high",
+        "time": 18.282443046569824
+      },
+      {
+        "problem_id": "116F56",
+        "prediction": "a,c",
+        "gold": "a,c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 34yo woman, persistent \"誰彼かまわず夜中に電話をする\" (calls random people at night). Over past 2 weeks: disorganized speech (内容がまとまらない), laughing uncontroll",
+        "time": 6.288372039794922
+      },
+      {
+        "problem_id": "116F57",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 18yo male, double vision (diplopia) after being hit in left eye region during baseball. Left eyelid swelling and ecchymosis resolved, but now",
+        "time": 26.544355154037476
+      },
+      {
+        "problem_id": "116F58",
+        "prediction": "b,d,e",
+        "gold": "b,d,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 73-year-old woman with 2 months of worsening low back pain, previously on NSAIDs, now severe pain limiting movement and ambulation. Labs: anemia (Hb 8.2, Ht 23)",
+        "time": 7.412867069244385
+      },
+      {
+        "problem_id": "116F59",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the case. 42yo male, explosion, smoke inhalation, soot in mouth, edema, wheezes, carbon monoxide poisoning (HbCO 15%). Also severe trauma, fractures,",
+        "time": 13.403692960739136
+      },
+      {
+        "problem_id": "116F60",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a medical question in Japanese. It says: After airway secured, rapid ultrasound (point-of-care ultrasound) is performed. Which site is NOT appropriate for confirm",
+        "time": 11.030272006988525
+      },
+      {
+        "problem_id": "116F61",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: patient with right femur fracture, after reduction and fixation, right femoral artery repair, hemostasis confirmed. Right thigh swelling, ext",
+        "time": 11.784592866897583
+      },
+      {
+        "problem_id": "116F62",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 48yo woman with left flank pain, history of left lower rib fracture 3 days ago, now sudden left abdominal pain, guarding, mild tachycardia, mild leukocytosis, n",
+        "time": 5.413316011428833
+      },
+      {
+        "problem_id": "116F63",
+        "prediction": "a,c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical question in Japanese. Need to understand context: \"この時点で追加する検査として優先度が低いのはどれか。\" Means: At this point, which of the following tests has the lowest priori",
+        "time": 27.985416173934937
+      },
+      {
+        "problem_id": "116F64",
+        "prediction": "a,c",
+        "gold": "a,c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the clinical scenario. The question: \"入院し、経過をみた。翌日のバイタルサイン：体温37.2℃。脈拍128/分、整。血圧98/50mmHg。呼吸数20/分。この時点で適切な対応はどれか。2つ選べ。\" So a patient was hospitalized",
+        "time": 12.448499202728271
+      },
+      {
+        "problem_id": "116F65",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 59yo man with acute dyspnea, no chest pain, on oxygen mask 5L, SpO2 99% (under mask). Physical: III gallop (maybe S3?), Levine 4/6 holosystolic",
+        "time": 6.364828824996948
+      },
+      {
+        "problem_id": "116F66",
+        "prediction": "a,c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical question in Japanese. It says: \"問題: この患者に出現した弁膜症の原因として最も考えられるのはどれか。\" Means: \"Which of the following is most likely the cause of the valvular disease th",
+        "time": 28.023006916046143
+      },
+      {
+        "problem_id": "116F67",
+        "prediction": "a,d,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: \"弁膜症に対する緊急手術を行うこととなった。手術までの治療として血行動態の改善が期待できるものはどれか。2つ選べ。\" So a patient with valvular disease requiring urgent surgery; preoperative m",
+        "time": 28.042077779769897
+      },
+      {
+        "problem_id": "116F68",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 50yo woman with central venous port (CV port) placed for chemotherapy for colon cancer. She now has fever, chills, and local redness/pain at port site. Blood cu",
+        "time": 6.111818075180054
+      },
+      {
+        "problem_id": "116F69",
+        "prediction": "a,c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: patient hospitalized, on day 3 still fever, now dyspnea in supine position, and rash with pain on toes (painful rash on toes). Likely looking",
+        "time": 27.999329090118408
+      },
+      {
+        "problem_id": "116F70",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"中心静脈ポートの再造設に際して誤っているのはどれか。\" Options a-e. Need to pick the incorrect statement regarding re-implantation of a central venous port.\n\n",
+        "time": 6.811380386352539
+      },
+      {
+        "problem_id": "116F71",
+        "prediction": "a,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 65-year-old woman with positive fecal occult blood, undergoing colonoscopy (lower GI endoscopy) under sedation. The question: \"この患者に行うべきなのはどれか。2つ選べ。\" Options ab",
+        "time": 28.461402893066406
+      },
+      {
+        "problem_id": "116F72",
+        "prediction": "a,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a question in Japanese: \"問題: 下部消化管内視鏡像を別に示す。病変が存在する部位はどこか。 a: 直腸 b: 盲腸 c: 上行結腸 d: 横行結腸 e: 下行結腸 1個選んで答えてください。答え:\"\n\nWe need to identify location of lesion based on ",
+        "time": 27.999635934829712
+      },
+      {
+        "problem_id": "116F73",
+        "prediction": "a,c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical question in Japanese. It describes: \"腹部造影CTでは明らかな転移を認めなかった。後日入院し治療が行われた。治療時の下部消化管内視鏡像を別に示す。この患者に行われたのはどれか。\" So they show an endoscopic image of lower G",
+        "time": 28.0259211063385
+      },
+      {
+        "problem_id": "116F74",
+        "prediction": "0.38",
+        "gold": "04",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a case-control study. Data:\n\nCases (disease A present):\n- No exposure: 50\n- Low exposure: 40\n- High exposure: 30\n\nControls (disease A absent):\n- No exposure: 50\n-",
+        "time": 13.219076871871948
+      },
+      {
+        "problem_id": "116F75",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand obstetrics terminology in Japan. The case: 40-year-old multiparous, at 14 weeks gestation (i.e., 14 weeks pregnant). She presents with lower abdomin",
+        "time": 11.87086272239685
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}

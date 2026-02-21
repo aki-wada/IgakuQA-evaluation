@@ -1,0 +1,627 @@
+{
+  "timestamp": "2026-02-21T16:15:00.502620",
+  "model": "tokyotech-llm/GPT-OSS-Swallow-20B-RL-v0.1",
+  "summary": [
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 46,
+      "accuracy": 0.6133333333333333,
+      "avg_time": 14.010528144836426,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "format_strict": [
+      {
+        "problem_id": "116C1",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: In home medical care (在宅医療) patient/family explanation appropriate. Choose correct statement among options a-e. Only one correct.\n\nWe n",
+        "time": 16.999982118606567
+      },
+      {
+        "problem_id": "116C2",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to determine which nutritional management is NOT appropriate for an elderly patient with suspected malnutrition (BMI 18 kg/m2, weight loss 3 kg in 6 months), no r",
+        "time": 7.3635053634643555
+      },
+      {
+        "problem_id": "116C3",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about infection control team in medical facilities. The question: \"医療施設における感染制御チームが行わないのはどれか。\" Which of the follo",
+        "time": 3.3035526275634766
+      },
+      {
+        "problem_id": "116C4",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a question in Japanese: \"問題: 頭部CT画像から三次元再構成して得た乳児頭蓋の画像を別に示す。成人するまでに消失する縫合線はどれか。 a: ① b: ② c: ③ d: ④ e: ⑤ 1個選んで答えてください。答え:\"\n\nWe need to identify which cranial sutu",
+        "time": 16.571086168289185
+      },
+      {
+        "problem_id": "116C5",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about regional health care (地域保健医療). The question: \"地域保健医療について正しいのはどれか。\" Options a-e. Need to select the correct one (single ",
+        "time": 20.71806287765503
+      },
+      {
+        "problem_id": "116C6",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the test described: \"新生児の出生直後の胃内容物を採取してピペットで吸排して泡立てる。その後4分間静置して、顕微鏡で1mm2あたりの直径15μm未満の泡の数をカウントする\" This is a test for something. Likely measuring surf",
+        "time": 22.337106943130493
+      },
+      {
+        "problem_id": "116C7",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about pandemic definition. The question: \"パンデミックについて適切なのはどれか。\" Options a-e. Need to choose correct definition of pandemic.\n\nL",
+        "time": 3.9215002059936523
+      },
+      {
+        "problem_id": "116C8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about REM sleep. The question: \"レム睡眠で正しいのはどれか。\" Options:\n\na: 徐波睡眠と呼ばれる。 (REM sleep is called slow-wave sleep) Tha",
+        "time": 4.005223989486694
+      },
+      {
+        "problem_id": "116C9",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a question in Japanese about high-cost medical expense benefit system (高額療養費制度) in Japan. The question: \"高額療養費制度において、患者の年齢に加えて月の自己負担限度額を規定する条件はどれか。\" Whi",
+        "time": 2.5415220260620117
+      },
+      {
+        "problem_id": "116C10",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to know the \"がん対策推進基本計画（平成30年3月）\" which is Japan's Cancer Control Basic Plan (published March 2018). It includes palliative care (緩和ケア). The question: which state",
+        "time": 4.427427768707275
+      },
+      {
+        "problem_id": "116C11",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a question in Japanese about preventive medicine levels: primary, secondary, tertiary prevention. They ask: \"下線部のうち、三次予防はどれか。\" Underlined parts are numbered activ",
+        "time": 3.6126718521118164
+      },
+      {
+        "problem_id": "116C12",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which disease does NOT cause exudative pleural effusion? Options: a: pulmonary embolism, b: cirrhosis, c: acute pancreatitis, d: tuberculous pleuritis,",
+        "time": 2.0786521434783936
+      },
+      {
+        "problem_id": "116C13",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which is effective for inactivating norovirus? Options: a: reverse soap? Actually \"逆性石鹸\" maybe \"reverse soap\"? Not sure. b: 40°C warm water. c: 40% alc",
+        "time": 2.8658151626586914
+      },
+      {
+        "problem_id": "116C14",
+        "prediction": "a,c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical question in Japanese. It describes \"尖足\" (pes cavus? Actually \"尖足\" maybe \"尖足\" means \"尖足\"?? Let's translate: \"尖足\" might be \"尖足\" meaning \"尖足\" (pes cavus) ",
+        "time": 28.110938787460327
+      },
+      {
+        "problem_id": "116C15",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: \"総人口を分母とする指標はどれか。\" Which indicator uses total population as denominator? Options:\n\na: 婚姻率 (marriage rate) – usually number of marriage",
+        "time": 4.5390636920928955
+      },
+      {
+        "problem_id": "116C16",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"痛みを主訴に受診するのはどれか。\" Which condition presents with pain as chief complaint? Options: a: 子宮前屈 (uterine retroflexion?), b: 子宮腔癒着 (uterine cavity adhesions,",
+        "time": 4.532447099685669
+      },
+      {
+        "problem_id": "116C17",
+        "prediction": "a,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret the problem. It's about prevalence of disease Y across cohorts born in different years, tracked from 1965 to 2015 every 10 years up to max 6 times. T",
+        "time": 28.19113779067993
+      },
+      {
+        "problem_id": "116C18",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In anemia of chronic disease (ACD) due to chronic inflammation, which of the following increases? Options: a serum iron, b ferritin, c reticulocyte cou",
+        "time": 4.118639230728149
+      },
+      {
+        "problem_id": "116C19",
+        "prediction": "a,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a question in Japanese: \"問題: 毒性物質の負荷量と毒性が発現する確率を示した図を別に示す。1日摂取許容量の計算に必要な負荷量はどれか。 a: ① b: ② c: ③ d: ④ e: ⑤ 1個選んで答えてください。答え:\"\n\nWe need to interpret: There's a diagr",
+        "time": 28.10657286643982
+      },
+      {
+        "problem_id": "116C20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: Under saline IV infusion and 2 days of fasting, which of the following rises? Options: HbA1c, ketone bodies, albumin, triglycerides,",
+        "time": 3.7574310302734375
+      },
+      {
+        "problem_id": "116C21",
+        "prediction": "a,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about recent disease and disease risk in Japan. Options a-e, choose the correct statement. Need to know epidemiology data.\n\nL",
+        "time": 28.178465843200684
+      },
+      {
+        "problem_id": "116C22",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Inflammatory disease CRP rise most associated cytokine. CRP is acute-phase protein produced by liver in response to IL-6 primarily. So answer b: IL-6. ",
+        "time": 1.0632128715515137
+      },
+      {
+        "problem_id": "116C23",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a question in Japanese: \"Which is the most likely personal information that can be used to identify an individual person?\" Options: a: ABO blood type, b: Annual i",
+        "time": 1.971839189529419
+      },
+      {
+        "problem_id": "116C24",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which nerve innervates the intrinsic laryngeal muscles that are active during phonation? The intrinsic laryngeal muscles (internal laryngeal muscles) a",
+        "time": 1.5564501285552979
+      },
+      {
+        "problem_id": "116C25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"地方衛生研究所の業務でないのはどれか。\" Options a-e. Need to know functions of local public health research institutes (地方衛生研究所) in Japan. Typically they conduct: epidem",
+        "time": 5.185492038726807
+      },
+      {
+        "problem_id": "116C26",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: \"問題: 2009年に比較して2019年の数値が上昇しているのはどれか。\" Means: Compared to 2009, which of the following increased in 2019? Options: a: 総人口 (total populat",
+        "time": 10.224645853042603
+      },
+      {
+        "problem_id": "116C27",
+        "prediction": "b,c",
+        "gold": "b,c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"夜盲を訴える患者の診断に有用な検査はどれか。2つ選べ。\" Options: a: 隅角検査 (anterior chamber angle exam), b: 視野検査 (visual field test), c: 網膜電図 (electroretinography), d: 角膜知覚検査 (co",
+        "time": 3.453404188156128
+      },
+      {
+        "problem_id": "116C28",
+        "prediction": "a,d,e",
+        "gold": "a,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a Japanese medical question: \"へき地医療拠点病院について正しいのはどれか。2つ選べ。\" Options a-e. Need to select two correct statements about \"remote area medical base hospitals\"",
+        "time": 28.122843980789185
+      },
+      {
+        "problem_id": "116C29",
+        "prediction": "a,d,e",
+        "gold": "c,d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a Japanese question about \"予防接種法に規定されている定期接種について正しいのはどれか。2つ選べ。\" Options a-e. Need to select two correct statements.\n\nWe must know Japanese law: The Immu",
+        "time": 28.156655073165894
+      },
+      {
+        "problem_id": "116C30",
+        "prediction": "c,d",
+        "gold": "c,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a Japanese question about \"生活保護法\" (Public Assistance Law). Choose two correct statements among a-e.\n\nWe need to know the law.\n\nLet's recall: The Public ",
+        "time": 22.142271041870117
+      },
+      {
+        "problem_id": "116C31",
+        "prediction": "b,d",
+        "gold": "b,d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"骨盤腔に及ぶ脾腫がみられる頻度が高いのはどれか。2つ選べ。\" Which conditions have high frequency of splenomegaly extending into the pelvic cavity? Options: a: m",
+        "time": 8.835364818572998
+      },
+      {
+        "problem_id": "116C32",
+        "prediction": "a,d,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a Japanese question about occupational accidents in Japan. The question: \"我が国の労働災害について正しいのはどれか。2つ選べ。\" Options a-e. Need to select two correct statements",
+        "time": 28.144076108932495
+      },
+      {
+        "problem_id": "116C33",
+        "prediction": "a,e",
+        "gold": "b,c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a question in Japanese about echocardiography images (transesophageal echocardiography). It mentions \"収縮期（A）と拡張期（B）の経食道心臓超音波像を別に示す。\" Means \"The images of the hear",
+        "time": 28.135852098464966
+      },
+      {
+        "problem_id": "116C34",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer which facilities/services under long-term care insurance allow physiotherapy or occupational therapy rehabilitation. In Japan, \"理学療法士や作業療法士によるリハビリテーション\"",
+        "time": 9.470463991165161
+      },
+      {
+        "problem_id": "116C35",
+        "prediction": "a,d,e",
+        "gold": "b,c,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple-choice question about labor law in Japan regarding maternity leave, childcare leave, etc. The question: \"出産、育児と就労について正しいのはどれか。3つ選べ。\" Options ",
+        "time": 28.14629077911377
+      },
+      {
+        "problem_id": "116C36",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 65-year-old woman with rheumatoid arthritis, refractory to methotrexate and prednisone, considering biologic therapy. Need pre-treatment screening for opportuni",
+        "time": 4.128546237945557
+      },
+      {
+        "problem_id": "116C37",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 75-year-old woman with intermittent melena (dark red blood in stool) and now a recent episode, now normal stool. Hemoglobin low 8.6, iron deficiency anemia (low",
+        "time": 5.8063530921936035
+      },
+      {
+        "problem_id": "116C38",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 56-year-old man with fire exposure, facial and hand burns, soot in airway, cough, stridor? Actually wheeze, SpO2 99% on 6L O2 mask. Concern for inhalation injur",
+        "time": 3.5907111167907715
+      },
+      {
+        "problem_id": "116C39",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: 64-year-old woman with gradual memory loss over a year, forgetfulness, can't recall where she put wallet, meals. Likely dementia, possi",
+        "time": 6.678054332733154
+      },
+      {
+        "problem_id": "116C40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 21-year-old woman with facial rash, photosensitivity? Actually rash after sea bathing, facial rash, joint pain, dizziness, low platelets? Let's parse.\n\nSymptoms",
+        "time": 8.764564037322998
+      },
+      {
+        "problem_id": "116C41",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand case: 84-year-old woman with head trauma, falls, gait instability, rigidity in both upper limbs, no tremor. Likely Parkinson disease? Rigidity, smal",
+        "time": 6.970494031906128
+      },
+      {
+        "problem_id": "116C42",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical question in Japanese. 10-month-old boy with blood in stool, vomiting, irritability. Findings: ①刺激足底すると開眼し (when foot is stimulated, opens eyes) – that'",
+        "time": 5.339545011520386
+      },
+      {
+        "problem_id": "116C43",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 52-year-old woman with hematochezia, colonoscopy shows S状結腸 (sigmoid colon) lesion, biopsy shows well-differentiated adenocarcinoma. Need next step. For colorec",
+        "time": 3.6384119987487793
+      },
+      {
+        "problem_id": "116C44",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 3-day-old male infant (postnatal day 3). Noticed mild abdominal distension. Birth at 40 weeks, 3100g. Findings: ① meconium passage at 48 hour",
+        "time": 26.322859048843384
+      },
+      {
+        "problem_id": "116C45",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 78-year-old man with sweating and nausea episodes, occurring while sitting, lasting ~5 minutes, improved spontaneously. He has hypertension, diabetes, old MI. V",
+        "time": 6.674463987350464
+      },
+      {
+        "problem_id": "116C46",
+        "prediction": "a,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand postpartum day 3 (産褥3日目) in a woman who delivered vaginally at 38 weeks 6 days, 2900g female. No complications, normal bleeding. Need to know what f",
+        "time": 28.210400104522705
+      },
+      {
+        "problem_id": "116C47",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 42-year-old woman vegetarian, strict vegan for >10 years, no fish/seafood/dairy. She presents with hand stiffness (likely carpal tunnel? maybe rheumatoid? but s",
+        "time": 11.891056060791016
+      },
+      {
+        "problem_id": "116C48",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 28yo woman, nausea, fatigue, amenorrhea, positive pregnancy test, mild lower abdominal pain, decreased appetite, ultrasound shows intrauterin",
+        "time": 7.076672077178955
+      },
+      {
+        "problem_id": "116C49",
+        "prediction": "a,c,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 75-year-old woman with advanced Alzheimer’s disease, wandering at night, husband concerned, now hospitalized in psychiatric ward for assessme",
+        "time": 28.2375910282135
+      },
+      {
+        "problem_id": "116C50",
+        "prediction": "a,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to interpret obstetrics scenario. 36yo woman at 37w1d, ruptured membranes, cervical dilation 2cm, 40% effacement, soft, fetal station SP+1cm. At 10am, labor start",
+        "time": 28.29981803894043
+      },
+      {
+        "problem_id": "116C51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: 52-year-old man, overweight, BMI 25.6, started early morning 1 hour walk after health check. The question: \"この患者の行動変容のステージに基づく指導として適切な",
+        "time": 6.082702875137329
+      },
+      {
+        "problem_id": "116C52",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a question in Japanese about Duchenne muscular dystrophy (DMD). The scenario: First child (3-year-old boy) diagnosed clinically with DMD. Parents come for genetic",
+        "time": 24.5714008808136
+      },
+      {
+        "problem_id": "116C53",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical question: 28yo primigravida, 36 weeks, fetal growth restriction (FGR). Measurements: at 32 weeks, EFW 1586g (-1.0SD). At 34 weeks, 1776g (-1.5SD). Now ",
+        "time": 10.197273015975952
+      },
+      {
+        "problem_id": "116C54",
+        "prediction": "a,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a question in Japanese about quarantine law (検疫法) in Japan. 26-year-old male, returned from abroad, has fever and diarrhea, possible Category 1 infectious disease",
+        "time": 28.188717126846313
+      },
+      {
+        "problem_id": "116C55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: 57-year-old male with IgA nephropathy, CKD stage 5 (eGFR 16.5, BUN 60, Cr 3.3). He wants kidney transplant from his wife (55-year-old h",
+        "time": 8.283192873001099
+      },
+      {
+        "problem_id": "116C56",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 6.5-year-old girl with breast development (Tanner stage III) since about 1 year ago, progressive. No other signs. Height 127 cm, weight 26 kg. Let's see growth:",
+        "time": 12.205552101135254
+      },
+      {
+        "problem_id": "116C57",
+        "prediction": "b,e",
+        "gold": "b,c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 32yo woman found in a room with fire, unconscious, seizures, metabolic acidosis with lactate 40 mg/dL (elevated). Likely carbon monoxide poisoning? But CO poiso",
+        "time": 16.50744390487671
+      },
+      {
+        "problem_id": "116C58",
+        "prediction": "a,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 40-year-old woman, specific health check (特定健康診査) – Japanese health check for metabolic syndrome? The question: \"この患者で特定保健指導による支援が必要とされる基準に該当するのはどれか。2つ選べ。\" So w",
+        "time": 28.3229398727417
+      },
+      {
+        "problem_id": "116C59",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 40-year-old male, occupational exposure to solvents (sinner) used in spray painting. No symptoms, AST/ALT mildly elevated. Smoking 20 cigarettes per day for 15 ",
+        "time": 20.062964916229248
+      },
+      {
+        "problem_id": "116C60",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 82yo woman with confusion, vomiting, hyponatremia (Na 108), hyperchloremic? labs: Na 108, K 3.5, Cl 73, Ca normal. Urine osmolality 702 (high),",
+        "time": 7.065216779708862
+      },
+      {
+        "problem_id": "116C61",
+        "prediction": "a,c,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical question in Japanese. Need to understand the case: \"この患者の内服薬のうち病態の原因として最も可能性が高いのはどれか。\" Means: Among the oral medications of this patient, which is most",
+        "time": 28.124936819076538
+      },
+      {
+        "problem_id": "116C62",
+        "prediction": "a,c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical question in Japanese. Need to determine which fluid to give to this patient. But we lack context: the problem statement is incomplete. Probably there i",
+        "time": 28.146867036819458
+      },
+      {
+        "problem_id": "116C63",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 62yo woman with flank pain, fever, vomiting, hypotension (88/54), tachycardia 110, tachypnea, low blood pressure, signs of sepsis? Also urinary",
+        "time": 4.241654872894287
+      },
+      {
+        "problem_id": "116C64",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical question: Blood cultures from admission, both aerobic and anaerobic bottles positive. Gram stain of blood culture broth shown (not provided in text). N",
+        "time": 25.213433027267456
+      },
+      {
+        "problem_id": "116C65",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: patient receiving antibiotics, had fever resolved after day 4, recovered, planned 10 days of antibiotics. On day 8, fever and abdominal pain,",
+        "time": 3.107102155685425
+      },
+      {
+        "problem_id": "116C66",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 73-year-old man with dizziness, hypotension (86/50), bradycardia (pulse 48, irregular), hyperkalemia K 7.6, elevated BUN/Cr (Cr 2.4, BUN 35), oliguria? Not give",
+        "time": 5.77392578125
+      },
+      {
+        "problem_id": "116C67",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a medical question in Japanese: \"直ちに投与すべき薬剤はどれか。\" Means \"Which drug should be administered immediately?\" Options: a: Dopamine, b: Atropine, c: Adrenaline (epineph",
+        "time": 18.237732887268066
+      },
+      {
+        "problem_id": "116C68",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: \"病態に関連する可能性のある薬剤はどれか。2つ選べ。\" Means: Which drugs may be related to the disease condition? Probably a clinical vignette missing? The ques",
+        "time": 18.05134892463684
+      },
+      {
+        "problem_id": "116C69",
+        "prediction": "a,d,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the case: 56-year-old woman with ALS (amyotrophic lateral sclerosis). She has progressive muscle weakness, both upper and lower motor neuron signs. ",
+        "time": 28.590857982635498
+      },
+      {
+        "problem_id": "116C70",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: \"今後の在宅療養に向けて必要な検査はどれか。\" Means: Which test is needed for future home care (in-home medical care). Options: a: cervical spine CT, b: bra",
+        "time": 4.489080905914307
+      },
+      {
+        "problem_id": "116C71",
+        "prediction": "a,b,c",
+        "gold": "a,b,e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple-choice question: \"今後の在宅生活で必要なのはどれか。3つ選べ。\" Options: a: 口腔ケア (oral care), b: 住宅改修 (housing modification), c: 筋力増強訓練 (strength training), d: 自己導",
+        "time": 14.130483865737915
+      },
+      {
+        "problem_id": "116C72",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 87yo female with bilateral lower leg edema, worsening, dyspnea on exertion, anorexia, low hemoglobin (8.1), low albumin 2.5, low calcium, mild ",
+        "time": 16.676393032073975
+      },
+      {
+        "problem_id": "116C73",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: For fecal occult blood test (FOBT) for anemia cause investigation. Which instruction to patient about home sample collection is appr",
+        "time": 11.543730020523071
+      },
+      {
+        "problem_id": "116C74",
+        "prediction": "a,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: In elderly comprehensive geriatric assessment (CGA), which of the following is NOT appropriate to evaluate? Options: hearing, cognitio",
+        "time": 28.257862091064453
+      },
+      {
+        "problem_id": "116C75",
+        "prediction": "a,e",
+        "gold": "325",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 10-day-old male infant (postnatal day 10). He had surgery at day 3, now on day? The problem: \"日齢10の男児。生後3日目に腸回転異常症の手術を行い、術後は中心静脈栄養を行っていた。排便を認めたため、術後5日目から人工乳の哺乳を",
+        "time": 28.19758915901184
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "timestamp": "2026-02-21T15:57:21.602655",
+  "model": "tokyotech-llm/GPT-OSS-Swallow-20B-RL-v0.1",
+  "summary": [
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 50,
+      "correct": 42,
+      "accuracy": 0.84,
+      "avg_time": 9.6857178068161,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "format_strict": [
+      {
+        "problem_id": "116B1",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a question: \"担当した患者の症例報告を論文発表することにした。適切なのはどれか。\" Options a-e. Need to choose appropriate action for case report publication. In medical ethics, need pati",
+        "time": 5.2598888874053955
+      },
+      {
+        "problem_id": "116B2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to determine which statement is correct about abnormal breathing or dyspnea patient findings and causes.\n\nWe have options a-e each pairing a sign with a cause. Ne",
+        "time": 7.505879163742065
+      },
+      {
+        "problem_id": "116B3",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: \"患者の言葉のうち幻聴ではないと考えられるのはどれか。\" Which of the statements is NOT considered auditory hallucination? In schizophrenia etc, auditory hallucina",
+        "time": 11.023196935653687
+      },
+      {
+        "problem_id": "116B4",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about appropriate use of antibiotics. The question: \"抗菌薬の適正使用について誤っているのはどれか。\" Which statement is incorrect regard",
+        "time": 8.08298397064209
+      },
+      {
+        "problem_id": "116B5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In a patient with altered consciousness, which physical exam is difficult to perform? Options: a: tendon reflex, b: neck rigidity (項部硬直), c: pupillary ",
+        "time": 23.915510892868042
+      },
+      {
+        "problem_id": "116B6",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: In Japanese medical context, after treatment, if a patient wants to consult someone other than the attending physician, which facility",
+        "time": 6.614403009414673
+      },
+      {
+        "problem_id": "116B7",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In early pregnancy vs late pregnancy, which hormone is higher in early pregnancy? Options: estrogen, prolactin, progesterone, hPL, hCG.\n\nWe know hCG pe",
+        "time": 1.9397869110107422
+      },
+      {
+        "problem_id": "116B8",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about age-related changes in kidney function. Options:\n\na: 腎血流量増加 (increase renal blood flow) – In aging, renal b",
+        "time": 5.362136125564575
+      },
+      {
+        "problem_id": "116B9",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about medical interview communication. The question: \"医療面接において患者と良好なコミュニケーションを行うために適切なのはどれか。\" Options:\n\na: 医学用語を用",
+        "time": 3.952333927154541
+      },
+      {
+        "problem_id": "116B10",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer which statement about social security system is correct. Options a-e. Need to know Japanese health/social security facts.\n\nLet's analyze each.\n\na: 診療録の保",
+        "time": 20.74037218093872
+      },
+      {
+        "problem_id": "116B11",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In a patient with sore throat, which accompanying symptom indicates high urgency? Options: a: sputum, b: purulent nasal discharge, c: drooling of saliv",
+        "time": 5.325037956237793
+      },
+      {
+        "problem_id": "116B12",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"幼児期以降に筋力低下が明らかになるのはどれか。\" Which condition shows muscle weakness becoming apparent after infancy (i.e., after neonatal period). Options:\n\na: Werdnig-Hof",
+        "time": 5.336275815963745
+      },
+      {
+        "problem_id": "116B13",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about appropriate care respecting individuality and dignity of elderly. Options:\n\na: call elderly with \"chan\" suf",
+        "time": 2.648005723953247
+      },
+      {
+        "problem_id": "116B14",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to identify which statement is incorrect about disease/condition and risk behavior association.\n\nOptions:\n\na: Breast cancer - drinking habit. Alcohol consumption ",
+        "time": 6.1563849449157715
+      },
+      {
+        "problem_id": "116B15",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to determine which finding is abnormal in adult at rest. Options: axillary temperature 36.2°C, pulse 96/min regular, BP 112/70, respiratory rate 24/min, SpO2 97% ",
+        "time": 2.915566921234131
+      },
+      {
+        "problem_id": "116B16",
+        "prediction": "a,d,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question in Japanese: \"経管栄養を目的とした仰臥位での経鼻胃管の挿入について適切なのはどれか。\" Options a-e. Choose the correct one.\n\nWe need to know guidelines for nasogastric t",
+        "time": 28.221832990646362
+      },
+      {
+        "problem_id": "116B17",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer: In pediatric advanced life support (PALS) for two rescuers, ratio of breaths to chest compressions? The question: \"小児の二次救命処置を2名で行う場合、人工呼吸と胸骨圧迫の比で正しいのはど",
+        "time": 21.13852596282959
+      },
+      {
+        "problem_id": "116B18",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical question: 57-year-old male, smoked 20 cigarettes per day from age 21. From age 45 to 49 (i.e., 4 years) he quit smoking, then resumed smoking 20 cigare",
+        "time": 13.102643013000488
+      },
+      {
+        "problem_id": "116B19",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"乳房の悪性疾患を疑わせる所見として可能性が低いのはどれか。\" Which finding is least likely to suggest malignant disease of the breast. Options:\n\na: えくぼ徴候 (dimpli",
+        "time": 3.3322513103485107
+      },
+      {
+        "problem_id": "116B20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: \"足関節背屈の徒手筋力テストにおいて、足関節の動きを認めず前脛骨筋の収縮のみを認めた。評価はどれか。\" This is about manual muscle testing (MMT) of ankle dorsiflexion (foot dorsiflexion)",
+        "time": 6.28608512878418
+      },
+      {
+        "problem_id": "116B21",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: In evaluating CSF test results, which CSF test result should be compared with blood test result? Options: albumin, glucose, neutrophil",
+        "time": 16.117203950881958
+      },
+      {
+        "problem_id": "116B22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"インスリンに関する医学史で最も新しいのはどれか。\" Options a-e. Need to pick the most recent historical event among these.\n\nLet's recall timeline:\n\n- Discovery of pancreatic i",
+        "time": 7.174533843994141
+      },
+      {
+        "problem_id": "116B23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: In medical interview, open-ended question vs closed question. Open-ended (開放型質問) invites patient to elaborate, not just yes/no or spec",
+        "time": 5.148798942565918
+      },
+      {
+        "problem_id": "116B24",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a medical question: \"退院時要約について誤っているのはどれか。\" Options a-e. Need to pick the incorrect statement about discharge summary (退院時要約). Let's recall Japanese medi",
+        "time": 9.054298162460327
+      },
+      {
+        "problem_id": "116B25",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 48yo woman, right upper limb motor disorder. She slept with elbow against chair armrest, woke up unable to dorsiflex wrist (right hand wrist do",
+        "time": 2.844527006149292
+      },
+      {
+        "problem_id": "116B26",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 54-year-old woman, postoperative day 3 after hysterectomy (uterus removal) for fibroids. She is in hospital. Today, while washing face, suddenly developed dyspn",
+        "time": 3.9807288646698
+      },
+      {
+        "problem_id": "116B27",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have an 83-year-old woman with fever, chills, right flank pain (right腰部痛) for 4 days. Labs: blood cultures positive for gram-positive cocci in clusters (likely Staphyl",
+        "time": 3.657905101776123
+      },
+      {
+        "problem_id": "116B28",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the question: 84-year-old man with metastatic colorectal cancer, inoperable, wants to know diagnosis but does not want drug chemotherapy. Son does no",
+        "time": 3.5508670806884766
+      },
+      {
+        "problem_id": "116B29",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 40-year-old woman with osteogenesis imperfecta (骨形成不全症) – brittle bone disease, frequent fractures, low stature (104 cm, 25 kg). She has a be",
+        "time": 18.763478994369507
+      },
+      {
+        "problem_id": "116B30",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 80-year-old woman, hospitalized for pneumonia, improving. She fell in the hospital at night while going to the bathroom, no head injury, no p",
+        "time": 3.3411757946014404
+      },
+      {
+        "problem_id": "116B31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the scenario: 54-year-old woman, chest discomfort on stairs, needs coronary angioplasty (coronary artery stenting). She wants that her condition not",
+        "time": 3.5189931392669678
+      },
+      {
+        "problem_id": "116B32",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 78-year-old woman with left visual field loss (left visual field defect) as per \"対座法で左視野障害を認める\" meaning left visual field defect. No paralysis. She had a stroke",
+        "time": 7.013216972351074
+      },
+      {
+        "problem_id": "116B33",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 26-year-old primigravida at 24 weeks gestation. No past medical history. Height 160 cm, weight 66 kg (pre-pregnancy 58 kg). So BMI pre-pregnancy = 58/(1.6^2)=58",
+        "time": 9.348716020584106
+      },
+      {
+        "problem_id": "116B34",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a trauma patient, massive hemorrhage, need massive transfusion. They want to give packed red blood cells (PRBC) and fresh frozen plasma (FFP). In massive transfus",
+        "time": 20.15042519569397
+      },
+      {
+        "problem_id": "116B35",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to identify which is incorrect (誤っている) regarding palliative care for this patient. 88yo male with severe COPD, valvular disease, severe respiratory and heart fail",
+        "time": 4.174245834350586
+      },
+      {
+        "problem_id": "116B36",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 35-year-old male, found unable to move on mountain trail, weather rainy, temperature 10°C. On arrival, JCS II-30 (some confusion), core tempe",
+        "time": 6.46467399597168
+      },
+      {
+        "problem_id": "116B37",
+        "prediction": "a,c,e",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 28yo primigravida, 23 weeks 4 days (so about 23.1 weeks), presenting with vaginal bleeding, lower abdominal pain. Exam: mild fever 37.1, vita",
+        "time": 28.22098207473755
+      },
+      {
+        "problem_id": "116B38",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 64-year-old man, chest pressure, exertional angina for 3 months, now after dinner, burning chest pain, not relieved by rest for 45 min, tropo",
+        "time": 9.4944589138031
+      },
+      {
+        "problem_id": "116B39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 26-year-old woman with heavy menstrual bleeding (menorrhagia) for 1 year, now dyspnea, palpitations due to anemia (Hb 7.2). Ultrasound shows a 2 cm solid mass p",
+        "time": 4.3002870082855225
+      },
+      {
+        "problem_id": "116B40",
+        "prediction": "a,c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 76yo male with severe CKD, eGFR 6, undergoing placement of dialysis catheter via right internal jugular vein under ultrasound guidance. Durin",
+        "time": 28.43142318725586
+      },
+      {
+        "problem_id": "116B41",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a medical question in Japanese. It says: \"問題: この患者への処置中に発生した事象として考えにくいのはどれか。\" Means: \"Which of the following events is least likely to occur during the procedure ",
+        "time": 5.85994815826416
+      },
+      {
+        "problem_id": "116B42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 32yo male, left forearm injury from glass shards after falling. Towel tied tightly around upper arm to stop bleeding. At arrival, 80 minutes ",
+        "time": 7.468510389328003
+      },
+      {
+        "problem_id": "116B43",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical question in Japanese. It describes a wound photograph after blood wiped, and asks which finding suggests nerve transection (神経断裂). Options:\n\na: 強い疼痛 (s",
+        "time": 18.098387002944946
+      },
+      {
+        "problem_id": "116B44",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case. 78yo woman, dyspnea on exertion, history: 4 years ago at age 74? Actually 4 years ago she had cold symptoms and a heart murmur was noted but no",
+        "time": 7.072293996810913
+      },
+      {
+        "problem_id": "116B45",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a medical question in Japanese: \"問題: 治療方針の決定に役立つ情報に含まれないのはどれか。\" Means: Which of the following is NOT included in information that helps decide treatment policy? O",
+        "time": 4.802559852600098
+      },
+      {
+        "problem_id": "116B46",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 20yo male with palpitations, headache, hypertension 192/110, tachycardia 132, sweating, facial flushing, cold extremities. Likely pheochromoc",
+        "time": 3.4148752689361572
+      },
+      {
+        "problem_id": "116B47",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical case. Patient after admission: labs: TSH normal, FT3 normal, FT4 normal – euthyroid. Aldosterone 6 ng/dL (normal 5-10). Plasma renin activity 2.0 (norm",
+        "time": 4.102337121963501
+      },
+      {
+        "problem_id": "116B48",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 64-year-old woman, found unresponsive, vomiting, no head trauma, cardiac arrest initially, ROSC after chest compressions and bag-valve mask v",
+        "time": 17.437664031982422
+      },
+      {
+        "problem_id": "116B49",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: patient with severe brain injury, likely brain death. They need to confirm brain death. The question: \"脳死判定のためにさらに行うべきなのはどれか。\" Which test is ",
+        "time": 4.307295799255371
+      },
+      {
+        "problem_id": "116B50",
+        "prediction": "a,c,e",
+        "gold": "21",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a chronic kidney disease patient, 24-hour urine collection. Urine volume 2500 mL/day, urine protein 82 mg/dL, urine creatinine 40 mg/dL. Need to calculate 1-day u",
+        "time": 28.111976861953735
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}

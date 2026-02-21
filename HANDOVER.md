@@ -334,8 +334,9 @@ curl -s http://localhost:1234/v1/models | python3 -c \
 | 6 | qwen3-32b 8bit | **79.3%** (317/400) | 合格 | 34.8GB | baseline |
 | 7 | qwen3-32b 4bit | **78.8%** (315/400) | 合格 | 18.5GB | baseline |
 | 8 | Swallow-70b | **78.0%** (312/400) | 合格 | 40.4GB | baseline |
+| 9 | **GPT-OSS-Swallow-20B** | **77.8%** (311/400) | 合格 | 45GB(vllm-mlx) | format_strict(no-fs) |
 | 9 | qwen3-vl-30b | **77.8%** (311/400) | 合格 | 33.5GB | format_strict |
-| 10 | mistral-small-3.2 | **76.8%** (307/400) | 合格 | 25.9GB | baseline |
+| 11 | mistral-small-3.2 | **76.8%** (307/400) | 合格 | 25.9GB | baseline |
 | 11 | mistral-large | **75.8%** (303/400) | 合格 | 130.3GB | baseline |
 | — | shisa-v2.1-70b | 74.2% (297/400) | 不合格 | 75.0GB | format_strict |
 | — | magistral-small 8bit | 74.2% (297/400) | 不合格 | 47.2GB | baseline |
@@ -1073,3 +1074,77 @@ LM Studioで利用可能だが未評価のモデル：
 
 ### 非対応確認済み
 - **qwen3.5-397b-a17b**: "Model type qwen3_5_moe not supported" エラーでロード不可（LM Studioアーキテクチャ未対応）
+
+---
+
+## セッション11（2026-02-21）GPT-OSS-Swallow-20B 評価
+
+### 31. GPT-OSS-Swallow-20B-RL-v0.1 全セクション評価（合格）
+
+**モデル**: tokyotech-llm/GPT-OSS-Swallow-20B-RL-v0.1 (~45 GB, vLLM-MLX)
+**プロンプト**: format_strict (案A) + **no few-shot** + max_tokens=2048
+**推論サーバ**: vLLM-MLX 0.2.6 (http://127.0.0.1:8000/v1/)
+**備考**: LM Studio ではなく vLLM-MLX で評価。Harmony 形式レスポンス対応のため extract_answer() を修正。
+
+#### Section A プロンプト比較（全5種、no few-shot）
+
+| Rank | Prompt | 正答率 | 平均時間 |
+|------|--------|--------|----------|
+| 1 | **format_strict (案A)** | **80.0%** (60/75) | 11.2s |
+| 2 | answer_first (案D) | 69.3% (52/75) | 21.8s |
+| 3 | Baseline | 62.7% (47/75) | 13.7s |
+| 4 | japanese_medical (案C) | 54.7% (41/75) | 12.3s |
+| 5 | chain_of_thought (案B) | 46.7% (35/75) | 13.9s |
+
+**Few-shot の影響**: few-shot ありでは analysis が全 few-shot 例を再分析し 2048 tokens を使い切るため、**逆効果**（0/5 正解）。GPT-OSS-Swallow-20B では few-shot 不要。
+
+#### 全セクション結果（format_strict, no few-shot, mt=2048）
+
+| Section | 問題数 | 正答数 | 正答率 |
+|---------|--------|--------|--------|
+| A | 75 | 60 | **80.0%** |
+| B | 50 | 42 | **84.0%** |
+| C | 75 | 46 | 61.3% |
+| D | 75 | 66 | **88.0%** |
+| E | 50 | 40 | **80.0%** |
+| F | 75 | 57 | **76.0%** |
+| **Total** | **400** | **311** | **77.8%** |
+
+**結果: 合格（311/400 = 77.8%）**
+
+#### 結論: GPT-OSS-Swallow-20B の最適設定
+- **プロンプト**: format_strict（案A）
+- **Few-shot**: **不要**（有害）
+- **max_tokens**: 2048（1024 では analysis が final に到達できないケースあり）
+- **推論サーバ**: vLLM-MLX 0.2.6 (http://127.0.0.1:8000/v1/)
+- **最終スコア**: 77.8%（合格、全モデル中9位タイ）
+- **Section D: 88.0%** が最高、**Section C: 61.3%** が弱点
+- **応答速度**: ~11.2s/問（Harmony analysis を含むため LM Studio モデルより遅い）
+- **メモリ使用量**: ~45GB
+
+#### GPT-OSS 系モデル比較
+
+| モデル | Section A | 全セクション | サイズ | サーバ |
+|--------|-----------|------------|--------|--------|
+| gpt-oss-120b MLX | 92.0% | 84.5% | 124.2GB | LM Studio |
+| gpt-oss-120b GGUF | 84.0% | 84.0% | 63.4GB | LM Studio |
+| **GPT-OSS-Swallow-20B** | **80.0%** | **77.8%** | **45GB** | **vLLM-MLX** |
+| gpt-oss-20b GGUF | ~71% | ~71% | ~12GB | LM Studio |
+| gpt-oss-20b MLX | ~71% | ~71% | ~12GB | LM Studio |
+
+Swallow 日本語ファインチューンにより、gpt-oss-20b ベース（~71%）から **+6.8% の改善**。合格ラインを突破。
+
+#### コード修正
+
+`evaluate_prompt_comparison.py` の `extract_answer()` に Harmony 形式パース処理を追加:
+```python
+# Harmony 形式: <|channel|>final<|message|> 以降を最終回答として抽出
+harmony_final = re.search(
+    r'<\|channel\|>\s*final\s*<\|message\|>(.*)',
+    response, flags=re.DOTALL
+)
+if harmony_final:
+    response = harmony_final.group(1).strip()
+```
+
+この修正は `<|...|>` タグ除去の前に挿入。既存モデルの評価には影響しない。

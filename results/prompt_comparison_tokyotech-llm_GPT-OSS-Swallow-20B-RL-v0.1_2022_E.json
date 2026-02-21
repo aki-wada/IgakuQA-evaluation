@@ -1,0 +1,427 @@
+{
+  "timestamp": "2026-02-21T16:32:39.441670",
+  "model": "tokyotech-llm/GPT-OSS-Swallow-20B-RL-v0.1",
+  "summary": [
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 50,
+      "correct": 40,
+      "accuracy": 0.8,
+      "avg_time": 7.441280703544617,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "format_strict": [
+      {
+        "problem_id": "116E1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In searching for causes of hemoptysis (blood-stained sputum), which is low priority? Options: a: sputum cytology, b: review of oral medications, c: pul",
+        "time": 4.154819965362549
+      },
+      {
+        "problem_id": "116E2",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to determine which physician action is appropriate according to medical ethics, Japanese law? The question: \"医師の行動として適切なのはどれか。\" Options a-e. Need to pick one appr",
+        "time": 3.9412453174591064
+      },
+      {
+        "problem_id": "116E3",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a clinical question: \"径2cmのリンパ節で癌の転移よりも炎症性の腫大を疑うのはどれか。\" Means: For a lymph node of 2 cm diameter, which feature suggests inflammatory (reactive) enlarge",
+        "time": 4.7837231159210205
+      },
+      {
+        "problem_id": "116E4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"浮腫をきたした場合、片側に出現するのはどれか。\" Which condition causes unilateral edema? Options: a: cirrhosis, b: acute heart failure, c: nephrotic syndrome, d: cellulitis ",
+        "time": 1.836704969406128
+      },
+      {
+        "problem_id": "116E5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to identify which statement is incorrect regarding conducting a questionnaire study on SLE outpatients, anonymous, no invasive procedures, 5-min questionnaire, ne",
+        "time": 4.197920083999634
+      },
+      {
+        "problem_id": "116E6",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to determine which combination of abdominal examination finding and disease is correct.\n\nWe have options a-e each pairing a sign with a disease. Need to pick the ",
+        "time": 8.7483069896698
+      },
+      {
+        "problem_id": "116E7",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In normal fetal circulation, which site has the highest oxygen partial pressure blood? Options: a: umbilical vein, b: pulmonary vein, c: ductus arterio",
+        "time": 7.773591756820679
+      },
+      {
+        "problem_id": "116E8",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to determine which combination of shock cause and treatment drug is correct.\n\nWe have options a-e each pairing cause of shock and drug.\n\nWe need correct one.\n\nLet",
+        "time": 4.173733949661255
+      },
+      {
+        "problem_id": "116E9",
+        "prediction": "a,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer: In regional medical care planning (地域医療構想) used bed function categories, which is not included. Options: a: 高度急性期 (highly acute phase), b: 急性期 (acute p",
+        "time": 27.993022918701172
+      },
+      {
+        "problem_id": "116E10",
+        "prediction": "a,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"妊娠高血圧症候群の病型分類に含まれないのはどれか。\" Options a-e. Need to know classification of hypertensive disorders of pregnancy (妊娠高血圧症候群) in Japan? Typically categories: ",
+        "time": 28.007981061935425
+      },
+      {
+        "problem_id": "116E11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: perioperative pulmonary embolism prevention methods. Options: a: absolute fasting (絶飲食) - not relevant. b: prolonged bed rest - actually risk factor, n",
+        "time": 1.5496289730072021
+      },
+      {
+        "problem_id": "116E12",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a medical question in Japanese: \"正面および側面の頸部写真を別に示す。緊急気道確保時に穿刺あるいは切開するのに最も適した部位はどれか。\" Means: \"Given frontal and lateral neck photographs separately. Which site is ",
+        "time": 7.272864103317261
+      },
+      {
+        "problem_id": "116E13",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"腎盂腎炎の診断に最も有用なのはどれか。\" Options: a: Grey-Turner徴候, b: Rovsing徴候, c: Rosenstein徴候, d: 反跳痛, e: 肋骨脊柱角の叩打痛.\n\nWe need to know which sign is most useful for di",
+        "time": 3.666491746902466
+      },
+      {
+        "problem_id": "116E14",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a test with sensitivity 84% = 0.84, specificity 96% = 0.96. Positive likelihood ratio (LR+) = sensitivity / (1 - specificity). 1 - specificity = 1 - 0.96 = 0.04. ",
+        "time": 2.867882013320923
+      },
+      {
+        "problem_id": "116E15",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to determine which pairing of disease and auscultation finding is correct.\n\nOptions:\n\na: COPD --------- stridor\nb: 胸膜炎 (pleuritis) --------- rhonchi\nc: 石綿肺 (asbes",
+        "time": 6.393413782119751
+      },
+      {
+        "problem_id": "116E16",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question in Japanese about patient satisfaction survey items. The question: \"患者満足度を調査対象項目とするのはどれか。\" Which of the following is a survey",
+        "time": 4.947714805603027
+      },
+      {
+        "problem_id": "116E17",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which disease in children causes spastic paralysis? Options: a: cerebral palsy, b: botulism, c: spinal muscular atrophy, d: Prader-Willi syndrome, e: G",
+        "time": 2.199343681335449
+      },
+      {
+        "problem_id": "116E18",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer a multiple choice question about adult intramuscular injection (vaccine). Which statement is appropriate? Options:\n\na: Use 18G needle. Typically for IM ",
+        "time": 6.2227561473846436
+      },
+      {
+        "problem_id": "116E19",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"静脈採血の合併症として最も起こる可能性が低いのはどれか。\" Which complication is least likely to occur from venipuncture (phlebotomy). Options: a: allergic reaction to disinfectan",
+        "time": 2.8447492122650146
+      },
+      {
+        "problem_id": "116E20",
+        "prediction": "a,d,e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to identify which statement is incorrect regarding measures for health promotion under Labor Safety and Health Act (労働安全衛生法) in Japan. The question: \"労働安全衛生法に規定され",
+        "time": 28.039268970489502
+      },
+      {
+        "problem_id": "116E21",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: \"一過性の意識障害が生じた場合、Adams-Stokes症候群を疑う病歴はどれか。\" So which history suggests Adams-Stokes syndrome? Adams-Stokes syndrome (also called Adams-S",
+        "time": 16.70059299468994
+      },
+      {
+        "problem_id": "116E22",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: Which test is useful for diagnosing carpal tunnel syndrome? Options: a EEG, b needle EMG, c CSF, d peripheral nerve conduction study, e repetitive evok",
+        "time": 1.2407889366149902
+      },
+      {
+        "problem_id": "116E23",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to identify which statement about medical interview is incorrect. Options a-e.\n\nWe need knowledge of medical interview components: nonverbal communication needed ",
+        "time": 3.1126158237457275
+      },
+      {
+        "problem_id": "116E24",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: \"尿閉の原疾患として正しいのはどれか。\" Which underlying disease causes urinary retention? Options: a: hypospadias (urethral hypospadias) - that's a congenital defect of ",
+        "time": 2.5899670124053955
+      },
+      {
+        "problem_id": "116E25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to answer: In anaphylaxis patient history taking, which is least necessary? Options: a: atopic dermatitis comorbidity, b: recent meal content, c: bee sting, d: ex",
+        "time": 2.5998682975769043
+      },
+      {
+        "problem_id": "116E26",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 76-year-old man with syncope, atrial fibrillation, on anticoagulation, no other meds. In past month, two syncopal episodes with facial injury. Holter shows max ",
+        "time": 3.537290096282959
+      },
+      {
+        "problem_id": "116E27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 60-year-old man with palpitations and presyncope (\"眼前暗黒感\" meaning feeling of darkness before eyes). Vitals: temperature normal, pulse 32/min irregular, blood pr",
+        "time": 9.923702001571655
+      },
+      {
+        "problem_id": "116E28",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a 70-year-old male with cough, vomiting, fever, now unable to eat, vomiting gastric contents, decreased responsiveness, JCS II-10 (some confusion), vitals: fever ",
+        "time": 10.409074783325195
+      },
+      {
+        "problem_id": "116E29",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret case: 50yo woman, abdominal pain and vomiting after eating grilled meat 5 hours ago. Right upper quadrant pain, positive Murphy's sign? They describe",
+        "time": 5.1762261390686035
+      },
+      {
+        "problem_id": "116E30",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 3-year-old girl with generalized seizures lasting >15 min, ongoing, with fever, likely febrile seizure (status epilepticus). In status epilepticus, immediate ma",
+        "time": 2.384488105773926
+      },
+      {
+        "problem_id": "116E31",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to interpret the clinical scenario: 75yo man with advanced lung cancer, metastases, home hospice, wants to die at home, now expresses desire to die (\"もう今日で死なせてくださ",
+        "time": 3.248647928237915
+      },
+      {
+        "problem_id": "116E32",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the clinical scenario: 72-year-old woman with acute right eye pain, headache, nausea, now with severe conjunctival injection (毛様充血), corneal edema, ",
+        "time": 3.467824697494507
+      },
+      {
+        "problem_id": "116E33",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 58yo male with fever, cough, sputum, now headache, altered consciousness, meningeal signs (neck stiffness, Kernig). Likely bacterial meningit",
+        "time": 3.769829750061035
+      },
+      {
+        "problem_id": "116E34",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 82-year-old male, acute decompensated heart failure, now stable, planning discharge. History: hypertension, old MI, multiple lacunar infarcts",
+        "time": 4.188472032546997
+      },
+      {
+        "problem_id": "116E35",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: It's about a 55-year-old man with abdominal mass, likely cancer. The question: \"この患者が感じている苦痛のうち社会的苦痛はどれか。\" Which of the listed pains i",
+        "time": 2.756340265274048
+      },
+      {
+        "problem_id": "116E36",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical question: 80-year-old male with insomnia, difficulty falling asleep, middle-of-night awakenings. He drinks coffee 3 cups per day, occasional alcohol, o",
+        "time": 5.211817979812622
+      },
+      {
+        "problem_id": "116E37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 7-year-old girl with anaphylaxis after eating shrimp (seafood). She had prior urticaria after crab. Now symptoms: vomiting, altered mental status, hypotension (",
+        "time": 2.8810617923736572
+      },
+      {
+        "problem_id": "116E38",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a 21-year-old previously healthy man with chest pain worse on breathing (pleuritic), lasting 2 days. Lung and heart exams unremarkable. Chest X-ray and ECG shown.",
+        "time": 5.540985822677612
+      },
+      {
+        "problem_id": "116E39",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 21-year-old male, left cheek pain, prior URI symptoms 1 week ago, now left cheek pain, pressure, edema, worsening. Nasal endoscopy shows puru",
+        "time": 4.048780918121338
+      },
+      {
+        "problem_id": "116E40",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical question: 55-year-old man with lower leg edema, ascites? Shifting dullness test for ascites. The test: patient supine, then turn to lateral decubitus p",
+        "time": 7.387741804122925
+      },
+      {
+        "problem_id": "116E41",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical scenario: 83-year-old male with chronic respiratory disease, on home oxygen therapy, now acute exacerbation, dyspnea, SpO2 88% on nasal cannula 1 L/min",
+        "time": 22.284666061401367
+      },
+      {
+        "problem_id": "116E42",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: Japanese medical question. It says: \"入院後適切な治療が行われ退院することとなった。この患者の退院時療養支援への関与が低いのはどれか。\" Means: After hospitalization, appropriate treat",
+        "time": 2.9857778549194336
+      },
+      {
+        "problem_id": "116E43",
+        "prediction": "a,c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We have a clinical vignette: 23-year-old male, chest pain, sudden onset, improved with rest, then dyspnea, transported. Prior history: 2 months ago, exertional dyspnea th",
+        "time": 28.208730936050415
+      },
+      {
+        "problem_id": "116E44",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the clinical scenario. The question: \"この患者に対して行うべき処置はどれか。\" Options: a:昇圧薬投与 (vasopressor), b: 気管支鏡検査 (bronchoscopy), c: 胸腔ドレナージ (chest tube drainage",
+        "time": 8.297284841537476
+      },
+      {
+        "problem_id": "116E45",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to calculate CHADS2 score for atrial fibrillation (or flutter) risk of stroke. The patient: 68-year-old male, with hypertension, diabetes, age 68 (<75), no heart ",
+        "time": 2.6351869106292725
+      },
+      {
+        "problem_id": "116E46",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: It's about anticoagulant medication, patient has poor adherence. The question: \"服薬アドヒアランスを低下させる要因を述べた患者の言動で薬の一包化が有効なのはどれか。\" Means: Amo",
+        "time": 4.880726099014282
+      },
+      {
+        "problem_id": "116E47",
+        "prediction": "a,c,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "<|channel|>analysis<|message|>We need to compute posterior probability of A群β溶連菌性咽頭炎 given test result negative, using prior probability based on number of criteria (4 items). The patient has 4 items?",
+        "time": 28.432859897613525
+      },
+      {
+        "problem_id": "116E48",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a clinical question: At initial visit, the patient's serum anti-EBV VCA IgM antibody is positive. Which body fluid is most likely to be a source of infection to o",
+        "time": 2.9783499240875244
+      },
+      {
+        "problem_id": "116E49",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We need to understand the question: A 60-year-old woman with back pain, weight loss, abdominal mass, ascites, labs show anemia, hypoalbuminemia, high LD, high tumor marke",
+        "time": 3.1501669883728027
+      },
+      {
+        "problem_id": "116E50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<|channel|>analysis<|message|>We have a question in Japanese about communication of bad news in clinical medicine. The scenario: The attending physician communicated disease status to patient. Steps:\n",
+        "time": 6.419004917144775
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}
