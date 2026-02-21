@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-02-20T03:02:28.083106",
+  "model": "allenai/olmo-3-32b-think",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 5,
+      "correct": 5,
+      "accuracy": 1.0,
+      "avg_time": 42.49654049873352,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "Okay, let's tackle this question about obstructive sleep apnea (OSA) and hypertension. The question is asking which statement is incorrect regarding nocturnal hypertension caused by OSA.\n\nFirst, I nee",
+        "time": 56.21952676773071
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "Okay, let's tackle this question. The problem is about the appropriate timing to start penicillin antibiotics for a pregnant woman who tested positive for GBS (Group B Streptococcus) in her amniotic f",
+        "time": 29.57262110710144
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "Okay, let's tackle this question about central serous chorioretinopathy (CSC). The question is asking which statement is incorrect. The options are a to e.\n\nFirst, I need to recall what CSC is. From w",
+        "time": 28.237127780914307
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "Okay, let's tackle this question. The problem is asking which single oral medication is most likely to cause hypoglycemia. The options are a through e.\n\nFirst, I need to recall the mechanisms of each ",
+        "time": 35.910117864608765
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "Okay, let's tackle this question about adult heart transplants in Japan. The options are a to e, and I need to pick the correct one.\n\nFirst, let's go through each option one by one. \n\nOption a says th",
+        "time": 62.54330897331238
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}

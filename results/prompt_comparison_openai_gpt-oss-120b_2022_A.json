@@ -1,651 +1,19 @@
 {
-  "timestamp": "2026-02-06T17:05:08.893477",
+  "timestamp": "2026-02-08T13:28:06.219171",
   "model": "openai/gpt-oss-120b",
   "summary": [
-    {
-      "prompt_key": "baseline",
-      "prompt_name": "Baseline (現行)",
-      "total": 75,
-      "correct": 64,
-      "accuracy": 0.8533333333333334,
-      "avg_time": 2.1521136411031088,
-      "errors": 0,
-      "empty_responses": 0
-    },
     {
       "prompt_key": "format_strict",
       "prompt_name": "案A: 回答形式強化",
       "total": 75,
-      "correct": 69,
-      "accuracy": 0.92,
-      "avg_time": 2.0811086177825926,
-      "errors": 0,
-      "empty_responses": 0
-    },
-    {
-      "prompt_key": "chain_of_thought",
-      "prompt_name": "案B: 段階的思考",
-      "total": 75,
-      "correct": 68,
-      "accuracy": 0.9066666666666666,
-      "avg_time": 2.250734478632609,
-      "errors": 0,
-      "empty_responses": 0
-    },
-    {
-      "prompt_key": "japanese_medical",
-      "prompt_name": "案C: 日本医療文脈",
-      "total": 75,
-      "correct": 67,
-      "accuracy": 0.8933333333333333,
-      "avg_time": 2.153008867899577,
+      "correct": 66,
+      "accuracy": 0.88,
+      "avg_time": 2.0635384146372475,
       "errors": 0,
       "empty_responses": 0
     }
   ],
   "details": {
-    "baseline": [
-      {
-        "problem_id": "116A1",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.186969041824341
-      },
-      {
-        "problem_id": "116A2",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.3910746574401855
-      },
-      {
-        "problem_id": "116A3",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 2.1773059368133545
-      },
-      {
-        "problem_id": "116A4",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 0.9583280086517334
-      },
-      {
-        "problem_id": "116A5",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.087547779083252
-      },
-      {
-        "problem_id": "116A6",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.8221030235290527
-      },
-      {
-        "problem_id": "116A7",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 2.0151870250701904
-      },
-      {
-        "problem_id": "116A8",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.5824050903320312
-      },
-      {
-        "problem_id": "116A9",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.5015161037445068
-      },
-      {
-        "problem_id": "116A10",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.005105972290039
-      },
-      {
-        "problem_id": "116A11",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.2441511154174805
-      },
-      {
-        "problem_id": "116A12",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.39491605758667
-      },
-      {
-        "problem_id": "116A13",
-        "prediction": "a,b",
-        "gold": "b,e",
-        "correct": false,
-        "response": "a,b",
-        "time": 4.386904954910278
-      },
-      {
-        "problem_id": "116A14",
-        "prediction": "c,d",
-        "gold": "c,d",
-        "correct": true,
-        "response": "c,d",
-        "time": 2.371119976043701
-      },
-      {
-        "problem_id": "116A15",
-        "prediction": "c,e",
-        "gold": "c,e",
-        "correct": true,
-        "response": "c,e",
-        "time": 1.146864891052246
-      },
-      {
-        "problem_id": "116A16",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.4676401615142822
-      },
-      {
-        "problem_id": "116A17",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.7571020126342773
-      },
-      {
-        "problem_id": "116A18",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 3.645129919052124
-      },
-      {
-        "problem_id": "116A19",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.5916612148284912
-      },
-      {
-        "problem_id": "116A20",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 2.565930128097534
-      },
-      {
-        "problem_id": "116A21",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 3.4218759536743164
-      },
-      {
-        "problem_id": "116A22",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.947906732559204
-      },
-      {
-        "problem_id": "116A23",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.449435234069824
-      },
-      {
-        "problem_id": "116A24",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.012742280960083
-      },
-      {
-        "problem_id": "116A25",
-        "prediction": "b",
-        "gold": "c",
-        "correct": false,
-        "response": "b",
-        "time": 2.3292319774627686
-      },
-      {
-        "problem_id": "116A26",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.3213801383972168
-      },
-      {
-        "problem_id": "116A27",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.4247260093688965
-      },
-      {
-        "problem_id": "116A28",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.5451970100402832
-      },
-      {
-        "problem_id": "116A29",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.534179925918579
-      },
-      {
-        "problem_id": "116A30",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 2.165462017059326
-      },
-      {
-        "problem_id": "116A31",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.9271879196166992
-      },
-      {
-        "problem_id": "116A32",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 3.561593770980835
-      },
-      {
-        "problem_id": "116A33",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 3.3649070262908936
-      },
-      {
-        "problem_id": "116A34",
-        "prediction": "d",
-        "gold": "a",
-        "correct": false,
-        "response": "d",
-        "time": 1.4790611267089844
-      },
-      {
-        "problem_id": "116A35",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.7771539688110352
-      },
-      {
-        "problem_id": "116A36",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.614396095275879
-      },
-      {
-        "problem_id": "116A37",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.7076549530029297
-      },
-      {
-        "problem_id": "116A38",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.5137698650360107
-      },
-      {
-        "problem_id": "116A39",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.27174711227417
-      },
-      {
-        "problem_id": "116A40",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.7874512672424316
-      },
-      {
-        "problem_id": "116A41",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.053896188735962
-      },
-      {
-        "problem_id": "116A42",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.8467187881469727
-      },
-      {
-        "problem_id": "116A43",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.782071828842163
-      },
-      {
-        "problem_id": "116A44",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.7515718936920166
-      },
-      {
-        "problem_id": "116A45",
-        "prediction": "c",
-        "gold": "d",
-        "correct": false,
-        "response": "c",
-        "time": 1.313236951828003
-      },
-      {
-        "problem_id": "116A46",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.6071059703826904
-      },
-      {
-        "problem_id": "116A47",
-        "prediction": "d",
-        "gold": "e",
-        "correct": false,
-        "response": "d",
-        "time": 4.494858026504517
-      },
-      {
-        "problem_id": "116A48",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 3.1069271564483643
-      },
-      {
-        "problem_id": "116A49",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.374572992324829
-      },
-      {
-        "problem_id": "116A50",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.6169731616973877
-      },
-      {
-        "problem_id": "116A51",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.926079034805298
-      },
-      {
-        "problem_id": "116A52",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.0868589878082275
-      },
-      {
-        "problem_id": "116A53",
-        "prediction": "d",
-        "gold": "b",
-        "correct": false,
-        "response": "d",
-        "time": 3.2072110176086426
-      },
-      {
-        "problem_id": "116A54",
-        "prediction": "c",
-        "gold": "e",
-        "correct": false,
-        "response": "c",
-        "time": 1.1896240711212158
-      },
-      {
-        "problem_id": "116A55",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.4860270023345947
-      },
-      {
-        "problem_id": "116A56",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.816154956817627
-      },
-      {
-        "problem_id": "116A57",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.2406120300292969
-      },
-      {
-        "problem_id": "116A58",
-        "prediction": "a",
-        "gold": "b",
-        "correct": false,
-        "response": "a",
-        "time": 3.449951171875
-      },
-      {
-        "problem_id": "116A59",
-        "prediction": "d",
-        "gold": "c",
-        "correct": false,
-        "response": "d",
-        "time": 1.8071050643920898
-      },
-      {
-        "problem_id": "116A60",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.4982562065124512
-      },
-      {
-        "problem_id": "116A61",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.2556819915771484
-      },
-      {
-        "problem_id": "116A62",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 2.0901691913604736
-      },
-      {
-        "problem_id": "116A63",
-        "prediction": "c",
-        "gold": "e",
-        "correct": false,
-        "response": "c",
-        "time": 5.741319894790649
-      },
-      {
-        "problem_id": "116A64",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.9262568950653076
-      },
-      {
-        "problem_id": "116A65",
-        "prediction": "b,e",
-        "gold": "b,e",
-        "correct": true,
-        "response": "b,e",
-        "time": 2.1643099784851074
-      },
-      {
-        "problem_id": "116A66",
-        "prediction": "a,e",
-        "gold": "a,e",
-        "correct": true,
-        "response": "a,e",
-        "time": 1.684826135635376
-      },
-      {
-        "problem_id": "116A67",
-        "prediction": "a,d",
-        "gold": "a,d",
-        "correct": true,
-        "response": "a,d",
-        "time": 2.3158419132232666
-      },
-      {
-        "problem_id": "116A68",
-        "prediction": "d,e",
-        "gold": "d,e",
-        "correct": true,
-        "response": "d,e",
-        "time": 2.187082052230835
-      },
-      {
-        "problem_id": "116A69",
-        "prediction": "a,b",
-        "gold": "a,b",
-        "correct": true,
-        "response": "a,b",
-        "time": 4.435354232788086
-      },
-      {
-        "problem_id": "116A70",
-        "prediction": "b,e",
-        "gold": "b,e",
-        "correct": true,
-        "response": "b,e",
-        "time": 2.35927677154541
-      },
-      {
-        "problem_id": "116A71",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.4647412300109863
-      },
-      {
-        "problem_id": "116A72",
-        "prediction": "a,b,d",
-        "gold": "a,b,d",
-        "correct": true,
-        "response": "a,b,d",
-        "time": 2.2892699241638184
-      },
-      {
-        "problem_id": "116A73",
-        "prediction": "c,d,e",
-        "gold": "a,c,e",
-        "correct": false,
-        "response": "c,d,e",
-        "time": 5.958817005157471
-      },
-      {
-        "problem_id": "116A74",
-        "prediction": "a,b,d",
-        "gold": "a,b,d",
-        "correct": true,
-        "response": "a,b,d",
-        "time": 1.6991829872131348
-      },
-      {
-        "problem_id": "116A75",
-        "prediction": "a,c,d",
-        "gold": "a,c,d",
-        "correct": true,
-        "response": "a,c,d",
-        "time": 2.7245569229125977
-      }
-    ],
     "format_strict": [
       {
         "problem_id": "116A1",
@@ -653,7 +21,7 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 1.4814248085021973
+        "time": 2.5028529167175293
       },
       {
         "problem_id": "116A2",
@@ -661,7 +29,7 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 1.7056870460510254
+        "time": 1.8730268478393555
       },
       {
         "problem_id": "116A3",
@@ -669,7 +37,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.9928219318389893
+        "time": 1.989090919494629
       },
       {
         "problem_id": "116A4",
@@ -677,7 +45,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 1.0534207820892334
+        "time": 0.9905791282653809
       },
       {
         "problem_id": "116A5",
@@ -685,7 +53,7 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 3.4715566635131836
+        "time": 4.62165904045105
       },
       {
         "problem_id": "116A6",
@@ -693,7 +61,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.7697978019714355
+        "time": 1.7637829780578613
       },
       {
         "problem_id": "116A7",
@@ -701,7 +69,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 1.7102248668670654
+        "time": 1.7009563446044922
       },
       {
         "problem_id": "116A8",
@@ -709,7 +77,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 1.5447978973388672
+        "time": 1.5198509693145752
       },
       {
         "problem_id": "116A9",
@@ -717,7 +85,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 1.6164608001708984
+        "time": 1.31980299949646
       },
       {
         "problem_id": "116A10",
@@ -725,7 +93,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 1.488055944442749
+        "time": 1.123964786529541
       },
       {
         "problem_id": "116A11",
@@ -733,7 +101,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.0131051540374756
+        "time": 0.8410589694976807
       },
       {
         "problem_id": "116A12",
@@ -741,7 +109,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 2.0050671100616455
+        "time": 2.1433029174804688
       },
       {
         "problem_id": "116A13",
@@ -749,7 +117,7 @@
         "gold": "b,e",
         "correct": true,
         "response": "b,e",
-        "time": 4.575334310531616
+        "time": 4.036977052688599
       },
       {
         "problem_id": "116A14",
@@ -757,7 +125,7 @@
         "gold": "c,d",
         "correct": true,
         "response": "c,d",
-        "time": 1.8940536975860596
+        "time": 1.242828130722046
       },
       {
         "problem_id": "116A15",
@@ -765,7 +133,7 @@
         "gold": "c,e",
         "correct": true,
         "response": "c,e",
-        "time": 1.073612928390503
+        "time": 1.1538670063018799
       },
       {
         "problem_id": "116A16",
@@ -773,7 +141,7 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 1.4954538345336914
+        "time": 1.4600229263305664
       },
       {
         "problem_id": "116A17",
@@ -781,7 +149,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.5207009315490723
+        "time": 1.5933749675750732
       },
       {
         "problem_id": "116A18",
@@ -789,7 +157,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 3.484865188598633
+        "time": 2.7935428619384766
       },
       {
         "problem_id": "116A19",
@@ -797,7 +165,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 1.3905389308929443
+        "time": 1.3753581047058105
       },
       {
         "problem_id": "116A20",
@@ -805,15 +173,15 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 2.341552257537842
+        "time": 2.651094913482666
       },
       {
         "problem_id": "116A21",
-        "prediction": "c",
+        "prediction": "e",
         "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 3.9342918395996094
+        "correct": false,
+        "response": "e",
+        "time": 1.957362174987793
       },
       {
         "problem_id": "116A22",
@@ -821,7 +189,7 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 1.9063191413879395
+        "time": 1.8928349018096924
       },
       {
         "problem_id": "116A23",
@@ -829,7 +197,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 2.123246908187866
+        "time": 2.1038942337036133
       },
       {
         "problem_id": "116A24",
@@ -837,15 +205,15 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 1.1325948238372803
+        "time": 1.1252307891845703
       },
       {
         "problem_id": "116A25",
-        "prediction": "d",
+        "prediction": "b",
         "gold": "c",
         "correct": false,
-        "response": "d",
-        "time": 2.3090529441833496
+        "response": "b",
+        "time": 2.2738821506500244
       },
       {
         "problem_id": "116A26",
@@ -853,7 +221,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.354645013809204
+        "time": 1.3524799346923828
       },
       {
         "problem_id": "116A27",
@@ -861,7 +229,7 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 1.7067811489105225
+        "time": 1.715522050857544
       },
       {
         "problem_id": "116A28",
@@ -869,7 +237,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.7134625911712646
+        "time": 1.7004380226135254
       },
       {
         "problem_id": "116A29",
@@ -877,7 +245,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.5380523204803467
+        "time": 1.4275720119476318
       },
       {
         "problem_id": "116A30",
@@ -885,7 +253,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.838897943496704
+        "time": 1.8218090534210205
       },
       {
         "problem_id": "116A31",
@@ -893,7 +261,7 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 1.7785260677337646
+        "time": 1.6557869911193848
       },
       {
         "problem_id": "116A32",
@@ -901,7 +269,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 3.516649007797241
+        "time": 1.2751977443695068
       },
       {
         "problem_id": "116A33",
@@ -909,7 +277,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 2.9115450382232666
+        "time": 2.773277997970581
       },
       {
         "problem_id": "116A34",
@@ -917,7 +285,7 @@
         "gold": "a",
         "correct": false,
         "response": "d",
-        "time": 1.6747939586639404
+        "time": 1.661768913269043
       },
       {
         "problem_id": "116A35",
@@ -925,7 +293,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.612781047821045
+        "time": 1.5374321937561035
       },
       {
         "problem_id": "116A36",
@@ -933,7 +301,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.7080070972442627
+        "time": 1.6311671733856201
       },
       {
         "problem_id": "116A37",
@@ -941,7 +309,7 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 1.9700279235839844
+        "time": 1.9578399658203125
       },
       {
         "problem_id": "116A38",
@@ -949,7 +317,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 2.2749969959259033
+        "time": 2.7955617904663086
       },
       {
         "problem_id": "116A39",
@@ -957,15 +325,15 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 1.428828239440918
+        "time": 1.2580320835113525
       },
       {
         "problem_id": "116A40",
-        "prediction": "b",
+        "prediction": "c",
         "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.7863130569458008
+        "correct": false,
+        "response": "c",
+        "time": 2.5771279335021973
       },
       {
         "problem_id": "116A41",
@@ -973,7 +341,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.1124951839447021
+        "time": 1.130213975906372
       },
       {
         "problem_id": "116A42",
@@ -981,7 +349,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.6188101768493652
+        "time": 1.7129840850830078
       },
       {
         "problem_id": "116A43",
@@ -989,7 +357,7 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 1.7155520915985107
+        "time": 1.7038640975952148
       },
       {
         "problem_id": "116A44",
@@ -997,7 +365,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.5329930782318115
+        "time": 1.4430458545684814
       },
       {
         "problem_id": "116A45",
@@ -1005,7 +373,7 @@
         "gold": "d",
         "correct": false,
         "response": "c",
-        "time": 1.5392067432403564
+        "time": 1.6178789138793945
       },
       {
         "problem_id": "116A46",
@@ -1013,7 +381,7 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 1.4691917896270752
+        "time": 2.101837158203125
       },
       {
         "problem_id": "116A47",
@@ -1021,15 +389,15 @@
         "gold": "e",
         "correct": false,
         "response": "d",
-        "time": 4.584924936294556
+        "time": 5.557821989059448
       },
       {
         "problem_id": "116A48",
-        "prediction": "e",
+        "prediction": "a",
         "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 3.2602460384368896
+        "correct": false,
+        "response": "a",
+        "time": 3.4804787635803223
       },
       {
         "problem_id": "116A49",
@@ -1037,7 +405,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.3951079845428467
+        "time": 1.3871040344238281
       },
       {
         "problem_id": "116A50",
@@ -1045,7 +413,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.8418951034545898
+        "time": 1.662632942199707
       },
       {
         "problem_id": "116A51",
@@ -1053,7 +421,7 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 2.3358428478240967
+        "time": 3.4732840061187744
       },
       {
         "problem_id": "116A52",
@@ -1061,7 +429,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 1.1628739833831787
+        "time": 1.163546085357666
       },
       {
         "problem_id": "116A53",
@@ -1069,15 +437,15 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 2.0019612312316895
+        "time": 2.0146710872650146
       },
       {
         "problem_id": "116A54",
-        "prediction": "e",
+        "prediction": "c",
         "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.4986910820007324
+        "correct": false,
+        "response": "c",
+        "time": 1.4020891189575195
       },
       {
         "problem_id": "116A55",
@@ -1085,7 +453,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.7254071235656738
+        "time": 1.7103619575500488
       },
       {
         "problem_id": "116A56",
@@ -1093,7 +461,7 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 1.902327060699463
+        "time": 2.0078890323638916
       },
       {
         "problem_id": "116A57",
@@ -1101,7 +469,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.2819499969482422
+        "time": 1.2810571193695068
       },
       {
         "problem_id": "116A58",
@@ -1109,7 +477,7 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 3.173156976699829
+        "time": 2.687974214553833
       },
       {
         "problem_id": "116A59",
@@ -1117,7 +485,7 @@
         "gold": "c",
         "correct": false,
         "response": "e",
-        "time": 1.665229082107544
+        "time": 1.3440370559692383
       },
       {
         "problem_id": "116A60",
@@ -1125,7 +493,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.532088041305542
+        "time": 1.6941578388214111
       },
       {
         "problem_id": "116A61",
@@ -1133,7 +501,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.337144136428833
+        "time": 1.3308658599853516
       },
       {
         "problem_id": "116A62",
@@ -1141,7 +509,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 2.6481058597564697
+        "time": 1.5893619060516357
       },
       {
         "problem_id": "116A63",
@@ -1149,7 +517,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 4.461688041687012
+        "time": 6.3102991580963135
       },
       {
         "problem_id": "116A64",
@@ -1157,7 +525,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.7087960243225098
+        "time": 1.7670021057128906
       },
       {
         "problem_id": "116A65",
@@ -1165,7 +533,7 @@
         "gold": "b,e",
         "correct": true,
         "response": "b,e",
-        "time": 1.7974321842193604
+        "time": 1.8438401222229004
       },
       {
         "problem_id": "116A66",
@@ -1173,7 +541,7 @@
         "gold": "a,e",
         "correct": true,
         "response": "a,e",
-        "time": 1.5311682224273682
+        "time": 1.4764790534973145
       },
       {
         "problem_id": "116A67",
@@ -1181,7 +549,7 @@
         "gold": "a,d",
         "correct": true,
         "response": "a,d",
-        "time": 3.0003039836883545
+        "time": 2.0733790397644043
       },
       {
         "problem_id": "116A68",
@@ -1189,7 +557,7 @@
         "gold": "d,e",
         "correct": true,
         "response": "d,e",
-        "time": 2.185565948486328
+        "time": 2.178737163543701
       },
       {
         "problem_id": "116A69",
@@ -1197,7 +565,7 @@
         "gold": "a,b",
         "correct": true,
         "response": "a,b",
-        "time": 4.607471704483032
+        "time": 3.500037670135498
       },
       {
         "problem_id": "116A70",
@@ -1205,7 +573,7 @@
         "gold": "b,e",
         "correct": true,
         "response": "b,e",
-        "time": 1.9986279010772705
+        "time": 2.072084903717041
       },
       {
         "problem_id": "116A71",
@@ -1213,7 +581,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 2.567257881164551
+        "time": 2.4674477577209473
       },
       {
         "problem_id": "116A72",
@@ -1221,609 +589,7 @@
         "gold": "a,b,d",
         "correct": true,
         "response": "a,b,d",
-        "time": 2.0178911685943604
-      },
-      {
-        "problem_id": "116A73",
-        "prediction": "c,d,e",
-        "gold": "a,c,e",
-        "correct": false,
-        "response": "c,d,e",
-        "time": 4.263498783111572
-      },
-      {
-        "problem_id": "116A74",
-        "prediction": "a,b,d",
-        "gold": "a,b,d",
-        "correct": true,
-        "response": "a,b,d",
-        "time": 1.7172949314117432
-      },
-      {
-        "problem_id": "116A75",
-        "prediction": "a,c,d",
-        "gold": "a,c,d",
-        "correct": true,
-        "response": "a,c,d",
-        "time": 3.042603015899658
-      }
-    ],
-    "chain_of_thought": [
-      {
-        "problem_id": "116A1",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.1115660667419434
-      },
-      {
-        "problem_id": "116A2",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.6133968830108643
-      },
-      {
-        "problem_id": "116A3",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 2.0452558994293213
-      },
-      {
-        "problem_id": "116A4",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.6445930004119873
-      },
-      {
-        "problem_id": "116A5",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 3.004272222518921
-      },
-      {
-        "problem_id": "116A6",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.575707197189331
-      },
-      {
-        "problem_id": "116A7",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 2.252210855484009
-      },
-      {
-        "problem_id": "116A8",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.7502861022949219
-      },
-      {
-        "problem_id": "116A9",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.3476428985595703
-      },
-      {
-        "problem_id": "116A10",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.5358190536499023
-      },
-      {
-        "problem_id": "116A11",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.4223740100860596
-      },
-      {
-        "problem_id": "116A12",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.470489978790283
-      },
-      {
-        "problem_id": "116A13",
-        "prediction": "b,e",
-        "gold": "b,e",
-        "correct": true,
-        "response": "b,e",
-        "time": 3.565290927886963
-      },
-      {
-        "problem_id": "116A14",
-        "prediction": "c,d",
-        "gold": "c,d",
-        "correct": true,
-        "response": "c,d",
-        "time": 2.527824878692627
-      },
-      {
-        "problem_id": "116A15",
-        "prediction": "c,e",
-        "gold": "c,e",
-        "correct": true,
-        "response": "c,e",
-        "time": 1.2808568477630615
-      },
-      {
-        "problem_id": "116A16",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.4830069541931152
-      },
-      {
-        "problem_id": "116A17",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.993743896484375
-      },
-      {
-        "problem_id": "116A18",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 2.7289609909057617
-      },
-      {
-        "problem_id": "116A19",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.63307785987854
-      },
-      {
-        "problem_id": "116A20",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 2.106071949005127
-      },
-      {
-        "problem_id": "116A21",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 3.873539924621582
-      },
-      {
-        "problem_id": "116A22",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.05338191986084
-      },
-      {
-        "problem_id": "116A23",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.165135145187378
-      },
-      {
-        "problem_id": "116A24",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.1009547710418701
-      },
-      {
-        "problem_id": "116A25",
-        "prediction": "b",
-        "gold": "c",
-        "correct": false,
-        "response": "b",
-        "time": 1.913534164428711
-      },
-      {
-        "problem_id": "116A26",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.3750107288360596
-      },
-      {
-        "problem_id": "116A27",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.7141761779785156
-      },
-      {
-        "problem_id": "116A28",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 2.2206437587738037
-      },
-      {
-        "problem_id": "116A29",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.5744268894195557
-      },
-      {
-        "problem_id": "116A30",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.812129020690918
-      },
-      {
-        "problem_id": "116A31",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.9485998153686523
-      },
-      {
-        "problem_id": "116A32",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 3.265044927597046
-      },
-      {
-        "problem_id": "116A33",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 3.039047956466675
-      },
-      {
-        "problem_id": "116A34",
-        "prediction": "d",
-        "gold": "a",
-        "correct": false,
-        "response": "d",
-        "time": 1.538503885269165
-      },
-      {
-        "problem_id": "116A35",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.6251959800720215
-      },
-      {
-        "problem_id": "116A36",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.8982069492340088
-      },
-      {
-        "problem_id": "116A37",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.4008162021636963
-      },
-      {
-        "problem_id": "116A38",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.7707624435424805
-      },
-      {
-        "problem_id": "116A39",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.367784023284912
-      },
-      {
-        "problem_id": "116A40",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.8285729885101318
-      },
-      {
-        "problem_id": "116A41",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.1538197994232178
-      },
-      {
-        "problem_id": "116A42",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.7786049842834473
-      },
-      {
-        "problem_id": "116A43",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.7989330291748047
-      },
-      {
-        "problem_id": "116A44",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.1630048751831055
-      },
-      {
-        "problem_id": "116A45",
-        "prediction": "c",
-        "gold": "d",
-        "correct": false,
-        "response": "c",
-        "time": 1.418828010559082
-      },
-      {
-        "problem_id": "116A46",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.737806797027588
-      },
-      {
-        "problem_id": "116A47",
-        "prediction": "b",
-        "gold": "e",
-        "correct": false,
-        "response": "b",
-        "time": 3.532623291015625
-      },
-      {
-        "problem_id": "116A48",
-        "prediction": "a",
-        "gold": "e",
-        "correct": false,
-        "response": "a",
-        "time": 3.5678040981292725
-      },
-      {
-        "problem_id": "116A49",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.38242506980896
-      },
-      {
-        "problem_id": "116A50",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.6998448371887207
-      },
-      {
-        "problem_id": "116A51",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 3.690183162689209
-      },
-      {
-        "problem_id": "116A52",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.2154266834259033
-      },
-      {
-        "problem_id": "116A53",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 3.2748496532440186
-      },
-      {
-        "problem_id": "116A54",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.5332999229431152
-      },
-      {
-        "problem_id": "116A55",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.7671029567718506
-      },
-      {
-        "problem_id": "116A56",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 2.424896001815796
-      },
-      {
-        "problem_id": "116A57",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.2696361541748047
-      },
-      {
-        "problem_id": "116A58",
-        "prediction": "a",
-        "gold": "b",
-        "correct": false,
-        "response": "a",
-        "time": 3.3862528800964355
-      },
-      {
-        "problem_id": "116A59",
-        "prediction": "d",
-        "gold": "c",
-        "correct": false,
-        "response": "d",
-        "time": 2.525682210922241
-      },
-      {
-        "problem_id": "116A60",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.5058791637420654
-      },
-      {
-        "problem_id": "116A61",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.3375999927520752
-      },
-      {
-        "problem_id": "116A62",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 3.0845582485198975
-      },
-      {
-        "problem_id": "116A63",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 6.540359020233154
-      },
-      {
-        "problem_id": "116A64",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.8972070217132568
-      },
-      {
-        "problem_id": "116A65",
-        "prediction": "b,e",
-        "gold": "b,e",
-        "correct": true,
-        "response": "b,e",
-        "time": 2.4685170650482178
-      },
-      {
-        "problem_id": "116A66",
-        "prediction": "a,e",
-        "gold": "a,e",
-        "correct": true,
-        "response": "a,e",
-        "time": 1.964460849761963
-      },
-      {
-        "problem_id": "116A67",
-        "prediction": "a,d",
-        "gold": "a,d",
-        "correct": true,
-        "response": "a,d",
-        "time": 2.1971888542175293
-      },
-      {
-        "problem_id": "116A68",
-        "prediction": "d,e",
-        "gold": "d,e",
-        "correct": true,
-        "response": "d,e",
-        "time": 2.313983917236328
-      },
-      {
-        "problem_id": "116A69",
-        "prediction": "a,b",
-        "gold": "a,b",
-        "correct": true,
-        "response": "a,b",
-        "time": 3.179476022720337
-      },
-      {
-        "problem_id": "116A70",
-        "prediction": "b,e",
-        "gold": "b,e",
-        "correct": true,
-        "response": "b,e",
-        "time": 2.463031053543091
-      },
-      {
-        "problem_id": "116A71",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.6734719276428223
-      },
-      {
-        "problem_id": "116A72",
-        "prediction": "a,b,d",
-        "gold": "a,b,d",
-        "correct": true,
-        "response": "a,b,d",
-        "time": 2.1785311698913574
+        "time": 2.004326105117798
       },
       {
         "problem_id": "116A73",
@@ -1831,7 +597,7 @@
         "gold": "a,c,e",
         "correct": true,
         "response": "a,c,e",
-        "time": 6.207982778549194
+        "time": 6.292886972427368
       },
       {
         "problem_id": "116A74",
@@ -1839,7 +605,7 @@
         "gold": "a,b,d",
         "correct": true,
         "response": "a,b,d",
-        "time": 1.7399070262908936
+        "time": 1.7321279048919678
       },
       {
         "problem_id": "116A75",
@@ -1847,609 +613,7 @@
         "gold": "a,c,d",
         "correct": true,
         "response": "a,c,d",
-        "time": 3.153991222381592
-      }
-    ],
-    "japanese_medical": [
-      {
-        "problem_id": "116A1",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.5978569984436035
-      },
-      {
-        "problem_id": "116A2",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.2603800296783447
-      },
-      {
-        "problem_id": "116A3",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 2.042448043823242
-      },
-      {
-        "problem_id": "116A4",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.1869380474090576
-      },
-      {
-        "problem_id": "116A5",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.0973660945892334
-      },
-      {
-        "problem_id": "116A6",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.7767612934112549
-      },
-      {
-        "problem_id": "116A7",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 2.2587437629699707
-      },
-      {
-        "problem_id": "116A8",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.6317188739776611
-      },
-      {
-        "problem_id": "116A9",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.6328651905059814
-      },
-      {
-        "problem_id": "116A10",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.1890003681182861
-      },
-      {
-        "problem_id": "116A11",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.4611189365386963
-      },
-      {
-        "problem_id": "116A12",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 3.3764898777008057
-      },
-      {
-        "problem_id": "116A13",
-        "prediction": "b,c",
-        "gold": "b,e",
-        "correct": false,
-        "response": "b,c",
-        "time": 4.694082736968994
-      },
-      {
-        "problem_id": "116A14",
-        "prediction": "c,d",
-        "gold": "c,d",
-        "correct": true,
-        "response": "c,d",
-        "time": 2.5766730308532715
-      },
-      {
-        "problem_id": "116A15",
-        "prediction": "c,e",
-        "gold": "c,e",
-        "correct": true,
-        "response": "c,e",
-        "time": 1.1325640678405762
-      },
-      {
-        "problem_id": "116A16",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.4862501621246338
-      },
-      {
-        "problem_id": "116A17",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.5361790657043457
-      },
-      {
-        "problem_id": "116A18",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 2.3422179222106934
-      },
-      {
-        "problem_id": "116A19",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.412458896636963
-      },
-      {
-        "problem_id": "116A20",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 2.434574842453003
-      },
-      {
-        "problem_id": "116A21",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 5.715781211853027
-      },
-      {
-        "problem_id": "116A22",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.190155029296875
-      },
-      {
-        "problem_id": "116A23",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.7712361812591553
-      },
-      {
-        "problem_id": "116A24",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.1722891330718994
-      },
-      {
-        "problem_id": "116A25",
-        "prediction": "b",
-        "gold": "c",
-        "correct": false,
-        "response": "b",
-        "time": 1.680548906326294
-      },
-      {
-        "problem_id": "116A26",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.4119601249694824
-      },
-      {
-        "problem_id": "116A27",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.6200237274169922
-      },
-      {
-        "problem_id": "116A28",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.6039092540740967
-      },
-      {
-        "problem_id": "116A29",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.7275230884552002
-      },
-      {
-        "problem_id": "116A30",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.9934556484222412
-      },
-      {
-        "problem_id": "116A31",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.9038729667663574
-      },
-      {
-        "problem_id": "116A32",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.2701351642608643
-      },
-      {
-        "problem_id": "116A33",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 3.112510919570923
-      },
-      {
-        "problem_id": "116A34",
-        "prediction": "d",
-        "gold": "a",
-        "correct": false,
-        "response": "d",
-        "time": 1.3272910118103027
-      },
-      {
-        "problem_id": "116A35",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.6063199043273926
-      },
-      {
-        "problem_id": "116A36",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.6560540199279785
-      },
-      {
-        "problem_id": "116A37",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.0083889961242676
-      },
-      {
-        "problem_id": "116A38",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.9036941528320312
-      },
-      {
-        "problem_id": "116A39",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.3901448249816895
-      },
-      {
-        "problem_id": "116A40",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 2.1550300121307373
-      },
-      {
-        "problem_id": "116A41",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.1858479976654053
-      },
-      {
-        "problem_id": "116A42",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.7880921363830566
-      },
-      {
-        "problem_id": "116A43",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.7525339126586914
-      },
-      {
-        "problem_id": "116A44",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.7284281253814697
-      },
-      {
-        "problem_id": "116A45",
-        "prediction": "b",
-        "gold": "d",
-        "correct": false,
-        "response": "b",
-        "time": 1.6438889503479004
-      },
-      {
-        "problem_id": "116A46",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.6126699447631836
-      },
-      {
-        "problem_id": "116A47",
-        "prediction": "d",
-        "gold": "e",
-        "correct": false,
-        "response": "d",
-        "time": 5.13266921043396
-      },
-      {
-        "problem_id": "116A48",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 3.1910340785980225
-      },
-      {
-        "problem_id": "116A49",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.4074130058288574
-      },
-      {
-        "problem_id": "116A50",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.7673771381378174
-      },
-      {
-        "problem_id": "116A51",
-        "prediction": "c",
-        "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 2.3886232376098633
-      },
-      {
-        "problem_id": "116A52",
-        "prediction": "d",
-        "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 1.1931328773498535
-      },
-      {
-        "problem_id": "116A53",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 2.276353120803833
-      },
-      {
-        "problem_id": "116A54",
-        "prediction": "c",
-        "gold": "e",
-        "correct": false,
-        "response": "c",
-        "time": 2.4410550594329834
-      },
-      {
-        "problem_id": "116A55",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.7585761547088623
-      },
-      {
-        "problem_id": "116A56",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.8600008487701416
-      },
-      {
-        "problem_id": "116A57",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.2986712455749512
-      },
-      {
-        "problem_id": "116A58",
-        "prediction": "b",
-        "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 1.9773688316345215
-      },
-      {
-        "problem_id": "116A59",
-        "prediction": "e",
-        "gold": "c",
-        "correct": false,
-        "response": "e",
-        "time": 1.988779067993164
-      },
-      {
-        "problem_id": "116A60",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.5027368068695068
-      },
-      {
-        "problem_id": "116A61",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.2025799751281738
-      },
-      {
-        "problem_id": "116A62",
-        "prediction": "a",
-        "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 2.1497111320495605
-      },
-      {
-        "problem_id": "116A63",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 8.94623064994812
-      },
-      {
-        "problem_id": "116A64",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.8737401962280273
-      },
-      {
-        "problem_id": "116A65",
-        "prediction": "b,e",
-        "gold": "b,e",
-        "correct": true,
-        "response": "b,e",
-        "time": 2.2652440071105957
-      },
-      {
-        "problem_id": "116A66",
-        "prediction": "a,e",
-        "gold": "a,e",
-        "correct": true,
-        "response": "a,e",
-        "time": 1.6503078937530518
-      },
-      {
-        "problem_id": "116A67",
-        "prediction": "a,d",
-        "gold": "a,d",
-        "correct": true,
-        "response": "a,d",
-        "time": 2.1859188079833984
-      },
-      {
-        "problem_id": "116A68",
-        "prediction": "d,e",
-        "gold": "d,e",
-        "correct": true,
-        "response": "d,e",
-        "time": 2.1866800785064697
-      },
-      {
-        "problem_id": "116A69",
-        "prediction": "a,b",
-        "gold": "a,b",
-        "correct": true,
-        "response": "a,b",
-        "time": 4.3849451541900635
-      },
-      {
-        "problem_id": "116A70",
-        "prediction": "b,e",
-        "gold": "b,e",
-        "correct": true,
-        "response": "b,e",
-        "time": 2.0637431144714355
-      },
-      {
-        "problem_id": "116A71",
-        "prediction": "e",
-        "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 2.715970039367676
-      },
-      {
-        "problem_id": "116A72",
-        "prediction": "a,b,d",
-        "gold": "a,b,d",
-        "correct": true,
-        "response": "a,b,d",
-        "time": 1.8117728233337402
-      },
-      {
-        "problem_id": "116A73",
-        "prediction": "c,d,e",
-        "gold": "a,c,e",
-        "correct": false,
-        "response": "c,d,e",
-        "time": 3.2030630111694336
-      },
-      {
-        "problem_id": "116A74",
-        "prediction": "a,b,d",
-        "gold": "a,b,d",
-        "correct": true,
-        "response": "a,b,d",
-        "time": 1.7403409481048584
-      },
-      {
-        "problem_id": "116A75",
-        "prediction": "a,c,d",
-        "gold": "a,c,d",
-        "correct": true,
-        "response": "a,c,d",
-        "time": 2.8531529903411865
+        "time": 2.358363151550293
       }
     ]
   },

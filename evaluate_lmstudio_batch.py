@@ -89,8 +89,10 @@ def strip_thinking(response: str) -> str:
     response = re.sub(r'<(?:\w+:)?think>.*', '', response, flags=re.DOTALL).strip()
     # medgemma の <unused94>thought 思考タグ
     response = re.sub(r'<unused\d+>thought.*', '', response, flags=re.DOTALL).strip()
-    # LLM special tokens 以降を除去（phi-4等が回答後に架空会話を生成するケース）
-    response = re.sub(r'<\|(?:end|im_end|im_sep|endoftext|eot_id)[^>]*\|>.*', '', response, flags=re.DOTALL).strip()
+    # LLM special tokens を除去（<|...|> 形式の制御トークン全般）
+    response = re.sub(r'<\|[^|]*\|>', '', response).strip()
+    # 不完全な special token 以降を除去（<| で始まる残余テキスト）
+    response = re.sub(r'<\|.*', '', response, flags=re.DOTALL).strip()
     return response
 
 

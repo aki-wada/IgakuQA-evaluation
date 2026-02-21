@@ -139,8 +139,10 @@ def extract_answer(response: str, prompt_key: str = "baseline") -> str:
     response = re.sub(r'<(?:\w+:)?think>.*', '', response, flags=re.DOTALL).strip()
     # medgemma の <unused94>thought 思考タグを除去
     response = re.sub(r'<unused\d+>thought.*', '', response, flags=re.DOTALL).strip()
-    # LLM special tokens 以降を除去（phi-4等が回答後に架空会話を生成するケース）
-    response = re.sub(r'<\|(?:end|im_end|im_sep|endoftext|eot_id)[^>]*\|>.*', '', response, flags=re.DOTALL).strip()
+    # LLM special tokens を除去（<|...|> 形式の制御トークン全般）
+    response = re.sub(r'<\|[^|]*\|>', '', response).strip()
+    # 不完全な special token 以降を除去（<| で始まる残余テキスト）
+    response = re.sub(r'<\|.*', '', response, flags=re.DOTALL).strip()
 
     if not response:
         return ""
@@ -234,7 +236,8 @@ def evaluate_with_prompt(
     questions: list,
     few_shot: list = None,
     base_url: str = "http://localhost:1234/v1",
-    verbose: bool = True
+    verbose: bool = True,
+    timeout: int = 120
 ) -> tuple[PromptResult, list]:
     """特定のプロンプトで評価"""
 
@@ -257,7 +260,7 @@ def evaluate_with_prompt(
 
         try:
             start = time.time()
-            result_data = call_lmstudio(messages, model, max_tokens, base_url)
+            result_data = call_lmstudio(messages, model, max_tokens, base_url, timeout=timeout)
             elapsed = time.time() - start
             times.append(elapsed)
 
@@ -394,6 +397,8 @@ def main():
                         help="Prompts to test")
     parser.add_argument("--max-tokens", type=int, default=None,
                         help="Override max_tokens (e.g. 1024 for reasoning models)")
+    parser.add_argument("--timeout", type=int, default=120,
+                        help="API timeout in seconds (default: 120, increase for thinking models)")
 
     args = parser.parse_args()
 
@@ -447,7 +452,8 @@ def main():
             questions=questions,
             few_shot=few_shot,
             base_url=args.url,
-            verbose=True
+            verbose=True,
+            timeout=args.timeout
         )
 
         results.append(result)

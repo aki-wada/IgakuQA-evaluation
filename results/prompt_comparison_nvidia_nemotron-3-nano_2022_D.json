@@ -1,0 +1,627 @@
+{
+  "timestamp": "2026-02-20T07:46:53.633945",
+  "model": "nvidia/nemotron-3-nano",
+  "summary": [
+    {
+      "prompt_key": "answer_first",
+      "prompt_name": "案D: 回答先出し",
+      "total": 75,
+      "correct": 64,
+      "accuracy": 0.8533333333333334,
+      "avg_time": 9.613309574127197,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "answer_first": [
+      {
+        "problem_id": "116D1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer which combination requires anti-D immunoglobulin administration after delivery. The scenario: RhD-negative mother, need anti-D prophylaxis postpartum if baby is RhD-positive (or poss",
+        "time": 2.259333848953247
+      },
+      {
+        "problem_id": "116D2",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"統合失調症を強く示唆する患者の発言はどれか。\" Options a-e. Need to select one answer. The correct answer likely is \"自分は電波で操られている\" which is a delusional thought, typical of s",
+        "time": 1.117295742034912
+      },
+      {
+        "problem_id": "116D3",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: \"心不全の分類で肺動脈楔入圧と心拍出量（心係数）で定義されるものはどれか。\" Options: a: AHA (American Heart Association) heart failure staging classification; b: Child classif",
+        "time": 2.0331199169158936
+      },
+      {
+        "problem_id": "116D4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"先天性副腎皮質過形成症の維持療法中に発熱を呈した場合、初期対応として適切なのはどれか。\" Options: a: 水分制限 (fluid restriction), b: 抗菌薬投与 (antibiotic administration), c: 利尿薬静注 (IV diuretic), d: 糖質コ",
+        "time": 2.593703269958496
+      },
+      {
+        "problem_id": "116D5",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"上部消化管内視鏡を用いて治療が行われるのはどれか。\" Options a-e. Need to select one answer.\n\nWe need to know which condition is treated using upper gastrointestinal endoscopy (",
+        "time": 15.097079753875732
+      },
+      {
+        "problem_id": "116D6",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"大動脈瘤の原因にならないのはどれか。\" Which is NOT a cause of aortic aneurysm. Options: a: Syphilis, b: Atherosclerosis, c: Buerger disease, d: Takayasu arteritis, e: Ma",
+        "time": 2.7633190155029297
+      },
+      {
+        "problem_id": "116D7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: \"腎後性急性腎障害を、腎前性・腎性急性腎障害と鑑別する場合に最も有用な検査はどれか。\" Options: a: 腎生検, b: 尿蛋白定量, c: 尿比重測定, d: 腹部エコー検査, e: 血清クレアチニン値測定. Need to choose one. The most ",
+        "time": 1.950570821762085
+      },
+      {
+        "problem_id": "116D8",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"急性の細菌感染症はどれか。\" Options: a: 癜風 (probably \"梅毒\"? Actually \"癜風\" maybe \"梅毒\"? Not sure), b: 掌蹠膿疱症 (palmoplantar pustulosis), c: 膿疱性乾癬 (pustular psoriasis), d",
+        "time": 2.469180107116699
+      },
+      {
+        "problem_id": "116D9",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"成人大腿ヘルニアで正しいのはどれか。\" Options a-e. Choose one. Need to output the letter only.\n\nWe need to know which statement is correct about adult femoral hernia.\n\nL",
+        "time": 5.055423974990845
+      },
+      {
+        "problem_id": "116D10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"早期流産の原因で最も頻度が高いのはどれか。\" Options: a: 子宮奇形 (uterine malformation), b: 子宮筋腫 (uterine fibroids), c: 頸管無力症 (cervical insufficiency), d: 胚染色体異常 (chromosomal a",
+        "time": 1.582664966583252
+      },
+      {
+        "problem_id": "116D11",
+        "prediction": "d,e",
+        "gold": "c,e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"咽頭痛を認める小児で咽後膿瘍を疑う症状はどれか。2つ選べ。\" Options: a: 難聴 (hearing loss), b: 鼻出血 (nosebleed), c: 頻呼吸 (tachypnea), d: 顔面麻痺 (facial paralysis), e: 嚥下困難 (dysphagia). ",
+        "time": 12.52049207687378
+      },
+      {
+        "problem_id": "116D12",
+        "prediction": "a,b,d",
+        "gold": "b,c,d",
+        "correct": false,
+        "response": "We need to answer with three letters separated by commas? The instruction: \"3個選んで答えてください。\" So we need to output three letters, likely separated by commas or spaces? In previous examples they used \"a,b",
+        "time": 12.88202714920044
+      },
+      {
+        "problem_id": "116D13",
+        "prediction": "a,b,c",
+        "gold": "a,b,c",
+        "correct": true,
+        "response": "We need to answer with three letters, comma-separated? The instruction: \"3個選んで答えてください。\" Likely they want three letters separated by commas or spaces? In previous examples they used \"a,b\" for two choic",
+        "time": 1.6503880023956299
+      },
+      {
+        "problem_id": "116D14",
+        "prediction": "b,c,d",
+        "gold": "b,c,d",
+        "correct": true,
+        "response": "We need to answer with three letters, presumably the correct options. The question: \"肺高血圧患者にみられるのはどれか。3つ選べ。\" Options: a: 奇脈 (maybe \"奇異脈\"? Not sure), b: 足のむくみ, c: 頸静脈怒張, d: 労作時息切れ, e: II音の肺動脈成分の減弱.\n\nWe",
+        "time": 5.305729150772095
+      },
+      {
+        "problem_id": "116D15",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "We need to answer with 3 letters, comma-separated? The instruction: \"3個選んで答えてください。\" Likely they want three letters separated by commas or spaces? In previous examples they used \"a,b\" without spaces? A",
+        "time": 4.221469879150391
+      },
+      {
+        "problem_id": "116D16",
+        "prediction": "a,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: \"72歳の男性。肺がん検診で胸部異常陰影を指摘され来院した。胸部エックス線写真（A）と胸部造影CT（B）とを別に示す。この患者で認められる可能性が高い症状はどれか。 a: 嗄声 b: 不整脈 c: 呼吸困難 d: 心窩部痛 e: 頸静脈怒張\"\n\nWe need to sele",
+        "time": 37.86969590187073
+      },
+      {
+        "problem_id": "116D17",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: \"外見は40歳前後にみえる男性。路上にうずくまっているところを警察官に保護されたが、「自分が誰だかわからない」と言うため、警察官に伴われて来院した。身元がわかるような所持品はなかった。会話は可能で、関西弁を話したが、関西地方に住んだ記憶はないという。外傷はなく、血液検査、脳画",
+        "time": 8.40260362625122
+      },
+      {
+        "problem_id": "116D18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"今後、カテーテルアブレーション療法を検討している。現時点での薬物療法として用いられないのはどれか。\" So which drug class is NOT used as pharmacologic therapy at this point, given the case.\n\nWe have a 7",
+        "time": 11.959666013717651
+      },
+      {
+        "problem_id": "116D19",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"この患者の初期治療として誤っているのはどれか。\" Means \"Which of the following is incorrect as initial treatment for this patient?\" So we need to select the option that is NOT",
+        "time": 8.369287967681885
+      },
+      {
+        "problem_id": "116D20",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The scenario: 32-year-old male with right lower quadrant pain, previous appendectomy, mild fever? Actually temperature 37.0°C (normal). WBC elevated 12,",
+        "time": 7.0794150829315186
+      },
+      {
+        "problem_id": "116D21",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: which condition does NOT become an indication for emergency aortic valve replacement in this patient. Options a-e. The question: \"この患者の治療経過中に緊急大動脈弁置換術の適",
+        "time": 7.546381950378418
+      },
+      {
+        "problem_id": "116D22",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 68-year-old man, nighttime talking, kicking wife, no abnormal neuro exam, labs, MRI normal. Likely diagnosis: REM sleep behavior disorder ",
+        "time": 1.2470221519470215
+      },
+      {
+        "problem_id": "116D23",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"本疾患に合併しやすい病態でないのはどれか。\" Means \"Which of the following is NOT commonly associated with this disease?\" The disease context: 46-year-old female, health che",
+        "time": 29.267534971237183
+      },
+      {
+        "problem_id": "116D24",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: appropriate analgesic management for this patient. Options a-e. Need to select one correct answer.\n\nWe need to consider context: 68-year-old male with a",
+        "time": 3.828834056854248
+      },
+      {
+        "problem_id": "116D25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: 84-year-old man with gastric cancer, subcutaneous hematoma that expands, no bleeding history, labs: RBC 2.98 million, Hb 7.2, Hct 23% (anemia), WBC norm",
+        "time": 5.749093055725098
+      },
+      {
+        "problem_id": "116D26",
+        "prediction": "a,d,e",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 39-year-old man, diplopia main complaint. While driving long distance, center line appears double. Visual acuity both eyes 1.2, no abnorma",
+        "time": 37.970909118652344
+      },
+      {
+        "problem_id": "116D27",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: 64-year-old man with scrotal swelling, redness, pain, progressive over 5 days, now severe. Diabetes. Exam: induration from scrotum to perineum, around a",
+        "time": 4.3982508182525635
+      },
+      {
+        "problem_id": "116D28",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"誤飲に対する処置を判断する情報として有用性が低いのはどれか。\" So which piece of information is least useful for deciding treatment of ingestion. Options: a: \"吐かせましたか\" (Did you induc",
+        "time": 2.9012041091918945
+      },
+      {
+        "problem_id": "116D29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 64-year-old man with tongue base tumor, pain left side of tongue and pharynx 1 week, no smoking, alcohol 350mL beer per week (so some alco",
+        "time": 7.927397966384888
+      },
+      {
+        "problem_id": "116D30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"来院時の外来診察で最も重要な感染予防策はどれか。\" Options a-e. Need to select one. The scenario: 62-year-old female with fever, cough, weight loss, possible TB? The chest X-ra",
+        "time": 4.788322925567627
+      },
+      {
+        "problem_id": "116D31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 52-year-old female with visual loss, tinnitus, headache, recent bilateral visual impairment. Visual acuity low, IOP normal. Fundus photo, ",
+        "time": 23.87959122657776
+      },
+      {
+        "problem_id": "116D32",
+        "prediction": "a,d,e",
+        "gold": "a",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: appropriate treatment for this patient. Let's parse the case.\n\n30-year-old male, cough and dyspnea on exertion for 14 days, gradually worsening. Travel ",
+        "time": 38.23945903778076
+      },
+      {
+        "problem_id": "116D33",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: immediate appropriate treatment for a 2-month-old female with sudden loss of consciousness, seizures, etc. Findings: mild anemia, coagulopathy (PT INR 4",
+        "time": 18.91564178466797
+      },
+      {
+        "problem_id": "116D34",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: 59-year-old woman with gait disturbance, orthostatic hypotension, autonomic symptoms (constipation, urinary incontinence), cerebellar signs (dysarthria,",
+        "time": 1.544999122619629
+      },
+      {
+        "problem_id": "116D35",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"診断に有用な検査として誤っているのはどれか。\" Means \"Which of the following tests is NOT useful for diagnosis?\" So we need to select the one that is incorrectly considered u",
+        "time": 8.55242109298706
+      },
+      {
+        "problem_id": "116D36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 62-year-old female, right breast discomfort, palpable 4 cm tumor, irregular surface, hard, non-elastic, poor mobility, no tenderness, no n",
+        "time": 1.789320945739746
+      },
+      {
+        "problem_id": "116D37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 67-year-old male, dysphagia, weight loss, diagnosed with upper esophageal cancer, underwent radiation therapy and concurrent chemotherapy.",
+        "time": 4.326306104660034
+      },
+      {
+        "problem_id": "116D38",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: 6-month-old girl with left lower limb not moving, fever, sore throat, diagnosed with pharyngitis, given acetaminophen suppository. Next day she cries in",
+        "time": 5.5149030685424805
+      },
+      {
+        "problem_id": "116D39",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer probability that patient's younger brother has the disease. The scenario suggests a hereditary kidney disease causing hematuria, progressive renal failure, cystic kidneys, family his",
+        "time": 13.46492314338684
+      },
+      {
+        "problem_id": "116D40",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: appropriate treatment for this patient. The case: 53-year-old male with severe asthma, frequent exacerbations, repeated pneumonia, now diagnosed with pn",
+        "time": 4.933410167694092
+      },
+      {
+        "problem_id": "116D41",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: 52-year-old man with left renal tumor detected on ultrasound, clear consciousness, labs normal, imaging shows something (not provided but likely a small",
+        "time": 1.4200150966644287
+      },
+      {
+        "problem_id": "116D42",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"診断に有用なのはどれか。\" (Which is useful for diagnosis?) Options a-e are various autoantibodies. The clinical scenario: 48-year-old woman with progressive weakne",
+        "time": 4.617185831069946
+      },
+      {
+        "problem_id": "116D43",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 55-year-old male, fever and palpitations for 1 day, swelling and pain in anterior neck today. 1 week ago sore throat, took cold medicine. ",
+        "time": 3.0578219890594482
+      },
+      {
+        "problem_id": "116D44",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"この患者で最も注意すべき合併症はどれか。\" Options: a: 心不全, b: 悪性腫瘍, c: 嚥下障害, d: 間質性肺炎, e: 肺高血圧症. Choose one.\n\nWe have a 53-year-old female with rash and fever, skin rash o",
+        "time": 9.181391954421997
+      },
+      {
+        "problem_id": "116D45",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"本患者の腎機能悪化を抑制するためにまずすべきなのはどれか。\" Options: a: 禁酒 (abstinence from alcohol), b: 運動制限 (exercise restriction), c: 利尿薬の追加 (add diuretic), d: 蛋白摂取量の倍化 (double ",
+        "time": 2.5480949878692627
+      },
+      {
+        "problem_id": "116D46",
+        "prediction": "a,d,e",
+        "gold": "c",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question. The question: 72-year-old man with sudden severe headache and sudden rapid bilateral visual loss, conscious, no limb paralysis. Height 169 cm, weight 69",
+        "time": 38.03849720954895
+      },
+      {
+        "problem_id": "116D47",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The scenario: 5-month-old boy, constipation, decreased feeding, now with ptosis, dilated pupils, delayed pupillary reflex, difficulty holding neck, abse",
+        "time": 1.4167280197143555
+      },
+      {
+        "problem_id": "116D48",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The scenario: 85-year-old man with pneumococcal meningitis, bedridden, Foley catheter placed. He was restless last night, was pulling the catheter all n",
+        "time": 36.27575898170471
+      },
+      {
+        "problem_id": "116D49",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: possible disease given clinical picture. 77-year-old female, dementia, recent memory loss, now somnolent, labs show markedly elevated transaminases (AST",
+        "time": 13.183767080307007
+      },
+      {
+        "problem_id": "116D50",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"次に投与する薬剤として適切なのはどれか。\" Options: a: ST合剤 (i.e., sulfonamide? maybe \"ST剤\" stands for sulfonamide? Actually \"ST合剤\" maybe \"ST combination\"? Not sure). b: 抗真",
+        "time": 18.839579820632935
+      },
+      {
+        "problem_id": "116D51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"この患者の治療で適切でないのはどれか。\" Options a-e. Need to select the one that is NOT appropriate treatment for this patient.\n\nWe need to parse the case: 32-year-old fe",
+        "time": 8.89282512664795
+      },
+      {
+        "problem_id": "116D52",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 48-year-old female, 1 pregnancy 1 child, chief complaint abdominal distension. 3 months ago abdominal girth increased, 1 week ago increase",
+        "time": 9.348879098892212
+      },
+      {
+        "problem_id": "116D53",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"ただちに行うべきなのはどれか。\" (What should be done immediately?) Options: a: ECMO, b: Emergency surgery, c: Coronary angiography, d: Heparin administration, e: IVC ",
+        "time": 10.847278833389282
+      },
+      {
+        "problem_id": "116D54",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The scenario: 21-year-old male with facial swelling, dyspnea on exertion, facial and neck and upper limb edema, dilated chest wall veins. Biopsy shows t",
+        "time": 2.1446750164031982
+      },
+      {
+        "problem_id": "116D55",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "We need to answer the multiple-choice question: \"この患者で予想される検査所見はどれか。\" Options: a: ヒスタミン増加, b: ビタミンB12増加, c: JAK2遺伝子変異陽性, d: エリスロポエチン増加, e: フィラデルフィア染色体陽性. Choose one.\n\nWe have a 54-year-old female with",
+        "time": 4.620108127593994
+      },
+      {
+        "problem_id": "116D56",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 69-year-old male with skin erythema, fatigue, anorexia, labs: RBC 4.46 million, Hb 14.9, Hct 44% (normal), WBC 14,800, platelets 200k (nor",
+        "time": 15.654170989990234
+      },
+      {
+        "problem_id": "116D57",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 82-year-old female, right big toe nail, brown macule for 20 years, diagnosed benign skin disease 10 years ago, now expanding, bleeding spo",
+        "time": 11.163532972335815
+      },
+      {
+        "problem_id": "116D58",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 22-year-old female with fever, sore throat, white coating on both soft palate, tender cervical lymph nodes, labs: WBC 11k with 18% stab (b",
+        "time": 2.1721811294555664
+      },
+      {
+        "problem_id": "116D59",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: appropriate return-to-sport policy after mild head injury with brief LOC? Actually LOC was only immediate, then regained consciousness, now normal. No a",
+        "time": 1.0352108478546143
+      },
+      {
+        "problem_id": "116D60",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: 11-year-old boy with right shoulder pain, swelling in proximal humerus, gradually enlarged, pain on movement. Labs: CK normal, LDH elevated? Actually LD",
+        "time": 2.572103977203369
+      },
+      {
+        "problem_id": "116D61",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question. The question: 23-year-old female, first cervical cancer screening abnormal, no symptoms. Height, weight, vitals normal. On pelvic exam, uterus normal si",
+        "time": 3.083768129348755
+      },
+      {
+        "problem_id": "116D62",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"この患者で糖尿病性腎症と診断するのに必要な検査はどれか。\" Options a-e. Need to select one answer.\n\nWe need to consider diagnosing diabetic nephropathy. The gold standard is measur",
+        "time": 2.177037000656128
+      },
+      {
+        "problem_id": "116D63",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: 28-year-old male with perennial nasal congestion, watery discharge, sneezing, pale swollen nasal mucosa, total nasal obstruction, sinus X-ray shows hype",
+        "time": 2.772284984588623
+      },
+      {
+        "problem_id": "116D64",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"この病態を評価するうえで適切でないのはどれか。\" Means \"Which of the following is NOT appropriate for evaluating this condition?\" They gave a clinical scenario: 24-year-old fe",
+        "time": 11.792351007461548
+      },
+      {
+        "problem_id": "116D65",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"この患者に認められるのはどれか。\" Options a-e. Need to select one letter.\n\nWe have a 21-year-old male with fever, fatigue, sore throat, progressive symptoms, now with ",
+        "time": 14.352622032165527
+      },
+      {
+        "problem_id": "116D66",
+        "prediction": "c,d",
+        "gold": "b,d",
+        "correct": false,
+        "response": "We need to answer which pieces of information are necessary for diagnosis of twin-twin transfusion syndrome (TTTS). The question: \"双胎間輸血症候群の診断のために必要な情報はどれか。2つ選べ。\" Options: a:①, b:②, c:③, d:④, e:⑤.\n\nWe",
+        "time": 10.215001106262207
+      },
+      {
+        "problem_id": "116D67",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: 3-year-old boy with hirsutism and weight gain, moon facies, central obesity, likely Cushing syndrome. Need hormone tests needed for diagnosis: likely AC",
+        "time": 1.5018808841705322
+      },
+      {
+        "problem_id": "116D68",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: \"23歳の男性... HIV抗原・抗体同時スクリーニング検査が陽性であった。HIV感染の確定に必要な検査はどれか。2つ選べ。\" Options: a: 咽頭培養, b: 血液培養, c: 血中HIV RNA定量検査, d: CD4陽性Tリンパ球数測定, e: Western blot法による抗HIV抗体",
+        "time": 24.860031843185425
+      },
+      {
+        "problem_id": "116D69",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "We need to answer with two options (a,b,c,d,e) that are appropriate antibiotics for this case. Let's analyze.\n\n71-year-old male, fever, loss of appetite, recent watering garden with rainwater (possibl",
+        "time": 12.664840936660767
+      },
+      {
+        "problem_id": "116D70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "We need to answer with two letters separated by comma? The instruction: \"2個選んで答えてください。\" So we need to output two letters, likely separated by comma or space? In previous examples they used \"a,b\" forma",
+        "time": 3.911133050918579
+      },
+      {
+        "problem_id": "116D71",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "We need to answer with two letters separated by comma? The instruction: \"2個選んで答えてください。\" So we need to output two letters, likely separated by comma or space? In previous question they answered \"a,b\". ",
+        "time": 8.084306240081787
+      },
+      {
+        "problem_id": "116D72",
+        "prediction": "a,b,c",
+        "gold": "a,b,e",
+        "correct": false,
+        "response": "We need to answer with three letters separated by commas? The instruction: \"3個選んで答えてください。\" So we need to output three letters, likely separated by commas or spaces? In previous examples they used comm",
+        "time": 16.70783805847168
+      },
+      {
+        "problem_id": "116D73",
+        "prediction": "a,b,e",
+        "gold": "a,b,e",
+        "correct": true,
+        "response": "We need to answer the multiple-choice question: 76-year-old man with epigastric pain, mild chronic, labs show elevated lipase (180, normal up to 160), ALP slightly high, AST/ALT moderately elevated. I",
+        "time": 27.860676288604736
+      },
+      {
+        "problem_id": "116D74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "We need to answer with three letters separated by commas? The instruction: \"3個選んで答えてください。\" So we need to output three options that are appropriate treatment for this patient. The case: 75-year-old fem",
+        "time": 2.4349491596221924
+      },
+      {
+        "problem_id": "116D75",
+        "prediction": "a,b,e",
+        "gold": "a,b,e",
+        "correct": true,
+        "response": "We need to answer with three letters corresponding to the items that should be checked on abdominal contrast CT to assess surgical suitability for a patient with rectal cancer (adenocarcinoma) located",
+        "time": 7.581297159194946
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}
