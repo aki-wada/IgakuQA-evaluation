@@ -20,12 +20,38 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 | メディックメディア (2025/2026) | 3-6 (クラウドAI) | クラウド最新 | API |
 | **本研究** | **35+** | **1B〜235B全域** | **消費者Mac** |
 
+**国際的な先行研究を含む拡張比較**:
+
+| 研究 | モデル数 | 評価対象 | 環境 | 試験 |
+|---|---|---|---|---|
+| Kasai et al. (2023) | 3 | クラウドAPI | API | IgakuQA |
+| PFN MedSwallow (2024-2025) | ~10 | クラウド+オープン | API+GPU | IgakuQA |
+| doctorin IgakuQA119 (2025) | 27 | クラウド+オープン+FT | Colab/API | IgakuQA119 |
+| eques (2025) | 4-5 | オープン小型 | Colab A100 | IgakuQA+YakugakuQA |
+| メディックメディア (2025/2026) | 3-6 | クラウド最新 | API | 119/120回 |
+| Nissen et al. (2025) | 13 | モバイル(1-8B) | iPhone/iPad | AMEGA |
+| Safavi-Naini et al. (2025) | 多数 | 量子化比較 | 混合 | 消化器病学 |
+| Revalida BMJ (2025) | 31 | オープン+商用 | 混合 | ブラジル医師 |
+| KorMedMCQA-V (2026) | 50+ | VLモデル | 混合 | 韓国KMLE |
+| **本研究** | **35+** | **1B〜235B全域** | **消費者Mac** | **IgakuQA** |
+
 **差別化ポイント**:
-1. **規模**: 35モデル以上 — 既存研究の5〜10倍
-2. **範囲**: 1.2B〜235Bまで全サイズ帯をカバー
-3. **実用性**: 消費者向けハードウェア（Mac Studio）での実測
-4. **体系的比較**: 4種プロンプト × 複数max_tokens × 複数量子化条件
-5. **新知見**: max_tokensが推論モデルの正答率を支配する発見、日本語FTの質的差異
+1. **規模**: 35モデル以上 — 日本語医療ベンチマークでは最大規模
+2. **範囲**: 1.2B〜235Bまで全サイズ帯をカバー（他研究は特定帯域に集中）
+3. **実用性**: 消費者向けハードウェア（Mac Studio M3 Ultra 512GB）での実測 — API/Colab不要
+4. **体系的比較**: 4種プロンプト × 複数max_tokens × 複数量子化条件の交差分析
+5. **新知見**: max_tokensが推論モデルの正答率を支配する発見（30%→92%）
+6. **日本語FT質的差異**: 同一ベースモデルで+13%〜-7%の両方向を実証
+7. **量子化×日本語医療**: MLX 8bit/4bit/GGUFの医療タスクでの体系的比較（先行研究なし）
+
+**先行研究が裏付ける本研究の発見**:
+- 32B以上で合格圏 → Meerkat (7B合格は教科書FT必須), KorMedMCQA (72B=78.9%)
+- 大型量子化 > 小型フル精度 → Safavi-Naini et al. (npj Digital Medicine 2025)
+- 小型4bit劣化/大型4bit安定 → Lee et al. (IJCAI 2025), Li et al. (ICML 2024)
+- 医療特化FTが汎用に劣るケース → EQUES, AfriMed-QA, IgakuQA119
+- Mistral-Small-3.2の実力 → PHI抽出研究 (Scientific Reports 2026)
+
+**詳細**: `docs/LITERATURE_REVIEW.md` 参照
 
 ### 想定ターゲットジャーナル
 
@@ -288,3 +314,76 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 
 `article_igakuqa.md` に書籍向けの日本語記事を作成済み。
 論文とは別に、一般医師向けの解説として `book/` にも配置。
+
+---
+
+## 8. 先行研究レビュー
+
+**調査日**: 2026-02-22
+**詳細**: `docs/LITERATURE_REVIEW.md`
+
+### 主要参考文献（論文で引用すべき）
+
+#### IgakuQA / 日本語医療ベンチマーク
+1. Kasai et al. (2023) arXiv:2303.18027 — IgakuQA原著（被引用123件）
+2. Kawakami et al. (2025) arXiv:2504.18080 — PFN MedLLM-Qwen-72B, IgakuQA 86.8%
+3. Sukeda (2024) arXiv:2409.11783 — JMedLLM-v1, 低リソース日本語医療LLM
+4. Jiang et al. (2024) arXiv:2409.13317 — JMedBench (COLING 2025)
+5. Liu et al. (2025) IJMI — GPT-4o日本医師国家試験89.2%
+6. Kasai et al. (2024) JMIR — GPT-4V画像評価（画像追加で改善なし）
+7. Yano et al. (2024) arXiv:2406.14882 — 70B日本語医療QA
+
+#### USMLE / MedQA（スケーリング関連）
+8. Kim et al. (2025) npj Digital Medicine — Meerkat-7B MedQA 74.3%（7B初合格）
+9. Pal et al. (2024) Scientific Reports — OpenMedLM, Yi-34BプロンプトでFT超え
+10. Nature Medicine (2025) — DeepSeek-R1 USMLE 92%（オープンソース）
+11. Bolton et al. (2024) arXiv:2404.15894 — Mid-Sized Models, Mistral-7B MedQA 63%
+
+#### 量子化
+12. Zhan et al. (2025) arXiv:2509.04534 — 生物医学NLP量子化（12 LLM, GPU 75%削減）
+13. Lee et al. (2025) IJCAI — 量子化×タスク難易度×モデルサイズ（1B-405B）
+14. Kurtic et al. (2025) ACL — "BF16 or Death", FP8ロスレス
+15. Ouyang et al. (2025) ACL — 量子化スケーリング則（1500+チェックポイント）
+16. Li et al. (2024) ICML — 量子化LLM評価（125M-180B, 活性化量子化の逆方向発見）
+17. Safavi-Naini et al. (2025) npj Digital Medicine — 大型量子化>小型フル精度
+
+#### エッジ/ローカル展開
+18. Nissen et al. (2025) arXiv:2502.08954 — Medicine on the Edge, 13モデルiPhone/iPad
+19. arXiv:2511.05502 — Apple Silicon LLM推論ベンチマーク
+
+#### 多言語・非英語
+20. MedExpQA (2024) AI in Medicine — 非英語で-10pp
+21. XLingHealth (2024) Web Conference — 非英語で正確性-18%
+22. KorMedMCQA-V (2026) arXiv:2602.13650 — 韓国VL 50+モデル
+23. Revalida BMJ (2025) — ブラジル31モデル
+
+---
+
+## 9. 論文化可能性評価
+
+### 結論: **十分に論文化可能**
+
+#### 強み（投稿可能な理由）
+
+1. **独自のニッチ**: 「消費者ハードウェアでの日本語医療ベンチマーク×スケーリング×量子化」は先行研究に存在しない
+2. **データ量**: 35+モデル、150+結果JSONファイル、複数条件の交差分析 — 十分な規模
+3. **再現性**: temperature=0, スクリプト公開済み, GitHub管理
+4. **臨床的関心**: ローカルLLMのプライバシー保護×医療応用は時宜を得たテーマ
+5. **先行研究との整合性**: 量子化・スケーリングの発見が複数の独立研究と一致（信頼性高い）
+6. **新発見**: max_tokensの決定的影響、日本語FTの両方向効果、MoE効率性 — いずれも新規
+
+#### 弱み（対処が必要）
+
+1. **統計的検定未実施**: McNemar検定、95%CI追加が必須（Python実装1日）
+2. **全400問評価の不足**: MEMORY.mdでは19モデル評価済みだが、PAPER_PLANの記載は6モデル → 更新必要
+3. **単一年度**: 2022年のみ → 最低1年度追加（2018年推奨、データ汚染議論用）
+4. **画像問題未評価**: テキストのみ → Limitation節で明記
+
+#### 推奨ターゲット（更新）
+
+| ジャーナル | IF | 適合度 | 根拠 |
+|---|---|---|---|
+| **Scientific Reports** | ~4.6 | ★★★ | OpenMedLM, MedAlpaca等の類似ベンチマーク論文掲載実績 |
+| **JMIR Medical Education** | ~3.1 | ★★★ | KMLE, ドイツ試験, GPT-4V IgakuQA論文掲載実績 |
+| **BMC Medical Informatics** | ~3.5 | ★★★ | 比較研究歓迎、オープンアクセス |
+| **npj Digital Medicine** | ~15 | ★★☆ | Meerkat掲載実績。インパクト高いが競争激しい |
