@@ -63,6 +63,22 @@ PROMPTS = {
 複数選択の場合はカンマ区切りで出力してください。例: a,c
 2行目以降に解説を書いてもかまいません。""",
         "max_tokens": 1024
+    },
+    "english_strict": {
+        "name": "案E: English answer-only",
+        "system": """You are a medical expert. Answer the multiple-choice question.
+Output ONLY the answer letter(s) (a,b,c,d,e). No explanation. No reasoning. No analysis.
+If multiple answers: separate with comma. Example: a,c
+Do not write anything else.""",
+        "max_tokens": 50
+    },
+    "english_answer_first": {
+        "name": "案F: English answer-first",
+        "system": """You are a medical doctor. Answer the medical question.
+FIRST LINE: answer letter(s) only (a,b,c,d,e). Example: b or a,c
+SECOND LINE onwards: brief explanation (optional, max 3 sentences).
+No self-critique. No debate. One best answer only. Stop after answering.""",
+        "max_tokens": 200
     }
 }
 

@@ -1,6 +1,6 @@
 # IgakuQA LLM評価 経過記録
 
-**記録日時**: 2026-02-06
+**記録日時**: 2026-03-05（最終更新）
 **実行環境**: Mac Studio M3 Ultra
 **評価対象**: 第116回医師国家試験 2022年 A問題 75問
 
@@ -14,9 +14,13 @@
 
 | Rank | Model | Size | Best Accuracy | Best Prompt | Avg Time |
 |------|-------|------|---------------|-------------|----------|
-| 1 | **qwen3-235b-a22b-2507** (MLX 8bit, mt=1024) | 235B MoE | **88.0%** ✓合格⭐⭐ | 案B/案C (同率) | 1.9s |
-| 1 | **qwen3-235b-a22b** | 235B MoE | **88.0%** ✓合格⭐⭐ | 案B (段階的思考) | 1.4s |
-| 1 | **gpt-oss-120b** (MLX 8bit, mt=1024) | 120B | **92.0%** ✓合格⭐⭐⭐ | 案A (回答形式強化) | 2.1s |
+| 1 | **qwen3.5-397b-a17b@8bit** (MLX, mt=4096) | 397B MoE(17B) | **90.7%** ✓合格⭐⭐⭐ (全400問89.5%) | 案A (回答形式強化) | 55.8s |
+| 1 | **qwen3.5-397b-a17b@4bit** (MLX, mt=4096) | 397B MoE(17B) | **90.7%** ✓合格⭐⭐ (全400問87.3%) | 案A/案C (同率) | 44.8s |
+| 1 | **qwen3.5-27b@8bit** (MLX, mt=4096) | 27B dense | **89.3%** ✓合格⭐⭐ (全400問87.3%) | 案A (回答形式強化) | 69.5s |
+| 2 | **gpt-oss-120b** (MLX 8bit, mt=1024) | 120B | **92.0%** ✓合格⭐⭐⭐ | 案A (回答形式強化) | 2.1s |
+| 3 | **qwen3-235b-a22b-thinking-2507** (MLX, mt=8192) | 235B MoE | **89.3%** ✓合格⭐⭐ | Baseline | 66.8s |
+| 3 | **qwen3-235b-a22b-2507** (MLX 8bit, mt=1024) | 235B MoE | **88.0%** ✓合格⭐⭐ (全400問86.0%) | Baseline | 1.9s |
+| 3 | **qwen3-235b-a22b** | 235B MoE | **88.0%** ✓合格⭐⭐ | 案B (段階的思考) | 1.4s |
 | - | **qwen3-next-80b** (MLX, mt=1024) | 80B MoE(A3B) | **85.3%** ✓合格⭐ | 案C (日本医療文脈) | 0.4s |
 | 2 | **gpt-oss-120b** (GGUF MXFP4, mt=1024) | 120B | **90.7%** ✓合格⭐⭐⭐ | 案C (日本医療文脈) | 1.3s |
 | 3 | **llama-3.3-swallow-70b** | 70B | **81.3%** ✓合格⭐ | Baseline/案B | 2.1s |
@@ -30,7 +34,8 @@
 | 6 | **qwen3-14b** | 14B | 73.3% | 案A/B (+5.3%) | 0.7s |
 | 7 | **gpt-oss-20b** (mt=1024) | 20B | **77.3%** ✓合格 | 案A (回答形式強化) | 1.2s |
 | - | **GPT-OSS-Swallow-20B** (vLLM-MLX, mt=2048) | 20B | **80.0%** ✓合格⭐ (全400問77.8%) | 案A (回答形式強化) | 11.2s |
-| 7 | llama-3.3-70b-instruct | 70B | 68.0% | Baseline/案A/案B | 2.2s |
+| - | **Llama 4 Scout** (17Bx16E MoE) | 109B MoE | **76.0%** ✓合格 (全400問77.5%) | Baseline/案A/案C (同率) | - |
+| 7 | llama-3.3-70b-instruct | 70B | 68.0% (全400問71.0%) | Baseline/案A/案B | 2.2s |
 | 8 | shisa-v2-llama3.3-70b | 70B | 61.3% | 案A/案B | 2.2s |
 | 8 | qwen3-8b | 8B | 61.3% | 案A (回答形式強化) | 0.4s |
 | 8 | ezo2.5-gemma-3-12b | 12B | 60.0% | 案C (日本医療文脈) | 0.4s |
@@ -40,7 +45,8 @@
 | - | glm-4.6v-flash | 11.8GB | 61.3% | 案D (回答先出し) | 34s |
 | - | olmo-3-32b-think | 34.3GB | 57.3% | Baseline | - |
 | - | phi-4-reasoning-plus | 8.3GB | 56.0% | Baseline | - |
-| - | minimax-m2.5 | 128.7GB MoE | 34.7% (評価中止) | 案B | - |
+| - | **minimax-m2.5** (mt=4096) | 128.7GB MoE | **77.3%** ✓合格 | Baseline | 9.6s |
+| - | **glm-4.7-flash** (mt=8192) | 31.8GB | **73.3%** | Baseline | ~30s |
 | 10 | gemma-3-12b-it | 12B | 54.7% | - | 1.6s |
 | 10 | internvl3_5-8b | 8B | 54.7% | Baseline | 0.3s |
 | 10 | qwen3-4b-2507 | 4B | 54.7% | 案C (日本医療文脈) | 0.8s |
@@ -55,7 +61,8 @@
 
 | Model | 理由 |
 |-------|------|
-| glm-4.7-flash | LM Studio APIクラッシュ、評価不能 → [詳細診断](#glm-47-flash-詳細診断-2026-02-06) |
+| ~~glm-4.7-flash~~ | ~~LM Studio APIクラッシュ、評価不能~~ → セッション15で復活（73.3%） |
+| qwen3.5-35b-a3b | 全問で"c,e"出力（Baseline 32.0%、案A 38.7%）、MoE(3B active)のLM Studio互換問題 |
 | fallen-command-a-111b | 全問でd,e含む複数選択肢列挙（1.3%）、3bit量子化が原因の可能性 |
 | internlm3-8b-instruct | API不安定、16% |
 | internvl3-14b | API error - 全リクエスト失敗 |
@@ -66,10 +73,19 @@
 - ~~glm-4.6v-flash-mlx~~: 初回(2.7%)→ mt=4096+案Dで**61.3%**。遅い(~34s/問)が動作はする
 - ~~phi-4-reasoning-plus~~: 初回(API error)→ mt=4096+Baselineで**56.0%**。特殊トークン汚染あり
 
+**セッション12で再評価済み（2026-03-05）**:
+- ~~minimax-m2.5~~: 初回(34.7%、評価中止)→ mt=4096+Baselineで**77.3%**✓合格。`<think>`タグのthinkingモデルであり、mt=1024では思考が完了せず回答に到達しなかった。mt=4096で`</think>`に到達し正常に回答。nemotron-3-nano/gpt-oss-120Bと同じ「max_tokensがthinkingモデルの正答率を支配する」パターン
+- ~~qwen3-235b-a22b-thinking-2507~~: 初回(70.7%)→ mt=8192+Baselineで**89.3%**✓合格。thinking版はmt不足で思考が切断されていた。mt=8192で完了し非thinking版(88.0%)を上回る。66.8s/問と遅いが精度は最高クラス
+- ~~glm-4.7-flash~~: 初回(LM Studio APIクラッシュ、評価不能)→ LM Studioアップデート後mt=8192+Baselineで**73.3%**。`<think>`タグのthinkingモデルであり、以前はAPIクラッシュで評価不能だった。一部の問題で思考溢れ（~158sタイムアウト）あるが概ね安定動作
+
 ### 合格ライン達成（75%以上）
-- **gpt-oss-120b** MLX 8bit mt=1024 (92.0%) ⭐⭐⭐全モデル最高スコア
+- **qwen3.5-397b-a17b@8bit** (90.7%→全400問89.5%) ⭐⭐⭐全モデル最高スコア（全400問）、thinkingモデル、249.8GB MoE
+- **qwen3.5-397b-a17b@4bit** (90.7%→全400問87.3%) ⭐⭐8bit比-2.3%、量子化で合否変わらず
+- **qwen3.5-27b@8bit** (89.3%→全400問87.3%) ⭐⭐397b@4bitと同スコア、29.5GBで圧倒的コスパ
+- **gpt-oss-120b** MLX 8bit mt=1024 (92.0%) ⭐⭐⭐Section A最高スコア
 - **gpt-oss-120b** GGUF MXFP4 mt=1024 (90.7%) ⭐⭐⭐
-- **qwen3-235b-a22b-2507** MLX 8bit mt=1024 (88.0%) ⭐⭐2507版、Baselineが+6.7%安定化
+- **qwen3-235b-a22b-thinking-2507** (89.3%) ⭐⭐thinking版、mt=8192で復活（初回70.7%→+18.7%）、非thinking版(88.0%)を上回るが66.8s/問
+- **qwen3-235b-a22b-2507** MLX 8bit mt=1024 (88.0%→全400問86.0%) ⭐⭐2507版、Baselineのみで全セクション安定
 - **qwen3-235b-a22b** (88.0%) ⭐⭐GPT-4超え
 - **llama-3.3-swallow-70b** (81.3%) ⭐日本語ファインチューン70B
 - **qwen3-vl-32b** (82.7%) ⭐VLモデル、qwen3-32bの上位互換
@@ -80,11 +96,13 @@
 - **gpt-oss-20b** mt=1024 (77.3%) reasoningモデル、mt=50では32%→mt=1024で合格
 - **mistral-large-2407** (77.3%→全400問75.8%) 130GBモデル、ギリギリ合格
 - **mistral-small-3.2** (76.0%→全400問76.8%) 25.9GB、高速~0.9s
+- **Llama 4 Scout** (76.0%→全400問77.5%) 17Bx16E MoE、llama-3.3比+6.5%
+- **minimax-m2.5** (77.3%) 128.7GB MoE thinkingモデル、mt=4096で復活（mt≤1024では34.7%）
 - **medgemma-27b-text-it-mlx** (76.0%→全400問71.8%) Section Aは合格だが全セクションでは不合格
 
 ### ChatGPT (58%) 超え
 - qwen3-vl-30b (74.7%)
-- llama-3.3-70b-instruct (68.0%)
+- llama-3.3-70b-instruct (68.0%→全400問71.0%)
 - ezo2.5-gemma-3-12b (60.0%) 🇯🇵日本語FT
 - qwen3-vl-8b (60.0%)
 
@@ -202,45 +220,79 @@ response = re.sub(r'<think>.*?</think>', '', response, flags=re.DOTALL).strip()
 
 ## 未評価モデル（LM Studioで利用可能）
 
-**最終更新**: 2026-02-07
+**最終更新**: 2026-03-02
 
-※ 評価済みモデルの結果は「v2プロンプト評価サマリー」を参照
+※ 評価済みモデル（49構成: 33全問+16セクションAのみ）の結果は「v2プロンプト評価サマリー」「全セクション評価」を参照
 
 ### 大規模モデル（70B+）
 ```
-llama-3.1-swallow-70b-instruct-v0.3
-meta/llama-3.3-70b
-nousresearch/hermes-4-70b
+qwen3.5-122b-a10b                      # 122B MoE（稼働10B）, 69.6GB, 新モデル
+qwen3-235b-a22b-thinking-2507-mlx      # 235B MoE thinking版, 249.8GB
+nousresearch/hermes-4-70b              # 70B, Nous Research
+llama-3.1-swallow-70b-instruct-v0.3    # 70B, 日本語特化（v0.4は評価済み）
+meta/llama-3.3-70b                     # 70B, ベースモデル（instruct版は評価済み）
+gpt-oss-safeguard-120b-mlx             # 120B, セーフガード版（通常版は評価済み）
 ```
 
 ### 中規模モデル（10B-30B）
 ```
-qwen/qwen3-30b-a3b
-qwen2.5-14b-instruct-mlx
-qwen2.5-32b-instruct-mlx
-llama-4-scout-17b-16e-mlx-text
-llm-jp-3.1-13b-instruct4
-elyza-japanese-llama-2-13b-fast-instruct
+qwen/qwen3-30b-a3b                     # 30B MoE（稼働3B）, 2507版は評価済み（78.8%）
+qwen2.5-32b-instruct-mlx               # 32B, Qwen2.5世代
+qwen2.5-14b-instruct-mlx               # 14B, Qwen2.5世代
+mistralai/devstral-small-2-2512        # 24B, コード特化（医療QAには不向きか）
+mistralai/devstral-small-2505          # 23.6B, 同上
+mistralai/devstral-small-2507          # 24B, 同上
+mistralai/mistral-nemo-instruct-2407   # 12B
+gemma-3-12b-it                         # 12B BF16?版（8bit版は54.7%で評価済み）
+# llm-jp-3.1-13b-instruct4 → 評価済み (40.0%, 全プロンプト同一結果)
+elyza-japanese-llama-2-13b-fast-instruct  # 13B, 旧世代（Llama 2ベース）
 ```
 
 ### 小規模モデル（<10B）
 ```
-google/gemma-3-4b
-google/gemma-3-1b
-llama-3.2-3b-instruct
-internvl3-8b@bf16
-internvl3_5-4b
-llama-3-swallow-8b-v0.1
-tanuki-8b-dpo-v1.0
+google/gemma-3n-e4b                    # 4B, 新アーキテクチャ
+google/gemma-3-4b                      # 4B
+google/gemma-3-1b                      # 1B
+ibm/granite-4-h-tiny                   # 7B, IBM hybrid
+phi-4-mini-instruct                    # 3.8B
+qwen/qwen3-1.7b                       # 1.7B
+qwen/qwen3-4b                         # 4B（qwen3-4b-2507は評価済み）
+qwen/qwen3-4b-thinking-2507           # 4B, thinking版
+llama-3.2-3b-instruct                  # 3B
+meta-llama-3-8b-instruct              # 8B, Llama 3（3.1/3.3は評価済み）
+meta-llama-3.1-8b-instruct            # 8B, ベースモデル
+internvl3_5-4b                         # 4B, VLモデル
+tanuki-8b-dpo-v1.0                     # 8B, 日本語特化
+llama-3-swallow-8b-v0.1                # 8B, 日本語特化（v0.5は評価済み）
 ```
 
-### 日本語特化モデル
+### 量子化バリエーション（ベースライン評価済み）
 ```
-llama-3-swallow-8b-v0.1
-llama-3.1-swallow-70b-instruct-v0.3
-llm-jp-3.1-13b-instruct4
-tanuki-8b-dpo-v1.0
-plamo-2-translate
+# qwen3.5-397b-a17b@4bit → 評価済み (87.3%, PASS)
+# qwen3-30b-a3b-2507 → 評価済み (78.8%, PASS)
+# liquid/lfm2-24b-a2b → 評価済み (36.0%, Section Aのみ)
+qwen3.5-27b@4bit                       # 4bit版（8bit版は87.3%で評価済み）
+medgemma-1.5-4b-it@8bit/@6bit/@4bit    # bf16版評価済み
+gpt-oss-swallow-20b 各量子化           # q4_k_m, q8_0, mlx@4bit/bf16
+internvl3-8b@6bit                      # bf16版評価済み
+llama-3.1-swallow-8b@8bit             # bf16版評価済み
+```
+
+### 評価不適・スキップ
+```
+text-embedding-nomic-embed-text-v1.5   # embeddingモデル
+plamo-2-translate                      # 翻訳特化
+meta-llama-3.1-8b-instruct-abliterated  # abliterated版（安全性除去）
+```
+
+### 評価済みだが BROKEN / 評価中止
+```
+qwen3.5-35b-a3b                        # BROKEN — ほぼ全問"c,e"を出力
+minimax/minimax-m2.5                   # 冗長分析モード回避不能（最高34.7%）
+zai-org/glm-4.7-flash                  # セッション15で復活（73.3%、mt=8192）→ 評価済みに移動
+gpt-oss-safeguard-20b-mlx              # BROKEN — 空回答+エラー多発（Section A 36.0%）
+internlm3-8b-instruct                  # API不安定（完了率16%）
+plamo-13b-instruct-i1                  # 全APIリクエスト失敗
 ```
 
 ---
@@ -1329,9 +1381,14 @@ max_tokens: 512
 
 | Rank | モデル | 総合スコア | 合否 | サイズ | Best Prompt |
 |------|--------|-----------|------|--------|-------------|
-| 1 | gpt-oss-120b MLX | **84.5%** (338/400) | 合格 | 124.2GB | format_strict |
-| 2 | gpt-oss-120b GGUF | **84.0%** (336/400) | 合格 | 63.4GB | format_strict |
-| 3 | qwen3-next-80b | **83.5%** (334/400) | 合格 | 84.7GB | japanese_medical |
+| 1 | **qwen3.5-397b-a17b@8bit** | **89.5%** (358/400) | 合格 | 249.8GB | format_strict |
+| 2 | **qwen3.5-397b-a17b@4bit** | **87.3%** (349/400) | 合格 | 223.9GB | format_strict |
+| 2 | **qwen3.5-27b@8bit** | **87.3%** (349/400) | 合格 | 29.5GB | format_strict |
+| 3 | qwen3-235b-a22b-2507 | **86.0%** (344/400) | 合格 | 132.3GB | baseline |
+| 3 | qwen3-235b-a22b | **84.2%** (337/400) | 合格 | 132.3GB | chain_of_thought |
+| 3 | gpt-oss-120b MLX | **84.5%** (338/400) | 合格 | 124.2GB | format_strict |
+| 4 | gpt-oss-120b GGUF | **84.0%** (336/400) | 合格 | 63.4GB | format_strict |
+| 5 | qwen3-next-80b | **83.5%** (334/400) | 合格 | 84.7GB | japanese_medical |
 | 4 | qwen3-vl-32b | **82.8%** (331/400) | 合格 | 19.6GB | baseline |
 | 5 | nemotron-3-nano | **80.2%** (321/400) | 合格 | 33.6GB | answer_first |
 | 6 | qwen3-32b 8bit | **79.3%** (317/400) | 合格 | 34.8GB | baseline |
@@ -1340,11 +1397,13 @@ max_tokens: 512
 | 9 | GPT-OSS-Swallow-20B | **77.8%** (311/400) | 合格 | 45GB | format_strict(no-fs) |
 | 9 | qwen3-vl-30b | **77.8%** (311/400) | 合格 | 33.5GB | format_strict |
 | 11 | mistral-small-3.2 | **76.8%** (307/400) | 合格 | 25.9GB | baseline |
-| 12 | mistral-large | **75.8%** (303/400) | 合格 | 130.3GB | baseline |
+| 14 | Llama 4 Scout | **77.5%** (310/400) | 合格 | — | baseline |
+| 15 | mistral-large | **75.8%** (303/400) | 合格 | 130.3GB | baseline |
 | — | shisa-v2.1-70b | 74.2% (297/400) | 不合格 | 75.0GB | format_strict |
 | — | magistral-small 8bit | 74.2% (297/400) | 不合格 | 47.2GB | baseline |
 | — | magistral-small-2509 | 74.0% (296/400) | 不合格 | 47.2GB | baseline |
 | — | qwen3-14b | 71.8% (287/400) | 不合格 | 15.7GB | format_strict |
+| — | llama-3.3-70b-instruct | 71.0% (284/400) | 不合格 | — | baseline |
 | — | medgemma-27b | 71.8% (287/400) | 不合格 | 16.0GB | baseline+few-shot必須 |
 | — | gemma-3-27b | 67.8% (271/400) | 不合格 | 16.9GB | chain_of_thought |
 | — | phi-4 | 62.8% (251/400) | 不合格 | 15.6GB | format_strict |
@@ -1631,7 +1690,7 @@ max_tokens: 512
 | glm-4.6v-flash | 11.79GB | 61.3% | 案D | 遅い(~34s/問)、mt=4096必須 |
 | olmo-3-32b-think | 34.26GB | 57.3% | baseline | thinking溢れ(mt=4096でも不足) |
 | phi-4-reasoning-plus | 8.26GB | 56.0% | baseline | 特殊トークン汚染 |
-| glm-4.7-flash | 31.84GB | 評価不能 | — | LM Studio APIクラッシュ |
+| glm-4.7-flash | 31.84GB | **73.3%** | Baseline (mt=8192) | セッション15で復活。LM Studioアップデート+mt=8192で安定動作 |
 
 ### nemotron-3-nano 全セクション評価（合格 80.2%）
 
@@ -1731,6 +1790,235 @@ max_tokens: 512
 
 ---
 
+## 新規評価（セッション12、2026-02-28）
+
+### qwen3.5-397b-a17b@8bit 全セクション評価（合格 89.5% — 全モデル最高記録）
+
+**モデル**: qwen3.5-397b-a17b@8bit (MLX, 249.8GB MoE, 17B active)
+**プロンプト**: format_strict (案A) + 2-shot few-shot + max_tokens=4096 + timeout=300
+**備考**: thinkingモデル。`/no_think`が効かず`<think>`タグ内で推論を行うが、`strip_thinking()`で回答抽出可能。LM Studioアップデートでロード可能に（以前は"Model type qwen3_5_moe not supported"）。
+
+#### Section A プロンプト比較（全5種）
+
+| Rank | Prompt | 正答率 | 正答数 | 空回答 | 平均時間 |
+|------|--------|--------|--------|--------|----------|
+| 1 | **format_strict (案A)** | **90.7%** | 68/75 | 0 | 55.8s |
+| 2 | Baseline | 88.0% | 66/75 | 0 | 64.7s |
+| 3 | japanese_medical (案C) | 86.7% | 65/75 | 0 | 60.3s |
+| 4 | answer_first (案D) | 82.7% | 62/75 | 0 | 92.1s |
+| 5 | chain_of_thought (案B) | **56.0%** | 42/75 | 0 | **147.0s** |
+
+**重要知見**: 案B（chain_of_thought）はthinking + CoTの二重推論で壊滅的に悪化（-32.0%）。thinkingモデルにはCoTプロンプトは逆効果。
+
+#### 全セクション結果（format_strict + few-shot, mt=4096）
+
+| Section | 問題数 | 正答数 | 正答率 |
+|---------|--------|--------|--------|
+| A | 75 | 68 | **90.7%** |
+| B | 50 | 47 | **94.0%** |
+| C | 75 | 59 | 78.7% |
+| D | 75 | 73 | **97.3%** |
+| E | 50 | 45 | **90.0%** |
+| F | 75 | 66 | **88.0%** |
+| **Total** | **400** | **358** | **89.5%** |
+
+**結果: 合格（358/400 = 89.5%）— 全モデル最高記録**
+
+- Section Dの97.3%（73/75）は全モデル・全セクション中の最高正答率
+- gpt-oss-120b MLX(84.5%)を+5.0%上回る
+- 速度は~55.8s/問（thinkingモデルとしては標準的）
+- メモリ使用量249.8GBは大きいが、M3 Ultra 512GBでは問題なし
+
+### qwen3.5-397b-a17b@4bit 全セクション評価（合格 87.3% — 8bit比-2.3%）
+
+**モデル**: qwen3.5-397b-a17b@4bit (MLX, MoE 17B active)
+**プロンプト**: format_strict (案A) + 2-shot few-shot + max_tokens=4096 + timeout=300
+**備考**: 8bit版（89.5%）との量子化比較。thinkingモデル、`/no_think`効かず。
+
+#### Section A プロンプト比較（全5種）
+
+| Rank | Prompt | 正答率 | 正答数 | 空回答 | 平均時間 | 8bit比 |
+|------|--------|--------|--------|--------|----------|--------|
+| 1 | **format_strict (案A)** | **90.7%** | 68/75 | 0 | 44.8s | ±0.0% |
+| 1 | **japanese_medical (案C)** | **90.7%** | 68/75 | 0 | 57.1s | +4.0% |
+| 3 | Baseline | 86.7% | 65/75 | 0 | 67.6s | -1.3% |
+| 4 | answer_first (案D) | 78.7% | 59/75 | 0 | 73.6s | -4.0% |
+| 5 | chain_of_thought (案B) | **50.7%** | 38/75 | 0 | **109.8s** | -5.3% |
+
+**知見**: 案Cが8bit(86.7%)→4bit(90.7%)で+4.0%改善。format_strictは8bitと同一スコア。
+
+#### 全セクション結果（format_strict + few-shot, mt=4096）
+
+| Section | 問題数 | 正答数 | 正答率 | 8bit | 差分 |
+|---------|--------|--------|--------|------|------|
+| A | 75 | 68 | **90.7%** | 90.7% | ±0.0% |
+| B | 50 | 44 | 88.0% | 94.0% | **-6.0%** |
+| C | 75 | 56 | 74.7% | 78.7% | -4.0% |
+| D | 75 | 71 | **94.7%** | 97.3% | -2.7% |
+| E | 50 | 45 | **90.0%** | 90.0% | ±0.0% |
+| F | 75 | 65 | 86.7% | 88.0% | -1.3% |
+| **Total** | **400** | **349** | **87.3%** | **89.5%** | **-2.3%** |
+
+**結果: 合格（349/400 = 87.3%）— 8bit比 -9問, -2.3%**
+
+- Section A/Eは8bitと同一スコア
+- Section Bの低下が最大（-6.0%、-3問）
+- 4bitの方が推論速度が速い（~44.8s vs ~55.8s/問）
+- 合否判定は変わらず（どちらもPASS）
+- 超大規模MoEモデルでも4bit量子化の影響は限定的（-2.3%）
+
+### qwen3-235b-a22b 全セクション評価（合格 84.2%）
+
+**モデル**: qwen3-235b-a22b (132.3GB MoE)
+**プロンプト**: chain_of_thought (案B) + 2-shot few-shot + max_tokens=1024
+**備考**: Section Aは88.0%（案B最良）、Section Aのみ先行評価済み。
+
+| Section | 問題数 | 正答数 | 正答率 |
+|---------|--------|--------|--------|
+| A | 75 | 66 | 88.0% |
+| B | 50 | 44 | 88.0% |
+| C | 75 | 58 | 77.3% |
+| D | 75 | 65 | 86.7% |
+| E | 50 | 44 | 88.0% |
+| F | 75 | 62 | 82.7% |
+| **Total** | **400** | **337** | **84.2%** |
+
+**結果: 合格（337/400 = 84.2%）**
+
+### qwen3-235b-a22b-2507 全セクション評価（合格 86.0%）
+
+**モデル**: qwen3-235b-a22b-2507 (132.3GB MoE)
+**プロンプト**: baseline + 2-shot few-shot + max_tokens=1024
+**備考**: 2507版。旧版(84.2%)より+1.8%改善。Baselineのみで全セクション安定して高い正答率。
+
+| Section | 問題数 | 正答数 | 正答率 |
+|---------|--------|--------|--------|
+| A | 75 | 65 | 86.7% |
+| B | 50 | 46 | 92.0% |
+| C | 75 | 58 | 77.3% |
+| D | 75 | 68 | 90.7% |
+| E | 50 | 43 | 86.0% |
+| F | 75 | 64 | 85.3% |
+| **Total** | **400** | **344** | **86.0%** |
+
+**結果: 合格（344/400 = 86.0%）**
+
+### minimax-m2.5 Section A評価（合格 77.3% — mt=4096で復活）
+
+**モデル**: minimax-m2.5 (128.7GB MoE thinkingモデル)
+**プロンプト**: baseline + 2-shot few-shot + max_tokens=4096
+**備考**: 初回(mt≤1024)では`<think>`タグの思考が完了せず34.7%で評価中止。mt=4096で`</think>`に到達し正常に回答。nemotron-3-nano/gpt-oss-120Bと同じ「max_tokensがthinkingモデルの正答率を支配する」パターン。
+
+| 条件 | 正答率 | 備考 |
+|------|--------|------|
+| mt=1024, 案B | 34.7% | 思考が完了せず回答に到達しない |
+| mt=4096, Baseline | **77.3%** ✓合格 | `</think>`に到達し正常回答 |
+
+**結果: 合格（58/75 = 77.3%）— Section Aのみ**
+
+### llama-3.3-70b-instruct 全セクション評価（不合格 71.0%）
+
+**モデル**: llama-3.3-70b-instruct (llama系ベースモデル)
+**プロンプト**: baseline + 2-shot few-shot + max_tokens=1024
+
+| Section | 問題数 | 正答数 | 正答率 |
+|---------|--------|--------|--------|
+| A | 75 | 51 | 68.0% |
+| B | 50 | 37 | 74.0% |
+| C | 75 | 48 | 64.0% |
+| D | 75 | 58 | 77.3% |
+| E | 50 | 38 | 76.0% |
+| F | 75 | 52 | 69.3% |
+| **Total** | **400** | **284** | **71.0%** |
+
+**結果: 不合格（284/400 = 71.0%）**
+
+#### llama系モデル比較（日本語FT効果の定量化）
+
+| モデル | 全セクション | Section A | FT効果 |
+|--------|------------|-----------|--------|
+| llama-3.3-70b-instruct（ベース） | 71.0% | 68.0% | — |
+| Swallow-70b（日本語FT） | 78.0% | 81.3% | **+7.0%** |
+| shisa-v2.1-70b（日本語FT） | 74.2% | 61.3% | +3.2% |
+| Llama 4 Scout（次世代MoE） | 77.5% | 76.0% | +6.5% |
+
+- Swallowの日本語FTが最も効果的（+7.0%で合格圏内）
+- shisaのFTは効果が限定的（+3.2%で不合格のまま）
+- Llama 4 Scoutはアーキテクチャ進化で+6.5%改善
+
+### Llama 4 Scout (17Bx16E) 全セクション評価（合格 77.5%）
+
+**モデル**: Llama 4 Scout (17Bx16E MoE)
+**プロンプト**: baseline + 2-shot few-shot + max_tokens=1024
+
+| Section | 問題数 | 正答数 | 正答率 |
+|---------|--------|--------|--------|
+| A | 75 | 57 | 76.0% |
+| B | 50 | 42 | 84.0% |
+| C | 75 | 51 | 68.0% |
+| D | 75 | 63 | 84.0% |
+| E | 50 | 44 | 88.0% |
+| F | 75 | 53 | 70.7% |
+| **Total** | **400** | **310** | **77.5%** |
+
+**結果: 合格（310/400 = 77.5%）**
+
+### qwen3.5-35b-a3b — 評価中止（BROKEN）
+
+**モデル**: qwen3.5-35b-a3b (MoE, 3B active)
+**症状**: ほぼ全問で "c,e" を出力。単一回答問題でも常に2つの選択肢を返す。
+
+| Prompt | Section A正答率 |
+|--------|----------------|
+| Baseline | 32.0% (24/75) |
+| 案A（形式強化） | 38.7% (29/75) |
+| 案B（段階的思考） | 途中停止 |
+
+LM StudioのMLXバックエンドでのMoE(3B active)トークン生成に互換性問題がある可能性。評価中止。
+
+### qwen3.5-27b@8bit 全セクション評価（合格 87.3% — 397b@4bitと同スコア）
+
+**モデル**: qwen3.5-27b@8bit (MLX, 29.53GB dense)
+**プロンプト**: format_strict（案A）+ 2-shot few-shot + max_tokens=4096 + timeout=300
+**備考**: thinkingモデル。397bと同じく`/no_think`が効かず`<think>`タグ内で推論を行う。denseモデルのため397b MoEより応答が遅い。
+
+#### Section A プロンプト比較（5種）
+
+| Prompt | 正答数 | 正答率 | 平均時間 |
+|--------|--------|--------|----------|
+| **案A（形式強化）** | **67/75** | **89.3%** | 69.5s |
+| Baseline | 65/75 | 86.7% | 94.0s |
+| 案D（回答先出し） | 63/75 | 84.0% | 102.7s |
+| 案C（日本医療文脈） | 60/75 | 80.0% | 92.1s |
+| 案B（段階的思考） | 47/75 | 62.7% | 160.0s |
+
+#### 全セクション結果（format_strict）
+
+| Section | 問題数 | 正答数 | 正答率 |
+|---------|--------|--------|--------|
+| A | 75 | 67 | 89.3% |
+| B | 50 | 45 | 90.0% |
+| C | 75 | 56 | 74.7% |
+| D | 75 | 70 | 93.3% |
+| E | 50 | 46 | 92.0% |
+| F | 75 | 65 | 86.7% |
+| **Total** | **400** | **349** | **87.3%** |
+
+**結果: 合格（349/400 = 87.3%）**
+
+#### qwen3.5ファミリー比較
+
+| モデル | サイズ | メモリ | 総合スコア | 速度 |
+|--------|--------|--------|-----------|------|
+| qwen3.5-397b@8bit (MoE) | 397B(17B active) | 421.1GB | **89.5%** | ~55.8s |
+| qwen3.5-397b@4bit (MoE) | 397B(17B active) | 223.9GB | **87.3%** | ~45.9s |
+| **qwen3.5-27b@8bit (dense)** | **27B** | **29.5GB** | **87.3%** | ~70.3s |
+| qwen3.5-35b-a3b (MoE) | 35B(3B active) | 37.8GB | BROKEN | — |
+
+**注目**: 27B denseモデルが397B MoE@4bit（メモリ7.6倍）と完全同スコア。メモリ効率で圧倒的に優位。ただしdenseモデルのため推論速度はMoEより遅い。
+
+---
+
 ## 次のステップ候補
 
 - [x] medgemma-27bで全セクション(A-F)評価 → **不合格**（42.5% → 最適設定71.8%）
@@ -1741,14 +2029,70 @@ max_tokens: 512
 - [x] Thinkingモデル再評価 → nemotron-3-nano(80.2%)合格、他4モデル不合格/評価不能
 - [x] GPT-OSS-Swallow-20B 評価 → 77.8%合格、Swallow日本語FTで+6.8%改善
 - [x] プロンプト最適化の効果検証 → 比較スクリプト作成済み
+- [x] qwen3.5-397b-a17b@8bit 全セクション評価 → **89.5%合格、全モデル最高記録**
+- [x] qwen3-235b-a22b 全セクション評価 → 84.2%合格
+- [x] llama-3.3-70b-instruct 全セクション評価 → 71.0%不合格（日本語FT比較のベース）
+- [x] Llama 4 Scout 全セクション評価 → 77.5%合格
+- [x] qwen3.5-35b-a3b 評価 → BROKEN（評価中止）
 - [ ] 年度別比較(2018-2022)
 - [ ] カテゴリ別分析（神経科、放射線科など）
 - [ ] 未評価モデルの評価（gemma-3n-e4b, qwen3-30b-a3b-2507, devstral-small等）
+- [x] qwen3.5-397b-a17b@4bit 評価（8bitとの量子化比較）→ **87.3%合格、8bit比-2.3%**
+- [x] qwen3.5-27b@8bit 全セクション評価 → **87.3%合格、397b@4bitと同スコア、29.5GBで圧倒的コスパ**
+- [ ] qwen3.5-27b@4bit 評価（8bitとの量子化比較）
 - [ ] 結果の git commit & push（大量の未コミット結果あり）
 
 ---
 
 ## 変更履歴
+
+### 2026-03-05（セッション15）
+- **qwen3-235b-a22b-2507 全セクション評価** 完了 — **86.0% (344/400) 合格**
+  - Baselineプロンプトのみで全セクション評価。旧版(84.2%)より+1.8%改善
+  - Section B(92.0%)とD(90.7%)が特に高い。Section C(77.3%)がやや低め
+  - 2507版はBaselineの安定性が大幅に向上（旧版はBaseline=81.3%→2507版=86.7%）
+- **minimax-m2.5 復活** — mt=4096+Baselineで**77.3%** ✓合格（Section A）
+  - 初回(mt≤1024)では`<think>`タグの思考が完了せず34.7%で評価中止していた
+  - mt=4096で思考完了→正常回答。128.7GB MoE thinkingモデルとして合格圏
+  - max_tokensがthinkingモデルの正答率を支配する発見の追加事例
+- **qwen3-235b-a22b-thinking-2507 復活** — mt=8192+Baselineで**89.3%** ✓合格⭐⭐（Section A）
+  - 初回(mt不足)では70.7%→mt=8192で+18.7%改善
+  - 非thinking版(88.0%)を1.3%上回る。thinkingによる推論がMCQでも有効
+  - ただし66.8s/問と非thinking版(1.9s/問)の35倍遅い → 精度vs速度のトレードオフ
+- **glm-4.7-flash 復活** — mt=8192+Baselineで**73.3%**（Section A、55/75）
+  - 以前はLM Studio APIクラッシュで評価不能だった（セッション10）
+  - LM Studioアップデートで`<think>`タグ付きthinkingモデルとして安定動作
+  - 一部の問題で思考溢れ（~158sタイムアウト、`a,e`等の誤抽出）あり
+  - モデルサイズ31.84GB、73.3%(mt=8192)で合格ライン(75%)には届かないがChatGPT(58%)を大幅超え
+
+### 2026-03-01（セッション14）
+- **qwen3.5-27b@8bit 全セクション評価** 完了 — **87.3% (349/400) 合格**
+  - Section A全5プロンプト比較: format_strict=89.3% > Baseline=86.7% > answer_first=84.0% > japanese_medical=80.0% >> chain_of_thought=62.7%
+  - 397b@4bit (223.9GB) と完全同スコア（349/400）、メモリ29.5GBで1/7.6
+  - denseモデルのため推論速度は MoE より遅い（~70.3s vs ~45.9s/問）
+  - qwen3.5ファミリーで最もコスパの良いモデル
+
+### 2026-02-28（セッション12-13）
+- **qwen3.5-397b-a17b@4bit 全セクション評価** 完了 — **87.3% (349/400) 合格、8bit比-2.3%**
+  - Section A全5プロンプト比較: format_strict=japanese_medical=90.7% > Baseline=86.7% > answer_first=78.7% >> chain_of_thought=50.7%
+  - 8bitと比べSection A/E同一、Section B最大低下(-6.0%)
+  - 4bitの方が推論速度速い（~44.8s vs ~55.8s/問）
+  - 超大規模MoEモデルでも量子化影響は限定的（合否変わらず）
+- **qwen3.5-397b-a17b@8bit 全セクション評価** 完了 — **89.5% (358/400) 全モデル最高記録**
+  - LM Studioアップデートで qwen3_5_moe アーキテクチャに対応しロード可能に
+  - thinkingモデルだが `/no_think` が効かない → thinking有りのまま strip_thinking で回答抽出
+  - 案A(format_strict): 90.7% が最適、案B(chain_of_thought): 56.0% は二重推論で壊滅
+  - Section D: 97.3% は全モデル・全セクション中の最高正答率
+  - max_tokens=4096 + timeout=300 必要、平均55.8s/問
+- **qwen3-235b-a22b 全セクション評価** 完了 — 84.2% (337/400) 合格
+  - 案B(chain_of_thought) + few-shot で全セクション評価
+- **llama-3.3-70b-instruct 全セクション評価** 完了 — 71.0% (284/400) 不合格
+  - llama系ベースモデルとしてSwallow/shisaの日本語FT効果のベースライン確立
+  - Swallow: +7.0%(合格)、shisa: +3.2%(不合格)、Llama 4 Scout: +6.5%(合格)
+- **Llama 4 Scout (17Bx16E) 全セクション評価** 完了 — 77.5% (310/400) 合格
+  - llama-3.3-70bベースから+6.5%改善、MoEアーキテクチャ進化の効果
+- **qwen3.5-35b-a3b** 評価中止 — BROKEN
+  - 全問で"c,e"出力、Baseline 32.0%、MoE(3B active)のLM Studio互換問題
 
 ### 2026-02-21（セッション11）
 - **GPT-OSS-Swallow-20B-RL-v0.1 全セクション評価** 完了
@@ -1765,7 +2109,7 @@ max_tokens: 512
   - glm-4.6v-flash: 初回2.7%→ mt=4096+案Dで61.3%
   - olmo-3-32b-think: 57.3%（thinking溢れ）
   - phi-4-reasoning-plus: 56.0%（特殊トークン汚染）
-  - glm-4.7-flash: LM Studio APIクラッシュ、評価不能
+  - ~~glm-4.7-flash: LM Studio APIクラッシュ、評価不能~~ → セッション15で復活（73.3%）
 - **コード修正**: 未閉じ`<think>`タグ除去、特殊トークン除去、`--timeout`オプション追加
 
 ### 2026-02-19（セッション9）

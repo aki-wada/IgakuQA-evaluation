@@ -1,35 +1,15 @@
 {
-  "timestamp": "2026-02-20T02:51:24.972046",
+  "timestamp": "2026-03-05T15:33:43.714545",
   "model": "zai-org/glm-4.7-flash",
   "summary": [
     {
       "prompt_key": "baseline",
       "prompt_name": "Baseline (現行)",
       "total": 75,
-      "correct": 11,
-      "accuracy": 0.14666666666666667,
-      "avg_time": 18.228081189669094,
-      "errors": 62,
-      "empty_responses": 0
-    },
-    {
-      "prompt_key": "format_strict",
-      "prompt_name": "案A: 回答形式強化",
-      "total": 75,
-      "correct": 0,
-      "accuracy": 0.0,
-      "avg_time": 0,
-      "errors": 75,
-      "empty_responses": 0
-    },
-    {
-      "prompt_key": "answer_first",
-      "prompt_name": "案D: 回答先出し",
-      "total": 75,
-      "correct": 0,
-      "accuracy": 0.0,
-      "avg_time": 0,
-      "errors": 75,
+      "correct": 55,
+      "accuracy": 0.7333333333333333,
+      "avg_time": 43.84823991457621,
+      "errors": 0,
       "empty_responses": 0
     }
   ],
@@ -40,32 +20,32 @@
         "prediction": "c",
         "gold": "c",
         "correct": true,
-        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about Sleep Apnea Syndrome (SAS) and hypertension.\n    *   **Question:** Which",
-        "time": 12.205713033676147
+        "response": "<think>1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question about sleep apnea syndrome and hypertension. I need to select the incorrec",
+        "time": 13.06344199180603
       },
       {
         "problem_id": "116A2",
         "prediction": "c",
         "gold": "c",
         "correct": true,
-        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** At what time should penicillin be s",
-        "time": 14.41220998764038
+        "response": "<think>1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** When should penicillin be st",
+        "time": 13.868953704833984
       },
       {
         "problem_id": "116A3",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "1.  **Analyze the user's request:** The user is asking a medical multiple-choice question about Central Serous Chorioretinopathy (CSCR). I need to select the incorrect statement from the options provi",
-        "time": 10.654520273208618
+        "response": "<think>1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about Central Serous Chorioretinopathy (CSCR).\n    *   **Question:** Wh",
+        "time": 10.777509927749634
       },
       {
         "problem_id": "116A4",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n    *   **Question:** Which drug class",
-        "time": 10.068256139755249
+        "response": "<think>1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question about the causes of hypoglycemia from single oral medications. I need to s",
+        "time": 11.608059167861938
       },
       {
         "problem_id": "116A5",
@@ -73,1559 +53,567 @@
         "gold": "c",
         "correct": false,
         "response": "1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question about heart transplantation in Japan. I need to select the correct option (a, b, ",
-        "time": 37.65697479248047
+        "time": 158.67376017570496
       },
       {
         "problem_id": "116A6",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "1.  **Analyze the user's request:** The user is asking a medical multiple-choice question about the causes of hyperkalemia (high potassium levels). I need to select the correct option from the given c",
-        "time": 13.21721601486206
+        "response": "<think>1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about the cause of hyperkalemia (high potassium levels).\n    *   **Ques",
+        "time": 13.694630146026611
       },
       {
         "problem_id": "116A7",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about the causes (triggers) of GERD (Gastroesophageal Reflux Disease).\n    *  ",
-        "time": 14.091562032699585
+        "response": "<think>1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about the causes (triggers) of gastroesophageal reflux disease (GERD).\n",
+        "time": 15.798723220825195
       },
       {
         "problem_id": "116A8",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n    *   **Question:** Which finding is",
-        "time": 13.629531860351562
+        "response": "<think>1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n    *   **Question:** Which fin",
+        "time": 16.63796305656433
       },
       {
         "problem_id": "116A9",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about risk factors for osteonecrosis (bone necrosis).\n    *   **Question:** Wh",
-        "time": 16.303271055221558
+        "response": "<think>1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question about risk factors for osteonecrosis (bone necrosis). I need to select the",
+        "time": 13.569219827651978
       },
       {
         "problem_id": "116A10",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about the characteristics of secondary Raynaud phenomenon caused by systemic s",
-        "time": 12.985974073410034
+        "response": "<think>1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question about the characteristics of secondary Raynaud phenomenon associated with ",
+        "time": 11.551495790481567
       },
       {
         "problem_id": "116A11",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question about Autism Spectrum Disorder (ASD). I need to select the option that is *not* a",
-        "time": 10.894186019897461
+        "response": "<think>1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about Autism Spectrum Disorder (ASD).\n    *   **Question:** Which of th",
+        "time": 10.505025863647461
       },
       {
         "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** Identify the condition that ",
+        "time": 28.992187023162842
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "a,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about vascular dementia (脳血管性認知症).\n    *   **Format:** Select 2 correct option",
+        "time": 159.029061794281
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>1.  **Analyze the user's request:** The user wants me to act as a medical expert and answer a multiple-choice question about the association between pathogens and malignant tumors. I need to se",
+        "time": 14.883427143096924
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about medical diagnosis.\n    *   **Question:** Which indicators are use",
+        "time": 12.423489093780518
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 25.96752381324768
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 17.59469485282898
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n    *   **Question:** A 23-year",
+        "time": 26.748668909072876
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 18.827462911605835
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 22.8962140083313
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "a,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 159.12461686134338
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n    *   **Question:** A 22-year",
+        "time": 19.740194082260132
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 20.56922483444214
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 45-year-old male presents ",
+        "time": 16.492980003356934
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "a,e",
+        "gold": "c",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 158.83631110191345
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 14.41303300857544
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 24.331378936767578
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 23-year-old male presents ",
+        "time": 17.914634227752686
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n    *   **Question:** A 40-year",
+        "time": 25.40022873878479
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 42-year-old male presents ",
+        "time": 30.110147953033447
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 48-year-old woman presents",
+        "time": 19.383643865585327
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 19.50804829597473
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Question:** Identify the incorr",
+        "time": 18.41951608657837
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 38.12219762802124
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 20.598387241363525
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a,e",
+        "gold": "a",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 154.87955498695374
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 24.869257926940918
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 20.84686303138733
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n    *   **Question:** A 20-year",
+        "time": 17.335358142852783
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 36.218740940093994
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 45-year-old male presents ",
+        "time": 10.375339984893799
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 36-year-old woman (G2P0) a",
+        "time": 23.701524019241333
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 28.5032160282135
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 22-year-old woman presents",
+        "time": 19.883265018463135
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about knee MRI findings (specifically meniscus tears) based on a descri",
+        "time": 15.576087236404419
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 53-year-old male presents ",
+        "time": 25.70657181739807
+      },
+      {
+        "problem_id": "116A47",
         "prediction": "a,e",
         "gold": "e",
         "correct": false,
-        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n    *   **Question:** Identify the con",
-        "time": 39.57830095291138
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n    *   **Question:** A 32-year-old wo",
+        "time": 150.73268508911133
       },
       {
-        "problem_id": "116A13",
+        "problem_id": "116A48",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 43.01168990135193
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 23.839091062545776
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 26.27538299560547
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 17.875401973724365
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a list of options (a, b, c, d, e).\n    *   **Question:** A 19-year",
+        "time": 15.187952995300293
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 21.528823137283325
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 151.55431294441223
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 24-year-old healthcare wor",
+        "time": 17.774023294448853
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** An 18-year-old male presents",
+        "time": 38.055474042892456
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 18.88805103302002
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 69-year-old male presents ",
+        "time": 16.843751192092896
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** An 8-year-old girl presents ",
+        "time": 23.332966327667236
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** An 80-year-old male presents",
+        "time": 25.399511098861694
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question based on a clinical vignette.\n    *   **Question:** A 64-year-old man w",
+        "time": 16.140832662582397
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 29.21610689163208
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "a,e",
+        "gold": "e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Examinatio",
+        "time": 156.79824900627136
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 61-year-old male with adva",
+        "time": 15.001169919967651
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "a,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question (2 options) based on a clinical vignette.\n    *   **Question:** A 35-year-old ",
+        "time": 156.65408205986023
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam.\n    *   **Question:** A 34-year-old female present",
+        "time": 56.59413981437683
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question (select 2 options) based on a clinical vignette.\n    *   **Question:** ",
+        "time": 25.80471658706665
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "a,e",
+        "gold": "d,e",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question (2 options) from a medical exam context.\n    *   **Question:** A 38-year-old w",
+        "time": 156.79964804649353
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question (select 2 options) based on a clinical scenario.\n    *   **Question:** A 22-ye",
+        "time": 157.23873591423035
+      },
+      {
+        "problem_id": "116A70",
         "prediction": "b,e",
         "gold": "b,e",
         "correct": true,
-        "response": "1.  **Analyze the user's request:**\n    *   **Role:** Medical expert.\n    *   **Task:** Answer a multiple-choice question about vascular dementia (脳血管性認知症).\n    *   **Format:** Select 2 correct option",
-        "time": 31.26733922958374
-      },
-      {
-        "problem_id": "116A14",
-        "prediction": "ERROR",
-        "gold": "c,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A15",
-        "prediction": "ERROR",
-        "gold": "c,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A16",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A17",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A18",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A19",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A20",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A21",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A22",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A23",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A24",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A25",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A26",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A27",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A28",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A29",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A30",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A31",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A32",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A33",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A34",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A35",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A36",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A37",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A38",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A39",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A40",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A41",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A42",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A43",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A44",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A45",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A46",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A47",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A48",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A49",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A50",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A51",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A52",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A53",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A54",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A55",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A56",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A57",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A58",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A59",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A60",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A61",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A62",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A63",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A64",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A65",
-        "prediction": "ERROR",
-        "gold": "b,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A66",
-        "prediction": "ERROR",
-        "gold": "a,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A67",
-        "prediction": "ERROR",
-        "gold": "a,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A68",
-        "prediction": "ERROR",
-        "gold": "d,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A69",
-        "prediction": "ERROR",
-        "gold": "a,b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A70",
-        "prediction": "ERROR",
-        "gold": "b,e",
-        "correct": false,
-        "error": "API error: 'choices'"
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question (2 options) based on a clinical vignette.\n    *   **Question:** A 68-ye",
+        "time": 21.175038814544678
       },
       {
         "problem_id": "116A71",
-        "prediction": "ERROR",
+        "prediction": "e",
         "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 55.02448582649231
       },
       {
         "problem_id": "116A72",
-        "prediction": "ERROR",
+        "prediction": "a,b,c",
         "gold": "a,b,d",
         "correct": false,
-        "error": "API error: 'choices'"
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer multiple-choice questions from a medical exam (likely the Japanese National Medical Licensing Exam",
+        "time": 51.40306878089905
       },
       {
         "problem_id": "116A73",
-        "prediction": "ERROR",
+        "prediction": "a,e",
         "gold": "a,c,e",
         "correct": false,
-        "error": "API error: 'choices'"
+        "response": "1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exam or si",
+        "time": 156.8170371055603
       },
       {
         "problem_id": "116A74",
-        "prediction": "ERROR",
+        "prediction": "a,b,d",
         "gold": "a,b,d",
-        "correct": false,
-        "error": "API error: 'choices'"
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer multiple-choice questions from a medical exam (likely the Japanese National Medical Licensing Exam",
+        "time": 19.000085830688477
       },
       {
         "problem_id": "116A75",
-        "prediction": "ERROR",
+        "prediction": "a,c,d",
         "gold": "a,c,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      }
-    ],
-    "format_strict": [
-      {
-        "problem_id": "116A1",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A2",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A3",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A4",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A5",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A6",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A7",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A8",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A9",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A10",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A11",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A12",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A13",
-        "prediction": "ERROR",
-        "gold": "b,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A14",
-        "prediction": "ERROR",
-        "gold": "c,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A15",
-        "prediction": "ERROR",
-        "gold": "c,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A16",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A17",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A18",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A19",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A20",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A21",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A22",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A23",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A24",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A25",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A26",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A27",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A28",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A29",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A30",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A31",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A32",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A33",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A34",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A35",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A36",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A37",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A38",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A39",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A40",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A41",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A42",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A43",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A44",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A45",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A46",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A47",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A48",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A49",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A50",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A51",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A52",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A53",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A54",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A55",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A56",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A57",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A58",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A59",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A60",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A61",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A62",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A63",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A64",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A65",
-        "prediction": "ERROR",
-        "gold": "b,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A66",
-        "prediction": "ERROR",
-        "gold": "a,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A67",
-        "prediction": "ERROR",
-        "gold": "a,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A68",
-        "prediction": "ERROR",
-        "gold": "d,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A69",
-        "prediction": "ERROR",
-        "gold": "a,b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A70",
-        "prediction": "ERROR",
-        "gold": "b,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A71",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A72",
-        "prediction": "ERROR",
-        "gold": "a,b,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A73",
-        "prediction": "ERROR",
-        "gold": "a,c,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A74",
-        "prediction": "ERROR",
-        "gold": "a,b,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A75",
-        "prediction": "ERROR",
-        "gold": "a,c,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      }
-    ],
-    "answer_first": [
-      {
-        "problem_id": "116A1",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A2",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A3",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A4",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A5",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A6",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A7",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A8",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A9",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A10",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A11",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A12",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A13",
-        "prediction": "ERROR",
-        "gold": "b,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A14",
-        "prediction": "ERROR",
-        "gold": "c,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A15",
-        "prediction": "ERROR",
-        "gold": "c,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A16",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A17",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A18",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A19",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A20",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A21",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A22",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A23",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A24",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A25",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A26",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A27",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A28",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A29",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A30",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A31",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A32",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A33",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A34",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A35",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A36",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A37",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A38",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A39",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A40",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A41",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A42",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A43",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A44",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A45",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A46",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A47",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A48",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A49",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A50",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A51",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A52",
-        "prediction": "ERROR",
-        "gold": "d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A53",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A54",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A55",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A56",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A57",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A58",
-        "prediction": "ERROR",
-        "gold": "b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A59",
-        "prediction": "ERROR",
-        "gold": "c",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A60",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A61",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A62",
-        "prediction": "ERROR",
-        "gold": "a",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A63",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A64",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A65",
-        "prediction": "ERROR",
-        "gold": "b,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A66",
-        "prediction": "ERROR",
-        "gold": "a,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A67",
-        "prediction": "ERROR",
-        "gold": "a,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A68",
-        "prediction": "ERROR",
-        "gold": "d,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A69",
-        "prediction": "ERROR",
-        "gold": "a,b",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A70",
-        "prediction": "ERROR",
-        "gold": "b,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A71",
-        "prediction": "ERROR",
-        "gold": "e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A72",
-        "prediction": "ERROR",
-        "gold": "a,b,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A73",
-        "prediction": "ERROR",
-        "gold": "a,c,e",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A74",
-        "prediction": "ERROR",
-        "gold": "a,b,d",
-        "correct": false,
-        "error": "API error: 'choices'"
-      },
-      {
-        "problem_id": "116A75",
-        "prediction": "ERROR",
-        "gold": "a,c,d",
-        "correct": false,
-        "error": "API error: 'choices'"
+        "correct": true,
+        "response": "<think>1.  **Analyze the User's Request:**\n    *   **Role:** Medical Expert.\n    *   **Task:** Answer a multiple-choice question from a medical exam (likely the Japanese National Medical Licensing Exa",
+        "time": 26.67964482307434
       }
     ]
   },
@@ -1634,6 +622,8 @@
     "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
     "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
     "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
-    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。",
+    "english_strict": "You are a medical expert. Answer the multiple-choice question.\nOutput ONLY the answer letter(s) (a,b,c,d,e). No explanation. No reasoning. No analysis.\nIf multiple answers: separate with comma. Example: a,c\nDo not write anything else.",
+    "english_answer_first": "You are a medical doctor. Answer the medical question.\nFIRST LINE: answer letter(s) only (a,b,c,d,e). Example: b or a,c\nSECOND LINE onwards: brief explanation (optional, max 3 sentences).\nNo self-critique. No debate. One best answer only. Stop after answering."
   }
 }

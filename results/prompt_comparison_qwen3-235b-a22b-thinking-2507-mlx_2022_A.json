@@ -1,618 +1,619 @@
 {
-  "timestamp": "2026-02-09T23:08:36.244578",
+  "timestamp": "2026-03-05T10:21:16.312887",
   "model": "qwen3-235b-a22b-thinking-2507-mlx",
   "summary": [
     {
-      "prompt_key": "format_strict",
-      "prompt_name": "案A: 回答形式強化",
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
       "total": 75,
-      "correct": 53,
-      "accuracy": 0.7066666666666667,
-      "avg_time": 39.436492778159476,
-      "errors": 1,
+      "correct": 67,
+      "accuracy": 0.8933333333333333,
+      "avg_time": 66.84207850774129,
+      "errors": 0,
       "empty_responses": 0
     }
   ],
   "details": {
-    "format_strict": [
+    "baseline": [
       {
         "problem_id": "116A1",
         "prediction": "c",
         "gold": "c",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question about sleep apnea-related hypertension. The question is asking which statement is incorrect.\n\nFirst, I need to recall what I know about sleep apnea and hyperte",
-        "time": 76.25756502151489
+        "response": "<think>Okay, let's tackle this question about sleep apnea-related hypertension. The question is asking which statement is incorrect regarding hypertension caused by sleep apnea syndrome.\n\nFirst, I nee",
+        "time": 85.74694108963013
       },
       {
         "problem_id": "116A2",
         "prediction": "c",
         "gold": "c",
         "correct": true,
-        "response": "<think>\nOkay, let's see. The question is about when to start penicillin for a pregnant woman who tested positive for GBS in her vaginal culture at the end of pregnancy. The options are a to e.\n\nFirst,",
-        "time": 16.097251176834106
+        "response": "<think>Okay, let's tackle this question. So, the problem is about a pregnant woman in her late term who tested positive for Group B Streptococcus (GBS) in a vaginal culture. The question is asking whe",
+        "time": 37.243338108062744
       },
       {
         "problem_id": "116A3",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question about Central Serous Chorioretinopathy (CSC). The question is asking which statement is incorrect. Let's go through each option one by one.\n\nFirst, option a: \"",
-        "time": 20.21575689315796
+        "response": "<think>Okay, let's tackle this question about Central Serous Chorioretinopathy (CSC). The question is asking which statement is incorrect. Let's go through each option one by one.\n\nFirst, I need to re",
+        "time": 19.661444902420044
       },
       {
         "problem_id": "116A4",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "<think>\nOkay, let's see. The question is asking which single oral medication is most likely to cause hypoglycemia when used alone. The options are DPP-4 inhibitors, SGLT2 inhibitors, biguanides (like ",
-        "time": 19.28633189201355
+        "response": "<think>Okay, let's see. The question is asking which single oral medication is most likely to cause hypoglycemia as a side effect. The options are DPP-4 inhibitors, SGLT2 inhibitors, biguanides (like ",
+        "time": 29.585850954055786
       },
       {
         "problem_id": "116A5",
         "prediction": "c",
         "gold": "c",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question about heart transplants in Japan for adults. The options are a to e, and I need to pick the correct one.\n\nFirst, let's go through each option one by one.\n\nOpti",
-        "time": 42.046168088912964
+        "response": "<think>Okay, let's tackle this question about heart transplants in Japan for adults. The options are a to e, and I need to pick the correct one.\n\nFirst, let's go through each option one by one.\n\nOptio",
+        "time": 30.390915155410767
       },
       {
         "problem_id": "116A6",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's see. The question is asking which of the options causes hyperkalemia (high potassium levels in the blood). The choices are a: β-stimulants, b: insulin, c: loop diuretics, d: glycyr",
-        "time": 36.955140829086304
+        "response": "<think>Okay, let's tackle this question about hyperkalemia causes. The options are a: β-stimulants, b: insulin, c: loop diuretics, d: glycyrrhizin, e: renin-angiotensin system inhibitors.\n\nFirst, I ne",
+        "time": 30.313900232315063
       },
       {
         "problem_id": "116A7",
-        "prediction": "a,e",
+        "prediction": "d",
         "gold": "d",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. The question is asking which of the options is NOT a risk factor for gastroesophageal reflux disease (GERD), or 逆流性食道炎 in Japanese. The options are a: obesity, b: old age, c: ",
-        "time": 52.152509927749634
+        "correct": true,
+        "response": "<think>Okay, let's tackle this question. The problem is asking which of the options is NOT a risk factor for gastroesophageal reflux disease (GERD), also known as acid reflux or heartburn. The options",
+        "time": 52.73604679107666
       },
       {
         "problem_id": "116A8",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question. The problem is asking which finding does not match cardiac sarcoidosis in a patient presenting with heart failure. The options are a to e.\n\nFirst, I need to r",
-        "time": 20.093057870864868
+        "response": "<think>Okay, let's tackle this question. So the problem is about a patient with heart failure coming in for evaluation, and we need to find which finding does NOT match cardiac sarcoidosis. The option",
+        "time": 18.396878957748413
       },
       {
         "problem_id": "116A9",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "<think>\nOkay, let's see. The question is asking which of the options is NOT a risk factor for bone necrosis (avascular necrosis). The choices are a: drinking alcohol, b: decompression sickness, c: rad",
-        "time": 22.91323709487915
+        "response": "<think>Okay, let's tackle this question. The problem is asking which of the options is NOT a risk factor for bone necrosis (osteonecrosis). The choices are: a) drinking alcohol, b) decompression sickn",
+        "time": 34.57305908203125
       },
       {
         "problem_id": "116A10",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question about systemic sclerosis and secondary Raynaud's phenomenon. The question is asking for the characteristic feature of secondary Raynaud's in systemic sclerosis",
-        "time": 28.657108068466187
+        "response": "<think>Okay, let's tackle this question about systemic scleroderma and secondary Raynaud's phenomenon. The question is asking which feature is characteristic of secondary Raynaud's in systemic sclerod",
+        "time": 36.62090706825256
       },
       {
         "problem_id": "116A11",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question. The problem is asking which characteristic is NOT associated with Autism Spectrum Disorder (ASD). Let's go through each option one by one.\n\nFirst, option a: \"",
-        "time": 19.939607620239258
+        "response": "<think>Okay, let's tackle this question. The problem is asking which characteristic is NOT associated with Autism Spectrum Disorder (ASD). Let's go through each option one by one.\n\nFirst, option a: \"男",
+        "time": 20.066747903823853
       },
       {
         "problem_id": "116A12",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question. The problem is asking which condition is least likely to be considered a hypertensive emergency when there's a sudden increase in blood pressure. The options ",
-        "time": 32.77742075920105
+        "response": "<think>Okay, let's tackle this question. So the problem is asking which of the options is least likely to be a hypertensive emergency associated with a sudden increase in blood pressure. The choices a",
+        "time": 40.107208251953125
       },
       {
         "problem_id": "116A13",
         "prediction": "b,e",
         "gold": "b,e",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question about vascular dementia. The user is asking which two statements are correct regarding cerebrovascular dementia.\n\nFirst, I need to recall what vascular dementi",
-        "time": 36.84139108657837
+        "response": "<think>Okay, let's tackle this question about vascular dementia. The task is to choose two correct statements from options a to e.\n\nFirst, I need to recall what vascular dementia is. It's a type of de",
+        "time": 33.95420694351196
       },
       {
         "problem_id": "116A14",
         "prediction": "c,d",
         "gold": "c,d",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question. The task is to find the correct pairs of pathogens and malignant tumors from the given options, choosing two. Let's go through each option one by one.\n\nFirst,",
-        "time": 17.08749294281006
+        "response": "<think>Okay, let's tackle this question. So, the task is to find two correct pairs of pathogens and malignant tumors from the given options.\n\nFirst, I need to recall which pathogens are associated wit",
+        "time": 24.06690502166748
       },
       {
         "problem_id": "116A15",
         "prediction": "c,e",
         "gold": "c,e",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question. The problem is asking which two indicators are used for diagnosing acute kidney injury (AKI). Let me recall what I know about AKI diagnosis.\n\nFirst, the main ",
-        "time": 19.730786085128784
+        "response": "<think>Okay, let's tackle this question about acute kidney injury (AKI) diagnostic criteria. The options are a to e, and I need to pick two correct ones.\n\nFirst, I remember that AKI is diagnosed based",
+        "time": 18.023827075958252
       },
       {
         "problem_id": "116A16",
         "prediction": "c",
         "gold": "c",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out which finding most suggests that the patient's proteinuria is due to diabetic nephropathy. The question gives several options: a through e.\n\nFirst, let me",
-        "time": 53.958200216293335
+        "response": "<think>Okay, let's see. I need to figure out which finding most suggests that the patient's proteinuria is due to diabetic nephropathy. The question gives several options: a through e.\n\nFirst, let me ",
+        "time": 61.29949498176575
       },
       {
         "problem_id": "116A17",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this 6-month-old boy with hemophilia A who fell from a bed and is now vomiting and lethargic.\n\nFirst, the case: 6-month-old male, v",
-        "time": 33.08939814567566
+        "response": "<think>Okay, let's tackle this medical case. So we have a 6-month-old boy with hemophilia A who fell from a bed and now has vomiting and lethargy. The question is about the appropriate initial managem",
+        "time": 33.335883140563965
       },
       {
         "problem_id": "116A18",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's see. The question is about a 23-year-old male who has excessive daytime sleepiness, even after sleeping enough at night. He also experiences sudden loss of muscle strength when lau",
-        "time": 22.879167079925537
+        "response": "<think>Okay, let's see. The question is about a 23-year-old male who has been having excessive sleepiness during the day, even after sleeping enough at night. He also experiences sudden loss of muscle",
+        "time": 22.894470930099487
       },
       {
         "problem_id": "116A19",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the most likely condition for this 62-year-old woman who had a catheter ablation for paroxysmal atrial fibrillation seven days ago and was discharged thre",
-        "time": 27.486984968185425
+        "response": "<think>Okay, let's try to figure out this medical case. So we have a 62-year-old woman who came in with shortness of breath and general fatigue. She had a catheter ablation for paroxysmal atrial fibri",
+        "time": 25.04932928085327
       },
       {
         "problem_id": "116A20",
         "prediction": "b",
         "gold": "b",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this medical case. So we have a 64-year-old man presenting with dyspnea that started four days ago, along with left chest pain and worsening shortness of breath. His vital s",
-        "time": 31.445443153381348
+        "response": "<think>Okay, let's try to figure out this medical case. So we have a 64-year-old man with dyspnea as the main complaint. He had left chest pain and shortness of breath starting 4 days ago, which got w",
+        "time": 46.69858121871948
       },
       {
         "problem_id": "116A21",
-        "prediction": "ERROR",
+        "prediction": "e",
         "gold": "c",
         "correct": false,
-        "error": "API error: 'choices'"
+        "response": "<think>Okay, let's tackle this medical case. So we have a 73-year-old man who had an endoscopic stone removal for common bile duct stones. Three hours later, he's got persistent epigastric and back pa",
+        "time": 257.95327281951904
       },
       {
         "problem_id": "116A22",
         "prediction": "c",
         "gold": "c",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question. So, we have a 22-year-old male who came in because his health checkup showed reduced kidney function. His mother and uncle are on dialysis. Blood tests: BUN 2",
-        "time": 47.2003710269928
+        "response": "<think>Okay, let's tackle this question. So, we have a 22-year-old male who came in because his health checkup showed reduced kidney function. His mother and uncle are on dialysis. Blood tests: BUN 28",
+        "time": 25.213948011398315
       },
       {
         "problem_id": "116A23",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out which drug should be given to this 38-year-old male patient based on the case provided.\n\nFirst, let's go through the symptoms and lab results. The patient",
-        "time": 31.928755044937134
+        "response": "<think>Okay, let's try to figure out this medical case. So we have a 38-year-old male who presented with subcutaneous bleeding for a week. He was found to have leukopenia and thrombocytopenia at a loc",
+        "time": 37.47811675071716
       },
       {
         "problem_id": "116A24",
-        "prediction": "a,e",
+        "prediction": "d",
         "gold": "c",
         "correct": false,
-        "response": "<think>\nOkay, let's see. The problem is about a 45-year-old male with hoarseness as the main complaint. He's had it for two years without any obvious cause, along with a sensation of something stuck i",
-        "time": 52.72588396072388
+        "response": "<think>Okay, let's tackle this medical question. So, the patient is a 45-year-old male with hoarseness as the main complaint. The symptoms started two years ago without any obvious cause, and he also ",
+        "time": 200.27623796463013
       },
       {
         "problem_id": "116A25",
         "prediction": "c",
         "gold": "c",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this 13-year-old girl who had symptoms after eating squid and playing basketball.\n\nFirst, the case: She ate a lunchbox with squid (",
-        "time": 33.655410051345825
+        "response": "<think>Okay, let's see. I need to figure out the correct answer for this 13-year-old girl who had symptoms after eating squid and playing basketball. Let me go through the case again.\n\nShe ate a bento",
+        "time": 168.61561608314514
       },
       {
         "problem_id": "116A26",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out which option is the least appropriate for an occupational health physician to do in this case. The patient is a 30-year-old man who's been having trouble ",
-        "time": 24.695647954940796
+        "response": "<think>Okay, let's tackle this question. So, we have a 30-year-old male who's been having trouble with work efficiency for about three months. He started working from home around six months ago due to",
+        "time": 23.545083045959473
       },
       {
         "problem_id": "116A27",
-        "prediction": "a,e",
+        "prediction": "b",
         "gold": "b",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this medical case. Let me start by reading through the problem again carefully.\n\nSo, an 81-year-old man is brought in via ambulance",
-        "time": 54.62035584449768
+        "correct": true,
+        "response": "<think>Okay, let's tackle this medical case. So we have an 81-year-old man with COPD who was brought in by ambulance due to breathing difficulties. He's been diagnosed with COPD before and is on bronc",
+        "time": 58.962584018707275
       },
       {
         "problem_id": "116A28",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out which disease this 23-year-old male has based on the symptoms and lab results. Let's start by going through the case step by step.\n\nFirst, his main sympto",
-        "time": 26.505650281906128
+        "response": "<think>Okay, let's see. I need to figure out which disease this 23-year-old male has based on the symptoms and lab results. Let me start by going through the case step by step.\n\nFirst, his main sympto",
+        "time": 31.988909006118774
       },
       {
         "problem_id": "116A29",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's see. The problem is about a 40-year-old man who has trouble writing. He noticed it three years ago when signing documents, and it's gotten worse to the point where his job is affec",
-        "time": 17.131118059158325
+        "response": "<think>Okay, let's tackle this medical question. So, the patient is a 40-year-old man who has trouble writing. He noticed it three years ago when signing documents, and it's gotten worse to the point ",
+        "time": 21.66721200942993
       },
       {
         "problem_id": "116A30",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this 42-year-old male patient with lower abdominal pain and nausea. Let me start by going through the case details again.\n\nHe's 42,",
-        "time": 40.375407695770264
+        "response": "<think>Okay, let's try to figure out this medical case. So we have a 42-year-old man with lower abdominal pain and nausea as the main symptoms. He's been healthy since birth, no issues in his check-up",
+        "time": 37.86480903625488
       },
       {
         "problem_id": "116A31",
         "prediction": "b",
         "gold": "b",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this case of a 48-year-old woman with symptoms and lab results. Let me go through the details step by step.\n\nFirst, her main compla",
-        "time": 33.071290731430054
+        "response": "<think>Okay, let's see. I need to figure out the correct answer for this medical case question. Let me start by reading through the problem again carefully.\n\nSo, we have a 48-year-old woman presenting",
+        "time": 49.11083626747131
       },
       {
         "problem_id": "116A32",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this neonatal case. So, a 10-hour-old male infant born at 39 weeks with normal weight and Apgar scores. The midwife noticed cyanosi",
-        "time": 25.123392820358276
+        "response": "<think>Okay, let's tackle this medical question. So we have a newborn boy who is 10 hours old, born at 39 weeks with a weight of 2960g. Apgar scores were 7 at 1 minute and 8 at 5 minutes. The midwife ",
+        "time": 35.86450409889221
       },
       {
         "problem_id": "116A33",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question. So, we have a 73-year-old male patient with left leg pain when walking. The symptoms started two months ago, where he gets calf pain after about 400 meters of",
-        "time": 32.834609270095825
+        "response": "<think>Okay, let's tackle this question. So, we have a 73-year-old male patient with left leg pain when walking. The symptoms started two months ago, where he gets calf pain after about 400 meters of ",
+        "time": 31.82337498664856
       },
       {
         "problem_id": "116A34",
         "prediction": "d",
         "gold": "a",
         "correct": false,
-        "response": "<think>\nOkay, let's tackle this question. So, we have a newborn on the first day of birth. The baby was born at 40 weeks, weighs 3,020g, and has Apgar scores of 8 at 1 minute and 9 at 5 minutes. The m",
-        "time": 39.742968797683716
+        "response": "<think>Okay, let's tackle this question. So, we have a newborn on the day of birth, 40 weeks gestation, weight 3020g, Apgar scores of 8 at 1 minute and 9 at 5 minutes. The midwife noticed something ab",
+        "time": 198.42751002311707
       },
       {
         "problem_id": "116A35",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this medical case. Let me start by going through the patient's details.\n\nThe patient is a 52-year-old man with generalized fatigue.",
-        "time": 29.774455070495605
+        "response": "<think>Okay, let's try to figure out this medical case. So we have a 52-year-old man with progressive lung adenocarcinoma diagnosed six weeks ago. He started immunotherapy with a checkpoint inhibitor ",
+        "time": 56.481302976608276
       },
       {
         "problem_id": "116A36",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this medical case. Let me start by reading through the problem again carefully.\n\nSo, we have a 63-year-old male presenting with abd",
-        "time": 42.31798505783081
+        "response": "<think>Okay, let's try to figure out this medical case. So we have a 63-year-old man with abdominal pain and distension. He's had an umbilical hernia for two years that used to go away when lying down",
+        "time": 52.08953809738159
       },
       {
         "problem_id": "116A37",
         "prediction": "c",
         "gold": "c",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this 72-year-old woman with thrombocytopenia and neurological symptoms. Let me go through the case step by step.\n\nFirst, her histor",
-        "time": 38.97002720832825
+        "response": "<think>Okay, let's try to figure out this medical case. So we have a 72-year-old woman who was being checked for thrombocytopenia (low platelets) at a local clinic. She had some cold-like symptoms and",
+        "time": 41.94985508918762
       },
       {
         "problem_id": "116A38",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this question. So, we have a 62-year-old male diagnosed with descending colon cancer scheduled for open left hemicolectomy. He had appendicitis with peritonitis at 28, leadi",
-        "time": 28.28898310661316
+        "response": "<think>Okay, let's tackle this question. So, we have a 62-year-old male diagnosed with descending colon cancer scheduled for open left hemicolectomy. He has a history of appendicitis with peritonitis ",
+        "time": 35.712830781936646
       },
       {
         "problem_id": "116A39",
         "prediction": "b",
         "gold": "b",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this medical case question.\n\nThe patient is a 20-year-old woman with multiple persistent brownish papules on her abdomen, neck, arm",
-        "time": 53.735822916030884
+        "response": "<think>Okay, let's tackle this question. So we have a 20-year-old woman with multiple persistent brownish papules on her abdomen, neck, armpits, ribs, under the breasts, and groin. No itching or fever",
+        "time": 34.12477517127991
       },
       {
         "problem_id": "116A40",
-        "prediction": "a,e",
+        "prediction": "b",
         "gold": "b",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. The problem is about a 15-year-old boy who came in with leg pain and brown urine after intense training in the heat. He had a headache and weakness during practice three days ",
-        "time": 79.01956081390381
+        "correct": true,
+        "response": "<think>Okay, let's see. I need to figure out the correct answer for this medical case. The patient is a 15-year-old boy who came in with leg pain and reddish-brown urine after intense training in the ",
+        "time": 60.72034692764282
       },
       {
         "problem_id": "116A41",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's see. The problem is about a 45-year-old man with sudden right ear hearing loss and tinnitus, no vertigo. The tympanic membrane is normal, audiogram shows something (though not spec",
-        "time": 19.22420597076416
+        "response": "<think>Okay, let's tackle this medical question. So, the patient is a 45-year-old man with sudden right ear hearing loss and tinnitus (that buzzing sound). No dizziness, normal eardrum, audiogram show",
+        "time": 17.5992488861084
       },
       {
         "problem_id": "116A42",
-        "prediction": "a,e",
+        "prediction": "e",
         "gold": "a",
         "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this obstetrics case. The patient is a 36-year-old woman at 36 weeks and 4 days of pregnancy. She presents with abdominal pain. Her",
-        "time": 52.73014688491821
+        "response": "<think>Okay, let's tackle this medical question. So, we have a 36-year-old woman at 36 weeks and 4 days pregnant. She comes in with abdominal pain. Her stats: height 152 cm, weight 68 kg. Temp is norm",
+        "time": 129.00730180740356
       },
       {
         "problem_id": "116A43",
         "prediction": "c",
         "gold": "c",
         "correct": true,
-        "response": "<think>\nOkay, let's try to figure out this medical case. So we have a 28-year-old male with epigastric pain, history of duodenal ulcers since age 20, treated with meds. He had a pituitary adenoma remo",
-        "time": 45.76678919792175
+        "response": "<think>Okay, let's try to figure out this medical case. So we have a 28-year-old male with epigastric pain, history of duodenal ulcers since age 20, treated with meds. He had a pituitary adenoma remov",
+        "time": 40.396809101104736
       },
       {
         "problem_id": "116A44",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out which hormone is elevated in this 22-year-old woman with primary amenorrhea. Let me go through the case details again.\n\nShe's 22, has never had a period s",
-        "time": 44.32022190093994
+        "response": "<think>Okay, let's tackle this medical question. So, we have a 22-year-old woman presenting with primary amenorrhea. Wait, no—wait, she had menarche at 12, then irregular periods until 14 when she bec",
+        "time": 27.68129587173462
       },
       {
         "problem_id": "116A45",
-        "prediction": "a,e",
+        "prediction": "c",
         "gold": "d",
         "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out which image (① to ⑤) shows a medial meniscus tear in the knee based on the arthroscopic findings. The patient is a 38-year-old woman who injured her right",
-        "time": 52.44153094291687
+        "response": "<think>Okay, let's tackle this question. So, we have a 38-year-old woman with right knee pain after twisting it during volleyball practice three weeks ago. MRI shows a medial meniscus tear, and we nee",
+        "time": 54.111732959747314
       },
       {
         "problem_id": "116A46",
         "prediction": "b",
         "gold": "b",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out which endocrine test is necessary for the diagnosis of this 53-year-old male patient. Let me go through the symptoms and lab results again.\n\nThe main comp",
-        "time": 26.69822406768799
+        "response": "<think>Okay, let's see. I need to figure out which endocrine test is necessary for the diagnosis of this 53-year-old male patient. Let me start by going through his symptoms and test results.\n\nFirst, ",
+        "time": 37.83298206329346
       },
       {
         "problem_id": "116A47",
-        "prediction": "a,e",
+        "prediction": "d",
         "gold": "e",
         "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out which option is inappropriate in this scenario. The patient is a 32-year-old woman who was subjected to non-consensual sex last night and came in today wi",
-        "time": 52.63117480278015
+        "response": "<think>Okay, let's tackle this question. So, we have a 32-year-old woman who was forced into non-consensual sex last night and came in today with a police officer. The menstrual cycle is regular, 28 d",
+        "time": 171.22204089164734
       },
       {
         "problem_id": "116A48",
-        "prediction": "a,e",
+        "prediction": "e",
         "gold": "e",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this 10-month-old boy with vomiting, bloody stools, and a target sign on ultrasound. The options are about what to tell the parents",
-        "time": 54.24210500717163
+        "correct": true,
+        "response": "<think>Okay, let's see. I need to figure out the correct answer for this pediatric case. The patient is a 10-month-old boy with vomiting, bloody stools, and some other symptoms. Let me go through the ",
+        "time": 73.00679397583008
       },
       {
         "problem_id": "116A49",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this 45-year-old male patient with symptoms of dyspnea on exertion and fatigue. Let me go through the case step by step.\n\nFirst, hi",
-        "time": 40.098973989486694
+        "response": "<think>Okay, let's see. I need to figure out the correct answer for this 45-year-old male patient with symptoms of dyspnea on exertion and fatigue. Let me go through the case step by step.\n\nFirst, his",
+        "time": 38.81237006187439
       },
       {
         "problem_id": "116A50",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the most likely diagnosis for this 35-year-old male with cough, fever, and shortness of breath. Let me go through the case details again.\n\nHe's had a dry ",
-        "time": 47.662129163742065
+        "response": "<think>Okay, let's tackle this medical case. So we have a 35-year-old male presenting with cough, fever, and shortness of breath. Symptoms started three weeks ago with a dry cough, then five days ago ",
+        "time": 58.4978449344635
       },
       {
         "problem_id": "116A51",
-        "prediction": "a,e",
+        "prediction": "c",
         "gold": "c",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out which condition this 14-day-old boy is most likely to develop based on the given symptoms. Let me start by reviewing the case details.\n\nHe's a 14-day-old ",
-        "time": 52.91726207733154
+        "correct": true,
+        "response": "<think>Okay, let's tackle this question. So we have a 14-day-old male infant who came in for chromosome test results with his parents. The details given are that he was born at 39 weeks, birth weight ",
+        "time": 49.16814208030701
       },
       {
         "problem_id": "116A52",
         "prediction": "d",
         "gold": "d",
         "correct": true,
-        "response": "<think>\nOkay, let's see. The problem is about a 19-year-old male who got sodium hydroxide solution in his right eye during an experiment and came to the emergency room. He's conscious, but there's sig",
-        "time": 16.75908589363098
+        "response": "<think>Okay, let's see. The question is about a 19-year-old male who got sodium hydroxide solution in his right eye during an experiment and came to the emergency room. He's conscious, but has signifi",
+        "time": 19.298075914382935
       },
       {
         "problem_id": "116A53",
-        "prediction": "a,e",
+        "prediction": "b",
         "gold": "b",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out which antibiotic to start for this 76-year-old man with worsening sputum. Let me go through the case again.\n\nHe's 76, came in with increased sputum. Had a",
-        "time": 54.55637884140015
+        "correct": true,
+        "response": "<think>Okay, let's tackle this medical question. So, we have a 76-year-old man who came in with increased sputum production. He had a total gastrectomy 8 years ago for gastric cancer, then started los",
+        "time": 80.63631701469421
       },
       {
         "problem_id": "116A54",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this 2-year-old boy with hearing issues after an ear infection. The question is asking which test is useful for confirming the diag",
-        "time": 34.54164409637451
+        "response": "<think>Okay, let's tackle this medical question. So, we have a 2-year-old boy brought in by his mother because she's worried the TV volume is too loud. A week ago, he had bilateral ear pain and runny ",
+        "time": 30.05957293510437
       },
       {
         "problem_id": "116A55",
         "prediction": "e",
         "gold": "e",
         "correct": true,
-        "response": "<think>\nOkay, let's see. So the problem is about a 24-year-old healthcare worker who got stuck with a needle from a patient. The patient's test results show HBs antigen positive, HBs antibody negative",
-        "time": 24.275970697402954
+        "response": "<think>Okay, let's see. So the problem is about a 24-year-old healthcare worker who got stuck with a needle from a patient. The patient's test results show HBs antigen positive, which means they have ",
+        "time": 27.067057847976685
       },
       {
         "problem_id": "116A56",
         "prediction": "b",
         "gold": "b",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out which option is decreased in this patient based on the given information.\n\nFirst, let's recap the case. An 18-year-old male presents with fatigue, fever, ",
-        "time": 45.07887935638428
+        "response": "<think>Okay, let's tackle this medical question. So, we have an 18-year-old male presenting with fatigue, fever, and shortness of breath on exertion for two weeks. Three days ago, he started having a ",
+        "time": 49.36317586898804
       },
       {
         "problem_id": "116A57",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the most likely cause of death for this 2-month-old girl who came in with status epilepticus, then went into cardiac arrest and died. The case mentions so",
-        "time": 23.191724061965942
+        "response": "<think>Okay, let's tackle this question. So we have a 2-month-old girl who was brought in by ambulance due to status epilepticus. She started seizing at night while sleeping, then went into cardiac ar",
+        "time": 42.21652603149414
       },
       {
         "problem_id": "116A58",
         "prediction": "b",
         "gold": "b",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out which symptom is most likely present in this 69-year-old male patient with left nasal bleeding, worsening nasal obstruction, and diplopia (double vision) ",
-        "time": 45.00719118118286
+        "response": "<think>Okay, let's tackle this medical question. So, we have a 69-year-old male presenting with left nosebleeds and diplopia (double vision) as his main complaints. He's had recurrent left nosebleeds ",
+        "time": 86.7985360622406
       },
       {
         "problem_id": "116A59",
-        "prediction": "a,e",
+        "prediction": "c",
         "gold": "c",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. The question is about an 8-year-old girl with severe itching and a rash all over her body, including face, abdomen, elbow creases, knee pits. Blood tests show high eosinophils",
-        "time": 52.818248987197876
+        "correct": true,
+        "response": "<think>Okay, let's tackle this question. So we have an 8-year-old girl with severe itching and a rash all over her body, including the back, face, abdomen, elbow creases, knee pits. The lab results sh",
+        "time": 107.52019572257996
       },
       {
         "problem_id": "116A60",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the most likely diagnosis for this 80-year-old man with a skin rash on his left temple spreading to the cheek. The key points are: he's 80, has a purplish",
-        "time": 36.505568981170654
+        "response": "<think>Okay, let's tackle this medical question. So, we have an 80-year-old man with a rash from the left temporal area to the cheek. Three months ago, he had a purplish-red patch that started there, ",
+        "time": 52.10852575302124
       },
       {
         "problem_id": "116A61",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the most likely ECG diagnosis for this 64-year-old man who came in with left hemiplegia and impaired consciousness. Let me start by going through the case",
-        "time": 42.759881019592285
+        "response": "<think>Okay, let's tackle this question. So we have a 64-year-old man who came to the ER with left hemiplegia and impaired consciousness. His GCS is E4V4M6, which I think means he's alert but has some",
+        "time": 30.264904260635376
       },
       {
         "problem_id": "116A62",
         "prediction": "a",
         "gold": "a",
         "correct": true,
-        "response": "<think>\nOkay, let's try to figure out this case. So we have a 58-year-old woman presenting with leg edema that's been getting worse over the past month. She had proteinuria found in her health checkup",
-        "time": 53.74266195297241
+        "response": "<think>Okay, let's tackle this medical case. So we have a 58-year-old woman presenting with leg edema, which started a month ago and has been getting worse. She had proteinuria detected in her health ",
+        "time": 62.54179406166077
       },
       {
         "problem_id": "116A63",
-        "prediction": "a,e",
+        "prediction": "e",
         "gold": "e",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out which finding is present in this 78-year-old woman with persistent fever, low blood pressure, and some lab abnormalities. Let me go through the case step ",
-        "time": 53.01327586174011
+        "correct": true,
+        "response": "<think>Okay, let's try to figure out this medical case. So we have a 78-year-old woman with a week-long fever around 38°C, general fatigue. Her vitals: height 151cm, weight 42kg (so BMI is low), temp ",
+        "time": 230.81348085403442
       },
       {
         "problem_id": "116A64",
-        "prediction": "a,e",
+        "prediction": "e",
         "gold": "e",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answer for this medical case question.\n\nSo, the patient is a 61-year-old man with right knee pain. He's using a cane because of the pain. Two ",
-        "time": 52.923909187316895
+        "correct": true,
+        "response": "<think>Okay, let's tackle this question. So we have a 61-year-old male patient with right knee pain, using a cane because of the pain. He had colon cancer surgery two months ago and is currently on an",
+        "time": 55.244033098220825
       },
       {
         "problem_id": "116A65",
-        "prediction": "a,e",
+        "prediction": "b,e",
         "gold": "b,e",
-        "correct": false,
-        "response": "<think>\nOkay, let's tackle this problem. So we have a 35-year-old multiparous woman (3 pregnancies, 2 deliveries) at 34 weeks and 2 days of gestation. She's here for a prenatal check-up. Her history i",
-        "time": 53.464778900146484
+        "correct": true,
+        "response": "<think>Okay, let's tackle this question. So we have a 35-year-old multiparous woman (3 pregnancies, 2 deliveries) at 34 weeks and 2 days of gestation. She's here for a prenatal check-up. Her history i",
+        "time": 111.97524309158325
       },
       {
         "problem_id": "116A66",
-        "prediction": "a,e",
+        "prediction": "a,c",
         "gold": "a,e",
-        "correct": true,
-        "response": "<think>\nOkay, let's tackle this medical question. So we have a 34-year-old woman with anterior chest pain that's been getting worse over three months. Her vitals are normal: temp 36.8°C, BP 118/64, Sp",
-        "time": 52.519201040267944
+        "correct": false,
+        "response": "<think>Okay, let's tackle this medical question. So we have a 34-year-old woman presenting with anterior chest pain that started three months ago and has been gradually worsening. Her vital signs are ",
+        "time": 254.78103709220886
       },
       {
         "problem_id": "116A67",
         "prediction": "a,d",
         "gold": "a,d",
         "correct": true,
-        "response": "<think>\nOkay, let's tackle this problem. So we have a 44-year-old woman who was referred after her human dock found liver dysfunction. No history of blood transfusion, drinking alcohol, or family hist",
-        "time": 29.738770961761475
+        "response": "<think>Okay, let's tackle this medical question. So, we have a 44-year-old woman who was referred after her human dock found liver dysfunction. No history of blood transfusion, drinking alcohol, or fa",
+        "time": 32.33281493186951
       },
       {
         "problem_id": "116A68",
-        "prediction": "a,e",
+        "prediction": "d,e",
         "gold": "d,e",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answers for this medical case. So, a 38-year-old woman comes in with abdominal pain, hasn't had a bowel movement for a week, vomiting, increas",
-        "time": 53.43025207519531
+        "correct": true,
+        "response": "<think>Okay, let's tackle this medical question. So we have a 38-year-old woman presenting with abdominal pain, no bowel movements for a week, vomiting, worsening symptoms. She's conscious, vital sign",
+        "time": 70.06603598594666
       },
       {
         "problem_id": "116A69",
-        "prediction": "a,e",
+        "prediction": "a,b",
         "gold": "a,b",
-        "correct": false,
-        "response": "<think>\nOkay, let's tackle this question. So we have a 22-year-old male with a cervical spinal cord injury from a fall eight weeks ago. The manual muscle test results are given: both sides have biceps",
-        "time": 52.766128063201904
+        "correct": true,
+        "response": "<think>Okay, let's tackle this question. So we have a 22-year-old male with a cervical spinal cord injury from a fall eight weeks ago. The question is asking which activities he can likely achieve, an",
+        "time": 209.2095639705658
       },
       {
         "problem_id": "116A70",
-        "prediction": "a,e",
+        "prediction": "b,e",
         "gold": "b,e",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out which two drugs are appropriate for remission induction therapy along with corticosteroids in this 68-year-old male patient. Let me start by reviewing the",
-        "time": 58.21675634384155
+        "correct": true,
+        "response": "<think>Okay, let's tackle this medical case. So we have a 68-year-old male presenting with nosebleeds, cough, nasal congestion, hearing loss for two months. Three weeks ago, intermittent nosebleeds st",
+        "time": 32.88075494766235
       },
       {
         "problem_id": "116A71",
-        "prediction": "a,e",
+        "prediction": "e",
         "gold": "e",
-        "correct": false,
-        "response": "<think>\nOkay, let's see. I need to figure out which disease is the least likely for this 5-year-old girl with high fever, sore throat, loss of appetite, but no cough or runny nose. Let's go through th",
-        "time": 53.04591202735901
+        "correct": true,
+        "response": "<think>Okay, let's tackle this question. So we have a 5-year-old girl with high fever for three days, sore throat, loss of appetite, but no cough or runny nose. Her temperature is 39.6°C, pulse 120/mi",
+        "time": 293.43454599380493
       },
       {
         "problem_id": "116A72",
         "prediction": "a,b,d",
         "gold": "a,b,d",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out which three options are the first steps for this 40-year-old male patient with sudden severe epigastric pain. Let me start by reviewing the case.\n\nThe pat",
-        "time": 37.595638036727905
+        "response": "<think>Okay, let's tackle this medical case. So we have a 40-year-old male presenting with epigastric pain that started yesterday but became severe today, making him unable to move. He's 172cm tall an",
+        "time": 32.611997842788696
       },
       {
         "problem_id": "116A73",
-        "prediction": "a,e",
+        "prediction": "c,d,e",
         "gold": "a,c,e",
         "correct": false,
-        "response": "<think>\nOkay, let's tackle this question. So we have an 18-year-old male in a dormitory with fever, headache, and then altered mental status. He's brought in by ambulance. His vital signs show fever (",
-        "time": 54.33964204788208
+        "response": "<think>Okay, let's tackle this medical question. So we have an 18-year-old male living in a dormitory who presents with fever, altered mental status, neck stiffness, and purpura on his limbs. The CSF ",
+        "time": 165.91709804534912
       },
       {
         "problem_id": "116A74",
         "prediction": "a,b,d",
         "gold": "a,b,d",
         "correct": true,
-        "response": "<think>\nOkay, let's see. I need to figure out the correct answers for this medical case. The patient is a 42-year-old man with abdominal pain that started in the epigastric area yesterday, then he vom",
-        "time": 33.633819341659546
+        "response": "<think>Okay, let's tackle this medical case. So we have a 42-year-old male presenting with abdominal pain that started in the epigastric region yesterday, then this morning he vomited and now has wors",
+        "time": 38.364014863967896
       },
       {
         "problem_id": "116A75",
-        "prediction": "a,e",
+        "prediction": "a,c,d",
         "gold": "a,c,d",
-        "correct": false,
-        "response": "<think>\nOkay, let's tackle this problem. So we have a 70-year-old woman who had a stroke (cerebral infarction) leading to right hemiplegia. She's in a rehabilitation hospital now, 8 weeks after the st",
-        "time": 54.014667987823486
+        "correct": true,
+        "response": "<think>Okay, let's tackle this rehabilitation question. So we have a 70-year-old woman who had a stroke (left internal capsule infarction) leading to right hemiparesis. She's in a recovery phase rehab",
+        "time": 39.67742300033569
       }
     ]
   },
@@ -620,6 +621,9 @@
     "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
     "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
     "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
-    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）"
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。",
+    "english_strict": "You are a medical expert. Answer the multiple-choice question.\nOutput ONLY the answer letter(s) (a,b,c,d,e). No explanation. No reasoning. No analysis.\nIf multiple answers: separate with comma. Example: a,c\nDo not write anything else.",
+    "english_answer_first": "You are a medical doctor. Answer the medical question.\nFIRST LINE: answer letter(s) only (a,b,c,d,e). Example: b or a,c\nSECOND LINE onwards: brief explanation (optional, max 3 sentences).\nNo self-critique. No debate. One best answer only. Stop after answering."
   }
 }
