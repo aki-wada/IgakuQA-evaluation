@@ -1,0 +1,427 @@
+{
+  "timestamp": "2026-02-28T04:22:08.074967",
+  "model": "qwen3.5-397b-a17b@8bit",
+  "summary": [
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 50,
+      "correct": 45,
+      "accuracy": 0.9,
+      "avg_time": 42.07562386512756,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "format_strict": [
+      {
+        "problem_id": "116E1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 30.951463222503662
+      },
+      {
+        "problem_id": "116E2",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct option(s) (a, b, c, d, e).\n    *   Fo",
+        "time": 23.677254915237427
+      },
+      {
+        "problem_id": "116E3",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s).\n    *   Format: Ans",
+        "time": 21.998209953308105
+      },
+      {
+        "problem_id": "116E4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 30.613815784454346
+      },
+      {
+        "problem_id": "116E5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 25.31901717185974
+      },
+      {
+        "problem_id": "116E6",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 41.864500999450684
+      },
+      {
+        "problem_id": "116E7",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct option(s).\n    *   Format: Answer wi",
+        "time": 27.721888065338135
+      },
+      {
+        "problem_id": "116E8",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 29.651347875595093
+      },
+      {
+        "problem_id": "116E9",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct answer choice(s) (alphabet only).\n  ",
+        "time": 25.60358691215515
+      },
+      {
+        "problem_id": "116E10",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct answer choice(s) (alphabet only).\n    *   F",
+        "time": 156.26478815078735
+      },
+      {
+        "problem_id": "116E11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct answer choice(s).\n    *   Format: An",
+        "time": 22.844810009002686
+      },
+      {
+        "problem_id": "116E12",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem and select the correct answer choice(s) (a, b, c, d, e).\n",
+        "time": 62.5868079662323
+      },
+      {
+        "problem_id": "116E13",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct answer choice(s).\n    *   Format: An",
+        "time": 42.91044878959656
+      },
+      {
+        "problem_id": "116E14",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 20.658172130584717
+      },
+      {
+        "problem_id": "116E15",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct option(s).\n    *   Format: Answer wit",
+        "time": 24.40659809112549
+      },
+      {
+        "problem_id": "116E16",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct answer choice(s) (alphabet only).\n  ",
+        "time": 25.386458158493042
+      },
+      {
+        "problem_id": "116E17",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct option(s).\n    *   Output Format: Al",
+        "time": 25.361325979232788
+      },
+      {
+        "problem_id": "116E18",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct option(s), and answer only with the ",
+        "time": 32.12620282173157
+      },
+      {
+        "problem_id": "116E19",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct answer choice(s) (alphabet only).\n  ",
+        "time": 30.197824954986572
+      },
+      {
+        "problem_id": "116E20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct option(s), and answer only with the a",
+        "time": 117.47824192047119
+      },
+      {
+        "problem_id": "116E21",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct option(s).\n    *   Output Format: Al",
+        "time": 30.486857414245605
+      },
+      {
+        "problem_id": "116E22",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct option(s).\n    *   Format: Answer wi",
+        "time": 23.194473266601562
+      },
+      {
+        "problem_id": "116E23",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 23.340853214263916
+      },
+      {
+        "problem_id": "116E24",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct answer choice(s).\n    *   Format: An",
+        "time": 25.765180110931396
+      },
+      {
+        "problem_id": "116E25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct answer choice(s) (alphabet only).\n  ",
+        "time": 33.75842785835266
+      },
+      {
+        "problem_id": "116E26",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 35.08203864097595
+      },
+      {
+        "problem_id": "116E27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct option(s).\n    *   Format: Answer wit",
+        "time": 38.903382778167725
+      },
+      {
+        "problem_id": "116E28",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician expert in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n    *  ",
+        "time": 114.84288477897644
+      },
+      {
+        "problem_id": "116E29",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s).\n    *   Format: Ans",
+        "time": 38.013808250427246
+      },
+      {
+        "problem_id": "116E30",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 26.49913001060486
+      },
+      {
+        "problem_id": "116E31",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 29.68436312675476
+      },
+      {
+        "problem_id": "116E32",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 31.092347860336304
+      },
+      {
+        "problem_id": "116E33",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 41.50444412231445
+      },
+      {
+        "problem_id": "116E34",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 29.817545175552368
+      },
+      {
+        "problem_id": "116E35",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 20.995872974395752
+      },
+      {
+        "problem_id": "116E36",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 26.552173852920532
+      },
+      {
+        "problem_id": "116E37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s).\n    *   Format: Ans",
+        "time": 40.874807834625244
+      },
+      {
+        "problem_id": "116E38",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s).\n    *   Format: Answer wit",
+        "time": 156.55283784866333
+      },
+      {
+        "problem_id": "116E39",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 34.466880083084106
+      },
+      {
+        "problem_id": "116E40",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 24.948278188705444
+      },
+      {
+        "problem_id": "116E41",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s).\n    *   Format: Ans",
+        "time": 73.29729580879211
+      },
+      {
+        "problem_id": "116E42",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the question, select the correct answer choice(s) (alphabet only).\n  ",
+        "time": 20.455769777297974
+      },
+      {
+        "problem_id": "116E43",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s).\n    *   Format: Ans",
+        "time": 106.86657691001892
+      },
+      {
+        "problem_id": "116E44",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 39.5135760307312
+      },
+      {
+        "problem_id": "116E45",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem and select the correct answer choice(s).\n    *   Format: ",
+        "time": 31.339022874832153
+      },
+      {
+        "problem_id": "116E46",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct option(s) (alphabet only).\n    *   Fo",
+        "time": 30.770936965942383
+      },
+      {
+        "problem_id": "116E47",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician expert in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n    *  ",
+        "time": 77.5236918926239
+      },
+      {
+        "problem_id": "116E48",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 19.573778867721558
+      },
+      {
+        "problem_id": "116E49",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 30.193620920181274
+      },
+      {
+        "problem_id": "116E50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician proficient in clinical medicine.\n    *   Task: Read the problem, select the correct answer choice(s) (alphabet only).\n   ",
+        "time": 30.24757194519043
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}

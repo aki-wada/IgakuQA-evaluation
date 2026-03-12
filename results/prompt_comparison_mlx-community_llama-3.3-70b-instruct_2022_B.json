@@ -1,0 +1,427 @@
+{
+  "timestamp": "2026-02-25T21:08:29.384849",
+  "model": "mlx-community/llama-3.3-70b-instruct",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 50,
+      "correct": 41,
+      "accuracy": 0.82,
+      "avg_time": 1.845599603652954,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116B1",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 13.541629076004028
+      },
+      {
+        "problem_id": "116B2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 1.0704691410064697
+      },
+      {
+        "problem_id": "116B3",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 1.5210888385772705
+      },
+      {
+        "problem_id": "116B4",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 1.0751070976257324
+      },
+      {
+        "problem_id": "116B5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 0.9010729789733887
+      },
+      {
+        "problem_id": "116B6",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 0.9069118499755859
+      },
+      {
+        "problem_id": "116B7",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 1.0701229572296143
+      },
+      {
+        "problem_id": "116B8",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 0.8984622955322266
+      },
+      {
+        "problem_id": "116B9",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 1.0842909812927246
+      },
+      {
+        "problem_id": "116B10",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 1.243746042251587
+      },
+      {
+        "problem_id": "116B11",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 0.9019839763641357
+      },
+      {
+        "problem_id": "116B12",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 1.0715410709381104
+      },
+      {
+        "problem_id": "116B13",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 1.447770118713379
+      },
+      {
+        "problem_id": "116B14",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 1.0745229721069336
+      },
+      {
+        "problem_id": "116B15",
+        "prediction": "b",
+        "gold": "d",
+        "correct": false,
+        "response": "b",
+        "time": 0.9048707485198975
+      },
+      {
+        "problem_id": "116B16",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 1.2424209117889404
+      },
+      {
+        "problem_id": "116B17",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 0.9051640033721924
+      },
+      {
+        "problem_id": "116B18",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 0.9064807891845703
+      },
+      {
+        "problem_id": "116B19",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.9042887687683105
+      },
+      {
+        "problem_id": "116B20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 0.8993260860443115
+      },
+      {
+        "problem_id": "116B21",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 0.9059638977050781
+      },
+      {
+        "problem_id": "116B22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 1.2327089309692383
+      },
+      {
+        "problem_id": "116B23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 1.2401447296142578
+      },
+      {
+        "problem_id": "116B24",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 1.2365202903747559
+      },
+      {
+        "problem_id": "116B25",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 1.79758882522583
+      },
+      {
+        "problem_id": "116B26",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 1.6136786937713623
+      },
+      {
+        "problem_id": "116B27",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.1475861072540283
+      },
+      {
+        "problem_id": "116B28",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 1.7884421348571777
+      },
+      {
+        "problem_id": "116B29",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.1481361389160156
+      },
+      {
+        "problem_id": "116B30",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 1.6188149452209473
+      },
+      {
+        "problem_id": "116B31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 1.7902259826660156
+      },
+      {
+        "problem_id": "116B32",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.3366689682006836
+      },
+      {
+        "problem_id": "116B33",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 1.6875770092010498
+      },
+      {
+        "problem_id": "116B34",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.698467969894409
+      },
+      {
+        "problem_id": "116B35",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 1.6235260963439941
+      },
+      {
+        "problem_id": "116B36",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 1.6144051551818848
+      },
+      {
+        "problem_id": "116B37",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "a",
+        "time": 2.1407012939453125
+      },
+      {
+        "problem_id": "116B38",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.1407289505004883
+      },
+      {
+        "problem_id": "116B39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.346566915512085
+      },
+      {
+        "problem_id": "116B40",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.326064825057983
+      },
+      {
+        "problem_id": "116B41",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c",
+        "time": 0.8959391117095947
+      },
+      {
+        "problem_id": "116B42",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "e",
+        "time": 2.511970281600952
+      },
+      {
+        "problem_id": "116B43",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 1.0695631504058838
+      },
+      {
+        "problem_id": "116B44",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 3.0343401432037354
+      },
+      {
+        "problem_id": "116B45",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 0.8934309482574463
+      },
+      {
+        "problem_id": "116B46",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 3.2470357418060303
+      },
+      {
+        "problem_id": "116B47",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.1419742107391357
+      },
+      {
+        "problem_id": "116B48",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 2.8660929203033447
+      },
+      {
+        "problem_id": "116B49",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 1.797368049621582
+      },
+      {
+        "problem_id": "116B50",
+        "prediction": "①. 2.05 \n②",
+        "gold": "21",
+        "correct": false,
+        "response": "①. 2.05 \n②. 0.20",
+        "time": 1.8164770603179932
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}

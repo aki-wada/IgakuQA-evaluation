@@ -1,0 +1,704 @@
+{
+  "timestamp": "2026-03-06T00:02:02.799727",
+  "model": "gpt-oss-safeguard-120b-mlx",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 72,
+      "accuracy": 0.96,
+      "avg_time": 7.640077603658041,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116D1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 6.81198787689209,
+        "reasoning": "We need to answer a medical question about RhD negative mother and anti-D immunoglobulin (RhIG) prophylaxis. The question: \"RhD（－）血液型の妊婦で分娩後に抗Dヒト免疫グロブリン投与が必要な組合せはどれか。\" Means: For a RhD-negative pregnant woman, after delivery (postpartum), which combination indicates need for anti-D immunoglobulin? The answer choices list various scenarios: husband's blood type, indirect Coombs test results at 12 and 26 weeks, baby's blood type. The need for anti-D immunoglobulin postpartum is indicated when moth"
+      },
+      {
+        "problem_id": "116D2",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 8.849393844604492,
+        "reasoning": "The user is asking medical questions. The first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" answer was e. The assistant responded \"e\". That seems plausible: research results return guarantee is not required? Possibly correct.\n\nNow second question about a 57-year-old male working in a manhole, collapsed with colleague also losing consciousness. Likely due to hydrogen sulfide (H2S) or carbon monoxide? In sewage, H2S is common. Also CO from confined space? The question: \"可能性が高いのはどれか。2つ選べ.\" "
+      },
+      {
+        "problem_id": "116D3",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 3.802777051925659,
+        "reasoning": "The user is asking medical questions. The first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" answer was e. The second question about \"57歳男性...下水処理場のマンホール内で汚泥を外に搬出する作業...突然意識喪失\" answer was a,b. The third question: \"心不全の分類で肺動脈楔入圧と心拍出量（心係数）で定義されるものはどれか。\" Options: a: AHA心不全ステージ分類, b: Child分類, c: Forrester分類, d: Nohria-Stevenson分類, e: NYHA心機能分類. The classification using pulmonary capillary wedge pressure (PCWP) and cardiac output is Forrester classification, also known as \"hemodynamic subsets\""
+      },
+      {
+        "problem_id": "116D4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 3.8656837940216064,
+        "reasoning": "We have a user asking a medical question in Japanese. The assistant must answer with the correct choice(s) from options a-e.\n\nThe user: \"先天性副腎皮質過形成症の維持療法中に発熱を呈した場合、初期対応として適切なのはどれか。 a: 水分制限 b: 抗菌薬投与 c: 利尿薬静注 d: 糖質コルチコイドの増量 e: グルコース・インスリン療法\"\n\nWe need to answer with one choice. The question: \"先天性副腎皮質過形成症の維持療法中に発熱を呈した場合、初期対応として適切なのはどれか。\" Means \"In a patient with congenital adrenal hyperplasia (CAH) under maintenance therapy who presents with fever, what is the appropriate initial management?\" In CAH"
+      },
+      {
+        "problem_id": "116D5",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 6.133823871612549,
+        "reasoning": "The user is providing a series of medical questions in Japanese. The assistant must answer with the correct choice(s). The first question: \"上部消化管内視鏡を用いて治療が行われるのはどれか。\" Options: a: 食道憩室 (esophageal diverticulum), b: 食道アカラシア (achalasia), c: 食道カンジダ症 (esophageal candidiasis), d: 食道裂孔ヘルニア (hiatal hernia?), e: 非びらん性胃食道逆流症 (non-erosive gastroesophageal reflux disease). The question: \"上部消化管内視鏡を用いて治療が行われるのはどれか。\" Means \"Which of the following is treated using upper gastrointestinal endoscopy?\" So which con"
+      },
+      {
+        "problem_id": "116D6",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.477880001068115,
+        "reasoning": "The user is asking medical questions. The first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" answer was e. The second question about \"57歳男性...下水処理場のマンホール内で汚泥を外に搬出する作業...突然意識喪失\" answer was a,b. The third question: \"大動脈瘤の原因にならないのはどれか\". Options a: 梅毒, b: 動脈硬化, c: Buerger病, d: 高安動脈炎, e: Marfan症候群. The question asks which does NOT cause aortic aneurysm. We need to pick one that is not a cause of aortic aneurysm.\n\nWe must answer with the letter. Let's analyze: Aortic aneurysm causes include ath"
+      },
+      {
+        "problem_id": "116D7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 3.814732074737549,
+        "reasoning": "The user is asking medical questions. The first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" answer was e. The second question about \"57歳男性...マンホール内で作業...意識喪失\" answer was a,b. The third question: \"腎後性急性腎障害を、腎前性・腎性急性腎障害と鑑別する場合に最も有用な検査はどれか。\" Options: a: 腎生検, b: 尿蛋白定量, c: 尿比重測定, d: 腹部エコー検査, e: 血清クレアチニン値測定. The question asks about distinguishing postrenal (obstructive) acute kidney injury from pre-renal and intrinsic renal AKI. The most useful test is ultrasound (abdominal echo) to detect obs"
+      },
+      {
+        "problem_id": "116D8",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.2678351402282715,
+        "reasoning": "The user is providing a series of medical quiz questions in Japanese. The assistant must answer with the correct choice(s). The first question: \"急性の細菌感染症はどれか。\" Options: a: 癜風 (tinea? Actually \"癜風\" is tinea, fungal infection), b: 掌蹠膿疱症 (pustular psoriasis? Actually \"掌蹠膿疱症\" is pustular psoriasis, not bacterial), c: 膿疱性乾癬 (pustular psoriasis again?), d: 化膿性汗腺炎 (pyogenic hidradenitis? Actually \"化膿性汗腺炎\" is bacterial infection of sweat glands), e: 伝染性膿痂疹 (impetigo, a bacterial infection). The question"
+      },
+      {
+        "problem_id": "116D9",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 11.753230094909668,
+        "reasoning": "The user is asking medical questions. The first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" answer was e. The second question about \"57歳男性...下水処理場のマンホール内で汚泥を外に搬出する作業...意識喪失\" answer was a,b. Now third question: \"成人大腿ヘルニアで正しいのはどれか。\" Options a-e. Need to select one correct answer.\n\nWe need to interpret \"成人大腿ヘルニア\" likely refers to femoral hernia (femoral hernia) in adults. The statements: a: \"中年男性に多い。\" b: \"嵌頓はまれである。\" c: \"手術治療が原則である。\" d: \"大腿外側部の痛みを伴う。\" e: \"鼠径靱帯の頭側から脱出する。\"\n\nWe need to know whi"
+      },
+      {
+        "problem_id": "116D10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 3.4647490978240967,
+        "reasoning": "The user is asking medical questions. The first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" answer was e. The second question about \"57歳男性...マンホール内で作業中に倒れた\" answer was a,b. The third question: \"早期流産の原因で最も頻度が高いのはどれか\" with options a: 子宮奇形, b: 子宮筋腫, c: 頸管無力症, d: 胚染色体異常, e: 抗リン脂質抗体症候群. The question asks \"最も頻度が高い\" cause of early miscarriage (spontaneous abortion). The most common cause is chromosomal abnormalities, especially aneuploidy. So answer likely d: 胚染色体異常 (embryonic chromosomal abnor"
+      },
+      {
+        "problem_id": "116D11",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c, e",
+        "time": 15.572045803070068,
+        "reasoning": "The user is providing a series of medical questions in Japanese. The first question: \"咽頭痛を認める小児で咽後膿瘍を疑う症状はどれか。2つ選べ。\" Options: a: 難聴 (hearing difficulty), b: 鼻出血 (nosebleed), c: 頻呼吸 (tachypnea?), d: 顔面麻痺 (facial paralysis), e: 嚥下困難 (dysphagia). The question asks which symptoms suggest a peritonsillar abscess? Actually \"咽頭痛\" means sore throat. \"咽後膿瘍\" likely refers to peritonsillar abscess (quinsy) or \"retropharyngeal abscess\"? The phrase \"咽頭痛\" maybe \"pharyngitis\". But \"咽後膿瘍\" is \"retropharyngeal ab"
+      },
+      {
+        "problem_id": "116D12",
+        "prediction": "b,c,d",
+        "gold": "b,c,d",
+        "correct": true,
+        "response": "b,c,d",
+        "time": 29.629607915878296,
+        "reasoning": "The user is asking medical questions. The first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" answer was e. The assistant responded \"e\". That seems correct? Not sure.\n\nNow the next question: about a 57-year-old male collapsed in a manhole, possible cause. The assistant responded \"a,b\". But we need to evaluate correctness? The user then asks a third question: male infertility causes, select three. We need to answer with correct options.\n\nWe must provide answer in Japanese? The user wants \"答"
+      },
+      {
+        "problem_id": "116D13",
+        "prediction": "a,b,c",
+        "gold": "a,b,c",
+        "correct": true,
+        "response": "a,b,c",
+        "time": 5.124434947967529,
+        "reasoning": "The user is asking medical questions. The first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" answer was e. The assistant responded \"e\". Then next question about a 57-year-old male working in a sewage treatment plant, collapsed with colleague also losing consciousness. The question: \"可能性が高いのはどれか。2つ選べ.\" Options a: hypoxia, b: hydrogen sulfide poisoning, c: carbon monoxide poisoning, d: CO2 poisoning, e: nitrous oxide poisoning. The assistant responded \"a,b\". But we need to evaluate correctn"
+      },
+      {
+        "problem_id": "116D14",
+        "prediction": "b,c,d",
+        "gold": "b,c,d",
+        "correct": true,
+        "response": "b,c,d",
+        "time": 6.3128180503845215,
+        "reasoning": "The user is providing a series of medical multiple-choice questions. The assistant must answer with the correct options.\n\nFirst question: \"肺高血圧患者にみられるのはどれか。3つ選べ。\" Options: a: 奇脈, b: 足のむくみ, c: 頸静脈怒張, d: 労作時息切れ, e: II音の肺動脈成分の減弱.\n\nWe need to determine which three are typical findings in pulmonary hypertension (pulmonary arterial hypertension). In pulmonary hypertension, signs include: a) \"奇脈\" (paradoxical pulse? Actually \"奇脈\" means \"pulsus paradoxus\"? Not sure. But in pulmonary hypertension, you ma"
+      },
+      {
+        "problem_id": "116D15",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "a, b, d",
+        "time": 5.225362062454224,
+        "reasoning": "The user is asking medical questions. The first question about \"排尿障害の診断で有用なのはどれか。3つ選べ。\" Options: a: 残尿測定, b: 尿流測定, c: レノグラム, d: 腹部超音波検査, e: 末梢神経伝導検査.\n\nWe need to answer with three letters. The user wants the correct answer. This is a medical question about diagnosing urinary dysfunction (urinary retention, voiding issues). Useful tests: residual urine measurement (post-void residual), uroflowmetry (urine flow measurement), maybe cystourethroscopy? But given options: a residual urine measurement,"
+      },
+      {
+        "problem_id": "116D16",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 15.102663278579712,
+        "reasoning": "We need to answer a medical question. The user gave a scenario: 72-year-old male, lung cancer screening shows chest abnormal shadow; chest X-ray (A) and contrast CT (B) shown. We need to pick which symptom is likely present.\n\nWe don't have images, but typical scenario: lung cancer may cause certain symptoms. The options: a) hoarseness (嗄声), b) arrhythmia, c) dyspnea, d) chest pain (heart region?), e) jugular venous distension.\n\nWe need to infer likely symptom based on typical lung cancer present"
+      },
+      {
+        "problem_id": "116D17",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 7.44346809387207,
+        "reasoning": "We need to answer a medical question. The scenario: 40-year-old appearing male, found on street crouching, says \"I don't know who I am\", no ID. He can talk, speaks Kansai dialect but has no memory of living in Kansai. No trauma, labs normal, imaging normal, EEG normal. He has memory of events after being protected? Actually \"保護されてからの記憶は保持されていた\" means he retains memory after being protected. So likely a case of dissociative fugue? Or transient global amnesia? The question: \"この患者でみられる可能性が最も高い特徴はどれ"
+      },
+      {
+        "problem_id": "116D18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 6.6718909740448,
+        "reasoning": "We need to answer a medical question. The scenario: 77yo male with ventricular tachycardia (VT) presenting, treated with DC cardioversion. No electrolyte abnormalities, no drug triggers, normal echo, no CAD. Considering catheter ablation therapy. The question: \"現時点での薬物療法として用いられないのはどれか。\" So which drug is not used for this situation? The context: For VT, especially stable monomorphic VT in structural heart disease vs idiopathic. After cardioversion, drug therapy includes amiodarone, lidocaine (cla"
+      },
+      {
+        "problem_id": "116D19",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.678980827331543,
+        "reasoning": "We need to answer a medical question. The user asks: \"75歳の男性。呼吸困難を主訴に来院した... ... この患者の初期治療として誤っているのはどれか。\"\n\nWe need to pick which of the options is incorrect for initial treatment. Let's analyze case.\n\nPatient: 75yo male, chronic cough and sputum for 5 years (likely COPD), now acute exacerbation with fever, increased sputum, dyspnea. He is a heavy smoker (30 pack-year? Actually 30 cigarettes per day for 45 years = 1350 pack-years). He has likely COPD exacerbation. SpO2 is low at 87% on room air, "
+      },
+      {
+        "problem_id": "116D20",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 6.514275074005127,
+        "reasoning": "We need to answer a medical question. The case: 32-year-old male with right lower quadrant pain, had appendectomy at age 18. Now presents with RLQ pain, mild fever? Temperature 37.0°C (so normal), WBC 12,400 with neutrophil predominance, CRP 3.6 mg/dL (elevated). CT image not shown but presumably shows something. The question: \"腹部単純CTを別に示す。この画像所見から最も考えられる疾患はどれか。\" So need to infer likely diagnosis based on CT. Options: a) 大腸癌 (colon cancer), b) 便秘症 (constipation), c) 腸結核 (intestinal TB), d) 虚血性腸炎"
+      },
+      {
+        "problem_id": "116D21",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 8.545171976089478,
+        "reasoning": "We need to answer a medical question. The user asks: \"67歳の男性。繰り返す発熱を主訴に来院した... ...この患者の治療経過中に緊急大動脈弁置換術の適応とならないのはどれか.\"\n\nWe need to pick which condition is NOT an indication for emergency aortic valve replacement (AVR) in this patient. The options: a: 弁穿孔の合併 (valve perforation), b: 弁周囲膿瘍の形成 (perivalvular abscess formation), c: 出血性脳梗塞を併発後の昏睡状態 (hemorrhagic cerebral infarction with coma), d: 疣贅が増大し塞栓症がみられる場合 (vegetation growth causing embolism), e: 内科的にコントロールが困難な心不全の出現.\n\nWe need to know which scenar"
+      },
+      {
+        "problem_id": "116D22",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 1.791085958480835,
+        "reasoning": "We need to answer the question. The user asks a medical case: 68yo male with nocturnal vocalizations, aggressive behavior during sleep, no neurological deficits, normal labs and MRI. Likely REM sleep behavior disorder (RBD) where patients act out dreams due to loss of muscle atonia during REM. So answer a: \"レム睡眠行動障害\". The question asks to select one. So answer a.\n\nThus respond with \"a\"."
+      },
+      {
+        "problem_id": "116D23",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 31.664270162582397,
+        "reasoning": "We need to answer a medical question. The user gave a case: 46-year-old woman, incidental lung nodule on chest X-ray. They ask \"本疾患に合併しやすい病態でないのはどれか。\" So they ask which condition is NOT commonly associated with the disease. We need to identify what disease? The case: left lower lung nodule, likely a pulmonary artery aneurysm? Actually need to interpret imaging. The description: \"選択的肺動脈造影（B）と胸部単純CT（C）とを別に示す.\" So they have images not shown. But likely the case is a pulmonary arteriovenous malforma"
+      },
+      {
+        "problem_id": "116D24",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 5.819828033447266,
+        "reasoning": "We need to answer a medical question. The user gave a case: 68yo male with pancreatic tail cancer metastasized to liver, now has back pain likely due to bone metastasis? He wants palliative care at home. The question: \"今後の鎮痛薬による疼痛管理で適切なのはどれか。\" Options a-e. We need to pick one correct answer.\n\nWe need to interpret options in Japanese: a: 貼付薬は使用できない。 (Topical analgesics cannot be used?) b: 疼痛時にのみ投与する。 (Administer only when pain occurs) c: 注射薬から投与を開始する。 (Start with injectable analgesics) d: 鎮痛状況により"
+      },
+      {
+        "problem_id": "116D25",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 6.806358098983765,
+        "reasoning": "We need to answer a medical question. The case: 84yo male, admitted for gastric cancer evaluation. Has subcutaneous hematoma in left forearm that expanded to chest, abdomen, thigh. No prior bleeding history. Family hx unremarkable. Vitals: pulse 110, BP 100/60 (mildly low), anemia signs: Hb 7.2 g/dL, Hct 23% (severe anemia). WBC normal, platelets 330k. Bleeding time 3 min30 sec (normal <7). PT-INR normal at 1.0, APTT prolonged: 70.4 sec (normal ~30). Fibrinogen elevated? Actually fibrinogen is 3"
+      },
+      {
+        "problem_id": "116D26",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 13.987926006317139,
+        "reasoning": "We need to answer a medical question. The user gave a case: 39-year-old man with diplopia (double vision) especially when driving long time, sees center line double. Visual acuity normal, anterior segment and fundus normal. Penlight test with occlusion shows some eye movement pattern \"図のような右眼の動きがみられた。左眼も遮閉により同様の動きを示した。\" So they likely performed a cover test? The description: \"遮閉試験\" (cover test) with penlight. They observed some movement of right eye? The question: \"病態の説明として正しいのはどれか.\" Options:\n\na"
+      },
+      {
+        "problem_id": "116D27",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 8.641437292098999,
+        "reasoning": "We need to answer a medical question. The user asks: \"64歳の男性。陰嚢の腫脹、発赤および疼痛を主訴に来院した。5日前から陰嚢の腫脹と発赤を自覚していたが、2日前から範囲が急速に拡がり疼痛が強くなったため受診した。糖尿病のため内服治療中である。意識は清明。体温38.6℃。脈拍104/分、整。血圧96/57mmHg。呼吸数20/分。触診では陰嚢から会陰、肛門周囲にかけて握雪感がみられる。血液所見：赤血球420万、Hb 12.2g/dL、Ht 36％、白血球15,800、血小板14万。血液生化学所見：総ビリルビン1.0mg/dL、AST 63U/L、ALT 32U/L、LD 302U/L（基準120～245）、γ-GT 47U/L（基準8～50）、CK 290U/L（基準30～140）、尿素窒素25mg/dL、クレアチニン1.0mg/dL、血糖230mg/dL、HbA1c 8.2％（基準4.6～6.2）。陰嚢周囲の所見を別に示す。まず実施すべき検査はどれか。\na: 便培養\nb: 下部消化管内視鏡検査\nc: 持続血糖モニタリング\nd: ガ"
+      },
+      {
+        "problem_id": "116D28",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a",
+        "time": 15.797898054122925,
+        "reasoning": "We need to answer the question. The user is providing a medical exam style question in Japanese.\n\nThe question: \"3歳の男児。居間で咳をし、気持ちの悪そうな顔をしているところを母親に見つけられ、連れられて救急外来を受診した。意識は清明。泣いていない。母親の話では子どもの周りには灰皿とたばこの吸い殻があり、1円玉や10円玉などの硬貨も財布とともに散らばっていたと言う。誤飲に対する処置を判断する情報として有用性が低いのはどれか。\"\n\nWe need to pick which piece of information is least useful for determining management in a child with possible ingestion (maybe foreign body ingestion, or poisoning). The options: a) \"Did you make him vomit?\" (i.e., \"吐かせましたか\" -"
+      },
+      {
+        "problem_id": "116D29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.555818796157837,
+        "reasoning": "We need to answer a medical question. The user is providing a case: 64-year-old male with tongue mass (舌腫瘤) presenting with left side of tongue and pharynx pain a week ago. No significant past history, no smoking, occasional alcohol (beer 350 mL per day once a week). No palpable neck lymph nodes. Biopsy shows squamous cell carcinoma (扁平上皮癌). Imaging: oral cavity endoscopic image A and head/neck contrast MRI B. FDG-PET shows no distant metastasis.\n\nQuestion: \"この患者でまず行うのはどれか。\" Means \"What is the f"
+      },
+      {
+        "problem_id": "116D30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.314877986907959,
+        "reasoning": "We need to answer a medical question. The user gave a case: 62-year-old woman with fever, cough, weight loss, likely TB? The chest X-ray and CT presumably show something. The question: \"来院時の外来診察で最も重要な感染予防策はどれか。\" So which infection control measure is most important? The likely diagnosis: TB (pulmonary tuberculosis) given chronic cough, weight loss, low BMI, coarse crackles. The infection control for TB: use a surgical mask? Actually for TB, need to wear N95 respirator (mask) and place patient in "
+      },
+      {
+        "problem_id": "116D31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 16.572138786315918,
+        "reasoning": "We need to answer a medical question. The user describes a 52-year-old woman with vision loss, tinnitus, headache for three days, decreased visual acuity both eyes. Visual acuities: right eye 0.02 (0.05×+2.5D), left eye 0.02 (0.06×+1.75D). Intraocular pressure normal (~12-13 mmHg). There are images: A (fundus photo), B (fluorescein angiography), C (OCT of macula). The question: \"確定診断に有用な検査はどれか\" (Which test is useful for definitive diagnosis?). Options: a: pupillary light reflex? Actually \"針反応\" m"
+      },
+      {
+        "problem_id": "116D32",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.512985944747925,
+        "reasoning": "We have a user asking a medical question. The user gave a case: 30-year-old male with cough, dyspnea on exertion, recent travel to SE Asia, fine crackles in both lower lung fields. Labs: RBC 4.14 million? Actually RBC count is \"赤血球414万\" which likely means RBC 4.14 million per µL? Hb 12.7 g/dL, Ht 25% (that's low?), WBC 13,700 with neutrophils 92%, monocytes 3%, lymphocytes 5% (neutrophil predominant). Platelets 370k. CRP 0.4 mg/dL (low? normal), β-D-glucan 185 pg/mL (elevated; normal <10). Imagi"
+      },
+      {
+        "problem_id": "116D33",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 7.449702262878418,
+        "reasoning": "We need to answer a medical question. The user gave a case of a 2-month-old female infant with sudden loss of consciousness, seizures, etc. The labs show prolonged PT-INR (4.2), APTT 45.4 sec (slightly high?), low hemoglobin? Actually RBC count 450万, Hb 9.5 g/dL (low), Ht 36%? Actually Hct is 36% which seems normal for infant? The PT-INR high suggests coagulopathy. Also elevated bilirubin (total 11 mg/dL, direct 6.8), high AST/ALT, gamma-GT extremely high (410). The infant has hepatomegaly (live"
+      },
+      {
+        "problem_id": "116D34",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.45146107673645,
+        "reasoning": "We need to answer the medical question. The case: 59-year-old woman with gait disturbance, orthostatic hypotension (BP drop on standing), constipation, urinary incontinence, dysphagia? Actually \"構音障害\" means speech articulation disorder. She has nasal test (nasal finger?) Actually \"鼻指鼻試験\" maybe \"nose-finger-nose test\"? She has dysmetria? The description: \"上肢では鼻指鼻試験で両側の測定障害がみられ、回転運動障害\"? Actually \"鼻指鼻試験\" is a test for cerebellar function. She has dysmetria (cerebellar). Also \"回内回外試験\" maybe pronatio"
+      },
+      {
+        "problem_id": "116D35",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.473963022232056,
+        "reasoning": "We need to answer a medical question. The user asks: \"38歳の女性。咳嗽を主訴に来院した...診断に有用な検査として誤っているのはどれか。\" So which test is NOT useful for diagnosis? The scenario suggests occupational asthma: cough at work, not at home. Likely allergic rhinitis? She has dry cough, triggered by workplace (baker's asthma?). The question: which test is not useful for diagnosis? Options:\n\na: 肺拡散能検査 (DLCO)\nb: 気道過敏性試験 (airway hyperresponsiveness test, methacholine challenge)\nc: 特異的IgE抗体 (specific IgE antibodies)\nd: 気管可逆性試験 (b"
+      },
+      {
+        "problem_id": "116D36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 3.5346832275390625,
+        "reasoning": "We need to answer a medical question. The user asks: \"62歳の女性。右乳房の違和感を主訴に来院した。触診で径約4cmの腫瘤を触知する。腫瘤は表面不整で弾性硬、可動性は不良で圧痛を認めない。乳頭からの分泌物を認めない。マンモグラフィー（内側斜位方向）を別に示す。最も考えられるのはどれか.\"\n\nOptions: a: 乳癌 (breast cancer), b: 乳腺炎 (mastitis), c: 葉状腫瘍, d: 乳腺脂肪壊死 (fat necrosis), e: 乳腺線維腺腫 (fibroadenoma).\n\nWe need to pick the most likely diagnosis based on presentation: 62-year-old woman, a hard irregular mass, non-tender, immobile, no nipple discharge. Likely breast cancer (malignant tumor). So answer a.\n\nThus outpu"
+      },
+      {
+        "problem_id": "116D37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 6.379148960113525,
+        "reasoning": "We need to answer a medical question. The user asks about a 67-year-old man with esophageal squamous cell carcinoma (presumably) in upper thoracic esophagus, treated with radiotherapy and chemotherapy. After treatment he has recurrent pneumonia. The CT images are not provided, but we need to infer likely cause of pneumonia: possibilities include aspiration due to dysphagia (esophageal stricture), tracheoesophageal fistula, mediastinal infection, etc. The question: \"この患者の肺炎の原因となる病態はどれか.\" Options:"
+      },
+      {
+        "problem_id": "116D38",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 3.1274051666259766,
+        "reasoning": "We need to answer a medical question. The scenario: 6-month-old girl, left lower limb not moving, had fever, now pain in left hip. Lab: elevated WBC (12,600), CRP 15 mg/dL high. Gram-positive cocci in hip joint aspirate. Likely septic arthritis of the hip (Staph aureus). The appropriate management: surgical drainage and irrigation (arthrotomy) plus antibiotics. So answer likely \"左股関節切開・洗浄\" (b). The question: \"行うべき処置はどれか.\" Options: a NSAID oral, b left hip joint incision and washout, c both lower"
+      },
+      {
+        "problem_id": "116D39",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 3.2025043964385986,
+        "reasoning": "We need to answer a medical genetics question. The case: 28yo woman with hematuria, bilateral renal cystic disease? She has family history of kidney disease in mother side: mother died from subarachnoid hemorrhage? Actually mother died 3 years ago due to SAH. Brother, maternal grandmother and uncle are on dialysis (renal failure) in adulthood. So likely autosomal dominant polycystic kidney disease (ADPKD). The patient has bilateral enlarged kidneys with multiple cysts. She is 28, presenting with"
+      },
+      {
+        "problem_id": "116D40",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.9830939769744873,
+        "reasoning": "We need to answer a medical question. The case: 53yo male with asthma, poorly controlled, repeated pneumonia, now likely allergic bronchopulmonary aspergillosis (ABPA). The labs: high IgE 2540 IU/mL, eosinophilia (27% eos), positive Aspergillus precipitins, elevated β-D-glucan. So ABPA diagnosis. Treatment: oral corticosteroids (systemic) and possibly antifungal therapy like itraconazole. The answer options: a: cyclosporine, b: cephalosporin, c: high-dose inhaled steroids, d: oral glucocorticoid"
+      },
+      {
+        "problem_id": "116D41",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 7.361896991729736,
+        "reasoning": "We need to answer a medical question. The user gave a case: 52-year-old man, incidental left renal mass found on ultrasound during health check. He is asymptomatic, labs normal except microscopic hematuria (urine: protein negative, glucose negative, ketone negative, occult blood positive). No abnormal findings in sediment. Blood counts normal. CT shows something (not provided), but likely a renal mass. The question: \"治療について適切なのはどれか.\" Options: a: 殺細胞性薬 (maybe \"cytotoxic drug\"? Actually \"殺細胞性薬\" me"
+      },
+      {
+        "problem_id": "116D42",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.8782970905303955,
+        "reasoning": "We need to answer a medical question. The user describes a case: 48-year-old woman with progressive lower limb weakness, some sensory loss below the sternum? Actually \"胸骨下縁から下で温痛覚の低下\" means decreased temperature and pain sensation below the lower edge of sternum? Actually \"胸骨下縁から下で温痛覚の低下\" means decreased pain and temperature sensation below the lower edge of sternum. She has lower limb weakness, hyperreflexia (increased deep tendon reflex), Babinski positive bilaterally. CSF shows elevated cell "
+      },
+      {
+        "problem_id": "116D43",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 3.3207287788391113,
+        "reasoning": "We need to answer the medical question. The scenario: 55-year-old man with fever, palpitations (動悸), recent sore throat a week ago. Now has diffuse thyroid enlargement with right lobe tenderness, low TSH (0.1), elevated FT4 (2.7) indicating hyperthyroidism, CRP high 8.4 mg/dL indicates inflammation. The likely diagnosis: subacute (de Quervain) thyroiditis, also known as de Quervain's thyroiditis or subacute granulomatous thyroiditis (painful, following viral infection). This is \"subacute thyroid"
+      },
+      {
+        "problem_id": "116D44",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 3.7158472537994385,
+        "reasoning": "We need to answer a medical question. The case: 53-year-old woman with rash and fever, skin findings on hands (maybe Gottron's papules?), red rash on neck, upper back, elbows. Lab: elevated LDH (390), ferritin high 875, KL-6 slightly elevated (520), SP-D borderline. Anti-MDA5 antibody positive. This suggests clinically amyopathic dermatomyositis (CADM) with anti-MDA5 associated with rapidly progressive interstitial lung disease. The question: \"最も注意すべき合併症\" which is the most important complication"
+      },
+      {
+        "problem_id": "116D45",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.21985387802124,
+        "reasoning": "We need to answer a medical question. The user asks about a 69-year-old woman with IgA nephropathy, currently on calcium channel blocker for hypertension. She has proteinuria (protein 2+, urinary protein/Cr ratio 1.2 g/g), hematuria, mild eGFR ~63 ml/min/1.73m2 (stage G3a? Actually CKD stage 3a is eGFR 45-59, but she is borderline). She has hypertension controlled? BP 140/70. The question: \"本患者の腎機能悪化を抑制するためにまずすべきなのはどれか.\" So what to do first to prevent progression of renal function decline? In Ig"
+      },
+      {
+        "problem_id": "116D46",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 22.65600895881653,
+        "reasoning": "We need to answer a medical question. The user gave a case: 72-year-old man with sudden severe headache and rapid bilateral visual loss. CT images presumably show something; we need to infer likely diagnosis: maybe subarachnoid hemorrhage? But visual loss suggests perhaps a posterior communicating artery aneurysm causing compression of optic chiasm? Or maybe acute pituitary apoplexy? But the question: \"適切な治療はどれか\" with options a: endovascular treatment, b: decompressive craniotomy? Actually \"血管内治"
+      },
+      {
+        "problem_id": "116D47",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.235290288925171,
+        "reasoning": "We need to answer the medical question. The scenario: 5-month-old boy, constipation for a few days, now decreased feeding (milk intake), mother gave honey recently. Present with drooping eyelids? Actually \"眼瞼下垂\" (ptosis), dilated pupils, delayed light reflex, neck posture difficulty, absent deep tendon reflexes. Suggest botulism (Clostridium botulinum) from honey ingestion in infants causing descending flaccid paralysis, cranial nerve involvement (ptosis), constipation early sign. So answer: c: "
+      },
+      {
+        "problem_id": "116D48",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 18.661614179611206,
+        "reasoning": "We need to answer a medical question. The user describes an 85-year-old male with pneumonia, in hospital, has urinary catheter placed due to poor general condition. He had a night of agitation and was \"concerned\" about the catheter. He has right hip artificial joint, vitals stable. There is external urethral bleeding and no urine in the collection bag. Abdominal CT images are referenced (but not shown). The question: \"この患者にまず行うべき処置として適切なのはどれか.\" Options: a) Insert catheter further (push in), b) B"
+      },
+      {
+        "problem_id": "116D49",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.004514932632446,
+        "reasoning": "We need to answer a medical question. The case: 77yo female, acute confusion, altered mental status, labs show severe liver enzyme elevation (AST 3956, ALT 2824), high bilirubin total 3.2 mg/dL (direct 1.8), elevated LDH, ALP moderately high, gamma-GT very high (686). PT-INR 2.1 indicates coagulopathy. FDP elevated. Amylase slightly high (130). Ammonia 186 µg/dL (high), indicating hepatic encephalopathy. She has HBsAg positive, HBV DNA positive; previously had B infection? Actually prior to lymp"
+      },
+      {
+        "problem_id": "116D50",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.29479193687439,
+        "reasoning": "We need to answer a medical question. The scenario: 77-year-old woman with rheumatoid arthritis on methotrexate (MTX) for 20 years, now presenting with nausea, vomiting, diarrhea, oral mucosal ulceration, mild fever. Labs: anemia (Hb 10), leukopenia WBC 1800 with neutrophils 52% (~936 neutrophils), lymphocytes 35%, platelets 80k (thrombocytopenia). Elevated CRP, elevated LFTs mild ALT, LDH slightly high. PT normal, APTT low? Actually APTT 27.3 sec (normal 32.2) - shortened? D-dimer elevated at 6"
+      },
+      {
+        "problem_id": "116D51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 6.498986005783081,
+        "reasoning": "We need to answer a medical question. The user asks: \"32歳の女性。下痢と腹痛を主訴に来院した... ...この患者の治療で適切でないのはどれか。\"\n\nWe need to pick which treatment is not appropriate. The options: a) 止痢薬投与 (antidiarrheal), b) 食物繊維摂取, c) 麻薬性鎮痛薬投与 (opioid analgesic), d) プロバイオティクス摂取, e) セロトニン5-HT3受容体拮抗薬投与.\n\nWe need to interpret the case: 32-year-old woman with intermittent diarrhea and abdominal pain, appears to be IBS? She has symptoms of IBS-D (irritable bowel syndrome with diarrhea) triggered by stress? The description: epi"
+      },
+      {
+        "problem_id": "116D52",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 6.084105968475342,
+        "reasoning": "We need to answer a medical question. The user gave a case: 48-year-old woman, one pregnancy, presenting with abdominal distension. She has a palpable mass in lower abdomen (elastic soft? \"弾性軟で可動性のない腫瘤\" - elastic soft, non-movable mass). No uterine tenderness. Tumor markers: CA19-9 elevated (87, normal <37), CA125 elevated (235, normal <35). MRI T2 weighted sagittal image presumably shows something. CT chest/abdomen no metastasis. The question: \"この患者でまず行うのはどれか.\" Options: a) 開腹手術 (laparotomy), b)"
+      },
+      {
+        "problem_id": "116D53",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 5.591621160507202,
+        "reasoning": "We need to answer a medical question. The scenario: 51yo male, after ACL reconstruction surgery (knee), postoperative day 3. He experiences chest discomfort and sweating when standing up to use toilet, then nausea, loss of appetite, can't eat lunch. Vitals: T 36.4°C, pulse 84, BP 114/70, RR 18, SpO2 92% on room air. With nasal cannula O2 2L/min, SpO2 improves to 99%. No abnormal heart or lung sounds. Abdomen normal. No wound bleeding. CT chest shown (but not visible to us). The question: \"What s"
+      },
+      {
+        "problem_id": "116D54",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 3.26861310005188,
+        "reasoning": "We need to answer a medical question. The scenario: 21-year-old male, one month facial edema, dyspnea on exertion. No significant past history. Facial and neck swelling, upper limb edema, jugular venous distension (chest wall veins). Biopsy shows mediastinal primary \"精上皮腫\"? Actually \"縦隔原発精上皮腫\" maybe \"thymic carcinoma\"? But likely a mediastinal tumor causing superior vena cava syndrome. The question: \"この患者の症状はどの部位の狭窄によるものか。\" The symptoms: facial edema, neck swelling, upper extremity edema, JVD. T"
+      },
+      {
+        "problem_id": "116D55",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 5.473176002502441,
+        "reasoning": "We need to answer a medical question. The user describes a 54-year-old woman with polycythemia (RBC count high, Hb 19.0 g/dL, Hct 52%). She is obese? BMI: height 153 cm, weight 80 kg => BMI ~34.1 (obese). She has snoring and episodes of apnea (sleep apnea) causing secondary polycythemia due to chronic hypoxia. The question: \"予想される検査所見\" (expected test findings) among options a-e. Options: a: histamine increase, b: vitamin B12 increase, c: JAK2 mutation positive, d: erythropoietin increase, e: Phi"
+      },
+      {
+        "problem_id": "116D56",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 7.492814064025879,
+        "reasoning": "We need to answer a medical question. The user describes a 69-year-old man with skin erythema (rash), fatigue, anorexia for one month. Sister died of a blood disease. Labs: RBC 4.46 million, Hb 14.9 g/dL, Hct 44% (normal), WBC 14,800 (leukocytosis), platelets 200k. Chemistry: total protein 6.9 g/dL, albumin 4.1 (normal), total bilirubin 1.5 mg/dL (slightly elevated), AST 95, ALT 53 (elevated), LDH 1916 U/L (very high). Creatinine 1.4 mg/dL (slightly elevated). Peripheral blood smear May-Giemma s"
+      },
+      {
+        "problem_id": "116D57",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.9673919677734375,
+        "reasoning": "We need to answer a medical question. The user describes an 82-year-old woman with a brown lesion on the right great toe (母趾 = big toe) that has been present for 20 years, but in the last six months it expanded and bleeds spontaneously. No itching or pain. There is a lesion on the toe, no tenderness, and there is an enlarged right inguinal lymph node. The picture presumably shows a lesion; likely it's malignant melanoma (malignant pigmented lesion) given age, location on toe, growth, bleeding, l"
+      },
+      {
+        "problem_id": "116D58",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 8.073549032211304,
+        "reasoning": "We need to answer a medical question. The user asks: \"22歳の女性。発熱と咽頭痛を主訴に来院した。1週間前から咽頭痛があり、鎮痛薬を内服しても治まらず、水分を充分に摂取できないため受診した。両側の口蓋扁桃に白苔の付着を認め、両側の後頸部に圧痛を伴う複数のリンパ節腫大を認める。体温37.8℃。血液所見：白血球11,000（桿状好中球18％、分葉好中球22％、好酸球1％、好塩基球1％、単球3％、リンパ球49％、異型リンパ球6％）。血液生化学所見：AST 105U/L、ALT 125U/L。CRP 10mg/dL。この患者への対応として適切なのはどれか。\na: 補液\nb: 口蓋扁桃摘出術\nc: ペニシリンの投与\nd: 抗ウイルス薬の投与\ne: 抗アレルギー薬の投与\n\nWe need to pick one answer. The scenario: 22yo female with sore throat, white exudate on palatine tonsils (bilateral), tender posterior ce"
+      },
+      {
+        "problem_id": "116D59",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.869765758514404,
+        "reasoning": "We need to answer a medical question about sports concussion management. The scenario: 19yo male, head injury during sport, brief loss of consciousness (LOC) for a few minutes. At initial exam by on-site physician JCS I-3? Actually JCS (Japan Coma Scale) I-3 indicates mild consciousness impairment? Let's recall: JCS categories: I (awake), II (drowsy), III (stupor). But JCS I-3 means \"awake, but confused\"? Actually JCS: 1-digit? Let's recall: The Japan Coma Scale (JCS) is similar to GCS but Japan"
+      },
+      {
+        "problem_id": "116D60",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.5652430057525635,
+        "reasoning": "We need to answer a medical question. The user describes an 11-year-old boy with right shoulder pain, a hard mass in proximal humerus region. Labs show normal except ALP high (566 U/L) indicating bone activity, maybe osteosarcoma? The imaging likely shows a lesion. The question: \"次に行う対応として適切なのはどれか.\" Options: a: antibiotics, b: analgesics, c: cast immobilization, d: tissue biopsy, e: local cooling. For a suspected bone tumor (osteosarcoma) in child with mass, next step is biopsy to confirm diagno"
+      },
+      {
+        "problem_id": "116D61",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.851244211196899,
+        "reasoning": "We need to answer a medical question. The user asks: \"23歳の女性（0妊0産）。初めて受けた子宮頸がん検診で異常を指摘された。自覚症状はない。身長158cm、体重50kg。体温36.2℃。脈拍84/分、整。血圧106/66mmHg。呼吸数16/分。内診で子宮は正常大で可動性良好。両側付属器に腫瘤を触知しない。子宮頸部擦過細胞診像（A）とコルポスコピィ像（B）とを別に示す。診断確定のために必要な検査はどれか。\na: 子宮鏡\nb: 膀胱鏡\nc: 子宮内膜細胞診\nd: 下部消化管内視鏡\ne: 子宮頸部狙い組織診\n\nWe need to pick one answer. The question: \"診断確定のために必要な検査はどれか\" (Which test is needed to confirm diagnosis). The scenario: 23-year-old woman, first cervical cancer screening shows abnormal. Pap smear (子宮頸部擦過細胞診) and co"
+      },
+      {
+        "problem_id": "116D62",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 3.881659984588623,
+        "reasoning": "We need to answer a medical question. The user asks: \"54歳の男性。糖尿病の合併症の精査を目的に来院した... This patient with diabetes, some neuropathy signs (decreased ankle reflex), retinopathy. They ask: \"この患者で糖尿病性腎症と診断するのに必要な検査はどれか。\" Options: a: 腎臓超音波検査, b: 血中クレアチニンの測定, c: 血中シスタチンCの測定, d: 尿中アルブミン/クレアチニン比の測定, e: 尿中β2-マイクログロブリン/クレアチニン比の測定. The question: \"Which test is required to diagnose diabetic nephropathy?\" Typically, diagnosis of diabetic nephropathy involves detection of albuminuria (microalbuminuria) measured b"
+      },
+      {
+        "problem_id": "116D63",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 6.678815126419067,
+        "reasoning": "We need to answer a medical question. The user asks: \"28歳の男性。鼻閉と鼻漏を主訴に来院した。8年前から通年性に鼻閉、水様性鼻汁およびくしゃみを認めていた。体温36.0℃。鼻粘膜は蒸白で浮腫状、総鼻道は閉塞していた。副鼻腔エックス線写真で上顎洞粘膜の肥厚を認めた。治療として適切でないのはどれか.\"\n\nWe need to pick which treatment is not appropriate. The options: a: 抗菌薬内服 (oral antibiotics), b: 減感作療法 (immunotherapy?), c: 鼻内レーザー手術 (nasal laser surgery), d: 抗ヒスタミン薬内服 (oral antihistamine), e: 副腎皮質ステロイド点鼻 (intranasal corticosteroid).\n\nWe need to interpret the case: 28-year-old male with chronic rhinitis symptoms (nasal"
+      },
+      {
+        "problem_id": "116D64",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.9133620262146,
+        "reasoning": "We need to answer a medical question. The user asks: \"24歳の女性。持続する発熱を主訴に来院した... ...血液所見: RBC 392万? Actually RBC count? Hb 9.8 g/dL, Ht 30%, WBC 14,300, platelets 420k. CRP 8.0 mg/dL. There is a tender area in right neck along the carotid artery with bruit. So likely \"temporal arteritis\"? No, younger female 24. The symptoms: persistent fever, mild anemia, elevated WBC and CRP. There is a tender area in right neck along the carotid artery with bruit, suggests \"carotid artery inflammation\"? Could be"
+      },
+      {
+        "problem_id": "116D65",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 15.308685064315796,
+        "reasoning": "We need to answer a medical question. The user gave a case description: 21-year-old male with fever, fatigue, signs of hemolysis? Let's parse details.\n\nSymptoms: Fever, malaise. Past week had fever and sore throat; got antipyretic but fever persisted. Now fatigue, worsening. Vitals: pulse 112, BP108/58. Conjunctiva appears anemic (pale) with scleral icterus (yellow). Pharynx erythema. Bilateral cervical lymphadenopathy, tender nodes 1.5 cm. Cardiac: Levine grade 2/6 systolic ejection murmur at r"
+      },
+      {
+        "problem_id": "116D66",
+        "prediction": "b,d",
+        "gold": "b,d",
+        "correct": true,
+        "response": "b, d",
+        "time": 12.151601314544678,
+        "reasoning": "We need to answer a medical question. The user asks about a 38-year-old pregnant woman with twin pregnancy (monochorionic diamniotic? Actually \"一絨毛膜二羊膜双胎\" means \"monochorionic diamniotic twin\"? Actually \"一絨毛膜二羊膜双胎\" means \"single chorionic membrane, two amniotic membranes\"? Wait: \"一絨毛膜二羊膜双胎\" means \"monochorionic diamniotic twin\". So it's a monochorionic twin pregnancy. The scenario suggests Twin-to-Twin Transfusion Syndrome (TTTS). They ask: \"双胎間輸血症候群の診断のために必要な情報はどれか。2つ選べ.\"\n\nWe need to select whi"
+      },
+      {
+        "problem_id": "116D67",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c, e",
+        "time": 4.002012014389038,
+        "reasoning": "We need to answer the question. The user asks about a 3-year-old boy with multi-hair (hirsutism?) and weight gain, central obesity? Actually \"多毛と体重増加\" (hirsutism and weight gain) with Cushingoid features? The description: \"満月様顔貌と中心性肥満\" (moon face and central obesity) suggests Cushing syndrome. The question: \"診断に必要なホルモン検査はどれか。2つ選べ.\" So which hormone tests needed for diagnosing? For Cushing syndrome, need cortisol levels (e.g., serum cortisol, urinary free cortisol), ACTH to differentiate ACTH-dep"
+      },
+      {
+        "problem_id": "116D68",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e",
+        "time": 7.680635929107666,
+        "reasoning": "We need to answer the question. The user asks a medical question about HIV infection confirmation test. They ask: \"HIV感染の確定に必要な検査はどれか。2つ選べ.\"\n\nOptions: a: 咽頭培養 (throat culture), b: 血液培養, c: 血中HIV RNA定量検査, d: CD4陽性Tリンパ球数測定, e: Western blot法による抗HIV抗体測定.\n\nWe need to select two tests required for confirming HIV infection. Typically, initial screening is ELISA (HIV antibody/antigen test), then confirmatory test is Western blot or immunoblot. Also HIV RNA PCR can be used for early detection, but confir"
+      },
+      {
+        "problem_id": "116D69",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 5.377075910568237,
+        "reasoning": "We need to answer a medical question. The user asks about a 71-year-old male with pneumonia? Let's parse details.\n\nPatient: 71yo man, fever, appetite loss. He had water from rainwater stored? Possibly Legionella infection? The scenario: \"1週間前に貯めていた雨水で庭に水をまいた\" - he used stored rainwater to water garden. Then developed fever, etc. The presentation: high fever 39.1°C, cough? Right lower lung infiltration on CXR, coarse crackles in right lower lobe. Labs: WBC 18,600 with neutrophil predominance (93%"
+      },
+      {
+        "problem_id": "116D70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b, e",
+        "time": 6.338314056396484,
+        "reasoning": "We need to answer a medical question. The user asks: \"66歳の女性。不眠を主訴に来院した。3か月前から寝付きが悪く、一度眠っても夜中に2、3回目が覚めるため受診した。知能低下や抑うつ感は認めず、食欲にも異常を認めないため、ベンゾジアゼピン系睡眠薬を処方した。患者に対する説明として適切なのはどれか。2つ選べ。\na: 「寒がりになることがあります」\nb: 「足もとがふらつむことがあります」\nc: 「歪ぐきが腫れてくることがあります」\nd: 「胸がはり乳汁が出ることです」\ne: 「飲み続けた後、急に中止すると不安感が出ることがあります」\"\n\nWe need to select two correct statements about side effects or considerations for benzodiazepine hypnotics. The question: \"患者に対する説明として適切なのはどれか\" (Which explanations are appropriate for the patient). The "
+      },
+      {
+        "problem_id": "116D71",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "a,b",
+        "time": 9.853540182113647,
+        "reasoning": "We need to answer a medical question. The user describes a case: 47-year-old male, fell down stairs, brought to ER. JCS II-10 (Japan Coma Scale? I think JCS 2-10 indicates some level of consciousness). Vitals stable. CT images are described but not shown in text. The question: \"診断はどれか。2つ選べ。\" Options: a: 頭蓋骨骨折 (skull fracture), b: 急性硬膜外血腫 (acute epidural hematoma), c: 急性硬膜下血腫 (acute subdural hematoma), d: 外傷性脳内血腫 (traumatic intracerebral hemorrhage), e: びまん性軸索損傷 (diffuse axonal injury).\n\nWe need "
+      },
+      {
+        "problem_id": "116D72",
+        "prediction": "a,b,e",
+        "gold": "a,b,e",
+        "correct": true,
+        "response": "a,b,e",
+        "time": 15.56663727760315,
+        "reasoning": "We need to answer a medical question. The user gave a case: 66yo male with hematuria, likely bladder tumor? They mention ultrasound (A) and cystoscopy (B) images not shown. The question: \"本患者に対する経尿道的手術治療で起こりうる合併症はどれか。3つ選べ.\" So they ask about complications of transurethral surgery (like TURP? Actually \"経尿道的手術\" means endoscopic transurethral surgery, likely for bladder tumor (transurethral resection of bladder tumor - TURBT) or transurethral resection of prostate (TURP). The case: hematuria, likel"
+      },
+      {
+        "problem_id": "116D73",
+        "prediction": "a,b,e",
+        "gold": "a,b,e",
+        "correct": true,
+        "response": "a, b, e",
+        "time": 6.620550870895386,
+        "reasoning": "We need to answer a medical question. The user describes a 76-year-old male with upper abdominal pain, mild after meals for 2 months. Labs: RBC 3.98 million? Actually RBC count is 398万 (i.e., 3.98 million), Hb 12.8 g/dL, WBC 8100, platelets 280k. LFT: total bilirubin 1.4 mg/dL (slightly high? normal up to ~1.2), AST 80, ALT 104 (elevated), ALP 152 (high), amylase 180 (slightly high). BUN 12, Cr 0.6 normal. Endoscopic view of duodenum (image not provided) and biopsy H&E shown. Also ultrasound sho"
+      },
+      {
+        "problem_id": "116D74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "a,b,d",
+        "time": 7.46068000793457,
+        "reasoning": "We need to answer a medical question. The user gave a case of a 75-year-old woman with knee pain, likely osteoarthritis? Let's parse details.\n\nPatient: 75yo female, bilateral knee pain for 6 months, no trauma. Pain on walking >15 min, difficulty climbing stairs. BMI 30.3 (obese). Physical exam: no swelling, internal joint line tenderness (medial compartment), ROM limited extension -10° on right, -5° left. X-ray presumably shows osteoarthritis changes? Likely diagnosis: knee OA (medial compartmen"
+      },
+      {
+        "problem_id": "116D75",
+        "prediction": "a,b,e",
+        "gold": "a,b,e",
+        "correct": true,
+        "response": "a, b, e",
+        "time": 9.957496881484985,
+        "reasoning": "We need to answer a medical question. The user asks: \"72歳の女性。貧血を主訴に来院した... ...下部消化管内視鏡検査で腫瘍があり、腺癌と診断。腹部造影CT検査を予定した。この患者の手術適応を判断するために腹部造影CTで確認すべき所見はどれか。3つ選べ.\"\n\nWe need to select three items from a-e: a: 腹水, b: 肝転移, c: 腸管癒着, d: 内臓脂肪量, e: リンパ節腫大.\n\nWe need to think about surgical indication for rectal cancer? The tumor is at 45 cm from anal verge, which is in the lower rectum? Actually colon length: The anal verge to about 15 cm is rectum. So 45 cm from anal margin? Wait \"肛門縁から約45cmに腫瘍\" means distan"
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。",
+    "english_strict": "You are a medical expert. Answer the multiple-choice question.\nOutput ONLY the answer letter(s) (a,b,c,d,e). No explanation. No reasoning. No analysis.\nIf multiple answers: separate with comma. Example: a,c\nDo not write anything else.",
+    "english_answer_first": "You are a medical doctor. Answer the medical question.\nFIRST LINE: answer letter(s) only (a,b,c,d,e). Example: b or a,c\nSECOND LINE onwards: brief explanation (optional, max 3 sentences).\nNo self-critique. No debate. One best answer only. Stop after answering."
+  }
+}

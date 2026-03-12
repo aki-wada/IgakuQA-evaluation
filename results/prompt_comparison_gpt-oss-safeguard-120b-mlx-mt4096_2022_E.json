@@ -1,0 +1,479 @@
+{
+  "timestamp": "2026-03-06T00:08:58.813386",
+  "model": "gpt-oss-safeguard-120b-mlx",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 50,
+      "correct": 41,
+      "accuracy": 0.82,
+      "avg_time": 8.21142493724823,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116E1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.018750905990601,
+        "reasoning": "We have a conversation. The user is providing medical questions in Japanese, asking to select answer(s) from options.\n\nFirst question: \"血痰の原因を検索するうえで優先度が低いのはどれか。\" Means \"In searching for the cause of blood-tinged sputum, which is lowest priority?\" Options: a) 喀痰細胞診 (sputum cytology), b) 内服薬の確認 (checking oral medications), c) 呼吸機能検査 (respiratory function test), d) 喀痰抗酸菌検査 (sputum acid-fast bacilli test), e) 胸部エックス線写真 (chest X-ray).\n\nWe need to pick the one with lowest priority for investigating c"
+      },
+      {
+        "problem_id": "116E2",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 3.6489949226379395,
+        "reasoning": "We need to answer a medical ethics question. The user asks: \"医師の行動として適切なのはどれか。\" Options a-e. We need to pick which is appropriate.\n\nLet's analyze each option:\n\na: \"診断のため本人の同意なく患者の家系を調べた。\" That is investigating family history without consent. Not appropriate.\n\nb: \"診療の内容を患者の実名を含めてSNSに投稿した。\" Posting patient info publicly violates confidentiality. Not appropriate.\n\nc: \"検体の血液が余ったので本人の同意なく遺伝子配列を解析した。\" Using leftover blood for genetic analysis without consent is not appropriate.\n\nd: \"学習のため本人の同意なく患者の皮膚所"
+      },
+      {
+        "problem_id": "116E3",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.2621190547943115,
+        "reasoning": "We need to answer a medical question. The user asks: \"問題: 径2cmのリンパ節で癌の転移よりも炎症性の腫大を疑うのはどれか。 a: 硬い。 b: 圧痛を伴う。 c: 可動性が乏しい。 d: 鎖骨上窩にある。 e: 辺縁が不整である。 1個選んで答えてください.\"\n\nWe need to pick which feature suggests inflammatory lymphadenopathy rather than metastatic cancer. In clinical exam, features of reactive (inflammatory) lymph nodes: tender (painful), soft, mobile, well-defined edges. Metastatic nodes are hard, fixed, non-tender, irregular margins. So \"圧痛を伴う\" (tender on pressure) suggests inflammatory. A"
+      },
+      {
+        "problem_id": "116E4",
+        "prediction": "b,d",
+        "gold": "d",
+        "correct": false,
+        "response": "b,d  \nd",
+        "time": 25.965802907943726,
+        "reasoning": "The user is providing a series of medical questions in Japanese. The assistant must answer with the correct options.\n\nFirst question: \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか。\" Options: a: 研究の目的, b: 同意の自由, c: 匿名化の方法, d: 参加による不利益, e: 研究成果還元の保証. The answer given earlier was \"e\". That seems plausible: research participants must be informed about purpose, consent freedom, anonymity method, potential disadvantages. But guarantee of returning research results may not be required? So answer e.\n\nSecond quest"
+      },
+      {
+        "problem_id": "116E5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 8.334963083267212,
+        "reasoning": "We need to answer the question. The user is providing a medical ethics / research design scenario: \"外来を受診する全身性エリテマトーデス患者を対象に、診療内容と生活の質〈QOL〉の関係を明らかにするための研究を行いたい。患者が外来を受診する際、5分程度で回答できる無記名アンケートの実施を考えている。採血など侵襲のある行為は伴わない。誤っているのはどれか.\"\n\nOptions a-e. We need to pick the one that is incorrect (i.e., \"誤っているのはどれか\").\n\nWe need to consider each statement regarding ethical considerations for a questionnaire study with no invasive procedures. The question: \"外来を受診する全身性エリテマトーデス患者を対象に、診療内容と生活の質〈QOL〉の関係を明らかにするための研"
+      },
+      {
+        "problem_id": "116E6",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.9908318519592285,
+        "reasoning": "We need to answer a medical question. The user asks: \"腹部診察所見と疾患の組合せで正しいのはどれか。\" Options a-e. We need to pick the correct one.\n\nWe must analyze each combination:\n\na: \"筋性防御 --------- 急性膀胱炎\". Muscle guarding (muscle defense) is a sign of peritoneal irritation, often in acute abdomen like appendicitis, perforated ulcer, etc. Acute cystitis (bladder infection) typically not cause peritoneal signs; muscle guarding is not typical. So a likely incorrect.\n\nb: \"Murphy徴候 --------- 急性胆嚢炎\". Murphy's sign is p"
+      },
+      {
+        "problem_id": "116E7",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 3.692081928253174,
+        "reasoning": "The user is asking medical questions. The first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" answer was e. The second question about \"57歳男性...マンホール内で作業...意識喪失\" answer was a,b. The third question: \"正常の胎児循環において最も酸素分圧の高い血液が流れている部位はどれか\". Options: a: 臍静脈 (umbilical vein), b: 肺静脈 (pulmonary vein), c: 動脈管 (ductus arteriosus), d: 上大静脈 (superior vena cava), e: 内腸骨動脈 (internal iliac artery). In fetal circulation, the highest oxygen partial pressure is in blood returning from placenta via umbilical "
+      },
+      {
+        "problem_id": "116E8",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 6.346466064453125,
+        "reasoning": "We need to answer a medical question. The user asks: \"ショックの原因と治療薬の組合せで正しいのはどれか。\" Options a-e. We need to pick the correct combination.\n\nWe must analyze each option:\n\nShock types and appropriate drug treatments. The question likely about \"shock\" categories: septic shock, hypovolemic shock (massive hemorrhage), cardiogenic shock, obstructive shock, anaphylactic shock. The drug choices: norepinephrine (noradrenaline), heparin, glucose, amrinone? Actually \"アミノフィリン\" maybe \"amino phenyl\"? Not sure. \"リ"
+      },
+      {
+        "problem_id": "116E9",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 47.50381803512573,
+        "reasoning": "We need to answer a medical question. The user asks: \"地域医療構想で用いられる病床機能区分に含まれないのはどれか。\" Options a: 高度急性期, b: 急性期, c: 亜急性期, d: 回復期, e: 慢性期. We need to pick which is NOT included in the classification used for \"地域医療構想\" (regional medical care plan) bed function categories. The classification likely includes \"急性期\", \"回復期\", \"慢性期\"? Actually, I need recall Japanese classification of hospital functions: In Japan's \"地域医療構想\" (Regional Medical Care Plan), they categorize hospital beds into categories: acute c"
+      },
+      {
+        "problem_id": "116E10",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 24.62163209915161,
+        "reasoning": "We need to answer a medical question. The user asks: \"妊娠高血圧症候群の病型分類に含まれないのはどれか。\" Options: a: 妊娠高血圧, b: 妊娠蛋白尿, c: 高血圧合併妊娠, d: 妊娠高血圧腎症, e: 加重型妊娠高血圧腎症. The question asks which is NOT included in the classification of \"妊娠高血圧症候群\" (gestational hypertension syndrome) disease type classification. We need to know classification of hypertensive disorders in pregnancy: According to Japanese guidelines, categories include:\n\n- 妊娠高血圧（妊娠誘発性高血圧）: hypertension after 20 weeks without proteinuria.\n- 妊娠中毒症 (pre-ecl"
+      },
+      {
+        "problem_id": "116E11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 3.935681104660034,
+        "reasoning": "We have a conversation. The user is providing medical questions in Japanese, asking for answer choices.\n\nFirst question: \"周術期の肺塞栓症に対する予防法として正しいのはどれか。\" Means \"Which of the following is correct for prevention of perioperative pulmonary embolism?\" Options: a: absolute fasting? Actually \"絶飲食\" means NPO (nothing by mouth). b: long-term bed rest. c: oxygen therapy. d: urinary catheter placement. e: elastic stocking use.\n\nWe need to pick correct prevention method for perioperative pulmonary embolism (P"
+      },
+      {
+        "problem_id": "116E12",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "a",
+        "time": 7.830548286437988,
+        "reasoning": "We have a user asking a medical question about emergency airway management, with images presumably showing neck anatomy. The question: \"正面および側面の頸部写真を別に示す。緊急気道確保時に穿刺あるいは切開するのに最も適した部位はどれか。\" Options a: ①, b: ②, c: ③, d: ④, e: ⑤. The user wants to select one answer.\n\nWe have no images. We need to interpret typical emergency airway: cricothyrotomy (cricothyroid membrane) is the recommended site for emergency surgical airway. The typical location: between thyroid cartilage and cricoid cartilage, at th"
+      },
+      {
+        "problem_id": "116E13",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 26.546809196472168,
+        "reasoning": "The user is providing a series of medical questions. The assistant must answer with the correct options.\n\nFirst question: \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか。\" The answer given earlier was \"e\" (研究成果還元の保証). That seems plausible: In informed consent for human genome research, you need to explain purpose, voluntary consent, anonymity methods, potential disadvantages. But guarantee of returning results may not be required? So answer e.\n\nSecond question: \"57歳の男性。下水処理場のマンホール内で汚泥を外に搬出する作業を行っていたが、突然意識を失"
+      },
+      {
+        "problem_id": "116E14",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.5855860710144043,
+        "reasoning": "We need to answer a medical question. The user asks: \"ある疾患に対する感度84％、特異度96％の検査の陽性尤度比はどれか。\" They provide options a:8, b:16, c:21, d:32, e:40. We need to compute positive likelihood ratio (LR+). LR+ = sensitivity / (1 - specificity) = 0.84 / (1 - 0.96) = 0.84 / 0.04 = 21. So answer is c:21.\n\nThus output \"c\". The user wants one answer. Provide just the letter? In previous responses, they gave answer \"e\" for first question and \"a,b\" for second. So we output \"c\"."
+      },
+      {
+        "problem_id": "116E15",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.570044040679932,
+        "reasoning": "We need to answer a medical question. The user asks: \"疾患と聴診所見の組合せで正しいのはどれか。\" So which disease and auscultation finding combination is correct? Options a-e. We need to pick one correct answer.\n\nLet's analyze each:\n\na: COPD --------- stridor. COPD (chronic obstructive pulmonary disease) typical auscultation findings: wheezes, rhonchi, decreased breath sounds, maybe prolonged expiration. Stridor is high-pitched inspiratory sound typical of upper airway obstruction (e.g., laryngeal, tracheal). Not t"
+      },
+      {
+        "problem_id": "116E16",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "a",
+        "time": 3.260066032409668,
+        "reasoning": "The user is providing a series of medical exam questions in Japanese. The first question: \"患者満足度を調査対象項目とするのはどれか。\" Options: a: 患者調査, b: 受療行動調査, c: 病院機能評価, d: 医療事故調査制度, e: 産科医療補償制度. The question asks which is the target item for patient satisfaction survey? Likely \"患者調査\" (patient survey) or \"受療行動調査\"? The phrase \"患者満足度を調査対象項目とするのはどれか\" means which of the following includes patient satisfaction as a survey target item. Likely \"患者調査\" (patient survey) is about patient satisfaction. But also \"受療行動調査\" mi"
+      },
+      {
+        "problem_id": "116E17",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.582898139953613,
+        "reasoning": "The user is asking a medical question. The conversation: The user gave a series of questions in Japanese about medical topics, presumably multiple-choice. The assistant responded with answers: For the first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" the answer was \"e\". Then second question about a 57-year-old male in a manhole, possible exposures: answer \"a,b\". Now third question about pediatric spastic paralysis disease. The user asks: \"小児で痙性麻痺を生じる疾患はどれか。 a: 脳性麻痺 b: ボツリヌス症 c: 脊髄性筋萎縮症 d"
+      },
+      {
+        "problem_id": "116E18",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 6.1893908977508545,
+        "reasoning": "We need to answer a multiple-choice question about adult vaccine intramuscular injection. The question: \"成人へのワクチンの筋肉注射について適切なのはどれか。\" Options: a: 注射針は18Gを使用する。 b: 接種後は接種部位をよく揉む。 c: 血液逆流を確認後に薬液を注入する。 d: 注射針は皮膚に対し直角に刺入する。 e: 接種後は5分間観察して帰宅を許可する。\n\nWe need to pick the correct one. Let's analyze typical guidelines for intramuscular injection of vaccines in adults.\n\nStandard practice: Use a needle gauge appropriate to the site and viscosity. For adult IM injection, typical needle length 1-1.5 inches (25"
+      },
+      {
+        "problem_id": "116E19",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 3.2969589233398438,
+        "reasoning": "The user is asking medical questions. The first question about \"ヒトゲノム・遺伝子解析研究の被験者に対する説明で必須でないのはどれか\" answer was e (research results return guarantee). The second question about \"57歳の男性... sudden loss of consciousness in a manhole, possible cause\" answer was a,b (oxygen deficiency and hydrogen sulfide poisoning). The third question: \"静脈採血の合併症として最も起こる可能性が低いのはどれか.\" Options a: allergic reaction to disinfectant, b: vasovagal reflex, c: rhabdomyolysis (横紋筋融解症), d: nerve injury, e: subcutaneous hematoma"
+      },
+      {
+        "problem_id": "116E20",
+        "prediction": "d",
+        "gold": "b",
+        "correct": false,
+        "response": "d",
+        "time": 14.150819063186646,
+        "reasoning": "We need to answer a multiple-choice question about Japanese labor safety law \"健康の保持増進\" measures. The question: \"労働安全衛生法に規定される健康の保持増進のための措置について誤りはどれか。\" So which statement is incorrect about measures for health maintenance and promotion under the Occupational Safety and Health Act.\n\nOptions:\na: うつ症や自殺の予防が目的に含まれる。\nb: 適用となるのは常時50人以上の事業場である。\nc: 脳血管・心臓疾患のリスク管理として重要である。\nd: 時間外労働が月80時間超の労働者は希望により面接指導が受けられる。\ne: 事業者は過重労働者に対し医師による面接指導の実施が義務づけられている。\n\nWe need to pick the incorrect statement. Let's recall Jap"
+      },
+      {
+        "problem_id": "116E21",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 7.278632879257202,
+        "reasoning": "We need to answer the question. The user asks: \"一過性の意識障害が生じた場合、Adams-Stokes症候群を疑う病歴はどれか。\" Options a-e. Choose one.\n\nWe need to know about Adams-Stokes syndrome (also known as Stokes-Adams attack) which is a transient loss of consciousness due to sudden, temporary arrhythmia (e.g., complete heart block) causing cerebral hypoperfusion. Typically presents with sudden syncope, brief loss of consciousness, sometimes preceded by palpitations or chest pain. The key is that after a brief loss of conscio"
+      },
+      {
+        "problem_id": "116E22",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.294628858566284,
+        "reasoning": "The user is providing a series of medical questions in Japanese. The assistant must answer with the correct option(s) as per instructions: \"あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。\" The user gave three questions. The first answer was \"e\". The second answer: \"a,b\". Now third question: \"手根管症候群の診断に有用なのはどれか。 a: 脳波検査 b: 針筋電図検査 c: 脳脊髄液検査 d: 末梢神経伝導検査 e: 反復誘発筋電図検査\". The correct answer for diagnosing carpal tunnel syndrome is nerve conduction studies (末梢神経伝導検査) and possibly EMG. The best answer is \"d: 末梢神"
+      },
+      {
+        "problem_id": "116E23",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.556786060333252,
+        "reasoning": "We need to answer a multiple-choice question about medical interview. The question: \"医療面接について誤っているのはどれか。\" Means which statement about medical interview is incorrect. Options a-e.\n\nWe need to pick one that is wrong. Let's analyze each statement.\n\na: \"非言語的コミュニケーションは医療情報の収集に必要である。\" Nonverbal communication is needed for gathering medical information. That seems true; nonverbal cues can provide info.\n\nb: \"感情面に対応した応答は信頼関係の構築のために必要である。\" Responding to emotional aspects is needed for trust. True.\n\nc: \"シス"
+      },
+      {
+        "problem_id": "116E24",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.6091227531433105,
+        "reasoning": "The user is providing a series of medical questions in Japanese. The assistant must answer with the correct choice(s). The first question: \"尿閉の原疾患として正しいのはどれか。\" Means \"Which of the following is a primary disease causing urinary retention?\" Options: a: urethral stricture (尿道下裂? Actually \"尿道狭窄\"? The term \"尿道下裂\" maybe \"urethral stricture\"? But \"尿道下裂\" might be \"Urethral hypospadias\"? Actually \"尿道下裂\" is \"urethral meatus? Not sure. But typical causes of urinary retention: prostatic hypertrophy (BPH), u"
+      },
+      {
+        "problem_id": "116E25",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "d",
+        "time": 6.399417161941528,
+        "reasoning": "The user is asking a medical question. The conversation: The user gave a problem about \"アナフィラキシーの患者に対する病歴聴取で最も必要性が低いのはどれか。\" They ask to select one answer. The assistant must respond with a single letter (a, b, c, d, e) that is the answer. The user wants a single answer.\n\nWe need to determine which of those options is least necessary for history taking in anaphylaxis patient. The question: \"アナフィラキシーの患者に対する病歴聴取で最も必要性が低いのはどれか。\" Means \"In taking a medical history for a patient with anaphylaxis, whic"
+      },
+      {
+        "problem_id": "116E26",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 6.2634618282318115,
+        "reasoning": "We need to answer a medical question. The user asks: \"76歳の男性。失神を主訴に来院した。2年前に持続性心房細動と診断され、抗凝固薬が開始されている。その他の投薬はされていない。最近1か月の間に2度失神して、顔面を強打するというエピソードがあった。Holter心電図を施行したところ、最大心拍数112/分であり、ふらつきを伴う最大6.4秒のR-R間隔を認めた。適切な方針はどれか。\"\n\nWe need to pick one answer from a-e. The scenario: 76yo male with syncope, known persistent atrial fibrillation on anticoagulation. Holter shows maximum HR 112/min and longest RR interval of 6.4 seconds with presyncope? That suggests bradyarrhythmia? Actually RR interval of 6.4 s"
+      },
+      {
+        "problem_id": "116E27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 3.4858460426330566,
+        "reasoning": "We need to answer a medical question. The user asks: \"60歳の男性。動悸と眼前暗黒感を主訴に来院した。体温36.0℃。脈拍32/分、不整。血圧82/5... 呼吸数14/分。SpO2 98％（room air）。病態と関連する可能性が最も高い検査所見はどれか。 a: Na 130, b: K 7.0, c: Cl 92, d: Ca8.0, e: P5.0.\"\n\nInterpretation: The patient is a 60-year-old male with palpitations (動悸) and visual darkening (眼前暗黒感), bradycardia 32/min irregular, hypotension 82/50 mmHg. Likely severe bradyarrhythmia maybe due to hyperkalemia? Hyperkalemia can cause bradycardia, arrhythmias. The labs: K 7.0 mEq/L is hi"
+      },
+      {
+        "problem_id": "116E28",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 12.37136721611023,
+        "reasoning": "We need to answer a medical question. The user asks: \"70歳の男性。咳嗽と嘔吐を主訴に来院した。5日前から発熱と咳嗽を認めていたが、昨日から食事が摂れなくなり胃液を嘔吐している。今朝から反応が乏しくなった。2年前から脳梗塞による左片麻痺がある。意識レベルはJCS II-10。体温38.2℃。脈拍108/分、整。血圧72/42mmHg。呼吸数20/分。SpO2 94％（room air）。四肢は温かい。心音に異常を認めない。右胸部にcoarse crackles を聴取する。上腹部はやや膨隆している。微生物検査用に血液と喀痰を採取し、末梢静脈から輸液を開始した。次に行う対応として適切なのはどれか。\n\nOptions:\na: 輸血\nb: 気管挿管 (intubation)\nc: 経鼻胃管挿入 (nasogastric tube insertion)\nd: ヘパリン投与 (heparin administration)\ne: プロプラノロール投与 (propranolol)\n\nWe need to pick the appropriate"
+      },
+      {
+        "problem_id": "116E29",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.770142078399658,
+        "reasoning": "We need to answer a medical question. The case: 50yo female, abdominal pain and vomiting after eating grilled meat (maybe gallbladder disease). Right upper quadrant pain worsened on deep inspiration, \"Murphy's sign\"? The CT presumably shows something. We need to interpret likely diagnosis among options: acute cholangitis, acute cholecystitis, gallbladder adenomyomatosis (gallbladder adenomyosis?), gallbladder torsion, chronic cholecystitis.\n\nSymptoms: RUQ pain, fever? She has mild fever 37.8°C, "
+      },
+      {
+        "problem_id": "116E30",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.249433994293213,
+        "reasoning": "We need to answer a medical question. The user asks: \"3歳の女児。全身けいれんが持続するため救急車で搬入された。昨晩から38℃台の発熱が持続している。食事の摂取は少ないが水分の摂取はできている。嘔吐や下痢はない。今朝、全身けいれんがはじまり約15分間持続しているため母親が救急車を要請した。来院時も全身けいれんが持続しており、チアノーゼを認める。この児に行うべき処置として優先度が低いのはどれか。\"\n\nWe need to pick which of the listed interventions is lowest priority. Options: a) 酸素投与 (oxygen administration), b) 気道確保 (airway securing), c) 静脈路確保 (IV line), d) 抗けいれん薬投与 (anticonvulsant administration), e) 尿道カテーテル挿入 (urinary catheter insertion).\n\nIn a child with status e"
+      },
+      {
+        "problem_id": "116E31",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 3.053961992263794,
+        "reasoning": "We need to answer the question. The user is providing a medical scenario: 75-year-old male with advanced lung cancer, wants to die at home. He says \"please let me die today\". The question: \"本日の訴えに対する医師の対応として正しいのはどれか。\" Options: a) \"Don't say that, let's try to fight\", b) \"We'll help you die peacefully now\", c) \"Consider hospice admission immediately\", d) \"There is a curative treatment for advanced lung cancer, so be reassured\", e) \"Why do you feel that way? Please talk about it.\"\n\nWe need to pick"
+      },
+      {
+        "problem_id": "116E32",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.780258893966675,
+        "reasoning": "We need to answer the question. The user is providing a medical case: 72-year-old woman with right eye pain, headache, nausea, progressive. Findings: severe ciliary injection (毛様充血), corneal edema, dilated pupil, moderate cataract. Likely acute angle-closure glaucoma? The symptoms: eye pain, headache, nausea, corneal edema, mid-dilated pupil. That suggests acute angle-closure glaucoma (AACG). The diagnostic test useful: measurement of intraocular pressure (IOP) via tonometry. Among options: a: e"
+      },
+      {
+        "problem_id": "116E33",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 6.391407012939453,
+        "reasoning": "We need to answer a medical question. The user asks: \"58歳の男性。頭痛と意識障害のため救急車で搬入された... ... 腰椎穿刺の回避を考えるべき所見はどれか。\"\n\nWe need to pick which finding suggests that lumbar puncture should be avoided. The options: a: ① (対光反射に左右差) b: ② (胸骨左縁に収縮期雑音) c: ③ (左下胸部にcoarse crackles) d: ④ (腸蠕動音は減弱) e: ⑤ (両側下腿に浮腫).\n\nWe need to consider contraindications for lumbar puncture. In meningitis suspicion, LP is indicated but there are contraindications: signs of increased intracranial pressure (ICP) like papilledema, focal"
+      },
+      {
+        "problem_id": "116E34",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 6.936236143112183,
+        "reasoning": "We need to answer a medical question. The user asks: \"問題: 82歳の男性。心不全の急性増悪で入院していたが、病状が安定してきたので退院を見据えて療養環境を調整することになった。高血圧症、陳旧性心筋梗塞の既往があり、多発ラクナ脳梗塞後遺症で巧緻機能障害を認める。改訂長谷川式簡易知能評価スケールは16点（30点満点）である。独居で血縁者はいない。この患者への対応で適切でないのはどれか。 a: 訪問看護を計画する。 b: 介護保険の申請を勧める。 c: 服薬管理を本人に任せる。 d: 成年後見制度の適応を検討する。 e: 多職種間で患者情報を共有する.\"\n\nWe need to pick which is NOT appropriate (i.e., \"適切でない\").\n\nGiven the scenario: 82-year-old male with heart failure, stable now, planning discharge. Has hypertension, old MI, multiple lacunar in"
+      },
+      {
+        "problem_id": "116E35",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 3.1855998039245605,
+        "reasoning": "We need to answer the question. The user asks: \"問題: 55歳の男性。上腹部痛を主訴に来院した... This patient is experiencing various types of suffering. The question: \"この患者が感じている苦痛のうち社会的苦痛はどれか。\" So which of the options corresponds to \"social pain\" (社会的苦痛). Options: a: 死への恐怖, b: 上腹部の痛み, c: 収入が無くなる事への不安, d: 癌と診断される事への恐怖, e: もっと早く受診すればという後悔.\n\nSocial pain likely refers to concerns about social aspects, e.g., financial issues, loss of income. So answer is c: 収入が無くなる事への不安 (anxiety about losing income). So answer: c. The u"
+      },
+      {
+        "problem_id": "116E36",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 8.800863027572632,
+        "reasoning": "We need to answer the question. The user is providing a medical scenario: 80-year-old male with insomnia, wants prescription of sleep medication. The question: \"行うべき指導はどれか\" (Which instruction should be given). Options: a: drinking alcohol before bedtime; b: increase dosage of sleep medication; c: morning sunlight exposure; d: daytime nap >1 hour; e: coffee consumption at dinner.\n\nWe need to pick the correct instruction. For insomnia, typical advice includes sleep hygiene: avoid caffeine in eveni"
+      },
+      {
+        "problem_id": "116E37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 1.829463005065918,
+        "reasoning": "The user asks a medical question about a 7-year-old girl with likely anaphylaxis after eating shrimp. She has vomiting, altered consciousness (GCS E3 V3 M4), hypotension (78/52), tachycardia, wheezing, skin findings. The immediate treatment for anaphylaxis is intramuscular epinephrine (adrenaline) injection. So answer: c: アドレナリン筋注.\n\nThus answer \"c\"."
+      },
+      {
+        "problem_id": "116E38",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 3.5962491035461426,
+        "reasoning": "We need to answer the question. The user gave a case: 21-year-old healthy man with chest pain worse on breathing (pleuritic), lasting two days. Lung and heart exam unremarkable. Chest X-ray and ECG shown in figure (not visible). We need to pick most likely diagnosis among options: Herpes zoster, MI, Pericarditis, Pneumothorax, Pulmonary embolism.\n\nWe need to infer likely diagnosis based on typical presentation: chest pain worse with breathing suggests pleuritic chest pain. In a young healthy man"
+      },
+      {
+        "problem_id": "116E39",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.741204023361206,
+        "reasoning": "We need to answer a medical question. The user describes a case: 21-year-old male with left cheek pain, had sore throat and rhinorrhea a week ago that improved in 3 days. Yesterday onset left cheek pain, pressure sensation, swelling increased. No significant past history. Vitals normal. Nasal exam shows left middle nasal cavity with purulent discharge. There's a photo of the face (not visible). The question: \"この時点でみられる可能性が最も低いのはどれか。\" Means \"Which of the following is least likely to be seen at th"
+      },
+      {
+        "problem_id": "116E40",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.967098712921143,
+        "reasoning": "We need to answer a medical question. The user asks: \"55歳の男性。下腿浮腫を主訴に来院した。1週間前から下腿浮腫を自覚し、徐々に増強したため受診した。20歳台からアルコールの多飲歴がある。意識は清明。頸部リンパ節を触知しない。前胸部にくも状血管腫を認める。打診でshifting ...\"\n\nThe question: \"shifting dullness を確認する際、仰臥位の次にとらせる体位はどれか.\"\n\nSo they are testing for ascites detection: shifting dullness test. The patient is supine (仰臥位) then you ask them to turn onto left side? Actually shifting dullness test: patient lies supine, percusses abdomen to find fluid level. Then the patient turns onto side (ri"
+      },
+      {
+        "problem_id": "116E41",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.295948028564453,
+        "reasoning": "We need to answer the question. The user gave a clinical scenario: 83-year-old male with COPD? He has chronic respiratory disease, on home oxygen therapy. Now acute exacerbation with hypercapnia (PaCO2 56 mmHg, pH 7.33) and hypoxemia PaO2 58 on nasal cannula 1 L/min. The question: \"初期対応として酸素投与を開始することとした。適切な酸素投与量はどれか。\" So they ask appropriate oxygen flow rate. For COPD patients with hypercapnic respiratory failure, we aim to give low-flow O2 to avoid suppressing respiratory drive. Usually target "
+      },
+      {
+        "problem_id": "116E42",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.5124340057373047,
+        "reasoning": "We need to answer a multiple-choice question. The user asks: \"入院後適切な治療が行われ退院することとなった。この患者の退院時療養支援への関与が低いのはどれか。\" Options: a: 在宅医, b: 訪問看護師, c: 臨床検査技師, d: ケアマネジャー, e: ソーシャルワーカー. The question asks which is \"関与が低い\" (low involvement) in discharge support? So among those, which is least involved in discharge planning? Likely \"臨床検査技師\" (clinical lab technician) is not involved in discharge support. So answer: c.\n\nThus output \"c\"."
+      },
+      {
+        "problem_id": "116E43",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 9.9080810546875,
+        "reasoning": "We need to answer a medical question. The user gave a case description: 23-year-old male with chest pain, sudden onset while commuting. Rest improves but dyspnea appears; transported to ER. Past: 2 months ago had exertional dyspnea that resolved spontaneously, concerned; CT chest done. He is a baseball player, frequent flights. Mother has hyperlipidemia.\n\nVitals: pulse 120 (tachycardic), BP 110/80, RR 28 (tachypnea), SpO2 95% RA. No abnormal heart sounds. Labs: RBC 4.8 million, Hb 15, Hct45% (no"
+      },
+      {
+        "problem_id": "116E44",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 10.151843786239624,
+        "reasoning": "We need to understand the context. The user gave a scenario: 57-year-old male, working in a manhole at a sewage treatment plant, moving sludge. Suddenly lost consciousness and collapsed. A colleague also lost consciousness when trying to rescue him. The question: \"可能性が高いのはどれか。2つ選べ。\" Options a: 酸素欠乏症 (hypoxia), b: 硫化水素中毒, c: 一酸化炭素中毒, d: 二酸化炭素中毒, e: 二酸化窒素中毒. The assistant answered \"a,b\". But is that correct? Let's analyze: In a sewage environment, possible gases include hydrogen sulfide (H2S), met"
+      },
+      {
+        "problem_id": "116E45",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 3.837415933609009,
+        "reasoning": "We need to answer the question. The user gave a case description and asks: \"この患者のCHADS2スコアはどれか。\" The options a-e correspond to points. We need compute CHADS2 score: Congestive heart failure (C), Hypertension (H), Age >=75 years (A), Diabetes mellitus (D), prior Stroke/TIA (S2). The patient is 68 years old, so age <75 => no point for A. He has hypertension (treated), diabetes mellitus (present). No mention of heart failure? The echo shows normal function, no signs. So C=0. Hypertension =1 point. "
+      },
+      {
+        "problem_id": "116E46",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 9.749243021011353,
+        "reasoning": "We need to answer a medical question. The user asks: \"抗凝固薬について説明したところ、同席していた妻が『この人、薬はあまり飲まないんですよ』と申し出た。本人に確認すると『1か月分処方されても半分くらいの薬が余ってしまう』。服薬アドヒアランスを低下させる要因を述べた患者の言動で薬の一包化が有効なのはどれか.\"\n\nWe need to pick one answer (a-e) that corresponds to a factor causing low adherence where pill-splitting or \"一包化\" (unit-dose packaging) would be effective. The question: \"服薬アドヒアランスを低下させる要因を述べた患者の言動で薬の一包化が有効なのはどれか.\"\n\nInterpretation: The patient says \"1か月分処方されても半分くらいの薬が余ってしまう\". So the issue is that they have leftover "
+      },
+      {
+        "problem_id": "116E47",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 39.361451864242554,
+        "reasoning": "We need to answer a medical question. The scenario: 21yo female with sore throat, fever, tonsillar exudate (white coating), tender cervical lymphadenopathy. No cough. Likely streptococcal pharyngitis (Group A strep). The question: \"A群β溶連菌性咽頭炎の事前確率\" given by number of criteria: \"発熱\", \"前頸部リンパ節腫大\", \"口蓋扁桃の白苔\", \"咳がない\". She has all four? Let's check: She has fever (yes), anterior cervical lymphadenopathy (yes), tonsillar white exudate (yes), no cough (she has none). So she meets all four criteria. The"
+      },
+      {
+        "problem_id": "116E48",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 2.526658058166504,
+        "reasoning": "We need to answer a medical question. The user asks: \"初診時に提出した検体の抗EBV VCA IgM抗体は陽性であった。この患者で他者への感染源となる可能性が高いのはどれか。\"\n\nWe need to pick one answer from a-e. The question: \"In a patient whose anti-EBV VCA IgM is positive at initial presentation, which of the following is most likely to be a source of infection to others?\" The answer likely is \"saliva\" because EBV (Epstein-Barr virus) is transmitted via saliva, causing infectious mononucleosis. So answer: c (唾液). The user wants one answer.\n\nThus outp"
+      },
+      {
+        "problem_id": "116E49",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 3.90962290763855,
+        "reasoning": "We need to answer the question. The user gave a case description of a 60-year-old woman with back pain, weight loss, labs showing anemia (Hb10.5), low albumin, elevated LDH, ALP, tumor markers CEA 10.6 (elevated), CA19-9 352 (high). Imaging shows a pancreatic body mass 10 cm, liver metastases, ascites. Likely pancreatic cancer with metastasis.\n\nThe question: \"担当医が今後の治療方針を判断するために最も適切な情報はどれか。\" Options: a: 患者の体験記 (patient's experience), b: 診療ガイドライン, c: 研究会での症例報告, d: 製薬会社のホームページ, e: 医師が発信するソーシャル・メディ"
+      },
+      {
+        "problem_id": "116E50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 6.423105001449585,
+        "reasoning": "We need to answer a medical ethics / communication question. The scenario describes a physician's actions in delivering bad news. They list steps: ① before meeting patient, called husband to convey test results; ② during interview, confirmed patient's recognition of symptoms; ③ asked how much patient wants to know about test results; then explained using simple language and diagrams; ④ because patient was surprised/confused, the physician took a pause before speaking; ⑤ listened to patient's fee"
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。",
+    "english_strict": "You are a medical expert. Answer the multiple-choice question.\nOutput ONLY the answer letter(s) (a,b,c,d,e). No explanation. No reasoning. No analysis.\nIf multiple answers: separate with comma. Example: a,c\nDo not write anything else.",
+    "english_answer_first": "You are a medical doctor. Answer the medical question.\nFIRST LINE: answer letter(s) only (a,b,c,d,e). Example: b or a,c\nSECOND LINE onwards: brief explanation (optional, max 3 sentences).\nNo self-critique. No debate. One best answer only. Stop after answering."
+  }
+}

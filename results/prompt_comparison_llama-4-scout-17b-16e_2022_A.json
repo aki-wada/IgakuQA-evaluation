@@ -1,0 +1,3075 @@
+{
+  "timestamp": "2026-02-25T22:00:38.715113",
+  "model": "mlx-community/llama-4-scout-17b-16e-instruct",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 57,
+      "accuracy": 0.76,
+      "avg_time": 5.186683308283488,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 57,
+      "accuracy": 0.76,
+      "avg_time": 4.934530099232991,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 56,
+      "accuracy": 0.7466666666666667,
+      "avg_time": 4.933400014241537,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 57,
+      "accuracy": 0.76,
+      "avg_time": 4.959030364354452,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "answer_first",
+      "prompt_name": "案D: 回答先出し",
+      "total": 75,
+      "correct": 55,
+      "accuracy": 0.7333333333333333,
+      "avg_time": 10.639187313715617,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 27.19331693649292
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 4.380511045455933
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.438192844390869
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.537429094314575
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.448301792144775
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 4.405740022659302
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.44786524772644
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.494338035583496
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.364356756210327
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.52941632270813
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.449250936508179
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.545753717422485
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 4.543210744857788
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 4.5695250034332275
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e",
+        "time": 4.522736310958862
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.440043210983276
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.166712045669556
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 4.597149133682251
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.978734731674194
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.12593412399292
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.9949631690979
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.597360134124756
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.381235122680664
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 4.59083104133606
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.028375864028931
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.774578809738159
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.034065008163452
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.243786096572876
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.7217748165130615
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.902446746826172
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.060722827911377
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.7553322315216064
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.156424045562744
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b",
+        "time": 4.5891289710998535
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.051137924194336
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.283182859420776
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.21898889541626
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.202653884887695
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.642140865325928
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 5.402815103530884
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.585890054702759
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.646100997924805
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.119933128356934
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.6797308921813965
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c",
+        "time": 4.506866931915283
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "a",
+        "time": 4.645249128341675
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 4.717248201370239
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.074270963668823
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.052525043487549
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.162520170211792
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.8287413120269775
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.587258815765381
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.075965881347656
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.597093820571899
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.609161853790283
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.169325113296509
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.759149074554443
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.614398956298828
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 4.747338771820068
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.6306891441345215
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.608522891998291
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.306339740753174
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 4.663083076477051
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.779193162918091
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 4.969664096832275
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,c",
+        "time": 4.644718885421753
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "c,d",
+        "gold": "a,d",
+        "correct": false,
+        "response": "d,c \n\n解説: \nγ-GTの著明な上昇とALPの軽度上昇は胆道系酵素優位の上昇を示唆し、肝生検組織像で門脈域に炎症細胞浸潤と胆管の軽度増加が認められることから、原発性胆汁性肝硬変（PBC）が考えられる。PBCでは多くの場合、抗ミトコンドリア抗体（AMA）陽性である。血清コレステロールはPBCで高値を示すことが多い。\n\nよって、d,cが正解である。",
+        "time": 9.069650173187256
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "d,e",
+        "time": 5.108191013336182
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c",
+        "gold": "a,b",
+        "correct": false,
+        "response": "a,c",
+        "time": 4.569292068481445
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 5.371044158935547
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.753428936004639
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,b,c",
+        "time": 5.15844988822937
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "a,d,e",
+        "time": 5.091162919998169
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,d,e",
+        "time": 5.142717361450195
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "c,d,e",
+        "time": 5.145869016647339
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.701381206512451
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 4.6320250034332275
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.645902872085571
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.571133852005005
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.55653190612793
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 4.449760913848877
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.590924978256226
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.57749080657959
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.5546979904174805
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.560069799423218
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.565805912017822
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.560575008392334
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 4.7020018100738525
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 4.737783908843994
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e",
+        "time": 4.6285240650177
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.39136815071106
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.136341094970703
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 4.7327470779418945
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 5.107635021209717
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.211664915084839
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.15663480758667
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.701018810272217
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.278482913970947
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 4.508399248123169
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.2220001220703125
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.008257627487183
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.12791109085083
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.335051774978638
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.857893943786621
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.966226100921631
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.20768404006958
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.069659948348999
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.24530291557312
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b",
+        "time": 4.690217018127441
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.1220128536224365
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.2191102504730225
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.40161395072937
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.293827056884766
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.049109935760498
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 5.388391017913818
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.610202789306641
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.860106945037842
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.178491115570068
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.9964399337768555
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c",
+        "time": 4.7010979652404785
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.943854093551636
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 4.71602201461792
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.10831880569458
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.16057014465332
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.180608034133911
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.182883024215698
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.633358716964722
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 5.202821969985962
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.673807144165039
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.645681858062744
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.241322040557861
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.098694086074829
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.677690744400024
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 4.6855621337890625
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.711306810379028
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.798582077026367
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.4010009765625
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 5.04630970954895
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.776778936386108
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 5.159120082855225
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,c",
+        "time": 4.654094696044922
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "c,d",
+        "gold": "a,d",
+        "correct": false,
+        "response": "d,c",
+        "time": 5.055405139923096
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "d,e",
+        "time": 5.04630708694458
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c",
+        "gold": "a,b",
+        "correct": false,
+        "response": "a,c",
+        "time": 4.728882789611816
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 5.376645803451538
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.815192222595215
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,b,c",
+        "time": 5.243716239929199
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "d,e,a",
+        "time": 5.124039888381958
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,d,e",
+        "time": 5.091423034667969
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "c,d,e",
+        "time": 5.1002466678619385
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.55506706237793
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 4.676017761230469
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.446307182312012
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.65527081489563
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.531856060028076
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 4.471750259399414
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.507025957107544
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.5633769035339355
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.560693025588989
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.4474968910217285
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.579141139984131
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.557435750961304
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 4.537315845489502
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 4.587981700897217
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e",
+        "time": 4.538515090942383
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.368866920471191
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.092673063278198
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 4.752270936965942
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 5.015352010726929
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.933990001678467
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.128367900848389
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.655285120010376
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.309521913528442
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 4.513431072235107
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.121245861053467
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.976562023162842
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.038128852844238
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.317459344863892
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.809010982513428
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.104262828826904
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.904396057128906
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.078135967254639
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.197252988815308
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b",
+        "time": 4.632143974304199
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.09889817237854
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.30460786819458
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.309169054031372
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.169996023178101
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.888733148574829
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 5.44513201713562
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.514402151107788
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.725939989089966
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.1621479988098145
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.032914876937866
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c",
+        "time": 4.523353099822998
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "a",
+        "time": 5.034960031509399
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 4.580950021743774
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.965173959732056
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.129257917404175
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.153119087219238
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.039207220077515
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.504713296890259
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.171070098876953
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.642373085021973
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.539406061172485
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.2465128898620605
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.032691240310669
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.690846920013428
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 4.558197975158691
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b",
+        "time": 4.76348614692688
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.601449012756348
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.293834924697876
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 4.959618091583252
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.90698504447937
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 5.113245248794556
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,c",
+        "time": 4.605268955230713
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "c,d",
+        "gold": "a,d",
+        "correct": false,
+        "response": "d,c \n\n肝生検で門脈域の炎症細胞浸潤や胆管傷害が認められることから、原発性胆汁性肝硬変（PBC）が考えられます。\n\nPBCでは、抗ミトコンドリア抗体（AMA）陽性が診断の手がかりとなります。また、PBCでは胆汁うっ滞による脂質代謝異常が生じやすく、コレステロール値の上昇がみられることが多いです。\n\nしたがって、正解はdとcです。",
+        "time": 8.66657304763794
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "d,e",
+        "time": 5.025705337524414
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c",
+        "gold": "a,b",
+        "correct": false,
+        "response": "a,c",
+        "time": 4.638926029205322
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 5.282165050506592
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.882220983505249
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,b,c",
+        "time": 5.19311785697937
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "a,d,e",
+        "time": 5.0554420948028564
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,d,e",
+        "time": 5.23563289642334
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "c,d,e",
+        "time": 5.153946876525879
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.519141912460327
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 4.59910774230957
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.529587030410767
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.59571099281311
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.4871437549591064
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 4.603902101516724
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.4762327671051025
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.475788831710815
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.4929118156433105
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.525644779205322
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.573917865753174
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.500239133834839
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 4.693686008453369
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 4.551817893981934
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e",
+        "time": 4.5222790241241455
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.292726039886475
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.213255167007446
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c",
+        "time": 4.7301130294799805
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.997983932495117
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.067260265350342
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.127441167831421
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.592638969421387
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.254180908203125
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 4.5810089111328125
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.119039058685303
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.927818059921265
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.188170909881592
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.261349201202393
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.850145101547241
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.955878019332886
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.0320398807525635
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.065730094909668
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.114675045013428
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b",
+        "time": 4.725095987319946
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.089189291000366
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.271000146865845
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.2897820472717285
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.218899965286255
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.9298717975616455
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c",
+        "time": 5.267996788024902
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.688884019851685
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.819589853286743
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.408522844314575
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.144396066665649
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c",
+        "time": 4.607726097106934
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.048364877700806
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 4.545660734176636
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.162307977676392
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.146612882614136
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.097664833068848
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.045823097229004
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.625257968902588
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e",
+        "time": 5.193965911865234
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.59140419960022
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.738399028778076
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.214034080505371
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.897504091262817
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.647543668746948
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 4.653439998626709
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.7788872718811035
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.569881916046143
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.420242071151733
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c",
+        "time": 4.992825984954834
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.832209825515747
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 5.002418041229248
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,c",
+        "time": 4.69027304649353
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "c,d",
+        "gold": "a,d",
+        "correct": false,
+        "response": "d,c \n\n（解説）肝生検で門脈域の炎症細胞浸潤や胆管傷害が認められていることから、原発性胆汁性肝硬変（PBC）が考えられる。典型的には中年女性に発症し、ステロイドの治療効果が期待できる。臨床像として肝機能障害（特に胆道系酵素高値）、高コレステロール血症、IgM高値を認めることが多い。自己抗体としては抗ミトコンドリア抗体（AMA）陽性が診断の決め手となる。したがって、cとdが正解である。",
+        "time": 9.355303049087524
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "d,e",
+        "time": 4.988360166549683
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c",
+        "gold": "a,b",
+        "correct": false,
+        "response": "a,c",
+        "time": 4.780595064163208
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 5.313892126083374
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.968981027603149
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,b,c",
+        "time": 5.178921937942505
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "a,d,e",
+        "time": 5.1705451011657715
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,d,e",
+        "time": 5.246183156967163
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "c,d,e",
+        "time": 5.050253868103027
+      }
+    ],
+    "answer_first": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c \n\n解説: 睡眠時無呼吸症候群（Sleep Apnea Syndrome: SAS）では、夜間の断続的な低酸素血症と睡眠の分断化により交感神経が活性化され、夜間高血圧や早朝の血圧上昇をきたしやすいとされている。治療としては、減量や生活習慣の改善に加えてCPAP（持続的気道陽圧法）が用いられる。降圧治療としては、通常の降圧薬が用いられるが、α遮断薬は第一選択とはされない。",
+        "time": 8.663806915283203
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b\n\n解説: 妊娠末期の腟分泌物細菌培養検査でB群連鎖球菌（Group B Streptococcus: GBS）が陽性となった妊婦に対する母子感染予防対策として、ペニシリン系抗菌薬の投与を開始する適切な時期は、妊娠37週時である。GBS保菌妊婦の約30%が新生児に感染させ、新生児の感染症や髄膜炎、敗血症などの重篤な合併症を引き起こすことがある。予防策として、陣痛開始時や破水時に抗菌薬を投与するの",
+        "time": 9.928323030471802
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a \n\n中心性漿液性脈絡網膜症の症状と特徴:\n  中心性漿液性脈絡網膜症は、網膜の中心部分に液体が溜まる病気で、視力の低下や変視症（物が歪んで見える）などの症状を引き起こします。以下はこの病気に関する特徴です。\n\n- 夜盲を自覚する: これは中心性漿液性脈絡網膜症の典型的な症状ではありません。むしろ、中心視力の低下や変視症が主な症状です。\n- 変視症を自覚する: 正解。物が歪んで見えたり、中心部が",
+        "time": 13.991880893707275
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d\n\nスルホニル尿素薬はインシュリンを分泌促進する作用があるため、低血糖のリスクが高いです。その他の選択肢は、単剤での使用では低血糖を起こしにくいとされています。",
+        "time": 6.114684104919434
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 4.546595811843872
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d \n\n解説:\n高カリウム血症の原因となるのは、カリウムの過剰摂取や細胞からのカリウム放出、腎機能障害などがあります。グリチルリチン（d）は、ステロイド様作用を持ち、カリウムの尿中排泄を抑制するため、高カリウム血症の原因となります。\n\n他の選択肢について:\na: β刺激薬は、細胞内にカリウムを取り込む作用があるため、低カリウム血症の原因となります。\nb: インスリンも、細胞内にカリウムを取り込む作",
+        "time": 11.679641246795654
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d \n\n解説: 逆流性食道炎の誘因には、肥満、妊娠、高齢、臥床、下部食道括約筋圧の低下などがある。カルシウム拮抗薬などの一部の薬剤も下部食道括約筋の緊張を低下させるため、誘因となる可能性がある。萎縮性胃炎は胃酸の分泌が減少するため、逆流性食道炎を起こしにくくする。",
+        "time": 7.7172300815582275
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d \n\nサルコイドーシスでは、非特異的な炎症所見が特徴で、心臓の場合は特にMRIやFDG-PETでの心筋への集積増加が特徴です。心サルコイドーシスでは、病変は非対称性に分布することが多いですが、心室中隔の非対称性肥大は、特発性心筋症（たとえば肥大型心筋症）で見られる特徴であり、心サルコイドーシスに特有の所見ではありません。したがって、dが正解です。",
+        "time": 8.569978713989258
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d\n\n有機リン剤は主に神経障害を引き起こす物質であり、骨壊死の直接的なリスクファクターとはされていません。骨壊死（necrosis of bone）のリスクファクターとしては、飲酒（a）、減圧症（b）、放射線照射（c）、および副腎皮質ステロイドの使用（e）などが知られています。",
+        "time": 7.062324047088623
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d \n\n解説: 全身性強皮症は、皮膚や内臓の線維化を特徴とする疾患であり、続発性Raynaud現象の原因となることが多い。全身性強皮症に伴うRaynaud現象は、手指腫脹（特に初期の浮腫性変化）や皮膚硬化と関連していることが多い。したがって、d: 手指腫脹を伴うが正解である。\n\na: 片側性である - Raynaud現象は通常、両側性に発生する。\nb: 家族歴がある - 一部の膠原病では家族歴が関",
+        "time": 11.154008150100708
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\n自閉スペクトラム症の特徴には、対人関係の困難、コミュニケーションの困難、限定された興味や行動のパターンなどがあります。また、感覚過敏もよく見られる特徴の一つです。これらの症状は通常、幼児期や学童期早期から現れます。\n\nこの問題の選択肢を評価すると、以下のようになります:\n\na: 正解。自閉スペクトラム症は男児に多いとされています。\n\nb: 正解。感覚過敏は自閉スペクトラム症の一般的な特徴です",
+        "time": 11.628979921340942
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\n肺動脈性肺高血圧症は、肺の血管が狭くなり、血液が流れにくくなる病気で、右心室の負担が増大します。肺高血圧症自体は徐々に進行することが多いですが、急性の増悪や重篤な合併症を引き起こすことがあります。しかし、肺動脈性肺高血圧症を伴う呼吸不全は、必ずしも急激な全身の血圧上昇（高血圧緊急症）を特徴とせず、主に右心不全や低酸素血症の症状を呈することが多いです。\n\n他の選択肢は、高血圧緊急症の典型的な病",
+        "time": 16.508861780166626
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 4.655976057052612
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "c,d",
+        "time": 4.513251066207886
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "c,e\n\n急性腎障害（Acute Kidney Injury, AKI）の診断には、以下のような指標が用いられます。\n\n- 時間尿量（c）：尿量の減少はAKIの重要な指標の一つです。具体的には、成人において6時間以上尿量が0.5 mL/kg/h以下である場合や、12時間以上尿量が0.3 mL/kg/h以下である場合、または24時間で400 mL以下の尿量が認められる場合にAKIと診断されます。\n-",
+        "time": 17.430422067642212
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c \n\n糖尿病性腎症の診断基準として、1) 網膜症の存在、2) 蛋白尿（微量アルブミン尿も含む）の存在、3）eGFR の低下（＜60 mL/分/1.73m2）、4）尿沈渣所見の異常なし（赤血球・白血球・円柱など）、5）除外基準を満たす、などがあげられる。\n\n網膜症の存在は糖尿病性腎症を示唆する重要な所見である。増殖性網膜症の合併は糖尿病腎症の存在を強く示唆する。",
+        "time": 9.816245079040527
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\n解説:\nこの患者は血友病Aと診断されており、頭部外傷後の嘔吐と活気不良を訴えている。血液検査ではAPTT（活性化部分トロンボプラスチン時間）が延長しており、血友病Aの特徴である凝固因子VIIIの欠乏が示唆される。頭部CTで明らかな頭蓋内出血が疑われる場合、適切な初期対応は凝固因子VIIIを補充することである。\n\n血友病Aの治療には、欠乏している凝固因子VIIIを補充することが基本であり、これ",
+        "time": 17.318701028823853
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c",
+        "gold": "a",
+        "correct": false,
+        "response": "c\n\n解説: \nこの患者の症状は、ナルコレプシーの典型的な症状と一致しています。ナルコレプシーは、過度の眠気や突然の睡眠発作を特徴とする神経疾患です。特に、日中に急に強い眠気を感じたり、笑ったり驚いたりした後に全身の力が抜けたりする症状（いわゆる「カタプレキシー」）が特徴的です。\n\na: 入眠時に金縛りにあうのは、ナルコレプシー以外の睡眠障害でも見られる一般的な症状です。\n\nb: 夜間せん妄は、意",
+        "time": 14.210503816604614
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d\n\n解説:\nこの患者は最近のカテーテルアブレーション後に急激に症状が悪化しており、主な症状は息切れ、全身倦怠感、低血圧（特に吸気時の収縮期血圧の低下、いわゆる「脈圧の減少」）、頸静脈怒張、心音微弱などである。これらの症状は心タンポナーデの典型的な徴候である。心タンポナーデは、心臓を囲む心嚢内に液体が貯留し、心臓の拡張と充填を障害する状態である。アブレーション後の合併症として心嚢穿孔や出血が生じ、",
+        "time": 15.832163095474243
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.057512998580933
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.008845090866089
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c \n\n多囊腎（ADPKD: autosomal dominant polycystic kidney disease）は、優性遺伝形式をとる。肝嚢胞の合併が多く、脳動脈瘤の発生頻度も高い。治療としてバソプレシンV2受容体拮抗薬があるが、新生児期からの発症は通常みられない。",
+        "time": 7.300118923187256
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\n解説:\nこの患者は、急性前骨髄球性白血病（APL: Acute Promyelocytic Leukemia）の疑いがあります。血液検査の結果、白血球減少と血小板減少がみられ、骨髄血塗抹May-Giemsa染色標本写真（省略）からも特徴的な所見が得られていると考えられます。\n\nAPLの治療には、all-trans retinoic acid（ATRA）が有効です。ATRAは、分化誘導療法の一",
+        "time": 14.53262209892273
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a \n\n解説: \n喉頭内視鏡検査で声帯に腫瘤やポリープのような隆起性病変が認められた場合、まずは悪性腫瘍を疑う。特に嗄声や咽喉異物感、咳が2年も継続していることから、慢性の疾患や悪性腫瘍を考慮する必要がある。喫煙歴がないため、喉頭癌のリスクは低いと考えるかもしれないが、近年増加しているHPV関連喉頭癌も存在するため、喫煙歴の有無だけで否定はできない。 \n\n各選択肢について考察する: \n喉頭癌（a）",
+        "time": 16.091564178466797
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.035235166549683
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\nこの問題の正解は「e」です。産業医面談において、感染症の流行が終息するまで辛抱するよう励ますだけでは不十分であり、具体的な対応策やサポートを提供することが必要です。\n\n以下に解説を記載します。\n\nこの男性は、仕事の能率が低下していると訴え、オンラインでの在宅勤務に伴うストレスや睡眠障害、気分の沈鬱などの症状を訴えています。産業医は、本人の健康状態や職場環境について詳細にヒアリングし、適切な対",
+        "time": 15.85189700126648
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.176765203475952
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.2136008739471436
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a\n\n解説:\nこの患者は、字を書くことが困難で、特に指の動きがスムーズではなく、歪んだ形の字を書くことが特徴です。このような症状は、局所ジストニアの一種である「書痙（writer's cramp）」と呼ばれる病気の典型的な症状です。書痙は、特定の動作（この場合は字を書くこと）を行う際に、筋肉が過度に緊張し、不自然な姿勢や動きになることで起こります。\n\n他の選択肢について:\n- 痙性斜頸（b）は、首",
+        "time": 13.369539022445679
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.017445802688599
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b\n\nこの患者は、口渇と全身倦怠感を訴え、尿検査で糖3＋、ケトン体3＋という結果が出ています。血液検査では血糖値が440mg/dLと高く、Cペプチドは0.2ng/mLと低値です。これらの結果から、患者はケトアシドーシスを伴う糖尿病と診断されます。\n\nCペプチドの低値は、内因性インスリン分泌が不足していることを示しています。このような場合、直ちにインスリンを使用する必要があります。\n\nしたがって、正",
+        "time": 9.769014120101929
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\n解説:\nこの問題の状況から、患者は肺動脈への血流が不足している可能性が高いと考えられます。心エコー検査で右心室から肺動脈への駆出血流が確認できず、動脈管からの少量の血流のみ認められることから、肺血流依存の疾患が疑われます。このような場合、動脈管を維持し、肺血流を確保することが重要です。\n\nプロスタグランディンE1（PGE1）は、動脈管を開存させるために使用される薬剤です。特に、新生児の肺血流",
+        "time": 16.906616926193237
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\n解説:\nこの患者の症状やABI値から、閉塞性動脈硬化症（PAD）が疑われる。ガドリニウム造影MRI検査は、主に神経系の疾患（特に多発性硬化症や脳腫瘍）の診断に用いられる検査であり、閉塞性動脈硬化症の診断には通常行われない。代わりに、下肢動脈の画像診断（例えば、エコー検査やCT血管造影）などが検討される。したがって、誤っているのは⑤ガドリニウム造影MRI検査を予定しますということである。",
+        "time": 9.480253219604492
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b \n\n解説: \n外性器の特徴に気づいたということは、明らかな男女の区別ができないような外性器の形態をしている可能性が高い。特に、鼠径部に腫瘤（睾丸など）が触れないという情報から、卵巣を持っている可能性が高いが、外性器の形態が不明瞭であるという情報から、遺伝的には男性（46,XY）だが外性器が女性化しているなどの可能性がある。よって、成長をみながらでないと性別の確定診断はできないため、（b）「約1",
+        "time": 9.267492055892944
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\n解説:\nこの患者は、免疫チェックポイント阻害薬による治療後に、全身倦怠感、低血圧、徐脈、甲状腺腫大、ACTHの低値、コルチゾールの著しい低下を認めており、副腎皮質機能不全の可能性が高い。免疫チェックポイント阻害薬は、自己免疫性副作用を引き起こすことが知られており、副腎皮質機能不全もその一つである。よって、副腎皮質ステロイドの投与が適切である。\n\n他の選択肢について:\na: 赤血球輸血 - 貧",
+        "time": 13.575130939483643
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a \n\n解説:\nこの患者は、アルコール性肝硬変の既往があり、腹痛と腹部膨隆を訴えており、画像検査で門脈静脈血栓症が疑われる状況です。徒手整復を試みたが成功しなかった場合、緊急手術を行うことが適切です。門脈静脈血栓症は、腸管の虚血や壊死を引き起こす可能性があるため、緊急手術により血栓除去や腸管の切除などを行う必要があります。下剤の投与、鎮痛薬の投与、徒手整復の繰り返しは、かえって症状を悪化させる可能",
+        "time": 10.963760137557983
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.232391834259033
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.1728692054748535
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b \n\n解説:\nこの問題は、臨床所見と遺伝情報に基づいた診断が求められています。\n\n1. **臨床所見:**\n   - 20歳の女性で、腹部の多発する皮疹が1か月前から出現し、掻痒はない。\n   - 母親も同様の皮疹があり、Kaposi水痘様発疹症をしばしば発症する。\n   - 皮疹は頸部、腋窩、肋骨部、乳房下、腹部、鼠径に暗褐色の丘疹として認められる。\n\n2. **遺伝情報:**\n   - 患者",
+        "time": 21.79946804046631
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "c \n\n解説:\nこの患者は、激しい運動後の筋肉痛と赤褐色尿を呈し、血液検査で著明なCK上昇（155,150U/L）を示しており、横紋筋融解症と診断されます。横紋筋融解症の治療では、十分な輸液により尿量を確保し、急性腎障害の予防が重要です。適切な輸液療法には等張性の電解質溶液を使用します。\n\na: 5％ブドウ糖液は低張性であり、血中Na濃度を希釈する可能性があるため不適切です。\nb: Na+ 154",
+        "time": 14.904479265213013
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\n解説: \nこの患者は、急に難聴と耳鳴が出現し、めまいや鼓膜の異常はないとのこと。オージオグラムの結果や頭部MRIが正常であることから、突発性難聴と診断されます。突発性難聴の治療にはステロイドが有効です。\n\nしたがって、適切な治療薬は副腎皮質ステロイド（e）となります。",
+        "time": 7.624069929122925
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 4.578504323959351
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c\n\nこの患者は、長期間の薬物治療による消化性潰瘍の既往があり、現在も多発胃潰瘍および十二指腸潰瘍を認めています。また、血清カルシウム（Ca）値の上昇も示されています。これらの所見から、 Zollinger-Ellison 症候群（ZES）が疑われます。\n\nZES は、ガストリン産生腫瘍（ガストリノーマ）によって過剰なガストリンが分泌され、胃酸の過剰産生により重度の消化性潰瘍が発生する病態です。こ",
+        "time": 14.174957990646362
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\nこの患者の症状と身体所見から、プロラクチン（PRL）高値が予想されます。理由は以下の通りです。\n\n1. **無月経と乳汁分泌**: 患者は無月経（14歳から月経が来なくなっている）ですが、乳房発育は不良で、乳頭の圧迫で両側に乳汁分泌を認めます。これはプロラクチン過剰分泌の典型的な症状です。プロラクチンは乳腺を刺激して乳汁を産生するホルモンであり、正常では妊娠・授乳期に高値となりますが、それ以",
+        "time": 18.12295889854431
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "c \n\n解説:\nこの問題は、具体的な画像診断の結果に基づいているため、実際の画像を見ていないと正確に答えることはできません。しかし、一般的には半月板断裂の診断はMRI検査で行われることが多く、関節鏡検査も重要な診断ツールです。\n\n半月板断裂は、スポーツや日常生活中の怪我で発生することが多く、膝の痛みや不安定感を引き起こします。MRI検査は、半月板の状態を詳細に観察できるため、断裂の診断に非常に有用",
+        "time": 12.62556004524231
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "a",
+        "gold": "b",
+        "correct": false,
+        "response": "a \n\n解説:\nこの患者は、いびきを指摘されたこと、顔つきが変わったと言われたこと（特に鼻が大きくなった）、最近靴が窮屈になってきていること、手根管症候群の手術歴があることから、末端肥大症が疑われる。末端肥大症は成長ホルモン（GH）過剰分泌によって起こる。確定診断には、GRHR負荷試験やOGTT（経口ブドウ糖負荷試験）などの検査が行われるが、この中で最も特異的なのはGHRH負荷試験である。",
+        "time": 9.15878415107727
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d \n\n解説：\nこの問題は、被害者の権利とプライバシーを尊重しつつ、適切な医療措置を提供することの重要性を理解することが求められます。正解は「d: DNA診断のための検体を腟内から採取する。」です。\n\n理由：\n- 性暴力の被害者が警察に付き添われて医療機関を受診する場合、被害者の身体的・心理的な安全とプライバシーを最優先する必要があります。\n- DNA診断のための検体採取は、犯罪捜査のために行われ",
+        "time": 14.589575052261353
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.075487852096558
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a\n\nこの患者は、長期間にわたる労作時の息切れと、全身倦怠感を訴えており、以前から心雑音を指摘されていた。検査の結果、大動脈弁が二尖弁であること、左室駆出率が40％と低下していること、大動脈弁口面積が0.65cm²と狭窄していることが判明した。これらの所見は、重度の大動脈弁狭窄症を示唆する。 \n\n大動脈弁狭窄症の治療には、薬物療法やバルブ交換術などがあるが、この患者の場合、大動脈弁口面積が0.65",
+        "time": 17.855028867721558
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.216387987136841
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c \n\n解説:\nこの問題は、臨床的な症状と染色体検査の結果に基づいて、将来の合併症を予測するものです。提供された情報に基づくと、以下の点が重要です：\n\n1. **臨床的特徴**: 顔貌異常（切れ上がった目、平坦で低い鼻、口外に突き出た舌）、軽度の腹部膨満、手掌単一屈曲線、筋緊張低下などがみられます。これらの特徴は、ダウン症候群（トリソミー21）に典型的です。\n\n2. **染色体検査**: 具体的な",
+        "time": 19.304606199264526
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.511883974075317
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "e",
+        "gold": "b",
+        "correct": false,
+        "response": "e \n\n解説:\nこの患者は、長期間の喀痰と体重減少の既往があり、最近の喀痰量増加と喀出困難を訴えている。血液検査では、白血球の上昇（11,400）およびCRPの上昇（13mg/dL）が見られ、感染が示唆される。グラム染色標本の詳細は示されていないが、一般的には、肺炎や気道感染症の原因として、肺炎球菌（Streptococcus pneumoniae）、インフルエンザ菌（Haemophilus in",
+        "time": 17.553773164749146
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e \n\n解説: \nこの問題は、小児の聴力障害を評価する上で重要な検査方法について問うています。特に、2歳という年齢を考慮すると、正確な聴力評価が難しいため、客観的な検査方法が必要です。\n\na: 語音聴力検査 - これは、言葉の聞こえを評価する検査ですが、小児や特に2歳のような幼い子供には適していません。\n\nb: 純音聴力検査 - これは、純音の聞こえを評価する基本的な検査ですが、これも幼児には実施",
+        "time": 15.033152103424072
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.696943998336792
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b \n\n解説:\nこの患者は、骨髄生検で著明な低形成所見を認めており、再生不良性貧血が疑われる。再生不良性貧血では、骨髄の造血幹細胞が減少し、赤血球、白血球、血小板などのすべての血球系列の産生が低下する。\n\na: フェリチンは貯蔵鉄を反映し、再生不良性貧血ではフェリチン値は正常か上昇する。\nb: 網赤血球数は、骨髄での赤血球産生能を反映し、再生不良性貧血では低下する。\nc: ビタミンB12は巨赤芽球",
+        "time": 14.026307106018066
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.116667747497559
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.59529185295105
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d \n\n解説:\nこの女児の症状や検査結果から、彼女はアトピー性皮膚炎と診断できます。アトピー性皮膚炎の合併症として注意すべきものの一つに眼科的な合併症があり、特に円錐角膜が挙げられます。円錐角膜は、アトピー性皮膚炎やアレルギー性結膜炎などのアレルギー疾患と関連があることが知られています。\n\n他の選択肢について:\na: 気胸 - これは緊急性のある呼吸器疾患ですが、アトピー性皮膚炎の直接的な合併症で",
+        "time": 13.246280908584595
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b",
+        "time": 4.666373014450073
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a \n\nThis patient presents with left hemiplegia and impaired consciousness, which suggests a stroke. The brain MRI diffusion-weighted image likely shows an acute ischemic stroke. Atrial fibrillation (a",
+        "time": 12.351477861404419
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a \n\nこの患者の臨床像と検査結果から、最も考えられる診断は膜性腎症である。以下にその理由を詳しく説明する。\n\n1. **臨床像と病歴**: 58歳の女性で、下腿浮腫を主訴に来院。半年前から蛋白尿が指摘され、次第に浮腫が悪化したとのことである。腎臓疾患によるネフローゼ症候群の典型的な症状と経過である。\n\n2. **尿所見**: 蛋白尿（特に大量の蛋白尿）が認められ、尿沈渣には赤血球や白血球はほとん",
+        "time": 27.7642560005188
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c",
+        "gold": "e",
+        "correct": false,
+        "response": "c\n\nこの患者は低ナトリウム血症（Na 129mEq/L）と低血糖（空腹時血糖65mg/dL）を示しており、抗利尿ホルモン（ADH）は正常範囲内です。尿中Naは16mEq/Lと低値であり、これは体液減少状態で適切な腎臓の反応を示しています。しかし、尿浸透圧については直接的なデータが示されていません。\n\nこの状況から考えると、患者は低ナトリウム血症と高カリウム血症（K 5.1mEq/L）を示しており",
+        "time": 14.189356088638306
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 4.901206970214844
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 5.100817918777466
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,c",
+        "gold": "a,e",
+        "correct": false,
+        "response": "a,c \n\n解説: 胸部X線写真と胸部造影CTの所見から、腫瘤が前縦隔に位置し、内部は均一で境界が明瞭であることから、胸腺腫または心膜嚢胞が考えられます。特に造影CTで腫瘤内部の性状や周囲との関係を詳細に観察することで、より具体的な診断が可能になります。したがって、胸腺腫（a）と心膜嚢胞（c）が適切な選択肢です。",
+        "time": 8.230201244354248
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "c,d",
+        "gold": "a,d",
+        "correct": false,
+        "response": "d,c \n\n解説:\nこの患者は、肝機能障害を指摘され、血液検査でALPとγ-GTが上昇していることから、胆道系の障害が疑われる。肝生検組織の門脈域のH-E染色標本（詳細は示されていないが）や臨床所見から、原発性胆汁性肝硬変（PBC）が考えられる。\n\nPBCでは、抗ミトコンドリア抗体（AMA）が陽性となることが多く、これは診断に有用である。したがって、d: 抗ミトコンドリア抗体陽性は予想される。\n\n",
+        "time": 16.663604021072388
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "d,e",
+        "time": 5.045094013214111
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,c",
+        "gold": "a,b",
+        "correct": false,
+        "response": "a,c",
+        "time": 4.76586389541626
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "b,e",
+        "time": 5.218868970870972
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e\n\nこの問題の解答として、パルボウイルスB19感染症が可能性が最も低い疾患であると考えられます。\n\n川崎病（a）、溶連菌感染症（b）、EBウイルス感染症（c）、アデノウイルス感染症（d）は、いずれも発熱、咽頭痛、リンパ節腫大などの症状を呈することがあります。\n\n一方で、パルボウイルスB19感染症（e）は、 Fifth disease（りんご病）としても知られ、手足の網状パターンや顔面紅斑（ほっし",
+        "time": 10.820151090621948
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,c",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,b,c\n\n解説: この患者は、急激な心窩部痛と腹部全体の筋性防御、上腹部の圧痛と反跳痛を認め、血液検査で白血球増加とCRP上昇がみられることから、急性腹症の可能性が高い。腹部単純CTでは、肝臓周囲に液体貯留が認められることから、肝臓に関連する病変が疑われる。\n\nまず行うべきことは、\n\na: 絶食 - 急性腹症の治療では、通常、絶食にして腸を休ませることが基本である。\nb: 輸液 - 患者の状態",
+        "time": 13.638154983520508
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "a,d,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "d,e,a \n\n解説:\nこの患者は、発熱、意識障害、項部硬直、脳脊髄液の混濁と細胞数の増加、グラム陰性双球菌の貪食像などから、髄膜炎と診断できます。特にグラム染色でグラム陰性双球菌が認められたことから、Neisseria meningitidis（髄膜炎菌）による髄膜炎が強く疑われます。\n\na: 治療の第一選択薬はペニシリンである。→ 正しい。髄膜炎菌感染症の治療には、ベータラクタム系抗生物質であ",
+        "time": 20.64571213722229
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,d,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "a,d,e\n\n解説:\nこの症例は、右下腹部痛と圧痛、反跳痛を認め、白血球数が上昇していることから、虫垂炎が疑われる。腹部超音波検査では病変の描出が不明瞭であったが、腹部造影CTで虫垂炎に特徴的な所見が得られていることから、虫垂炎と診断できる。\n\n虫垂炎の治療は、保存的治療と外科的治療がある。軽症例では抗菌薬投与などの保存的治療が行われるが、穿孔や膿瘍形成を伴う場合には外科的治療が必要となる。本症例",
+        "time": 15.658200025558472
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "c,d,e",
+        "gold": "a,c,d",
+        "correct": false,
+        "response": "c,d,e",
+        "time": 5.1032891273498535
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}

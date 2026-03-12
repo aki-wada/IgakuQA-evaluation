@@ -1,0 +1,479 @@
+{
+  "timestamp": "2026-03-06T00:47:40.613749",
+  "model": "gpt-oss-safeguard-20b-mlx",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 50,
+      "correct": 36,
+      "accuracy": 0.72,
+      "avg_time": 8.163678441047669,
+      "errors": 0,
+      "empty_responses": 3
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116B1",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 6.928775787353516,
+        "reasoning": "We need to answer the last question. The user wrote:\n\n\"問題: 担当した患者の症例報告を論文発表することにした。適切なのはどれか。\na: 患者の国籍を記載する。\nb: 経過の年月日を正確に記載する。\nc: 顔全体が映った写真を掲載する。\nd: 患者に発表に関する同意を取る。\ne: 患者氏名をイニシャルに変換する。\n\n1個選んで答えてください。\"\n\nWe need to pick the correct answer(s). The question: \"問題: 担当した患者の症例報告を論文発表することにした。適切なのはどれか。\" This is Japanese: \"問題: 担当した患者の症例報告を論文発表することにした。適切なのはどれか。\" I think it's about which items are appropriate for publishing a case report. Options: a: 患者の国籍を記載する。 (include patient's nationality). b: 経過の年月日を正確に"
+      },
+      {
+        "problem_id": "116B2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 6.563363075256348,
+        "reasoning": "We need to parse the question. The user is asking in Japanese: \"問題: 異常呼吸あるいは息切れを主訴とする患者の所見と原因の組合せについて正しいのはどれか。\"\n\nWe need to understand the question: \"異常呼吸あるいは息切れを主訴とする患者の所見と原因の組合せについて正しいのはどれか。\"\n\nThis is a Japanese medical question. The options: \na: Coarse crackles --------- 喘息\nb: 胸部打診で濁音 --------- 気胸\nc: 頸静脈の怒張 --------- 右心不全\nd: SpO2 95％（room air）--------- 呼吸不全\ne: Cheyne-Stokes呼吸 --------- 上気道閉塞\n\nWe need to pick the correct combination of findings and causes? The question: \"異常呼吸あるいは息切れを主訴とする患者の所見"
+      },
+      {
+        "problem_id": "116B3",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 6.265667915344238,
+        "reasoning": "We need to parse the question. The user wrote in Japanese: \"問題: 患者の言葉のうち幻聴ではないと考えられるのはどれか。\"\n\nThey ask: \"Which of the following is not a hallucination? Choose one.\" Wait, they say \"1個選んで答えてください\" meaning choose one. But earlier they had 2 choices? Let's examine.\n\nThe question: \"問題: 患者の言葉のうち幻聴ではないと考えられるのはどれか。\"\n\nThey provide options a-e. We need to pick which statement is not considered as auditory hallucination? Actually \"幻聴\" means auditory hallucinations. So which of the following statements is no"
+      },
+      {
+        "problem_id": "116B4",
+        "prediction": "a",
+        "gold": "c",
+        "correct": false,
+        "response": "a",
+        "time": 5.31145715713501,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 抗菌薬の適正使用について誤っているのはどれか。\"\n\nWe need to pick the incorrect statement among options a-e. The question: \"抗菌薬の適正使用について誤っているのはどれか。\" Means: Which of the following statements is incorrect regarding appropriate use of antibiotics? We need to pick one that is wrong. Options:\n\na: 培養検査提出後に開始する。 (Start after culture results? Actually, antibiotic should be started before or after? Usually start empirically then adjust based on culture. So \"start after c"
+      },
+      {
+        "problem_id": "116B5",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "",
+        "time": 30.356595993041992,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 意識障害のある患者に行うことが困難な身体診察はどれか。\"\n\nThey provide options:\n\na: 腱反射\nb: 項部硬直\nc: 対光反射\nd: 鼻指鼻試験\ne: 膝立て試験（下肢ドロッピングテスト）\n\nThey ask to choose one? Wait: \"1個選んで答えてください\" meaning \"Select 1 answer\". So we need to pick the body exam that is difficult to perform on a patient with consciousness disturbance? Let's parse: \"意識障害のある患者に行うことが困難な身体診察はどれか\" meaning \"Which physical examination is difficult to perform on a patient with consciousness disturbance?\" So whic"
+      },
+      {
+        "problem_id": "116B6",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 13.708324909210205,
+        "reasoning": "We need to understand the question. The user is asking in Japanese: \"問題: 治療後の経過に関して主治医以外に相談を希望する場合、助言や情報提供を行う施設はどれか。\"\n\nWe need to pick one answer from options a-e. The question: \"治療後の経過に関して主治医以外に相談を希望する場合、助言や情報提供を行う施設はどれか。\"\n\nWe need to interpret: \"After treatment, regarding the course of disease, if you want to consult outside the attending physician, which facility provides advice or information?\" This seems about \"medical consultation\" maybe \"医療安全支援センター\"? Or \"地域包括支援センター\"? Let's parse.\n\nThe que"
+      },
+      {
+        "problem_id": "116B7",
+        "prediction": "d",
+        "gold": "e",
+        "correct": false,
+        "response": "d",
+        "time": 3.057537794113159,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 妊娠後期に比べ妊娠初期に高値を示すのはどれか。\"\n\nWe need to pick one answer from options a-e. The question: \"妊娠後期に比べ妊娠初期に高値を示すのはどれか。\" This is Japanese: \"妊娠後期に比べ妊娠初期に高値を示すのはどれか。\" Means: \"Which of the following shows higher values in late pregnancy compared to early pregnancy?\" So which hormone or factor is higher in late pregnancy than early pregnancy? Options: a: エストロゲン (estrogen), b: プロラクチン (prolactin?), c: プロゲステロン (progesterone), d: ヒト胎盤性ラクトーゲン〈hPL〉 (human pl"
+      },
+      {
+        "problem_id": "116B8",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.41802191734314,
+        "reasoning": "We need to answer the last question. The user says: \"問題: 加齢に伴う変化について正しいのはどれか。 a: 腎血流量増加 b: 尿濃縮力低下 c: 糸球体ろ過値上昇 d: �化糸球体数減少 e: 機能ネフロン数増加 1個選んで答えてください。\"\n\nWe need to pick the correct statement about changes that accompany aging. The question is in Japanese: \"加齢に伴う変化について正しいのはどれか。\" Means \"Which of the following is correct regarding changes that accompany aging?\" Options: a: 腎血流量増加 (increase in renal blood flow) b: 尿濃縮力低下 (decrease in glomerular filtration rate?) c: 糸球体ろ過値上昇 (increase in glomerular fil"
+      },
+      {
+        "problem_id": "116B9",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 2.879396915435791,
+        "reasoning": "We need to answer the last question. The user wrote in Japanese: \"問題: 医療面接において患者と良好なコミュニケーションを行うために適切なのはどれか。 a: 医学用語を用いて病状を説明する。 b: 相手が話したことは繰り返さない。 c: 冒頭から閉じられた質問を用いる。 d: 電子カルテの画面を見ながら話しを聞く。 e: 症状が患者の生活に及ぼしている影響を聞く。 1個選んで答えてください。\"\n\nWe need to pick one correct answer. The question: \"医療面接において患者と良好なコミュニケーションを行うために適切なのはどれか\" meaning \"Which of the following is appropriate for good communication with patient in medical encounter?\" Options: a: use medical jargon to explain disease. b: don't repeat what"
+      },
+      {
+        "problem_id": "116B10",
+        "prediction": "b",
+        "gold": "e",
+        "correct": false,
+        "response": "b",
+        "time": 17.170562028884888,
+        "reasoning": "We need to answer the last question. The user asks: \"問題: 社会保障制度について正しいのはどれか。 a: 診療録の保存義務期間は終診時から2年間である。 b: 国民健康保険組合の被保険者数は6千万人より多い。 c: 国民医療費は2000年からの20年間で3倍に増加した。 d: 介護保険第1号被保険者数は第2号被保険者数より多い。 e: 結核患者の医療費の公費負担は感染症法に規定されている。 1個選んで答えてください。\"\n\nWe need to pick the correct statement about social security system. This is Japanese question about Japan's health insurance? Let's analyze each.\n\na: 診療録の保存義務期間は終診時から2年間である。 This is about medical records retention period? In Japan, the law requires 5 years? Ac"
+      },
+      {
+        "problem_id": "116B11",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 4.814319849014282,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 咽頭痛を訴える患者に確認すべき緊急性の高い随伴症状はどれか。\"\n\nWe need to pick one answer from options a-e. The question: \"咽頭痛を訴える患者に確認すべき緊急性の高い随伴症状はどれか。\"\n\nWe need to interpret: \"咽頭痛\" is throat pain? \"咽頭痛を訴える患者に確認すべき緊急性の高い随伴症状はどれか\" meaning \"Which of the following associated symptoms with high urgency should be confirmed in a patient complaining of sore throat?\" So we need to pick the most urgent associated symptom. Options:\n\na: 喀痰 (cough? maybe phlegm? \"咳痰\" meaning sp"
+      },
+      {
+        "problem_id": "116B12",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 9.598787784576416,
+        "reasoning": "We need to answer the last question. The user wrote in Japanese: \"問題: 幼児期以降に筋力低下が明らかになるのはどれか。 a: Werdnig-Hoffmann病 b: 新生児一過性重症筋無力症 c: Duchenne型筋ジストロフィー d: 福山型先天性筋ジストロフィー e: 先天性筋強直性ジストロフィー\"\n\nWe need to pick one correct answer. The question: \"幼児期以降に筋力低下が明らかになるのはどれか。\" Means \"Which of the following conditions shows muscle weakness after infancy?\" Actually \"幼児期以降に筋力低下が明らかになるのはどれか\" maybe \"Which of the following conditions shows muscle weakness after infancy?\" Let's parse: The options are:\n\na: Werdnig-"
+      },
+      {
+        "problem_id": "116B13",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 3.1436610221862793,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 高齢者の個性と尊厳を尊重する介護の在り方について適切なのはどれか。\"\n\nWe have options a-e. Need to pick one correct answer.\n\nLet's translate: \"高齢者の個性と尊厳を尊重する介護の在り方について適切なのはどれか。\"\n\nThis is Japanese: \"Which of the following is appropriate regarding care that respects the individuality and dignity of elderly people?\" So we need to pick one correct statement.\n\nOptions:\n\na: 親しみを込めるように高齢者の名前を「ちゃん」づけで呼ぶ。 (Call the elderly person's name with \"chan\" as if close? This is not appropr"
+      },
+      {
+        "problem_id": "116B14",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 4.40014386177063,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 疾患・状態とそのリスクとなる行動との組合せについて誤っているのはどれか。\"\n\nWe have options a-e. We need to pick the incorrect pairing? The question: \"疾患・状態とそのリスクとなる行動との組合せについて誤っているのはどれか。\"\n\nSo we need to identify which of the following pairings is incorrect. The options:\n\na: 乳癌 --------- 飲酒習慣\nb: 肥満 --------- 速い摂食速度\nc: 食道癌 --------- 高温物の飲食嗜好\nd: フレイル --------- 高齢者の強い咀噛力\ne: 骨粗鬆症 --------- 若年女性の過度の食事制限\n\nWe need to pick the incorrect pairing. Let's analyze each.\n\na: Breast cancer"
+      },
+      {
+        "problem_id": "116B15",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 2.5920841693878174,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 成人の安静時所見のうち異常なのはどれか。\"\n\nWe need to pick one correct answer among options a-e. The question: \"成人の安静時所見のうち異常なのはどれか。\" This is Japanese: \"Which of the following findings at rest in an adult are abnormal?\" We need to pick one that is abnormal. The options:\n\na: 腋窩体温36.2℃ (axillary body temperature 36.2°C)\nb: 脈拍96/分、整 (pulse 96/min, regular)\nc: 血圧112/70mmHg\nd: 呼吸数24/分 (respiratory rate 24/min)\ne: SpO2 97% (room air)\n\nWe need to identify which of "
+      },
+      {
+        "problem_id": "116B16",
+        "prediction": "a",
+        "gold": "e",
+        "correct": false,
+        "response": "a",
+        "time": 22.72936725616455,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 経管栄養を目的とした仰臥位での経鼻胃管の挿入について適切なのはどれか。\"\n\nThey want to choose one correct answer among options a-e. The question: \"経鼻胃管の挿入について適切なのはどれか\" (Which of the following is correct regarding insertion of a nasogastric tube for enteral feeding in supine position?).\n\nWe need to pick the correct statement. Let's analyze each option.\n\na: 挿入前に鼻腔にリドカインを塗布する。 (Apply lidocaine to nasal cavity before insertion). That is a common practice: topical anesthetic can"
+      },
+      {
+        "problem_id": "116B17",
+        "prediction": "b",
+        "gold": "c",
+        "correct": false,
+        "response": "b",
+        "time": 8.778150796890259,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 小児の二次救命処置を2名で行う場合、人工呼吸と胸骨圧迫の比で正しいのはどれか。 a: 1：3 b: 1：15 c: 2：15 d: 2：30 e: 3：30\n\n1個選んで答えてください。\"\n\nWe need to pick the correct ratio of artificial respiration to chest compressions for pediatric CPR with two rescuers. The question: \"小児の二次救命処置を2名で行う場合、人工呼吸と胸骨圧迫の比で正しいのはどれか。\"\n\nIn pediatric CPR, the ratio of rescue breaths to chest compressions for two-rescuer CPR? For adults it's 30:2 or 15:1. But for pediatric, the ratio is 15 compressions to "
+      },
+      {
+        "problem_id": "116B18",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 7.493844985961914,
+        "reasoning": "We need to understand the question. It's in Japanese. The user asks: \"問題: 57歳の男性。21歳から1日に20本の喫煙をしている。45歳から49歳まで禁煙をしたが、1日に20本の喫煙を再開した。喫煙指数はいくつか。\" This is about calculating the smoking index? The question: \"喫煙指数\" likely refers to pack-years. They say: 57-year-old male, has been smoking 20 cigarettes per day since age 21. He quit from 45 to 49? Wait: \"45歳から49歳まで禁煙をしたが、1日に20本の喫煙を再開した。\" Means: He has been smoking 20 cigarettes per day since age 21. He quit smoking from age 45 to 49? Actually \"45歳から49"
+      },
+      {
+        "problem_id": "116B19",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 5.870798110961914,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 乳房の悪性疾患を疑わせる所見として可能性が低いのはどれか。\"\n\nWe need to pick one answer from options a-e. The question: \"乳房の悪性疾患を疑わせる所見として可能性が低いのはどれか。\"\n\nWe need to interpret: \"乳房\" maybe means breast? \"悪性疾患を疑わせる所見として可能性が低いのはどれか\" meaning which of the following findings is least likely to suggest a malignant breast disease? So we need to pick one that is low probability of being malignant.\n\nOptions:\n\na: えくぼ徴候 (maybe \"eckob\"?? unclear)\nb: 橙皮様皮膚\nc: 乳頭のびらん\nd: 血性乳頭分泌\ne: 乳頭の"
+      },
+      {
+        "problem_id": "116B20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 5.092639923095703,
+        "reasoning": "We need to parse the question. The user is asking in Japanese: \"問題: 足関節背屈の徒手筋力テストにおいて、足関節の動きを認めず前脛骨筋の収縮のみを認めた。評価はどれか。 a: 0 b:1 c:2 d:3 e:4. 1個選んで答えてください。\"\n\nWe need to understand the question: \"足関節背屈の徒手筋力テストにおいて、足関節の動きを認めず前脛骨筋の収縮のみを認めた。評価はどれか.\"\n\nThis is about manual muscle testing of ankle dorsiflexion? \"足関節背屈\" maybe refers to \"足関節背屈\" meaning ankle dorsiflexion? Wait, \"足関節背屈\" maybe \"足関節背屈\" is a Japanese phrase? Actually, \"足関節背屈\" might be \"ankle dorsiflexion\"? But the phrase \"足関節背屈\" might be a mis"
+      },
+      {
+        "problem_id": "116B21",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 3.2540760040283203,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 脳脊髄液検査結果を評価する際、脳脊髄液の検査結果と血液の検査結果を比較すべきものはどれか。\"\n\nWe need to pick one correct answer among options a-e. The question: \"When evaluating cerebrospinal fluid test results, which of the following should be compared with blood test results?\" Actually \"脳脊髄液\" is likely \"cerebrospinal fluid\". The options: a: アルブミン (albumin), b: グルコース (glucose), c: 好中球数, d: 蛋白? maybe \"蛋白\" meaning protein? Actually \"蛙白\"? Wait: 蛋白 might be \"蛋白\" meaning protein? e: 白血球"
+      },
+      {
+        "problem_id": "116B22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.102828025817871,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: インスリンに関する医学史で最も新しいのはどれか。\"\n\nOptions:\n\na: 膵臓ランゲルハンス島の発見\nb: 動物膵臓から抽出されたインスリンの精製\nc: 遺伝子工学によるヒトインスリン製剤の作製\nd: インスリンのアミノ酸配列および立体構造の解明\ne: 膵臓除去犬が尿糖を含む多尿をきたすことの発見\n\nWe need to pick the most recent event in insulin history. Let's analyze each.\n\na: \"膵臓ランゲルハンス島の発見\" - This refers to the discovery of pancreatic islets of Langerhans? Actually \"ランゲルハンス島\" is the islets of Langerhans. That was discovered in 1869? Actually the discovery of pancreatic islets b"
+      },
+      {
+        "problem_id": "116B23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 3.646919012069702,
+        "reasoning": "We need to parse the question. The user is speaking Japanese, but some parts are garbled due to encoding? Let's decode.\n\nThe question: \"問題: 息切れと下肢の浮腫を呈し、心不全が疑われる患者に医療面接を行っている。開放型質問はどれか.\"\n\nWe need to pick one of the options that is a \"開放型質問\" (open-ended question) presumably. The context: patient with dyspnea and lower limb edema, suspected heart failure. We are to choose which of the options is an open-ended question? The options:\n\na: 「ご年齢を教えてください」 (Please tell me your age) - that's a closed ques"
+      },
+      {
+        "problem_id": "116B24",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 12.579533100128174,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 退院時要約について誤っているのはどれか。\"\n\nWe need to pick the incorrect statement about discharge summary? The question: \"退院時要約について誤っているのはどれか。\"\n\nWe have options a-e. We need to pick the one that is wrong? The question says \"誤っているのはどれか\" meaning which of the following statements is incorrect? We need to choose one that is wrong. Let's analyze each statement.\n\na: 検査入院では記載を省略できる。 (In the discharge summary? Wait: \"検査入院では記載を省略できる\" maybe meaning \"In the admission "
+      },
+      {
+        "problem_id": "116B25",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 9.198984861373901,
+        "reasoning": "We need to parse the question. It's in Japanese, about a 48-year-old woman with right upper limb motor dysfunction. She had an incident: after drinking alcohol, she fell onto a chair? Wait: \"昨晩飲酒後、食卓の椅子で右の肘掛けにもたれかかって寝たところ、目が覚めると右手関節の背屈ができなくなっていたため受診した。\" This is garbled. But the case: right hand dorsal extensor? \"右手関節の背屈ができなくなっていた\" maybe meaning \"right hand extensor tendon not functioning\". She has sensory loss on right hand? Actually: \"右手背に感覚鈍麻がある\" meaning sensory loss on right hand dorsum? \"右手関"
+      },
+      {
+        "problem_id": "116B26",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 3.3334438800811768,
+        "reasoning": "We need to analyze the question. It's a medical multiple choice. The scenario: 54-year-old woman, had hysterectomy for uterine fibroids? Actually \"子宮筋腫\" maybe \"子宮筋腫\"? Might be \"子宮筋腫\" meaning uterine fibroid? She had a hysterectomy 3 days ago. Now she is in hospital, suddenly develops dyspnea (呼吸困難) with no cough, chest pain. Vital signs: SpO2 89% on room air. Heart rate 112, BP 102/62, RR 24. No abnormal breath sounds. So likely acute pulmonary embolism? But no chest pain, but dyspnea and hypoxi"
+      },
+      {
+        "problem_id": "116B27",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.741800785064697,
+        "reasoning": "We need to analyze the question. It's a Japanese medical exam style multiple choice? The user: \"問題: 83歳の女性。4日前からの右腰部痛と悪寒戦慄を伴う発熱を主訴に来院した。来院時、意識は清明。見当識障害はない。体温38.6℃。脈拍102/分、整。血圧138/88mmHg。呼吸数24/分。SpO2 97％（room air）。頭頸部に異常を認めない。心臓の聴診で心尖部を最強点とするLevine 3/6の収縮期雑音を聴取する。呼吸音に異常を認めない。腹部は平坦、軟で、肝・脾を触知しない。四肢・末梢に皮疹を認めない。入院時に行った血液培養2セット（4本）からクラスター状に集簇するグラム陽性球菌が検出された。次に行うべき検査はどれか。\"\n\nWe need to pick one answer from options a-e. The scenario: 83-year-old female with right lower back pain, fever, chills? \"悪寒戦慄\" ma"
+      },
+      {
+        "problem_id": "116B28",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.137732028961182,
+        "reasoning": "We need to answer the last question. Let's parse it.\n\nQuestion: 84-year-old man, weight loss, has metastatic cancer from large intestine. Primary and metastasis cannot be surgically removed. The patient wants to have information disclosed? Wait: \"本人は告知を望んでいるが、薬物による抗癌治療は望んでいない。長男は告知も積極的治療も望んでいない。主治医は薬物による抗がん治療を行いたいと考えている。認知機能は改訂長谷川式簡易知能評価スケールで22点（30点満点）。この患者の治療方針を決定する上で最も重要な因子はどれか。\"\n\nWe need to pick the most important factor for deciding treatment. Options: a: 患者の年齢 (patient's age), b: 患者の意向 (pat"
+      },
+      {
+        "problem_id": "116B29",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "d",
+        "time": 8.505900144577026,
+        "reasoning": "We need to parse the question. It's in Japanese, with some typos. Let's translate: \"問題: 40歳の女性。1か月前に腹部膨満を主訴に婦人科外来を受診し、精査の結果卵巣腫瘍の診断を受け、摘出手術を受けるため2週間前に入院した。身長104cm、体重25kg。骨形成不全症のため、年1回整形外科を定期受診している。歩行困難があり日常的に電動車いすを用いている。夫と5歳の男児との3人暮らし。ネットショップを経営している。日常生活をサポートするため数人のボランティアが入れ替わりで支援している。術後経過は良好で術中病理診断の結果は良性であった。入院中に新たな機能障害は認めなかった。入院中の主治医として退院に向けて必要なのはどれか。\"\n\nThis is a long scenario. The question: \"入院中の主治医として退院に向けて必要なのはどれか。\"\n\nWe need to choose from options a-e. The question: \"入院中の主治医として退院に向けて必要なのはどれか"
+      },
+      {
+        "problem_id": "116B30",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 7.220226049423218,
+        "reasoning": "We need to parse the question. It's in Japanese. Let's translate.\n\nQuestion: \"80歳の女性。3日前、肺炎のため入院した。肺炎は改善傾向である。夜中にトイレに行こうとして病室内で転倒した。頭部打撲はなく痛みの訴えもない。トイレに行くときにはナースコールを押して知らせるように伝えていたが、ナースコールは押されていなかった。入院後は不眠のため、ベンゾジアゼピン系薬剤を内服していた。入院前のADLは自立していた。翌日行われたカンファレンスでの提案として適切なのはどれか。\"\n\nWe need to choose one answer from options a-e. The question: \"80歳の女性。3日前、肺炎のため入院した。肺炎は改善傾向である。夜中にトイレに行こうとして病室内で転倒した。頭部打撲はなく痛みの訴えもない。トイレに行くときにはナースコールを押して知らせるように伝えていたが、ナースコールは押されていなかった。入院後は不眠のため、ベンゾジアゼピン系薬剤を内服していた。入院前のADLは自立してい"
+      },
+      {
+        "problem_id": "116B31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 10.891263961791992,
+        "reasoning": "We need to parse the question. The user is presenting a Japanese medical scenario: 54-year-old woman with chest discomfort when climbing stairs. She has been told that coronary artery bypass surgery is needed. The patient says she doesn't want to tell family or coworkers about her condition. We need to choose the correct statement for physician's appropriate explanation? The question: \"医師の患者への適切な説明はどれか\" meaning which statement is appropriate explanation to the patient? Options a-e. We need to pi"
+      },
+      {
+        "problem_id": "116B32",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 7.634184837341309,
+        "reasoning": "We need to parse the question. It's a Japanese medical exam style multiple choice? The scenario: 78-year-old woman, left side vision loss? She had a fall? Let's read carefully.\n\n\"78歳の女性。左側が見えにくいことを主訴に来院した。本日、朝食時に左側にある味噌汁に気づかず、手をぶつけてこぼした。その後、部屋の戸口に左肩をぶつけた。高血圧症と心房細動で内服加療中である。意識は清明。体温36.5℃。脈拍80/分、不整。血圧154/94mmHg。呼吸数16/分。SpO2 96％（room air）。対座法で左視野障害を認める。四肢の明らかな麻痺は認めない。血液所見：赤血球452万、Hb 13.1g/dL、Ht 41％、白血球8,000、血小板20万、PT-INR 1.0（基準0.9〜1.1）。血液生化学所見：尿素窒素15mg/dL、クレアチニン0.8mg/dL、血糖102mg/d/?? Na 139mEq/L、K 3"
+      },
+      {
+        "problem_id": "116B33",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "e",
+        "time": 3.6721367835998535,
+        "reasoning": "We need to answer the last question. Let's parse it.\n\nQuestion: \"26歳の初妊婦。妊娠24週で妊婦健康診査のため来院した。既往歴に特記すべきことはない。身長160cm、体重66kg（非妊時58kg）。体温37.0℃。脈拍72/分、整。血圧134/72mmHg。子宮底長21cm、腹囲85cm。下腿に軽度浮腫を認める。尿所見：蛋白（−）、糖2＋。空腹時血糖値132mg/dL。まず行う対応として適切なのはどれか。\"\n\nWe need to pick one answer. Options:\n\na: 24時間蓄尿\nb: 経口糖尿病薬を開始\nc: 血糖値の日内変動を測定\nd: 強化インスリン療法を開始\ne: 75g経口ブドウ糖負荷試験を実施\n\nWe need to interpret: 26-year-old first pregnancy, at 24 weeks. She has proteinuria? Actually urine: protein negative, sugar 2+. Fasting blood gluc"
+      },
+      {
+        "problem_id": "116B34",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 7.377443790435791,
+        "reasoning": "We need to parse the question. It's in Japanese, about a 19-year-old male with traffic accident, massive bleeding, need blood transfusion. The question: \"投与が可能な濃厚赤血球液と新鮮凍結血漿の組合せはどれか\" meaning which combination of packed red blood cell and fresh frozen plasma can be used. They want to choose one option.\n\nWe have options a-e with combinations of blood types for packed RBC and fresh frozen plasma. The scenario: patient is hemorrhaging, need transfusion; they want to choose appropriate blood type com"
+      },
+      {
+        "problem_id": "116B35",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "d",
+        "time": 5.042803049087524,
+        "reasoning": "We need to answer the last question. Let's parse it.\n\nQuestion: \"88歳の男性。長年の喫煙に起因する慢性閉塞性肺疾患と弁膜症による重症の呼吸不全および心不全のため入院した。疾患自体の改善は難しく、呼吸の苦しさや体幹のだるさなどの苦痛の訴えが強く、本人は緩和ケアを望んでいる。妻と二人暮らしで長男が近所に住んでおり家族関係は良好である。この患者に緩和ケアを行うにあたり、対応として誤っているのはどれか。\"\n\nWe need to pick the wrong action among options a-e. The question: \"この患者に緩和ケアを行うにあたり、対応として誤っているのはどれか。\"\n\nWe need to pick the wrong statement? Actually \"誤っているのはどれか\" meaning which of the following is incorrect for providing palliative care? So we need to pick the wrong"
+      },
+      {
+        "problem_id": "116B36",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 6.32373309135437,
+        "reasoning": "We need to parse the question. It's in Japanese, with some typos due to translation? Let's decode.\n\nQuestion: \"35歳の男性。登山道脇で動けなくなっているところを発見された。ドクターカーで出動した医師が登山口で待機していた。現地の天候は雨、気温は10℃。医師がこの男性に接触した時、意識レベルはJCS II-30。体温（直腸温）31.4℃。脈拍58/分、整。血圧102/62mmHg。呼吸数30/分。SpO2は測定できず、末梢循環不全によるものと考えられた。病院前救護として誤っているのはどれか.\"\n\nThis is a scenario: 35-year-old man, found immobile? \"登山道脇で動けなくなっているところを発見された\" maybe \"found unable to move\"? He is at a mountain path. The doctor arrives. Weather: rain, temperature 10°C. When t"
+      },
+      {
+        "problem_id": "116B37",
+        "prediction": "",
+        "gold": "d",
+        "correct": false,
+        "response": "",
+        "time": 30.566649913787842,
+        "reasoning": "We need to parse the question. It's Japanese medical exam style. The scenario: 28-year-old pregnant woman, 23 weeks + 4 days (i.e., about 24 weeks). She has vaginal bleeding and lower abdominal pain. The question: \"経腟超音波検査では正常脈で足位の児を認める。経腟超音波画像を別に示す。まず行うのはどれか。\" This is a bit garbled. The options: a: 外回転術 (?? maybe \"外回転術\" meaning external rotation? Not sure). b: 緊急帝王切開 (?? \"緊急帝王切開\" maybe \"emergency cesarean section\"). c: 子宮頸管縫縮術 (?? \"子宮頸管縫縮術\" maybe \"uterine cervical cerclage\"?). d: β2刺激薬の点滴静注 (be"
+      },
+      {
+        "problem_id": "116B38",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 3.5637941360473633,
+        "reasoning": "We need to analyze the question. It's a Japanese medical multiple choice. The scenario: 64-year-old man with chest pain. He has exertional angina? Let's parse details.\n\nHe is 64-year-old male, presents with chest pain. He has had exertional chest discomfort for 3 months: \"坂道や階段の昇降などで前胸部に圧迫感を感じるようになった\" meaning he feels pressure with exertion. He had chest pain after dinner that lasted 45 minutes and did not resolve; he went to emergency. Vital signs: BP 156/88, pulse 96, RR 24, SpO2 95%. Troponin"
+      },
+      {
+        "problem_id": "116B39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 2.553554058074951,
+        "reasoning": "We need to parse the question. It's in Japanese, about a 26-year-old woman with heavy menstrual bleeding and an intracavitary mass of 2 cm. She has anemia (Hb 7.2). The question: \"将来妊娠を考えている。鉄剤投与による貧血改善後に行う治療法として適切なのはどれか。\" So after iron therapy to improve anemia, what is the appropriate treatment? Options: a: 子宮全摘術 (uterine total hysterectomy), b: 子宮鏡下手術 (hysteroscopic surgery?), c: 子宮動脈塞栓術 (uterine artery embolization), d: 子宮内膜焼灼術 (endometrial ablation?), e: プロゲステロン投与 (progesterone therapy). Th"
+      },
+      {
+        "problem_id": "116B40",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 7.955621004104614,
+        "reasoning": "We need to parse the question. The user provided a long Japanese case description: 76-year-old man with decreased appetite, general fatigue. History of hypertension, proteinuria >1g/day for 5 years, kidney function deteriorating. Now has decreased appetite and fatigue. Physical: weight 47 kg? height 162 cm, blood pressure 146/92 mmHg. Some lab values: hemoglobin low (8.8), Hct 28%? RBC? Actually Hb 8.8 g/dL indicates anemia. Platelets 18k (low). eGFR 6 mL/min/1.73m2 indicates end-stage renal dis"
+      },
+      {
+        "problem_id": "116B41",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "a",
+        "time": 9.786701679229736,
+        "reasoning": "We need to parse the question. The user wrote in Japanese:\n\n\"問題: この患者への処置中に発生した事象として考えにくいのはどれか。 a: 気胸 b: 血胸 c: 空気塞栄 d: 急性大動脈解離 e: 血腫による気道狭窄 1個選んで答えてください。\"\n\nWe need to pick one answer. The question: \"この患者への処置中に発生した事象として考えにくいのはどれか。\" Means \"Which of the following is likely to occur during the treatment of this patient?\" Wait, context: The previous question about a man who collapsed in a manhole while moving sludge. That was about possible causes of sudden loss of consciousness: options were asphyxi"
+      },
+      {
+        "problem_id": "116B42",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "b",
+        "time": 8.78444790840149,
+        "reasoning": "We need to parse the question. The user wrote in Japanese, a scenario: 32-year-old man with left forearm injury from falling into bathtub? Actually \"左前腕を受傷し救急車で搬入された\" etc. The scenario: He had a fall from bathtub, glass shards injuring left forearm. A towel was used to tie the upper arm for hemostasis, and they called ambulance. The question: \"上腕部のタオルを外すタイミングで適切なのはどれか\" meaning \"When is it appropriate to remove the towel from upper arm? Choose correct answer.\" Options: a: immediately after arriva"
+      },
+      {
+        "problem_id": "116B43",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 6.202069044113159,
+        "reasoning": "We need to answer the last question. The user asks:\n\n\"問題: 血液をふき取った後の創部の写真を別に示す。神経断裂を疑う所見はどれか。\na: 創部の強い疼痛\nb: 指先の知覚脱失\nc: 腕橈骨筋反射の低下\nd: 手関節自動伸展が不可能\ne: 損傷部位より末梢の浮腫\n\n1個選んで答えてください。\"\n\nWe need to pick one correct answer. The question: \"After blood is wiped, the photo of the wound is shown. Which finding suggests a suspected brachial plexus (神経) rupture? Wait: \"神経断裂\" maybe \"neural injury\"? Actually \"神経\" could be \"神経\" meaning \"nerve\". The question: \"血液をふき取った後の創部の写真を別に示す。神経断裂を疑う所見はどれか。\" So after wiping bloo"
+      },
+      {
+        "problem_id": "116B44",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 3.5946192741394043,
+        "reasoning": "We need to analyze the question. The user provided a long Japanese case description: 78-year-old woman with dyspnea, history of smoking? Actually not. She had a heart murmur: Levine 3/6 at right sternal border second intercostal space? \"頸静脈の怒張を認めない。呼吸音に異常を認めない。頸部に放散する胸骨右縁第2肋間を最強点とするLevine 3/6の駆出性収縮期雑音を聴取する。\"\n\nWe need to pick the most likely disease among options: a: 肥大型心筋症 (hypertrophic cardiomyopathy), b: 動脈管開存症 (patent ductus arteriosus?), c: 大動脈弁狭窄症 (aortic stenosis), d: 心房中隔欠損症 (atrial septa"
+      },
+      {
+        "problem_id": "116B45",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "e",
+        "time": 6.8552939891815186,
+        "reasoning": "We need to answer the last question. The user says:\n\n\"問題: 治療方針の決定に役立つ情報に含まれないのはどれか。\"\n\nWe need to pick one answer among options a-e. The question: \"治療方針の決定に役立つ情報に含まれないのはどれか。\" This is Japanese: \"Which of the following information does not help in determining the treatment plan?\" So we need to pick which one is NOT included among information that helps decide therapy. Options:\n\na: 自覚症状 (subjective symptoms)\nb: 併存疾患の有無 (presence of comorbid diseases)\nc: 心エコー検査の所見 (echocardiography findings)\nd: 心臓カテー"
+      },
+      {
+        "problem_id": "116B46",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "c",
+        "time": 5.838012933731079,
+        "reasoning": "We need to parse the question. The user wrote a Japanese medical scenario: 20-year-old male with palpitations and headache, high blood pressure? Actually blood pressure 192/110. He has symptoms of possible hypertension crisis? The question: \"この時点で患者に対して医師が説明する事項で省略できるのはどれか。\"\n\nThey provide options a: 現在の病状 (current condition), b: 現在の診断名 (current diagnosis name), c: 研究段階の医療の概要 (research stage of treatment overview?), d: 緊急に行う処置の概要と危険性 (summary of emergency procedures and risks), e: これから行う検査の概要と危険性"
+      },
+      {
+        "problem_id": "116B47",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "a",
+        "time": 5.63311505317688,
+        "reasoning": "We need to analyze the question. The user asks: \"問題: 入院後、以下の検査結果が得られた。入院後検査所見：TSH 1.76μU/mL（基準0.2〜4.0）、FT3 3.6pg/mL（基準2.3〜4.3）、FT4 1.4ng/dL（基準0.8〜2.2）、アルドステロン 6 ng/dL (基準5〜10), 血漿レニン活性 2.0 ng/mL/時間 (基準1.2〜2.5), アドレナリン 120 pg/mL (基準100以下), ノルアドレナリン1,200pg/mL(基準100〜450). 尿中VMA 18 mg/日 (基準1.3〜5.1). 腹部超音波検査で左側腹部に径2cmの腫瘤像を認める。経静脈的降圧薬で降圧がみられたのち、最初に投与すべき経口降圧薬はどれか。\"\n\nWe need to pick one answer from options a-e. The question: \"最初に投与すべき経口降圧薬はどれか\" meaning \"Which oral antihypertensive drug should be given f"
+      },
+      {
+        "problem_id": "116B48",
+        "prediction": "",
+        "gold": "a",
+        "correct": false,
+        "response": "",
+        "time": 30.70251202583313,
+        "reasoning": "We need to parse the problem. The user has provided a Japanese medical scenario: 64-year-old female, unconscious, found at home. She was in a bathroom? \"脱衣場\" maybe \"dressing area\"? The scenario: she had vomiting, no head injury. She was found unconscious; at arrival of ambulance, she was in cardiac arrest? Actually: \"現病歴：自宅の脱衣場で意識がないのを夫が発見して救急要請をした。本人が入浴のため脱衣場に行って約1時間後に発見し、嘔吐した痕跡を認めたが、明らかな頭部外傷は認めなかった。救急隊到着時には心停止であったが、胸骨圧迫とバッグバルブマスク換気により自己心拍は再開し、救急搬送となった。既往歴：54歳から高血圧症で降圧薬を服薬中である。生活歴：喫煙は15本/日を44年間"
+      },
+      {
+        "problem_id": "116B49",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "b",
+        "time": 4.68305516242981,
+        "reasoning": "We need to answer the last question. The user provided a scenario: \"初診時に撮影した頭部単純CTを別に示す。入院後、ICUに入室して保存療法で経過を観察した。翌日の所見は以下のとおりであった。意識レベルはJCS III-300。体温37.2℃。脈拍120/分、整。血圧94/60mmHg（昇圧薬投与下）。SpO2 98％（FIO2 0.5で人工呼吸器装着）。瞳孔は左右とも径6mmに拡大して固定している。角膜反射、咽頭反射および咳反射がない。顔面の疼痛刺激に対して体動はなく瞳孔も無反応である。脳死判定のためにさらに行うべきなのはどれか。\"\n\nWe need to pick one answer from options a-e. The question: \"脳死判定のためにさらに行うべきなのはどれか\" which is \"Which of the following should be performed for brain death determination?\" Options: a: 頭部MRI, b: 脳波検査"
+      },
+      {
+        "problem_id": "116B50",
+        "prediction": "1. 2.05 g/",
+        "gold": "21",
+        "correct": false,
+        "response": "1. 2.05 g/日",
+        "time": 6.627965211868286,
+        "reasoning": "We need to solve the problem: \"問題: 慢性腎臓病患者に24時間蓄尿検査を行った。尿量2,500mL/日、尿蛋白82mg/dL、尿クレアチニン40mg/dLであった。1日尿蛋白量（g/日）を求めよ。ただし、小数第2位以下の数値が得られた場合には、小数第2位を四捨五入すること。解答：①.②g/日\"\n\nWe need to calculate the daily proteinuria in g/day.\n\nGiven: 24h urine collection. Urine volume 2,500 mL/day. Urine protein concentration: 82 mg/dL? Wait \"尿蛋白82mg/dL\" meaning urinary protein concentration is 82 mg/dL. Urine creatinine? \"尿クレアチニン40mg/dL\" meaning urinary creatinine concentration 40 mg/dL. But we need to calculate protei"
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。",
+    "english_strict": "You are a medical expert. Answer the multiple-choice question.\nOutput ONLY the answer letter(s) (a,b,c,d,e). No explanation. No reasoning. No analysis.\nIf multiple answers: separate with comma. Example: a,c\nDo not write anything else.",
+    "english_answer_first": "You are a medical doctor. Answer the medical question.\nFIRST LINE: answer letter(s) only (a,b,c,d,e). Example: b or a,c\nSECOND LINE onwards: brief explanation (optional, max 3 sentences).\nNo self-critique. No debate. One best answer only. Stop after answering."
+  }
+}
