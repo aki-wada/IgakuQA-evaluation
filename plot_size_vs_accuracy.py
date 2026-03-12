@@ -12,69 +12,139 @@ matplotlib.rcParams['axes.unicode_minus'] = False
 
 # ========== DATA ==========
 # (model_name, memory_size_GB, best_accuracy%, category)
+# Memory sizes from `lms ls` (LM Studio), accuracy = Section A best
 models = [
-    # Passing models (75%+)
-    ("gpt-oss-120b\n(MLX mt=1024)", 124.20, 92.0, "gpt-oss"),
+    # Top tier (>85%)
+    ("qwen3.5-397b@8bit\n(MoE 17B active)", 249.80, 90.7, "qwen3.5"),
+    ("qwen3.5-397b@4bit\n(MoE 17B active)", 223.89, 90.7, "qwen3.5"),
+    ("gpt-oss-120b\n(MLX 8bit)", 124.20, 92.0, "gpt-oss"),
+    ("gpt-oss-120b\n(GGUF)", 63.39, 90.7, "gpt-oss"),
     ("qwen3-235b-2507", 249.80, 88.0, "qwen3"),
     ("qwen3-235b-a22b", 132.26, 88.0, "qwen3"),
-    ("qwen3-next-80b\n(MoE A3B mt=1024)", 84.67, 85.3, "qwen3"),
+    ("qwen3-next-80b\n(MoE A3B)", 84.67, 85.3, "qwen3"),
+    # Passing (75-85%)
+    ("qwen3.5-27b@8bit", 29.53, 89.3, "qwen3.5"),
+    ("qwen3-235b-thinking\n-2507", 249.80, 89.3, "thinking"),
+    ("nemotron-3-nano", 33.58, 84.0, "thinking"),
     ("qwen3-vl-32b", 19.64, 82.7, "qwen3-vl"),
     ("swallow-70b", 40.35, 81.3, "swallow"),
+    ("GPT-OSS-\nSwallow-20B", 41.86, 80.0, "gpt-oss-jp"),
     ("qwen3-32b", 34.83, 80.0, "qwen3"),
-    ("gpt-oss-20b\n(mt=1024)", 22.26, 77.3, "gpt-oss"),
+    ("gpt-oss-20b", 22.26, 77.3, "gpt-oss"),
     ("mistral-large", 130.28, 77.3, "mistral"),
+    ("Llama 4 Scout\n(MoE 17Bx16E)", 61.14, 76.0, "llama"),
+    ("minimax-m2.5", 128.68, 77.3, "thinking"),
     ("medgemma-27b", 16.03, 76.0, "gemma"),
-    ("mistral-small", 25.93, 76.0, "mistral"),
-    # Near-pass
+    ("mistral-small-3.2", 25.93, 76.0, "mistral"),
+    ("magistral-small\n2509", 25.93, 76.0, "mistral"),
+    # Near-pass (65-75%)
     ("qwen3-vl-30b", 33.53, 74.7, "qwen3-vl"),
     ("gemma-3-27b", 16.87, 74.7, "gemma"),
     ("qwen3-14b", 15.71, 73.3, "qwen3"),
     ("llama-3.3-70b", 39.71, 68.0, "llama"),
-    # Mid-range
+    # Mid-range (55-65%)
     ("shisa-v2-70b", 39.71, 61.3, "llama-jp"),
     ("qwen3-8b", 8.72, 61.3, "qwen3"),
+    ("glm-4.7-flash", 31.84, 73.3, "thinking"),
+    ("glm-4.6v-flash", 11.79, 61.3, "thinking"),
     ("ezo2.5-12b", 6.94, 60.0, "gemma-jp"),
     ("qwen3-vl-8b", 5.78, 60.0, "qwen3-vl"),
+    ("olmo-3-32b-think", 34.26, 57.3, "thinking"),
     ("phi-4", 9.05, 56.0, "other"),
+    ("phi-4-reasoning", 8.26, 56.0, "thinking"),
     ("gemma-3-12b", 14.45, 54.7, "gemma"),
     ("internvl3_5-8b", 5.71, 54.7, "other"),
     ("qwen3-4b", 2.28, 54.7, "qwen3"),
     ("swallow-8b", 16.08, 53.3, "swallow"),
     ("qwen3-vl-4b", 3.11, 52.0, "qwen3-vl"),
-    # Low accuracy
+    # Low accuracy (<50%)
     ("elyza-jp-8b", 4.92, 44.0, "llama-jp"),
     ("medgemma-4b@bf16", 9.98, 29.3, "gemma"),
     ("lfm2.5-1.2b", 1.25, 28.0, "other"),
     ("medgemma-4b", 3.44, 18.7, "gemma"),
     # Evaluation failures
     ("fallen-111b", 48.61, 1.3, "failure"),
-    ("nemotron-30b", 33.58, 1.3, "failure"),
-    ("glm-4.7-flash", 31.84, 0.0, "failure"),
-    ("glm-4.6v-flash", 11.79, 2.7, "failure"),
 ]
 
 # Category styles
 category_style = {
+    "qwen3.5": {"color": "#0D47A1", "marker": "H", "label": "Qwen3.5 MoE"},
     "qwen3":    {"color": "#2196F3", "marker": "o", "label": "Qwen3"},
     "qwen3-vl": {"color": "#03A9F4", "marker": "D", "label": "Qwen3-VL"},
     "gemma":    {"color": "#4CAF50", "marker": "s", "label": "Gemma / medgemma"},
     "gemma-jp": {"color": "#8BC34A", "marker": "^", "label": "EZO (Gemma JP-FT)"},
     "gpt-oss":  {"color": "#FF9800", "marker": "p", "label": "GPT-OSS"},
+    "gpt-oss-jp": {"color": "#E65100", "marker": "P", "label": "GPT-OSS-Swallow (JP-FT)"},
     "mistral":  {"color": "#9C27B0", "marker": "h", "label": "Mistral"},
     "swallow":  {"color": "#F44336", "marker": "*", "label": "Swallow (JP-FT)"},
     "llama":    {"color": "#795548", "marker": "v", "label": "Llama"},
     "llama-jp": {"color": "#E91E63", "marker": "<", "label": "Llama JP-FT (Shisa/ELYZA)"},
+    "thinking": {"color": "#00BCD4", "marker": "8", "label": "Thinking Models"},
     "other":    {"color": "#607D8B", "marker": "X", "label": "Others"},
-    "failure":  {"color": "#BDBDBD", "marker": "x", "label": "Eval Failure"},
+    "failure":  {"color": "#BDBDBD", "marker": "x", "label": "Eval Failure / Stopped"},
 }
 
 # ========== Figure 1: Full Scatter Plot ==========
-fig, ax = plt.subplots(figsize=(14, 9))
+fig, ax = plt.subplots(figsize=(16, 10))
 
 # Reference lines
 ax.axhline(y=75, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label='Pass Line (75%)')
 ax.axhline(y=58, color='orange', linestyle=':', linewidth=1.2, alpha=0.6, label='ChatGPT (58%)')
 ax.axhline(y=80, color='blue', linestyle=':', linewidth=1.0, alpha=0.4, label='GPT-4 (80%)')
+
+# Custom label offsets for overlapping models
+label_offsets = {
+    # Top-right cluster (large models, high accuracy)
+    "qwen3.5-397b@8bit\n(MoE 17B active)": (5, 2),
+    "qwen3.5-397b@4bit\n(MoE 17B active)": (5, -6),
+    "gpt-oss-120b\n(MLX 8bit)": (5, -4),
+    "gpt-oss-120b\n(GGUF)": (5, 2),
+    "qwen3-235b-2507": (-30, 3),
+    "qwen3-235b-a22b": (5, -4),
+    "qwen3-next-80b\n(MoE A3B)": (-28, -5),
+    # Passing cluster
+    "qwen3.5-27b@8bit": (5, -4),
+    "nemotron-3-nano": (5, 2),
+    "qwen3-vl-32b": (5, 2),
+    "swallow-70b": (-18, 2),
+    "GPT-OSS-\nSwallow-20B": (5, -5),
+    "qwen3-32b": (-13, -4),
+    "gpt-oss-20b": (5, -4),
+    "mistral-large": (-22, -4),
+    "Llama 4 Scout\n(MoE 17Bx16E)": (5, 2),
+    "medgemma-27b": (-16, -3),
+    "mistral-small-3.2": (5, -4),
+    "magistral-small\n2509": (-25, 3),
+    # Near-pass cluster
+    "qwen3-vl-30b": (-18, -4),
+    "gemma-3-27b": (5, 2),
+    "qwen3-14b": (-15, -3),
+    "llama-3.3-70b": (-18, 2),
+    # Mid-range cluster
+    "shisa-v2-70b": (-18, -3),
+    "qwen3-8b": (5, 2),
+    "glm-4.6v-flash": (5, -3),
+    "ezo2.5-12b": (-14, -3),
+    "qwen3-vl-8b": (-14, 2),
+    "olmo-3-32b-think": (5, -3),
+    "phi-4": (5, 2),
+    "phi-4-reasoning": (-18, -3),
+    "gemma-3-12b": (5, -3),
+    "internvl3_5-8b": (-15, -3),
+    "qwen3-4b": (5, 2),
+    "swallow-8b": (5, -3),
+    "qwen3-vl-4b": (5, -3),
+    # Low accuracy
+    "elyza-jp-8b": (5, 2),
+    "minimax-m2.5": (5, -4),
+    "medgemma-4b@bf16": (5, 2),
+    "lfm2.5-1.2b": (5, 2),
+    "medgemma-4b": (5, -3),
+    "glm-4.7-flash": (5, -3),
+    "qwen3-235b-thinking\n-2507": (5, -6),
+    # Failures
+    "fallen-111b": (5, 2),
+}
 
 # Plot by category
 plotted_categories = set()
@@ -85,40 +155,19 @@ for name, size_gb, acc, cat in models:
     ax.scatter(size_gb, acc, c=style["color"], marker=style["marker"],
                s=120, edgecolors='black', linewidths=0.5, label=label, zorder=5)
     # Label positioning
-    offset_x, offset_y = 1.5, 1.2
-    fontsize = 7
-    if "gpt-oss-120b" in name:
-        offset_y = -3.0
-    elif name == "qwen3-235b-a22b":
-        offset_x = -22
-        offset_y = -3.0
-    elif name == "qwen3-235b-2507":
-        offset_y = 3.0
-    elif "qwen3-next-80b" in name:
-        offset_x = -25
-        offset_y = -4.0
-    elif name in ("swallow-70b", "llama-3.3-70b", "shisa-v2-70b"):
-        offset_x = -18
-    elif name in ("mistral-large",):
-        offset_x = -20
-        offset_y = -3
-    elif name in ("medgemma-27b", "gemma-3-27b"):
-        offset_x = -12
-    elif name in ("qwen3-32b",):
-        offset_x = -8
-        offset_y = -3.5
-    elif "gpt-oss-20b" in name:
-        offset_y = -4.0
-    ax.annotate(name, (size_gb, acc), fontsize=fontsize,
-                xytext=(offset_x, offset_y), textcoords='offset points',
+    offset = label_offsets.get(name, (2, 2))
+    ax.annotate(name, (size_gb, acc), fontsize=6.5,
+                xytext=offset, textcoords='offset points',
                 alpha=0.85)
 
 ax.set_xlabel('Model Size (Memory GB)', fontsize=13)
 ax.set_ylabel('Best Accuracy (%)', fontsize=13)
-ax.set_title('IgakuQA 2022-A: Model Size (Memory) vs Accuracy', fontsize=15, fontweight='bold')
-ax.set_xlim(-5, 265)
+ax.set_title('IgakuQA 2022 Section A: Model Size (Memory) vs Best Accuracy\n'
+             f'({len(models)} models evaluated on Mac Studio M3 Ultra)',
+             fontsize=14, fontweight='bold')
+ax.set_xlim(-10, 450)
 ax.set_ylim(-5, 97)
-ax.legend(loc='lower right', fontsize=9, framealpha=0.9)
+ax.legend(loc='lower right', fontsize=8, framealpha=0.9, ncol=2)
 ax.grid(True, alpha=0.3)
 ax.set_axisbelow(True)
 
@@ -338,7 +387,8 @@ budgets = [
     ("~50 GB", 50, [m for m in func_models if m[1] <= 50]),
     ("~85 GB", 85, [m for m in func_models if m[1] <= 85]),
     ("~135 GB", 135, [m for m in func_models if m[1] <= 135]),
-    ("~250 GB", 250, [m for m in func_models if m[1] <= 250]),
+    ("~250 GB", 250, [m for m in func_models if m[1] <= 260]),
+    ("~450 GB", 450, [m for m in func_models if m[1] <= 450]),
 ]
 
 budget_labels = []
@@ -362,19 +412,20 @@ ax6.axvline(x=58, color='orange', linestyle=':', linewidth=1, alpha=0.5, label='
 
 for i, (acc, name) in enumerate(zip(budget_accs, budget_names)):
     color = 'green' if acc >= 75 else ('orange' if acc >= 58 else 'gray')
-    ax6.text(acc + 0.8, i, f'{acc}%  {name}', fontsize=8, va='center', fontweight='bold', color=color)
+    ax6.text(acc + 0.8, i, f'{acc}%  {name}', fontsize=7, va='center', fontweight='bold', color=color)
 
 ax6.set_yticks(y_pos)
-ax6.set_yticklabels([f'Budget: {l}' for l in budget_labels], fontsize=10)
+ax6.set_yticklabels([f'Budget: {l}' for l in budget_labels], fontsize=9)
 ax6.set_xlabel('Best Accuracy (%)', fontsize=12)
 ax6.set_title('Best Model per Memory Budget', fontsize=13, fontweight='bold')
-ax6.set_xlim(0, 105)
+ax6.set_xlim(0, 108)
 ax6.legend(fontsize=9)
 ax6.grid(True, alpha=0.3, axis='x')
 ax6.set_axisbelow(True)
 ax6.invert_yaxis()
 
-plt.suptitle('IgakuQA 2022-A: Memory-Constrained Model Selection Guide', fontsize=14, fontweight='bold')
+plt.suptitle('IgakuQA 2022-A (75Q): Memory-Constrained Model Selection Guide\n'
+             f'({len(models)} models)', fontsize=14, fontweight='bold')
 plt.tight_layout()
 plt.savefig('plots/pareto_and_budget.png', dpi=150, bbox_inches='tight')
 print("Saved: plots/pareto_and_budget.png")
@@ -455,9 +506,10 @@ print("Saved: plots/quantization_comparison.png")
 plt.close()
 
 # ========== Figure 5: Full Section Heatmap ==========
-fig5, ax7 = plt.subplots(figsize=(10, 8))
+fig5, ax7 = plt.subplots(figsize=(10, 9))
 
 section_data = {
+    "qwen3.5-27b 8bit":  [89.3, 90.0, 74.7, 93.3, 92.0, 86.7],
     "qwen3-32b 8bit":    [80.0, 86.0, 68.0, 86.7, 84.0, 74.7],
     "qwen3-32b 4bit":    [78.7, 84.0, 68.0, 85.3, 84.0, 76.0],
     "medgemma-27b":      [76.0, 82.0, 61.3, 76.0, 76.0, 64.0],
@@ -467,6 +519,7 @@ section_data = {
     "qwen3-vl-4b 4bit":  [49.3, 72.0, 54.7, 69.3, 62.0, 48.0],
 }
 section_totals = {
+    "qwen3.5-27b 8bit": 87.3,
     "qwen3-32b 8bit": 79.3, "qwen3-32b 4bit": 78.8,
     "medgemma-27b": 71.8,
     "qwen3-vl-8b 8bit": 69.8, "qwen3-vl-8b 4bit": 65.3,
@@ -511,9 +564,10 @@ cbar = plt.colorbar(im, ax=ax7, fraction=0.03, pad=0.04)
 cbar.set_label('Accuracy (%)', fontsize=10)
 
 # Horizontal divider lines between model groups
-ax7.axhline(y=1.5, color='white', linewidth=2)
-ax7.axhline(y=2.5, color='white', linewidth=2)
-ax7.axhline(y=4.5, color='white', linewidth=2)
+ax7.axhline(y=0.5, color='white', linewidth=2)  # qwen3.5 vs qwen3
+ax7.axhline(y=2.5, color='white', linewidth=2)  # qwen3 vs medgemma
+ax7.axhline(y=3.5, color='white', linewidth=2)  # medgemma vs qwen3-vl
+ax7.axhline(y=5.5, color='white', linewidth=2)  # qwen3-vl-8b vs 4b
 
 plt.tight_layout()
 plt.savefig('plots/section_heatmap.png', dpi=150, bbox_inches='tight')
@@ -594,4 +648,225 @@ plt.savefig('plots/quantization_tradeoff.png', dpi=150, bbox_inches='tight')
 print("Saved: plots/quantization_tradeoff.png")
 plt.close()
 
-print("\nDone! 6 plots saved to plots/ directory.")
+# ========== Figure 7: Full Section (400Q) Scatter Plot ==========
+fig7, ax10 = plt.subplots(figsize=(16, 10))
+
+# Data: (model_name, memory_size_GB, total_accuracy%, category)
+# Total accuracy = full 400-question evaluation (Sections A-F)
+# Memory sizes from `lms ls` or MEMORY.md (actual evaluation sizes)
+models_full = [
+    # Top tier (>85%)
+    ("qwen3.5-397b@8bit\n(MoE 17B active)", 249.80, 89.5, "qwen3.5"),
+    ("qwen3.5-397b@4bit\n(MoE 17B active)", 223.89, 87.3, "qwen3.5"),
+    ("qwen3.5-27b@8bit", 29.53, 87.3, "qwen3.5"),
+    ("qwen3-235b-2507", 249.80, 86.0, "qwen3"),
+    # High tier (80-85%)
+    ("gpt-oss-120b\n(MLX 8bit)", 124.20, 84.5, "gpt-oss"),
+    ("gpt-oss-120b\n(GGUF)", 63.39, 84.0, "gpt-oss"),
+    ("qwen3-next-80b\n(MoE A3B)", 84.67, 83.5, "qwen3"),
+    ("qwen3-vl-32b", 19.64, 82.8, "qwen3-vl"),
+    ("nemotron-3-nano", 33.58, 80.2, "thinking"),
+    # Passing (75-80%)
+    ("qwen3-32b\n8bit", 34.83, 79.3, "qwen3"),
+    ("qwen3-32b\n4bit", 18.45, 78.8, "qwen3"),
+    ("Swallow-70b", 40.35, 78.0, "swallow"),
+    ("GPT-OSS-\nSwallow-20B", 41.86, 77.8, "gpt-oss-jp"),
+    ("qwen3-vl-30b\n(MoE)", 33.53, 77.8, "qwen3-vl"),
+    ("Llama 4 Scout\n(MoE)", 61.14, 77.5, "llama"),
+    ("mistral-small-3.2", 25.93, 76.8, "mistral"),
+    ("mistral-large", 130.28, 75.8, "mistral"),
+    # Near-pass (70-75%)
+    ("shisa-v2.1-70b", 75.0, 74.2, "llama-jp"),
+    ("magistral-small", 47.16, 74.0, "mistral"),
+    ("shisa-v2.1-70b", 75.0, 74.2, "llama-jp"),
+    ("magistral-small\n8bit", 47.16, 74.2, "mistral"),
+    ("magistral-small\n2509", 47.16, 74.0, "mistral"),
+    ("qwen3-14b", 15.71, 71.8, "qwen3"),
+    ("medgemma-27b", 16.03, 71.8, "gemma"),
+    ("llama-3.3-70b", 39.71, 71.0, "llama"),
+    ("gpt-oss-20b", 22.26, 71.5, "gpt-oss"),
+    # Below pass (60-70%)
+    ("qwen3-vl-8b\n8bit", 9.87, 69.8, "qwen3-vl"),
+    ("gemma-3-27b", 16.87, 67.8, "gemma"),
+    ("qwen3-vl-8b\n4bit", 5.78, 65.3, "qwen3-vl"),
+    ("phi-4", 15.59, 62.8, "other"),
+    ("qwen3-vl-4b\n8bit", 5.11, 60.5, "qwen3-vl"),
+    ("qwen3-vl-4b\n4bit", 3.11, 58.3, "qwen3-vl"),
+]
+
+# Reference lines
+ax10.axhline(y=75, color='red', linestyle='--', linewidth=1.5, alpha=0.7, label='Pass Line (75% = 300/400)')
+ax10.axhline(y=80, color='blue', linestyle=':', linewidth=1.0, alpha=0.4, label='GPT-4 (80%)')
+
+# Custom label offsets for overlapping models
+label_offsets_full = {
+    # Top-right cluster
+    "qwen3.5-397b@8bit\n(MoE 17B active)": (5, 2),
+    "qwen3.5-397b@4bit\n(MoE 17B active)": (5, -6),
+    "gpt-oss-120b\n(MLX 8bit)": (5, -4),
+    "gpt-oss-120b\n(GGUF)": (5, 2),
+    "qwen3-next-80b\n(MoE A3B)": (-28, -5),
+    # High accuracy cluster
+    "qwen3.5-27b@8bit": (5, 2),
+    "qwen3-vl-32b": (5, -4),
+    "nemotron-3-nano": (5, -8),
+    # Passing cluster (30-42 GB)
+    "qwen3-32b\n8bit": (-13, 2),
+    "qwen3-32b\n4bit": (5, -4),
+    "Swallow-70b": (-18, 2),
+    "qwen3-vl-30b\n(MoE)": (-28, -4),
+    "mistral-small-3.2": (5, 2),
+    "mistral-large": (-22, -4),
+    "qwen3-235b-2507": (5, -6),
+    "GPT-OSS-\nSwallow-20B": (5, -5),
+    "Llama 4 Scout\n(MoE)": (5, 2),
+    # Near-pass
+    "shisa-v2.1-70b": (5, -4),
+    "magistral-small\n8bit": (5, 2),
+    "magistral-small\n2509": (-25, 3),
+    "qwen3-14b": (-15, -4),
+    "medgemma-27b": (-16, 2),
+    "llama-3.3-70b": (-18, 2),
+    "gpt-oss-20b": (5, -4),
+    # Below pass (15-17 GB cluster)
+    "qwen3-vl-8b\n8bit": (5, 2),
+    "gemma-3-27b": (5, -4),
+    "qwen3-vl-8b\n4bit": (5, -3),
+    "phi-4": (-7, -4),
+    "qwen3-vl-4b\n8bit": (5, 2),
+    "qwen3-vl-4b\n4bit": (5, -4),
+}
+
+# Plot by category
+plotted_categories_full = set()
+for name, size_gb, acc, cat in models_full:
+    style = category_style[cat]
+    label = style["label"] if cat not in plotted_categories_full else None
+    plotted_categories_full.add(cat)
+    ax10.scatter(size_gb, acc, c=style["color"], marker=style["marker"],
+                 s=120, edgecolors='black', linewidths=0.5, label=label, zorder=5)
+    offset = label_offsets_full.get(name, (2, 2))
+    ax10.annotate(name, (size_gb, acc), fontsize=6.5,
+                  xytext=offset, textcoords='offset points',
+                  alpha=0.85)
+
+ax10.set_xlabel('Model Size (Memory GB)', fontsize=13)
+ax10.set_ylabel('Total Accuracy (%, 400 Questions)', fontsize=13)
+ax10.set_title('IgakuQA 2022 Full Exam (400Q): Model Size (Memory) vs Total Accuracy\n'
+               f'({len(models_full)} models evaluated on Mac Studio M3 Ultra)',
+               fontsize=14, fontweight='bold')
+ax10.set_xlim(-10, 450)
+ax10.set_ylim(53, 93)
+ax10.legend(loc='lower right', fontsize=8, framealpha=0.9, ncol=2)
+ax10.grid(True, alpha=0.3)
+ax10.set_axisbelow(True)
+
+# Highlight passing vs failing with background shading
+ax10.axhspan(75, 93, alpha=0.05, color='green')
+ax10.axhspan(53, 75, alpha=0.05, color='red')
+
+plt.tight_layout()
+plt.savefig('plots/size_vs_accuracy_full_sections.png', dpi=150, bbox_inches='tight')
+print("Saved: plots/size_vs_accuracy_full_sections.png")
+plt.close()
+
+# ========== Figure 8: Pareto Frontier + Best Model per Budget (Full 400Q) ==========
+fig8, (ax11, ax12) = plt.subplots(1, 2, figsize=(16, 7))
+
+# --- Left: Pareto Frontier (400Q) ---
+func_models_full = [(n, s, a, c) for n, s, a, c in models_full]
+func_models_full.sort(key=lambda x: x[1])  # sort by size
+
+# Compute Pareto frontier
+pareto_full = []
+best_acc_full = 0
+for n, s, a, c in func_models_full:
+    if a > best_acc_full:
+        pareto_full.append((n, s, a, c))
+        best_acc_full = a
+
+# Plot all models
+plotted_cats_p = set()
+for name, size_gb, acc, cat in func_models_full:
+    style = category_style[cat]
+    lbl = style["label"] if cat not in plotted_cats_p else None
+    plotted_cats_p.add(cat)
+    ax11.scatter(size_gb, acc, c=style["color"], marker=style["marker"],
+                 s=80, edgecolors='black', linewidths=0.3, zorder=4, alpha=0.6, label=lbl)
+    ax11.annotate(name, (size_gb, acc), fontsize=5.5, xytext=(2, 2),
+                  textcoords='offset points', alpha=0.7)
+
+# Pareto line
+px_f = [p[1] for p in pareto_full]
+py_f = [p[2] for p in pareto_full]
+ax11.step(px_f, py_f, where='post', color='red', linewidth=2, alpha=0.8, label='Pareto Frontier', zorder=5)
+for n, s, a, c in pareto_full:
+    ax11.scatter(s, a, c='red', marker='o', s=150, edgecolors='darkred',
+                 linewidths=1.5, zorder=6)
+    ax11.annotate(f'{n}\n({a}%)', (s, a), fontsize=7, fontweight='bold',
+                  xytext=(5, -15), textcoords='offset points', color='red')
+
+ax11.axhline(y=75, color='red', linestyle='--', linewidth=1, alpha=0.4, label='Pass Line (75%)')
+ax11.set_xlabel('Model Size (Memory GB)', fontsize=12)
+ax11.set_ylabel('Total Accuracy (%, 400Q)', fontsize=12)
+ax11.set_title('Pareto Frontier: Best Accuracy per Memory', fontsize=13, fontweight='bold')
+ax11.legend(fontsize=7, loc='lower right', ncol=2)
+ax11.grid(True, alpha=0.3)
+ax11.set_axisbelow(True)
+ax11.set_ylim(53, 93)
+
+# --- Right: Best Model per Memory Budget (400Q bar chart) ---
+budgets_full = [
+    ("~3 GB", 3, [m for m in func_models_full if m[1] <= 3.5]),
+    ("~5 GB", 5, [m for m in func_models_full if m[1] <= 6]),
+    ("~10 GB", 10, [m for m in func_models_full if m[1] <= 10]),
+    ("~16 GB", 16, [m for m in func_models_full if m[1] <= 17]),
+    ("~20 GB", 20, [m for m in func_models_full if m[1] <= 23]),
+    ("~35 GB", 35, [m for m in func_models_full if m[1] <= 41]),
+    ("~50 GB", 50, [m for m in func_models_full if m[1] <= 50]),
+    ("~85 GB", 85, [m for m in func_models_full if m[1] <= 85]),
+    ("~135 GB", 135, [m for m in func_models_full if m[1] <= 135]),
+    ("~250 GB", 250, [m for m in func_models_full if m[1] <= 260]),
+    ("~450 GB", 450, [m for m in func_models_full if m[1] <= 450]),
+]
+
+budget_labels_f = []
+budget_accs_f = []
+budget_names_f = []
+budget_colors_f = []
+
+for label, limit, candidates in budgets_full:
+    if candidates:
+        best = max(candidates, key=lambda x: x[2])
+        budget_labels_f.append(label)
+        budget_accs_f.append(best[2])
+        budget_names_f.append(f"{best[0]}\n({best[1]:.1f}GB)")
+        budget_colors_f.append(category_style[best[3]]["color"])
+
+y_pos_f = np.arange(len(budget_labels_f))
+ax12.barh(y_pos_f, budget_accs_f, color=budget_colors_f, edgecolor='black', linewidth=0.5, height=0.6)
+
+ax12.axvline(x=75, color='red', linestyle='--', linewidth=1.5, alpha=0.6, label='Pass Line (75%)')
+
+for i, (acc, name) in enumerate(zip(budget_accs_f, budget_names_f)):
+    color = 'green' if acc >= 75 else ('orange' if acc >= 58 else 'gray')
+    ax12.text(acc + 0.8, i, f'{acc}%  {name}', fontsize=7, va='center', fontweight='bold', color=color)
+
+ax12.set_yticks(y_pos_f)
+ax12.set_yticklabels([f'Budget: {l}' for l in budget_labels_f], fontsize=9)
+ax12.set_xlabel('Total Accuracy (%, 400Q)', fontsize=12)
+ax12.set_title('Best Model per Memory Budget', fontsize=13, fontweight='bold')
+ax12.set_xlim(0, 108)
+ax12.legend(fontsize=9)
+ax12.grid(True, alpha=0.3, axis='x')
+ax12.set_axisbelow(True)
+ax12.invert_yaxis()
+
+plt.suptitle('IgakuQA 2022 Full Exam (400Q): Memory-Constrained Model Selection Guide\n'
+             f'({len(models_full)} models)', fontsize=14, fontweight='bold')
+plt.tight_layout()
+plt.savefig('plots/pareto_and_budget_full_sections.png', dpi=150, bbox_inches='tight')
+print("Saved: plots/pareto_and_budget_full_sections.png")
+plt.close()
+
+print("\nDone! 8 plots saved to plots/ directory.")

@@ -9,11 +9,20 @@ matplotlib.rcParams['font.family'] = ['Hiragino Sans', 'Arial Unicode MS', 'sans
 
 # 合格モデルデータ（実測値）
 models = [
-    {"name": "gpt-oss-120b\nMLX 8bit",   "accuracy": 84.5, "memory_gb": 124.20, "avg_time": 1.979, "color": "#e74c3c"},
+    {"name": "qwen3.5-397b\n@8bit MoE",   "accuracy": 89.5, "memory_gb": 249.80, "avg_time": 55.8, "color": "#0D47A1"},
+    {"name": "qwen3.5-397b\n@4bit MoE",   "accuracy": 87.3, "memory_gb": 223.89, "avg_time": 44.8, "color": "#1565C0"},
+    {"name": "qwen3.5-27b\n@8bit",        "accuracy": 87.3, "memory_gb":  29.53, "avg_time": 69.5, "color": "#1976D2"},
+    {"name": "qwen3-235b\n-2507",         "accuracy": 86.0, "memory_gb": 249.80, "avg_time": 1.9, "color": "#2196F3"},
+    {"name": "gpt-oss-120b\nMLX 8bit",    "accuracy": 84.5, "memory_gb": 124.20, "avg_time": 1.979, "color": "#e74c3c"},
     {"name": "gpt-oss-120b\nGGUF",        "accuracy": 84.0, "memory_gb":  63.39, "avg_time": 1.289, "color": "#c0392b"},
     {"name": "qwen3-next\n-80b MoE",      "accuracy": 83.5, "memory_gb":  84.67, "avg_time": 0.555, "color": "#2ecc71"},
+    {"name": "qwen3-vl-32b",              "accuracy": 82.8, "memory_gb":  19.64, "avg_time": 3.6, "color": "#03A9F4"},
+    {"name": "nemotron-3\n-nano",         "accuracy": 80.2, "memory_gb":  33.58, "avg_time": 8.1, "color": "#00BCD4"},
     {"name": "qwen3-32b\n8bit",           "accuracy": 79.3, "memory_gb":  34.80, "avg_time": 1.631, "color": "#3498db"},
     {"name": "qwen3-32b\n4bit",           "accuracy": 78.8, "memory_gb":  18.50, "avg_time": 1.513, "color": "#2980b9"},
+    {"name": "Swallow-70b",               "accuracy": 78.0, "memory_gb":  40.35, "avg_time": 1.9, "color": "#F44336"},
+    {"name": "GPT-OSS-\nSwallow-20B",     "accuracy": 77.8, "memory_gb":  41.86, "avg_time": 11.2, "color": "#E65100"},
+    {"name": "Llama 4\nScout MoE",        "accuracy": 77.5, "memory_gb":  61.14, "avg_time": 5.0, "color": "#795548"},
     {"name": "mistral-small\n-3.2",       "accuracy": 76.8, "memory_gb":  25.93, "avg_time": 0.977, "color": "#f39c12"},
     {"name": "mistral-large\n-2407",      "accuracy": 75.8, "memory_gb": 130.28, "avg_time": 6.182, "color": "#9b59b6"},
 ]
@@ -25,7 +34,7 @@ avg_time  = [m["avg_time"] for m in models]
 colors    = [m["color"] for m in models]
 
 fig, axes = plt.subplots(2, 2, figsize=(14, 11))
-fig.suptitle("合格モデル比較（7モデル・400問全セクション評価）", fontsize=16, fontweight="bold", y=0.98)
+fig.suptitle("合格モデル比較（16モデル・400問全セクション評価）", fontsize=16, fontweight="bold", y=0.98)
 
 # --- Plot 1: メモリ vs 精度 (バブルサイズ=速度の逆数) ---
 ax1 = axes[0, 0]
@@ -44,7 +53,7 @@ ax1.set_xlabel("メモリ使用量 (GB)", fontsize=11)
 ax1.set_ylabel("正答率 (%)", fontsize=11)
 ax1.set_title("メモリ使用量 vs 精度\n（バブルサイズ = 応答速度、大きいほど高速）", fontsize=11)
 ax1.legend(fontsize=9)
-ax1.set_ylim(73, 87)
+ax1.set_ylim(73, 92)
 ax1.grid(True, alpha=0.3)
 
 # --- Plot 2: 応答速度 vs 精度 ---
@@ -64,7 +73,7 @@ ax2.set_xlabel("平均応答時間 (秒/問)", fontsize=11)
 ax2.set_ylabel("正答率 (%)", fontsize=11)
 ax2.set_title("応答速度 vs 精度", fontsize=11)
 ax2.legend(fontsize=9)
-ax2.set_ylim(73, 87)
+ax2.set_ylim(73, 92)
 ax2.grid(True, alpha=0.3)
 
 # --- Plot 3: 効率スコア (精度/メモリ) 棒グラフ ---
@@ -88,9 +97,9 @@ x = np.arange(len(names))
 width = 0.25
 
 # 正規化（0-1スケール）
-acc_norm   = [(a - 70) / (90 - 70) for a in accuracy]       # 70-90% → 0-1
-mem_norm   = [1 - (m / 140) for m in memory]                 # 少ないほど良い
-speed_norm = [1 - (t / 7) for t in avg_time]                 # 速いほど良い
+acc_norm   = [(a - 70) / (95 - 70) for a in accuracy]       # 70-95% → 0-1
+mem_norm   = [1 - (m / 260) for m in memory]                 # 少ないほど良い
+speed_norm = [1 - (t / 75) for t in avg_time]                # 速いほど良い
 
 bars1 = ax4.bar(x - width, acc_norm, width, label='精度', color='#3498db', alpha=0.85)
 bars2 = ax4.bar(x, mem_norm, width, label='メモリ効率', color='#2ecc71', alpha=0.85)
@@ -111,7 +120,7 @@ plt.close()
 
 # ===== English version =====
 fig, axes = plt.subplots(2, 2, figsize=(14, 11))
-fig.suptitle("Passing Models Comparison (7 Models, 400 Questions Full-Section Eval)", fontsize=16, fontweight="bold", y=0.98)
+fig.suptitle("Passing Models Comparison (16 Models, 400 Questions Full-Section Eval)", fontsize=16, fontweight="bold", y=0.98)
 
 # --- Plot 1: Memory vs Accuracy ---
 ax1 = axes[0, 0]
@@ -129,7 +138,7 @@ ax1.set_xlabel("Memory Usage (GB)", fontsize=11)
 ax1.set_ylabel("Accuracy (%)", fontsize=11)
 ax1.set_title("Memory Usage vs Accuracy\n(Bubble size = response speed, larger = faster)", fontsize=11)
 ax1.legend(fontsize=9)
-ax1.set_ylim(73, 87)
+ax1.set_ylim(73, 92)
 ax1.grid(True, alpha=0.3)
 
 # --- Plot 2: Response Time vs Accuracy ---
@@ -149,7 +158,7 @@ ax2.set_xlabel("Avg Response Time (sec/question)", fontsize=11)
 ax2.set_ylabel("Accuracy (%)", fontsize=11)
 ax2.set_title("Response Time vs Accuracy", fontsize=11)
 ax2.legend(fontsize=9)
-ax2.set_ylim(73, 87)
+ax2.set_ylim(73, 92)
 ax2.grid(True, alpha=0.3)
 
 # --- Plot 3: Memory Efficiency Ranking ---

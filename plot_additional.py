@@ -20,50 +20,76 @@ matplotlib.rcParams['axes.unicode_minus'] = False
 print("Generating: model_ranking.png ...")
 
 # (model_name, best_accuracy%, category, note)
+# Section A best accuracy — 43 models evaluated
 ranking_data = [
+    # Top tier (>85%)
     ("gpt-oss-120b MLX 8bit", 92.0, "gpt-oss", "mt=1024"),
+    ("qwen3.5-397b@8bit (MoE 17B)", 90.7, "qwen3.5", "mt=4096"),
+    ("qwen3.5-397b@4bit (MoE 17B)", 90.7, "qwen3.5", "mt=4096"),
     ("gpt-oss-120b GGUF", 90.7, "gpt-oss", "mt=1024"),
+    ("qwen3.5-27b@8bit (dense)", 89.3, "qwen3.5", "mt=4096"),
     ("qwen3-235b-2507", 88.0, "qwen3", ""),
     ("qwen3-235b-a22b", 88.0, "qwen3", ""),
-    ("qwen3-next-80b", 85.3, "qwen3", "MoE, mt=1024"),
+    ("qwen3-next-80b (MoE A3B)", 85.3, "qwen3", ""),
+    # Passing (75-85%)
+    ("qwen3-235b-thinking-2507", 89.3, "thinking", "mt=8192"),
+    ("nemotron-3-nano", 84.0, "thinking", "mt=4096"),
     ("qwen3-vl-32b", 82.7, "qwen3-vl", ""),
     ("Swallow-70b", 81.3, "jp-ft", "JP-FT"),
+    ("GPT-OSS-Swallow-20B", 80.0, "gpt-oss-jp", "JP-FT"),
     ("qwen3-32b", 80.0, "qwen3", ""),
     ("gpt-oss-20b", 77.3, "gpt-oss", "mt=1024"),
-    ("mistral-large", 77.3, "other", ""),
+    ("mistral-large", 77.3, "mistral", ""),
+    ("Llama 4 Scout (MoE 17Bx16E)", 76.0, "llama", ""),
+    ("minimax-m2.5", 77.3, "thinking", "mt=4096"),
     ("medgemma-27b", 76.0, "gemma", "few-shot"),
-    ("mistral-small", 76.0, "other", ""),
-    ("qwen3-vl-30b", 74.7, "qwen3-vl", ""),
+    ("mistral-small-3.2", 76.0, "mistral", ""),
+    ("magistral-small-2509", 76.0, "mistral", ""),
+    # Near-pass (65-75%)
+    ("qwen3-vl-30b (MoE)", 74.7, "qwen3-vl", ""),
     ("gemma-3-27b", 74.7, "gemma", ""),
     ("qwen3-14b", 73.3, "qwen3", ""),
     ("llama-3.3-70b", 68.0, "llama", ""),
+    # Mid-range (55-65%)
     ("shisa-v2-70b", 61.3, "jp-ft", "JP-FT (-)"),
     ("qwen3-8b", 61.3, "qwen3", ""),
+    ("glm-4.6v-flash", 61.3, "thinking", "mt=4096"),
     ("ezo2.5-12b", 60.0, "jp-ft", "JP-FT"),
     ("qwen3-vl-8b", 60.0, "qwen3-vl", ""),
+    ("glm-4.7-flash", 73.3, "thinking", "mt=8192"),
+    ("olmo-3-32b-think", 57.3, "thinking", "mt=4096"),
     ("phi-4", 56.0, "other", ""),
+    ("phi-4-reasoning-plus", 56.0, "thinking", ""),
     ("gemma-3-12b", 54.7, "gemma", ""),
     ("internvl3_5-8b", 54.7, "other", ""),
     ("qwen3-4b", 54.7, "qwen3", ""),
     ("Swallow-8b", 53.3, "jp-ft", "JP-FT"),
     ("qwen3-vl-4b", 52.0, "qwen3-vl", ""),
+    # Low accuracy (<50%)
     ("elyza-jp-8b", 44.0, "jp-ft", "JP-FT"),
     ("medgemma-4b@bf16", 29.3, "gemma", ""),
     ("lfm2.5-1.2b", 28.0, "other", ""),
     ("medgemma-4b", 18.7, "gemma", ""),
+    ("fallen-111b", 1.3, "failure", "broken"),
 ]
 
 cat_colors = {
+    "qwen3.5": "#0D47A1",
     "qwen3": "#2196F3",
     "qwen3-vl": "#03A9F4",
     "gemma": "#4CAF50",
     "gpt-oss": "#FF9800",
+    "gpt-oss-jp": "#E65100",
+    "mistral": "#9C27B0",
     "llama": "#795548",
     "jp-ft": "#F44336",
+    "thinking": "#00BCD4",
     "other": "#607D8B",
+    "failure": "#BDBDBD",
 }
 
-fig, ax = plt.subplots(figsize=(12, 12))
+n_models = len(ranking_data)
+fig, ax = plt.subplots(figsize=(12, max(12, n_models * 0.34)))
 
 names = [d[0] for d in ranking_data]
 accs = [d[1] for d in ranking_data]
@@ -83,34 +109,39 @@ for i, (acc, note) in enumerate(zip(accs, notes)):
     suffix = f"  ({note})" if note else ""
     color = '#1B5E20' if acc >= 75 else '#333333'
     fontw = 'bold' if acc >= 75 else 'normal'
-    ax.text(acc + 0.5, i, f'{acc}%{suffix}', va='center', fontsize=8,
+    ax.text(acc + 0.5, i, f'{acc}%{suffix}', va='center', fontsize=7.5,
             color=color, fontweight=fontw)
 
 ax.set_yticks(y_pos)
-ax.set_yticklabels(names, fontsize=9)
+ax.set_yticklabels(names, fontsize=8.5)
 ax.set_xlabel('Best Accuracy (%)', fontsize=12)
-ax.set_title('IgakuQA 2022-A: All Models Ranked by Accuracy\n(30 models, Pass Line = 75%)',
+ax.set_title(f'IgakuQA 2022-A: All Models Ranked by Accuracy\n({n_models} models, Pass Line = 75%)',
              fontsize=14, fontweight='bold')
-ax.set_xlim(0, 105)
+ax.set_xlim(0, 108)
 ax.invert_yaxis()
 
 # Legend for categories
 from matplotlib.patches import Patch
 legend_elements = [
+    Patch(facecolor=cat_colors["qwen3.5"], label="Qwen3.5 MoE"),
     Patch(facecolor=cat_colors["qwen3"], label="Qwen3"),
     Patch(facecolor=cat_colors["qwen3-vl"], label="Qwen3-VL"),
     Patch(facecolor=cat_colors["gemma"], label="Gemma / medgemma"),
     Patch(facecolor=cat_colors["gpt-oss"], label="GPT-OSS"),
+    Patch(facecolor=cat_colors["gpt-oss-jp"], label="GPT-OSS-Swallow (JP)"),
+    Patch(facecolor=cat_colors["mistral"], label="Mistral"),
     Patch(facecolor=cat_colors["jp-ft"], label="JP Fine-Tuned"),
     Patch(facecolor=cat_colors["llama"], label="Llama"),
+    Patch(facecolor=cat_colors["thinking"], label="Thinking Models"),
     Patch(facecolor=cat_colors["other"], label="Others"),
+    Patch(facecolor=cat_colors["failure"], label="Eval Failure"),
 ]
-ax.legend(handles=legend_elements, loc='lower right', fontsize=8, framealpha=0.9)
+ax.legend(handles=legend_elements, loc='lower right', fontsize=7, framealpha=0.9, ncol=2)
 ax.grid(True, alpha=0.3, axis='x')
 ax.set_axisbelow(True)
 
 # Shade pass region
-ax.axvspan(75, 105, alpha=0.05, color='green')
+ax.axvspan(75, 108, alpha=0.05, color='green')
 
 plt.tight_layout()
 plt.savefig('plots/model_ranking.png', dpi=150, bbox_inches='tight')
