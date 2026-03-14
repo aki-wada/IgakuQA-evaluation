@@ -106,21 +106,29 @@ def load_jsonl(filepath: str) -> list:
     return data
 
 
-def create_question_text(question: dict) -> str:
+def create_question_text(question: dict, lang: str = "ja") -> str:
     """問題テキストを作成"""
-    text = f"問題: {question['problem_text']}"
+    if lang == "en" and question.get('problem_text_en'):
+        text = f"Question: {question['problem_text_en']}"
+        choices = question.get('choices_en', question.get('choices', []))
+    else:
+        text = f"問題: {question['problem_text']}"
+        choices = question.get('choices', [])
 
-    if question.get('choices'):
-        for choice, label in zip(question['choices'], string.ascii_lowercase):
+    if choices:
+        for choice, label in zip(choices, string.ascii_lowercase):
             text += f"\n{label}: {choice}"
 
         n_answers = len(question.get('answer', ['']))
-        text += f"\n\n{n_answers}個選んで答えてください。\n答え:"
+        if lang == "en":
+            text += f"\n\nChoose {n_answers} answer(s).\nAnswer:"
+        else:
+            text += f"\n\n{n_answers}個選んで答えてください。\n答え:"
 
     return text
 
 
-def format_messages(question: dict, system_prompt: str, few_shot: list = None, model: str = "") -> list:
+def format_messages(question: dict, system_prompt: str, few_shot: list = None, model: str = "", lang: str = "ja") -> list:
     """メッセージ形式に整形"""
     # qwen3 モデルの場合、/no_think を追加して thinking モードを無効化
     if "qwen3" in model.lower() and "/no_think" not in system_prompt:
@@ -131,12 +139,12 @@ def format_messages(question: dict, system_prompt: str, few_shot: list = None, m
     # Few-shot examples
     if few_shot:
         for ex in few_shot[:2]:
-            q_text = create_question_text(ex)
+            q_text = create_question_text(ex, lang=lang)
             messages.append({"role": "user", "content": q_text})
             messages.append({"role": "assistant", "content": ",".join(ex['answer'])})
 
     # Target question
-    q_text = create_question_text(question)
+    q_text = create_question_text(question, lang=lang)
     messages.append({"role": "user", "content": q_text})
 
     return messages
@@ -262,7 +270,8 @@ def evaluate_with_prompt(
     few_shot: list = None,
     base_url: str = "http://localhost:1234/v1",
     verbose: bool = True,
-    timeout: int = 120
+    timeout: int = 120,
+    lang: str = "ja"
 ) -> tuple[PromptResult, list]:
     """特定のプロンプトで評価"""
 
@@ -281,7 +290,7 @@ def evaluate_with_prompt(
         if verbose:
             print(f"    [{i+1}/{len(questions)}] {q['problem_id']}", end=" ", flush=True)
 
-        messages = format_messages(q, system_prompt, few_shot, model)
+        messages = format_messages(q, system_prompt, few_shot, model, lang=lang)
 
         try:
             start = time.time()
@@ -424,6 +433,8 @@ def main():
                         help="Override max_tokens (e.g. 1024 for reasoning models)")
     parser.add_argument("--timeout", type=int, default=120,
                         help="API timeout in seconds (default: 120, increase for thinking models)")
+    parser.add_argument("--lang", type=str, default="ja", choices=["ja", "en"],
+                        help="Language: ja (Japanese, default) or en (English translation)")
 
     args = parser.parse_args()
 
@@ -435,7 +446,10 @@ def main():
         return
 
     # Load questions
-    data_file = Path("data") / str(args.year) / f"{exam_num}-{args.section}.jsonl"
+    if args.lang == "en":
+        data_file = Path("data") / str(args.year) / f"{exam_num}-{args.section}_translate.jsonl"
+    else:
+        data_file = Path("data") / str(args.year) / f"{exam_num}-{args.section}.jsonl"
     if not data_file.exists():
         print(f"Data file not found: {data_file}")
         return
@@ -451,17 +465,31 @@ def main():
     if args.no_few_shot:
         args.use_few_shot = False
     if args.use_few_shot:
-        prompt_file = Path("scripts/prompts/prompt.jsonl")
+        if args.lang == "en":
+            prompt_file = Path("scripts/prompts/prompt_translate.jsonl")
+        else:
+            prompt_file = Path("scripts/prompts/prompt.jsonl")
         if prompt_file.exists():
             few_shot = load_jsonl(str(prompt_file))
-            print(f"Loaded {len(few_shot)} few-shot examples")
+            print(f"Loaded {len(few_shot)} few-shot examples ({args.lang})")
 
     # Evaluate each prompt
     results = []
     all_details = {}
 
+    # English system prompt overrides
+    PROMPTS_EN = {
+        "baseline": "You are a medical expert. Answer the multiple-choice question by selecting the correct option(s) from a,b,c,d,e.",
+        "format_strict": "You are a medical doctor. Read the question and answer with ONLY the letter(s) (a,b,c,d,e). For multiple answers, use comma separation. Example: a,c\nNo explanation needed.",
+        "chain_of_thought": "You are a medical doctor.\n\nSteps:\n1. Identify key concepts in the question\n2. Evaluate each option medically\n3. Select the correct answer\n\nOn the final line, write \"Answer:\" followed by only the letter(s) (a,b,c,d,e).",
+        "japanese_medical": "You are a specialist familiar with Japanese medical practice and clinical medicine.\nAnswer the medical multiple-choice question.\n\nImportant:\n- Base your judgment on Japanese clinical guidelines\n- Answer with letters a,b,c,d,e\n- Select exactly the specified number of answers\n\nFormat: a or a,b,c (for multiple)",
+        "answer_first": "You are a medical expert.\nFirst line: output ONLY the correct letter(s) (a,b,c,d,e).\nFor multiple answers, use comma separation. Example: a,c\nYou may add explanation on subsequent lines.",
+    }
+
     for prompt_key in args.prompts:
         prompt_config = PROMPTS[prompt_key].copy()
+        if args.lang == "en" and prompt_key in PROMPTS_EN:
+            prompt_config["system"] = PROMPTS_EN[prompt_key]
         if args.max_tokens is not None:
             prompt_config["max_tokens"] = args.max_tokens
 
@@ -478,7 +506,8 @@ def main():
             few_shot=few_shot,
             base_url=args.url,
             verbose=True,
-            timeout=args.timeout
+            timeout=args.timeout,
+            lang=args.lang
         )
 
         results.append(result)
