@@ -1,0 +1,3074 @@
+{
+  "timestamp": "2026-03-02T17:36:08.374430",
+  "model": "qwen3.5-122b-a10b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 75,
+      "correct": 67,
+      "accuracy": 0.8933333333333333,
+      "avg_time": 37.0922868316238,
+      "errors": 1,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "format_strict",
+      "prompt_name": "案A: 回答形式強化",
+      "total": 75,
+      "correct": 66,
+      "accuracy": 0.88,
+      "avg_time": 36.08661078770955,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "chain_of_thought",
+      "prompt_name": "案B: 段階的思考",
+      "total": 75,
+      "correct": 46,
+      "accuracy": 0.6133333333333333,
+      "avg_time": 73.0886595249176,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "japanese_medical",
+      "prompt_name": "案C: 日本医療文脈",
+      "total": 75,
+      "correct": 65,
+      "accuracy": 0.8666666666666667,
+      "avg_time": 38.03331976890564,
+      "errors": 0,
+      "empty_responses": 0
+    },
+    {
+      "prompt_key": "answer_first",
+      "prompt_name": "案D: 回答先出し",
+      "total": 75,
+      "correct": 62,
+      "accuracy": 0.8266666666666667,
+      "avg_time": 47.72480607668559,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about hypertension caused by Sleep Apnea Syndrome (SAS).\n    *   Co",
+        "time": 28.02834677696228
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically obstetrics/infectious disease",
+        "time": 18.299727201461792
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about Central Serous Chorioretinopathy (CSCR).\n    *   Constraint: ",
+        "time": 15.494879961013794
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medicine (specifically diabetes medication side effects).\n   ",
+        "time": 20.379050970077515
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about heart transplantation in Japan (adults).\n    *   Constraint: ",
+        "time": 18.67232394218445
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically hyperkalemia causes).\n    *  ",
+        "time": 15.89397668838501
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically gastroenterology).\n    *   Co",
+        "time": 20.768953800201416
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about Cardiac Sarcoidosis findings in heart failure patients.\n    *",
+        "time": 17.596094846725464
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about risk factors for osteonecrosis (bone necrosis).\n    *   Const",
+        "time": 17.319414138793945
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically regarding Systemic Sclerosis ",
+        "time": 49.1907958984375
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert (医学の専門家).\n    *   Task: Answer a multiple-choice question from the provided options.\n    *   Format: Choose one opti",
+        "time": 17.48750901222229
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically hypertension emergencies).\n  ",
+        "time": 32.59777307510376
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "ERROR",
+        "gold": "b,e",
+        "correct": false,
+        "error": "API error: 'choices'"
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question (select 2 correct options) from the given choices.\n    *   Format: ",
+        "time": 20.545237064361572
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically Acute Kidney Injury - AKI).\n ",
+        "time": 21.052500009536743
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question (select one option from a, b, c, d, e).\n    *   Constraint: \"no_thi",
+        "time": 25.56050205230713
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question (select one correct option from a, b, c, d, e).\n    *   Constraint:",
+        "time": 23.296329021453857
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about a medical case.\n    *   Constraint: Provide the answer as a s",
+        "time": 17.728415966033936
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:** The user wants me to act as a medical expert and select the correct answer from the given options (a, b, c, d, e) for a specific medical case que",
+        "time": 23.608613967895508
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Provide the answer as a single letter ",
+        "time": 36.304034948349
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: Select the correct option(s) from a, b, c, d, e.\n",
+        "time": 83.79713892936707
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question (select one correct option from a, b, c, d, e).\n    *   Constraint:",
+        "time": 21.52825403213501
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: Do n",
+        "time": 23.171327829360962
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medicine (specifically ENT/Otolaryngology).\n    *   Constraint: Choo",
+        "time": 83.01849412918091
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question (select 1 option from a, b, c, d, e).\n    *   Constraint: \"no_think",
+        "time": 75.84827399253845
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert (医学の専門家).\n    *   Task: Answer a multiple-choice question from the provided options.\n    *   Format: Choose one opti",
+        "time": 33.35886907577515
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Provide the answer as a single letter ",
+        "time": 26.64198589324951
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:** The user wants me to act as a medical expert and select the correct answer from the given options (a, b, c, d, e) for a specific medical case que",
+        "time": 33.730486154556274
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: Do n",
+        "time": 18.675477027893066
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Choose one answer from options a, b, c",
+        "time": 29.442594051361084
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: Select the correct option (a, b, c, d, e) ",
+        "time": 24.203256845474243
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: Choose the correct option (a, b, c, d, e) ",
+        "time": 23.08619213104248
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:** The user wants me to act as a medical expert and select the correct answer (a, b, c, d, or e) for a given medical multiple-choice question. I nee",
+        "time": 42.35104489326477
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "b",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical ethics/clinical practice regarding newborns with ambi",
+        "time": 82.0293779373169
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: Select the correct option(s) from a, b, c,",
+        "time": 26.00589895248413
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question about a medical case.\n    *   Constraint: Provide the answer as a s",
+        "time": 29.13998007774353
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question based on the provided clinical case.\n    *   Constraint: Pr",
+        "time": 37.93542408943176
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question about perioperative management for a 62-year-old male patient sched",
+        "time": 25.527846813201904
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question based on the provided clinical scenario.\n    *   Constraint: Choose",
+        "time": 22.391730070114136
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical treatment (specifically fluid composition for a speci",
+        "time": 27.982105255126953
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: Do n",
+        "time": 17.33815097808838
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Provide the answer as a single letter ",
+        "time": 35.831085205078125
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:** The user wants me to act as a medical expert and select the correct answer from the given options (a, b, c, d, e) for a specific medical case que",
+        "time": 25.77481770515442
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question based on the provided case.\n    *   Constraint: Choose one ",
+        "time": 36.11110186576843
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question based on provided text (though the image is missing, I need to infe",
+        "time": 61.64593005180359
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: Do n",
+        "time": 28.764643669128418
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical ethics/procedure in the context of sexual assault.\n  ",
+        "time": 37.729751110076904
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert (医学の専門家).\n    *   Task: Answer a multiple-choice question based on the provided clinical scenario.\n    *   Constrain",
+        "time": 35.56248092651367
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Choose the correct option from a, b, c",
+        "time": 33.24987006187439
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question based on the provided clinical scenario.\n    *   Constraint",
+        "time": 34.86468577384949
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question based on the provided clinical case.\n    *   Constraint: Choose one",
+        "time": 28.085305213928223
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: \"no_",
+        "time": 15.713135957717896
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "c",
+        "gold": "b",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Choose one answer from options a, b, c",
+        "time": 71.8395369052887
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medicine (specifically pediatrics/otolaryngology).\n    *   Co",
+        "time": 26.755187034606934
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical exposure (needlestick injury).\n    *   Constraint: Pr",
+        "time": 32.214893102645874
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question based on the provided clinical case.\n    *   Constraint: Ch",
+        "time": 27.362503051757812
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question based on the provided text.\n    *   Constraint: Choose one answer (",
+        "time": 26.942059993743896
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question based on the provided clinical scenario.\n    *   Constraint: Provid",
+        "time": 20.789347171783447
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: Do n",
+        "time": 66.27417492866516
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: Select the correct option(s) from a, b, c,",
+        "time": 30.74023127555847
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question (1 correct option out of a, b, c, d, e).\n    *   Constraint: \"no_th",
+        "time": 19.083903789520264
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Provide the answer as a single letter ",
+        "time": 43.26441025733948
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Provide the answer as a single letter ",
+        "time": 71.88247084617615
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical treatment decisions.\n    *   Constraint: Provide the ",
+        "time": 57.375667333602905
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question (select 2 correct options) based on the provided clinical scenario.",
+        "time": 70.86934685707092
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "a,e",
+        "gold": "a,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question based on the provided text (clinical case).\n    *   Constraint: Cho",
+        "time": 63.0167670249939
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question (select 2 options) from the given choices.\n    *   Constraint: Answ",
+        "time": 51.276049852371216
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Choose 2 options from the given list (",
+        "time": 75.54759407043457
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "c,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about spinal cord injury (SCI) rehabilitation prognosis.\n    *   Input: A ",
+        "time": 80.78663921356201
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question (select 2 options) from the given choices.\n    *   Constraint: Answ",
+        "time": 42.886638879776
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Choose the correct option from a, b, c",
+        "time": 50.00994420051575
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question (select 3 options) based on the provided clinical case.\n    *   Con",
+        "time": 49.63537287712097
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "c,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question (select 3 correct options) based on the provided clinical case.\n    *   Co",
+        "time": 80.51163005828857
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question (select 3 options out of 5) based on the provided clinical case.\n  ",
+        "time": 31.077228784561157
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert (医学の専門家).\n    *   Task: Answer a multiple-choice question about rehabilitation for a stroke patient.\n    *   Constra",
+        "time": 54.3264319896698
+      }
+    ],
+    "format_strict": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet letter(",
+        "time": 18.209028005599976
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 21.604307889938354
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet letter(",
+        "time": 17.89379119873047
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 15.685216188430786
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 20.729496240615845
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 15.606281995773315
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 19.80060601234436
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 17.082006692886353
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 14.954690217971802
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 24.51261305809021
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 13.396545886993408
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 22.67412781715393
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 77.80412268638611
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 15.234494924545288
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 18.406102180480957
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 29.19347620010376
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 21.986993074417114
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,",
+        "time": 19.07681679725647
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 27.847459077835083
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct answer option(s) in alphabetical order (a, ",
+        "time": 36.76637387275696
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,d,e) or",
+        "time": 80.8374969959259
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 20.872464895248413
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,",
+        "time": 24.196249961853027
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "d",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,d,e) wi",
+        "time": 80.26411890983582
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct answer option(s) in alphabetical order (a, b, c, d",
+        "time": 80.83197116851807
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct answer option(s) in alphabetical order (a, ",
+        "time": 20.695506811141968
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,",
+        "time": 72.80174016952515
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 22.28040599822998
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 19.402183055877686
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 20.7894389629364
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 20.71425485610962
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet letter(",
+        "time": 21.506219148635864
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, identify the correct option(s), and output only the alphabet (a, b",
+        "time": 24.58229899406433
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, c, d, e",
+        "time": 80.35330200195312
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet letter(",
+        "time": 22.98427176475525
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 46.97460603713989
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,",
+        "time": 31.734720945358276
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 19.5980441570282
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 20.06138586997986
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 33.289007902145386
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,",
+        "time": 22.78365993499756
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 42.70467400550842
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 26.3230938911438
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 25.002641201019287
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct answer option(s) in alphabetical order (a, ",
+        "time": 33.864185094833374
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 30.191537857055664
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, c, d, e",
+        "time": 80.27001023292542
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 37.32247495651245
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 30.154217004776
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet letter(",
+        "time": 32.747594118118286
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 25.469512939453125
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 17.82510495185852
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,d,e) or",
+        "time": 80.78276920318604
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,",
+        "time": 27.18092632293701
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 22.65009307861328
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 27.300412893295288
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 22.10318899154663
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,",
+        "time": 25.115424156188965
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a,b,c,",
+        "time": 44.61032819747925
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 32.42224621772766
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct answer option(s) in alphabetical order (a, ",
+        "time": 20.93050718307495
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct answer option(s) in alphabetical order (a, ",
+        "time": 45.371466875076294
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d, e).\n ",
+        "time": 80.47923016548157
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 54.99711298942566
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet(s) (e.g",
+        "time": 65.8573899269104
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "c,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d, e).\n ",
+        "time": 80.47693538665771
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and answer with only the alphabet (a",
+        "time": 40.14846062660217
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the medical problem and select the correct option(s).\n    *   Output Format: On",
+        "time": 75.20657992362976
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "c,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d, e).\n ",
+        "time": 79.89026093482971
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and answer with only the alphabet (a",
+        "time": 46.87521004676819
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet (a, b, ",
+        "time": 29.17598819732666
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and provide the correct option(s) in alphabetical order (a, b, c, d",
+        "time": 24.63206696510315
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "c,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and output only the alphabet letters (a, b,",
+        "time": 80.44097399711609
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem, select the correct option(s), and answer with only the alphabet le",
+        "time": 36.96389412879944
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Read the problem and select the correct option(s).\n    *   Output Format: Only alpha",
+        "time": 24.991397857666016
+      }
+    ],
+    "chain_of_thought": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice question about hypertension caused by Sleep Apnea Syndrome ",
+        "time": 49.26760697364807
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician expert in clinical medicine.\n    *   Task: Answer a multiple-choice question about GBS prophylaxis in pregnant women.\n    *   Pr",
+        "time": 79.74141001701355
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice question about Central Serous Chorioretinopathy (CSCR).\n    *   Pr",
+        "time": 79.87673020362854
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "c,e",
+        "gold": "d",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician expert in clinical medicine.\n    *   Task: Answer a multiple-choice question about diabetes medications and hypoglycemia risk.\n ",
+        "time": 80.10903906822205
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice question about heart transplantation in Japan (adults).\n    *   Pr",
+        "time": 79.85733366012573
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice medical question.\n    *   Procedure:\n        1.  Confirm keywords ",
+        "time": 80.16841697692871
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice question about gastroesophageal reflux disease (GERD).\n    *   Pro",
+        "time": 80.07100486755371
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice medical question.\n    *   Procedure:\n        1.  Confirm ke",
+        "time": 65.5433897972107
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice question about risk factors for osteonecrosis (bone necrosi",
+        "time": 26.451283931732178
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice medical question.\n    *   Procedure:\n        1.  Confirm ke",
+        "time": 32.94310188293457
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice question about Autism Spectrum Disorder (ASD).\n    *   Procedure:\n",
+        "time": 80.23333597183228
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice medical question.\n    *   Procedure:\n        1.  Confirm ke",
+        "time": 56.03225231170654
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician expert in clinical medicine.\n    *   Task: Answer a multiple-choice question about Vascular Dementia (脳血管性認知症).\n    *   Constrai",
+        "time": 80.10335111618042
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician expert in clinical medicine.\n    *   Task: Answer a multiple-choice question about the association between pathogens and ",
+        "time": 57.40536975860596
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice question about diagnostic indicators for Acute Kidney Injur",
+        "time": 56.088024854660034
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Procedure:\n  ",
+        "time": 80.61811399459839
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Procedure",
+        "time": 80.80859398841858
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Procedure:\n  ",
+        "time": 80.23224401473999
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "a",
+        "gold": "d",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.58343291282654
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.52637386322021
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Procedure",
+        "time": 80.75026082992554
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text and image descr",
+        "time": 38.31216502189636
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Proced",
+        "time": 74.87520980834961
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Procedure:\n  ",
+        "time": 80.21269011497498
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Procedure",
+        "time": 80.45752501487732
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician expert in clinical medicine.\n    *   Task: Answer a multiple-choice question about industrial medicine/psychiatry.\n    *   Proce",
+        "time": 80.10151481628418
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.72189688682556
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Proced",
+        "time": 40.88580322265625
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Proced",
+        "time": 63.61851096153259
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "臨床症状は、右側腹部",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Proced",
+        "time": 80.42475700378418
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.4812228679657
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician expert in clinical medicine.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Pro",
+        "time": 80.60028314590454
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Proced",
+        "time": 66.53966474533081
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on provided steps (identify keywords, evalu",
+        "time": 80.03839111328125
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Proced",
+        "time": 68.36385416984558
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.80084991455078
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.99011421203613
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on provided options.\n    *   Procedu",
+        "time": 58.49456715583801
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Proced",
+        "time": 54.04213905334473
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Procedure",
+        "time": 81.00332283973694
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Procedure",
+        "time": 80.28988003730774
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Pr",
+        "time": 31.335901975631714
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Proced",
+        "time": 38.91523718833923
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.46398091316223
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c,e",
+        "gold": "d",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a multiple-choice question about medical imaging (MRI/Arthroscopy) related to menisc",
+        "time": 80.23302912712097
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Procedure:\n  ",
+        "time": 80.38428592681885
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on specific procedures (keyword confirmatio",
+        "time": 80.18576407432556
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Procedure",
+        "time": 80.51478314399719
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.5617470741272
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Proced",
+        "time": 41.19587206840515
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Procedure:\n  ",
+        "time": 80.18864703178406
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "e",
+        "gold": "d",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on specific procedures (identify keywords, ",
+        "time": 80.29550218582153
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.64921283721924
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on specific procedures (identify key",
+        "time": 77.02160882949829
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on specific procedures (identify keywords, ",
+        "time": 80.12986016273499
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Proced",
+        "time": 75.45406413078308
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Procedure:\n  ",
+        "time": 80.38315320014954
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Procedure:\n  ",
+        "time": 80.10283613204956
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on provided steps (identify keywords, evalu",
+        "time": 80.14783596992493
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text.\n    *   Proced",
+        "time": 73.13803720474243
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text and implied image desc",
+        "time": 80.32255387306213
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.81601595878601
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.48446202278137
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on specific procedures (identify key",
+        "time": 73.65394687652588
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question (select 2 options).\n    *   Input: A clinical cas",
+        "time": 80.53353095054626
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "c,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided text (though images A and B",
+        "time": 80.4304587841034
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.67084908485413
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Procedure",
+        "time": 80.33749294281006
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "c,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician expert in clinical medicine.\n    *   Task: Answer a multiple-choice question about spinal cord injury rehabilitation potential.\n",
+        "time": 80.41431999206543
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question (select 2 options).\n    *   Procedure:\n        1.",
+        "time": 80.82314324378967
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Procedure",
+        "time": 80.3511233329773
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "この症例は、突然の激",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided scenario.\n    *   Pr",
+        "time": 80.7667248249054
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "c,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinical Medicine Expert (Physician).\n    *   Task: Answer a multiple-choice medical question.\n    *   Procedure:\n        1.  Identify key",
+        "time": 80.77773809432983
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "c,e",
+        "gold": "a,b,d",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Clinically proficient physician.\n    *   Task: Answer a medical multiple-choice question based on the provided case.\n    *   Procedure:\n  ",
+        "time": 80.83045601844788
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Physician expert in clinical medicine.\n    *   Task: Answer a multiple-choice question about rehabilitation for a stroke patient.\n    *   ",
+        "time": 80.47025609016418
+      }
+    ],
+    "japanese_medical": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 20.946864128112793
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 20.38866686820984
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 18.93273687362671
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 17.100319862365723
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 23.64285397529602
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 18.08676815032959
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 21.29304575920105
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 18.197086811065674
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 18.440407037734985
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 22.315939903259277
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 14.647157669067383
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 27.750577211380005
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 74.28999996185303
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 21.462601900100708
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 25.666906118392944
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 26.271433115005493
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 23.3150851726532
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 19.851213932037354
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice medical",
+        "time": 29.538480281829834
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 42.08234977722168
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice question based",
+        "time": 81.10986495018005
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 26.445981979370117
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 23.630769729614258
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 63.202502965927124
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice question based",
+        "time": 80.68252396583557
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 18.781117916107178
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 49.01161789894104
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 32.743988275527954
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice medical",
+        "time": 16.2203631401062
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 31.98309588432312
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 25.125375032424927
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 23.793025016784668
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 35.20871591567993
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 70.14020919799805
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 29.06090021133423
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 30.056351900100708
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 29.949417114257812
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 23.56276297569275
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 21.61574077606201
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 60.17967224121094
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 25.41802406311035
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 67.57712388038635
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 30.62344980239868
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 41.64016819000244
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 36.899972915649414
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 23.96713399887085
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 47.709197759628296
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 41.976852893829346
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 39.114333152770996
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 25.248354196548462
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 24.896193981170654
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 16.74050211906433
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice question based",
+        "time": 80.85013699531555
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 24.311542987823486
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 26.82765483856201
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 26.4606511592865
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 22.74687385559082
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 27.71144199371338
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice question based",
+        "time": 80.27737402915955
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 23.878252744674683
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 18.665889024734497
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 36.2058379650116
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice question based",
+        "time": 80.59214901924133
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice question based",
+        "time": 80.35578680038452
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice question based",
+        "time": 80.47272324562073
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "c,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice question based",
+        "time": 80.46815991401672
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 35.377792835235596
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 78.85398125648499
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "a,b",
+        "gold": "a,b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 48.56091904640198
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 43.507139921188354
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 44.04511213302612
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 47.73169207572937
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "c,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice question based",
+        "time": 80.88366413116455
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 25.31794309616089
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Specialist physician knowledgeable in Japanese medical system and clinical medicine.\n    *   Task: Answer a multiple-choice questio",
+        "time": 59.86046504974365
+      }
+    ],
+    "answer_first": [
+      {
+        "problem_id": "116A1",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about hypertension caused by Sleep Apnea Syndrome (SAS).\n    *   Co",
+        "time": 28.956239700317383
+      },
+      {
+        "problem_id": "116A2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 27.762504816055298
+      },
+      {
+        "problem_id": "116A3",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about Central Serous Chorioretinopathy (CSCR).\n    *   Constraint 1",
+        "time": 26.729401111602783
+      },
+      {
+        "problem_id": "116A4",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about diabetes medications and hypoglycemia.\n    *   Format: First ",
+        "time": 27.48037099838257
+      },
+      {
+        "problem_id": "116A5",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about heart transplantation in Japan.\n    *   Constraint 1: Output ",
+        "time": 28.316471815109253
+      },
+      {
+        "problem_id": "116A6",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about the causes of hyperkalemia (高カリウム血症).\n    *   Constraint 1: O",
+        "time": 22.750589847564697
+      },
+      {
+        "problem_id": "116A7",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically gastroenterology).\n    *   Fo",
+        "time": 31.232798099517822
+      },
+      {
+        "problem_id": "116A8",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question about Cardiac Sarcoidosis findings in a heart failure patient.\n    ",
+        "time": 32.497880935668945
+      },
+      {
+        "problem_id": "116A9",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about risk factors for osteonecrosis (bone necrosis).\n    *   Const",
+        "time": 30.80844783782959
+      },
+      {
+        "problem_id": "116A10",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question about Systemic Sclerosis (SSc) and secondary Raynaud phenomenon.\n  ",
+        "time": 56.29792928695679
+      },
+      {
+        "problem_id": "116A11",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about Autism Spectrum Disorder (ASD).\n    *   Constraint 1: Output ",
+        "time": 33.4288387298584
+      },
+      {
+        "problem_id": "116A12",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 41.33246898651123
+      },
+      {
+        "problem_id": "116A13",
+        "prediction": "c,e",
+        "gold": "b,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about vascular dementia (脳血管性認知症).\n    *   Constraint 1: Output the correc",
+        "time": 80.08428120613098
+      },
+      {
+        "problem_id": "116A14",
+        "prediction": "c,d",
+        "gold": "c,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about pathogens and malignant tumors.\n    *   Constraint 1: Output ",
+        "time": 24.42237162590027
+      },
+      {
+        "problem_id": "116A15",
+        "prediction": "c,e",
+        "gold": "c,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (Acute Kidney Injury - AKI).\n    *   Constr",
+        "time": 34.77211618423462
+      },
+      {
+        "problem_id": "116A16",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 38.37412691116333
+      },
+      {
+        "problem_id": "116A17",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 34.12622427940369
+      },
+      {
+        "problem_id": "116A18",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Output Format: First line must be the correct opti",
+        "time": 30.3361759185791
+      },
+      {
+        "problem_id": "116A19",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 39.95217299461365
+      },
+      {
+        "problem_id": "116A20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Output Format: First line must be the correct opti",
+        "time": 41.503252029418945
+      },
+      {
+        "problem_id": "116A21",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (a, b, c",
+        "time": 80.61433601379395
+      },
+      {
+        "problem_id": "116A22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 33.143763065338135
+      },
+      {
+        "problem_id": "116A23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 34.73322916030884
+      },
+      {
+        "problem_id": "116A24",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (a, b, c",
+        "time": 80.03403997421265
+      },
+      {
+        "problem_id": "116A25",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (a, b, c",
+        "time": 80.6230058670044
+      },
+      {
+        "problem_id": "116A26",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert (医学の専門家).\n    *   Task: Answer a multiple-choice question about industrial medicine/psychiatry.\n    *   Format: Firs",
+        "time": 27.32926607131958
+      },
+      {
+        "problem_id": "116A27",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (a, b, c",
+        "time": 80.44814419746399
+      },
+      {
+        "problem_id": "116A28",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 36.16548180580139
+      },
+      {
+        "problem_id": "116A29",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 27.56201696395874
+      },
+      {
+        "problem_id": "116A30",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 53.62724280357361
+      },
+      {
+        "problem_id": "116A31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 37.354783058166504
+      },
+      {
+        "problem_id": "116A32",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 36.921467781066895
+      },
+      {
+        "problem_id": "116A33",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Output Format: First line must be the correct opti",
+        "time": 34.55952215194702
+      },
+      {
+        "problem_id": "116A34",
+        "prediction": "d",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question about medical ethics/counseling regarding a newborn with ambiguous ",
+        "time": 80.17740511894226
+      },
+      {
+        "problem_id": "116A35",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 37.57173418998718
+      },
+      {
+        "problem_id": "116A36",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 37.10824775695801
+      },
+      {
+        "problem_id": "116A37",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 46.76275706291199
+      },
+      {
+        "problem_id": "116A38",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 37.30013418197632
+      },
+      {
+        "problem_id": "116A39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 32.02512311935425
+      },
+      {
+        "problem_id": "116A40",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 73.86100888252258
+      },
+      {
+        "problem_id": "116A41",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 23.722508668899536
+      },
+      {
+        "problem_id": "116A42",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 69.69336414337158
+      },
+      {
+        "problem_id": "116A43",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 36.749351978302
+      },
+      {
+        "problem_id": "116A44",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 37.129958152770996
+      },
+      {
+        "problem_id": "116A45",
+        "prediction": "c",
+        "gold": "d",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question about medical imaging (MRI/Arthroscopy) of a knee meniscus tear.\n  ",
+        "time": 54.4298951625824
+      },
+      {
+        "problem_id": "116A46",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 38.16418099403381
+      },
+      {
+        "problem_id": "116A47",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (a, b, c",
+        "time": 80.2037980556488
+      },
+      {
+        "problem_id": "116A48",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 38.35621118545532
+      },
+      {
+        "problem_id": "116A49",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 46.26409888267517
+      },
+      {
+        "problem_id": "116A50",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Output Format: First line must be the correct opti",
+        "time": 45.53556203842163
+      },
+      {
+        "problem_id": "116A51",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 42.73252201080322
+      },
+      {
+        "problem_id": "116A52",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 21.945518255233765
+      },
+      {
+        "problem_id": "116A53",
+        "prediction": "c,e",
+        "gold": "b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (a, b, c",
+        "time": 80.63395977020264
+      },
+      {
+        "problem_id": "116A54",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 49.55696511268616
+      },
+      {
+        "problem_id": "116A55",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 28.087223052978516
+      },
+      {
+        "problem_id": "116A56",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 42.61770415306091
+      },
+      {
+        "problem_id": "116A57",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert (医学の専門家).\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct op",
+        "time": 31.510940313339233
+      },
+      {
+        "problem_id": "116A58",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 32.28376603126526
+      },
+      {
+        "problem_id": "116A59",
+        "prediction": "c,e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (a, b, c",
+        "time": 80.02402114868164
+      },
+      {
+        "problem_id": "116A60",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 32.825119972229004
+      },
+      {
+        "problem_id": "116A61",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Output Format: First line must be the correct opti",
+        "time": 26.01791524887085
+      },
+      {
+        "problem_id": "116A62",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 68.61628222465515
+      },
+      {
+        "problem_id": "116A63",
+        "prediction": "c,e",
+        "gold": "e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (a, b, c",
+        "time": 80.3954586982727
+      },
+      {
+        "problem_id": "116A64",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 48.756534814834595
+      },
+      {
+        "problem_id": "116A65",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 61.05275297164917
+      },
+      {
+        "problem_id": "116A66",
+        "prediction": "c,e",
+        "gold": "a,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (a, b, c",
+        "time": 80.24766898155212
+      },
+      {
+        "problem_id": "116A67",
+        "prediction": "a,d",
+        "gold": "a,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 46.90573692321777
+      },
+      {
+        "problem_id": "116A68",
+        "prediction": "d,e",
+        "gold": "d,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 80.66746211051941
+      },
+      {
+        "problem_id": "116A69",
+        "prediction": "c,e",
+        "gold": "a,b",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (a, b, c",
+        "time": 80.2295401096344
+      },
+      {
+        "problem_id": "116A70",
+        "prediction": "b,e",
+        "gold": "b,e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 63.25476622581482
+      },
+      {
+        "problem_id": "116A71",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 73.07210779190063
+      },
+      {
+        "problem_id": "116A72",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must contain the correct option",
+        "time": 57.82764410972595
+      },
+      {
+        "problem_id": "116A73",
+        "prediction": "c,e",
+        "gold": "a,c,e",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must contain the correct option(s) (al",
+        "time": 80.59438800811768
+      },
+      {
+        "problem_id": "116A74",
+        "prediction": "a,b,d",
+        "gold": "a,b,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: First line must be the correct option(s) (",
+        "time": 39.59773397445679
+      },
+      {
+        "problem_id": "116A75",
+        "prediction": "a,c,d",
+        "gold": "a,c,d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert (医学の専門家).\n    *   Task: Answer a multiple-choice question about rehabilitation for a 70-year-old female stroke patie",
+        "time": 80.57042193412781
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}

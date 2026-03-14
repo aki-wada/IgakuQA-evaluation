@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-03-14T08:34:07.144453",
-  "model": "medgemma-27b-text-it-mlx",
+  "timestamp": "2026-03-14T10:35:19.592167",
+  "model": "aaditya.llama3-openbiollm-70b",
   "summary": [
     {
       "prompt_key": "baseline",
       "prompt_name": "Baseline (現行)",
       "total": 75,
-      "correct": 57,
-      "accuracy": 0.76,
-      "avg_time": 1.1751603190104167,
+      "correct": 47,
+      "accuracy": 0.6266666666666667,
+      "avg_time": 2.3661232089996336,
       "errors": 0,
       "empty_responses": 0
     }
@@ -21,15 +21,15 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 9.369867086410522
+        "time": 2.5182411670684814
       },
       {
         "problem_id": "116A2",
-        "prediction": "b",
+        "prediction": "c",
         "gold": "c",
-        "correct": false,
-        "response": "b",
-        "time": 0.6260128021240234
+        "correct": true,
+        "response": "c",
+        "time": 0.9866790771484375
       },
       {
         "problem_id": "116A3",
@@ -37,7 +37,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 0.5475327968597412
+        "time": 0.7820050716400146
       },
       {
         "problem_id": "116A4",
@@ -45,7 +45,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 0.5537898540496826
+        "time": 0.7733328342437744
       },
       {
         "problem_id": "116A5",
@@ -53,15 +53,15 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 0.6331698894500732
+        "time": 0.9740471839904785
       },
       {
         "problem_id": "116A6",
-        "prediction": "d",
+        "prediction": "e",
         "gold": "e",
-        "correct": false,
-        "response": "d",
-        "time": 0.5343730449676514
+        "correct": true,
+        "response": "e",
+        "time": 0.6190218925476074
       },
       {
         "problem_id": "116A7",
@@ -69,7 +69,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 0.5461428165435791
+        "time": 0.6144702434539795
       },
       {
         "problem_id": "116A8",
@@ -77,7 +77,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 0.5592410564422607
+        "time": 0.7919378280639648
       },
       {
         "problem_id": "116A9",
@@ -85,15 +85,15 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 0.5438272953033447
+        "time": 0.6276059150695801
       },
       {
         "problem_id": "116A10",
-        "prediction": "d",
+        "prediction": "d,e",
         "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 0.5622470378875732
+        "correct": false,
+        "response": "d,e",
+        "time": 0.8923888206481934
       },
       {
         "problem_id": "116A11",
@@ -101,15 +101,15 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 0.5392491817474365
+        "time": 0.7752609252929688
       },
       {
         "problem_id": "116A12",
-        "prediction": "e",
+        "prediction": "c",
         "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 0.617189884185791
+        "correct": false,
+        "response": "c",
+        "time": 0.7767093181610107
       },
       {
         "problem_id": "116A13",
@@ -117,7 +117,7 @@
         "gold": "b,e",
         "correct": true,
         "response": "b,e",
-        "time": 0.6810641288757324
+        "time": 1.461639165878296
       },
       {
         "problem_id": "116A14",
@@ -125,39 +125,39 @@
         "gold": "c,d",
         "correct": true,
         "response": "c,d",
-        "time": 0.6744530200958252
+        "time": 0.8932528495788574
       },
       {
         "problem_id": "116A15",
-        "prediction": "c,e",
+        "prediction": "b,e",
         "gold": "c,e",
-        "correct": true,
-        "response": "c,e",
-        "time": 0.6053409576416016
+        "correct": false,
+        "response": "be",
+        "time": 0.7804069519042969
       },
       {
         "problem_id": "116A16",
-        "prediction": "c",
+        "prediction": "a,b,c,d,e",
         "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 1.5123870372772217
+        "correct": false,
+        "response": "c: Presence of diabetic retinopathy",
+        "time": 4.0296790599823
       },
       {
         "problem_id": "116A17",
-        "prediction": "d",
+        "prediction": "a,d,e",
         "gold": "e",
         "correct": false,
-        "response": "d",
-        "time": 1.3549928665161133
+        "response": "e: Administration of coagulation factor VIII product. The patient's symptoms, along with the history of hemophilia A and the laboratory findings (prolonged APTT), suggest a hemorrhagic event likely du",
+        "time": 14.571773052215576
       },
       {
         "problem_id": "116A18",
-        "prediction": "c",
+        "prediction": "a",
         "gold": "a",
-        "correct": false,
-        "response": "c",
-        "time": 0.7700409889221191
+        "correct": true,
+        "response": "a",
+        "time": 1.1661832332611084
       },
       {
         "problem_id": "116A19",
@@ -165,7 +165,7 @@
         "gold": "d",
         "correct": true,
         "response": "d",
-        "time": 1.1409001350402832
+        "time": 2.315272331237793
       },
       {
         "problem_id": "116A20",
@@ -173,23 +173,23 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 1.0644690990447998
+        "time": 2.1162848472595215
       },
       {
         "problem_id": "116A21",
-        "prediction": "b",
+        "prediction": "b,e",
         "gold": "c",
         "correct": false,
-        "response": "b",
-        "time": 1.2864677906036377
+        "response": "b,e",
+        "time": 2.784379005432129
       },
       {
         "problem_id": "116A22",
-        "prediction": "c",
+        "prediction": "d",
         "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 0.7731239795684814
+        "correct": false,
+        "response": "d",
+        "time": 1.3588941097259521
       },
       {
         "problem_id": "116A23",
@@ -197,15 +197,15 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.4281013011932373
+        "time": 3.0445449352264404
       },
       {
         "problem_id": "116A24",
-        "prediction": "c",
+        "prediction": "a",
         "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 0.6353909969329834
+        "correct": false,
+        "response": "a",
+        "time": 1.1540741920471191
       },
       {
         "problem_id": "116A25",
@@ -213,15 +213,15 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 1.142313003540039
+        "time": 2.305405378341675
       },
       {
         "problem_id": "116A26",
-        "prediction": "e",
+        "prediction": "a,b,c,d,e",
         "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 0.9357559680938721
+        "correct": false,
+        "response": "a,b,c,d,e are all appropriate responses from the occupational health physician. Therefore, there is no correct answer as none of the options provided would not be an appropriate response in this scena",
+        "time": 5.911117076873779
       },
       {
         "problem_id": "116A27",
@@ -229,7 +229,7 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 1.140793800354004
+        "time": 2.5078179836273193
       },
       {
         "problem_id": "116A28",
@@ -237,7 +237,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.5020339488983154
+        "time": 3.2282769680023193
       },
       {
         "problem_id": "116A29",
@@ -245,7 +245,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 0.8461270332336426
+        "time": 1.3525798320770264
       },
       {
         "problem_id": "116A30",
@@ -253,7 +253,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 0.9335267543792725
+        "time": 1.7154757976531982
       },
       {
         "problem_id": "116A31",
@@ -261,7 +261,7 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 1.0667171478271484
+        "time": 2.111345052719116
       },
       {
         "problem_id": "116A32",
@@ -269,23 +269,23 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 0.920644998550415
+        "time": 1.7308332920074463
       },
       {
         "problem_id": "116A33",
-        "prediction": "e",
+        "prediction": "a,c,e",
         "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 1.2872669696807861
+        "correct": false,
+        "response": "The incorrect statement is e: Assurance of research results sharing. In the context of informed consent for participation in human genome/gene analysis research, it is not mandatory to provide an assu",
+        "time": 17.541043996810913
       },
       {
         "problem_id": "116A34",
-        "prediction": "e",
+        "prediction": "a",
         "gold": "a",
-        "correct": false,
-        "response": "e",
-        "time": 0.7756922245025635
+        "correct": true,
+        "response": "a",
+        "time": 1.3778460025787354
       },
       {
         "problem_id": "116A35",
@@ -293,15 +293,15 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.15006685256958
+        "time": 2.5036330223083496
       },
       {
         "problem_id": "116A36",
-        "prediction": "a",
+        "prediction": "a,b,c,d,e",
         "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 1.5867938995361328
+        "correct": false,
+        "response": "a,b,c,d,e",
+        "time": 4.171203136444092
       },
       {
         "problem_id": "116A37",
@@ -309,7 +309,7 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 1.435331106185913
+        "time": 2.886960029602051
       },
       {
         "problem_id": "116A38",
@@ -317,7 +317,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.4433658123016357
+        "time": 3.0454771518707275
       },
       {
         "problem_id": "116A39",
@@ -325,7 +325,7 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 0.8404819965362549
+        "time": 1.3629579544067383
       },
       {
         "problem_id": "116A40",
@@ -333,15 +333,15 @@
         "gold": "b",
         "correct": false,
         "response": "c",
-        "time": 1.7387619018554688
+        "time": 3.8785791397094727
       },
       {
         "problem_id": "116A41",
-        "prediction": "e",
+        "prediction": "a,c,d,e",
         "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 0.6213288307189941
+        "correct": false,
+        "response": "e: Adrenal cortex steroid",
+        "time": 1.5474188327789307
       },
       {
         "problem_id": "116A42",
@@ -349,7 +349,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 0.8393769264221191
+        "time": 1.5631117820739746
       },
       {
         "problem_id": "116A43",
@@ -357,7 +357,7 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 1.2851929664611816
+        "time": 2.6861586570739746
       },
       {
         "problem_id": "116A44",
@@ -365,31 +365,31 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 0.9259366989135742
+        "time": 1.935873031616211
       },
       {
         "problem_id": "116A45",
-        "prediction": "a",
+        "prediction": "d",
         "gold": "d",
-        "correct": false,
-        "response": "この問題に答えるためには、関節鏡所見の画像（①～⑤）が必要です。画像がないため、どの画像が半月板断裂を示しているか判断できません。\n\nもし画像があれば、以下の点に注目して判断します。\n\n*   **半月板の形状:** 半月板はC字型の軟骨組織です。\n*   **断裂のパターン:** 縦断裂、横断裂、放射状断裂など様々なパターンがあります。\n*   **断裂部位:** 半月板の前角、後角、体部など。",
-        "time": 7.54436993598938
+        "correct": true,
+        "response": "d",
+        "time": 1.936173915863037
       },
       {
         "problem_id": "116A46",
-        "prediction": "b",
+        "prediction": "a",
         "gold": "b",
-        "correct": true,
-        "response": "b",
-        "time": 0.9225277900695801
+        "correct": false,
+        "response": "a",
+        "time": 1.7392852306365967
       },
       {
         "problem_id": "116A47",
-        "prediction": "d",
+        "prediction": "a",
         "gold": "e",
         "correct": false,
-        "response": "d",
-        "time": 0.7027640342712402
+        "response": "a",
+        "time": 1.1571240425109863
       },
       {
         "problem_id": "116A48",
@@ -397,7 +397,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 1.0732331275939941
+        "time": 2.110996961593628
       },
       {
         "problem_id": "116A49",
@@ -405,7 +405,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.2048470973968506
+        "time": 2.51147198677063
       },
       {
         "problem_id": "116A50",
@@ -413,7 +413,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.2826778888702393
+        "time": 2.118130922317505
       },
       {
         "problem_id": "116A51",
@@ -421,31 +421,31 @@
         "gold": "c",
         "correct": true,
         "response": "c",
-        "time": 0.9377350807189941
+        "time": 1.9410009384155273
       },
       {
         "problem_id": "116A52",
-        "prediction": "d",
+        "prediction": "a,d,e",
         "gold": "d",
-        "correct": true,
-        "response": "d",
-        "time": 0.6192200183868408
+        "correct": false,
+        "response": "d: Eye irrigation with saline solution. This is the most important and immediate step in chemical eye injuries, such as exposure to sodium hydroxide, to remove the caustic substance and prevent furthe",
+        "time": 5.583697080612183
       },
       {
         "problem_id": "116A53",
-        "prediction": "d",
+        "prediction": "c",
         "gold": "b",
         "correct": false,
-        "response": "d",
-        "time": 1.2072992324829102
+        "response": "c",
+        "time": 2.5028040409088135
       },
       {
         "problem_id": "116A54",
-        "prediction": "b",
+        "prediction": "e",
         "gold": "e",
-        "correct": false,
-        "response": "b",
-        "time": 0.7779440879821777
+        "correct": true,
+        "response": "e",
+        "time": 1.3697900772094727
       },
       {
         "problem_id": "116A55",
@@ -453,7 +453,7 @@
         "gold": "e",
         "correct": true,
         "response": "e",
-        "time": 0.7703638076782227
+        "time": 1.1461868286132812
       },
       {
         "problem_id": "116A56",
@@ -461,7 +461,7 @@
         "gold": "b",
         "correct": true,
         "response": "b",
-        "time": 1.3617761135101318
+        "time": 2.868135929107666
       },
       {
         "problem_id": "116A57",
@@ -469,31 +469,31 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 0.923975944519043
+        "time": 1.7364249229431152
       },
       {
         "problem_id": "116A58",
-        "prediction": "c",
+        "prediction": "d",
         "gold": "b",
         "correct": false,
-        "response": "c",
-        "time": 0.6939072608947754
+        "response": "d",
+        "time": 1.148745059967041
       },
       {
         "problem_id": "116A59",
-        "prediction": "c",
+        "prediction": "d",
         "gold": "c",
-        "correct": true,
-        "response": "c",
-        "time": 0.7735080718994141
+        "correct": false,
+        "response": "d",
+        "time": 1.3582918643951416
       },
       {
         "problem_id": "116A60",
-        "prediction": "a",
+        "prediction": "b",
         "gold": "a",
-        "correct": true,
-        "response": "a",
-        "time": 0.7822670936584473
+        "correct": false,
+        "response": "b",
+        "time": 1.3596439361572266
       },
       {
         "problem_id": "116A61",
@@ -501,7 +501,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 0.7655558586120605
+        "time": 1.3575940132141113
       },
       {
         "problem_id": "116A62",
@@ -509,7 +509,7 @@
         "gold": "a",
         "correct": true,
         "response": "a",
-        "time": 1.586435079574585
+        "time": 2.8604371547698975
       },
       {
         "problem_id": "116A63",
@@ -517,23 +517,23 @@
         "gold": "e",
         "correct": false,
         "response": "b",
-        "time": 0.9393079280853271
+        "time": 1.9379441738128662
       },
       {
         "problem_id": "116A64",
-        "prediction": "e",
+        "prediction": "d,e",
         "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 0.848052978515625
+        "correct": false,
+        "response": "d,e",
+        "time": 1.6806299686431885
       },
       {
         "problem_id": "116A65",
-        "prediction": "c,e",
+        "prediction": "b,c",
         "gold": "b,e",
         "correct": false,
-        "response": "c,e",
-        "time": 1.0613739490509033
+        "response": "b,c",
+        "time": 2.0400309562683105
       },
       {
         "problem_id": "116A66",
@@ -541,23 +541,23 @@
         "gold": "a,e",
         "correct": false,
         "response": "a,c",
-        "time": 0.7619831562042236
+        "time": 1.2637288570404053
       },
       {
         "problem_id": "116A67",
-        "prediction": "d,e",
+        "prediction": "a,d",
         "gold": "a,d",
-        "correct": false,
-        "response": "d,e",
-        "time": 1.0486347675323486
+        "correct": true,
+        "response": "a,d",
+        "time": 2.0453858375549316
       },
       {
         "problem_id": "116A68",
-        "prediction": "d,e",
+        "prediction": "b,d",
         "gold": "d,e",
-        "correct": true,
-        "response": "d,e",
-        "time": 1.1078290939331055
+        "correct": false,
+        "response": "b,d",
+        "time": 2.047088861465454
       },
       {
         "problem_id": "116A69",
@@ -565,23 +565,23 @@
         "gold": "a,b",
         "correct": true,
         "response": "a,b",
-        "time": 0.8180110454559326
+        "time": 1.4934000968933105
       },
       {
         "problem_id": "116A70",
-        "prediction": "b,d",
+        "prediction": "d,e",
         "gold": "b,e",
         "correct": false,
-        "response": "b,d",
-        "time": 1.5579359531402588
+        "response": "d,e",
+        "time": 3.342397928237915
       },
       {
         "problem_id": "116A71",
-        "prediction": "e",
+        "prediction": "a",
         "gold": "e",
-        "correct": true,
-        "response": "e",
-        "time": 0.920029878616333
+        "correct": false,
+        "response": "a",
+        "time": 1.7196269035339355
       },
       {
         "problem_id": "116A72",
@@ -589,7 +589,7 @@
         "gold": "a,b,d",
         "correct": true,
         "response": "a,b,d",
-        "time": 1.3342299461364746
+        "time": 2.7368099689483643
       },
       {
         "problem_id": "116A73",
@@ -597,7 +597,7 @@
         "gold": "a,c,e",
         "correct": false,
         "response": "a,c,d",
-        "time": 1.3217148780822754
+        "time": 2.7337849140167236
       },
       {
         "problem_id": "116A74",
@@ -605,7 +605,7 @@
         "gold": "a,b,d",
         "correct": true,
         "response": "a,b,d",
-        "time": 1.329685926437378
+        "time": 2.9167211055755615
       },
       {
         "problem_id": "116A75",
@@ -613,7 +613,7 @@
         "gold": "a,c,d",
         "correct": true,
         "response": "a,c,d",
-        "time": 1.1809430122375488
+        "time": 2.5245580673217773
       }
     ]
   },

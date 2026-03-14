@@ -1,0 +1,427 @@
+{
+  "timestamp": "2026-03-03T08:45:36.823996",
+  "model": "qwen3.5-122b-a10b",
+  "summary": [
+    {
+      "prompt_key": "baseline",
+      "prompt_name": "Baseline (現行)",
+      "total": 50,
+      "correct": 45,
+      "accuracy": 0.9,
+      "avg_time": 33.77937511444092,
+      "errors": 0,
+      "empty_responses": 0
+    }
+  ],
+  "details": {
+    "baseline": [
+      {
+        "problem_id": "116B1",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert (医学の専門家).\n    *   Task: Answer a multiple-choice question about medical ethics/publishing case reports.\n    *   Cons",
+        "time": 59.10173487663269
+      },
+      {
+        "problem_id": "116B2",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical findings and causes related to abnormal breathing or ",
+        "time": 20.92153286933899
+      },
+      {
+        "problem_id": "116B3",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about psychiatry (specifically hallucinations vs. other symptoms).\n",
+        "time": 26.29613995552063
+      },
+      {
+        "problem_id": "116B4",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about the appropriate use of antimicrobial agents (antibiotics).\n  ",
+        "time": 32.02311086654663
+      },
+      {
+        "problem_id": "116B5",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical examinations for patients with consciousness disturba",
+        "time": 30.02710509300232
+      },
+      {
+        "problem_id": "116B6",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical consultation facilities for treatment progress when t",
+        "time": 24.75237798690796
+      },
+      {
+        "problem_id": "116B7",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically obstetrics/endocrinology).\n  ",
+        "time": 22.906038999557495
+      },
+      {
+        "problem_id": "116B8",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about age-related changes in the human body (specifically kidney fu",
+        "time": 24.469558238983154
+      },
+      {
+        "problem_id": "116B9",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert (医学の専門家).\n    *   Task: Answer a multiple-choice question about medical interviewing/communication.\n    *   Constrai",
+        "time": 45.74982285499573
+      },
+      {
+        "problem_id": "116B10",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about the Japanese social security system (specifically healthcare/insuran",
+        "time": 80.55611371994019
+      },
+      {
+        "problem_id": "116B11",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically regarding pharyngitis/throat ",
+        "time": 17.207218885421753
+      },
+      {
+        "problem_id": "116B12",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically pediatric neuromuscular disor",
+        "time": 24.583484888076782
+      },
+      {
+        "problem_id": "116B13",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert (医学の専門家).\n    *   Task: Answer a multiple-choice question about elderly care ethics/approach.\n    *   Constraint: Ch",
+        "time": 16.707126140594482
+      },
+      {
+        "problem_id": "116B14",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: Do n",
+        "time": 15.105307817459106
+      },
+      {
+        "problem_id": "116B15",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: Do n",
+        "time": 17.28059720993042
+      },
+      {
+        "problem_id": "116B16",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically regarding nasogastric tube in",
+        "time": 29.777401208877563
+      },
+      {
+        "problem_id": "116B17",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about pediatric basic life support (BLS) / secondary resuscitation.",
+        "time": 26.243845224380493
+      },
+      {
+        "problem_id": "116B18",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about calculating the smoking index (喫煙指数).\n    *   Input: A case d",
+        "time": 20.51128888130188
+      },
+      {
+        "problem_id": "116B19",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically breast cancer signs).\n    *  ",
+        "time": 32.39068293571472
+      },
+      {
+        "problem_id": "116B20",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert (医学の専門家).\n    *   Task: Answer a multiple-choice question about manual muscle testing (MMT) of the ankle dorsiflexio",
+        "time": 16.961586952209473
+      },
+      {
+        "problem_id": "116B21",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically cerebrospinal fluid analysis)",
+        "time": 43.6916937828064
+      },
+      {
+        "problem_id": "116B22",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about the history of insulin.\n    *   Constraint: Choose one answer",
+        "time": 17.508464097976685
+      },
+      {
+        "problem_id": "116B23",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical interviewing techniques (specifically, identifying an",
+        "time": 21.055686235427856
+      },
+      {
+        "problem_id": "116B24",
+        "prediction": "c,e",
+        "gold": "a",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about \"Discharge Summary\" (退院時要約).\n    *   Constraint: Choose 1 option (a,",
+        "time": 80.40272998809814
+      },
+      {
+        "problem_id": "116B25",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: \"no_",
+        "time": 23.093037128448486
+      },
+      {
+        "problem_id": "116B26",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Provide the answer in the format \"a,b,",
+        "time": 19.942526817321777
+      },
+      {
+        "problem_id": "116B27",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: Choose the correct option (a, b, c, d, e) ",
+        "time": 24.090847969055176
+      },
+      {
+        "problem_id": "116B28",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question (select one option from a, b, c, d, e).\n    *   Constraint: \"no_thi",
+        "time": 22.781329870224
+      },
+      {
+        "problem_id": "116B29",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question about medical ethics/case management (specifically discharge planni",
+        "time": 30.59360384941101
+      },
+      {
+        "problem_id": "116B30",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question (select the correct option from a, b, c, d, e).\n    *   Constraint:",
+        "time": 16.974985122680664
+      },
+      {
+        "problem_id": "116B31",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical ethics/patient confidentiality.\n    *   Constraint: P",
+        "time": 30.80119776725769
+      },
+      {
+        "problem_id": "116B32",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question (select one option from a, b, c, d, e).\n    *   Constraint: \"no_thi",
+        "time": 21.924993991851807
+      },
+      {
+        "problem_id": "116B33",
+        "prediction": "e",
+        "gold": "c",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Format: Choose the correct option(s) from a, b, c, d, e a",
+        "time": 80.80690622329712
+      },
+      {
+        "problem_id": "116B34",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided text.\n    *   Constraint: Choose one option (a, b",
+        "time": 39.17906308174133
+      },
+      {
+        "problem_id": "116B35",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: Do n",
+        "time": 17.1599862575531
+      },
+      {
+        "problem_id": "116B36",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: Do n",
+        "time": 30.87136673927307
+      },
+      {
+        "problem_id": "116B37",
+        "prediction": "c,e",
+        "gold": "d",
+        "correct": false,
+        "response": "Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Provide the answer as a single letter (a, b, ",
+        "time": 80.68195986747742
+      },
+      {
+        "problem_id": "116B38",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Provide the answer in the format \"a,b,",
+        "time": 22.57611918449402
+      },
+      {
+        "problem_id": "116B39",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice medical question.\n    *   Constraint: Choose the correct option from a, b, c",
+        "time": 26.313348054885864
+      },
+      {
+        "problem_id": "116B40",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question based on a clinical case.\n    *   Constraint: Provide the answer as",
+        "time": 64.14943504333496
+      },
+      {
+        "problem_id": "116B41",
+        "prediction": "d",
+        "gold": "d",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: \"no_",
+        "time": 31.651483297348022
+      },
+      {
+        "problem_id": "116B42",
+        "prediction": "e",
+        "gold": "a",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question based on a clinical scenario.\n    *   Constraint: Provide the answe",
+        "time": 41.097864389419556
+      },
+      {
+        "problem_id": "116B43",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically regarding nerve injury signs ",
+        "time": 70.8684070110321
+      },
+      {
+        "problem_id": "116B44",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:** The user wants me to act as a medical expert and answer a multiple-choice question about a clinical case. I need to select the most likely diagno",
+        "time": 25.804039001464844
+      },
+      {
+        "problem_id": "116B45",
+        "prediction": "e",
+        "gold": "e",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question from the provided options (a, b, c, d, e).\n    *   Constraint: Do n",
+        "time": 65.24826097488403
+      },
+      {
+        "problem_id": "116B46",
+        "prediction": "c",
+        "gold": "c",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question based on a clinical case.\n    *   Constraint: Provide the answer as",
+        "time": 18.80398416519165
+      },
+      {
+        "problem_id": "116B47",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Select the correct answer from options (a, b, c, d, e) for a given medical case question.\n    *   Con",
+        "time": 38.82381510734558
+      },
+      {
+        "problem_id": "116B48",
+        "prediction": "a",
+        "gold": "a",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Answer a multiple-choice question based on a clinical case.\n    *   Constraint: Provide the answer as",
+        "time": 28.993488073349
+      },
+      {
+        "problem_id": "116B49",
+        "prediction": "b",
+        "gold": "b",
+        "correct": true,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical Expert.\n    *   Task: Answer a multiple-choice question about medical knowledge (specifically brain death determination).\n ",
+        "time": 28.023833990097046
+      },
+      {
+        "problem_id": "116B50",
+        "prediction": "2.05g/日",
+        "gold": "21",
+        "correct": false,
+        "response": "<think>Thinking Process:\n\n1.  **Analyze the Request:**\n    *   Role: Medical expert.\n    *   Task: Solve a medical calculation problem based on provided data.\n    *   Input Data: 24-hour urine collect",
+        "time": 41.48222303390503
+      }
+    ]
+  },
+  "prompts": {
+    "baseline": "あなたは医学の専門家です。選択肢から正解をa,b,c,d,eで答えてください。",
+    "format_strict": "あなたは臨床医学に精通した医師です。\n問題を読み、正解の選択肢をアルファベット(a,b,c,d,e)のみで回答してください。\n複数選択の場合はカンマ区切りで回答してください。例: a,c\n余計な説明は不要です。",
+    "chain_of_thought": "あなたは臨床医学に精通した医師です。\n\n回答手順:\n1. 問題文のキーワードを確認\n2. 各選択肢を医学的に検討\n3. 正解を選択\n\n最終行に「答え:」に続けて選択肢(a,b,c,d,e)のみを記載してください。",
+    "japanese_medical": "あなたは日本の医療制度と臨床医学に精通した専門医です。\n医学の多肢選択問題に回答します。\n\n重要:\n- 日本の診療ガイドラインに基づいて判断\n- 選択肢はa,b,c,d,eのアルファベットで回答\n- 指定された個数を必ず選択\n\n回答形式: a または a,b,c（複数の場合）",
+    "answer_first": "あなたは医学の専門家です。\n最初の行に正解の選択肢（a,b,c,d,eのアルファベットのみ）を出力してください。\n複数選択の場合はカンマ区切りで出力してください。例: a,c\n2行目以降に解説を書いてもかまいません。"
+  }
+}
