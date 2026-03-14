@@ -1,6 +1,6 @@
 # IgakuQA 論文化プロジェクト: 先行研究レビュー
 
-**調査日**: 2026-02-22
+**調査日**: 2026-02-22（更新: 2026-03-13）
 **調査範囲**: 2023-2026年の関連研究
 
 ---
@@ -12,7 +12,9 @@
 3. [スケーリング則・モデルサイズと医学的性能](#3-スケーリング則モデルサイズと医学的性能)
 4. [量子化が医学タスクに与える影響](#4-量子化が医学タスクに与える影響)
 5. [エッジ/消費者ハードウェアでの医療LLM展開](#5-エッジ消費者ハードウェアでの医療llm展開)
-6. [本研究が埋めるギャップ](#6-本研究が埋めるギャップ)
+6. [プロンプト工学と推論戦略](#6-プロンプト工学と推論戦略)
+7. [医療LLM評価方法論の批判と発展](#7-医療llm評価方法論の批判と発展)
+8. [本研究が埋めるギャップ](#8-本研究が埋めるギャップ)
 
 ---
 
@@ -127,7 +129,19 @@
   - **全モデル共通不正解: 0問**（前年から大幅改善）
 - **URL**: https://informa.medilink-study.com/web-informa/post51586.html/
 
-### 1.5 EQUES (2025) — ローカルLLM医薬評価
+### 1.5 GPT-OSS Swallow (2026) — 日本語強化大型オープンLLM
+
+- **開発**: 東京工業大学 Swallow チーム
+- **公開**: 2026-02-20
+- **モデル**: GPT-OSS-Swallow-20B-{SFT,RL}, GPT-OSS-Swallow-120B-{SFT,RL}（4モデル）
+- **ベース**: OpenAI GPT-OSS (20B, 120B)
+- **手法**: 継続事前学習 (Swallow Corpus v3.2) + SFT + 強化学習
+- **結果**: 英語タスク平均 **0.804**（120Bパラメータ以下のオープンLLM最高性能）。AIME 24-25で+15.0pt
+- **本研究との関連**: 本研究で評価したgpt-oss-safeguard-120b-mlxの上流モデル。Safeguardバージョンとの比較が可能
+- **URL**: https://swallow-llm.github.io/gptoss-swallow.en.html
+- **HuggingFace**: tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1
+
+### 1.6 EQUES (2025) — ローカルLLM医薬評価
 
 - **著者**: 株式会社EQUES（東大松尾研発スタートアップ）
 - **環境**: Google Colab A100（厳密にはローカルではない）
@@ -145,7 +159,7 @@
 - **重要発見**: 医療特化モデル（EQUES-MedLlama-v2）が汎用モデルに劣る
 - **URL**: https://zenn.dev/eques/articles/20cc5451ac9b09
 
-### 1.6 その他の日本語医療LLMベンチマーク
+### 1.7 その他の日本語医療LLMベンチマーク
 
 #### JMedBench (COLING 2025)
 
@@ -297,7 +311,20 @@
 - **韓国医療特化LLM**: 3,800万臨床テキストで学習
 - **結果**: KMLE **86.2%**（現役医師平均79.7%超え）
 
-### 2.3 中国（CMExam / CMB）
+### 2.3 インド（MedMCQA / AIIMS・NEET-PG）
+
+#### MedMCQA (PMLR 2022)
+
+- **論文**: Pal A, Umapathi LK, Sankarasubbu M. "MedMCQA: A Large-scale Multi-Subject Multi-Choice Dataset for Medical domain Question Answering." CHIL 2022.
+- **データ**: 193,000+問（AIIMS/NEET-PG、インド医学大学院入試）、21科目、2,400+テーマ
+- **主要結果**:
+  - OpenMedLM (Yi-34B): **68.3%**（プロンプト工学のみ）
+  - Med-Gemini: **91.1%**（MedQAだが参考）
+  - Clinical Camel 70B: 54.2%（5-shot）
+- **重要性**: USMLE/MedQAに次ぐ世界第2の医療MCQAベンチマーク
+- **URL**: https://proceedings.mlr.press/v174/pal22a.html
+
+### 2.4 中国（CMExam / CMB）
 
 #### CMExam (NeurIPS 2023)
 
@@ -318,7 +345,7 @@
 - **データ**: 300,901問、43臨床専門分野
 - **URL**: https://arxiv.org/abs/2407.10990
 
-### 2.4 欧州
+### 2.5 欧州
 
 #### ドイツ Staatsexamen (JMIR 2024)
 
@@ -337,7 +364,7 @@
 - **論文**: Moell B, et al. "Swedish Medical LLM Benchmark." Frontiers in AI, 2025.
 - **URL**: https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1557920/full
 
-### 2.5 ブラジル（ポルトガル語）
+### 2.6 ブラジル（ポルトガル語）
 
 #### Revalida ベンチマーク (BMJ 2025)
 
@@ -346,7 +373,7 @@
 - **結果**: Llama 3 70B **77.5%**（オープン最高）、Mixtral-8x7B 63.7%（MoE中型）
 - **URL**: https://pmc.ncbi.nlm.nih.gov/articles/PMC12082654/
 
-### 2.6 アラビア語
+### 2.7 アラビア語
 
 #### MedAraBench (arXiv 2026)
 
@@ -354,7 +381,7 @@
 - **結果**: GPT-o3 76.5%、オープンソースは大幅に低い
 - **URL**: https://arxiv.org/abs/2602.01714
 
-### 2.7 アフリカ
+### 2.8 アフリカ
 
 #### AfriMed-QA (ACL 2025, Best Social Impact Award)
 
@@ -363,7 +390,7 @@
 - **結果**: 小型エッジモデルは合格困難。**医療特化LLMが汎用に劣る**
 - **URL**: https://arxiv.org/abs/2411.15640
 
-### 2.8 多言語ベンチマーク
+### 2.9 多言語ベンチマーク
 
 #### MedExpQA (AI in Medicine 2024)
 
@@ -392,7 +419,7 @@
 - **規模**: 15言語、28国、198試験、16モデル
 - **URL**: https://www.jmir.org/2024/1/e66114
 
-### 2.9 多言語性能ギャップまとめ
+### 2.10 多言語性能ギャップまとめ
 
 | 指標 | 英語比での低下 | 出典 |
 |---|---|---|
@@ -428,7 +455,52 @@
 | MoE (Mixtral-8x7B) が一部の大型denseモデル超え | Revalida (BMJ 2025) |
 | Reasoning variants が instruction-tuned を +20pp 超過 | KorMedMCQA-V (2026) |
 
-### 3.3 MedS3: テスト時推論スケーリング
+### 3.3 推論モデルの医療性能
+
+#### DeepSeek R1 医療推論分析 (Frontiers in AI 2025)
+
+- **論文**: "Medical reasoning in LLMs: an in-depth analysis of DeepSeek R1." Frontiers in AI, 2025.
+- **モデル**: DeepSeek-R1 (671B MoE)
+- **結果**: MedQA臨床ケース100問で診断精度 **93%**。鑑別診断、ガイドラインベース治療選択、患者固有因子の統合を体系的に実施
+- **眼科**: 中国語MCQ **86.2%**、英語MCQ **80.8%**（Gemini 2.0 Pro、o1、o3-miniを超過）
+- **URL**: https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1616145/full
+
+#### MedR-Bench: 臨床推論ベンチマーク (Nature Communications 2025)
+
+- **論文**: "Quantifying the reasoning abilities of LLMs on clinical cases." Nature Communications, 2025.
+- **データ**: 1,453症例（13臓器系、10専門分野、一般疾患+希少疾患）
+- **結果**: GPT-4 **87.6%**（USMLE形式）。ただし現代医学は事実想起を超えた文脈適応・確率的推論・ガイドライン追従が必要
+- **URL**: https://www.nature.com/articles/s41467-025-64769-1
+
+#### 大規模推論モデルの医療MMLU-Pro評価 (medRxiv 2025)
+
+- **論文**: "Evaluating Large Reasoning Model Performance on Complex Medical Scenarios In The MMLU-Pro Benchmark." medRxiv, 2025.
+- **結果**: 推論モデル（o3-mini, DeepSeek-R1）がMMLU-Pro医療カテゴリで従来モデルを超過。ただしQwQ-32Bは精度24.4%（推論過多で非効率）
+- **URL**: https://www.medrxiv.org/content/10.1101/2025.04.07.25325385v2.full
+
+### 3.4 テスト時推論スケーリング
+
+#### m1: 医療推論のテスト時スケーリング (arXiv 2025)
+
+- **論文**: "m1: Unleash the Potential of Test-Time Scaling for Medical Reasoning with Large Language Models." arXiv:2504.00869, 2025.
+- **モデル**: 7B, 32Bを23Kサンプルでファインチューニング
+- **結果**:
+  - m1-7B: MedQA **60.32%**（HuatuoGPT-o1-7B超え、新SoTA）
+  - m1-32B: 70B級医療LLMに匹敵
+- **重要発見**:
+  - **最適推論トークン予算 ≈ 4K**（超過するとoverthinkingで精度低下）
+  - 医学知識不足がテスト時スケーリングのボトルネック
+  - 医学推論と数学推論は根本的に異なる
+- **URL**: https://arxiv.org/abs/2504.00869
+- **GitHub**: https://github.com/UCSC-VLAA/m1
+
+#### Rethinking Test-Time Scaling for Medical AI (arXiv 2025)
+
+- **論文**: "Rethinking Test-Time Scaling for Medical AI: Model and Task-Aware Strategies for LLMs and VLMs." arXiv:2506.13102, 2025.
+- **結果**: テスト時スケーリングの効果はモデルとタスクに強く依存。画一的な推論予算増加は非効率
+- **URL**: https://arxiv.org/abs/2506.13102
+
+#### MedS3 (arXiv 2025)
 
 - **論文**: Jiang S, et al. "MedS3: Towards Medical Slow Thinking with Self-Evolved Soft Dual-sided Process Supervision." arXiv:2501.12051.
 - **結果**: 小型モデルが32Bクラスを **+8.57pt** 超過。MCTS推論でリソース制約デバイス向け
@@ -556,21 +628,105 @@
 
 ---
 
-## 6. 本研究が埋めるギャップ
+## 6. プロンプト工学と推論戦略
 
-### 6.1 先行研究との差別化
+### 6.1 CoTプロンプトの医療MCQAにおける体系的比較 (Computers in Biology and Medicine 2025)
+
+- **論文**: "A comparative evaluation of chain-of-thought-based prompt engineering techniques for medical question answering." Computers in Biology and Medicine, 2025.
+- **結果**: CoT + kNNベース few-shot + シャッフルオプション self-consistency が最高性能
+- **重要発見**: CoTはzero-shot/few-shotを一貫して超過。アンサンブル変種 (self-consistency) がCoT単体を超過
+- **URL**: https://www.sciencedirect.com/science/article/pii/S0010482525009655
+
+### 6.2 プロンプト工学は普遍的に有効ではない (arXiv 2025)
+
+- **論文**: "Prompt engineering does not universally improve Large Language Model performance across clinical decision-making tasks." arXiv:2512.22966, 2025.
+- **モデル**: GPT-4o, Gemini 1.5 Pro, Llama 3.3 70B
+- **データ**: 36臨床ケース × 5臨床推論タスク
+- **結果**:
+  - 最低精度タスク（検査選択）ではプロンプト工学が有意改善
+  - **他タスクでは逆効果**になるケースあり
+  - 動的 few-shot がランダム選択を一貫して上回らない
+- **結論**: プロンプト工学の効果は**モデル・タスク依存**。文脈に応じた戦略が必要
+- **本研究との関連**: 本研究の「プロンプト最適化はモデルサイズ依存」発見と整合
+- **URL**: https://arxiv.org/abs/2512.22966
+
+### 6.3 OpenMedLM: プロンプト工学がFTを凌駕 (Scientific Reports 2024)
+
+- ※ セクション2.1に詳細記載
+- **核心**: Yi-34BがMedQA **72.6%** — プロンプト工学のみでFT済み70B超え
+- **本研究との関連**: 本研究でも大型モデルではBaselineが最適（複雑なプロンプトは不要）
+
+### 6.4 プロンプト工学のスコーピングレビュー (JMIR 2024)
+
+- **論文**: Zaghir J, et al. "Prompt engineering paradigms for medical applications: scoping review and recommendations for better practices." JMIR, 2024.
+- **問題点**: **61%の研究がプロンプト非使用ベースラインを報告せず**
+- **推奨**: モデル選択がプロンプト戦略と同等以上に重要
+- **URL**: https://arxiv.org/abs/2405.01249
+
+---
+
+## 7. 医療LLM評価方法論の批判と発展
+
+### 7.1 MedHELM: 包括的医療LLM評価フレームワーク (Nature Medicine 2025)
+
+- **論文**: "Holistic evaluation of large language models for medical tasks with MedHELM." Nature Medicine, 2025.
+- **機関**: Stanford HAI
+- **構成**:
+  - 臨床医検証済み分類法: 5カテゴリ（臨床意思決定支援、臨床記録生成、患者コミュニケーション、医学研究、事務）、22サブカテゴリ、121タスク
+  - ベンチマークスイート: 37評価
+  - LLM-jury評価: 複数AI評価者による自動評価（ICC=0.47、臨床医間合意ICC=0.43を超過）
+- **結果**: 推論モデル (DeepSeek R1, o3-mini) が勝率 **66%**。ただしClaude 3.5 Sonnetが **15%低コスト**で同等性能
+- **意義**: 国家試験スコアは実臨床の多様性を反映せず、包括評価が必要
+- **URL**: https://www.nature.com/articles/s41591-025-04151-2
+
+### 7.2 知識-実践ギャップ (JMIR 2025)
+
+- **論文**: "Knowledge-Practice Performance Gap in Clinical Large Language Models." JMIR, 2025.
+- **結果**:
+  - 知識ベースベンチマーク: 平均精度 **70-79%**
+  - 実践ベースベンチマーク: 平均精度 **46-70%**
+  - MCQ形式 > 自由記述形式（大幅な差）
+- **結論**: 国家試験(MCQ)での合格は実臨床能力を保証しない
+- **URL**: https://www.jmir.org/2025/1/e84120/
+
+### 7.3 構成概念妥当性の問題 (arXiv 2025)
+
+- **論文**: "Medical Large Language Model Benchmarks Should Prioritize Construct Validity." arXiv:2503.10694, 2025.
+- **指摘**: 現在の医療LLMベンチマークは構成概念妥当性（測定したいものを実際に測定しているか）を軽視
+- **URL**: https://arxiv.org/abs/2503.10694
+
+### 7.4 ベンチマーク飽和問題
+
+- 2025-2026年時点で主要ベンチマーク (MedQA, USMLE) は飽和に近づいている
+- 一部の不正解にはground truthラベルの誤りが含まれる（ベンチマーク自体の品質問題）
+- MedQAが臨床性能の最も予測力の高いベンチマークだが、患者コミュニケーション・長期ケア・臨床情報抽出は捕捉できない
+
+### 7.5 本研究への示唆
+
+| 批判点 | 本研究の対応 |
+|---|---|
+| MCQ形式の限界 | 本研究はMCQ評価であり、この限界を認識して考察に記載すべき |
+| ベンチマーク飽和 | IgakuQAは日本語・非英語であり、まだ飽和していない |
+| 構成概念妥当性 | 医師国家試験は実際の臨床能力のproxy。限界は考察で言及 |
+| 知識-実践ギャップ | 本研究のスコープは知識評価に限定。臨床実装への含意は慎重に |
+
+---
+
+## 8. 本研究が埋めるギャップ
+
+### 8.1 先行研究との差別化
 
 | 観点 | 既存研究の状況 | 本研究の独自性 |
 |---|---|---|
 | **日本語医療×ローカル** | APIかColab/GPU評価のみ | **消費者Mac完結で35+モデル** |
 | **スケーリング分析** | 英語(MedQA)中心、2-5モデル | **日本語でQwen3 4B→235Bの体系的分析** |
 | **量子化×医療** | 一般ベンチマーク中心 | **IgakuQAでMLX 8bit/4bit/GGUFを比較** |
-| **プロンプト×サイズ相互作用** | 1-2種プロンプトが主流 | **4種プロンプト×35+モデルの交差分析** |
-| **max_tokens影響** | 報告なし | **推論モデルで30%→92%の劇的影響を発見** |
+| **プロンプト×サイズ相互作用** | 効果はモデル・タスク依存 (arXiv 2512.22966) | **4種プロンプト×35+モデルでサイズ依存性を体系的に実証** |
+| **max_tokens影響** | m1で最適≈4Kトークンの示唆あり | **推論モデルで30%→92%の劇的影響を初めて体系的に実証** |
 | **MoE効率性×医療** | DeepSeek-R1のみ | **gpt-oss, Qwen3-Next等で体系的に実証** |
 | **日本語FTの質的差異** | 「FTは有効」の一般論 | **同一ベースで+13%〜-7%の両方向を実証** |
 
-### 6.2 先行研究が裏付ける本研究の発見
+### 8.2 先行研究が裏付ける本研究の発見
 
 | 本研究の発見 | 裏付ける先行研究 |
 |---|---|
@@ -579,9 +735,11 @@
 | 医療特化FTが汎用に劣るケース | EQUES (MedLlama-v2)、AfriMed-QA、doctorin IgakuQA119 |
 | プロンプト工学がFTを代替可能 | OpenMedLM (Yi-34B)、MedExpQA |
 | 推論モデルのアーキテクチャ優位 | DeepSeek-R1 (92% USMLE)、KorMedMCQA-V (+20pp) |
+| max_tokensが推論モデルの精度を支配 | m1: 最適推論トークン≈4K、超過でoverthinking劣化 |
+| プロンプト最適化はモデルサイズ依存 | arXiv 2512.22966: プロンプト効果はモデル・タスク依存 |
 | Mistral-Small-3.2の実力 | PHI抽出研究 (GPT-4.1の97.8%達成) |
 
-### 6.3 本研究の位置づけ（性能比較）
+### 8.3 本研究の位置づけ（性能比較）
 
 | モデル/研究 | サイズ | 精度 | 環境 |
 |---|---|---|---|

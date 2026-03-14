@@ -1,7 +1,8 @@
 # IgakuQA 論文化計画
 
 **作成日**: 2026-02-22
-**ステータス**: 企画段階
+**最終更新**: 2026-03-13
+**ステータス**: データ収集完了、論文執筆準備段階
 
 ---
 
@@ -18,7 +19,7 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 | doctorin IgakuQA119 (2025) | ~7 (32Bクラス中心) | オープン | Google Colab |
 | eques (2025) | 4 (7-14B) | ローカル小型 | ローカル |
 | メディックメディア (2025/2026) | 3-6 (クラウドAI) | クラウド最新 | API |
-| **本研究** | **35+** | **1B〜235B全域** | **消費者Mac** |
+| **本研究** | **45+** | **1B〜397B全域** | **消費者Mac** |
 
 **国際的な先行研究を含む拡張比較**:
 
@@ -33,16 +34,17 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 | Safavi-Naini et al. (2025) | 多数 | 量子化比較 | 混合 | 消化器病学 |
 | Revalida BMJ (2025) | 31 | オープン+商用 | 混合 | ブラジル医師 |
 | KorMedMCQA-V (2026) | 50+ | VLモデル | 混合 | 韓国KMLE |
-| **本研究** | **35+** | **1B〜235B全域** | **消費者Mac** | **IgakuQA** |
+| **本研究** | **45+** | **1B〜397B全域** | **消費者Mac** | **IgakuQA** |
 
 **差別化ポイント**:
-1. **規模**: 35モデル以上 — 日本語医療ベンチマークでは最大規模
-2. **範囲**: 1.2B〜235Bまで全サイズ帯をカバー（他研究は特定帯域に集中）
+1. **規模**: 45モデル以上（49構成）— 日本語医療ベンチマークでは最大規模
+2. **範囲**: 1.2B〜397Bまで全サイズ帯をカバー（他研究は特定帯域に集中）
 3. **実用性**: 消費者向けハードウェア（Mac Studio M3 Ultra 512GB）での実測 — API/Colab不要
-4. **体系的比較**: 4種プロンプト × 複数max_tokens × 複数量子化条件の交差分析
+4. **体系的比較**: 5種プロンプト × 複数max_tokens × 複数量子化条件の交差分析
 5. **新知見**: max_tokensが推論モデルの正答率を支配する発見（30%→92%）
 6. **日本語FT質的差異**: 同一ベースモデルで+13%〜-7%の両方向を実証
 7. **量子化×日本語医療**: MLX 8bit/4bit/GGUFの医療タスクでの体系的比較（先行研究なし）
+8. **全400問評価**: 30+構成で全セクション(A-F)評価完了、18構成が合格
 
 **先行研究が裏付ける本研究の発見**:
 - 32B以上で合格圏 → Meerkat (7B合格は教科書FT必須), KorMedMCQA (72B=78.9%)
@@ -70,22 +72,28 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 
 ### 評価済みモデル一覧（セクションA, 75問, Best Accuracy）
 
-#### 合格モデル（75%以上）— 14モデル
+#### 合格モデル（75%以上）— 20構成
 
 | Model | Size | Best Accuracy | Best Prompt | Avg Time |
 |---|---|---|---|---|
 | gpt-oss-120b (MLX 8bit, mt=1024) | 120B MoE | **92.0%** | 案A | 2.1s |
+| Qwen3.5-397B-A17B@8bit (mt=4096) | 397B MoE(17B) | **90.7%** | 案A | 55.8s |
+| Qwen3.5-397B-A17B@4bit (mt=4096) | 397B MoE(17B) | **90.7%** | 案A/案C | 44.8s |
 | gpt-oss-120b (GGUF MXFP4, mt=1024) | 120B MoE | **90.7%** | 案C | 1.3s |
+| Qwen3.5-27B@8bit (mt=4096) | 27B dense | **89.3%** | 案A | 69.5s |
+| Qwen3-235B-A22B-thinking-2507 (mt=8192) | 235B MoE | **89.3%** | Baseline | 66.8s |
 | Qwen3-235B-A22B-2507 (MLX 8bit) | 235B MoE | **88.0%** | 案B/案C | 1.9s |
 | Qwen3-235B-A22B | 235B MoE | **88.0%** | 案B | 1.4s |
 | Qwen3-Next-80B (MLX, mt=1024) | 80B MoE(A3B) | **85.3%** | 案C | 0.4s |
 | Nemotron-3-Nano (mt=1024) | 33.6GB hybrid | **84.0%** | 案D | 8.3s |
 | Qwen3-VL-32B | 32B VL | **82.7%** | Baseline/案B | 3.7s |
 | Llama-3.3-Swallow-70B | 70B | **81.3%** | Baseline/案B | 2.1s |
-| Qwen3-32B | 32B | **80.0%** | Baseline/案B | 1.5s |
 | GPT-OSS-Swallow-20B (vLLM-MLX) | 20B MoE | **80.0%** | 案A | 11.2s |
+| Qwen3-32B | 32B | **80.0%** | Baseline/案B | 1.5s |
+| MiniMax-M2.5 (mt=4096) | 128.7GB MoE | **77.3%** | Baseline | 9.6s |
 | gpt-oss-20b (mt=1024) | 20B MoE | **77.3%** | 案A | 1.2s |
 | Mistral-Large-2407 | 123B | **77.3%** | Baseline/案A/案C | 6.5s |
+| Llama 4 Scout (17Bx16E) | 109B MoE | **76.0%** | Baseline/案A/案C | — |
 | MedGemma-27B | 27B | **76.0%** | Baseline | 3.0s |
 | Mistral-Small-3.2 | 25.9GB | **76.0%** | Baseline | 0.9s |
 
@@ -95,6 +103,7 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 |---|---|---|---|
 | Qwen3-VL-30B | 30B VL | 74.7% | 案A/B/C |
 | Gemma 3 27B | 27B | 74.7% | 案B |
+| GLM-4.7-Flash (mt=8192) | 31.8GB | 73.3% | Baseline |
 | Qwen3-14B | 14B | 73.3% | 案A/案B |
 | Llama-3.3-70B | 70B | 68.0% | Baseline/案A/案B |
 | GLM-4.6V-Flash (mt=4096) | 11.8GB | 61.3% | 案D |
@@ -119,20 +128,54 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 
 | Model | 理由 |
 |---|---|
-| GLM-4.7-Flash | LM Studio APIクラッシュ |
+| Qwen3.5-35B-A3B | 全問で"c,e"出力、MoE互換問題 |
 | Fallen-Command-A-111B | 3bit量子化で指示追従不能 |
-| MiniMax-M2.5 (128.7GB) | 34.7%で評価中止 |
+| gpt-oss-safeguard-20b-mlx | 空回答+エラー多発 |
+| internlm3-8b-instruct | API不安定（完了率16%） |
+| internvl3-14b / plamo-13b | 全リクエスト失敗 |
 
-### 全400問評価済みモデル
+※ 以下は再評価で復活済み（合格モデルに含む）:
+- ~~GLM-4.7-Flash~~ → mt=8192で73.3%
+- ~~MiniMax-M2.5~~ → mt=4096で77.3% ✓合格
+- ~~Nemotron-3-Nano~~ → mt=1024+案Dで84.0% ✓合格
+- ~~Qwen3-235B-thinking-2507~~ → mt=8192で89.3% ✓合格
 
-| Model | Section A | 全400問 | 合否 |
-|---|---|---|---|
-| Qwen3-32B | 80.0% | **79.3%** | **合格** |
-| GPT-OSS-Swallow-20B | 80.0% | **77.8%** | **合格** |
-| Nemotron-3-Nano | 84.0% | **80.2%** | **合格** |
-| Mistral-Small-3.2 | 76.0% | **76.8%** | **合格** |
-| Mistral-Large-2407 | 77.3% | **75.8%** | **合格** |
-| MedGemma-27B | 76.0% | **71.8%** | **不合格** |
+### 全400問評価済みモデル — 30+構成（18合格 / 14不合格）
+
+| Rank | Model | Section A | 全400問 | 合否 | サイズ |
+|---|---|---|---|---|---|
+| 1 | **Qwen3.5-397B-A17B@8bit** | 90.7% | **89.5%** | **✓合格⭐⭐⭐** | 249.8GB |
+| 2 | **Qwen3.5-397B-A17B@4bit** | 90.7% | **87.3%** | **✓合格⭐⭐** | 223.9GB |
+| 2 | **Qwen3.5-27B@8bit** | 89.3% | **87.3%** | **✓合格⭐⭐** | 29.5GB |
+| 4 | **Qwen3-235B-A22B-2507** | 88.0% | **86.0%** | **✓合格⭐⭐** | 132.3GB |
+| 5 | **gpt-oss-120b MLX 8bit** | 88.0% | **84.5%** | **✓合格⭐⭐⭐** | 124.2GB |
+| 6 | **Qwen3-235B-A22B** | 88.0% | **84.2%** | **✓合格⭐⭐** | 132.3GB |
+| 7 | **gpt-oss-120b GGUF** | 84.0% | **84.0%** | **✓合格⭐⭐⭐** | 63.4GB |
+| 8 | **Qwen3-Next-80B** | 82.7% | **83.5%** | **✓合格⭐** | 84.7GB |
+| 9 | **Qwen3-VL-32B** | 82.7% | **82.8%** | **✓合格⭐** | 19.6GB |
+| 10 | **Nemotron-3-Nano** | 84.0% | **80.2%** | **✓合格⭐** | 33.6GB |
+| 11 | **Qwen3-32B 8bit** | 80.0% | **79.3%** | **✓合格⭐** | 34.8GB |
+| 12 | **Qwen3-32B 4bit** | 78.7% | **78.8%** | **✓合格** | 18.5GB |
+| 13 | **Swallow-70B** | 81.3% | **78.0%** | **✓合格⭐** | 40.4GB |
+| 14 | **GPT-OSS-Swallow-20B** | 80.0% | **77.8%** | **✓合格⭐** | 45GB |
+| 14 | **Qwen3-VL-30B** | 73.3% | **77.8%** | **✓合格** | 33.5GB |
+| 16 | **Llama 4 Scout** | 76.0% | **77.5%** | **✓合格** | 109B MoE |
+| 17 | **Mistral-Small-3.2** | 76.0% | **76.8%** | **✓合格** | 25.9GB |
+| 18 | **Mistral-Large** | 77.3% | **75.8%** | **✓合格** | 130.3GB |
+| — | shisa-v2.1-70b | 76.0% | 74.2% | 不合格 | 75.0GB |
+| — | magistral-small 8bit | 70.7% | 74.2% | 不合格 | 47.2GB |
+| — | magistral-small-2509 | 76.0% | 74.0% | 不合格 | 47.2GB |
+| — | Qwen3-14B | 73.3% | 71.8% | 不合格 | 15.7GB |
+| — | MedGemma-27B | 76.0% | 71.8% | 不合格 | 16.0GB |
+| — | gpt-oss-20b @8bit | 76.0% | 71.5% | 不合格 | 22.3GB |
+| — | Llama-3.3-70B | 68.0% | 71.0% | 不合格 | — |
+| — | gpt-oss-20b @mxfp4 | 76.0% | 71.0% | 不合格 | 12.1GB |
+| — | Qwen3-VL-8B 8bit | 62.7% | 69.8% | 不合格 | 9.9GB |
+| — | Gemma 3 27B | 74.7% | 67.8% | 不合格 | 16.9GB |
+| — | Qwen3-VL-8B 4bit | 56.0% | 65.3% | 不合格 | 5.8GB |
+| — | Phi-4 | 56.0% | 62.8% | 不合格 | 15.6GB |
+| — | Qwen3-VL-4B 8bit | 58.7% | 60.5% | 不合格 | 5.1GB |
+| — | Qwen3-VL-4B 4bit | 49.3% | 58.3% | 不合格 | 3.0GB |
 
 ---
 
@@ -143,9 +186,9 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 | # | 課題 | 対応策 | 工数 |
 |---|---|---|---|
 | 1 | **統計的検定がない** | McNemar検定（モデル間ペア比較）、95% CI（二項分布）、Bonferroni補正 | Python実装1日 |
-| 2 | **セクションA(75問)のみの評価が多い** | 主要10モデルを全400問で再評価 | 数日（自動化済み） |
+| 2 | ~~セクションA(75問)のみの評価が多い~~ | ✅ **解決済み**: 30+構成で全400問評価完了（18合格/14不合格） | — |
 | 3 | **再現性の担保** | temperature=0, seed固定の明記。GitHubにスクリプト公開済み | 記述のみ |
-| 4 | **量子化条件の統一性** | モデルごとの量子化条件を表に明記。量子化影響のサブ分析を追加 | 既存データで可能 |
+| 4 | ~~量子化条件の統一性~~ | ✅ **解決済み**: 8bit/4bit/GGUF比較実験完了（qwen3-32b, qwen3.5-397b, gpt-oss-20b 6バリアント） | — |
 
 ### 論文内で議論すべき（Limitation節）
 
@@ -172,17 +215,17 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 
 ### タイトル案
 
-> **"Benchmarking 35+ Local Large Language Models on the Japanese National Medical Licensing Examination: Scaling Laws, Fine-tuning Effects, and Inference Configuration"**
+> **"Benchmarking 45+ Local Large Language Models on the Japanese National Medical Licensing Examination: Scaling Laws, Fine-tuning Effects, and Inference Configuration"**
 
 短縮案:
-> **"Local LLMs vs. the Japanese Medical Exam: A Comprehensive Benchmark of 35+ Models"**
+> **"Local LLMs vs. the Japanese Medical Exam: A Comprehensive Benchmark of 45+ Models on Consumer Hardware"**
 
 ### Abstract (構造)
 
 - **Background**: ローカルLLMはプライバシー保護の観点から医療応用が期待されるが、医学知識の体系的評価は不足
-- **Methods**: IgakuQAベンチマーク、35+モデル、Mac Studio M3 Ultra、4プロンプト戦略
-- **Results**: gpt-oss-120B 92.0%（全モデル最高）。32B以上で合格率85%。max_tokensが推論モデルの正答率を支配。日本語FTは手法により+13%〜-7%の差
-- **Conclusions**: ローカルLLMは医師国家試験合格水準に到達。設定最適化が性能を左右する最重要因子
+- **Methods**: IgakuQAベンチマーク、45+モデル（49構成）、Mac Studio M3 Ultra、5プロンプト戦略、全400問評価
+- **Results**: Qwen3.5-397B 89.5%（全400問最高）、gpt-oss-120B 92.0%（Section A最高）。18/32構成が合格。max_tokensが推論モデルの正答率を支配（30%→92%）。日本語FTは手法により+13%〜-7%の差。27B denseが397B MoE@4bitと同スコア（87.3%）
+- **Conclusions**: ローカルLLMは医師国家試験合格水準に到達。設定最適化が性能を左右する最重要因子。コンパクトモデル（19.6-29.5GB）でも80%超を達成
 
 ### Sections
 
@@ -193,11 +236,11 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
    - 本研究の目的: 包括的ベンチマーク
 
 2. **Methods**
-   - 2.1 Benchmark: IgakuQA (116th exam, 2022)
-   - 2.2 Models: 35+ models across 1.2B-235B (Table 1)
-   - 2.3 Evaluation Environment: Mac Studio M3 Ultra, LM Studio API
-   - 2.4 Prompt Strategies: Baseline, Format-enforced (A), Chain-of-thought (B), Japan-medical-context (C)
-   - 2.5 Inference Configuration: max_tokens, quantization, /no_think
+   - 2.1 Benchmark: IgakuQA (116th exam, 2022), 400 questions (Sections A-F)
+   - 2.2 Models: 45+ models (49 configurations) across 1.2B-397B (Table 1)
+   - 2.3 Evaluation Environment: Mac Studio M3 Ultra, LM Studio API + vLLM-MLX
+   - 2.4 Prompt Strategies: Baseline, Format-enforced (A), Chain-of-thought (B), Japan-medical-context (C), Answer-first (D)
+   - 2.5 Inference Configuration: max_tokens, quantization (8bit/4bit/GGUF), /no_think, thinking models
    - 2.6 Statistical Analysis: McNemar test, 95% CI, Bonferroni correction
 
 3. **Results**
@@ -208,7 +251,9 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
    - 3.5 Impact of max_tokens on Reasoning Models (Figure 4: mt sweep)
    - 3.6 Prompt Strategy × Model Size Interaction (Figure 5: heatmap)
    - 3.7 Medical-specialized vs General Models (Table 3: MedGemma vs Qwen3)
-   - 3.8 Full Exam (400 questions) Validation (Table 4)
+   - 3.8 Full Exam (400 questions) Results (Table 4: 30+構成の全セクション評価)
+   - 3.9 Quantization Impact (Table 5: 8bit vs 4bit, GGUF vs MLX)
+   - 3.10 Thinking Model Analysis (max_tokens dependency, /no_think effects)
 
 4. **Discussion**
    - 臨床的意義（どのモデルをどの環境で使うべきか）
@@ -231,7 +276,9 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 | Figure 4 | Line | max_tokens vs 正答率（gpt-oss-120B/20B） | 要作成 |
 | Figure 5 | Heatmap | プロンプト × モデルの正答率ヒートマップ | ✅plotsにあり |
 | Table 3 | Table | MedGemma vs 汎用モデルの比較 | ✅あり |
-| Table 4 | Table | 全400問評価結果 | ✅一部あり |
+| Table 4 | Table | 全400問評価結果（30+構成） | ✅あり |
+| Table 5 | Table | 量子化比較（8bit vs 4bit, GGUF vs MLX） | ✅あり |
+| Figure 6 | Bar | Thinking vs Non-thinking model comparison | 要作成 |
 
 ---
 
@@ -239,30 +286,37 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 
 ### Priority 1（投稿に必須）
 
-- [ ] 主要10モデルの全400問評価
-  - gpt-oss-120B (MLX 8bit)
-  - Qwen3-235B
-  - Qwen3-Next-80B
-  - Qwen3-VL-32B
-  - Llama-3.3-Swallow-70B
-  - Qwen3-14B
-  - Qwen3-8B
-  - Gemma 3 27B
-  - Phi-4
-  - Qwen3-4B
-- [ ] 統計的検定の実装（McNemar, 95% CI）
-- [ ] Figure 2-4 の作成
+- [x] 主要モデルの全400問評価 → **30+構成完了**（18合格/14不合格）
+  - [x] gpt-oss-120B (MLX 8bit) → 84.5% 合格
+  - [x] gpt-oss-120B (GGUF) → 84.0% 合格
+  - [x] Qwen3-235B-A22B → 84.2% 合格
+  - [x] Qwen3-235B-A22B-2507 → 86.0% 合格
+  - [x] Qwen3-Next-80B → 83.5% 合格
+  - [x] Qwen3-VL-32B → 82.8% 合格
+  - [x] Llama-3.3-Swallow-70B → 78.0% 合格
+  - [x] Qwen3-14B → 71.8% 不合格
+  - [x] Gemma 3 27B → 67.8% 不合格
+  - [x] Phi-4 → 62.8% 不合格
+  - [x] Qwen3.5-397B@8bit → 89.5% 全モデル最高
+  - [x] Qwen3.5-397B@4bit → 87.3% 合格
+  - [x] Qwen3.5-27B@8bit → 87.3% 合格
+  - [x] Nemotron-3-Nano → 80.2% 合格
+  - [x] GPT-OSS-Swallow-20B → 77.8% 合格
+  - [x] Llama 4 Scout → 77.5% 合格
+  - [x] その他12構成
+- [ ] **統計的検定の実装（McNemar, 95% CI）** ← **最優先の残タスク**
+- [ ] Figure 2-4 の作成（日本語FT比較、MoE効率、max_tokens影響）
 
 ### Priority 2（論文の質を高める）
 
-- [ ] 複数年度（2018-2021）での主要5モデル評価
+- [ ] 複数年度（2018-2021）での主要5モデル評価 ← データ汚染議論に重要
 - [ ] 回答の質的分析（誤答カテゴリ分類）
-- [ ] 量子化影響のサブ分析（4bit vs 8bit vs bf16）
+- [x] 量子化影響のサブ分析 → 完了（qwen3-32b -0.5%, qwen3.5-397b -2.3%, gpt-oss-20b 6バリアント）
 
 ### Priority 3（差別化を強める）
 
-- [ ] 推論時間 vs 正答率のパレート分析（既存プロットあり）
-- [ ] メモリ使用量 vs 正答率の費用対効果分析
+- [x] 推論時間 vs 正答率のパレート分析 → `plots/pareto_and_budget.png` 作成済み
+- [x] メモリ使用量 vs 正答率の費用対効果分析 → `plots/memory_efficiency.png` 作成済み
 - [ ] 英語版IgakuQA（MedQA USMLE）との交差比較
 
 ---
@@ -274,11 +328,13 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 | ファイル | 用途 |
 |---|---|
 | `evaluate_lmstudio_batch.py` | メイン評価スクリプト |
-| `evaluate_prompt_comparison.py` | プロンプト比較実験 |
+| `evaluate_prompt_comparison.py` | プロンプト比較実験（5種プロンプト、thinking対応） |
 | `analyze_results.py` | 結果分析 |
+| `statistical_analysis.py` | 統計的検定（McNemar, CI）※実装中 |
 | `plot_size_vs_accuracy.py` | サイズ vs 正答率プロット |
 | `plot_passing_models.py` | 合格モデル比較プロット |
 | `plot_additional.py` | 追加分析プロット |
+| `plot_time_vs_accuracy.py` | 推論時間 vs 正答率プロット |
 
 ### プロット（既存）
 
@@ -299,6 +355,10 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 | `plots/passing_models_comparison.png` | 合格モデル比較（日本語） |
 | `plots/passing_models_comparison_en.png` | 合格モデル比較（英語） |
 | `plots/section_difficulty.png` | セクション難易度 |
+| `plots/time_vs_accuracy.png` | 推論時間 vs 正答率 |
+| `plots/time_vs_accuracy_en.png` | 推論時間 vs 正答率（英語） |
+| `plots/size_vs_accuracy_full_sections.png` | サイズ vs 正答率（全セクション） |
+| `plots/pareto_and_budget_full_sections.png` | パレート分析（全セクション） |
 
 ### データ
 
@@ -374,8 +434,8 @@ IgakuQAベンチマークを用いたLLM評価の先行研究:
 
 #### 弱み（対処が必要）
 
-1. **統計的検定未実施**: McNemar検定、95%CI追加が必須（Python実装1日）
-2. **全400問評価の不足**: MEMORY.mdでは19モデル評価済みだが、PAPER_PLANの記載は6モデル → 更新必要
+1. **統計的検定未実施**: McNemar検定、95%CI追加が必須（Python実装1日） ← **最優先**
+2. ~~全400問評価の不足~~ → ✅ **解決済み**: 30+構成で全400問評価完了
 3. **単一年度**: 2022年のみ → 最低1年度追加（2018年推奨、データ汚染議論用）
 4. **画像問題未評価**: テキストのみ → Limitation節で明記
 
