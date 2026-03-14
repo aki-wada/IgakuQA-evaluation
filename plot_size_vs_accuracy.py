@@ -869,4 +869,187 @@ plt.savefig('plots/pareto_and_budget_full_sections.png', dpi=150, bbox_inches='t
 print("Saved: plots/pareto_and_budget_full_sections.png")
 plt.close()
 
-print("\nDone! 8 plots saved to plots/ directory.")
+# ========== Figure 9: Scaling Analysis - Full 400Q (2x2) ==========
+fig9, axes9 = plt.subplots(2, 2, figsize=(14, 11))
+
+# --- (a) Qwen3 Series (400Q) ---
+ax_a = axes9[0, 0]
+qwen3_full = [
+    ("14B", 14, 71.8),
+    ("32B\n(8bit)", 32, 79.3),
+    ("32B\n(4bit)", 32, 78.8),
+    ("235B\n(MoE)", 235, 84.2),
+    ("235B-2507\n(MoE)", 235, 86.0),
+]
+qwen3_vl_full = [
+    ("VL-4B\n(8bit)", 4, 60.5),
+    ("VL-4B\n(4bit)", 4, 58.3),
+    ("VL-8B\n(8bit)", 8, 69.8),
+    ("VL-8B\n(4bit)", 8, 65.3),
+    ("VL-30B\n(MoE)", 30, 77.8),
+    ("VL-32B", 32, 82.8),
+]
+# Use 8bit as primary line
+qwen3_line = [
+    ("14B", 14, 71.8),
+    ("32B", 32, 79.3),
+    ("235B", 235, 86.0),
+]
+qwen3_vl_line = [
+    ("VL-4B", 4, 60.5),
+    ("VL-8B", 8, 69.8),
+    ("VL-30B", 30, 77.8),
+    ("VL-32B", 32, 82.8),
+]
+
+ax_a.plot([d[1] for d in qwen3_line], [d[2] for d in qwen3_line],
+          'o-', color='#2196F3', markersize=10, linewidth=2, label='Qwen3', zorder=5)
+ax_a.plot([d[1] for d in qwen3_vl_line], [d[2] for d in qwen3_vl_line],
+          'D--', color='#03A9F4', markersize=9, linewidth=2, label='Qwen3-VL', zorder=5)
+
+# 4bit points as hollow markers
+ax_a.scatter(32, 78.8, c='white', marker='o', s=100, edgecolors='#2196F3', linewidths=2, zorder=6)
+ax_a.scatter(4, 58.3, c='white', marker='D', s=80, edgecolors='#03A9F4', linewidths=2, zorder=6)
+ax_a.scatter(8, 65.3, c='white', marker='D', s=80, edgecolors='#03A9F4', linewidths=2, zorder=6)
+
+ax_a.axhline(y=75, color='red', linestyle='--', linewidth=1, alpha=0.5, label='Pass Line (75%)')
+ax_a.axhline(y=80, color='blue', linestyle=':', linewidth=1, alpha=0.3, label='GPT-4 (80%)')
+
+for name, x, y in qwen3_full:
+    oy = -12 if '4bit' in name else 5
+    ax_a.annotate(name, (x, y), fontsize=7.5, xytext=(5, oy), textcoords='offset points')
+for name, x, y in qwen3_vl_full:
+    oy = -12 if '4bit' in name else 5
+    ax_a.annotate(name, (x, y), fontsize=7.5, xytext=(5, oy), textcoords='offset points', color='#0288D1')
+
+ax_a.set_xscale('log')
+ax_a.set_xlabel('Parameters (B)', fontsize=11)
+ax_a.set_ylabel('Total Accuracy (%, 400Q)', fontsize=11)
+ax_a.set_title('(a) Qwen3 Scaling (400Q)', fontsize=12, fontweight='bold')
+ax_a.set_ylim(53, 93)
+ax_a.legend(fontsize=8, loc='lower right')
+ax_a.grid(True, alpha=0.3)
+ax_a.set_axisbelow(True)
+
+# --- (b) Gemma Series (400Q) ---
+ax_b = axes9[0, 1]
+gemma_base_full = [
+    ("gemma-12B", 12, None),  # No full evaluation
+    ("gemma-27B", 27, 67.8),
+]
+medgemma_full = [
+    ("medgemma-27B", 27, 71.8),
+]
+
+# Only gemma-27b has full evaluation
+ax_b.scatter(27, 67.8, c='#4CAF50', marker='o', s=150, edgecolors='black',
+             linewidths=1, label='Gemma-3 (base)', zorder=5)
+ax_b.scatter(27, 71.8, c='#2E7D32', marker='s', s=150, edgecolors='black',
+             linewidths=1, label='medgemma (Medical FT)', zorder=5)
+ax_b.scatter(16, 62.8, c='#607D8B', marker='X', s=120, edgecolors='black',
+             linewidths=0.5, label='Phi-4', zorder=5)
+
+# Arrow from gemma to medgemma
+ax_b.annotate('', xy=(27, 71.8), xytext=(27, 67.8),
+              arrowprops=dict(arrowstyle='->', color='green', lw=2))
+ax_b.text(28, 69.5, '+4.0%\n(Medical FT)', fontsize=9, color='green', fontweight='bold')
+
+ax_b.axhline(y=75, color='red', linestyle='--', linewidth=1, alpha=0.5, label='Pass Line')
+
+ax_b.annotate('gemma-3-27B\n(67.8%)', (27, 67.8), fontsize=9, xytext=(-25, -15),
+              textcoords='offset points', ha='right')
+ax_b.annotate('medgemma-27B\n(71.8%)', (27, 71.8), fontsize=9, xytext=(-25, 8),
+              textcoords='offset points', color='#2E7D32', ha='right')
+ax_b.annotate('phi-4\n(62.8%)', (16, 62.8), fontsize=9, xytext=(5, -12),
+              textcoords='offset points', color='#607D8B')
+
+ax_b.set_xlabel('Parameters (B)', fontsize=11)
+ax_b.set_ylabel('Total Accuracy (%, 400Q)', fontsize=11)
+ax_b.set_title('(b) Gemma / medgemma (400Q)', fontsize=12, fontweight='bold')
+ax_b.set_ylim(55, 80)
+ax_b.set_xlim(10, 35)
+ax_b.legend(fontsize=8, loc='upper left')
+ax_b.grid(True, alpha=0.3)
+ax_b.set_axisbelow(True)
+
+# --- (c) Llama-3.3-70B JP Fine-Tuning (400Q) ---
+ax_c = axes9[1, 0]
+
+bars_70b_full = [
+    ("Shisa-v2.1\n(JP-FT)", 74.2, '#E91E63'),
+    ("llama-3.3-70b\n(base)", 71.0, '#795548'),
+    ("Swallow\n(JP-FT)", 78.0, '#F44336'),
+]
+
+x_pos_c = np.arange(len(bars_70b_full))
+colors_c = [b[2] for b in bars_70b_full]
+vals_c = [b[1] for b in bars_70b_full]
+names_c = [b[0] for b in bars_70b_full]
+
+bars_c = ax_c.bar(x_pos_c, vals_c, color=colors_c, edgecolor='black', linewidth=0.5, width=0.6)
+ax_c.axhline(y=75, color='red', linestyle='--', linewidth=1, alpha=0.5, label='Pass Line')
+ax_c.axhline(y=71, color='grey', linestyle=':', linewidth=1, alpha=0.4, label='Base (71%)')
+ax_c.set_xticks(x_pos_c)
+ax_c.set_xticklabels(names_c, fontsize=9)
+ax_c.set_ylabel('Total Accuracy (%, 400Q)', fontsize=11)
+ax_c.set_title('(c) llama-3.3-70B: JP Fine-Tuning (400Q)', fontsize=12, fontweight='bold')
+ax_c.set_ylim(0, 90)
+ax_c.legend(fontsize=8)
+ax_c.grid(True, alpha=0.3, axis='y')
+ax_c.set_axisbelow(True)
+
+for bar, val in zip(bars_c, vals_c):
+    ax_c.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1,
+              f'{val}%', ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+ax_c.annotate('', xy=(2, 78.0), xytext=(1, 71.0),
+              arrowprops=dict(arrowstyle='->', color='green', lw=2))
+ax_c.text(1.7, 74, '+7.0%', fontsize=9, color='green', fontweight='bold')
+ax_c.annotate('', xy=(0, 74.2), xytext=(1, 71.0),
+              arrowprops=dict(arrowstyle='->', color='#FF9800', lw=2))
+ax_c.text(0.15, 71.5, '+3.2%', fontsize=9, color='#FF9800', fontweight='bold')
+
+# --- (d) Family Scaling Comparison (400Q) ---
+ax_d = axes9[1, 1]
+
+gpt_oss_full = [("20B", 20, 71.5), ("120B\n(MLX)", 120, 84.5)]
+mistral_full = [("Small 24B", 24, 76.8), ("Large 123B", 123, 75.8)]
+swallow_full = [("8B", 8, None), ("70B", 70, 78.0)]  # 8B has no full eval
+
+# GPT-OSS: clear scaling
+ax_d.plot([d[1] for d in gpt_oss_full], [d[2] for d in gpt_oss_full], 'p-', color='#FF9800',
+          markersize=12, linewidth=2, label='GPT-OSS (+13.0%)', zorder=5)
+# Mistral: flat scaling
+ax_d.plot([d[1] for d in mistral_full], [d[2] for d in mistral_full], 'h-', color='#9C27B0',
+          markersize=12, linewidth=2, label='Mistral (-1.0%)', zorder=5)
+# Swallow: only 70B has full eval
+ax_d.scatter(70, 78.0, c='#F44336', marker='*', s=200, edgecolors='black',
+             linewidths=0.5, label='Swallow-70B (78.0%)', zorder=5)
+# Llama base for comparison
+ax_d.scatter(70, 71.0, c='#795548', marker='v', s=120, edgecolors='black',
+             linewidths=0.5, label='Llama-3.3-70B (71.0%)', zorder=5)
+
+ax_d.axhline(y=75, color='red', linestyle='--', linewidth=1, alpha=0.5, label='Pass Line')
+
+for name, x, y in gpt_oss_full:
+    ax_d.annotate(name, (x, y), fontsize=9, xytext=(5, 5), textcoords='offset points')
+for name, x, y in mistral_full:
+    ax_d.annotate(name, (x, y), fontsize=9, xytext=(5, -15), textcoords='offset points', color='#7B1FA2')
+ax_d.annotate('Swallow-70B', (70, 78.0), fontsize=9, xytext=(5, 5), textcoords='offset points', color='#C62828')
+ax_d.annotate('Llama-3.3-70B\n(base)', (70, 71.0), fontsize=9, xytext=(5, -15), textcoords='offset points', color='#795548')
+
+ax_d.set_xlabel('Parameters (B)', fontsize=11)
+ax_d.set_ylabel('Total Accuracy (%, 400Q)', fontsize=11)
+ax_d.set_title('(d) Family Scaling Comparison (400Q)', fontsize=12, fontweight='bold')
+ax_d.set_ylim(65, 90)
+ax_d.legend(fontsize=7.5, loc='lower right')
+ax_d.grid(True, alpha=0.3)
+ax_d.set_axisbelow(True)
+
+plt.suptitle('IgakuQA 2022 Full Exam (400 Questions): Model Family Scaling Analysis', fontsize=14, fontweight='bold', y=1.01)
+plt.tight_layout()
+plt.savefig('plots/scaling_analysis_full_sections.png', dpi=150, bbox_inches='tight')
+print("Saved: plots/scaling_analysis_full_sections.png")
+plt.close()
+
+print("\nDone! 9 plots saved to plots/ directory.")
